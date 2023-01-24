@@ -1,0 +1,24 @@
+16,01
+Didnt continue the measurements since I lost the channel in development
+
+0.22 and 0.45 um filters were used PTFE and PVDF, nothing pass through in neither. I dont find a larger filter
+Gold patterning and consecutive spin coating
+
+I seem to obtain a more viscous mixture from 15% after some heat and low stirring speed, I spin coat but non homogeneity persists. 
+I added 250ul of chloroform to pg3t mixture, since it seems too concentrated from the spin coating result (not well distributed)
+
+Added 250ul of chloroform to the 15% mixture
+
+Spin coating for this went better. For DMF I added a 104C baking after, lets measure a see differences. Additionaly, I didnt do a dynamic spin coating. 
+But cover all glass with 100uL of pg3t/DMF and spin coat. There is some imperfections after.
+
+I will spin coat 2 more, and consecutive dope with 0,5 and 1mg/ml F4TCNQ
+And then do the same in OECTs. The one with more F4TCNQ, I didn´t spin coat properly, not so homogeneous but its ok for now.
+
+I used for only pg3t, spinrise 3000 as used in PEDOT. For second round I used spinrinse 500. Pg3t during dry etching also flies out.
+For the etching to happen you need to leave it at least 30s. Don´t forget this damn it! 
+wet etch 2 more times at 30s, apart from the 1 minute one
+
+plasma etching, once for pg3t. 2x for doped 0,5 and 3x for 1, i think
+
+
