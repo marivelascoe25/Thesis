@@ -4,10 +4,16 @@ from functions import *
 
 dir_path = 'Data\Test'
 
-# list to store files
+## Store files
 R, T =read_directory(dir_path)
+L = []
+## Get plot legends
+#print(type(R[0]))
+for i in range(len(T)):
+    L.append(R[i][12:25])
 
-# Print plots
+
+## Print plots
 
 AX = []
 AY = []
@@ -24,6 +30,6 @@ for i in range (len(T)):
     X, Y = absorbance(files)
     AX.append(X)
     AY.append(Y)
-    plt.plot(AX[i], AY[i])
-    plt.legend(R[i])
+    plt.plot(AX[i], AY[i], label = L[i])
+plt.legend()
 plt.show()
