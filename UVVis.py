@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from functions import *
-from scipy.interpolate import make_interp_spline, BSpline
+#from scipy.interpolate import make_interp_spline, BSpline
 
 
 dir_path = 'Data\Test'
