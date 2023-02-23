@@ -3,7 +3,7 @@ from functions import *
 from scipy.interpolate import make_interp_spline, BSpline
 
 
-dir_path = 'Data\\3. Transfer curves\\230213_pg3tDMFx4_undoped'
+dir_path = 'Data\\2. UVVis\\23.02.23_new'
 
 ## Store files
 transfer, out = read_directory_bioprobe(dir_path)

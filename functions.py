@@ -54,7 +54,7 @@ def plot_absorbance(dir_path,title,x_axis,y_axis):
     ## Get plot legends
     for i in range(len(R)):
         start = R[i].index('R')
-        L.append(R[i][start:start+14])
+        L.append(R[i][start:start+20])
 
     ## Print plots
 
@@ -74,6 +74,7 @@ def plot_absorbance(dir_path,title,x_axis,y_axis):
         AY.append(Y)
         plt.plot(AX[i], AY[i], label = L[i])
     plt.legend()
+    plt.grid()
 
 
 def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
@@ -106,3 +107,4 @@ def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
             X, Y = absorbance(files)
             axs[k].plot(X, Y, label = L[i])
         axs[k].legend()
+        axs[k].grid()
