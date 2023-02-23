@@ -3,10 +3,18 @@ from functions import *
 from scipy.interpolate import make_interp_spline, BSpline
 
 
-dir_path = 'Data\\221115_firstDevice_pedotAgGatePrinted\\U2'
+dir_path = 'Data\\3. Transfer curves\\230213_pg3tDMFx4_undoped'
 
 ## Store files
 transfer, out = read_directory_bioprobe(dir_path)
+
+## Get plot title
+T = []
+for i in range(len(transfer)):
+    start = transfer[i].index('transfer')
+    T.append(transfer[i][start-7:start-1])
+
+print(T)
 
 ## Get plot legends
 L = []
@@ -16,21 +24,31 @@ for i in range(len(transfer)):
 
 ## Print plots
 
-AX = []
-AY = []
-
+AX = [[]]
+AY = [[]]
+plt = []
 #Column 6 and 8 corresponds to Ids and Vgs
 ids=6
 vgs=8
+k=-1
 
-plt.figure()
-plt.title("PEDOT:PSS/Ag")
-plt.xlabel("Gate voltage (V)")
-plt.ylabel("Drain Current (A)")
-plt.yscale('log')
-plt.grid()
-#plt.xlim([330, 850])
+for i in range (len(T)):
+    X, Y = extract_data(transfer[i],vgs,ids)
+    if i==0 or T[i] != T[i-1]:
+        k=k+1
+        plt.figure()
+        plt.title(T[i])
+        plt.xlabel("Gate voltage (V)")
+        plt.ylabel("Drain Current (A)")
+        plt.yscale('log')
+        plt.grid()
+    AX[k].append(X)
+    AY[k].append(Y)
+    plt.plot(AX[i], np.absolute(AY[i]), label = L[i])
+    plt.legend()
+    plt.show()
 
+"""
 for i in range (len(transfer)):
     #print(i)
     X, Y = extract_data(transfer[i],vgs,ids)
@@ -39,3 +57,4 @@ for i in range (len(transfer)):
     plt.plot(AX[i], np.absolute(AY[i]), label = L[i])
 plt.legend()
 plt.show()
+"""
