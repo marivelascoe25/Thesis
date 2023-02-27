@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 from functions import *
 from scipy.interpolate import make_interp_spline, BSpline
 
-
 #dir_path = 'Data\\3. Transfer curves\\230213_pg3tDMFx4_undoped'
 #dir_path = 'Data\\3. Transfer curves\\230223_dopedpg3t_liquidSSE'
 #dir_path = 'Data\\3. Transfer curves\\230222_pg3tWL'
@@ -13,39 +12,37 @@ transfer, out = read_directory_bioprobe(dir_path)
 
 ## Get plot legends
 L = []
-for i in range(len(transfer)):
-    start = transfer[i].index('drain')
-    L.append('Vds'+transfer[i][start+5:start+16])
+for i in range(len(out)):
+    start = out[i].index('out_gate')
+    L.append('Vgs'+out[i][start+8:start+19])
 
 ## Get plot title
 T = []
-for i in range(len(transfer)):
-    start = transfer[i].index('transfer')
-    #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
-    T.append(transfer[i][start-7:start-5])
+for i in range(len(out)):
+    start = out[i].index('output')
+    #T.append(out[i][start-14:start-5]) ## Just used when for pg3tWL
+    T.append(out[i][start-10:start-8])
 #T=list(dict.fromkeys(T))
 T=list(dict.fromkeys(T))
 
-
 for k in range(len(T)):
     plt.figure()
-    plt.xlabel("Gate Voltage")
-    plt.ylabel("Drain Current")
+    plt.xlabel("Drain Voltage (V)")
+    plt.ylabel("Drain Current (A)")
 
-    for i in range(len(transfer)):
-        start = transfer[i].index('transfer')
-        if transfer[i][start-7:start-5] == T[k]:
-        #if transfer[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
+    for i in range(len(out)):
+        start = out[i].index('output')
+        if out[i][start-10:start-8] == T[k]:
+        #if out[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
             plt.title(T[k])
-            plt.yscale('log')
+            #plt.yscale('log')
             ## Print plots
             #Column 6 and 8 corresponds to Ids and Vgs
-            ids=6
+            ids=9
             vgs=8 ## 9 if loop is added
-            X, Y = extract_data(transfer[i],vgs,ids)
-            plt.plot(X, np.absolute(Y), label = L[i])
+            X, Y = extract_data(out[i],vgs,ids)
+            plt.plot(X, Y, label = L[i])
     plt.legend()
     plt.grid()
 
 plt.show()
-
