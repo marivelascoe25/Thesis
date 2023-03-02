@@ -13,10 +13,14 @@ def extract_data(dir,x,y):
             pass
     return X,Y
 
-def absorbance(files):
+def absorbance(files, N=False):
     X1, R = extract_data(files[0],0,1)
     X2, T = extract_data(files[1],0,1)
     A = 100*np.ones(len(X2)) - T - R
+    if N:
+        maxA = np.max(A)
+        A = A/maxA
+
     return X1, A
 
 def read_directory_UV(dir_path):
@@ -45,7 +49,7 @@ def read_directory_bioprobe(dir_path):
                 out.append(dir_path + '\\' + path)
     return transfer, out
 
-def plot_absorbance(dir_path,title,x_axis,y_axis):
+def plot_absorbance(dir_path,title,x_axis,y_axis,N=False):
     ## Store files
     R, T = read_directory_UV(dir_path)
     L = []
@@ -74,7 +78,7 @@ def plot_absorbance(dir_path,title,x_axis,y_axis):
 
     for i in range (len(T)):
         files = [R[i], T[i]]
-        X, Y = absorbance(files)
+        X, Y = absorbance(files,N)
         AX.append(X)
         AY.append(Y)
         plt.plot(AX[i], AY[i], label = L[i])
@@ -120,36 +124,3 @@ def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
             axs[k].plot(X, Y, label = L[i])
         axs[k].legend()
         axs[k].grid()
-"""
-def peaks (X, Y):
-    for i in range (len(X)):
-        start = X[i].index(320)
-        end = X[i].index(400) 
-        for k in range (start, end):
-            if Y[i][k+1] > Y[i][k]:
-                max_aux = Y[i][k+1]
-            else:
-                max.append(max_aux)
-                break
-
-        start = X[i].index(420)
-        end = X[i].index(600) 
-        for k in range (start, end):
-            if Y[i][k+1] > Y[i][k]:
-                max_aux = Y[i][k+1]
-            else:
-                max.append(max_aux)
-                break 
-
-        print(max[i])
-
-        start = AX[i].index(320)
-        end = AX[i].index(400) 
-        for k in range (start, end):
-            if AY[i][k+1] > AY[i][k]:
-                max_aux = AY[i][k+1]
-            else:
-                break
-    print(max_aux)
-    return max
-"""
