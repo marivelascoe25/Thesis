@@ -52,19 +52,25 @@ def plot_absorbance(dir_path,title,x_axis,y_axis):
 
     ## Get plot legends
     for i in range(len(R)):
-        start = R[i].index('R')
-        L.append(R[i][start:start+20])
+        start = R[i].index('R_')
+        try:
+            end = R[i].index('_Storage')
+        except:
+            end = start+14
+        L.append(R[i][start+2:end])
 
     ## Print plots
 
     AX = []
     AY = []
+    max_aux = []
+    max = []
 
     plt.figure()
     plt.title(title)
     plt.xlabel(x_axis)
     plt.ylabel(y_axis)
-    plt.xlim([300, 1400])
+    #plt.xlim([300, 1400])
 
     for i in range (len(T)):
         files = [R[i], T[i]]
@@ -72,8 +78,11 @@ def plot_absorbance(dir_path,title,x_axis,y_axis):
         AX.append(X)
         AY.append(Y)
         plt.plot(AX[i], AY[i], label = L[i])
+    #print (AX[2])
+    #print (len(AX[2]))
     plt.legend()
     plt.grid()
+    return AX, AY, L
 
 
 def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
@@ -89,8 +98,12 @@ def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
 
         ## Get plot legends
         for i in range(len(R)):
-            start = R[i].index('R')
-            L.append(R[i][start:start+14])
+            start = R[i].index('R_')
+            try:
+                end = R[i].index('_Storage')
+            except:
+                end = start+14
+            L.append(R[i][start+2:end])
 
         ## Print plots
 
@@ -99,7 +112,7 @@ def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
 
         axs[k].set_title(titles[k])
         #plt.xlim([300, 1400])
-        axs[k].set_xlim([300, 1400])
+        #axs[k].set_xlim([300, 1400])
 
         for i in range (len(T)):
             files = [R[i], T[i]]
@@ -107,3 +120,36 @@ def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
             axs[k].plot(X, Y, label = L[i])
         axs[k].legend()
         axs[k].grid()
+"""
+def peaks (X, Y):
+    for i in range (len(X)):
+        start = X[i].index(320)
+        end = X[i].index(400) 
+        for k in range (start, end):
+            if Y[i][k+1] > Y[i][k]:
+                max_aux = Y[i][k+1]
+            else:
+                max.append(max_aux)
+                break
+
+        start = X[i].index(420)
+        end = X[i].index(600) 
+        for k in range (start, end):
+            if Y[i][k+1] > Y[i][k]:
+                max_aux = Y[i][k+1]
+            else:
+                max.append(max_aux)
+                break 
+
+        print(max[i])
+
+        start = AX[i].index(320)
+        end = AX[i].index(400) 
+        for k in range (start, end):
+            if AY[i][k+1] > AY[i][k]:
+                max_aux = AY[i][k+1]
+            else:
+                break
+    print(max_aux)
+    return max
+"""

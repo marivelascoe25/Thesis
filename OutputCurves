@@ -14,7 +14,12 @@ transfer, out = read_directory_bioprobe(dir_path)
 L = []
 for i in range(len(out)):
     start = out[i].index('out_gate')
-    L.append('Vgs'+out[i][start+8:start+19])
+    try:
+        end = out[i].index('e-01')
+    except:
+        end = out[i].index('e+00')
+    label = str(float(out[i][start+9:end+4]))
+    L.append(r'$V_{GS}$ = '+label+'V')
 
 ## Get plot title
 T = []
