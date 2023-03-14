@@ -5,9 +5,12 @@ from scipy.interpolate import make_interp_spline, BSpline
 
 #dir_path = 'Data\\3. Transfer curves\\230213_pg3tDMFx4_undoped'
 #dir_path = 'Data\\3. Transfer curves\\230223_dopedpg3t_liquidSSE'
-dir_path = 'Data\\3. Transfer curves\\230222_pg3tWL'
+#dir_path = 'Data\\3. Transfer curves\\230222_pg3tWL'
 #dir_path = 'Data\\3. Transfer curves\\221115_firstDevice_pedotAgGatePrinted\\Rawdata'
 #dir_path = 'Data\\3. Transfer curves\\230213_pg3t_doped'
+#dir_path = 'Data\\3. Transfer curves\\230313_pg3t_doped10'
+#dir_path = 'Data\\3. Transfer curves\\230310_pg3t_doped5'
+dir_path = 'Data\\3. Transfer curves\\230310_pg3t'
 
 ## Store files
 transfer, out = read_directory_bioprobe(dir_path)
@@ -24,8 +27,8 @@ for i in range(len(transfer)):
 T = []
 for i in range(len(transfer)):
     start = transfer[i].index('transfer')
-    T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
-    #T.append(transfer[i][start-7:start-5])
+    #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
+    T.append(transfer[i][start-7:start-5])
 #T=list(dict.fromkeys(T))
 T=list(dict.fromkeys(T))
 
@@ -37,8 +40,8 @@ for k in range(len(T)):
 
     for i in range(len(transfer)):
         start = transfer[i].index('transfer')
-        #if transfer[i][start-7:start-5] == T[k]:
-        if transfer[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
+        if transfer[i][start-7:start-5] == T[k]:
+        #if transfer[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
             plt.title(T[k])
             plt.yscale('log')
             ## Print plots
