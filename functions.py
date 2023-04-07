@@ -71,10 +71,11 @@ def plot_absorbance(dir_path,title,x_axis,y_axis,N=False):
     max = []
 
     plt.figure()
-    plt.title(title)
-    plt.xlabel(x_axis)
-    plt.ylabel(y_axis)
-    #plt.xlim([300, 1400])
+    plt.title(title,fontsize=28,fontweight='bold')
+    plt.xlabel(x_axis,fontsize=25,fontweight='bold')
+    plt.ylabel(y_axis,fontsize=25,fontweight='bold')
+    #plt.xlim([300, 2000])
+    plt.xlim([300, 1600])
 
     for i in range (len(T)):
         files = [R[i], T[i]]
@@ -124,3 +125,202 @@ def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
             axs[k].plot(X, Y, label = L[i])
         axs[k].legend()
         axs[k].grid()
+
+def plot_transfer_curves(dir_path):
+    ## Store files
+    transfer, out = read_directory_bioprobe(dir_path)
+    
+    ## Get plot legends
+    L = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('drain')
+        end = transfer[i].index('e-01')
+        label = str(float(transfer[i][start+6:end+4]))
+        L.append(r'$V_{DS}$ = '+label+'V')
+
+
+    ## Get plot title
+    T = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('transfer')
+        #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
+        T.append(transfer[i][start-7:start-5])
+    #T=list(dict.fromkeys(T))
+    T=list(dict.fromkeys(T))
+
+
+    for k in range(len(T)):
+        plt.figure()
+        plt.xlabel("Gate Voltage (V)")
+        plt.ylabel("Drain Current (A)")
+
+        for i in range(len(transfer)):
+            start = transfer[i].index('transfer')
+            if transfer[i][start-7:start-5] == T[k]:
+            #if transfer[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
+                plt.title(T[k])
+                plt.yscale('log')
+                ## Print plots
+                #Column 6 and 8 corresponds to Ids and Vgs
+                ids=6
+                vgs=9 ## 9 if loop is added
+                X, Y = extract_data(transfer[i],vgs,ids)
+                plt.plot(X, np.absolute(Y), label = L[i])
+                #plt.quiver(X, np.absolute(Y), label = L[i])
+        plt.legend()
+        plt.grid()
+
+def plot_transfer_curves2(dir_path):
+    ## Store files
+    transfer, out = read_directory_bioprobe(dir_path)
+
+    ## Get plot legends
+    L = []
+    Vds = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('drain')
+        end = transfer[i].index('e-01')
+        vds = float(transfer[i][start+6:end+4])
+        label = str(vds)
+        Vds.append(vds)
+        L.append(r'$V_{DS}$ = '+label+'V')
+
+    ## Get plot title
+    T = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('transfer')
+        #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
+        T.append(transfer[i][start-7:start-5])
+    #T=list(dict.fromkeys(T))
+    T=list(dict.fromkeys(T))
+
+
+    for k in range(len(T)):
+        plt.figure()
+        plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
+        plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+
+        for i in range(len(transfer)):
+            start = transfer[i].index('transfer')
+            if transfer[i][start-7:start-5] == T[k]:
+            #if transfer[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
+                plt.title(T[k])
+                plt.yscale('log')
+                ## Print plots
+                #Column 6 and 8 corresponds to Ids and Vgs
+                ids=6
+                vgs=9 ## 9 if loop is added
+                X, Y = extract_data(transfer[i],vgs,ids)
+                #if label
+                if Vds[i] == -0.7:                   
+                    plt.plot(X, np.absolute(Y), 'o-', color=u'#1f77b4')
+                elif Vds[i] == -0.5:
+                    plt.plot(X, np.absolute(Y), 'o-', color=u'#ff7f0e')
+                elif Vds[i] == -0.3:
+                    plt.plot(X, np.absolute(Y), 'o-', color=u'#2ca02c')
+                else: # Vds[i] == -0.1:
+                    plt.plot(X, np.absolute(Y), 'o-', color=u'#d62728')
+                #plt.quiver(X, np.absolute(Y), label = L[i])
+        #plt.legend()
+        plt.grid()
+
+def plot_transfer_linear(dir_path):
+    ## Store files
+    transfer, out = read_directory_bioprobe(dir_path)
+
+    ## Get plot legends
+    L = []
+    Vds = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('drain')
+        end = transfer[i].index('e-01')
+        vds = float(transfer[i][start+6:end+4])
+        label = str(vds)
+        Vds.append(vds)
+        L.append(r'$V_{DS}$ = '+label+'V')
+
+    ## Get plot title
+    T = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('transfer')
+        #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
+        T.append(transfer[i][start-7:start-5])
+    #T=list(dict.fromkeys(T))
+    T=list(dict.fromkeys(T))
+
+
+    for k in range(len(T)):
+        plt.figure()
+        plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
+        plt.ylabel("Drain Current (mA)",fontsize=26,fontweight='bold')
+
+        for i in range(len(transfer)):
+            start = transfer[i].index('transfer')
+            if transfer[i][start-7:start-5] == T[k]:
+            #if transfer[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
+                plt.title(T[k])
+                #plt.yscale('log')
+                ## Print plots
+                #Column 6 and 8 corresponds to Ids and Vgs
+                ids=6
+                vgs=9 ## 9 if loop is added
+                X, Y0 = extract_data(transfer[i],vgs,ids)
+                Y = [x * 1000 for x in Y0]
+                if Vds[i] == -0.7:                   
+                    plt.plot(X, Y, 'o-', color=u'#1f77b4')
+                elif Vds[i] == -0.5:
+                    plt.plot(X, Y, 'o-', color=u'#ff7f0e')
+                elif Vds[i] == -0.3:
+                    plt.plot(X, Y, 'o-', color=u'#2ca02c')
+                else: # Vds[i] == -0.1:
+                    plt.plot(X, Y, 'o-', color=u'#d62728')
+                #plt.quiver(X, np.absolute(Y), label = L[i])
+        #plt.legend()
+        plt.grid()
+
+
+def plot_transfer_comparison(dir_path):
+    ## Store files
+    transfer, out = read_directory_bioprobe(dir_path)
+
+    ## Get plot legends
+    L = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('drain')
+        end = transfer[i].index('e-01')
+        label = transfer[i][start+6:end] ##just for doping_effect folder
+        L.append(label) ##just for doping_effect folder
+
+
+    ## Get plot title
+    T = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('transfer')
+        T.append(transfer[i][start-13:start-5]) ## Just used when for doping effect
+    #T=list(dict.fromkeys(T))
+    T=list(dict.fromkeys(T))
+
+
+    for k in range(len(T)):
+        plt.figure()
+        plt.xlabel("Gate Voltage (V)")
+        plt.ylabel("Drain Current (A)")
+
+        for i in range(len(transfer)):
+            start = transfer[i].index('transfer')
+            if transfer[i][start-13:start-5] == T[k]: ## Just used when for doping_effect             
+                plt.title(T[k])
+                plt.yscale('log')
+                ## Print plots
+                #Column 6 and 8 corresponds to Ids and Vgs
+                ids=6
+                igs=10
+                vgs=9 ## 9 if loop is added
+                X1, Y1 = extract_data(transfer[i],vgs,ids)
+                plt.plot(X1, np.absolute(Y1), label = L[i])
+                #X2, Y2 = extract_data(transfer[i],vgs,igs)
+                #plt.plot(X2, np.absolute(Y2),"--",linewidth=1, label = L[i])
+                #plt.quiver(X, np.absolute(Y), label = L[i])
+        plt.legend()
+        plt.grid()
+

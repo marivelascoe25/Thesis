@@ -4,23 +4,28 @@ from scipy.signal import find_peaks_cwt
 from peakdetect import peakdetect
 import scipy.constants as sc
 #from scipy.signal import argrelextrema
+plt.rcParams.update({'font.size':22})
 
-dir_path1 = 'Data\\2. UVVis\\23.03.06'
-dir_path2 = 'Data\\2. UVVis\\23.02.16'
-dir_path3 = 'Data\\2. UVVis\\23.02.23_new'
+dir_path1 = 'Data\\2. UVVis\\23.03.20'
+dir_path2 = 'Data\\2. UVVis\\Only pg3t'
+dir_path3 = 'Data\\2. UVVis\\23.02.23_old'
 
-title1 = "Doping pg3t_23.03.06"
-title2 = "Doping pg3t_23.02.16"
-title3 = "Doping pg3t_23.02.23"
+title1 = "Doping p(g3T2-T)"#_23.03.20"
+title2 = "Doping p(g3T2-T)"
+title3 = "Doping p(g3T2-T)"
 
+## Add N=True for a normalized absorbance plot
+N = False
 x_axis = "Wavelength (nm)"
-y_axis = "Absorbance (%)"
-
+if N:
+    y_axis = "Normalized Absorbance (a.u.)"
+else:
+    y_axis = "Absorbance (%)"
 #plot_absorbance(dir_path1,title1,x_axis,y_axis)
 #plot_multiple_abs([dir_path1,dir_path2],[title1,title2],x_axis,y_axis)
 #plot_multiple_abs([dir_path1,dir_path2,dir_path3],[title1,title2,title3],x_axis,y_axis)
 
-X, Y, L = plot_absorbance(dir_path1,title1,x_axis,y_axis, N=True) ## Add N=True for a normalized absorbance plot
+X, Y, L = plot_absorbance(dir_path1,title1,x_axis,y_axis, N) 
 
 peak_array = []
 

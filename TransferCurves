@@ -1,57 +1,30 @@
 import matplotlib.pyplot as plt
 from functions import *
 from scipy.interpolate import make_interp_spline, BSpline
+plt.rcParams.update({'font.size':22})
 
-
-#dir_path = 'Data\\3. Transfer curves\\230213_pg3tDMFx4_undoped'
 #dir_path = 'Data\\3. Transfer curves\\230223_dopedpg3t_liquidSSE'
-#dir_path = 'Data\\3. Transfer curves\\230222_pg3tWL'
-#dir_path = 'Data\\3. Transfer curves\\221115_firstDevice_pedotAgGatePrinted\\Rawdata'
 #dir_path = 'Data\\3. Transfer curves\\230213_pg3t_doped'
 #dir_path = 'Data\\3. Transfer curves\\230313_pg3t_doped10'
 #dir_path = 'Data\\3. Transfer curves\\230310_pg3t_doped5'
-dir_path = 'Data\\3. Transfer curves\\230310_pg3t'
+#dir_path = 'Data\\3. Transfer curves\\230316_newpg3t'
+#dir_path = 'Data\\3. Transfer curves\\230316_newpg3t_cappypattern'
+#dir_path = 'Data\\3. Transfer curves\\230316_newpg3t_doped5'
+#dir_path = 'Data\\3. Transfer curves\\230316_newpg3t_doped10'
+#dir_path = 'Data\\3. Transfer curves\\doping_effect\\Vds7'
+#plot_transfer_curves('Data\\3. Transfer curves\\report_transfers')
+#plot_transfer_curves2('Data\\3. Transfer curves\\report_final')
 
-## Store files
-transfer, out = read_directory_bioprobe(dir_path)
+plot_transfer_linear('Data\\3. Transfer curves\\report_final')
+#plot_transfer_comparison('Data\\3. Transfer curves\\doping_effect_new_new10\\Vds1')
 
-## Get plot legends
-L = []
-for i in range(len(transfer)):
-    start = transfer[i].index('drain')
-    end = transfer[i].index('e-01')
-    label = str(float(transfer[i][start+6:end+4]))
-    L.append(r'$V_{DS}$ = '+label+'V')
+#plot_transfer_comparison('Data\\3. Transfer curves\\doping_effect_old\\Vds3')
+#plot_transfer_comparison('Data\\3. Transfer curves\\doping_effect_new\\Vds3')
+#plot_transfer_comparison('Data\\3. Transfer curves\\doping_effect_new_new10\\Vds3')
 
-## Get plot title
-T = []
-for i in range(len(transfer)):
-    start = transfer[i].index('transfer')
-    #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
-    T.append(transfer[i][start-7:start-5])
-#T=list(dict.fromkeys(T))
-T=list(dict.fromkeys(T))
+#plot_transfer_comparison('Data\\3. Transfer curves\\doping_effect_new_new10\\Vds5')
 
-
-for k in range(len(T)):
-    plt.figure()
-    plt.xlabel("Gate Voltage (V)")
-    plt.ylabel("Drain Current (A)")
-
-    for i in range(len(transfer)):
-        start = transfer[i].index('transfer')
-        if transfer[i][start-7:start-5] == T[k]:
-        #if transfer[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
-            plt.title(T[k])
-            plt.yscale('log')
-            ## Print plots
-            #Column 6 and 8 corresponds to Ids and Vgs
-            ids=6
-            vgs=9 ## 9 if loop is added
-            X, Y = extract_data(transfer[i],vgs,ids)
-            plt.plot(X, np.absolute(Y), label = L[i])
-    plt.legend()
-    plt.grid()
+#plot_transfer_comparison('Data\\3. Transfer curves\\doping_effect_new_new10\\Vds7')
 
 plt.show()
-
+#
