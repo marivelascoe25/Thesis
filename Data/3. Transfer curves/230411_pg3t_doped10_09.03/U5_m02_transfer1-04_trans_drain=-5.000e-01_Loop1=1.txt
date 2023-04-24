@@ -1,0 +1,4 @@
+Time elapsed	Time stamp	source_Bioprobe Voltage	source_Bioprobe Current	source_Bioprobe Resistance	trans_drain Voltage	trans_drain Current	trans_drain Resistance	Loop1 Index	trans_gate Voltage	trans_gate Current	trans_gate Resistance
+s		V	A	V/A	V	A	V/A		V	A	V/A
+
+1.68063898e+02	2023-04-11T12:02:40.593296	5.12418500e-05	-3.24135800e-07	-1.58087598e+02	-4.99998600e-01	-1.19611600e-06	4.18018487e+05	1	1.00016900e+00	1.51567600e-06	6.59883115e+05
