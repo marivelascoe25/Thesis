@@ -231,6 +231,51 @@ def plot_transfer_linear(T, transfer, L, Vds):
         #plt.legend()
         plt.grid()
 
+def plot_doping_comparison(dir_path):
+    ## Store files
+    transfer, out = read_directory_bioprobe(dir_path)
+
+    ## Get plot legends
+    L = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('drain')
+        end = transfer[i].index('e-01')
+        label = transfer[i][start+6:end] ##just for doping_effect folder
+        L.append(label) ##just for doping_effect folder
+
+
+    ## Get plot title
+    T = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('transfer')
+        T.append(transfer[i][start-13:start-5]) ## Just used when for doping effect
+    #T=list(dict.fromkeys(T))
+    T=list(dict.fromkeys(T))
+
+
+    for k in range(len(T)):
+        plt.figure()
+        plt.xlabel("Gate Voltage (V)")
+        plt.ylabel("Drain Current (A)")
+
+        for i in range(len(transfer)):
+            start = transfer[i].index('transfer')
+            if transfer[i][start-13:start-5] == T[k]: ## Just used when for doping_effect             
+                plt.title(T[k])
+                plt.yscale('log')
+                ## Print plots
+                #Column 6 and 8 corresponds to Ids and Vgs
+                ids=6
+                igs=10
+                vgs=9 ## 9 if loop is added
+                X1, Y1 = extract_data(transfer[i],vgs,ids)
+                plt.plot(X1, np.absolute(Y1), label = L[i])
+                #X2, Y2 = extract_data(transfer[i],vgs,igs)
+                #plt.plot(X2, np.absolute(Y2),"--",linewidth=1, label = L[i])
+                #plt.quiver(X, np.absolute(Y), label = L[i])
+        plt.legend()
+        plt.grid()
+
 def plot_transfer_comparison(T1, T2, transfer1, tranfer2, Vds1, Vds2):
     
     for k in range(len(T1)):

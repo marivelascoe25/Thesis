@@ -3,6 +3,7 @@ from functions import *
 from scipy.interpolate import make_interp_spline, BSpline
 plt.rcParams.update({'font.size':22})
 
+"""
 #dir_path1 = 'Data\\3. Transfer curves\\230316_newpg3t_doped5'
 dir_path1 = 'Data\\3. Transfer curves\\230414_ox_pg3t_SSE_ink'
 dir_path2 = 'Data\\3. Transfer curves\\230328_newpg3t_doped10'
@@ -10,6 +11,7 @@ dir_path3 = 'Data\\3. Transfer curves\\230412_pg3t_doped10_27.03'
 #dir_path2 = 'Data\\3. Transfer curves\\230411_pg3t_doped10_09.03'
 #dir_path2 = 'Data\\3. Transfer curves\\230411_pg3t_doped5_16.03'
 #dir_path1 = 'Data\\3. Transfer curves\\230316_newpg3t_doped5'
+
 
 ## Store files
 transfer1, out1 = read_directory_bioprobe(dir_path1)
@@ -66,4 +68,7 @@ X, Y = plot_transfer_curves(T1, transfer1, L1, Vds1)
 #print(plotX[0][0])
 #print(plotX[0][0][0])
 #print(plotX)
+"""
+dir_path = 'Data\\3. Transfer curves\\Thesis\\doping_effect_new_new10\\Vds3'
+plot_doping_comparison(dir_path)
 plt.show()
