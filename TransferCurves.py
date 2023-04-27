@@ -5,7 +5,7 @@ plt.rcParams.update({'font.size':22})
 
 """
 #dir_path1 = 'Data\\3. Transfer curves\\230316_newpg3t_doped5'
-dir_path1 = 'Data\\3. Transfer curves\\230306_pg3t_SL1+Nlof'
+dir_path1 = 'Data\\3. Transfer curves\\230414_ox_pg3t_SSE_ink'
 dir_path2 = 'Data\\3. Transfer curves\\230328_newpg3t_doped10'
 dir_path3 = 'Data\\3. Transfer curves\\230412_pg3t_doped10_27.03'
 #dir_path2 = 'Data\\3. Transfer curves\\230411_pg3t_doped10_09.03'
@@ -33,7 +33,7 @@ T3 = plot_titles(transfer3)
 #print(Vds1)
 ## Get plots
 #plot_transfer_linear(T1, transfer1, L1, Vds1)
-#X, Y = plot_transfer_curves(T1, transfer1, L1, Vds1)
+X, Y = plot_transfer_curves(T1, transfer1, L1, Vds1)
 #print(len(X[0]))
 #print(len(X))
 #print(dir_path1)
@@ -43,7 +43,7 @@ T3 = plot_titles(transfer3)
 #calculate_vth(T2, transfer2, L2, Vds2)
 
 #print(dir_path3)
-calculate_vth(T3, transfer3, L3, Vds3)
+#calculate_vth(T3, transfer3, L3, Vds3)
 
 #X_mean = calculate_mean(X)
 #Y_mean = calculate_mean(Y)
