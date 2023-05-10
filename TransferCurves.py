@@ -3,7 +3,7 @@ from functions import *
 from scipy.interpolate import make_interp_spline, BSpline
 plt.rcParams.update({'font.size':22})
 
-"""
+
 #dir_path1 = 'Data\\3. Transfer curves\\230316_newpg3t_doped5'
 dir_path1 = 'Data\\3. Transfer curves\\230414_ox_pg3t_SSE_ink'
 dir_path2 = 'Data\\3. Transfer curves\\230328_newpg3t_doped10'
@@ -28,22 +28,15 @@ T1 = plot_titles(transfer1)
 T2 = plot_titles(transfer2)
 T3 = plot_titles(transfer3)
 
-#print(len(transfer1))
-#print(len(Vds1))
-#print(Vds1)
+
 ## Get plots
 #plot_transfer_linear(T1, transfer1, L1, Vds1)
-X, Y = plot_transfer_curves(T1, transfer1, L1, Vds1)
+#X, Y = plot_second_transfer(T1, transfer1, L1, Vds1)
+
 #print(len(X[0]))
 #print(len(X))
 #print(dir_path1)
-#calculate_vth(T1, transfer1, L1, Vds1)
-
-#print(dir_path2)
-#calculate_vth(T2, transfer2, L2, Vds2)
-
-#print(dir_path3)
-#calculate_vth(T3, transfer3, L3, Vds3)
+calculate_vth_on_loop2(T1, transfer1, L1, Vds1)
 
 #X_mean = calculate_mean(X)
 #Y_mean = calculate_mean(Y)
@@ -56,19 +49,8 @@ X, Y = plot_transfer_curves(T1, transfer1, L1, Vds1)
 #plot_mean_transfer(X_mean, Y_mean, T1, transfer_mean, L_mean, Vds1_mean)
 
 #plot_transfer_comparison(T1, T2, transfer1, transfer2, L1, L2, Vds1, Vds2)
-#print(plotX)
-#M = len(T1)
-#N = len(transfer1)
-#O = len(transfer1[0])
-#plotX = [[[0 for k in range(O)] for j in range(N)] for i in range(M)]
-#print(len(plotX))
-#print(len(plotX[0]))
-#print(len(plotX[0][0]))
-#print(plotX[0])
-#print(plotX[0][0])
-#print(plotX[0][0][0])
-#print(plotX)
-"""
-dir_path = 'Data\\3. Transfer curves\\Thesis\\doping_effect_new_new10\\Vds3'
-plot_doping_comparison(dir_path)
+
+#dir_path = 'Data\\3. Transfer curves\\Thesis\\doping_effect_new_new10\\Vds3'
+#plot_doping_comparison(dir_path)
+
 plt.show()
