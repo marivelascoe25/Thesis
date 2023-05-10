@@ -307,7 +307,7 @@ def plot_transfer_comparison(T1, T2, transfer1, tranfer2, Vds1, Vds2):
         #plt.legend()
         plt.grid()
 
-def new_for_mean_values(original_list, loop):
+def mean_values(original_list, loop):
     new_list = []
 
     for i in range(2, len(original_list), loop):
@@ -347,7 +347,7 @@ def calculate_mean (X):
     #print("Averages")
     #print(device_averages)
 
-def calculate_vth(T, transfer, L, Vds):
+def calculate_vth_all_loops(T, transfer, L, Vds):
     
     for k in range(len(T)):
         plt.figure()
@@ -414,36 +414,103 @@ def calculate_vth(T, transfer, L, Vds):
         plt.legend()
         plt.grid()
 
-def plot_mean_transfer(X,Y,T,transfer,L,Vds):
-    num_devices = len(X)
-    num_sweeps = len(transfer)
-    
-    ## X[][], 1st corresponding title (U), 2nd corresponding # files with average from loops
-    for k in range(num_devices-1):
+def plot_second_transfer(T,transfer,L,Vds):
+    num_devices = len(T)
+    vds_sweep = len(transfer)
+    loop = 2
+    #N = len(transfer[0])
+
+    X_structure = [[0.0 for i in range (vds_sweep)] for k in range(num_devices)]
+    Y_structure = [[0.0 for i in range (vds_sweep)] for k in range(num_devices)]
+
+    ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
+    for k in range(num_devices):
         plt.figure()
         plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
         plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
-        Y[k] = [abs(ele) for ele in Y[k]]  
-
-        for i in range(num_sweeps-1): 
+        for i in range(vds_sweep):
             start = transfer[i].index('transfer')
-            if transfer[i][start-7:start-5] == T[k]: ## Join all data from one device
+            nloop = transfer[i].index('Loop1')
+            
+            if transfer[i][start-7:start-5] == T[k] and int(transfer[i][nloop+6]) == loop: ## Join all data from one device and second loop
                 plt.title(T[k])
                 plt.yscale('log')
-                ## Print plots 
-                print(Y[k][i])
-                plt.plot(X[k][i], Y[k][i], 'o-')#, color=u'#1f77b4')#, label=L[3*i]) 
-
-                """
+                ## Print plots
+                #Column 6 and 8 corresponds to Ids and Vgs
+                ids=6
+                vgs=9 ## 9 if loop is added
+                X, Y = extract_data(transfer[i],vgs,ids)
+                Y = np.absolute(Y)
+                X_structure[k][i] = X_structure[k][i] + np.array(X)
+                Y_structure[k][i] = Y_structure[k][i] + np.array(Y)    
                 #if label
                 if Vds[i] == Vds1:                                   
-                    plt.plot(X[k][i], Y[k][i], 'o-', color=u'#1f77b4')#, label=L[3*i]) 
-                elif Vds[3*i] == Vds2:
-                    plt.plot(X[k][i], Y[k][i], 'o-', color=u'#ff7f0e')#, label=L[3*i])
-                elif Vds[3*i] == Vds3:
-                    plt.plot(X[k][i], Y[k][i], 'o-', color=u'#2ca02c')#, label=L[3*i])
-                elif Vds[3*i] == Vds4:
-                    plt.plot(X[k][i], Y[k][i], 'o-', color=u'#d62728')#, label=L[3*i])
-                """    
-        #plt.legend() 
+                    plt.plot(X, Y, 'o-', color=u'#1f77b4', label=L[i]) 
+                elif Vds[i] == Vds2:
+                    plt.plot(X, Y, 'o-', color=u'#ff7f0e', label=L[i])
+                elif Vds[i] == Vds3:
+                    plt.plot(X, Y, 'o-', color=u'#2ca02c', label=L[i])
+                elif Vds[i] == Vds4:
+                    plt.plot(X, Y, 'o-', color=u'#d62728', label=L[i])
+                    
+        plt.legend()
+        plt.grid()
+    return X_structure, Y_structure
+
+def calculate_vth_on_loop2(T, transfer, L, Vds):
+    num_devices = len(T)
+    transfer_size = len(transfer)
+    loop = 2
+    #N = len(transfer[0])
+
+    X_structure = [[0.0 for i in range (transfer_size)] for k in range(num_devices)]
+    Y_structure = [[0.0 for i in range (transfer_size)] for k in range(num_devices)]
+
+    ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
+    for k in range(num_devices):
+        plt.figure()
+        plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
+        plt.ylabel(r"$\sqrt{I_{DS}} (A^{1/2})$",fontsize=26,fontweight='bold')
+
+        for i in range(transfer_size):
+            start = transfer[i].index('transfer')
+            nloop = transfer[i].index('Loop1')
+            
+            if transfer[i][start-7:start-5] == T[k] and int(transfer[i][nloop+6]) == loop: ## Join all data from one device and second loop
+                plt.title(T[k])
+                print(T[k])
+                plt.yscale('log')
+                ## Print plots
+                #Column 6 and 8 corresponds to Ids and Vgs
+                ids=6
+                vgs=9 ## 9 if loop is added
+                X, Y0 = extract_data(transfer[i],vgs,ids)
+                start_X = int(3.5*len(X)/24)#X.index(0.7*Vds[i])
+                end_X = int(6*len(X)/24)#X.index(0)
+                Y = np.array([math.sqrt(abs(x)) for x in Y0])
+                X = np.array(X)    
+                
+                slope, intercept, rvalue, pvalue, stderr = linregress(X[start_X:end_X], Y[start_X:end_X])
+                vth = - intercept / slope
+                
+                Y_fitted = intercept + slope*X[start_X:end_X]
+                
+                if Vds[i] == Vds1:                   
+                    plt.plot(X, Y, 'o-', color=u'#1f77b4', label=L[i])
+                    plt.plot(X[start_X:end_X],Y_fitted,color=u'#00a5e3', label="Linear Fit")    
+                    print("At " + L[i] + " Vth is " + str(vth))
+                elif Vds[i] == Vds2:
+                    plt.plot(X, Y, 'o-', color=u'#ff7f0e', label=L[i])
+                    plt.plot(X[start_X:end_X],Y_fitted, color=u'#8dd7bf', label="Linear Fit") 
+                    print("At " + L[i] + " Vth is " + str(vth))
+                elif Vds[i] == Vds3:
+                    plt.plot(X, Y, 'o-', color=u'#2ca02c', label=L[i])
+                    plt.plot(X[start_X:end_X],Y_fitted, color=u'#ff96c5', label="Linear Fit") 
+                    print("At " + L[i] + " Vth is " + str(vth))
+                elif Vds[i] == -0.1:
+                    plt.plot(X, Y, 'o-', color=u'#d62728', label=L[i])
+                    plt.plot(X[start_X:end_X],Y_fitted, color=u'#ffbf65', label="Linear Fit") 
+                    print("At " + L[i] + " Vth is " + str(vth))
+                #plt.quiver(X, np.absolute(Y), label = L[i])
+        plt.legend()
         plt.grid()
