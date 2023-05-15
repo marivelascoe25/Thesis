@@ -1,0 +1,2 @@
+Time elapsed	Time stamp	source_Bioprobe Voltage	source_Bioprobe Current	source_Bioprobe Resistance	trans_drain Voltage	trans_drain Current	trans_drain Resistance	Loop1 Index	trans_gate Voltage	trans_gate Current	trans_gate Resistance
+s		V	A	V/A	V	A	V/A		V	A	V/A
