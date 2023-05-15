@@ -347,7 +347,7 @@ def calculate_mean (X):
     #print("Averages")
     #print(device_averages)
 
-def calculate_vth_all_loops(T, transfer, L, Vds):
+def calculate_vth_all_loops(T, transfer, L, Vds, doping):
     
     for k in range(len(T)):
         plt.figure()
@@ -365,10 +365,17 @@ def calculate_vth_all_loops(T, transfer, L, Vds):
                 ids=6
                 vgs=9 ## 9 if loop is added
                 X, Y0 = extract_data(transfer[i],vgs,ids)
-                start_X = int(13*len(X)/40)#X.index(0.7*Vds[i])
-                end_X = int(16*len(X)/40)#X.index(0)
+
+                if doping:
+                    start_X = int(9*len(X)/40)#X.index(0.7*Vds[i])
+                    end_X = int(12*len(X)/40)#X.index(0)
+                else:
+                    start_X = int(29*len(X)/40)#X.index(0.7*Vds[i])
+                    end_X = int(31*len(X)/40)#X.index(0)
+
                 Y = np.array([math.sqrt(abs(x)) for x in Y0])
                 X = np.array(X)
+
                 """X_fit = np.array(X).reshape((-1,1))
                 Y_fit = np.array(Y)
                 model = LinearRegression().fit(X_fit,Y_fit)
@@ -388,30 +395,32 @@ def calculate_vth_all_loops(T, transfer, L, Vds):
                 # Find the indices of the data points in the linear region
                 #linear_indices = np.where(Y >= max_sqrt_id)[0]
                 
-
-                slope, intercept, rvalue, pvalue, stderr = linregress(X[start_X:end_X], Y[start_X:end_X])
-                vth = - intercept / slope
-                
-                Y_fitted = intercept + slope*X[start_X:end_X]
-                
-                if Vds[i] == Vds1:                   
-                    plt.plot(X, Y, 'o-', color=u'#1f77b4')#, label=L[i])
-                    plt.plot(X[start_X:end_X],Y_fitted,color=u'#00a5e3', label="Linear Fit")    
-                    print(vth)
-                elif Vds[i] == Vds2:
-                    plt.plot(X, Y, 'o-', color=u'#ff7f0e')
-                    plt.plot(X[start_X:end_X],Y_fitted, color=u'#8dd7bf', label="Linear Fit") 
-                    print(vth)
-                elif Vds[i] == Vds3:
-                    plt.plot(X, Y, 'o-', color=u'#2ca02c')
-                    plt.plot(X[start_X:end_X],Y_fitted, color=u'#ff96c5', label="Linear Fit") 
-                    print(vth)
-                elif Vds[i] == -0.1:
-                    plt.plot(X, Y, 'o-', color=u'#d62728')
-                    plt.plot(X[start_X:end_X],Y_fitted, color=u'#ffbf65', label="Linear Fit") 
-                    print(vth)
-                #plt.quiver(X, np.absolute(Y), label = L[i])
-        plt.legend()
+                try:
+                    slope, intercept, rvalue, pvalue, stderr = linregress(X[start_X:end_X], Y[start_X:end_X])
+                    vth = - intercept / slope
+                    
+                    Y_fitted = intercept + slope*X[start_X:end_X]
+                    
+                    if Vds[i] == Vds1:                   
+                        plt.plot(X, Y, 'o-', color=u'#1f77b4')#, label=L[i])
+                        plt.plot(X[start_X:end_X],Y_fitted,color=u'#00a5e3')#, label="Linear Fit")    
+                        print("At " + L[i] + " Vth is " + str(vth))
+                    elif Vds[i] == Vds2:
+                        plt.plot(X, Y, 'o-', color=u'#ff7f0e')
+                        plt.plot(X[start_X:end_X],Y_fitted, color=u'#8dd7bf')#, label="Linear Fit") 
+                        print("At " + L[i] + " Vth is " + str(vth))
+                    elif Vds[i] == Vds3:
+                        plt.plot(X, Y, 'o-', color=u'#2ca02c')
+                        plt.plot(X[start_X:end_X],Y_fitted, color=u'#ff96c5')#, label="Linear Fit") 
+                        print("At " + L[i] + " Vth is " + str(vth))
+                    elif Vds[i] == -0.1:
+                        plt.plot(X, Y, 'o-', color=u'#d62728')
+                        plt.plot(X[start_X:end_X],Y_fitted, color=u'#ffbf65')#, label="Linear Fit") 
+                        print("At " + L[i] + " Vth is " + str(vth))
+                    #plt.quiver(X, np.absolute(Y), label = L[i])
+                except:
+                    pass
+        #plt.legend()
         plt.grid()
 
 def plot_second_transfer(T,transfer,L,Vds):

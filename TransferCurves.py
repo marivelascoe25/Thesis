@@ -5,9 +5,9 @@ plt.rcParams.update({'font.size':22})
 
 
 #dir_path1 = 'Data\\3. Transfer curves\\230316_newpg3t_doped5'
-dir_path1 = 'Data\\3. Transfer curves\\230414_ox_pg3t_SSE_ink'
-dir_path2 = 'Data\\3. Transfer curves\\230328_newpg3t_doped10'
-dir_path3 = 'Data\\3. Transfer curves\\230412_pg3t_doped10_27.03'
+dir_path3 = 'Data\\3. Transfer curves\\230414_ox_pg3t_SSE_ink'
+dir_path2 = 'Data\\3. Transfer curves\\230412_pg3t_SSE_solid'
+dir_path1 = 'Data\\3. Transfer curves\\230413_ox_pg3t_SSE_photo'
 #dir_path2 = 'Data\\3. Transfer curves\\230411_pg3t_doped10_09.03'
 #dir_path2 = 'Data\\3. Transfer curves\\230411_pg3t_doped5_16.03'
 #dir_path1 = 'Data\\3. Transfer curves\\230316_newpg3t_doped5'
@@ -36,7 +36,13 @@ T3 = plot_titles(transfer3)
 #print(len(X[0]))
 #print(len(X))
 #print(dir_path1)
-calculate_vth_on_loop2(T1, transfer1, L1, Vds1)
+#calculate_vth_on_loop2(T1, transfer1, L1, Vds1)
+
+#Since hysteresis appears, if no hysteresis, use wichever
+#doping = True #For my measurements: From positive to negative 
+doping = False #For my measurements: From negative to positive
+
+calculate_vth_all_loops(T1, transfer1, L1, Vds1, doping)
 
 #X_mean = calculate_mean(X)
 #Y_mean = calculate_mean(Y)
