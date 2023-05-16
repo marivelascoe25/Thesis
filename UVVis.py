@@ -6,8 +6,8 @@ import scipy.constants as sc
 #from scipy.signal import argrelextrema
 plt.rcParams.update({'font.size':22})
 
-dir_path1 = 'Data\\2. UVVis\\23.03.20'
-dir_path2 = 'Data\\2. UVVis\\23.04.05'
+dir_path2 = 'Data\\2. UVVis\\23.03.20'
+dir_path1 = 'Data\\2. UVVis\\23.04.05'
 dir_path3 = 'Data\\2. UVVis\\23.02.23_old'
 
 title1 = "Doping p(g3T2-T)"#_23.03.20"
@@ -21,8 +21,8 @@ if N:
     y_axis = "Normalized Absorbance (a.u.)"
 else:
     y_axis = "Absorbance (%)"
-#plot_absorbance(dir_path1,title1,x_axis,y_axis)
-plot_multiple_abs([dir_path1,dir_path2],[title1,title2],x_axis,y_axis)
+plot_absorbance(dir_path1,title1,x_axis,y_axis)
+#plot_multiple_abs([dir_path1,dir_path2],[title1,title2],x_axis,y_axis)
 #plot_multiple_abs([dir_path1,dir_path2,dir_path3],[title1,title2,title3],x_axis,y_axis)
 
 #X, Y, L = plot_absorbance(dir_path1,title1,x_axis,y_axis, N) 
