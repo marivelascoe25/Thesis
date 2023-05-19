@@ -365,7 +365,7 @@ def calculate_vth_all_loops(T, transfer, L, Vds, doping):
                 ids=6
                 vgs=9 ## 9 if loop is added
                 X, Y0 = extract_data(transfer[i],vgs,ids)
-
+                print (transfer[i])
                 if doping:
                     start_X = int(9*len(X)/40)#X.index(0.7*Vds[i])
                     end_X = int(12*len(X)/40)#X.index(0)
@@ -449,6 +449,7 @@ def plot_second_transfer(T,transfer,L,Vds):
                 ids=6
                 vgs=9 ## 9 if loop is added
                 X, Y = extract_data(transfer[i],vgs,ids)
+                
                 Y = np.absolute(Y)
                 X_structure[k][i] = X_structure[k][i] + np.array(X)
                 Y_structure[k][i] = Y_structure[k][i] + np.array(Y)    
@@ -523,3 +524,25 @@ def calculate_vth_on_loop2(T, transfer, L, Vds):
                 #plt.quiver(X, np.absolute(Y), label = L[i])
         plt.legend()
         plt.grid()
+
+def stability(stability, title):
+
+    plt.figure()
+    plt.xlabel("Time (s)",fontsize=26,fontweight='bold')
+    plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+    
+    plt.title(title)
+    #plt.yscale('log')
+    ## Print plots
+    #Column 6 and 8 corresponds to Ids and Vgs
+    y_column = 3
+    x_column = 0 ## 9 if loop is added
+    X, Y = extract_data(stability,x_column,y_column)
+    print (stability)
+    #Y = np.absolute(Y)
+                                      
+    plt.plot(X, Y, 'o-')
+                
+    #plt.legend()
+    plt.grid()
+    
