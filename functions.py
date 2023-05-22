@@ -525,21 +525,23 @@ def calculate_vth_on_loop2(T, transfer, L, Vds):
         plt.legend()
         plt.grid()
 
-def stability(stability, title):
+def stability(stability, title, log=False):
 
     plt.figure()
     plt.xlabel("Time (s)",fontsize=26,fontweight='bold')
     plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
     
     plt.title(title)
-    #plt.yscale('log')
+    
     ## Print plots
     #Column 6 and 8 corresponds to Ids and Vgs
     y_column = 3
     x_column = 0 ## 9 if loop is added
     X, Y = extract_data(stability,x_column,y_column)
     print (stability)
-    #Y = np.absolute(Y)
+    if log:
+        plt.yscale('log')
+        Y = np.absolute(Y)
                                       
     plt.plot(X, Y, 'o-')
                 
