@@ -64,7 +64,7 @@ def plot_legends(transfer):
     L = []
     Vds = []
     for i in range(len(transfer)):
-        start = transfer[i].index('drain')
+        start = transfer[i].index('Drain')
         end = transfer[i].index('e-01')
         vds = float(transfer[i][start+6:end+4])
         label = str(vds)
@@ -528,6 +528,8 @@ def calculate_vth_on_loop2(T, transfer, L, Vds):
 def stability(stability, title, log=False):
 
     plt.figure()
+    mng = plt.get_current_fig_manager()
+    mng.resize(1700,700)
     plt.xlabel("Time (s)",fontsize=26,fontweight='bold')
     plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
     
@@ -538,7 +540,7 @@ def stability(stability, title, log=False):
     y_column = 3
     x_column = 0 ## 9 if loop is added
     X, Y = extract_data(stability,x_column,y_column)
-    print (stability)
+    #print (stability)
     if log:
         plt.yscale('log')
         Y = np.absolute(Y)
