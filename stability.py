@@ -46,5 +46,5 @@ stability(dir_path2, title2)#, log=False)
 stability(dir_path3, title3)#, log=False)
 stability(dir_path4, title4)#, log=False)
 stability(dir_path5, title5)#, log=False)
-
+ 
 plt.show()
