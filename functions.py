@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 import os
 import math
 #from sklearn.linear_model import LinearRegression
@@ -11,6 +12,13 @@ Vds3 = -0.3
 Vds4 = -0.1
 loops = 3
 n_vds = 4
+
+def extract_csv_data (dir, columns):
+    X, Y = [], []
+    data = pd.read_csv(dir, uselcols = columns)
+    X = data.
+    return X,Y
+
 
 def extract_data(dir,x,y):
     X, Y = [], []
