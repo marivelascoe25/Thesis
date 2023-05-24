@@ -525,7 +525,7 @@ def calculate_vth_on_loop2(T, transfer, L, Vds):
         plt.legend()
         plt.grid()
 
-def stability(stability, title, log=False):
+def stability(stability, title, log=True):
 
     plt.figure()
     mng = plt.get_current_fig_manager()

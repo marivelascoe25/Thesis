@@ -8,10 +8,10 @@ plt.rcParams.update({'font.size':22})
 dir_path3 = 'Data\\3. Transfer curves\\230414_ox_pg3t_SSE_ink'
 dir_path2 = 'Data\\3. Transfer curves\\230412_pg3t_SSE_solid'
 #dir_path1 = 'Data\\3. Transfer curves\\230413_ox_pg3t_SSE_photo'
-dir_path1 = 'Data\\3. Transfer curves\\230519_pg3t_after_stability'
+#dir_path1 = 'Data\\3. Transfer curves\\230519_pg3t_after_stability'
 #dir_path2 = 'Data\\3. Transfer curves\\230411_pg3t_doped10_09.03'
 #dir_path2 = 'Data\\3. Transfer curves\\230411_pg3t_doped5_16.03'
-#dir_path1 = 'Data\\3. Transfer curves\\230316_newpg3t_doped5'
+dir_path1 = 'Data\\3. Transfer curves\\230519_pg3t+SSE_afterIV+bio'
 
 
 ## Store files
@@ -31,6 +31,7 @@ T1 = plot_titles(transfer1)
 
 
 ## Get plots
+X, Y = plot_transfer_curves(T1, transfer1, L1, Vds1)
 #plot_transfer_linear(T1, transfer1, L1, Vds1)
 #X, Y = plot_second_transfer(T1, transfer1, L1, Vds1)
 
@@ -41,9 +42,9 @@ T1 = plot_titles(transfer1)
 
 #Since hysteresis appears, if no hysteresis, use wichever
 #doping = True #For my measurements: From positive to negative 
-doping = False #For my measurements: From negative to positive
+#doping = False #For my measurements: From negative to positive
 
-calculate_vth_all_loops(T1, transfer1, L1, Vds1, doping)
+#calculate_vth_all_loops(T1, transfer1, L1, Vds1, doping)
 
 #X_mean = calculate_mean(X)
 #Y_mean = calculate_mean(Y)
