@@ -5,20 +5,27 @@ import os
 import math
 #from sklearn.linear_model import LinearRegression
 from scipy.stats import linregress
+import csv
+import seaborn as sns  
 
 Vds1 = -0.7
 Vds2 = -0.5
 Vds3 = -0.3
 Vds4 = -0.1
-loops = 3
-n_vds = 4
 
-def extract_csv_data (dir, columns):
-    X, Y = [], []
-    data = pd.read_csv(dir, uselcols = columns)
-    X = data.
-    return X,Y
-
+def extract_csv_column_data(file_path, column_index):
+    with open(file_path, 'r') as file:
+        reader = csv.reader(file, delimiter=';')
+        column_data = []
+        for row in reader:
+            if len(row) > column_index:
+                cell_value = row[column_index].replace(',', '.')  # Replacing commas with periods for decimals
+                try:
+                    column_data.append(float(cell_value))
+                except:
+                    pass
+                    
+    return column_data
 
 def extract_data(dir,x,y):
     X, Y = [], []
@@ -27,6 +34,38 @@ def extract_data(dir,x,y):
         try:
             X.append(float(sline[x]))
             Y.append(float(sline[y]))
+        except:
+            pass
+    return X,Y
+
+def extract_data_loop2(dir,x,y,n_loop):
+    X, Y = [], []
+    loop_case = 2
+    for line in open(dir, 'r'):
+        sline = line.split('\t')
+        try:  
+            if int(sline[n_loop]) == loop_case:  
+                try:
+                    X.append(float(sline[x]))
+                    Y.append(float(sline[y]))
+                except:
+                    pass
+        except:
+            pass
+    return X,Y
+
+def extract_data_loops(dir,x,y,n_loop):
+    X, Y = [], []
+    loop_case = 1
+    for line in open(dir, 'r'):
+        sline = line.split('\t')
+        try:  
+            if int(sline[n_loop]) != loop_case:  
+                try:
+                    X.append(float(sline[x]))
+                    Y.append(float(sline[y]))
+                except:
+                    pass
         except:
             pass
     return X,Y
@@ -67,12 +106,69 @@ def read_directory_bioprobe(dir_path):
                 out.append(dir_path + '\\' + path)
     return transfer, out
 
+def plot_CV (dir_path, WE, Ref):
+
+    Potential = extract_csv_column_data(dir_path, 0)
+    Current = extract_csv_column_data(dir_path, 2)
+    #Current = 100000*Current
+
+    plt.figure(figsize=(10, 7.5))
+    plt.xlabel("Potential (V vs " + Ref + ")",fontsize=26,fontweight='bold')
+    plt.ylabel("Current @ " + WE + " (A)",fontsize=26,fontweight='bold')                                     
+    plt.plot(Potential, Current, 'o-')#, color=u'#1f77b4')
+    #plt.legend()
+    plt.grid()
+
+def impedance_spec(dir_path):
+
+    Freq = extract_csv_column_data(dir_path, 1)
+    Z = extract_csv_column_data(dir_path, 4)
+    Phase = extract_csv_column_data(dir_path, 5)
+    Z_img = extract_csv_column_data(dir_path, 3) ##complex impedance
+    
+    #Volumetric capacitance calculation
+    C_aux = 2*math.pi*np.array(Freq)*np.array(Z_img)
+    C = 1/C_aux
+
+    #Plots:
+    #Impedance and phase
+    fig, ax1 = plt.subplots(figsize=(10, 7.5))
+    ax2 = ax1.twinx()
+
+    ax1.plot(Freq, Z, 'bo-')
+    ax2.plot(Freq, Phase, 'go-')
+    ax1.set_yscale('log')
+    ax2.set_xscale('log')
+
+    ax1.set_xlabel("Frequency (Hz)",fontsize=26,fontweight='bold')
+    ax1.set_ylabel("|Z| (\u03A9)",fontsize=26,fontweight='bold')
+    ax1.yaxis.label.set_color('blue')
+    ax1.tick_params(axis='y', colors='b')
+   
+    ax2.set_ylabel("-Phase (°)",fontsize=26,fontweight='bold')
+    ax2.yaxis.label.set_color('green')
+    ax2.tick_params(axis='y', colors='g')
+
+    #fig.suptitle("Temperature down, price up", fontsize=20)
+    #fig.autofmt_xdate()
+    ax1.grid(color='b', linestyle='--')
+    ax2.grid(color='r', linestyle='--')
+
+    #Capacitance
+    plt.figure(figsize=(10, 7.5))
+    plt.ylabel("Capacitance (C)",fontsize=26,fontweight='bold')
+    plt.xlabel("Frequency (Hz)",fontsize=26,fontweight='bold')
+    plt.xscale('log')                                     
+    plt.plot(Freq, C, 'o-')#, color=u'#1f77b4')
+    #plt.legend()
+    plt.grid()
+
 def plot_legends(transfer):
     ## Get plot legends
     L = []
     Vds = []
     for i in range(len(transfer)):
-        start = transfer[i].index('Drain')
+        start = transfer[i].index('drain')
         end = transfer[i].index('e-01')
         vds = float(transfer[i][start+6:end+4])
         label = str(vds)
@@ -112,7 +208,7 @@ def plot_absorbance(dir_path,title,x_axis,y_axis,N=False):
     max_aux = []
     max = []
 
-    plt.figure()
+    plt.figure(figsize=(10, 7.5))
     plt.title(title,fontsize=28,fontweight='bold')
     plt.xlabel(x_axis,fontsize=25,fontweight='bold')
     plt.ylabel(y_axis,fontsize=25,fontweight='bold')
@@ -167,51 +263,51 @@ def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
         axs[k].legend()
         axs[k].grid()
 
-def plot_transfer_curves(T, transfer, L, Vds):
-    L = len(T)
-    M = len(transfer)
-    N = len(transfer[0])
-    X_structure = [[0.0 for i in range (M-1)] for k in range(L-1)]
-    Y_structure = [[0.0 for i in range (M-1)] for k in range(L-1)]
+def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 1):
+    num_devices = len(T)
+    num_files = len(transfer) # for each vds x loops
+   
+    X_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    Y_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
 
     ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
-    for k in range(L-2):
-        plt.figure()
+    for k in range(num_devices):
+        plt.figure(figsize=(11, 7.5))
         plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
         plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
-        for i in range(M-1):
+        for i in range(num_files):
             start = transfer[i].index('transfer')
-            if transfer[i][start-7:start-5] == T[k]: ## Join all data from one device
-            #if transfer[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
+            if transfer[i][start-7:start-5] == T[k]: ## Join all data from one device (U# or D#)
                 plt.title(T[k])
                 plt.yscale('log')
                 ## Print plots
-                #Column 6 and 8 corresponds to Ids and Vgs
-                ids=6
-                vgs=9 ## 9 if loop is added
-                X, Y = extract_data(transfer[i],vgs,ids)
+                if loop_case == 1:
+                    X, Y = extract_data_loop2(transfer[i],n_vgs,n_ids,n_loop)
+                elif loop_case == 2:
+                    X, Y = extract_data_loops(transfer[i],n_vgs,n_ids,n_loop)
+                else: 
+                    X, Y = extract_data(transfer[i],n_vgs,n_ids)
                 Y = np.absolute(Y)
                 X_structure[k][i] = X_structure[k][i] + np.array(X)
                 Y_structure[k][i] = Y_structure[k][i] + np.array(Y)    
                 #if label
                 if Vds[i] == Vds1:                                   
-                    plt.plot(X, Y, 'o-', color=u'#1f77b4')#, label=L[i]) 
+                    plt.plot(X, Y, 'o-', color=u'#1f77b4', label=L[i]) 
                 elif Vds[i] == Vds2:
-                    plt.plot(X, Y, 'o-', color=u'#ff7f0e')#, label=L[i])
+                    plt.plot(X, Y, 'o-', color=u'#ff7f0e', label=L[i])
                 elif Vds[i] == Vds3:
-                    plt.plot(X, Y, 'o-', color=u'#2ca02c')#, label=L[i])
+                    plt.plot(X, Y, 'o-', color=u'#2ca02c', label=L[i])
                 elif Vds[i] == Vds4:
-                    plt.plot(X, Y, 'o-', color=u'#d62728')#, label=L[i])
+                    plt.plot(X, Y, 'o-', color=u'#d62728', label=L[i])
                     
-        #plt.legend()
-        
+        plt.legend()
         plt.grid()
     return X_structure, Y_structure
 
-def plot_transfer_linear(T, transfer, L, Vds):
+def plot_transfer_linear(T, transfer, L, Vds, n_ids, n_vgs):
 
     for k in range(len(T)):
-        plt.figure()
+        plt.figure(figsize=(10, 7.5))
         plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
         plt.ylabel("Drain Current (mA)",fontsize=26,fontweight='bold')
 
@@ -222,10 +318,7 @@ def plot_transfer_linear(T, transfer, L, Vds):
                 plt.title(T[k])
                 #plt.yscale('log')
                 ## Print plots
-                #Column 6 and 8 corresponds to Ids and Vgs
-                ids=6
-                vgs=9 ## 9 if loop is added
-                X, Y0 = extract_data(transfer[i],vgs,ids)
+                X, Y0 = extract_data(transfer[i], n_ids, n_vgs)
                 Y = [x * 1000 for x in Y0]
                 if Vds[i] == Vds1:                   
                     plt.plot(X, Y, 'o-', color=u'#1f77b4', label=L[i])
@@ -239,81 +332,38 @@ def plot_transfer_linear(T, transfer, L, Vds):
         #plt.legend()
         plt.grid()
 
-def plot_doping_comparison(dir_path):
-    ## Store files
-    transfer, out = read_directory_bioprobe(dir_path)
-
-    ## Get plot legends
-    L = []
-    for i in range(len(transfer)):
-        start = transfer[i].index('drain')
-        end = transfer[i].index('e-01')
-        label = transfer[i][start+6:end] ##just for doping_effect folder
-        L.append(label) ##just for doping_effect folder
-
-
-    ## Get plot title
-    T = []
-    for i in range(len(transfer)):
-        start = transfer[i].index('transfer')
-        T.append(transfer[i][start-13:start-5]) ## Just used when for doping effect
-    #T=list(dict.fromkeys(T))
-    T=list(dict.fromkeys(T))
-
-
-    for k in range(len(T)):
-        plt.figure()
-        plt.xlabel("Gate Voltage (V)")
-        plt.ylabel("Drain Current (A)")
-
-        for i in range(len(transfer)):
-            start = transfer[i].index('transfer')
-            if transfer[i][start-13:start-5] == T[k]: ## Just used when for doping_effect             
-                plt.title(T[k])
-                plt.yscale('log')
-                ## Print plots
-                #Column 6 and 8 corresponds to Ids and Vgs
-                ids=6
-                igs=10
-                vgs=9 ## 9 if loop is added
-                X1, Y1 = extract_data(transfer[i],vgs,ids)
-                plt.plot(X1, np.absolute(Y1), label = L[i])
-                #X2, Y2 = extract_data(transfer[i],vgs,igs)
-                #plt.plot(X2, np.absolute(Y2),"--",linewidth=1, label = L[i])
-                #plt.quiver(X, np.absolute(Y), label = L[i])
-        plt.legend()
-        plt.grid()
-
-def plot_transfer_comparison(T1, T2, transfer1, tranfer2, Vds1, Vds2):
+def plot_doping_comparison(title, legends, transfer):
     
-    for k in range(len(T1)):
-        plt.figure()
-        plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
-        plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+    num_files = len(transfer) # for each doping file
+   
+    #for k in range(num_devices):
+    plt.figure(figsize=(10, 7.5))
+    plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
+    plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+    plt.title(title,fontweight='bold')
+    plt.yscale('log')
+    for i in range(num_files):
+        ## Print plots
+        #Column 6 and 8 corresponds to Ids and Vgs
+        ids=6
+        vgs=9 ## 9 if loop is added
+        X, Y = extract_data(transfer[i],vgs,ids)
+        Y = np.absolute(Y)
+        #X_structure[k][i] = X_structure[k][i] + np.array(X)
+        #Y_structure[k][i] = Y_structure[k][i] + np.array(Y)    
+        #if label
+        #if Vds[i] == Vds1:                                   
+        plt.plot(X, Y, 'o-', label=legends[i]) 
+        #elif Vds[i] == Vds2:
+        #    plt.plot(X, Y, 'o-', color=u'#ff7f0e')#, label=L[i])
+        #elif Vds[i] == Vds3:
+        #    plt.plot(X, Y, 'o-', color=u'#2ca02c')#, label=L[i])
+        #elif Vds[i] == Vds4:
+        #    plt.plot(X, Y, 'o-', color=u'#d62728')#, label=L[i])
+    plt.legend()
+    plt.grid()
 
-        for i in range(len(transfer1)):
-            start = transfer1[i].index('transfer')
-            if transfer1[i][start-7:start-5] == T1[k]: ## including all al files of same title (i.e. U1) in a plot
-            #if transfer[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
-                plt.title(T1[k])
-                plt.yscale('log')
-                ## Print plots
-                #Column 6 and 8 corresponds to Ids and Vgs
-                ids=6
-                vgs=9 ## 9 if loop is added
-                X, Y = extract_data(transfer1[i],vgs,ids)
-                #if label
-                if Vds1[i] == Vds1:                   
-                    plt.plot(X, np.absolute(Y), 'o-', color=u'#1f77b4')
-                elif Vds1[i] == Vds2:
-                    plt.plot(X, np.absolute(Y), 'o-', color=u'#ff7f0e')
-                elif Vds1[i] == Vds3:
-                    plt.plot(X, np.absolute(Y), 'o-', color=u'#2ca02c')
-                else: # Vds[i] == -0.1:
-                    plt.plot(X, np.absolute(Y), 'o-', color=u'#d62728')
-                #plt.quiver(X, np.absolute(Y), label = L[i])
-        #plt.legend()
-        plt.grid()
+    #return X_structure, Y_structure
 
 def mean_values(original_list, loop):
     new_list = []
@@ -358,7 +408,7 @@ def calculate_mean (X):
 def calculate_vth_all_loops(T, transfer, L, Vds, doping):
     
     for k in range(len(T)):
-        plt.figure()
+        plt.figure(figsize=(10, 7.5))
         plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
         plt.ylabel(r"$\sqrt{I_{DS}} (A^{1/2})$",fontsize=26,fontweight='bold')
         print(T[k])
@@ -442,7 +492,7 @@ def plot_second_transfer(T,transfer,L,Vds):
 
     ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
     for k in range(num_devices):
-        plt.figure()
+        plt.figure(figsize=(10, 7.5))
         plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
         plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
         for i in range(vds_sweep):
@@ -477,20 +527,20 @@ def plot_second_transfer(T,transfer,L,Vds):
 
 def calculate_vth_on_loop2(T, transfer, L, Vds):
     num_devices = len(T)
-    transfer_size = len(transfer)
+    num_files = len(transfer)
     loop = 2
     #N = len(transfer[0])
 
-    X_structure = [[0.0 for i in range (transfer_size)] for k in range(num_devices)]
-    Y_structure = [[0.0 for i in range (transfer_size)] for k in range(num_devices)]
+    X_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    Y_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
 
     ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
     for k in range(num_devices):
-        plt.figure()
+        plt.figure(figsize=(10, 7.5))
         plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
         plt.ylabel(r"$\sqrt{I_{DS}} (A^{1/2})$",fontsize=26,fontweight='bold')
 
-        for i in range(transfer_size):
+        for i in range(num_files):
             start = transfer[i].index('transfer')
             nloop = transfer[i].index('Loop1')
             
@@ -535,7 +585,7 @@ def calculate_vth_on_loop2(T, transfer, L, Vds):
 
 def stability(stability, title, log=True):
 
-    plt.figure()
+    plt.figure(figsize=(10, 7.5))
     mng = plt.get_current_fig_manager()
     mng.resize(1700,700)
     plt.xlabel("Time (s)",fontsize=26,fontweight='bold')
