@@ -108,15 +108,35 @@ def read_directory_bioprobe(dir_path):
 
 def plot_CV (dir_path, WE, Ref):
 
-    Potential = extract_csv_column_data(dir_path, 0)
-    Current = extract_csv_column_data(dir_path, 2)
-    #Current = 100000*Current
+    V_All = extract_csv_column_data(dir_path, 0)
+    I_All = extract_csv_column_data(dir_path, 2)
+    Scan_number = extract_csv_column_data(dir_path, 4)
+
+    total_scan = int(Scan_number[-1])
+    matrix_length = int(len(V_All)/total_scan)
+    #print(matrix_length)
+
+    Potential = [[0.0 for i in range (matrix_length)] for k in range(total_scan-1)]
+    Current = [[0.0 for i in range (matrix_length)] for k in range(total_scan-1)]
+
+    #Potential = [0.0 for k in range(total_scan-1)]
+    #Current = [0.0 for k in range(total_scan-1)]
+
+    for j in range (len(Scan_number)):
+        if Scan_number[j] != 1:
+            index = int(Scan_number[j])
+            Potential[index-2].append(V_All[j])
+            Current[index-2].append(I_All[j])
+
+    #print (Potential)
+    #print (Current)
 
     plt.figure(figsize=(10, 7.5))
-    plt.xlabel("Potential (V vs " + Ref + ")",fontsize=26,fontweight='bold')
-    plt.ylabel("Current @ " + WE + " (A)",fontsize=26,fontweight='bold')                                     
-    plt.plot(Potential, Current, 'o-')#, color=u'#1f77b4')
-    #plt.legend()
+    plt.xlabel("Potential (V vs " + Ref + ")",fontsize=20,fontweight='bold')
+    plt.ylabel("Current @ " + WE + " (A)",fontsize=20,fontweight='bold')
+    for i in range (total_scan-1):
+        plt.plot(Potential[i], Current[i], '-', label = "Scan" + str(i+2))
+    plt.legend()
     plt.grid()
 
 def impedance_spec(dir_path):
