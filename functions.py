@@ -119,17 +119,11 @@ def plot_CV (dir_path, WE, Ref):
     Potential = [[0.0 for i in range (matrix_length)] for k in range(total_scan-1)]
     Current = [[0.0 for i in range (matrix_length)] for k in range(total_scan-1)]
 
-    #Potential = [0.0 for k in range(total_scan-1)]
-    #Current = [0.0 for k in range(total_scan-1)]
-
     for j in range (len(Scan_number)):
         if Scan_number[j] != 1:
             index = int(Scan_number[j])
             Potential[index-2].append(V_All[j])
             Current[index-2].append(I_All[j])
-
-    #print (Potential)
-    #print (Current)
 
     plt.figure(figsize=(10, 7.5))
     plt.xlabel("Potential (V vs " + Ref + ")",fontsize=20,fontweight='bold')
