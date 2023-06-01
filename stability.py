@@ -39,20 +39,22 @@ plt.rcParams.update({'font.size':20})
 
 ## Solid devices
 
-dir_path1 = 'Data\\4. Stability\\230530_pg3t_printedSSE\\D5_m01_ID2-1.txt'
-dir_path2 = 'Data\\4. Stability\\230531_pg3t+printedSSE_gatededoping\\D5_m01_Dedoping3-1.txt'
-dir_path3 = 'Data\\4. Stability\\230531_pg3t+printedSSE_gatededoping\\D5_m02_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\230530_pg3t_printedSSE\\D5_m01_ID2-1.txt'
+#dir_path2 = 'Data\\4. Stability\\230531_pg3t+printedSSE_gatededoping\\D5_m01_Dedoping3-1.txt'
+#dir_path3 = 'Data\\4. Stability\\230531_pg3t+printedSSE_gatededoping\\D5_m02_Dedoping3-1.txt'
+dir_path1 = 'Data\\4. Stability\\230601_pg3t+printedSSE_gatededoping\\D6_m01_Dedoping3-1.txt'
 
 ## IL device
-dir_path4 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U2_m01_Dedoping3-1.txt'
-dir_path5 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U7_m01_Dedoping3-1.txt'
+#dir_path4 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U2_m01_Dedoping3-1.txt'
+#dir_path5 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U7_m01_Dedoping3-1.txt'
+dir_path2 = 'Data\\4. Stability\\230601_new_pg3t+dropSSE_gatededoping\\U3_m01_Dedoping3-1.txt'
 
-title1 = "Solid Device (D5), non gate-biased"#_23.03.20"
-title2 = "Solid Device (D5), +1V gate-biased"
-title3 = "Solid Device (D5), +1V gate-biased part 2"
+#title1 = "Solid Device (D5), non gate-biased"#_23.03.20"
+title1 = "Solid Device (D6), +1V gate-biased"
+#title3 = "Solid Device (D5), +1V gate-biased part 2"
 
-title4 = "Liquid Electrolyte (U2), +1V gate-biased"
-title5 = "Liquid Electrolyte (U7), +1V gate-biased"
+title2 = "Liquid Electrolyte (U3), +1V gate-biased"
+#title5 = "Liquid Electrolyte (U7), +1V gate-biased"
 
 ## Store files
 #transfer1, stab1 = read_directory_bioprobe(dir_path1)
@@ -60,8 +62,8 @@ title5 = "Liquid Electrolyte (U7), +1V gate-biased"
 
 stability(dir_path1, title1)#, log=False)
 stability(dir_path2, title2)#, log=False)
-stability(dir_path3, title3)#, log=False)
-stability(dir_path4, title4)#, log=False)
-stability(dir_path5, title5)#, log=False)
+#stability(dir_path3, title3)#, log=False)
+#stability(dir_path4, title4)#, log=False)
+#stability(dir_path5, title5)#, log=False)
  
 plt.show()

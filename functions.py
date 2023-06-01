@@ -1,13 +1,11 @@
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
-import pandas as pd
 import os
 import math
 #from sklearn.linear_model import LinearRegression
 from scipy.stats import linregress
 import csv
-import seaborn as sns  
 
 Vds1 = -0.7
 Vds2 = -0.5
@@ -193,7 +191,7 @@ def plot_legends(transfer):
     Vds = []
     for i in range(len(transfer)):
         start = transfer[i].index('drain')
-        end = transfer[i].index('e-01')
+        end = transfer[i].index('e-0')
         vds = float(transfer[i][start+6:end+4])
         label = str(vds)
         Vds.append(vds)
@@ -302,6 +300,7 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 
         for i in range(num_files):
             start = transfer[i].index('transfer')
             if transfer[i][start-7:start-5] == T[k]: ## Join all data from one device (U# or D#)
+                
                 plt.title(T[k])
                 plt.yscale('log')
                 ## Print plots
@@ -321,8 +320,10 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 
                     plt.plot(X, Y, 'o-', color=u'#ff7f0e', label=L[i])
                 elif Vds[i] == Vds3:
                     plt.plot(X, Y, 'o-', color=u'#2ca02c', label=L[i])
-                elif Vds[i] == Vds4:
-                    plt.plot(X, Y, 'o-', color=u'#d62728', label=L[i])
+                #elif Vds[i] == Vds4:
+                #    plt.plot(X, Y, 'o-', color=u'#d62728', label=L[i])
+                else:
+                    plt.plot(X, Y, 'o-', label=L[i])
                     
         plt.legend()
         plt.grid()
