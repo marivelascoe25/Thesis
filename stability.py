@@ -25,17 +25,34 @@ plt.rcParams.update({'font.size':20})
 #title4 = "Patterned p(g3T2-T) + SSE in air"
 
 # UNPATTERN AND DEVICE U1,U2 in second sample
-dir_path1 = 'Data\\4. Stability\\230516_pg3t_unpatterned_IV\\D6_pg3t_unpatterned_2_ID2-1.txt'
-dir_path2 = 'Data\\4. Stability\\230516_pg3t_unpatterned_bioprobe\\D6_stability_stability1-1.txt'
-dir_path3 = 'Data\\4. Stability\\230523_new_pg3t+SSE\\U01_m01_ID2-1.txt'
-dir_path4 = 'Data\\4. Stability\\230523_new_pg3t+SSE\\U02_m01_ID2-1.txt'
-dir_path5 = 'Data\\4. Stability\\230523_new_pg3t+SSE+Ag\\U01_m02_ID2-1.txt'
+#dir_path1 = 'Data\\4. Stability\\230516_pg3t_unpatterned_IV\\D6_pg3t_unpatterned_2_ID2-1.txt'
+#dir_path2 = 'Data\\4. Stability\\230516_pg3t_unpatterned_bioprobe\\D6_stability_stability1-1.txt'
+#dir_path3 = 'Data\\4. Stability\\230523_new_pg3t+SSE\\U01_m01_ID2-1.txt'
+#dir_path4 = 'Data\\4. Stability\\230523_new_pg3t+SSE\\U02_m01_ID2-1.txt'
+#dir_path5 = 'Data\\4. Stability\\230523_new_pg3t+SSE+Ag\\U01_m02_ID2-1.txt'
 
-title1 = "Unpatterned p(g3T2-T) in GB"#_23.03.20"
-title2 = "Unpatterned p(g3T2-T) in air after GB"
-title3 = "Patterned p(g3T2-T) + SSE in GB (U1)"
-title4 = "Patterned p(g3T2-T) + SSE in GB, device U2 next to the previous"
-title5 = "Patterned p(g3T2-T) + SSE + Ag/AgCl gate non biased"
+#title1 = "Unpatterned p(g3T2-T) in GB"#_23.03.20"
+#title2 = "Unpatterned p(g3T2-T) in air after GB"
+#title3 = "Patterned p(g3T2-T) + SSE in GB (U1)"
+#title4 = "Patterned p(g3T2-T) + SSE in GB, device U2 next to the previous"
+#title5 = "Patterned p(g3T2-T) + SSE + Ag/AgCl gate non biased"
+
+## Solid devices
+
+dir_path1 = 'Data\\4. Stability\\230530_pg3t_printedSSE\\D5_m01_ID2-1.txt'
+dir_path2 = 'Data\\4. Stability\\230531_pg3t+printedSSE_gatededoping\\D5_m01_Dedoping3-1.txt'
+dir_path3 = 'Data\\4. Stability\\230531_pg3t+printedSSE_gatededoping\\D5_m02_Dedoping3-1.txt'
+
+## IL device
+dir_path4 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U2_m01_Dedoping3-1.txt'
+dir_path5 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U7_m01_Dedoping3-1.txt'
+
+title1 = "Solid Device (D5), non gate-biased"#_23.03.20"
+title2 = "Solid Device (D5), +1V gate-biased"
+title3 = "Solid Device (D5), +1V gate-biased part 2"
+
+title4 = "Liquid Electrolyte (U2), +1V gate-biased"
+title5 = "Liquid Electrolyte (U7), +1V gate-biased"
 
 ## Store files
 #transfer1, stab1 = read_directory_bioprobe(dir_path1)

@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 import numpy as np
 import pandas as pd
 import os
@@ -106,6 +107,12 @@ def read_directory_bioprobe(dir_path):
                 out.append(dir_path + '\\' + path)
     return transfer, out
 
+def colorFader(c1,c2,mix=0): #fade (linear interpolate) from color c1 (at mix=0) to c2 (mix=1)
+    c1=np.array(mpl.colors.to_rgb(c1))
+    c2=np.array(mpl.colors.to_rgb(c2))
+
+    return mpl.colors.to_hex((1-mix)*c1 + mix*c2)
+
 def plot_CV (dir_path, WE, Ref):
 
     V_All = extract_csv_column_data(dir_path, 0)
@@ -125,11 +132,14 @@ def plot_CV (dir_path, WE, Ref):
             Potential[index-2].append(V_All[j])
             Current[index-2].append(I_All[j])
 
+    c1 = 'red'
+    c2 = 'blue'
+
     plt.figure(figsize=(10, 7.5))
     plt.xlabel("Potential (V vs " + Ref + ")",fontsize=20,fontweight='bold')
     plt.ylabel("Current @ " + WE + " (A)",fontsize=20,fontweight='bold')
     for i in range (total_scan-1):
-        plt.plot(Potential[i], Current[i], '-', label = "Scan" + str(i+2))
+        plt.plot(Potential[i], Current[i], '-', color = colorFader(c1,c2,i/(total_scan-1)), label = "Scan" + str(i+2))
     plt.legend()
     plt.grid()
 
