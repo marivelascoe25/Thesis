@@ -42,18 +42,22 @@ plt.rcParams.update({'font.size':20})
 #dir_path1 = 'Data\\4. Stability\\230530_pg3t_printedSSE\\D5_m01_ID2-1.txt'
 #dir_path2 = 'Data\\4. Stability\\230531_pg3t+printedSSE_gatededoping\\D5_m01_Dedoping3-1.txt'
 #dir_path3 = 'Data\\4. Stability\\230531_pg3t+printedSSE_gatededoping\\D5_m02_Dedoping3-1.txt'
-dir_path1 = 'Data\\4. Stability\\230601_pg3t+printedSSE_gatededoping\\D6_m01_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\230601_pg3t+printedSSE_gatededoping\\D6_m01_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_dedopingaftertransfer\\U7_m01_Dedoping3-1.txt'
+dir_path1 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_aftergatededopingsolid_aftertransfer\\U7_m01_Dedoping3-1.txt'
 
 ## IL device
 #dir_path4 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U2_m01_Dedoping3-1.txt'
 #dir_path5 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U7_m01_Dedoping3-1.txt'
-dir_path2 = 'Data\\4. Stability\\230601_new_pg3t+dropSSE_gatededoping\\U3_m01_Dedoping3-1.txt'
+#dir_path2 = 'Data\\4. Stability\\230601_new_pg3t+dropSSE_gatededoping\\U3_m01_Dedoping3-1.txt'
+#dir_path2 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_dedopingaftertransfer\\D5_m01_Dedoping3-1.txt'
+dir_path2 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_aftergatededopingsolid_aftertransfer\\D5_m01_Dedoping3-1.txt'
 
 #title1 = "Solid Device (D5), non gate-biased"#_23.03.20"
-title1 = "Solid Device (D6), +1V gate-biased"
-#title3 = "Solid Device (D5), +1V gate-biased part 2"
+title1 = "Solid Device (U7), +1V gate-biased"
+title2 = "Solid Device (D5), +1V gate-biased"
 
-title2 = "Liquid Electrolyte (U3), +1V gate-biased"
+#title2 = "Liquid Electrolyte (U3), +1V gate-biased"
 #title5 = "Liquid Electrolyte (U7), +1V gate-biased"
 
 ## Store files
