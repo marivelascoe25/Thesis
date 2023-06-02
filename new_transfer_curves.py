@@ -12,7 +12,9 @@ plt.rcParams.update({'font.size':22})
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230531_pg3t+printedSSE_IV'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230601_pg3t+printedSSE_aftergatededoping'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230601_new_pg3t+dropSSE_aftergatededoping'
-dir_path = 'Data\\3. Transfer curves\\1. IV\\230601_new_pg3t+dropSSE_aftergatededoping_after60sexposure'
+#dir_path = 'Data\\3. Transfer curves\\1. IV\\230601_new_pg3t+dropSSE_aftergatededoping_after60sexposure'
+#dir_path = 'Data\\3. Transfer curves\\1. IV\\230602_new_pg3t+dropSSE_aftergatededoping_after60sexposure'
+dir_path = 'Data\\3. Transfer curves\\1. IV\\230602_new_pg3t+solidSE_aftergatededopingsolid'
 
 ## Store files
 transfer, out = read_directory_bioprobe(dir_path)
