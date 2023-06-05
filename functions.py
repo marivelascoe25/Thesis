@@ -26,16 +26,17 @@ def extract_csv_column_data(file_path, column_index):
                     
     return column_data
 
-def extract_data(dir,x,y):
-    X, Y = [], []
+def extract_data(dir,x,y,z):
+    X, Y, Z = [], [], []
     for line in open(dir, 'r'):
         sline = line.split('\t')    
         try:
             X.append(float(sline[x]))
             Y.append(float(sline[y]))
+            Z.append(float(sline[z]))
         except:
             pass
-    return X,Y
+    return X,Y,Z
 
 def extract_data_loop2(dir,x,y,n_loop):
     X, Y = [], []
@@ -111,7 +112,7 @@ def colorFader(c1,c2,mix=0): #fade (linear interpolate) from color c1 (at mix=0)
 
     return mpl.colors.to_hex((1-mix)*c1 + mix*c2)
 
-def plot_CV (dir_path, WE, Ref):
+def plot_CV (dir_path, title, WE, Ref):
 
     V_All = extract_csv_column_data(dir_path, 0)
     I_All = extract_csv_column_data(dir_path, 2)
@@ -134,14 +135,17 @@ def plot_CV (dir_path, WE, Ref):
     c2 = 'blue'
 
     plt.figure(figsize=(10, 7.5))
+    plt.title(title)
     plt.xlabel("Potential (V vs " + Ref + ")",fontsize=20,fontweight='bold')
     plt.ylabel("Current @ " + WE + " (A)",fontsize=20,fontweight='bold')
     for i in range (total_scan-1):
-        plt.plot(Potential[i], Current[i], '-', color = colorFader(c1,c2,i/(total_scan-1)), label = "Scan" + str(i+2))
+        plt.plot(Potential[i], Current[i], '-', color = colorFader(c1,c2,i/(total_scan-1)))
+        if i == 0 or i == 8:
+            plt.plot(Potential[i], Current[i], '-', color = colorFader(c1,c2,i/(total_scan-1)), label = "Scan" + str(i+2))
     plt.legend()
     plt.grid()
 
-def impedance_spec(dir_path):
+def impedance_spec(dir_path, title):
 
     Freq = extract_csv_column_data(dir_path, 1)
     Z = extract_csv_column_data(dir_path, 4)
@@ -155,6 +159,7 @@ def impedance_spec(dir_path):
     #Plots:
     #Impedance and phase
     fig, ax1 = plt.subplots(figsize=(10, 7.5))
+    ax1.set_title(title)
     ax2 = ax1.twinx()
 
     ax1.plot(Freq, Z, 'bo-')
@@ -174,10 +179,11 @@ def impedance_spec(dir_path):
     #fig.suptitle("Temperature down, price up", fontsize=20)
     #fig.autofmt_xdate()
     ax1.grid(color='b', linestyle='--')
-    ax2.grid(color='r', linestyle='--')
+    ax2.grid(color='g', linestyle='--')
 
     #Capacitance
     plt.figure(figsize=(10, 7.5))
+    plt.title(title)
     plt.ylabel("Capacitance (C)",fontsize=26,fontweight='bold')
     plt.xlabel("Frequency (Hz)",fontsize=26,fontweight='bold')
     plt.xscale('log')                                     
@@ -608,28 +614,52 @@ def calculate_vth_on_loop2(T, transfer, L, Vds):
         plt.legend()
         plt.grid()
 
-def stability(stability, title, log=True):
+def stability(stability, title, columns, log=True):
 
-    plt.figure(figsize=(10, 7.5))
-    mng = plt.get_current_fig_manager()
-    mng.resize(1700,700)
-    plt.xlabel("Time (s)",fontsize=26,fontweight='bold')
-    plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
-    
-    plt.title(title)
-    
-    ## Print plots
-    #Column 6 and 8 corresponds to Ids and Vgs
-    y_column = 3
-    x_column = 0 ## 9 if loop is added
-    X, Y = extract_data(stability,x_column,y_column)
+    ## Extract data
+    z_column = columns[2]#5
+    y_column = columns[1]#7
+    x_column = columns[0]#0 ## 9 if loop is added
+    X, Y, Z = extract_data(stability,x_column,y_column,z_column)
     #print (stability)
     if log:
-        plt.yscale('log')
+        #plt.yscale('log')
         Y = np.absolute(Y)
-                                      
-    plt.plot(X, Y, 'o-')
+        Z = np.absolute(Z)
+
+    ## Plots
+    fig, ax1 = plt.subplots(figsize=(13, 7))
+    ax1.set_title(title)#title.set_text('First Plot')
+    ax2 = ax1.twinx()
+
+    ax1.plot(X, Y, 'bo-')
+    ax2.plot(X, Z, 'go-')
+    ax1.set_yscale('log')
+    ax2.set_yscale('log')
+
+    ax1.set_xlabel("Time (s)",fontsize=26,fontweight='bold')
+    ax1.set_ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+    ax1.yaxis.label.set_color('blue')
+    ax1.tick_params(axis='y', colors='b')
+   
+    ax2.set_ylabel("Gate Current (A)",fontsize=26,fontweight='bold')
+    ax2.yaxis.label.set_color('green')
+    ax2.tick_params(axis='y', colors='g')
+
+    #fig.suptitle("Temperature down, price up", fontsize=20)
+    #fig.autofmt_xdate()
+    ax1.grid(color='b', linestyle='--')
+    ax2.grid(color='g', linestyle='--')
+
+    #plt.figure(figsize=(10, 7.5))
+    #mng = plt.get_current_fig_manager()
+    #mng.resize(1700,700)
+    #plt.xlabel("Time (s)",fontsize=26,fontweight='bold')
+    #plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+    
+    #plt.title(title)                                 
+    #plt.plot(X, Y, 'o-')
                 
     #plt.legend()
-    plt.grid()
+    #plt.grid()
     
