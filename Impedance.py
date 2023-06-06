@@ -14,8 +14,8 @@ title3 = "D7"
 title4 = "U4"
 
 impedance_spec(dir_path1, title1)
-impedance_spec(dir_path2, title2)
-impedance_spec(dir_path3, title3)
-impedance_spec(dir_path4, title4)
+#impedance_spec(dir_path2, title2)
+#impedance_spec(dir_path3, title3)
+#impedance_spec(dir_path4, title4)
 
 plt.show()

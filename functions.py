@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib as mpl
+import matplotlib.ticker as ticker
 import numpy as np
 import os
 import math
@@ -7,10 +8,14 @@ import math
 from scipy.stats import linregress
 import csv
 
-Vds1 = -0.7
-Vds2 = -0.5
-Vds3 = -0.3
-Vds4 = -0.1
+#Vds1 = -0.7
+#Vds2 = -0.5
+#Vds3 = -0.3
+#Vds4 = -0.1
+Vds1 = -0.1
+Vds2 = -0.05
+Vds3 = -0.01
+
 
 def extract_csv_column_data(file_path, column_index):
     with open(file_path, 'r') as file:
@@ -176,10 +181,19 @@ def impedance_spec(dir_path, title):
     ax2.yaxis.label.set_color('green')
     ax2.tick_params(axis='y', colors='g')
 
+    # Match the grids of main and secondary plots
+    ax2.set_xticks(ax1.get_xticks())
+    ax2.set_yticks(ax1.get_yticks())
+
+    # Set the secondary plot's y-axis tick labels to match the main plot's scale
+    ax2.set_yscale('linear')  # Change to 'log' if the secondary plot should be in logarithmic scale
+    ax2.yaxis.set_major_locator(ticker.FixedLocator(ax1.get_yticks()))
+    ax2.yaxis.set_major_formatter(ticker.FixedFormatter(ax1.get_yticklabels()))
+
     #fig.suptitle("Temperature down, price up", fontsize=20)
     #fig.autofmt_xdate()
-    ax1.grid(color='b', linestyle='--')
-    ax2.grid(color='g', linestyle='--')
+    #ax1.grid(color='b', linestyle='--')
+    #ax2.grid(color='g', linestyle='--')
 
     #Capacitance
     plt.figure(figsize=(10, 7.5))
@@ -291,12 +305,25 @@ def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
         axs[k].legend()
         axs[k].grid()
 
+def calculate_transconductance(vgs, ids):
+    # Calculate the derivative of ids with respect to vgs
+    dvgs = np.gradient(vgs)
+    dids = np.gradient(ids)
+    
+    # Calculate transconductance (gm)
+    gm = dids / dvgs
+    gmax = np.max(gm)*1000
+    
+    return gm, gmax
+
 def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 1):
     num_devices = len(T)
     num_files = len(transfer) # for each vds x loops
    
     X_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
     Y_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    gm = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    gmax = [[0.0 for i in range (num_files)] for k in range(num_devices)]
 
     ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
     for k in range(num_devices):
@@ -316,12 +343,16 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 
                     X, Y = extract_data_loops(transfer[i],n_vgs,n_ids,n_loop)
                 else: 
                     X, Y = extract_data(transfer[i],n_vgs,n_ids)
+                gm[k][i], gmax[k][i] = calculate_transconductance(X,Y)
                 Y = np.absolute(Y)
                 X_structure[k][i] = X_structure[k][i] + np.array(X)
-                Y_structure[k][i] = Y_structure[k][i] + np.array(Y)    
+                Y_structure[k][i] = Y_structure[k][i] + np.array(Y)
+                   
                 #if label
                 if Vds[i] == Vds1:                                   
-                    plt.plot(X, Y, 'o-', color=u'#1f77b4', label=L[i]) 
+                    plt.plot(X, Y, 'o-', color=u'#1f77b4', label=L[i])
+                    plt.text(-1, 0.e-10, gmax[k][i])
+
                 elif Vds[i] == Vds2:
                     plt.plot(X, Y, 'o-', color=u'#ff7f0e', label=L[i])
                 elif Vds[i] == Vds3:
@@ -333,7 +364,7 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 
                     
         plt.legend()
         plt.grid()
-    return X_structure, Y_structure
+    return X_structure, Y_structure, gmax
 
 def plot_transfer_linear(T, transfer, L, Vds, n_ids, n_vgs):
 

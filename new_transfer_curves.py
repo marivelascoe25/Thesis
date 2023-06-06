@@ -41,6 +41,8 @@ column_loop=column_vgs-1
 # Default loop_case = 1 which is ploting only 2, default gate = False
 # Use loop_case = 2 if you want to all loops except the first one
 # Use loop_case other if you want to plot all
-X, Y = plot_transfer_curves(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, loop_case=2) 
+X, Y, gmax = plot_transfer_curves(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, loop_case=2) 
+
+print(gmax)
 
 plt.show()
