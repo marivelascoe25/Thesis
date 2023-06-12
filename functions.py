@@ -433,7 +433,7 @@ def plot_transfer_linear(T, transfer, L, Vds, n_ids, n_vgs):
         #plt.legend()
         plt.grid()
 
-def plot_doping_comparison(title, legends, transfer):
+def plots_comparison(title, legends, transfer,vgs,ids):
     
     num_files = len(transfer) # for each doping file
    
@@ -446,9 +446,9 @@ def plot_doping_comparison(title, legends, transfer):
     for i in range(num_files):
         ## Print plots
         #Column 6 and 8 corresponds to Ids and Vgs
-        ids=6
-        vgs=9 ## 9 if loop is added
-        X, Y = extract_data(transfer[i],vgs,ids)
+        #ids=5
+        #vgs=7 ## 9 if loop is added
+        X, Y, Z = extract_data(transfer[i],vgs[i],ids[i],0)
         Y = np.absolute(Y)
         #X_structure[k][i] = X_structure[k][i] + np.array(X)
         #Y_structure[k][i] = Y_structure[k][i] + np.array(Y)    
