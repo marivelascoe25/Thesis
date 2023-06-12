@@ -48,16 +48,16 @@ plt.rcParams.update({'font.size':20})
 #dir_path1 = 'Data\\4. Stability\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB\\U7_m01_stability1-1.txt'
 #dir_path2 = 'Data\\4. Stability\\2. Bioprobe\\230602_pg3t+solidSE_afterGB_afterbiotransfer\D5_m01_stability1-1.txt'
 #dir_path3 = 'Data\\4. Stability\\2. Bioprobe\\230602_pg3t+solidSE_afterGB_afterbiotransfer\D5_m02_stability1-1.txt'
-#dir_path1 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D1_m01_Dedoping3-1.txt'
-#dir_path2 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D3_m01_Dedoping3-1.txt'
-#dir_path3 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D4_m01_Dedoping3-1.txt'
-#dir_path4 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D7_m01_Dedoping3-1.txt'
-#dir_path5 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\U4_m01_Dedoping3-1.txt'
+dir_path2 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D1_m01_Dedoping3-1.txt'
+dir_path3 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D3_m01_Dedoping3-1.txt'
+dir_path4 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D4_m01_Dedoping3-1.txt'
+dir_path5 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D7_m01_Dedoping3-1.txt'
+dir_path1 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\U4_m01_Dedoping3-1.txt'
 
 ## IL device
 #dir_path4 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U2_m01_Dedoping3-1.txt'
 #dir_path5 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U7_m01_Dedoping3-1.txt'
-dir_path1 = 'Data\\4. Stability\\230601_new_pg3t+dropSSE_gatededoping\\U3_m01_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\230601_new_pg3t+dropSSE_gatededoping\\U3_m01_Dedoping3-1.txt'
 #dir_path1 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_dedopingaftertransfer\\D5_m01_Dedoping3-1.txt'
 #dir_path2 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_aftergatededopingsolid_aftertransfer\\D5_m01_Dedoping3-1.txt'
 
@@ -83,8 +83,11 @@ title1 = "Liquid Electrolyte (U3), +1V gate-biased"
 # Asigning columns
 #columns = [0, 7, 5] #bioprobe
 columns = [0, 3, 6] #IV
+range1 = [90,120]
+range2 = [400, 440]
+ranges = [range1, range2]
 
-stability(dir_path1, title1, columns)#, log=False)
+stability(dir_path1, title1, columns, ranges)#, log=False)
 #stability(dir_path2, title2, columns)#, log=False)
 #stability(dir_path3, title3, columns)#, log=False)
 #stability(dir_path4, title4, columns)#, log=False)

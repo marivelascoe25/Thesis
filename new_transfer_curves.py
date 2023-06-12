@@ -17,7 +17,8 @@ plt.rcParams.update({'font.size':22})
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230602_new_pg3t+solidSE_aftergatededopingsolid'
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB_aftergatededoping'
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB_aftergatededopingx2'
-dir_path = 'Data\\3. Transfer curves\\1. IV\\230605_new_pg3t+solidSE_aftergatededopingsolid'
+dir_path = 'Data\\3. Transfer curves\\1. IV\\230602_new_pg3t+solidSE_aftergatededopingsolid'
+#dir_path = 'Data\\3. Transfer curves\\1. IV\\230605_new_pg3t+solidSE_aftergatededopingsolid'
 
 ## Store files
 transfer, out = read_directory_bioprobe(dir_path)
@@ -41,8 +42,19 @@ column_loop=column_vgs-1
 # Default loop_case = 1 which is ploting only 2, default gate = False
 # Use loop_case = 2 if you want to all loops except the first one
 # Use loop_case other if you want to plot all
-X, Y, gmax = plot_transfer_curves(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, loop_case=2) 
+# trans default is False, if True, transconductance is plotted
+#X, Y, gm, gmax = plot_transfer_curves(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, loop_case=2) 
 
-print(gmax)
+#print (len(X))
+#print (len(X[0]))
+#print (len(X[0][0]))
+#print (X[0][0])
 
+## Doping
+#c1 = 17/40
+#c2 = 20/40
+## Undoping
+c1 = 21/40
+c2 = 24/40
+calculate_vth (T, transfer, L, Vds, c1, c2, column_ids, column_vgs, column_loop)
 plt.show()

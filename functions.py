@@ -127,8 +127,8 @@ def plot_CV (dir_path, title, WE, Ref):
     matrix_length = int(len(V_All)/total_scan)
     #print(matrix_length)
 
-    Potential = [[0.0 for i in range (matrix_length)] for k in range(total_scan-1)]
-    Current = [[0.0 for i in range (matrix_length)] for k in range(total_scan-1)]
+    Potential = [[0.0 for i in range (matrix_length-1)] for k in range(total_scan-1)]
+    Current = [[0.0 for i in range (matrix_length-1)] for k in range(total_scan-1)]
 
     for j in range (len(Scan_number)):
         if Scan_number[j] != 1:
@@ -163,7 +163,7 @@ def impedance_spec(dir_path, title):
 
     #Plots:
     #Impedance and phase
-    fig, ax1 = plt.subplots(figsize=(10, 7.5))
+    fig, ax1 = plt.subplots()#figsize=(10, 7.5))
     ax1.set_title(title)
     ax2 = ax1.twinx()
 
@@ -172,28 +172,38 @@ def impedance_spec(dir_path, title):
     ax1.set_yscale('log')
     ax2.set_xscale('log')
 
-    ax1.set_xlabel("Frequency (Hz)",fontsize=26,fontweight='bold')
-    ax1.set_ylabel("|Z| (\u03A9)",fontsize=26,fontweight='bold')
+    ax1.set_xlabel("Frequency (Hz)",fontsize=24,fontweight='bold')
+    ax1.set_ylabel("|Z| (\u03A9)",fontsize=24,fontweight='bold')
     ax1.yaxis.label.set_color('blue')
     ax1.tick_params(axis='y', colors='b')
    
-    ax2.set_ylabel("-Phase (°)",fontsize=26,fontweight='bold')
+    ax2.set_ylabel("-Phase (°)",fontsize=24,fontweight='bold')
     ax2.yaxis.label.set_color('green')
     ax2.tick_params(axis='y', colors='g')
 
     # Match the grids of main and secondary plots
-    ax2.set_xticks(ax1.get_xticks())
-    ax2.set_yticks(ax1.get_yticks())
+    #ax2.set_xticks(ax1.get_xticks())
+    #ax2.set_yticks(ax1.get_yticks())
+
+    # Match the x-axis gridlines
+    #ax2.set_xticks(ax1.get_xticks())
+
+    # Match the y-axis gridlines approximately
+    #ax2_yticks = ax2.get_yticks()
+    #ax1_yticks = ax1.get_yticks()
+    #ax2_yticks_new = [ax2_yticks[i] for i in range(len(ax2_yticks)) if i < len(ax1_yticks)]
+    #ax2.set_yticks(ax2_yticks_new)
 
     # Set the secondary plot's y-axis tick labels to match the main plot's scale
-    ax2.set_yscale('linear')  # Change to 'log' if the secondary plot should be in logarithmic scale
-    ax2.yaxis.set_major_locator(ticker.FixedLocator(ax1.get_yticks()))
-    ax2.yaxis.set_major_formatter(ticker.FixedFormatter(ax1.get_yticklabels()))
-
+    #ax2.set_yscale('linear')  # Change to 'log' if the secondary plot should be in logarithmic scale
+    #ax2.yaxis.set_major_locator(ticker.FixedLocator(ax1.get_yticks()))
+    #ax2.yaxis.set_major_formatter(ticker.FixedFormatter(ax1.get_yticklabels()))
+    #ax2.yaxis.set_major_formatter(ticker.FixedFormatter([label.get_text() for label in ax1.get_yticklabels()]))
+    
     #fig.suptitle("Temperature down, price up", fontsize=20)
     #fig.autofmt_xdate()
-    #ax1.grid(color='b', linestyle='--')
-    #ax2.grid(color='g', linestyle='--')
+    ax1.grid(color='b', linestyle='--')
+    ax2.grid(color='g', linestyle='--')
 
     #Capacitance
     plt.figure(figsize=(10, 7.5))
@@ -316,7 +326,7 @@ def calculate_transconductance(vgs, ids):
     
     return gm, gmax
 
-def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 1):
+def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = False, loop_case = 1):
     num_devices = len(T)
     num_files = len(transfer) # for each vds x loops
    
@@ -325,17 +335,17 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 
     gm = [[0.0 for i in range (num_files)] for k in range(num_devices)]
     gmax = [[0.0 for i in range (num_files)] for k in range(num_devices)]
 
-    ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
     for k in range(num_devices):
         plt.figure(figsize=(11, 7.5))
         plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
         plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+        plt.title(T[k])
+        plt.yscale('log')
+                
         for i in range(num_files):
             start = transfer[i].index('transfer')
             if transfer[i][start-7:start-5] == T[k]: ## Join all data from one device (U# or D#)
                 
-                plt.title(T[k])
-                plt.yscale('log')
                 ## Print plots
                 if loop_case == 1:
                     X, Y = extract_data_loop2(transfer[i],n_vgs,n_ids,n_loop)
@@ -347,16 +357,21 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 
                 Y = np.absolute(Y)
                 X_structure[k][i] = X_structure[k][i] + np.array(X)
                 Y_structure[k][i] = Y_structure[k][i] + np.array(Y)
-                   
+                #print ("Device" + str(k) + L[i])
+                #print (X_structure[k][i])
+
                 #if label
                 if Vds[i] == Vds1:                                   
                     plt.plot(X, Y, 'o-', color=u'#1f77b4', label=L[i])
-                    plt.text(-1, 0.e-10, gmax[k][i])
+                    #plt.plot(X, gm[k][i], 'o-', color=u'#1f77b4', label=L[i])
+                    #plt.text(-1, 0.e-10, gmax[k][i])
 
                 elif Vds[i] == Vds2:
                     plt.plot(X, Y, 'o-', color=u'#ff7f0e', label=L[i])
+                    #plt.plot(X, gm[k][i], 'o-', color=u'#1f77b4', label=L[i])
                 elif Vds[i] == Vds3:
                     plt.plot(X, Y, 'o-', color=u'#2ca02c', label=L[i])
+                    #plt.plot(X, gm[k][i], 'o-', color=u'#1f77b4', label=L[i])
                 #elif Vds[i] == Vds4:
                 #    plt.plot(X, Y, 'o-', color=u'#d62728', label=L[i])
                 else:
@@ -364,7 +379,31 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 
                     
         plt.legend()
         plt.grid()
-    return X_structure, Y_structure, gmax
+
+    ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
+    if trans:
+        for k in range(num_devices):
+            fig, ax1 = plt.subplots(figsize=(10, 7.5))
+            ax1.set_title(title)
+            ax2 = ax1.twinx()
+
+            ax1.plot(Freq, Z, 'bo-')
+            ax2.plot(Freq, Phase, 'go-')
+            ax1.set_yscale('log')
+            ax2.set_xscale('log')
+
+            ax1.set_xlabel("Frequency (Hz)",fontsize=26,fontweight='bold')
+            ax1.set_ylabel("|Z| (\u03A9)",fontsize=26,fontweight='bold')
+            ax1.yaxis.label.set_color('blue')
+            ax1.tick_params(axis='y', colors='b')
+        
+            ax2.set_ylabel("-Phase (°)",fontsize=26,fontweight='bold')
+            ax2.yaxis.label.set_color('green')
+            ax2.tick_params(axis='y', colors='g')
+
+
+        
+    return X_structure, Y_structure, gm, gmax
 
 def plot_transfer_linear(T, transfer, L, Vds, n_ids, n_vgs):
 
@@ -645,7 +684,28 @@ def calculate_vth_on_loop2(T, transfer, L, Vds):
         plt.legend()
         plt.grid()
 
-def stability(stability, title, columns, log=True):
+def calculate_average_in_index_range(arr, start_index, end_index):
+    selected_elements = arr[start_index : end_index + 1]
+    if len(selected_elements) > 0:
+        average = sum(selected_elements) / len(selected_elements)
+        return average
+    else:
+        return None  # Return None if no elements fall within the specified index range
+
+
+def get_index_of_closest_value(arr, target_value):
+    closest_index = min(range(len(arr)), key=lambda i: abs(arr[i] - target_value))
+    return closest_index
+
+def get_average (X, Y, range):
+    
+    start_range = get_index_of_closest_value(X, range[0])
+    end_range = get_index_of_closest_value(X, range[1])
+    Y_avg = calculate_average_in_index_range(Y, start_range, end_range)
+
+    return Y_avg
+
+def stability(stability, title, columns, ranges, log=True):
 
     ## Extract data
     z_column = columns[2]#5
@@ -657,40 +717,104 @@ def stability(stability, title, columns, log=True):
         #plt.yscale('log')
         Y = np.absolute(Y)
         Z = np.absolute(Z)
+    
+    Y_avg1 = get_average (X,Y,ranges[0])
+    Y_avg2 = get_average (X,Y,ranges[1])
+    print (Y_avg1)
+    print (Y_avg2)
 
     ## Plots
-    fig, ax1 = plt.subplots(figsize=(13, 7))
-    ax1.set_title(title)#title.set_text('First Plot')
-    ax2 = ax1.twinx()
-
-    ax1.plot(X, Y, 'bo-')
-    ax2.plot(X, Z, 'go-')
-    ax1.set_yscale('log')
-    ax2.set_yscale('log')
-
-    ax1.set_xlabel("Time (s)",fontsize=26,fontweight='bold')
-    ax1.set_ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
-    ax1.yaxis.label.set_color('blue')
-    ax1.tick_params(axis='y', colors='b')
-   
-    ax2.set_ylabel("Gate Current (A)",fontsize=26,fontweight='bold')
-    ax2.yaxis.label.set_color('green')
-    ax2.tick_params(axis='y', colors='g')
-
-    #fig.suptitle("Temperature down, price up", fontsize=20)
-    #fig.autofmt_xdate()
-    ax1.grid(color='b', linestyle='--')
-    ax2.grid(color='g', linestyle='--')
-
-    #plt.figure(figsize=(10, 7.5))
-    #mng = plt.get_current_fig_manager()
-    #mng.resize(1700,700)
-    #plt.xlabel("Time (s)",fontsize=26,fontweight='bold')
-    #plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+    plt.figure(figsize=(13, 7))
+    plt.title(title)#title.set_text('First Plot')
     
-    #plt.title(title)                                 
-    #plt.plot(X, Y, 'o-')
+    plt.plot(X, Y, 'bo-', label = r"$I_{\mathrm{DS}}$")
+    plt.plot(X, Z, 'go-', label = r"$I_{\mathrm{GS}}$")
+    plt.yscale('log')
+    
+    plt.xlabel("Time (s)",fontsize=26,fontweight='bold')
+    plt.ylabel("Current (A)",fontsize=26,fontweight='bold')
                 
-    #plt.legend()
-    #plt.grid()
-    
+    plt.legend()
+    plt.grid()
+
+def calculate_vth(T, transfer, L, Vds, c1, c2, n_ids, n_vgs, n_loop, loop_case = 1):
+    for k in range(len(T)):
+        plt.figure(figsize=(10, 7.5))
+        plt.xlabel("Gate Voltage (V)",fontsize=24,fontweight='bold')
+        plt.ylabel(r"$\sqrt{I_{DS}} (A^{1/2})$",fontsize=24,fontweight='bold')
+        plt.title(T[k])
+        print(T[k])
+        for i in range(len(transfer)):
+            
+            start = transfer[i].index('transfer')
+            if transfer[i][start-7:start-5] == T[k]:
+            #if transfer[i][start-14:start-5] == T[k]: ## Just used when for pg3tWL
+                
+                ## Print plots
+                if loop_case == 1:
+                    X, Y0 = extract_data_loop2(transfer[i],n_vgs,n_ids,n_loop)
+                elif loop_case == 2:
+                    X, Y0 = extract_data_loops(transfer[i],n_vgs,n_ids,n_loop)
+                else: 
+                    X, Y0 = extract_data(transfer[i],n_vgs,n_ids)
+                
+                #Y = np.absolute(Y)
+                #X_structure[k][i] = X_structure[k][i] + np.array(X)
+                #Y_structure[k][i] = Y_structure[k][i] + np.array(Y)
+
+                #if doping:
+                start_X = int(c1*len(X))#X.index(0.7*Vds[i])
+                end_X = int(c2*len(X))#X.index(0)
+                #else:
+                #    start_X = int(29*len(X)/40)#X.index(0.7*Vds[i])
+                #    end_X = int(31*len(X)/40)#X.index(0)
+
+                Y = np.array([math.sqrt(abs(x)) for x in Y0])
+                X = np.array(X)
+
+                """X_fit = np.array(X).reshape((-1,1))
+                Y_fit = np.array(Y)
+                model = LinearRegression().fit(X_fit,Y_fit)
+                r_sq = model.score(X_fit,Y_fit)
+                print(f"coefficient of determination: {r_sq}")                
+                print(f"intercept: {model.intercept_}")
+                print(f"coefficients: {model.coef_}")
+                Y_fitted = model.predict(X_fit)
+                """
+                
+                # Fit a quadratic function to the data
+                #coeffs = np.polyfit(X, Y, 2)
+
+                # Find the maximum value of sqrt_id in the linear region
+                #max_sqrt_id = np.max(Y[X > 0.5])
+
+                # Find the indices of the data points in the linear region
+                #linear_indices = np.where(Y >= max_sqrt_id)[0]
+                
+                try:
+                    slope, intercept, rvalue, pvalue, stderr = linregress(X[start_X:end_X], Y[start_X:end_X])
+                    vth = - intercept / slope
+                    
+                    Y_fitted = intercept + slope*X[start_X:end_X]
+                    
+                    if Vds[i] == Vds1:                   
+                        plt.plot(X, Y, 'o-', color=u'#1f77b4', label=L[i])
+                        plt.plot(X[start_X:end_X],Y_fitted,color=u'#00a5e3')#, label="Linear Fit")    
+                        print("At " + L[i] + " Vth is " + str(vth))
+                    elif Vds[i] == Vds2:
+                        plt.plot(X, Y, 'o-', color=u'#ff7f0e', label=L[i])
+                        plt.plot(X[start_X:end_X],Y_fitted, color=u'#8dd7bf')#, label="Linear Fit") 
+                        print("At " + L[i] + " Vth is " + str(vth))
+                    elif Vds[i] == Vds3:
+                        plt.plot(X, Y, 'o-', color=u'#2ca02c', label=L[i])
+                        plt.plot(X[start_X:end_X],Y_fitted, color=u'#ff96c5')#, label="Linear Fit") 
+                        print("At " + L[i] + " Vth is " + str(vth))
+                    #elif Vds[i] == Vds4:
+                    #    plt.plot(X, Y, 'o-', color=u'#d62728')
+                    #    plt.plot(X[start_X:end_X],Y_fitted, color=u'#ffbf65')#, label="Linear Fit") 
+                    #    print("At " + L[i] + " Vth is " + str(vth))
+                    #plt.quiver(X, np.absolute(Y), label = L[i])
+                except:
+                    pass
+        plt.legend()
+        plt.grid()
