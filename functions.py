@@ -98,7 +98,7 @@ def read_directory_UV(dir_path):
                 R.append(dir_path + '\\' + path)
     return R, T
 
-def read_directory_bioprobe(dir_path):
+def read_directory(dir_path):
     transfer = []
     out = []
     # Iterate directory
@@ -692,7 +692,6 @@ def calculate_average_in_index_range(arr, start_index, end_index):
     else:
         return None  # Return None if no elements fall within the specified index range
 
-
 def get_index_of_closest_value(arr, target_value):
     closest_index = min(range(len(arr)), key=lambda i: abs(arr[i] - target_value))
     return closest_index
@@ -818,3 +817,49 @@ def calculate_vth(T, transfer, L, Vds, c1, c2, n_ids, n_vgs, n_loop, loop_case =
                     pass
         plt.legend()
         plt.grid()
+
+def plot_transfer_curves_one_vds(T, transfer, n_ids, n_vgs, n_loop, trans = False):#3, loop_case = 1):
+    num_devices = len(T)
+    num_files = len(transfer) # for each loop
+    
+    X_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    Y_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    L_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    #gm = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    #gmax = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+
+    for k in range(num_devices):
+        plt.figure(figsize=(11, 7.5))
+        plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
+        plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+        plt.title(T[k])
+        plt.yscale('log')
+                
+        for i in range(num_files):
+            start = transfer[i].index('transfer')
+            if transfer[i][start-7:start-5] == T[k]: ## Join all data from one device (U# or D#)
+                
+                ## Print plots
+                X, Y, L = extract_data(transfer[i],n_vgs,n_ids, n_loop)
+                #gm[k][i], gmax[k][i] = calculate_transconductance(X,Y)
+                Y = np.absolute(Y)
+                X_structure[k][i] = X_structure[k][i] + np.array(X)
+                Y_structure[k][i] = Y_structure[k][i] + np.array(Y)
+                L_structure[k][i] = L_structure[k][i] + np.array(L)
+                
+                for j in range (len(Scan_number)):
+                    if Scan_number[j] != 1:
+                        index = int(Scan_number[j])
+                        Potential[index-2].append(V_All[j])
+                        Current[index-2].append(I_All[j])
+                
+                #print (X_structure[k][i])
+                for j in range (len(L_structure[k][i])):
+                #print (L_structure[k][i][950])
+                #for j in range()
+                    plt.plot(X[k][i], Y[k][i], '-')#, label=L)#, color=u'#1f77b4')
+                    
+        #plt.legend()
+        plt.grid()
+
+    return X,Y
