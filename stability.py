@@ -47,12 +47,12 @@ plt.rcParams.update({'font.size':20})
 #dir_path2 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_aftergatededopingsolid_aftertransfer\\U7_m01_Dedoping3-1.txt'
 #dir_path1 = 'Data\\4. Stability\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB\\U7_m01_stability1-1.txt'
 #dir_path1 = 'Data\\4. Stability\\2. Bioprobe\\230602_pg3t+solidSE_afterGB_afterbiotransfer\D5_m01_stability1-1.txt'
-dir_path1 = 'Data\\4. Stability\\2. Bioprobe\\230602_pg3t+solidSE_afterGB_afterbiotransfer\D5_m02_stability1-1.txt'
+#dir_path1 = 'Data\\4. Stability\\2. Bioprobe\\230602_pg3t+solidSE_afterGB_afterbiotransfer\D5_m02_stability1-1.txt'
 #dir_path2 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D1_m01_Dedoping3-1.txt'
 #dir_path3 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D3_m01_Dedoping3-1.txt'
 #dir_path4 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D4_m01_Dedoping3-1.txt'
 #dir_path5 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\D7_m01_Dedoping3-1.txt'
-#dir_path1 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\U4_m01_Dedoping3-1.txt'
+dir_path1 = 'Data\\4. Stability\\1. IV\\230605_new_pg3t+dropSSE_gatededoping\\U4_m01_Dedoping3-1.txt'
 
 ## IL device
 #dir_path4 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U2_m01_Dedoping3-1.txt'
@@ -75,10 +75,6 @@ title1 = "Liquid Electrolyte (U3), +1V gate-biased"
 #title3 = "Solid Device (D4) in GB, +1V gate-biased"
 #title4 = "Solid Device (D7) in GB, +1V gate-biased"
 #title5 = "Solid Device (U4) in GB, +1V gate-biased"
-
-## Store files
-#transfer1, stab1 = read_directory_bioprobe(dir_path1)
-#transfer2, stab2 = read_directory_bioprobe(dir_path2)
 
 # Asigning columns
 columns = [0, 7, 5] #bioprobe

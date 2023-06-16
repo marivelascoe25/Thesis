@@ -18,15 +18,14 @@ plt.rcParams.update({'font.size':22})
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB_aftergatededoping'
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB_aftergatededopingx2'
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB_aftergatededoping'#'Data\\3. Transfer curves\\1. IV\\230602_new_pg3t+solidSE_aftergatededopingsolid'
-#dir_path = 'Data\\3. Transfer curves\\1. IV\\230605_new_pg3t+solidSE_aftergatededopingsolid'
+dir_path = 'Data\\3. Transfer curves\\1. IV\\230605_new_pg3t+solidSE_aftergatededopingsolid'
 #dir_path = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t'
-dir_path = 'Data\\3. Transfer curves\\1. IV\\230613_pg3t_photopattternSSE'
 
 ## Store files
 transfer, out = read_directory(dir_path)
 
 ## Get plot legends
-#L , Vds = plot_legends(transfer)
+L , Vds = plot_legends(transfer)
 
 ## Get plot titles
 T = plot_titles(transfer)
@@ -34,9 +33,11 @@ T = plot_titles(transfer)
 #IV
 column_ids=3
 column_vgs=6
+
 #bioprobe
 #column_ids=5
 #column_vgs=7
+
 ##old data bioprobe with loops
 #column_ids=6
 #column_vgs=9
@@ -47,16 +48,7 @@ column_loop=column_vgs-1
 # Use loop_case = 2 if you want to all loops except the first one
 # Use loop_case other if you want to plot all
 # trans default is False, if True, transconductance is plotted
-#X, Y, gm, gmax = plot_transfer_curves(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, loop_case=2) 
-
-## Just one vds
-X, Y = plot_transfer_curves_one_vds(T, transfer, column_ids, column_vgs, column_loop)
-
-
-#print (len(X))
-#print (len(X[0]))
-#print (len(X[0][0]))
-#print (X[0][0])
+X, Y, gm, gmax = plot_transfer_curves(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, loop_case=2) 
 
 ## Doping
 c1 = 10 /40
@@ -64,5 +56,6 @@ c2 = 14/40
 ## Undoping
 #c1 = 18/40
 #c2 = 21/40
+
 #calculate_vth (T, transfer, L, Vds, c1, c2, column_ids, column_vgs, column_loop)
-#plt.show()
+plt.show()
