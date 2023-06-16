@@ -98,7 +98,7 @@ def read_directory_UV(dir_path):
                 R.append(dir_path + '\\' + path)
     return R, T
 
-def read_directory(dir_path):
+def read_directory_transfer(dir_path):
     transfer = []
     out = []
     # Iterate directory
@@ -110,6 +110,16 @@ def read_directory(dir_path):
             else:
                 out.append(dir_path + '\\' + path)
     return transfer, out
+
+def read_directory_deox(dir_path):
+    deox = []
+    # Iterate directory
+    for path in os.listdir(dir_path):
+    # check if current path is a file
+        if os.path.isfile(os.path.join(dir_path, path)):
+            if 'Dedoping' in path:
+                deox.append(dir_path + '\\' + path)
+    return deox
 
 def colorFader(c1,c2,mix=0): #fade (linear interpolate) from color c1 (at mix=0) to c2 (mix=1)
     c1=np.array(mpl.colors.to_rgb(c1))
@@ -139,7 +149,7 @@ def plot_CV (dir_path, title, WE, Ref):
     c1 = 'red'
     c2 = 'blue'
 
-    plt.figure(figsize=(10, 7.5))
+    plt.figure(figsize=(12, 7.5))
     plt.title(title)
     plt.xlabel("Potential (V vs " + Ref + ")",fontsize=20,fontweight='bold')
     plt.ylabel("Current @ " + WE + " (A)",fontsize=20,fontweight='bold')
@@ -235,6 +245,17 @@ def plot_titles(transfer):
         start = transfer[i].index('transfer')
         #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
         T.append(transfer[i][start-7:start-5])
+    #T=list(dict.fromkeys(T))
+    T=list(dict.fromkeys(T))
+    return T
+
+def plot_titles_deox(deox):
+    ## Get plot title
+    T = []
+    for i in range(len(deox)):
+        start = deox[i].index('Dedoping')
+        #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
+        T.append(deox[i][start-7:start-5])
     #T=list(dict.fromkeys(T))
     T=list(dict.fromkeys(T))
     return T
@@ -818,48 +839,37 @@ def calculate_vth(T, transfer, L, Vds, c1, c2, n_ids, n_vgs, n_loop, loop_case =
         plt.legend()
         plt.grid()
 
-def plot_transfer_curves_one_vds(T, transfer, n_ids, n_vgs, n_loop, trans = False):#3, loop_case = 1):
-    num_devices = len(T)
-    num_files = len(transfer) # for each loop
+def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, trans = False):#3, loop_case = 1):
     
-    X_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
-    Y_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
-    L_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
-    #gm = [[0.0 for i in range (num_files)] for k in range(num_devices)]
-    #gmax = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    X, Y, L = extract_data(transfer,n_vgs, n_ids, n_loop)
+    Y = np.absolute(Y)
 
-    for k in range(num_devices):
-        plt.figure(figsize=(11, 7.5))
-        plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
-        plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
-        plt.title(T[k])
-        plt.yscale('log')
-                
-        for i in range(num_files):
-            start = transfer[i].index('transfer')
-            if transfer[i][start-7:start-5] == T[k]: ## Join all data from one device (U# or D#)
-                
-                ## Print plots
-                X, Y, L = extract_data(transfer[i],n_vgs,n_ids, n_loop)
-                #gm[k][i], gmax[k][i] = calculate_transconductance(X,Y)
-                Y = np.absolute(Y)
-                X_structure[k][i] = X_structure[k][i] + np.array(X)
-                Y_structure[k][i] = Y_structure[k][i] + np.array(Y)
-                L_structure[k][i] = L_structure[k][i] + np.array(L)
-                
-                for j in range (len(Scan_number)):
-                    if Scan_number[j] != 1:
-                        index = int(Scan_number[j])
-                        Potential[index-2].append(V_All[j])
-                        Current[index-2].append(I_All[j])
-                
-                #print (X_structure[k][i])
-                for j in range (len(L_structure[k][i])):
-                #print (L_structure[k][i][950])
-                #for j in range()
-                    plt.plot(X[k][i], Y[k][i], '-')#, label=L)#, color=u'#1f77b4')
-                    
-        #plt.legend()
-        plt.grid()
+    total_loops = int(L[-1])
+    matrix_length = int(len(L)/total_loops)
+    
+    V_GS = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
+    I_DS = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
+
+    
+    for j in range (len(L)):
+        index = int(L[j])
+        V_GS[index-1].append(X[j])
+        I_DS[index-1].append(Y[j])
+    
+    c1 = 'red'
+    c2 = 'blue'
+
+    plt.figure(figsize=(11, 7.5))
+    plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
+    plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+    plt.title(Title)
+    plt.yscale('log')
+            
+    for i in range(total_loops):
+        plt.plot(V_GS[i], I_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)))
+        if i == 0 or i == total_loops-1:
+            plt.plot(V_GS[i], I_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)), label = "Loop" + str(i+1))
+    plt.legend()
+    plt.grid()
 
     return X,Y
