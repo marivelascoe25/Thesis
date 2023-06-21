@@ -725,7 +725,7 @@ def get_average (X, Y, range):
 
     return Y_avg
 
-def stability(stability, title, columns, ranges, log=True):
+def stability(stability, title, columns, ranges, gate=True, log=True):
 
     ## Extract data
     z_column = columns[2]#5
@@ -747,9 +747,12 @@ def stability(stability, title, columns, ranges, log=True):
     plt.figure(figsize=(13, 7))
     plt.title(title)#title.set_text('First Plot')
     
-    plt.plot(X, Y, 'bo-', label = r"$I_{\mathrm{DS}}$")
-    plt.plot(X, Z, 'go-', label = r"$I_{\mathrm{GS}}$")
-    plt.yscale('log')
+    plt.plot(X, Y, 'b-', label = r"$I_{\mathrm{DS}}$")
+    if gate:
+        plt.plot(X, Z, 'g-', label = r"$I_{\mathrm{GS}}$")
+    if log:
+        plt.yscale('log')
+        #plt.ylim((10**-7,10**-6))
     
     plt.xlabel("Time (s)",fontsize=26,fontweight='bold')
     plt.ylabel("Current (A)",fontsize=26,fontweight='bold')
