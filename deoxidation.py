@@ -4,7 +4,11 @@ plt.rcParams.update({'font.size':20})
 
 
 #dir_path = 'Data\\4. Stability\\1. IV\\230613_pg3t_photopattternSSE_dedoping'
-dir_path = 'Data\\4. Stability\\1. IV\\230614_pg3t_photopattternSSE_dedoping'
+#dir_path = 'Data\\4. Stability\\1. IV\\230614_pg3t_photopattternSSE_dedoping'
+#dir_path = 'Data\\4. Stability\\1. IV\\230620_pg3t_f6tcnnq5_channel_conductivity'
+#dir_path = 'Data\\4. Stability\\1. IV\\230620_pg3t_f6tcnnq5+SSE_channel_conductivity'
+#dir_path = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq5_channel_conductivity'
+dir_path = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq_dropSSE_air'
 
 deox = read_directory_deox(dir_path)
 
@@ -20,6 +24,6 @@ ranges = [range1, range2]
 
 ## Get all plots
 for i in range(len(deox)):
-    stability(deox[i], T[i], columns, ranges)
+    stability(deox[i], T[i], columns, ranges, gate=False)#, log=False)
 
 plt.show()
