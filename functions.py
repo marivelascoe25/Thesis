@@ -244,7 +244,7 @@ def plot_titles(transfer):
     for i in range(len(transfer)):
         start = transfer[i].index('transfer')
         #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
-        T.append(transfer[i][start-7:start-5])
+        T.append(transfer[i][start-7:start-1])
     #T=list(dict.fromkeys(T))
     T=list(dict.fromkeys(T))
     return T
@@ -255,7 +255,7 @@ def plot_titles_deox(deox):
     for i in range(len(deox)):
         start = deox[i].index('Dedoping')
         #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
-        T.append(deox[i][start-7:start-5])
+        T.append(deox[i][start-7:start-1])
     #T=list(dict.fromkeys(T))
     T=list(dict.fromkeys(T))
     return T

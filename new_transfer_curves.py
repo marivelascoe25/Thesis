@@ -22,7 +22,7 @@ dir_path = 'Data\\3. Transfer curves\\1. IV\\230605_new_pg3t+solidSE_aftergatede
 #dir_path = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t'
 
 ## Store files
-transfer, out = read_directory(dir_path)
+transfer, out = read_directory_transfer(dir_path)
 
 ## Get plot legends
 L , Vds = plot_legends(transfer)
