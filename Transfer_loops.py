@@ -31,15 +31,20 @@ column_vgs=6
 #column_vgs=9
 column_loop=column_vgs-1
 
-## Get gradient plots, just one vds but multiple loops
-for i in range(len(transfer)):
-    plot_transfer_curves_one_vds(T[i], transfer[i], column_ids, column_vgs, column_loop)
 
 ## Doping
-#c1 = 10 /40
-#c2 = 14/40
+#d1 = 26/40
+#d2 = 26.9/40
+d1 = 27.5/40
+d2 = 29/40
 ## Undoping
-#c1 = 18/40
-#c2 = 21/40
-#calculate_vth (T, transfer, L, Vds, c1, c2, column_ids, column_vgs, column_loop)
+#d1 = 33.2/40
+#d2 = 34.5/40
+
+for i in range(len(transfer)):
+    ## Get gradient plots, just one vds but multiple loops
+    plot_transfer_curves_one_vds(T[i], transfer[i], column_ids, column_vgs, column_loop)
+    ## Calculate Vth for multiple loops
+    calculate_vth_one_vds(T[i], transfer[i], d1, d2, column_ids, column_vgs, column_loop)
+
 plt.show()

@@ -876,3 +876,65 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, trans = 
     plt.grid()
 
     return X,Y
+
+def calculate_vth_one_vds(Title, transfer, d1, d2, n_ids, n_vgs, n_loop):
+    
+    X, Y, L = extract_data(transfer,n_vgs, n_ids, n_loop)
+    #Y = np.absolute(Y)
+
+    total_loops = int(L[-1])
+    matrix_length = int(len(L)/total_loops)
+    
+    V_GS = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
+    sqrtI_DS = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
+    Y_fitted = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
+    
+    for j in range (len(L)):
+        index = int(L[j])
+        V_GS[index-1].append(X[j])
+        sqrtIDSaux = np.array(math.sqrt(abs(Y[j])))
+        sqrtI_DS[index-1].append(sqrtIDSaux)
+
+        #start_X = int(c1*len(X))#X.index(0.7*Vds[i])
+        #end_X = int(c2*len(X))#X.index(0)
+
+    plt.figure(figsize=(11, 7.5))
+    plt.xlabel("Gate Voltage (V)",fontsize=24,fontweight='bold')
+    plt.ylabel(r"$\sqrt{I_{DS}} (A^{1/2})$",fontsize=24,fontweight='bold')
+    plt.title(Title)
+    print (Title)
+    
+    c1 = 'red'
+    c2 = 'blue'
+
+    for i in range(total_loops):
+        start_X = int(d1*len(V_GS[i]))#X.index(0.7*Vds[i])
+        end_X = int(d2*len(V_GS[i]))#X.index(0)
+        #print(len(V_GS[i]))
+        #print(V_GS[i][start_X:end_X])
+        if i == 0 or i == total_loops-1:
+            plt.plot(V_GS[i], sqrtI_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)), label = "Loop" + str(i+1))
+        else:
+            plt.plot(V_GS[i], sqrtI_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)))
+        
+        try:
+            slope, intercept, rvalue, pvalue, stderr = linregress(V_GS[i][start_X:end_X], sqrtI_DS[i][start_X:end_X])
+            vth = - intercept / slope
+            #print (type(V_GS[i][start_X:end_X]))
+
+            Y_fitted[i] = intercept + [x * slope for x in V_GS[i][start_X:end_X]]
+
+            plt.plot(V_GS[i][start_X:end_X],Y_fitted[i], '--',color = colorFader(c1,c2,i/(total_loops-1)))#, label="Linear Fit")    
+            print("For loop " + str(i+1) + " Vth is " + str(vth))     
+        except:
+            pass
+        
+    plt.legend()
+    plt.grid()
+
+    #for i in range(total_loops):
+    #    plt.plot(V_GS[i], sqrtI_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)))
+    #    if i == 0 or i == total_loops-1:
+    #        plt.plot(V_GS[i], sqrtI_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)), label = "Loop" + str(i+1))
+    #plt.legend()
+    #plt.grid()
