@@ -121,6 +121,20 @@ def read_directory_deox(dir_path):
                 deox.append(dir_path + '\\' + path)
     return deox
 
+def read_directory_allfiles(dir_path):
+    files = []
+    titles = []
+    # Iterate directory
+    for path in os.listdir(dir_path):
+    # check if current path is a file
+        if os.path.isfile(os.path.join(dir_path, path)):
+            if 'Impedence' in dir_path:
+                titles.append(path[:-4]) ## Removing .tex (4 characters)
+            if 'CV' in dir_path:
+                titles.append(path[-6:-4]) ## Removing .tex (4 characters)
+            files.append(dir_path + '\\' + path)
+    return files, titles
+
 def colorFader(c1,c2,mix=0): #fade (linear interpolate) from color c1 (at mix=0) to c2 (mix=1)
     c1=np.array(mpl.colors.to_rgb(c1))
     c2=np.array(mpl.colors.to_rgb(c2))
@@ -160,20 +174,14 @@ def plot_CV (dir_path, title, WE, Ref):
     plt.legend()
     plt.grid()
 
-def impedance_spec(dir_path, title):
+def impedance_spec(dir_path, title, C = False, Nyq=False):
 
     Freq = extract_csv_column_data(dir_path, 1)
     Z = extract_csv_column_data(dir_path, 4)
     Phase = extract_csv_column_data(dir_path, 5)
-    Z_img = extract_csv_column_data(dir_path, 3) ##complex impedance
-    
-    #Volumetric capacitance calculation
-    C_aux = 2*math.pi*np.array(Freq)*np.array(Z_img)
-    C = 1/C_aux
 
-    #Plots:
-    #Impedance and phase
-    fig, ax1 = plt.subplots()#figsize=(10, 7.5))
+    #Impedance and phase plots
+    fig, ax1 = plt.subplots(figsize=(10, 7.5))
     ax1.set_title(title)
     ax2 = ax1.twinx()
 
@@ -182,12 +190,13 @@ def impedance_spec(dir_path, title):
     ax1.set_yscale('log')
     ax2.set_xscale('log')
 
-    ax1.set_xlabel("Frequency (Hz)",fontsize=24,fontweight='bold')
-    ax1.set_ylabel("|Z| (\u03A9)",fontsize=24,fontweight='bold')
+    ax1.set_xlabel("Frequency (Hz)",fontsize=22,fontweight='bold')
+    ax1.set_ylabel("|Z| (\u03A9)",fontsize=22,fontweight='bold')
     ax1.yaxis.label.set_color('blue')
     ax1.tick_params(axis='y', colors='b')
    
-    ax2.set_ylabel("-Phase (°)",fontsize=24,fontweight='bold')
+    ax2.set_ylabel("-Phase (°)",fontsize=22,fontweight='bold')
+    ax2.set_ylim(0,90) ## 0 correspond to a perfect resistor and 90 to a perfect capacitor
     ax2.yaxis.label.set_color('green')
     ax2.tick_params(axis='y', colors='g')
 
@@ -210,20 +219,37 @@ def impedance_spec(dir_path, title):
     #ax2.yaxis.set_major_formatter(ticker.FixedFormatter(ax1.get_yticklabels()))
     #ax2.yaxis.set_major_formatter(ticker.FixedFormatter([label.get_text() for label in ax1.get_yticklabels()]))
     
-    #fig.suptitle("Temperature down, price up", fontsize=20)
-    #fig.autofmt_xdate()
     ax1.grid(color='b', linestyle='--')
     ax2.grid(color='g', linestyle='--')
 
-    #Capacitance
-    plt.figure(figsize=(10, 7.5))
-    plt.title(title)
-    plt.ylabel("Capacitance (C)",fontsize=26,fontweight='bold')
-    plt.xlabel("Frequency (Hz)",fontsize=26,fontweight='bold')
-    plt.xscale('log')                                     
-    plt.plot(Freq, C, 'o-')#, color=u'#1f77b4')
-    #plt.legend()
-    plt.grid()
+    if C:
+        #Volumetric capacitance calculation and plot
+        Z_img = extract_csv_column_data(dir_path, 3) ##complex impedance
+        C_aux = 2*math.pi*np.array(Freq)*np.array(Z_img)
+        C = 1/C_aux
+
+        #Plot
+        plt.figure(figsize=(10, 7.5))
+        plt.title(title)
+        plt.ylabel("Capacitance (C)",fontsize=22,fontweight='bold')
+        plt.xlabel("Frequency (Hz)",fontsize=22,fontweight='bold')
+        plt.xscale('log')                                     
+        plt.plot(Freq, C, 'o-')#, color=u'#1f77b4')
+        #plt.legend()
+        plt.grid()
+
+    if Nyq:
+        #Nyquist plot
+        Z_img = extract_csv_column_data(dir_path, 3) ## - complex impedance
+        Z_real = extract_csv_column_data(dir_path, 2) ##real impedance
+
+        plt.figure(figsize=(10, 7.5))
+        plt.title(title)
+        plt.ylabel(r"-$Z_{im}}(\Ohm))$",fontsize=22,fontweight='bold')
+        plt.xlabel(r"-$Z_{re}}(\Ohm))$",fontsize=22,fontweight='bold')                                    
+        plt.plot(Z_real, Z_img, '-')#, color=u'#1f77b4')
+        #plt.legend()
+        plt.grid()
 
 def plot_legends(transfer):
     ## Get plot legends
