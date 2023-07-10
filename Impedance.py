@@ -19,6 +19,6 @@ dir_path = 'Data\\6. Impedence\\23.06.29_doped'
 files, titles = read_directory_allfiles(dir_path)
 
 for i in range(len(files)):
-    impedance_spec(files[i], titles[i], C=True, Nyq=True)
+    impedance_spec(files[i], titles[i], C=True)#, Nyq=True)
 
 plt.show()
