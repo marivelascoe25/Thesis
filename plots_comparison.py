@@ -19,24 +19,29 @@ plt.rcParams.update({'font.size':22})
 #file_path2 = 'Data\\3. Transfer curves\\1. IV\\230601_new_pg3t+dropSSE_aftergatededoping_after60sexposure\\U3_m01_transfer1-2_trans_drain=-5.000e-02.txt'
 
 ## Doping with Solid state device
-file_path1 = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE\\D6_m01_transfer1-1.txt'
-file_path2 = 'Data\\3. Transfer curves\\1. IV\\230629_doped_pg3t_5mgmlF6TCNNQ_photopattternSSE\\D3_m01_transfer1-1.txt'
+#file_path1 = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE\\D6_m01_transfer1-1.txt'
+#file_path2 = 'Data\\3. Transfer curves\\1. IV\\230629_doped_pg3t_5mgmlF6TCNNQ_photopattternSSE\\D3_m01_transfer1-1.txt'
 
+## After heating (hopefully deoxidazing)
+file_path1 = 'Data\\3. Transfer curves\\1. IV\\230629_doped_pg3t_5mgmlF6TCNNQ_printedSSE\\U1_m01_transfer1-1.txt'
+file_path2 = 'Data\\3. Transfer curves\\1. IV\\230711_doped_pg3t_5mgmlF6TCNNQ_printedSSE\\U1_secondtimevthshift_transfer1-1.txt'
+file_path3 = 'Data\\3. Transfer curves\\1. IV\\230711_doped_pg3t_5mgmlF6TCNNQ_printedSSE\\U1_m02_afterheating120C_transfer1-1.txt'
+file_path4 = 'Data\\3. Transfer curves\\1. IV\\230712_doped_pg3t_5mgmlF6TCNNQ_printedSSE\\U1_m01_onedayafterheating_transfer1-1.txt'
 
-Leg1 = "Undoped"
-Leg2 = "Doped 5 mg/mL"
-#Leg3 = "Doped 10 mg/mL"
-#Leg1 = "Before exposure"
+Leg1 = "First measurement 29.06"
+Leg2 = "After exposure to air, 11/07" ## I printed SSE on top of the remaining 6 devices
+Leg3 = "Immediately after heating 11/07"
+Leg4 = "Next day of heating 12/07"
 #Leg2 = "After exposure"
 
-transfer = [file_path1, file_path2]#, file_path3]
-legends = [Leg1, Leg2]#, Leg3] 
+transfer = [file_path1, file_path2, file_path3, file_path4]
+legends = [Leg1, Leg2, Leg3, Leg4] 
 #title = "Doping effect @ Vds = -0.7V"
-title = "@ Vds = -0.1V"
+title = "Trying heat de reduce oxidized? doped-p(g3T2-T) device"
 #vgs = [9, 7]
 #ids = [6, 5]
-vgs = [6, 6]
-ids = [3, 3]
+vgs = [6, 6, 6, 6]
+ids = [3, 3, 3, 3]
 
 plots_comparison(title, legends, transfer, vgs, ids)
 

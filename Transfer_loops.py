@@ -12,6 +12,7 @@ plt.rcParams.update({'font.size':20})
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230629_doped_pg3t_5mgmlF6TCNNQ_photopattternSSE'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230706_pg3t_photopattternSSE_remainings13.05'
 dir_path = 'Data\\3. Transfer curves\\1. IV\\230711_doped_pg3t_15mgmlF6TCNNQ_printedSSE'
+#dir_path = 'Data\\3. Transfer curves\\1. IV\\230711_doped_pg3t_5mgmlF6TCNNQ_printedSSE'
 
 ##Bioprobe
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230616_pg3t_photopattternSSE'

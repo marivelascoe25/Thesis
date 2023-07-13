@@ -13,7 +13,8 @@ plt.rcParams.update({'font.size':22})
 #dir_path1 = 'Data\\5. CV\\23.06.14'
 #dir_path5 = 'Data\\5. CV\\23.06.13'
 #dir_path1 = 'Data\\5. CV\\23.06.15'
-dir_path = 'Data\\5. CV\\23.06.29_doped'
+#dir_path = 'Data\\5. CV\\23.06.29_doped'
+dir_path = 'Data\\5. CV\\23.07.11_doped5mgml'
 
 #dir_path = 'Data\\5. CV\\23.06.16_bioprobe'
 #dir_path = 'Data\\5. CV\\23.07.06_Jun13'
