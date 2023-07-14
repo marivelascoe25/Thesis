@@ -1,23 +1,29 @@
-\chapter{The Final Chapter}
-\label{cha:n}
-\lipsum[79]
+\chapter{Results and Discussion}
+\label{cha:3}
 
-\section{The First Topic of this Chapter}
-\subsection{Item 1}
-\subsubsection{Sub-item 1}
-\lipsum[80]
+\section{Doped Conjugated Polymer films}
+\subsection{Polaron and Bipolar formation}
 
-\subsubsection{Sub-item 2}
-\lipsum[81]
+\subsection{Workfunction increase}
 
-\subsection{Item 2}
-\lipsum[82]
+\subsection{Redox properties with Solid State Electrolyte}
 
-\section{The Second Topic}
-\lipsum[83-85]
 
-\section{Conclusion}
-\lipsum[86-88]
+\section{Organic Electrochemical Transistors}
+\subsection{Channel and gate morphology}
+
+\subsection{Channel conductivity}
+\subsubsection{Under inert conditions}
+
+\subsubsection{Under ambient conditions}
+
+\subsection{Threshold voltage shift}
+
+\subsection{Important figure of merit}
+
+
+%\section{Conclusion}
+%\lipsum[86-88]
 
 %%% Local Variables: 
 %%% mode: latex
