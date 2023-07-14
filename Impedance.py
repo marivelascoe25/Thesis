@@ -14,7 +14,8 @@ plt.rcParams.update({'font.size':22})
 #dir_path = 'Data\\6. Impedence\\23.07.06_Jun13'
 
 ## Doped
-dir_path = 'Data\\6. Impedence\\23.06.29_doped'
+#dir_path = 'Data\\6. Impedence\\23.06.29_doped'
+dir_path = 'Data\\6. Impedence\\23.07.11_doped5mgml'
 
 files, titles = read_directory_allfiles(dir_path)
 

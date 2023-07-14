@@ -1,7 +1,7 @@
 \documentclass[master=emnan,masteroption=ne]{kulemt}
 \setup{% Remove the "%" on the next line when using UTF-8 character encoding
   inputenc=utf8,
-  title={Tuning of Organic Electrochemical Transistor Threshold Voltage by varying doping of semiconducting polymer p(g3T2-T)},
+  title={Tuning of Organic Electrochemical Transistor Threshold Voltage by varying doping of conjugated polymer p(g3T2-T)},
   author={Marielena Velasco Enriquez},
   promotor={Prof.\,Dr.\,Karl Leo\and Prof. Dr. Steven De Feyter},
   assessor={PD Dr.rer.nat.habil. Hans Kleeman},
@@ -34,16 +34,13 @@
 \begin{document}
 
 \begin{preface}
-  I would like to thank everybody who kept me busy the last year,
-  especially my promoter and my assistants. I would also like to thank the
-  jury for reading the text. My sincere gratitude also goes to my wive and
-  the rest of my family.
+  %I would like to thank everybody who kept me busy the last year, especially my promoter and my assistants. I would also like to thank the jury for reading the text. My sincere gratitude also goes to my wive and the rest of my family.
 \end{preface}
 
 \tableofcontents*
 
 \begin{abstract}
-Organic Electrochemical transistors (OECTs) exhibit advantageous properties, such as high transconductance and steep-slope switching, while operating at very low voltages. Although, their switching speed is comparatively slower than solid-state devices, it remains sufficient for applications in bioelectronics \cite{rivnay_organic_2018}. The gold standard for p-type OECT devices is PEDOT:PSS. However, its main drawback lies in its depletion-mode operation, which requires power to turn off the device. To minimize power consumption and improve stability, efforts have been made to the design semiconducting polymers that allow accumulation-mode devices. One such polymer, 3-(2-(2-(2-methoxyethoxy)ethoxy)ethoxy)thiophene (p(g3T2-T)) has demonstrated threshold voltages close to zero and high transconductance \cite{nielsen_molecular_2016}. Furthermore, by doping p(g3T2-T) at various levels and drop-casting it as a gate, it has been possible to fine-tune the threshold voltage \cite{tan_tuning_2022}. This study aims to adapt a microstructuring method for fabricating OECT devices that incorporate a solid electrolyte \cite{weissbach_photopatternable_2022} along with different doping levels of p(g3T2-T). Additionally, the study aims to adjust the threshold voltage by utilizing these varying doping levels.
+Organic Electrochemical transistors (OECTs) exhibit advantageous properties, such as high transconductance and steep-slope switching, while operating at very low voltages. Although, their switching speed is comparatively slower than solid-state devices, it remains sufficient for applications in bioelectronics \cite{rivnay_organic_2018}. The gold standard for p-type OECT devices is PEDOT:PSS. However, its main drawback lies in its depletion-mode operation, which requires power to turn off the device. To minimize power consumption and improve stability, efforts have been made to the design conjugated polymers that allow accumulation-mode devices. One such polymer, 3-(2-(2-(2-methoxyethoxy)ethoxy)ethoxy)thiophene (p(g3T2-T)) has demonstrated negative threshold voltages close to zero and high transconductance \cite{nielsen_molecular_2016}. Furthermore, by doping p(g3T2-T) at various levels and drop-casting it as a gate, it has been possible to fine-tune the threshold voltage \cite{tan_tuning_2022}. This study aims to adapt a microstructuring method for fabricating side-gated OECT devices that comprises different doping levels of p(g3T2-T) and a solid-state electrolyte \cite{weissbach_photopatternable_2022}, the latter is deposited by inkjet printing. Additionally, the study aims to adjust the threshold voltage by utilizing these varying doping levels, while analyzing its stability and performance.
 
   %\lipsum[1]
 \end{abstract}
@@ -72,8 +69,6 @@ Organic Electrochemical transistors (OECTs) exhibit advantageous properties, suc
 \begin{flushleft}
   \renewcommand{\arraystretch}{1.1}
   \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
-    42    & ``The Answer to the Ultimate Question of Life, the Universe,
-            and Everything'' according to \cite{h2g2} \\
     $c$   & Speed of light \\
     $E$   & Energy \\
     $m$   & Mass \\
@@ -86,10 +81,10 @@ Organic Electrochemical transistors (OECTs) exhibit advantageous properties, suc
 
 \include{intro}
 \include{chap-1}
-%\include{chap-2}
+\include{chap-2}
 % ... and so on until
-%\include{chap-n}
-%\include{conclusion}
+\include{chap-n}
+\include{conclusion}
 
 % If you have appendices:
 %\appendixpage*          % if wanted
