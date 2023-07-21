@@ -14,7 +14,8 @@ plt.rcParams.update({'font.size':22})
 #dir_path5 = 'Data\\5. CV\\23.06.13'
 #dir_path1 = 'Data\\5. CV\\23.06.15'
 #dir_path = 'Data\\5. CV\\23.06.29_doped'
-dir_path = 'Data\\5. CV\\23.07.11_doped5mgml'
+#dir_path = 'Data\\5. CV\\23.07.11_doped5mgml'
+dir_path = 'Data\\5. CV\\23.07.20_undoped'
 
 #dir_path = 'Data\\5. CV\\23.06.16_bioprobe'
 #dir_path = 'Data\\5. CV\\23.07.06_Jun13'
@@ -23,7 +24,7 @@ dir_path = 'Data\\5. CV\\23.07.11_doped5mgml'
 #title1 = "Ag/AgCl as working electrode"
 
 files, titles = read_directory_allfiles(dir_path)
-print(titles)
+#print(titles)
 
 for i in range(len(files)):
     #plot_CV (dir_path, WE, Ref), WE: Working Electrode, Ref: Reference Electrode

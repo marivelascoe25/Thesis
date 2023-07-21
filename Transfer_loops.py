@@ -13,7 +13,8 @@ plt.rcParams.update({'font.size':20})
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230706_pg3t_photopattternSSE_remainings13.05'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230711_doped_pg3t_15mgmlF6TCNNQ_printedSSE'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230711_doped_pg3t_5mgmlF6TCNNQ_printedSSE'
-dir_path = 'Data\\3. Transfer curves\\1. IV\\230712_doped_pg3t_15mgmlF6TCNNQ_AgNP_printedSSE'
+#dir_path = 'Data\\3. Transfer curves\\1. IV\\230712_doped_pg3t_15mgmlF6TCNNQ_AgNP_printedSSE'
+dir_path = 'Data\\3. Transfer curves\\1. IV\\230720_undoped_pg3t_inkSSE'
 
 ##Bioprobe
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230616_pg3t_photopattternSSE'
@@ -37,16 +38,16 @@ column_loop=column_vgs-1
 
 
 ## Forward
-d1 = 25.8/40
-d2 = 26.5/40
-
+#d1 = 25.8/40
+#d2 = 26.5/40
+   
 ## Backward
-#d1 = 34/40
-#d2 = 34.5/40
+d1 = 34/40
+d2 = 34.5/40
 
 for i in range(len(transfer)):
     ## Get gradient plots, just one vds but multiple loops
-    #plot_transfer_curves_one_vds(T[i], transfer[i], column_ids, column_vgs, column_loop)
+    plot_transfer_curves_one_vds(T[i], transfer[i], column_ids, column_vgs, column_loop)
     ## Calculate Vth for multiple loops
     calculate_vth_one_vds(T[i], transfer[i], d1, d2, column_ids, column_vgs, column_loop)
 
