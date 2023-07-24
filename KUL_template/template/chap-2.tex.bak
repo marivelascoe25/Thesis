@@ -1,20 +1,102 @@
-\chapter{Experimental Methods}
+{\chapter{Experimental Methods}}
 \label{cha:2}
 %\lipsum[77]
 
 \section{Materials}
 %\lipsum[78]
+All reactives were purchased from commercial suppliers and non further chemical modification or purification was done unless stated before.
+
+\begin{itemize}
+\item Chromium etchant: Standard, Sigma Aldrich
+\item Developer: AZ 726 MIF Developer, Merck performance Materials GmbH
+\item EG: Ethylene glycol, $\geq$ 95$\%$, Sigma Aldrich
+\item $[EMIM][EtSO4]$: (1-Ethyl-3-methylimidazolium ethyl sulfate), $\geq$95$\%$, Sigma Aldrich 
+\item Gold etchant: Standard, Sigma Aldrich HHPAA (2-Hydroxy-4’-(2-hydroxyethoxy)-2-methylpropiophenone), 98$\%$, Sigma Aldrich 
+\item MBBAm (N,N’-Methylenebisacrylamide), 99$\%$, Sigma Aldrich 
+\item NIPAm: (N-Isopropylacrylamide), 97$\%$, Alfa Aesar 
+\item Orthogonal Developer: Orthogonal Developer 103a, Orthogonal Inc. 
+\item Orthogonal Photoresist for undoped species: NLOF, Orthogonal Inc.
+\item Sacrificial layer: Sacrifical Layer (SL), Orthogonal Inc.
+\item Orthogonal Photoresist for doped species: OSCoR 4020 Photoresist, Orthogonal Inc.
+\item Orthogonal Stripper: Orthogonal Stripper 900, Orthogonal Inc. 
+\item p(g3T2-T): 3-(2-(2-(2-methoxyethoxy)ethoxy)ethoxy)thiophene
+\item Dopants: 1,3,4,5,7,8-hexafluorotetracyanonaphthoquinodimethane and 1,3,4,5-tetrafluorotetracyanonaphthoquinodimethane
+\item Photoresist: AZ 1518 Photoresist, Merck Performance Materials GmbH \& Microchemical GmbH 
+\item Silane A174 (3-(Trimethoxysilyl)propyl methacrylate), TCI
+
+\end{itemize}
 
 \section{Equipmment}
+\begin{itemize}
+\item Baking: All baking steps were carried out on a Stuart SD160 digital hotplate (Stuart Equipment, UK). 
+\item Electrical characterisation (ambient): Device characterisation under ambient conditions was performed on a Everbeing C-6 Probe Station (Everbeing Int’l Corp., Taiwan), connected to a Keithley 4200-SCS Semiconductor Characterisation System (Keithley Instruments, USA). 
+\item Electrical characterisation (glovebox): Device characterisation was performed in a nitrogen-filled glovebox. Probing needles were connected to two Keithley 236 Source Measure Units (Keithley Instruments, USA). 
+\item Impedance measurements: Impedance measurements were carried out by using a Metrohm Autolab PGSTAT302N potentiostat/galvanostat (Metrohm AG, Switzerland). 
+\item Micrographs: Micrographs were taken on a Nikon Eclipse LV100ND microscope, equipped with a DS-Fi2 camera (Nikon, Japan). 
+\item Photolithography: Photolithography was carried out on a SÜSS Microtec MJB4 maskaligner system (SÜSS Microtec AG, Germany). 
+\item Photomasks: Photomasks were custom made by Compugraphics Jena in a 4 inch format (soda-lime glass covered with chromium) and held several mask designs (Compugraphics Jena GmbH, Germany). 
+\item Plasma cleaning: O2-plasma cleaning was performed by using a Harrick PDC-002 plasma cleaner (Harrick Plasma, USA), connected to a Leybold Heraeus Combitron CM 330 Vacuum Gauge Controller (Leybold GmbH, Germany). 
+\item Plasma etching. O2-plasma etching was performed by using a Diener electronic ATTO plasma cleaner (Diener electronic GmbH \& Co. KG, Germany). 
+\item Profilometry. Profilometry was performed on a Veeco Dektak 150 surface profiler (Veeco Instruments Inc., USA).
+\item UV-Visible Spectroscopy: SolidSpec-3700 UV-Vis-NIR spectrometer from Shimadzu.
+\item Ultraviolet Photoelectron Spectroscopy (UPS): a helium discharge lamp (UVS10/35, Specs) was used and the main He I excitation line is at hv = 21.22 eV
+\item Spincoating. Samples were coated with a SAWATEC SM-180-BT spincoater (SAWATEC AG, Switzerland).
+\end{itemize}
 
 \section{Software}
+%% Add citations of libraries and stuff
+\begin{itemize}
+\item Data processing: All data was processed by customised scripts written in the Python programming language. Mathematical computations (e.g. fits, integration) were carried out by employing the Pandas, NumPy, and SciPy libraries. Visualisations were performed using the Matplotlib library. 
+\item Electrical characterisation: Electrical characterisations were performed by controlling SMUs through the in-house developed SweepMe! software (\href{https://sweep-me.net/}). 
+\item Profilometry: Profilometry was performed by using the Dektak software (Veeco Instruments Inc., USA).
+\end{itemize}
 
-%\section{Photomasks}
+\section{Photomasks}
+Photomasks were employed during photolithography to cover or uncover the respective areas of interest, depending on the photoresist employed (positive or negative, respectively). Details are given in Chapter . The employed photomasks for OECT fabrication are shown in Figure , with a labeled close-up scheme of a transistor device given in Figure . All devices were designed in a side-gate structure with the 16 devices each mask comprised differing in channel length and gate distance. An overview of the specific dimensions is provided in Table  with the designations assigning the devices (U1 – U8 (Up) and D1 – D8 (Down)). Since investigations on device dimensions were not a direct study object of this work, according assignments were left out. However, all comparisons between different substrates do of course always refer to the very same devices on each individual sample. A device assignment of all plots shown is given in Table S1. It shall be pointed out that the fabrication process did regularly lead to samples with several non-functioning devices. Accordingly, experiments were to be conducted on OECTs that were found working, which accounts for the variation in examined devices. For experiments of Chapter , available photomasks were arranged and covered to yield the setup shown in Figure . For experiments of Chapter , channels of p(g3T2-T) with underlying gold contacts were prepared. The corresponding photomasks are shown in Figure  and were printed on plastic foil in a common inkjet printer. As schematically shown in Figure  though, the lower big as well as several small gold contacts have not been used during execution. The lowest small gold contact served as source electrode.
 
 \section{Experimental Procedures}
 \subsection{Conjugated polymer films}
+Unlike in reference \cite{tan_tuning_2022}, where drop cast is used to fabricate devices, in order to perform lithography and
+being able to do a miniaturization process, homogeneous films are needed. The following procedure
+has been stablished:
+
+\begin{enumerate}
+\item prepare 10mg/mL solution of p(g3T2-T) in chloroform at $60^{\circ}$C,
+\item prepare 5, 10 and 20 mg/mL solution of F$_{4}$TCNQ in acetonitrile at $60^{\circ}$C,
+\item clean substrates with subsequent steps of ultrasonic bath with acetone for 15 minutes, rinse cith IPA, drying with N$_{2}$ and O$_{2}$-plasma,
+\item dynamic spin coat 70$\mu$L of p(g3T2-T) at 3000RPM for 60s,
+\item if preparing a doped sample, dynamic spin coat 140$\mu$L of each dopant solvent at different concentrations on top, to yield approximately 70 nm thick layer, and
+\item postbake at $80^{\circ}$C.
+\end{enumerate}
+
 
 \subsection{Fabrication of Organic Electrochemical Transistors}
+After following the patterning process to obtain Au contacts from reference , undoped and doped
+p(g3T2-T) was deposited following the procedure described before. After some trials, different patterning process were defined for undoped and doped films.
+
+\subsubsection{Undoped p(g3T2-T) OECT}
+\begin{enumerate}
+\item Sacrificial Layer 1 (SL1, fluoropolymer provided by Orthogonal Inc.) was spincoated (6000 RPM for 60s) and baked for 60s at $113^{\circ}$C.
+\item To promote adhesion, sample was placed in plasma (UFO2) for 60s. 
+\item NLOF 2020 (commercial negative-tone photoresist from Microchemicals) was spincoated (3000 RPM for 60s) and baked for 60s at $113^{\circ}$C.
+\item NLOF was exposed for 12s to structure channel and gate (although only channel is used).
+\item After postbaking (60s at $113^{\circ}$C), NLOF was developed by rinsing the sample in AZ MIF 726 (commercial developer for NLOF 2020) for 20s and wash off in DI water (carried out extra times if necessary).
+\item SL1 was developed using HF 7300 developer for 20s and spin rinsed at 3000RPM (carried out extra times if necessary):
+\item Excess p(g3T2-T) was removed by O$_{2}$-plasma etching (180s)
+\item Finally, the sample was placed in Orthogonal Stripper 902 overnight at room temperature.
+\item Ultrasonic bath with stripper is followed if NLOF pattern is still on sample.
+\end{enumerate}
+
+
+\subsubsection{Doped p(g3T2-T) OECT}
+\begin{enumerate}
+\item Orthogonal photoresist OSCoR 4020 (provided by Orthogonal Inc.) was spincoated (3000 RPM for 60s) and baked for 60s at $103^{\circ}$C.
+\item OSCoR was exposed for 20s (increase one extra cycle if using higher dopant concentration) to structure channel and gate (although only channel is used).
+\item After postbaking (60s at $103^{\circ}$C), development followed by covering the sample with Ortoghonal Developer 103a and removing it by spinning at 3000RPM after 50s (carried out extra times if necessary, if higher dopant concentration is used, start with 30s development).
+\item Excess doped p(g3T2-T) was removed by O$_{2}$-plasma etching (180s)
+\item The sample was placed in Orthogonal Stripper 902 over night at room temperature.
+\item Finally, to prepare for measurements, blow off excess of stripper with N$_{2}$ and add 20$\mu$L of solid state electrolyte (SSE) in liquid state.
+\end{enumerate}
 
 %\subsection{An item}
 %A master's thesis is never an isolated work. This means that your text must contain references. On-line documents\cite{wiki} as well as books\cite{pratchett06:_good_omens} can be referenced.
