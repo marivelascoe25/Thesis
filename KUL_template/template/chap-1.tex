@@ -19,7 +19,8 @@ Electron-deficient dopants such as 2,3,5,6 tetrafluoro-7,7,8,8-tetracyanoquinodi
 
 \section{Organic Mixed Ionic/Electronic Conductors (OMIECs)}
 
-Initially investigated for batteries and super capacitors, where the induction of charges was the main objective of a semiconducting material, OMIEcs has rapidly grown to include other applications, among them OECTs. \cite{paulsenOrganicMixedIonic2020}
+Initially investigated for batteries and super capacitors, where the induction of charges was the main objective of a semiconducting material, OMIECs has rapidly grown to include other applications, among them: OECTs \cite{paulsenOrganicMixedIonic2020}.
+
 % PEDOT:PSS Heterogeneous, blends or complexed systems OMIEC. Conjugated polymer/electrolyte blends. Contains ions chemically linked ot an insulating or conjugated component
 % p(g3T2-T) Homogeneous, single-component systems OMIEC. Conjugated polymer electrolytes. Ions introduced as free species upon material casting or device operation
 
@@ -35,6 +36,8 @@ Thiophene is a planar conjugated ring structure consists of six delocalized pi-e
 
 Nielsen et al. reported a series of semiconducting polymers with Ethylene Glycol (EG) side chains designed to elucidate important strcuture-property guidelines for accumulation-mode OECT operation. They demonstrated that an OECT with 3-(2-(2-(2-methoxyethoxy)ethoxy)ethoxy)thiophene p(g3T2-T), as seen in Figure , has higher transconductance, and a turn-on voltage close to zero compared to other thiophene-based species \cite{nielsenMolecularDesignSemiconducting2016}. While its backbone design warrant reversibility during electrochemical redox reactions and good electronic transport, the EG side chains enable its stability in aqueous electrolytes and efficient transport of ionic and electronic charge carrier \cite{moiaDesignEvaluationConjugated2019}. Moser et al. studied the impact of the length of the EG side chain of this polythiophene backbone on the performance of OECTs. They reported that reducing chain length would maximize the capacitance, but the increase of length would enhance ion-polymer interaction. Finally, they suggested an optimum length of 3 monomers in side chains over 2, 4 and 6 monomers \cite{moserEthyleneGlycolBasedSide2020}. The main advantage of p(g3T2-T) over PEDOT:PSS is its higher transconductance \cite{nielsenMolecularDesignSemiconducting2016}, the absence of extensive pre- and postprocessing to optimize polymer stability and electrochemical performance in aqueous media and the possibility of an accumulation-mode OECT with low operation voltages\cite{moserEthyleneGlycolBasedSide2020}.
 
+Organic semiconductors with polar sidechains have been identified as a promising class of materials for the field of bioelectronics. These materials, also called organic mixed ionic/electronic conductors (OMIECs), can exchange ions with aqueous electrolytes when electronic charge carriers are injected, transported, and stored in the bulk of the material \cite{giovannittiEnergeticControlRedoxActive2020}
+
 Homogeneous single phase OMIECs (types V and VI) display larger magnitudes of ionic–electronic coupling and larger values of volumetric capacitance than biphasic OMIECs (types I–IV) \cite{paulsenOrganicMixedIonic2020}. 
 
 
@@ -42,6 +45,11 @@ Homogeneous single phase OMIECs (types V and VI) display larger magnitudes of io
 
 \subsection{Electrochemical Doping}
 
+The electrochemical charging of OMIECs can be described as a capacitive faradaic charging process,
+% there is current caused by charge transfer, other physical phenomenas such as desorption or adsorption can also lead to the aparition of current that is non faradaic reaction
+meaning that the OMIEC undergoes a change in its oxidation state (p-doping in the language of physicists) through an electron transfer with the contact (current collector), while ions from the electrolyte penetrate inside the channel material to compensate the carge carrier on the polymer backbone electrostatically with no change in the inserted ion's oxidation state \cite{giovannittiEnergeticControlRedoxActive2020}  
+
+Savva et al. study the influence of water on the performance of OECT, the water uptake of conjugated polymer films led to 10-13\% mass increase under non biased conditions. As the concentration of water decrease (NaCl$_{aq}$ 10 mM, 100mM, 1M, and 6M) ionic charging is faster regardless of the doping pulse, however the fastest ionic charging is achieved at NaCl$_{aq}$ 1 M. The injection/drift of ions is also affected by the ion-counterion attractive forces which delays the ion injection from the electrolyte, opposing their drift into the polymer (NaCl$_{aq}$ 6 M hinders the drift of anions) affecting the response time. \cite{savvaInfluenceWaterPerformance2019}
 
 \section{Organic Electrochemical Transistors (OECTs)}
 
@@ -53,17 +61,19 @@ Organic Electrochemical Transistors (OECTs) consists of metallic source, drain a
 	\qquad
 	\subfloat[]{{\includegraphics[height=8cm]{Images/depletion.png} }}
 	\subfloat[]{{\includegraphics[height=8cm]{Images/accumulation.png} }}
-	\caption{(a) Typical structure of an organic electrochemical transistor (OECT). (b) Transfer curve showing depletion-mode operation of an OECT with a conducting polymer channel. (c) Transfer curve showing accumulation-mode operation of an OECT with a semiconducting polymer channel. Images extracted from reference\cite{rivnay_organic_2018}.}
+	\caption{(a) Typical structure of an organic electrochemical transistor (OECT). (b) Transfer curve showing depletion-mode operation of an OECT with a conducting polymer channel. (c) Transfer curve showing accumulation-mode operation of an OECT with a semiconducting polymer channel. Images extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
 	\label{fig:modes}
 \end{figure}
 
 The semiconductor
 
-devices that are mechanically compliant, biocompatible, and are sensitive to biochemical modules \cite{tanMixedIonicElectronic2022}
+%devices that are mechanically compliant, biocompatible, and are sensitive to biochemical modules \cite{tanMixedIonicElectronic2022} 
 
 \subsection{Device Physics}
 
 \subsection{Operation Modes}
+
+Accumulation-mode devices has the advantage of dissipating less static power when the device is not operated, due to low OFF current, which must be minimized as much as possible \cite{giovannittiEnergeticControlRedoxActive2020}
 
 \subsection{Important Figures of Merit}
 \subsubsection{Transconductance}
@@ -75,10 +85,23 @@ An approach to shift the operating voltage range for PEDOT:PSS OECTs to lower th
 \subsection{Requirements to Avoid Undesirable Side Reactions}
 
 
-Achieving effective charge transfer between the analyte and OMIEC requires appropriate alignment of the electrochemical potential of electrons on the OMIEC electrode and the redox specie. Failure to do so may result in the subsequent transfer of charges to other redox-active sinks in the environment, leading to undesirable side reactions and products that may interfere with the OMIEC’s operation. Electrons flow from a region of higher to lower electrochemical potential. Hence, achieving electron transfer from redox-active species to the OMIEC requires the latter to have a deep LUMO (high electron affinity) \cite{tanMixedIonicElectronic2022}
+Achieving effective charge transfer between the analyte and OMIEC requires appropriate alignment of the electrochemical potential of electrons on the OMIEC electrode and the redox specie. Failure to do so may result in the subsequent transfer of charges to other redox-active sinks in the environment, leading to undesirable side reactions and products that may interfere with the OMIEC’s operation. Electrons flow from a region of higher to lower electrochemical potential. Hence, achieving electron transfer from redox-active species to the OMIEC requires the latter to have a deep LUMO (high electron affinity) \cite{tanMixedIonicElectronic2022} %paper
 
+\subsubsection{Oxygen Reduction Reaction (ORR)}
+
+With the aim of developing accumulation-mode OECTs, the engineering of new OMIECs were introduced as commented in previous sections. Normally, this polymer backbones have low ionization potential (IPs) which lead to another side effect issue that little attention has been paid: non capacitive faradaic rections in ambient: electron-transfer reaction from the OMIEC to molecular oxygen described as oxygen reduction reaction (ORR)
+
+% Remember 
+% Thermodynamically favored processes or reactions are those that involve both a decrease in the internal energy of the components (ΔH° < 0) and an increase in entropy of the components (ΔS° > 0). These processes are necessarily “thermodynamically favored” (ΔG° < 0) or negative. ΔG° = ΔH°-TΔS°
+% Catalyst help to reduce the activation energy required for a reaction
+
+The ORR yields either H$_{2}$O$_{2}$ or water (H$_{2}$O) as well as charging (oxidation) of the OMIEC that acts as the catalyst. The first shows a free energy difference that is endergonic for OMIECs with IPs \> 4.9eV and hence prevent the OMIEC from undergoing ORR that form H$_{2}$O$_{2}$. To prevent the ORR in ambient conditions, OMIECs based on donor-acceptor copolymer (Type III or IV) that have large IPs to shift
+\cite{giovannittiEnergeticControlRedoxActive2020}
+% Actually this material does not avoid this, we need to take into account this interaction.
 
 \subsection{Building Block for neuromorphic and bioelectronic applications}
+
+
 
 %%% Local Variables: 
 %%% mode: latex
