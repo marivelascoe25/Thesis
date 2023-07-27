@@ -3,7 +3,7 @@
 
 The field of organic electronics has witnessed significant advancements in recent years due to its biocompatibility, mechanical compliant, and other application-specific characteristics. Among the numerous types of organic devices, Organic Electrochemical Transistors (OECTs) have attracted considerable attention due to their unique capabilities such as high transconductance and steep-slope switching at low operation voltages, which give them potential for use in energy storage, bioelectronics and neuromorphic devices. 
 
-Accumulation-mode transistors, devices that are normally in the OFF state at zero-gate-biased condition, rely on the use of undoped conjugated polymers. In constrast, the ability to precisely control and tune threshold voltage of an OECT can be achieve by manipulating the doping level of the mentioned conjugated polymer \cite{tan_tuning_2022}. Tan et al. fabricated devices that did not follow a complete microstructuring technique, limiting their integration into circuits. 
+Accumulation-mode transistors, devices that are normally in the OFF state at zero-gate-biased condition, rely on the use of undoped conjugated polymers. In constrast, the ability to precisely control and tune threshold voltage of an OECT can be achieve by manipulating the doping level of the mentioned conjugated polymer \cite{tanTuningOrganicElectrochemical2022}. Tan et al. fabricated devices that did not follow a complete microstructuring technique, limiting their integration into circuits. 
 
 %\section{Motivation}
 %Many challenges have raised for OECTs' operation, some of them include and will be the main focus of this thesis:
