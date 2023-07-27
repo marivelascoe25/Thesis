@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.4)  25 JUL 2023 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.4)  26 JUL 2023 22:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1354,7 +1354,7 @@ LaTeX Warning: Citation `tan_tuning_2022' on page 1 undefined on input line 6.
 <Images/structure.png, id=295, 380.17032pt x 319.94531pt>
 File: Images/structure.png Graphic file (type png)
 <use Images/structure.png>
-Package pdftex.def Info: Images/structure.png  used on input line 46.
+Package pdftex.def Info: Images/structure.png  used on input line 47.
 (pdftex.def)             Requested size: 152.14084pt x 128.0374pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/9'.
@@ -1362,21 +1362,21 @@ Package microtype Info: Character `029' is missing
 <Images/depletion.png, id=297, 409.1536pt x 499.8675pt>
 File: Images/depletion.png Graphic file (type png)
 <use Images/depletion.png>
-Package pdftex.def Info: Images/depletion.png  used on input line 48.
+Package pdftex.def Info: Images/depletion.png  used on input line 49.
 (pdftex.def)             Requested size: 186.315pt x 227.62204pt.
 <Images/accumulation.png, id=298, 402.75468pt x 499.49109pt>
 File: Images/accumulation.png Graphic file (type png)
 <use Images/accumulation.png>
-Package pdftex.def Info: Images/accumulation.png  used on input line 49.
+Package pdftex.def Info: Images/accumulation.png  used on input line 50.
 (pdftex.def)             Requested size: 183.53636pt x 227.62204pt.
 
 
 LaTeX Warning: Citation `rivnay_organic_2018' on page 4 undefined on input line
- 50.
+ 51.
 
 
 LaTeX Warning: Citation `rivnay_organic_2018' on page 4 undefined on input line
- 50.
+ 51.
 
 [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1515,7 +1515,7 @@ onts/type1/public/lm/lmri10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
 lm/lmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/t
 exlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2023/tex
 mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (26 pages, 821476 bytes).
+Output written on thesis.pdf (26 pages, 821527 bytes).
 PDF statistics:
  513 PDF objects out of 1000 (max. 8388607)
  449 compressed objects within 5 object streams
