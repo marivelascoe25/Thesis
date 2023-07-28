@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  27 JUL 2023 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  28 JUL 2023 13:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1317,60 +1317,62 @@ Package microtype Info: Character `029' is missing
 ]) [2]
 \openout2 = `chap-1.aux'.
 
- (./chap-1.tex
-
-LaTeX Warning: Citation `mattinenAtomicLayerDeposition2021' on page 3 undefined
- on input line 6.
-
-[3
-
-
-
-
-] [4]
-<Images/structure.png, id=315, 380.17032pt x 319.94531pt>
-File: Images/structure.png Graphic file (type png)
-<use Images/structure.png>
-Package pdftex.def Info: Images/structure.png  used on input line 60.
-(pdftex.def)             Requested size: 152.14084pt x 128.0374pt.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/9'.
-(microtype)             Ignoring protrusion settings for this character.
-<Images/depletion.png, id=317, 409.1536pt x 499.8675pt>
-File: Images/depletion.png Graphic file (type png)
-<use Images/depletion.png>
-Package pdftex.def Info: Images/depletion.png  used on input line 62.
-(pdftex.def)             Requested size: 186.315pt x 227.62204pt.
-<Images/accumulation.png, id=318, 402.75468pt x 499.49109pt>
-File: Images/accumulation.png Graphic file (type png)
-<use Images/accumulation.png>
-Package pdftex.def Info: Images/accumulation.png  used on input line 63.
-(pdftex.def)             Requested size: 183.53636pt x 227.62204pt.
-
-
-LaTeX Warning: Citation `Keene_enhmod_pedot' on page 5 undefined on input line 
-83.
-
-[5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./Images/structure.png> <./Images/depletion.png> <./Images/accumulation.pn
-g>])
-[7]
-\openout2 = `chap-2.aux'.
-
- (./chap-2.tex [8
+ (./chap-1.tex [3
 
 
 
 
 ]
+<Images/OMIEC_types.png, id=307, 670.75594pt x 542.025pt>
+File: Images/OMIEC_types.png Graphic file (type png)
+<use Images/OMIEC_types.png>
+Package pdftex.def Info: Images/OMIEC_types.png  used on input line 33.
+(pdftex.def)             Requested size: 398.0pt x 321.61151pt.
+
+Underfull \vbox (badness 1796) has occurred while \output is active []
+
+ [4 <./Images/OMIEC_types.png>]
+<Images/structure.png, id=323, 380.17032pt x 319.94531pt>
+File: Images/structure.png Graphic file (type png)
+<use Images/structure.png>
+Package pdftex.def Info: Images/structure.png  used on input line 78.
+(pdftex.def)             Requested size: 152.14084pt x 128.0374pt.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/9'.
+(microtype)             Ignoring protrusion settings for this character.
+<Images/depletion.png, id=324, 409.1536pt x 499.8675pt>
+File: Images/depletion.png Graphic file (type png)
+<use Images/depletion.png>
+Package pdftex.def Info: Images/depletion.png  used on input line 80.
+(pdftex.def)             Requested size: 186.315pt x 227.62204pt.
+<Images/accumulation.png, id=325, 402.75468pt x 499.49109pt>
+File: Images/accumulation.png Graphic file (type png)
+<use Images/accumulation.png>
+Package pdftex.def Info: Images/accumulation.png  used on input line 81.
+(pdftex.def)             Requested size: 183.53636pt x 227.62204pt.
+
+Underfull \vbox (badness 1668) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 1859) has occurred while \output is active []
+
+ [6 <./Images/structure.png> <./Images/depletion.png> <./Images/accumulation.pn
+g>] [7])
+[8]
+\openout2 = `chap-2.aux'.
+
+ (./chap-2.tex
 Overfull \hbox (10.83458pt too wide) in paragraph at lines 14--15
 []\T1/lmr/m/n/10.95 (-20) Gold etchant: Stan-dard, Sigma Aldrich HH-PAA (2-Hydr
 oxy-4'-(2-hydroxyethoxy)-
  []
 
-[9]
+[9
+
+
+
+
+]
 Overfull \hbox (16.5791pt too wide) in paragraph at lines 42--43
 []\T1/lmr/m/n/10.95 (-20) Ultraviolet Pho-to-elec-tron Spec-troscopy (UPS): a h
 e-lium dis-charge lamp (UVS10/35,
@@ -1417,18 +1419,15 @@ bibitemlist
 
  (./thesis.aux (./intro.aux) (./chap-1.aux) (./chap-2.aux)
 (./chap-n.aux) (./conclusion.aux))
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7BECC8B64D7CE2F2016E600D2D3D894A;7273.
+(rerunfilecheck)             Checksum: 6D7D03A2D95E1139D0DA1340CC62500D;7273.
  ) 
 Here is how much of TeX's memory you used:
- 17921 strings out of 475071
- 295990 string characters out of 5782908
- 816982 words of memory out of 5000000
- 38748 multiletter control sequences out of 15000+600000
- 544989 words of font info for 144 fonts, out of 8000000 for 9000
+ 17935 strings out of 475071
+ 296367 string characters out of 5782908
+ 818306 words of memory out of 5000000
+ 38758 multiletter control sequences out of 15000+600000
+ 545000 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,12n,79p,1761b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022
@@ -1445,10 +1444,10 @@ ype1/public/lm/lmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr1
 s/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/
 lmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/t
 exlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (28 pages, 827020 bytes).
+Output written on thesis.pdf (28 pages, 1073619 bytes).
 PDF statistics:
- 527 PDF objects out of 1000 (max. 8388607)
- 458 compressed objects within 5 object streams
- 125 named destinations out of 1000 (max. 500000)
- 39757 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 546 PDF objects out of 1000 (max. 8388607)
+ 474 compressed objects within 5 object streams
+ 128 named destinations out of 1000 (max. 500000)
+ 39762 words of extra memory for PDF output out of 42996 (max. 10000000)
 
