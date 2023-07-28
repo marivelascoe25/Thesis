@@ -17,18 +17,18 @@
 \contentsline {subsubsection}{\numberline {2.1.2.1}Measuring techniques to characterize doping}{3}{subsubsection.2.1.2.1}%
 \contentsline {section}{\numberline {2.2}Organic Mixed Ionic/Electronic Conductors (OMIECs)}{3}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}A widely used material: PEDOT:PSS}{4}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Other Thiophene-based polymers}{4}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}Other Thiophene-based polymers}{5}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Electrochemical Doping}{5}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Organic Electrochemical Transistors (OECTs)}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Device Physics}{5}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Operation Modes}{5}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Important Figures of Merit}{5}{subsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Transconductance}{5}{subsubsection.2.3.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.3.2}$\mu $C* product}{5}{subsubsection.2.3.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3.3}Threshold voltage}{5}{subsubsection.2.3.3.3}%
+\contentsline {subsection}{\numberline {2.3.1}Device Physics}{6}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Operation Modes}{6}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Important Figures of Merit}{7}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Transconductance}{7}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}$\mu $C* product}{7}{subsubsection.2.3.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3.3}Threshold voltage}{7}{subsubsection.2.3.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Requirements to Avoid Undesirable Side Reactions}{7}{subsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.4.1}Oxygen Reduction Reaction (ORR)}{7}{subsubsection.2.3.4.1}%
-\contentsline {subsection}{\numberline {2.3.5}Building Block for neuromorphic and bioelectronic applications}{7}{subsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}Oxygen Reduction Reaction (ORR)}{8}{subsubsection.2.3.4.1}%
+\contentsline {subsection}{\numberline {2.3.5}Building Block for neuromorphic and bioelectronic applications}{8}{subsection.2.3.5}%
 \contentsline {chapter}{\chapternumberline {3}Experimental Methods}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Materials}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Equipmment}{10}{section.3.2}%
@@ -52,4 +52,4 @@
 \contentsline {subsection}{\numberline {4.2.3}Threshold voltage shift}{15}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Important figures of merit}{15}{subsection.4.2.4}%
 \contentsline {chapter}{\chapternumberline {5}Conclusion and Outlook}{17}{chapter.5}%
-\contentsline {chapter}{Bibliography}{19}{chapter*.13}%
+\contentsline {chapter}{Bibliography}{19}{chapter*.14}%

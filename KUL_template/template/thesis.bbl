@@ -46,6 +46,16 @@ A.~Weissbach, L.~M. Bongartz, M.~Cucchi, H.~Tseng, K.~Leo, and H.~Kleemann,
   transistors: Operation and hysteresis,'' \emph{Journal of Materials Chemistry
   C}, vol.~10, no.~7, pp. 2656--2662, 2022.
 
+\bibitem{paulsenOrganicMixedIonic2020}
+B.~D. Paulsen, K.~Tybrandt, E.~Stavrinidou, and J.~Rivnay, ``Organic mixed
+  ionic\textendash electronic conductors,'' \emph{Nature Materials}, vol.~19,
+  no.~1, pp. 13--26, Jan. 2020.
+
+\bibitem{mattElectronicStructureMorphology2021}
+C.~Matt, ``Electronic structure and morphology of organic semiconductors and
+  the impact of molecular modifications,'' {{doctoralThesis}}, Saarl\"andische
+  Universit\"ats- und Landesbibliothek, 2021.
+
 \bibitem{alcacerElectronicStructureOrganic2018}
 L.~Alc{\'a}cer, \emph{Electronic {{Structure}} of {{Organic Semiconductors}}:
   {{Polymers}} and Small Molecules}.\hskip 1em plus 0.5em minus 0.4em\relax
@@ -56,10 +66,19 @@ S.~T.~M. Tan, ``Organic {{Mixed Ionic Electronic Conductors}} for
   {{Electrochemical Devices}},'' Ph.D. dissertation, Stanford University, {Palo
   Alto, CA}, Dec. 2022.
 
-\bibitem{paulsenOrganicMixedIonic2020}
-B.~D. Paulsen, K.~Tybrandt, E.~Stavrinidou, and J.~Rivnay, ``Organic mixed
-  ionic\textendash electronic conductors,'' \emph{Nature Materials}, vol.~19,
-  no.~1, pp. 13--26, Jan. 2020.
+\bibitem{giovannittiEnergeticControlRedoxActive2020}
+A.~Giovannitti, R.~B. Rashid, Q.~Thiburce, B.~D. Paulsen, C.~Cendra,
+  K.~Thorley, D.~Moia, J.~T. Mefford, D.~Hanifi, D.~Weiyuan, M.~Moser,
+  A.~Salleo, J.~Nelson, I.~McCulloch, and J.~Rivnay, ``Energetic {{Control}} of
+  {{Redox-Active Polymers}} toward {{Safe Organic Bioelectronic Materials}},''
+  \emph{Advanced Materials}, vol.~32, no.~16, p. 1908047, 2020.
+
+\bibitem{savvaInfluenceWaterPerformance2019}
+A.~Savva, C.~Cendra, A.~Giugni, B.~Torre, J.~Surgailis, D.~Ohayon,
+  A.~Giovannitti, I.~McCulloch, E.~Di~Fabrizio, A.~Salleo, J.~Rivnay, and
+  S.~Inal, ``Influence of {{Water}} on the {{Performance}} of {{Organic
+  Electrochemical Transistors}},'' \emph{Chemistry of Materials}, vol.~31,
+  no.~3, pp. 927--937, Feb. 2019.
 
 \bibitem{moiaDesignEvaluationConjugated2019}
 D.~Moia, A.~Giovannitti, A.~A. Szumska, I.~P. Maria, E.~Rezasoltani, M.~Sachs,
@@ -76,19 +95,11 @@ M.~Moser, L.~R. Savagian, A.~Savva, M.~Matta, J.~F. Ponder, T.~C. Hidalgo,
   Electrochemical Transistor Performance}},'' \emph{Chemistry of Materials},
   vol.~32, no.~15, pp. 6618--6628, 2020.
 
-\bibitem{giovannittiEnergeticControlRedoxActive2020}
-A.~Giovannitti, R.~B. Rashid, Q.~Thiburce, B.~D. Paulsen, C.~Cendra,
-  K.~Thorley, D.~Moia, J.~T. Mefford, D.~Hanifi, D.~Weiyuan, M.~Moser,
-  A.~Salleo, J.~Nelson, I.~McCulloch, and J.~Rivnay, ``Energetic {{Control}} of
-  {{Redox-Active Polymers}} toward {{Safe Organic Bioelectronic Materials}},''
-  \emph{Advanced Materials}, vol.~32, no.~16, p. 1908047, 2020.
-
-\bibitem{savvaInfluenceWaterPerformance2019}
-A.~Savva, C.~Cendra, A.~Giugni, B.~Torre, J.~Surgailis, D.~Ohayon,
-  A.~Giovannitti, I.~McCulloch, E.~Di~Fabrizio, A.~Salleo, J.~Rivnay, and
-  S.~Inal, ``Influence of {{Water}} on the {{Performance}} of {{Organic
-  Electrochemical Transistors}},'' \emph{Chemistry of Materials}, vol.~31,
-  no.~3, pp. 927--937, Feb. 2019.
+\bibitem{keeneEnhancementModePEDOTPSS2020}
+S.~T. Keene, T.~P.~A. {van der Pol}, D.~Zakhidov, C.~H.~L. Weijtens, R.~A.~J.
+  Janssen, A.~Salleo, and Y.~{van de Burgt}, ``Enhancement-{{Mode PEDOT}}:{{PSS
+  Organic Electrochemical Transistors Using Molecular De-Doping}},''
+  \emph{Advanced Materials}, vol.~32, no.~19, p. 2000270, 2020.
 
 \bibitem{tanMixedIonicElectronic2022}
 S.~T.~M. Tan, A.~Gumyusenge, T.~J. Quill, G.~S. LeCroy, G.~E. Bonacchini,
