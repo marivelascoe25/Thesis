@@ -46,25 +46,36 @@ A.~Weissbach, L.~M. Bongartz, M.~Cucchi, H.~Tseng, K.~Leo, and H.~Kleemann,
   transistors: Operation and hysteresis,'' \emph{Journal of Materials Chemistry
   C}, vol.~10, no.~7, pp. 2656--2662, 2022.
 
+\bibitem{lussemDopingOrganicSemiconductors2013}
+B.~L{\"u}ssem, M.~Riede, and K.~Leo, ``Doping of organic semiconductors,''
+  \emph{physica status solidi (a)}, vol. 210, no.~1, pp. 9--43, 2013.
+
+\bibitem{kieferDoubleDopingConjugated2019}
+D.~Kiefer, R.~Kroon, A.~I. Hofmann, H.~Sun, X.~Liu, A.~Giovannitti,
+  D.~Stegerer, A.~Cano, J.~Hynynen, L.~Yu, Y.~Zhang, D.~Nai, T.~F. Harrelson,
+  M.~Sommer, A.~J. Moul{\'e}, M.~Kemerink, S.~R. Marder, I.~McCulloch,
+  M.~Fahlman, S.~Fabiano, and C.~M{\"u}ller, ``Double doping of conjugated
+  polymers with monomer molecular dopants,'' \emph{Nature Materials}, vol.~18,
+  no.~2, pp. 149--155, Feb. 2019.
+
 \bibitem{paulsenOrganicMixedIonic2020}
 B.~D. Paulsen, K.~Tybrandt, E.~Stavrinidou, and J.~Rivnay, ``Organic mixed
   ionic\textendash electronic conductors,'' \emph{Nature Materials}, vol.~19,
   no.~1, pp. 13--26, Jan. 2020.
 
-\bibitem{mattElectronicStructureMorphology2021}
-C.~Matt, ``Electronic structure and morphology of organic semiconductors and
-  the impact of molecular modifications,'' {{doctoralThesis}}, Saarl\"andische
-  Universit\"ats- und Landesbibliothek, 2021.
+\bibitem{tietzeFermiLevelShift2012}
+M.~L. Tietze, L.~Burtone, M.~Riede, B.~L{\"u}ssem, and K.~Leo, ``Fermi level
+  shift and doping efficiency in \$p\$-doped small molecule organic
+  semiconductors: {{A}} photoelectron spectroscopy and theoretical study,''
+  \emph{Physical Review B}, vol.~86, no.~3, p. 035320, Jul. 2012.
 
-\bibitem{alcacerElectronicStructureOrganic2018}
-L.~Alc{\'a}cer, \emph{Electronic {{Structure}} of {{Organic Semiconductors}}:
-  {{Polymers}} and Small Molecules}.\hskip 1em plus 0.5em minus 0.4em\relax
-  {Morgan \& Claypool Publishers}, Dec. 2018.
-
-\bibitem{tanOrganicMixedIonic2022}
-S.~T.~M. Tan, ``Organic {{Mixed Ionic Electronic Conductors}} for
-  {{Electrochemical Devices}},'' Ph.D. dissertation, Stanford University, {Palo
-  Alto, CA}, Dec. 2022.
+\bibitem{jacobsComparisonSolutionmixedSequentially2016}
+I.~E. Jacobs, E.~W. Aasen, J.~L. Oliveira, T.~N. Fonseca, J.~D. Roehling,
+  J.~Li, G.~Zhang, M.~P. Augustine, M.~Mascal, and A.~J. Moul{\'e},
+  ``Comparison of solution-mixed and sequentially processed {{P3HT}}:{{F4TCNQ}}
+  films: Effect of doping-induced aggregation on film morphology,''
+  \emph{Journal of Materials Chemistry C}, vol.~4, no.~16, pp. 3454--3466, Apr.
+  2016.
 
 \bibitem{giovannittiEnergeticControlRedoxActive2020}
 A.~Giovannitti, R.~B. Rashid, Q.~Thiburce, B.~D. Paulsen, C.~Cendra,
@@ -79,6 +90,11 @@ A.~Savva, C.~Cendra, A.~Giugni, B.~Torre, J.~Surgailis, D.~Ohayon,
   S.~Inal, ``Influence of {{Water}} on the {{Performance}} of {{Organic
   Electrochemical Transistors}},'' \emph{Chemistry of Materials}, vol.~31,
   no.~3, pp. 927--937, Feb. 2019.
+
+\bibitem{tanOrganicMixedIonic2022}
+S.~T.~M. Tan, ``Organic {{Mixed Ionic Electronic Conductors}} for
+  {{Electrochemical Devices}},'' Ph.D. dissertation, Stanford University, {Palo
+  Alto, CA}, Dec. 2022.
 
 \bibitem{moiaDesignEvaluationConjugated2019}
 D.~Moia, A.~Giovannitti, A.~A. Szumska, I.~P. Maria, E.~Rezasoltani, M.~Sachs,

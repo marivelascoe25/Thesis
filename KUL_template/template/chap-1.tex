@@ -4,31 +4,54 @@
 \section{Organic Semiconductors}
 
 %When atoms bond together, molecular orbital are defined by the linear combination of atomic orbitals, however the symmetry shown on some complex structures are not explained by a simple linear combination, instead hybrid atomic orbitals are formed. This mathematical process is called \textbf{hybridization}.
-
-Organic semiconductors (OSCs) are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating multiple (sp$^{3}$, sp$^{2}$ hybridization) and single (sp hybrization) bonds. This configuration exhibit $p$ orbitals with delocalized electrons which causes its resonance structure. The latter is the reason of charge transport among the length of these polymers. In addition, its easy chemical tuning, mechanical flexibility, low cost production, OSCs are receiving increasing attention in the field of organic electronics.
+Unlike inorganic semiconductors, organic semiconductors are lightweight, easy to chemical tune, mechanical flexible, and possess low-cost and low-temperature processing. All of these characteristics increased the attention to this type of materials in the field of organic electronics. 
 
 %\subsection{Conjugated polymers}
 %\subsection{Small molecules}
 
 \subsection{Electronic Structure}
 
+Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating multiple (sp$^{3}$, sp$^{2}$ hybridization) and single (sp hybrization) bonds. This configuration exhibit $p$ orbitals with delocalized electrons, charge transport among the length of these polymers is caused by this resonance structure. 
+Based on the size of the conjugated system, organic semiconductors can be divided into conjugated polymers and small molecules.
+
 \subsubsection{Conjugated polymers}
 %Semiconducting properties of conjugated polymers built by alternating electron donor and acceptor moieties \cite{mattElectronicStructureMorphology2021}, 
 %Since inorganic semiconductors' band models does not take into consideration the Coulomb and exchange electron-electron interaction, which play a major role in organic semiconductors, it is necessary to add new theoretical approaches. On one hand, the transport properties are better described in terms of a hopping mechanism and the optoelectronic properties are better described by the molecular orbital picture \cite{alcacerElectronicStructureOrganic2018}. Since the device under study in this work is a transistor and their transport properties in aqueous and quasi-solid environments, the theoretical approach used will be the hopping mechanism.
 
-\subsubsection{Small Molecules}
+Transport properties depend on the details of the band structure, namely the density of states and the band widths
 
+\subsubsection{Small Molecules}
+Unlike conjugated polymers, the chain size of small molecules have the advantage of being ordered and its synthesis allow to obtain high purity material.
 
 \subsection{Molecular Doping}
+The basic principles are similar than in inorganic materials, where electron donors or acceptors are added and generate additional mobile charge carriers, as shown in Figure \ref{fig:doping}. While n-type dopants donate electrons to the lowest unoccupied molecular orbital (LUMO) states, the p-type dopants extract electrons from the highest occupied molecular orbital (HOMO) states, hence creates holes \cite{lussemDopingOrganicSemiconductors2013}. In other words, the Fermi level E$_{F}$ of the polymer will shift towards the LUMO (or HOMO) level when n-type (or p-type) doping. Shift that can be measured by spectroscopy techniques such as Ultraviolet Photoelectron Spectroscopy (UPS) at room temperature (RT) \cite{tietzeFermiLevelShift2012}, limited to the penetration depth of the incoming electron.
 
-Use of small molecules
-Electron-deficient dopants such as 2,3,5,6 tetrafluoro-7,7,8,8-tetracyanoquinodimethane (F$_{4}$TCNQ) extract electrons from shallow HOMO p-type OMIECs, increasing hole concentration \cite{tanOrganicMixedIonic2022}.
+\begin{figure}
+  \centering
+  \includegraphics[width=12cm]{Images/doping.jpg}
+  \caption{Schemes for p-type (left) and n-type (right) doping processes. Extracted from reference \cite{lussemDopingOrganicSemiconductors2013}.}
+  \label{fig:doping}
+\end{figure}
 
-\subsubsection{Measuring techniques to characterize doping}
+The use of small molecules is commonly reported as dopants for organic materials. Some strong acceptor (or electron-defficient) molecules that are widely used are 2,3,5,6 tetrafluoro-7,7,8,8-tetracyanoquinodimethane (F$_{4}$TCNQ) or 1,3,4,5,7,8 hexafluoro-7,7,8,8-tetracyanonaphthoquinodimethane (F$_{6}$TCNQ), which also take part in this work. The latter exhibits a higher electronic affinity (-5.3 eV) or deep HOMO than F$_{4}$TCNQ (-5.2eV) meaning that it can abstract more electrons, specially to polymers with low ionization potential (less than 5eV) or shallow LUMO, \cite{kieferDoubleDopingConjugated2019}, as it is the case of p(g3T2-T) acting as donor.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=10cm]{Images/dopingprocess.png}
+  \caption{Energy diagram of p(g3T2-T) with a) F$_{6}$TCNNQ and b) F$_{4}$TCNNQ. Ionization potential of p(g3T2-T) extracted from reference \cite{tanTuningOrganicElectrochemical2022} and electron affinities of the neutral species (EA$^{0}$) and of the anion (EA$^{-}$) of the dopants are extracted from reference \cite{kieferDoubleDopingConjugated2019}.}
+  \label{fig:doping}
+\end{figure}
+
+Among the different methods to molecular doped a material, Jacobs et al. compared a solution-mixed and solution sequential doping of P3HT:F4TCNQ films, both straighforward and easy methods to dope thin films \cite{jacobsComparisonSolutionmixedSequentially2016}. In this work it was demonstrated that solution-mixed films are considerably rougher than solution-sequential films, affecting negatively to its conductivity. The fact that solution-sequential doped films allows better homogeneity, make it also more compatible with microstructuring processes such as photolithography. At the expense of enabling easier and more precise control of doping levels \cite{tanOrganicMixedIonic2022}.
+
+
+%\subsubsection{Techniques for doping conjugated polymers}
+
+%\subsubsection{Measuring techniques to characterize doping}
 
 \section{Organic Mixed Ionic/Electronic Conductors (OMIECs)}
 
-Organic Mixed Ionic/Electronic conductors are $\pi$-conjugated organic semiconductors that allow the conduction of electrons (or holes) and ions, the latter set them apart from other organic semiconductors. %Electronic charges accumulated on the conjugated polymer backbone result in secondary property changes in electrochemical potential and electronic conductivity \cite{tanOrganicMixedIonic2022}. 
+Organic Mixed Ionic/Electronic conductors are organic semiconductors that allow the conduction of electrons (or holes) and ions, the latter set them apart from other organic semiconductors. %Electronic charges accumulated on the conjugated polymer backbone result in secondary property changes in electrochemical potential and electronic conductivity \cite{tanOrganicMixedIonic2022}. 
 Initially investigated for batteries and super capacitors, %copy references from paper of Paulson?
 where the induction of charges in a semiconducting polymer was the main objective, OMIECs has rapidly grown to include other applications, among them, our focus: OECTs.\\
 Paulsen et al. classified OMIECs into six different categories according to their phase and ionic link \cite{paulsenOrganicMixedIonic2020}, details are shown in Figure \ref{fig:omiectypes}. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  28 JUL 2023 13:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  31 JUL 2023 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1138,7 +1138,11 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 35
 (c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./thesis.aux (./intro.aux)
-(./chap-1.aux) (./chap-2.aux) (./chap-n.aux) (./conclusion.aux))
+(./chap-1.aux
+
+LaTeX Warning: Label `fig:doping' multiply defined.
+
+) (./chap-2.aux) (./chap-n.aux) (./conclusion.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -1236,7 +1240,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `kulemtfpf' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<logokul.pdf, id=160, 159.33528pt x 56.90298pt>
+<logotud.png, id=156, 2007.5pt x 582.175pt>
+File: logotud.png Graphic file (type png)
+<use logotud.png>
+Package pdftex.def Info: logotud.png  used on input line 35.
+(pdftex.def)             Requested size: 196.1976pt x 56.9055pt.
+<logokul.pdf, id=158, 159.33528pt x 56.90298pt>
 File: logokul.pdf Graphic file (type pdf)
 <use logokul.pdf>
 Package pdftex.def Info: logokul.pdf  used on input line 35.
@@ -1250,23 +1259,25 @@ LaTeX Font Info:    Font shape `T1/kulemtfpf/b/n' in size <14.4> not available
  [-1
 
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logokul.pdf>]
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logotud.png> 
+<./logokul.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
 5.
- (c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
+
+(c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [0
 
 
-]
-[1
+] [1
 
 
 
 ] (./thesis.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
 .
- (c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmr.fd
+
+(c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
@@ -1313,7 +1324,6 @@ Package microtype Info: Character `029' is missing
  (./intro.tex [1
 
 
-
 ]) [2]
 \openout2 = `chap-1.aux'.
 
@@ -1323,91 +1333,99 @@ Package microtype Info: Character `029' is missing
 
 
 ]
-<Images/OMIEC_types.png, id=307, 670.75594pt x 542.025pt>
+<Images/doping.jpg, id=314, 649.42625pt x 170.6375pt>
+File: Images/doping.jpg Graphic file (type jpg)
+<use Images/doping.jpg>
+Package pdftex.def Info: Images/doping.jpg  used on input line 31.
+(pdftex.def)             Requested size: 341.43306pt x 89.7136pt.
+<Images/dopingprocess.png, id=318, 537.207pt x 399.675pt>
+File: Images/dopingprocess.png Graphic file (type png)
+<use Images/dopingprocess.png>
+Package pdftex.def Info: Images/dopingprocess.png  used on input line 40.
+(pdftex.def)             Requested size: 284.52756pt x 211.68646pt.
+ [4 <./Images/doping.jpg> <./Images/Dopingprocess.png>]
+<Images/OMIEC_types.png, id=333, 670.75594pt x 542.025pt>
 File: Images/OMIEC_types.png Graphic file (type png)
 <use Images/OMIEC_types.png>
-Package pdftex.def Info: Images/OMIEC_types.png  used on input line 33.
+Package pdftex.def Info: Images/OMIEC_types.png  used on input line 65.
 (pdftex.def)             Requested size: 398.0pt x 321.61151pt.
+ [5]
+Underfull \vbox (badness 2617) has occurred while \output is active []
 
-Underfull \vbox (badness 1796) has occurred while \output is active []
-
- [4 <./Images/OMIEC_types.png>]
-<Images/structure.png, id=323, 380.17032pt x 319.94531pt>
+ [6 <./Images/OMIEC_types.png>]
+<Images/structure.png, id=354, 380.17032pt x 319.94531pt>
 File: Images/structure.png Graphic file (type png)
 <use Images/structure.png>
-Package pdftex.def Info: Images/structure.png  used on input line 78.
+Package pdftex.def Info: Images/structure.png  used on input line 110.
 (pdftex.def)             Requested size: 152.14084pt x 128.0374pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
-<Images/depletion.png, id=324, 409.1536pt x 499.8675pt>
+<Images/depletion.png, id=355, 409.1536pt x 499.8675pt>
 File: Images/depletion.png Graphic file (type png)
 <use Images/depletion.png>
-Package pdftex.def Info: Images/depletion.png  used on input line 80.
+Package pdftex.def Info: Images/depletion.png  used on input line 112.
 (pdftex.def)             Requested size: 186.315pt x 227.62204pt.
-<Images/accumulation.png, id=325, 402.75468pt x 499.49109pt>
+<Images/accumulation.png, id=356, 402.75468pt x 499.49109pt>
 File: Images/accumulation.png Graphic file (type png)
 <use Images/accumulation.png>
-Package pdftex.def Info: Images/accumulation.png  used on input line 81.
+Package pdftex.def Info: Images/accumulation.png  used on input line 113.
 (pdftex.def)             Requested size: 183.53636pt x 227.62204pt.
 
-Underfull \vbox (badness 1668) has occurred while \output is active []
+Underfull \vbox (badness 1867) has occurred while \output is active []
 
- [5]
-Underfull \vbox (badness 1859) has occurred while \output is active []
-
- [6 <./Images/structure.png> <./Images/depletion.png> <./Images/accumulation.pn
-g>] [7])
-[8]
+ [7]
+[8 <./Images/structure.png> <./Images/depletion.png> <./Images/accumulation.png
+>]) [9]
 \openout2 = `chap-2.aux'.
 
- (./chap-2.tex
-Overfull \hbox (10.83458pt too wide) in paragraph at lines 14--15
-[]\T1/lmr/m/n/10.95 (-20) Gold etchant: Stan-dard, Sigma Aldrich HH-PAA (2-Hydr
-oxy-4'-(2-hydroxyethoxy)-
- []
-
-[9
+ (./chap-2.tex [10
 
 
 
 
 ]
+Overfull \hbox (10.83458pt too wide) in paragraph at lines 14--15
+[]\T1/lmr/m/n/10.95 (-20) Gold etchant: Stan-dard, Sigma Aldrich HH-PAA (2-Hydr
+oxy-4'-(2-hydroxyethoxy)-
+ []
+
+[11]
 Overfull \hbox (16.5791pt too wide) in paragraph at lines 42--43
 []\T1/lmr/m/n/10.95 (-20) Ultraviolet Pho-to-elec-tron Spec-troscopy (UPS): a h
 e-lium dis-charge lamp (UVS10/35,
  []
 
-[10]
+[12]
 Underfull \vbox (badness 4832) has occurred while \output is active []
 
- [11]
-[12]) [13]
+ [13]
+[14]) [15]
 \openout2 = `chap-n.aux'.
 
- (./chap-n.tex [14
+ (./chap-n.tex [16
 
 
 
 
-]) [15]
+]) [17]
 \openout2 = `conclusion.aux'.
 
- (./conclusion.tex [16
+ (./conclusion.tex [18
 
 
 
 
-]) [17] [18
+]) [19] [20
 
 
 
 ]
 (./thesis.bbl
 bibitemlist
-[19
+[21
 
-]) [20]
+]) [22]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1419,19 +1437,22 @@ bibitemlist
 
  (./thesis.aux (./intro.aux) (./chap-1.aux) (./chap-2.aux)
 (./chap-n.aux) (./conclusion.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6D7D03A2D95E1139D0DA1340CC62500D;7273.
+(rerunfilecheck)             Checksum: 527BB75DDF51988B7D8169A127AFF031;7051.
  ) 
 Here is how much of TeX's memory you used:
- 17935 strings out of 475071
- 296367 string characters out of 5782908
- 818306 words of memory out of 5000000
- 38758 multiletter control sequences out of 15000+600000
- 545000 words of font info for 144 fonts, out of 8000000 for 9000
+ 17975 strings out of 475071
+ 297154 string characters out of 5782908
+ 819214 words of memory out of 5000000
+ 38783 multiletter control sequences out of 15000+600000
+ 545444 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,12n,79p,1761b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022
-/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2022/texmf-dist/fonts/enc/
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2022/tex
+mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/
 dvips/lm/lm-mathit.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 }{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2022/tex
 mf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/pub
@@ -1444,10 +1465,10 @@ ype1/public/lm/lmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr1
 s/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/
 lmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/t
 exlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (28 pages, 1073619 bytes).
+Output written on thesis.pdf (30 pages, 1223084 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 474 compressed objects within 5 object streams
- 128 named destinations out of 1000 (max. 500000)
- 39762 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 574 PDF objects out of 1000 (max. 8388607)
+ 492 compressed objects within 5 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 39769 words of extra memory for PDF output out of 42996 (max. 10000000)
 
