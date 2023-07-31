@@ -300,6 +300,9 @@
   \edef\@tempa{[#1]{logokul\ifnum\kulemt@facnum=\@ne eng\fi}}%
   \expandafter\includegraphics\@tempa}
 \def\kulemt@fac@logo#1{}
+\def\kulemt@tud@logo#1{%
+  \edef\@tempa{[#1]{logotud}}%
+  \expandafter\includegraphics\@tempa}
 \def\kulemt@fac@copyright{%
   \ifnum\kulemt@facnum >\@ne
     \kulemt@ifdutch d{th}e \MakeLowercase{\noexpand\kulemt@paa@0}::%
@@ -545,6 +548,7 @@
       \fontencoding{T1}\fontfamily{kulemtfpf}\kulemt@fpf@text
       \raggedright \kulemt@selectmasterlanguage
       \noindent \hskip-1cm%
+      \vbox to3cm{\hbox{\kulemt@tud@logo{height=2cm}}\vss}
       \vbox to3cm{\hbox{\kulemt@kulfac@logo{}}\vss}\hfill
       \vbox to3cm{\hbox{\kulemt@fac@logo{height=2cm}}\vss}%
       \hskip-1cm\hskip\z@skip

@@ -15,11 +15,14 @@
 \subsection{Channel conductivity}
 
 Prior biasing gate, which is due to passive (ion) diffusion?
+
 \subsubsection{Under inert conditions}
 
 \subsubsection{Under ambient conditions}
 
 \subsection{Threshold voltage shift}
+
+The fact that solution-sequential doped films allows better homogeneity \cite{jacobsComparisonSolutionmixedSequentially2016}, make it also more compatible with microstructuring processes such as photolithography. At the expense of enabling easier and more precise control of doping levels \cite{tanOrganicMixedIonic2022}.
 
 The Ag/AgCl gate electrode’s work function is reasonably constant, the work function of an OMIEC gate electrode however may vary depending on its processing history and redox reactions with other species present in the electrolyte (e.g. molecular oxygen).28 Applying VGS only determines the potential difference between the gate and channel but does not control the potentials of either electrode (hence the position of the Fermi level) with respect to a reference. This leads to many challenges in operating an OECT with OMIEC gate electrodes.
 

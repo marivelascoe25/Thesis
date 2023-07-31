@@ -8,48 +8,48 @@
 \contentsline {chapter}{Preface}{i}{chapter*.1}%
 \contentsline {chapter}{Abstract}{iv}{chapter*.3}%
 \contentsline {chapter}{List of Figures and Tables}{v}{chapter*.4}%
-\contentsline {chapter}{List of Abbreviations and Symbols}{vi}{chapter*.9}%
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\chapternumberline {2}Background}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Organic Semiconductors}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Electronic Structure}{3}{subsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}Conjugated polymers}{3}{subsubsection.2.1.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}Small Molecules}{3}{subsubsection.2.1.1.2}%
 \contentsline {subsection}{\numberline {2.1.2}Molecular Doping}{3}{subsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.1}Measuring techniques to characterize doping}{3}{subsubsection.2.1.2.1}%
-\contentsline {section}{\numberline {2.2}Organic Mixed Ionic/Electronic Conductors (OMIECs)}{3}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}A widely used material: PEDOT:PSS}{4}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.2}Organic Mixed Ionic/Electronic Conductors (OMIECs)}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}A widely used material: PEDOT:PSS}{5}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Other Thiophene-based polymers}{5}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Electrochemical Doping}{5}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Organic Electrochemical Transistors (OECTs)}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Device Physics}{6}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Operation Modes}{6}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Important Figures of Merit}{7}{subsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Transconductance}{7}{subsubsection.2.3.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.3.2}$\mu $C* product}{7}{subsubsection.2.3.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3.3}Threshold voltage}{7}{subsubsection.2.3.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Requirements to Avoid Undesirable Side Reactions}{7}{subsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.4.1}Oxygen Reduction Reaction (ORR)}{8}{subsubsection.2.3.4.1}%
-\contentsline {subsection}{\numberline {2.3.5}Building Block for neuromorphic and bioelectronic applications}{8}{subsection.2.3.5}%
-\contentsline {chapter}{\chapternumberline {3}Experimental Methods}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Materials}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Equipmment}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Software}{11}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Photomasks}{11}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Experimental Procedures}{12}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Conjugated polymer films}{12}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Fabrication of Organic Electrochemical Transistors}{12}{subsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.1}Undoped p(g3T2-T) OECT}{12}{subsubsection.3.5.2.1}%
-\contentsline {subsubsection}{\numberline {3.5.2.2}Doped p(g3T2-T) OECT}{13}{subsubsection.3.5.2.2}%
-\contentsline {chapter}{\chapternumberline {4}Results and Discussion}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Doped Conjugated Polymer films}{15}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Polaron and Bipolar formation}{15}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Workfunction increase}{15}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Redox properties with Solid State Electrolyte Precursor}{15}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Organic Electrochemical Transistors}{15}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Channel and gate morphology}{15}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Channel conductivity}{15}{subsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}Under inert conditions}{15}{subsubsection.4.2.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}Under ambient conditions}{15}{subsubsection.4.2.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Threshold voltage shift}{15}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Important figures of merit}{15}{subsection.4.2.4}%
-\contentsline {chapter}{\chapternumberline {5}Conclusion and Outlook}{17}{chapter.5}%
-\contentsline {chapter}{Bibliography}{19}{chapter*.14}%
+\contentsline {subsection}{\numberline {2.2.3}Electrochemical Doping}{6}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Organic Electrochemical Transistors (OECTs)}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Device Physics}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Operation Modes}{7}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Important Figures of Merit}{8}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Transconductance}{8}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}$\mu $C* product}{8}{subsubsection.2.3.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3.3}Threshold voltage}{8}{subsubsection.2.3.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Requirements to Avoid Undesirable Side Reactions}{9}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}Oxygen Reduction Reaction (ORR)}{9}{subsubsection.2.3.4.1}%
+\contentsline {subsection}{\numberline {2.3.5}Building Block for neuromorphic and bioelectronic applications}{9}{subsection.2.3.5}%
+\contentsline {chapter}{\chapternumberline {3}Experimental Methods}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Materials}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Equipmment}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Software}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Photomasks}{13}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Experimental Procedures}{14}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Conjugated polymer films}{14}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Fabrication of Organic Electrochemical Transistors}{14}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}Undoped p(g3T2-T) OECT}{14}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}Doped p(g3T2-T) OECT}{15}{subsubsection.3.5.2.2}%
+\contentsline {chapter}{\chapternumberline {4}Results and Discussion}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Doped Conjugated Polymer films}{17}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Polaron and Bipolar formation}{17}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Workfunction increase}{17}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Redox properties with Solid State Electrolyte Precursor}{17}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Organic Electrochemical Transistors}{17}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Channel and gate morphology}{17}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Channel conductivity}{17}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Under inert conditions}{17}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Under ambient conditions}{17}{subsubsection.4.2.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Threshold voltage shift}{17}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Important figures of merit}{17}{subsection.4.2.4}%
+\contentsline {chapter}{\chapternumberline {5}Conclusion and Outlook}{19}{chapter.5}%
+\contentsline {chapter}{Bibliography}{21}{chapter*.13}%
