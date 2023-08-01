@@ -51,11 +51,12 @@ Among the different methods to molecular doped a material, Jacobs et al. compare
 
 \section{Organic Mixed Ionic/Electronic Conductors (OMIECs)}
 
-Organic Mixed Ionic/Electronic conductors are $\pi$-conjugated organic semiconductors that allow the conduction of electrons (or holes) and ions, the latter set them apart from other organic semiconductors. %Electronic charges accumulated on the conjugated polymer backbone result in secondary property changes in electrochemical potential and electronic conductivity \cite{tanOrganicMixedIonic2022}. 
-Initially investigated for batteries and super capacitors, %copy references from paper of Paulson?
-where the induction of charges in a semiconducting polymer was the main objective, OMIECs has rapidly grown to include other applications, among them, our focus: OECTs.\\
-Paulsen et al. classified OMIECs into six different categories according to their phase and ionic link \cite{paulsenOrganicMixedIonic2020}, details are shown in Figure \ref{fig:omiectypes}. 
+Organic Mixed Ionic/Electronic conductors are organic semiconductors that allow the conduction of electrons (or holes) and ions, the latter set them apart from other organic semiconductors.\\
+Initially investigated for batteries and super capacitors \cite{snookConductingpolymerbasedSupercapacitorDevices2011}
+\cite{liangOrganicElectrodeMaterials2012}, where the induction of charges in a semiconducting polymer was the main objective. OMIECs has rapidly grown to include other applications, among them, our focus: OECTs.\\
+Paulsen et al. classified OMIECs into six different categories according to whether they intrinsically contain ionic charge (I, III, V) or not (II, IV, VI), the latter contain polar moieties that can solvate ions. Another distinction among the categories is whether the conjugated system comprises a single material (homogeneous, type V and VII) or two-component, more complex systems or block co-polymers materials (heterogeneous, type I, II, III, IV) \cite{paulsenOrganicMixedIonic2020}, an schematic representation is shown in Figure \ref{fig:omiectypes}. 
 
+%Electronic charges accumulated on the conjugated polymer backbone result in secondary property changes in electrochemical potential and electronic conductivity \cite{tanOrganicMixedIonic2022}. 
 
 % PEDOT:PSS Heterogeneous, blends or complexed systems OMIEC. Conjugated polymer/electrolyte blends. Contains ions chemically linked ot an insulating or conjugated component
 % p(g3T2-T) Homogeneous, single-component systems OMIEC. Conjugated polymer electrolytes. Ions introduced as free species upon material casting or device operation
@@ -71,27 +72,19 @@ Paulsen et al. classified OMIECs into six different categories according to thei
 \end{figure}
 
 
+\subsection{Processes in OMIECs}
 
+\subsubsection{Ionic-electronic interactions}
+The presence of electronic charge in OMIECs require also the presence of excess ionic charge, so charge in the system remain balance. In the case of types II, IV and VI OMIECs, the so-called stabilizing electrochemical doping is achieved by the presence of mobile ions, the remaining type of OMIEC on the other hand, have this stabilizing charges fixed, they are inherently doped.
 
-\subsection{A widely used material: PEDOT:PSS}
-%\subsection{Engineering of semiconducting polymers}
-Poly(3,4-ethylenedioxythiophene) poly(styrene-sulfonate) (PEDOT:PSS) is an organic conducting polymer that is widely used in multiple applications in organic electronics. Classified as type I OMIEC according to Paulsen et al, it is a blend between a conjugated polymer (PEDOT) and a polyelectrolyte (PSS), the latter posses chemically linked ions.
+The amount of coupling between electronic charge and excess ionic charge in OMIECs can be modulated with an applied bias when coupled through an electrolyte. This is the basic principle of OECTs, and we will be further discuss in section \ref{sec:OECTs}.
 
-
-
-\subsection{Other Thiophene-based polymers}
-%Seria chevere tener un grafico de como thiophene publications empezaron a crecer.
-Thiophene is a planar conjugated ring structure consists of six delocalized pi-electrons. The aromatic nature arises from the four pi electrons and one unshared lone pair of electrons of the oxygen as six delocalized pi-electrons. It folow Hucke´s rule. Hene it is aromatic compound
+\subsubsection{Electronic transport}
 
 
 
-Organic semiconductors with polar sidechains have been identified as a promising class of materials for the field of bioelectronics. These materials, also called organic mixed ionic/electronic conductors (OMIECs), can exchange ions with aqueous electrolytes when electronic charge carriers are injected, transported, and stored in the bulk of the material \cite{giovannittiEnergeticControlRedoxActive2020}
+\subsubsection{Ionic transport}
 
-%Homogeneous single phase OMIECs (types V and VI) display larger magnitudes of ionic–electronic coupling and larger values of volumetric capacitance than biphasic OMIECs (types I–IV) \cite{paulsenOrganicMixedIonic2020}. 
-
-Under the classification shown in Figure \ref{fig:omiectypes}, p(g3T2-T) can be identified as a type VI OMIEC that comprises a conjugated polymer with ions introduced as \textbf{free species} wheareas PEDOT:PSS' ions are \textbf{chemically linked} to the polyelectrode (PSS) and blended to the conjugated polymer (PEDOT). This structural characteristic make p(g3T2-T) display larger magnitudes of ionic-electronic coupling but at the same time will be important for understanding the challenges on having a stable OECT with our material and will be bring back in Section \ref{subsec:req}.
-
-%actually from reference 44, benchmarking omiecs for transistors
 
 \subsection{Electrochemical Doping}
 
@@ -101,7 +94,34 @@ meaning that the OMIEC undergoes a change in its oxidation state (p-doping in th
 
 Savva et al. study the influence of water on the performance of OECT, the water uptake of conjugated polymer films led to 10-13\% mass increase under non biased conditions. As the concentration of water decrease (NaCl$_{aq}$ 10 mM, 100mM, 1M, and 6M) ionic charging is faster regardless of the doping pulse, however the fastest ionic charging is achieved at NaCl$_{aq}$ 1 M. The injection/drift of ions is also affected by the ion-counterion attractive forces which delays the ion injection from the electrolyte, opposing their drift into the polymer (NaCl$_{aq}$ 6 M hinders the drift of anions) affecting the response time. \cite{savvaInfluenceWaterPerformance2019}
 
-\section{Organic Electrochemical Transistors (OECTs)}
+
+\subsection{OMIECs for OECT applications}
+
+\subsubsection{A widely used material: PEDOT:PSS}
+%\subsection{Engineering of semiconducting polymers}
+Poly(3,4-ethylenedioxythiophene) poly(styrene-sulfonate) (PEDOT:PSS) is an organic conducting polymer that is widely used in multiple applications in organic electronics. Classified as type I OMIEC according to Figure \ref{fig:omiectypes}, it is a blend between a conjugated polymer (PEDOT) and a polyelectrolyte (PSS), the latter posses chemically linked ions and serves as a polymeric acid template to allow dispersable suspensions.
+
+
+
+\subsubsection{Other Thiophene-based polymers}
+%Seria chevere tener un grafico de como thiophene publications empezaron a crecer.
+Thiophene is a planar conjugated ring structure consists of six delocalized pi-electrons. The aromatic nature arises from the four pi electrons and one unshared lone pair of electrons of the oxygen as six delocalized pi-electrons. It folow Hucke´s rule. Hence it is aromatic compound.
+
+Organic semiconductors with polar sidechains have been identified as a promising class of materials for the field of bioelectronics. These materials, also called organic mixed ionic/electronic conductors (OMIECs), can exchange ions with aqueous electrolytes when electronic charge carriers are injected, transported, and stored in the bulk of the material \cite{giovannittiEnergeticControlRedoxActive2020}
+
+%Homogeneous single phase OMIECs (types V and VI) display larger magnitudes of ionic–electronic coupling and larger values of volumetric capacitance than biphasic OMIECs (types I–IV) \cite{paulsenOrganicMixedIonic2020}. 
+
+Under the classification shown in Figure \ref{fig:omiectypes}, p(g3T2-T) can be identified as a type VI OMIEC that comprises a conjugated polymer with ions introduced as \textbf{free species} wheareas PEDOT:PSS' ions are \textbf{chemically linked} to the polyelectrode (PSS) and blended to the conjugated polymer (PEDOT). This structural characteristic make p(g3T2-T) display larger magnitudes of ionic-electronic coupling but at the same time will be important for understanding the challenges on having a stable OECT with our material and will be bring back in Section \ref{subsec:req}.
+
+
+The modulation of the degreee of electrochemical doping in OECTs with an applied biased, will manifest a potential-dependent capacitance (C). Homogeneous single phase OMIECs (type V and VI) display larger magnitudes of ionic-electronic coupling and larger values of volumetric capacitance than biphasic OMIECs such as PEDOT:PSS \cite{inalBenchmarkingOrganicMixed2017}
+% founded in Paulsen \cite{paulsenOrganicMixedIonic2020}
+
+%actually from reference 44, benchmarking omiecs for transistors
+
+
+{\section{Organic Electrochemical Transistors (OECTs)}}
+\label{sec:OECTs}
 
 Organic Electrochemical Transistors (OECTs) consists of metallic source, drain and gate electrodes, an organic semiconductor channel (specifically an OMIEC as described in previous section) and an electrolyte that couples channel and gate \cite{rivnayOrganicElectrochemicalTransistors2018}
 
@@ -116,6 +136,7 @@ Organic Electrochemical Transistors (OECTs) consists of metallic source, drain a
 \end{figure}
 
 The semiconductor
+
 
 %devices that are mechanically compliant, biocompatible, and are sensitive to biochemical modules \cite{tanMixedIonicElectronic2022} 
 
@@ -143,6 +164,8 @@ An approach to shift the operating voltage range for PEDOT:PSS OECTs to lower th
 \label{subsec:req}
 
 Achieving effective charge transfer between the analyte and OMIEC requires appropriate alignment of the electrochemical potential of electrons on the OMIEC electrode and the redox specie. Failure to do so may result in the subsequent transfer of charges to other redox-active sinks in the environment, leading to undesirable side reactions and products that may interfere with the OMIEC’s operation. Electrons flow from a region of higher to lower electrochemical potential. Hence, achieving electron transfer from redox-active species to the OMIEC requires the latter to have a deep LUMO (high electron affinity) \cite{tanMixedIonicElectronic2022} %paper
+
+Capacitive fading upon cycling
 
 \subsubsection{Oxygen Reduction Reaction (ORR)}
 
