@@ -462,8 +462,8 @@
 \makeevenfoot{nohead}{\thepage}{}{}
 \makeoddfoot{nohead}{}{}{\thepage}
 \aliaspagestyle{chapter}{nohead}
-%\maxsecnumdepth{subsubsection}
-\maxsecnumdepth{paragraph}
+\maxsecnumdepth{subsubsection}
+%\maxsecnumdepth{paragraph}
 \maxtocdepth{subsection}
 \def\tocheadstart{\clearforchapter\chapterheadstart}
 \def\lofheadstart{\clearforchapter\chapterheadstart}
@@ -548,8 +548,8 @@
       \fontencoding{T1}\fontfamily{kulemtfpf}\kulemt@fpf@text
       \raggedright \kulemt@selectmasterlanguage
       \noindent \hskip-1cm%
-      \vbox to3cm{\hbox{\kulemt@tud@logo{height=2cm}}\vss}
       \vbox to3cm{\hbox{\kulemt@kulfac@logo{}}\vss}\hfill
+      \vbox to3cm{\hbox{\kulemt@tud@logo{height=2cm}}\vss}
       \vbox to3cm{\hbox{\kulemt@fac@logo{height=2cm}}\vss}%
       \hskip-1cm\hskip\z@skip
       \vskip 40\p@ \@plus 2fill\relax

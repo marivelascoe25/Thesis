@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  31 JUL 2023 17:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  1 AUG 2023 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1240,16 +1240,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `kulemtfpf' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<logotud.png, id=156, 2007.5pt x 582.175pt>
-File: logotud.png Graphic file (type png)
-<use logotud.png>
-Package pdftex.def Info: logotud.png  used on input line 35.
-(pdftex.def)             Requested size: 196.1976pt x 56.9055pt.
-<logokul.pdf, id=158, 159.33528pt x 56.90298pt>
+<logokul.pdf, id=156, 159.33528pt x 56.90298pt>
 File: logokul.pdf Graphic file (type pdf)
 <use logokul.pdf>
 Package pdftex.def Info: logokul.pdf  used on input line 35.
 (pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
+<logotud.png, id=157, 2007.5pt x 582.175pt>
+File: logotud.png Graphic file (type png)
+<use logotud.png>
+Package pdftex.def Info: logotud.png  used on input line 35.
+(pdftex.def)             Requested size: 196.1976pt x 56.9055pt.
 LaTeX Font Info:    Font shape `T1/kulemtfpf/b/n' in size <12> not available
 (Font)              Font shape `T1/kulemtfpf/bx/n' tried instead on input line 
 35.
@@ -1259,8 +1259,8 @@ LaTeX Font Info:    Font shape `T1/kulemtfpf/b/n' in size <14.4> not available
  [-1
 
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logotud.png> 
-<./logokul.pdf>]
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logokul.pdf> 
+<./logotud.png>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
 5.
 
@@ -1344,53 +1344,53 @@ File: Images/dopingprocess.png Graphic file (type png)
 Package pdftex.def Info: Images/dopingprocess.png  used on input line 40.
 (pdftex.def)             Requested size: 284.52756pt x 211.68646pt.
  [4 <./Images/doping.jpg> <./Images/Dopingprocess.png>]
-<Images/OMIEC_types.png, id=333, 670.75594pt x 542.025pt>
+<Images/OMIEC_types.png, id=336, 670.75594pt x 542.025pt>
 File: Images/OMIEC_types.png Graphic file (type png)
 <use Images/OMIEC_types.png>
-Package pdftex.def Info: Images/OMIEC_types.png  used on input line 65.
+Package pdftex.def Info: Images/OMIEC_types.png  used on input line 66.
 (pdftex.def)             Requested size: 398.0pt x 321.61151pt.
- [5]
-Underfull \vbox (badness 2617) has occurred while \output is active []
-
- [6 <./Images/OMIEC_types.png>]
-<Images/structure.png, id=354, 380.17032pt x 319.94531pt>
+ [5] [6 <./Images/OMIEC_types.png>]
+<Images/structure.png, id=367, 380.17032pt x 319.94531pt>
 File: Images/structure.png Graphic file (type png)
 <use Images/structure.png>
-Package pdftex.def Info: Images/structure.png  used on input line 110.
+Package pdftex.def Info: Images/structure.png  used on input line 130.
 (pdftex.def)             Requested size: 152.14084pt x 128.0374pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
-<Images/depletion.png, id=355, 409.1536pt x 499.8675pt>
+<Images/depletion.png, id=368, 409.1536pt x 499.8675pt>
 File: Images/depletion.png Graphic file (type png)
 <use Images/depletion.png>
-Package pdftex.def Info: Images/depletion.png  used on input line 112.
+Package pdftex.def Info: Images/depletion.png  used on input line 132.
 (pdftex.def)             Requested size: 186.315pt x 227.62204pt.
-<Images/accumulation.png, id=356, 402.75468pt x 499.49109pt>
+<Images/accumulation.png, id=369, 402.75468pt x 499.49109pt>
 File: Images/accumulation.png Graphic file (type png)
 <use Images/accumulation.png>
-Package pdftex.def Info: Images/accumulation.png  used on input line 113.
+Package pdftex.def Info: Images/accumulation.png  used on input line 133.
 (pdftex.def)             Requested size: 183.53636pt x 227.62204pt.
 
-Underfull \vbox (badness 1867) has occurred while \output is active []
+Underfull \vbox (badness 4378) has occurred while \output is active []
 
  [7]
-[8 <./Images/structure.png> <./Images/depletion.png> <./Images/accumulation.png
->]) [9]
+Underfull \vbox (badness 1859) has occurred while \output is active []
+
+ [8 <./Images/structure.png> <./Images/depletion.png> <./Images/accumulation.pn
+g>] [9])
+[10]
 \openout2 = `chap-2.aux'.
 
- (./chap-2.tex [10
-
-
-
-
-]
+ (./chap-2.tex
 Overfull \hbox (10.83458pt too wide) in paragraph at lines 14--15
 []\T1/lmr/m/n/10.95 (-20) Gold etchant: Stan-dard, Sigma Aldrich HH-PAA (2-Hydr
 oxy-4'-(2-hydroxyethoxy)-
  []
 
-[11]
+[11
+
+
+
+
+]
 Overfull \hbox (16.5791pt too wide) in paragraph at lines 42--43
 []\T1/lmr/m/n/10.95 (-20) Ultraviolet Pho-to-elec-tron Spec-troscopy (UPS): a h
 e-lium dis-charge lamp (UVS10/35,
@@ -1425,7 +1425,7 @@ Underfull \vbox (badness 4832) has occurred while \output is active []
 bibitemlist
 [21
 
-]) [22]
+] [22]) [23]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1441,14 +1441,14 @@ bibitemlist
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 527BB75DDF51988B7D8169A127AFF031;7051.
+(rerunfilecheck)             Checksum: EB05AC5B03B8168322F8D3812A047D3E;6968.
  ) 
 Here is how much of TeX's memory you used:
- 17975 strings out of 475071
- 297154 string characters out of 5782908
- 819214 words of memory out of 5000000
- 38783 multiletter control sequences out of 15000+600000
- 545444 words of font info for 148 fonts, out of 8000000 for 9000
+ 17990 strings out of 475071
+ 297556 string characters out of 5782908
+ 819497 words of memory out of 5000000
+ 38787 multiletter control sequences out of 15000+600000
+ 545509 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,12n,79p,1761b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2022/tex
@@ -1465,10 +1465,10 @@ ype1/public/lm/lmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr1
 s/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/
 lmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/t
 exlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (30 pages, 1223084 bytes).
+Output written on thesis.pdf (31 pages, 1227424 bytes).
 PDF statistics:
- 574 PDF objects out of 1000 (max. 8388607)
- 492 compressed objects within 5 object streams
- 132 named destinations out of 1000 (max. 500000)
+ 598 PDF objects out of 1000 (max. 8388607)
+ 514 compressed objects within 6 object streams
+ 141 named destinations out of 1000 (max. 500000)
  39769 words of extra memory for PDF output out of 42996 (max. 10000000)
 
