@@ -23,6 +23,23 @@
   file = {C\:\\Users\\menriquez\\Zotero\\storage\\FL98ZQKW\\Barker - Conjugated polymer blends for faster organic mixed.pdf}
 }
 
+@article{bernardsSteadyStateTransientBehavior2007,
+  title = {Steady-{{State}} and {{Transient Behavior}} of {{Organic Electrochemical Transistors}}},
+  author = {Bernards, D. A. and Malliaras, G. G.},
+  year = {2007},
+  journal = {Advanced Functional Materials},
+  volume = {17},
+  number = {17},
+  pages = {3538--3544},
+  issn = {1616-3028},
+  doi = {10.1002/adfm.200601239},
+  urldate = {2023-08-02},
+  abstract = {In recent years, organic electrochemical transistors (OECTs) have emerged as attractive devices for a variety of applications, particularly in the area of sensing. While the electrical characteristics of OECTs are analogous to those of conventional organic field effect transistors, appropriate models for OECTs have not yet been developed. In particular, little is known about the transient characteristics of OECTs, which are determined by a complex interplay between ionic and electronic motion. In this paper a simple model is presented that reproduces the steady-state and transient response of OECTs by considering these devices in terms of an ionic and an electronic circuit. A simple analytical expression is derived that can be used to fit steady-state OECT characteristics. For the transient regime, comparison with experimental data allowed an estimation of the hole mobility in poly(3,4-ethylenedioxythiophene) doped with poly(styrene sulfonate). This work paves the way for rational optimization of OECTs.},
+  langid = {english},
+  keywords = {Biosensors,Conducting polymers,Sensors,Transistors},
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\VW4XWC8V\\Bernards_Malliaras_2007_Steady-State and Transient Behavior of Organic Electrochemical Transistors.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\GA47DXEL\\adfm.html}
+}
+
 @phdthesis{bongartzOrganicElectrochemicalTransistors2021,
   title = {Organic Electrochemical Transistors with Solid-State Electrolytes},
   author = {Bongartz, Lukas Matthias},
