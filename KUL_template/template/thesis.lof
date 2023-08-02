@@ -11,12 +11,23 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Schemes for p-type (left) and n-type (right) doping processes. Extracted from reference \cite {lussemDopingOrganicSemiconductors2013}.\relax }}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Energy diagram of p(g3T2-T) with a) F$_{6}$TCNNQ and b) F$_{4}$TCNNQ. Ionization potential of p(g3T2-T) extracted from reference \cite {tanTuningOrganicElectrochemical2022} and electron affinities of the neutral species (EA$^{0}$) and of the anion (EA$^{-}$) of the dopants are extracted from reference \cite {kieferDoubleDopingConjugated2019}.\relax }}{4}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces \textbf {Material classes of OMIECs.} a) Heterogeneous blends of an electronically conducting conjugated polymer with (I) an ionic charge bearing polyelectrolyte or (II) an ion solvating polymer electrolyte. b) Heterogeneous block copolymers of an electronically conducting conjugated polymer with (III) an ionic charge bearing polyelectrolyte or (IV) an ion solvating polymer electrolyte. c) Fully conjugated (V) ionic charge bearing polyelectrolytes and (VI) ion solvating polymer electrolytes. Extracted from reference \cite {paulsenOrganicMixedIonic2020}.\relax }}{6}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces (a) Typical structure of an organic electrochemical transistor (OECT). (b) Transfer curve showing depletion-mode operation of an OECT with a conducting polymer channel. (c) Transfer curve showing accumulation-mode operation of an OECT with a semiconducting polymer channel. Images extracted from reference \cite {rivnayOrganicElectrochemicalTransistors2018}.\relax }}{8}{figure.caption.12}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{8}{subfigure.4.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{8}{subfigure.4.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{8}{subfigure.4.3}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \textbf {Material classes of OMIECs.} a) Heterogeneous blends of an electronically conducting conjugated polymer with (I) an ionic charge bearing polyelectrolyte or (II) an ion solvating polymer electrolyte. b) Heterogeneous block copolymers of an electronically conducting conjugated polymer with (III) an ionic charge bearing polyelectrolyte or (IV) an ion solvating polymer electrolyte. c) Fully conjugated (V) ionic charge bearing polyelectrolytes and (VI) ion solvating polymer electrolytes. Extracted from reference \cite {paulsenOrganicMixedIonic2020}.\relax }}{5}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematic representation of electronic charge transport mechanisms: A) "Thermally activated hopping transport of a relatively localized electronic charge carrier" and B) "band-like transport of a relatively delocalized electronic charge carrier". Modified from reference \cite {paulsenOrganicMixedIonic2020}.\relax }}{6}{figure.caption.11}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{6}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{6}{subfigure.3.2}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Schematic representation of ionic charge transport mechanisms: A) "Segmental motion-assisted ion hopping" and B) "solvated ion vehicle transport". Modified from reference \cite {paulsenOrganicMixedIonic2020}.\relax }}{7}{figure.caption.12}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{7}{subfigure.4.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{7}{subfigure.4.2}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces (A) Typical structure of an organic electrochemical transistor (OECT). (B) Transfer curve showing depletion-mode operation of an OECT with a conducting polymer channel. (C) Transfer curve showing accumulation-mode operation of an OECT with a semiconducting polymer channel. Images extracted from reference \cite {rivnayOrganicElectrochemicalTransistors2018}.\relax }}{8}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{8}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{8}{subfigure.5.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{8}{subfigure.5.3}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Comparison of p-type A) MOSFET and B) OECT. Where the light-gray region represents an insulator and a electrolyte, respectively.\relax }}{9}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Representation of device model, A) OMIEC film with source and drain located at x=0 and x=L, respectively, B) Ionic circuit charge (Q) is coupled to the voltage in the electronic circuit. Image extracted from reference \cite {bernardsSteadyStateTransientBehavior2007}.\relax }}{9}{figure.caption.15}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{9}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{9}{subfigure.7.2}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces pg3t\relax }}{11}{figure.caption.16}%
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Energy diagram of p(g3T2-T) with a) F$_{6}$TCNNQ and b) F$_{4}$TCNNQ. Ionization potential of p(g3T2-T) extracted from reference \cite {tanTuningOrganicElectrochemical2022} and electron affinities of the neutral species (EA$^{0}$) and of the anion (EA$^{-}$) of the dopants are extracted from cyclic voltammetry measurements in reference \cite {kieferDoubleDopingConjugated2019}.\relax }}{21}{figure.caption.17}%
 \addvspace {10pt}

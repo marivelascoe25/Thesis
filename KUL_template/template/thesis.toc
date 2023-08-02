@@ -15,46 +15,46 @@
 \contentsline {subsubsection}{\numberline {2.1.1.1}Conjugated polymers}{3}{subsubsection.2.1.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.1.2}Small Molecules}{3}{subsubsection.2.1.1.2}%
 \contentsline {subsection}{\numberline {2.1.2}Molecular Doping}{3}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Organic Mixed Ionic/Electronic Conductors (OMIECs)}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Organic Mixed Ionic/Electronic Conductors (OMIECs)}{4}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Processes in OMIECs}{5}{subsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.1.1}Ionic-electronic interactions}{5}{subsubsection.2.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Electronic transport}{5}{subsubsection.2.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.2.1.3}Ionic transport}{5}{subsubsection.2.2.1.3}%
-\contentsline {subsection}{\numberline {2.2.2}Electrochemical Doping}{5}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}OMIECs for OECT applications}{7}{subsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.3.1}A widely used material: PEDOT:PSS}{7}{subsubsection.2.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.2.3.2}Other Thiophene-based polymers}{7}{subsubsection.2.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Electronic transport}{6}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Ionic transport}{6}{subsubsection.2.2.1.3}%
+\contentsline {subsection}{\numberline {2.2.2}Electrochemical Doping}{7}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Organic Electrochemical Transistors (OECTs)}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Device Physics}{8}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Operation Modes}{8}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Important Figures of Merit}{9}{subsection.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Transconductance}{9}{subsubsection.2.3.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.3.2}$\mu $C* product}{9}{subsubsection.2.3.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3.3}Threshold voltage}{9}{subsubsection.2.3.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Requirements to Avoid Undesirable Side Reactions}{9}{subsection.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.4.1}Oxygen Reduction Reaction (ORR)}{10}{subsubsection.2.3.4.1}%
-\contentsline {subsection}{\numberline {2.3.5}Building Block for neuromorphic and bioelectronic applications}{10}{subsection.2.3.5}%
-\contentsline {chapter}{\chapternumberline {3}Experimental Methods}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Materials}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Equipmment}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Software}{13}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Photomasks}{13}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Experimental Procedures}{14}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Conjugated polymer films}{14}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Fabrication of Organic Electrochemical Transistors}{14}{subsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.1}Undoped p(g3T2-T) OECT}{14}{subsubsection.3.5.2.1}%
-\contentsline {subsubsection}{\numberline {3.5.2.2}Doped p(g3T2-T) OECT}{15}{subsubsection.3.5.2.2}%
-\contentsline {chapter}{\chapternumberline {4}Results and Discussion}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Doped Conjugated Polymer films}{17}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Polaron and Bipolar formation}{17}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Workfunction increase}{17}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Redox properties with Solid State Electrolyte Precursor}{17}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Organic Electrochemical Transistors}{17}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Channel and gate morphology}{17}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Channel conductivity}{17}{subsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}Under inert conditions}{17}{subsubsection.4.2.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}Under ambient conditions}{17}{subsubsection.4.2.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Threshold voltage shift}{17}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Important figures of merit}{17}{subsection.4.2.4}%
-\contentsline {chapter}{\chapternumberline {5}Conclusion and Outlook}{19}{chapter.5}%
-\contentsline {chapter}{Bibliography}{21}{chapter*.13}%
+\contentsline {subsection}{\numberline {2.3.1}Device Physics}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Operation Modes}{9}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}A widely used material: PEDOT:PSS}{10}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Other Thiophene-based polymers}{10}{subsubsection.2.3.2.2}%
+\contentsline {subsection}{\numberline {2.3.3}Important Figures of Merit}{12}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Transconductance}{12}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}$\mu $C* product}{12}{subsubsection.2.3.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3.3}Threshold voltage}{12}{subsubsection.2.3.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Requirements to Avoid Undesirable Side Reactions}{12}{subsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.4.1}Water uptake}{12}{subsubsection.2.3.4.1}%
+\contentsline {subsubsection}{\numberline {2.3.4.2}Oxygen Reduction Reaction (ORR)}{12}{subsubsection.2.3.4.2}%
+\contentsline {subsection}{\numberline {2.3.5}Building Block for neuromorphic and bioelectronic applications}{13}{subsection.2.3.5}%
+\contentsline {chapter}{\chapternumberline {3}Experimental Methods}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Materials}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Equipmment}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Software}{17}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Photomasks}{17}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Experimental Procedures}{18}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Conjugated polymer films}{18}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Fabrication of Organic Electrochemical Transistors}{18}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}Undoped p(g3T2-T) OECT}{18}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}Doped p(g3T2-T) OECT}{19}{subsubsection.3.5.2.2}%
+\contentsline {chapter}{\chapternumberline {4}Results and Discussion}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Doped Conjugated Polymer films}{21}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Polaron and Bipolar formation}{22}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Workfunction increase}{22}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Redox properties with Solid State Electrolyte Precursor}{22}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Organic Electrochemical Transistors}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Channel and gate morphology}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Channel conductivity}{22}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Under inert conditions}{22}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Under ambient conditions}{22}{subsubsection.4.2.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Threshold voltage shift}{22}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Important figures of merit}{22}{subsection.4.2.4}%
+\contentsline {chapter}{\chapternumberline {5}Conclusion and Outlook}{23}{chapter.5}%
+\contentsline {chapter}{Bibliography}{25}{chapter*.18}%
