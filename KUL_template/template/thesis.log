@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  2 AUG 2023 20:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  3 AUG 2023 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1313,14 +1313,10 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [3] [4
 
-] (./thesis.lof)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5
+] (./thesis.lof) [5
 
 
-]
-(./thesis.lot) [6]
+] (./thesis.lot) [6]
 \openout2 = `intro.aux'.
 
  (./intro.tex [1
@@ -1330,128 +1326,127 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]) [2]
 \openout2 = `chap-1.aux'.
 
- (./chap-1.tex [3
+ (./chap-1.tex
+<Images/doping.jpg, id=334, 487.06969pt x 127.97812pt>
+File: Images/doping.jpg Graphic file (type jpg)
+<use Images/doping.jpg>
+Package pdftex.def Info: Images/doping.jpg  used on input line 29.
+(pdftex.def)             Requested size: 341.43306pt x 89.71295pt.
+ [3
 
 
 
 
 ]
-<Images/doping.jpg, id=333, 487.06969pt x 127.97812pt>
-File: Images/doping.jpg Graphic file (type jpg)
-<use Images/doping.jpg>
-Package pdftex.def Info: Images/doping.jpg  used on input line 31.
-(pdftex.def)             Requested size: 341.43306pt x 89.71295pt.
- [4 <./Images/doping.jpg>]
-<Images/OMIEC_types.png, id=353, 670.75594pt x 542.025pt>
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
+
+ []
+
+[4 <./Images/doping.jpg>]
+<Images/OMIEC_types.png, id=363, 670.75594pt x 542.025pt>
 File: Images/OMIEC_types.png Graphic file (type png)
 <use Images/OMIEC_types.png>
-Package pdftex.def Info: Images/OMIEC_types.png  used on input line 61.
+Package pdftex.def Info: Images/OMIEC_types.png  used on input line 62.
 (pdftex.def)             Requested size: 398.0pt x 321.61151pt.
  [5 <./Images/OMIEC_types.png>]
-<Images/OMIECetransport1.png, id=367, 179.92218pt x 176.15813pt>
+<Images/OMIECetransport1.png, id=377, 179.92218pt x 182.18062pt>
 File: Images/OMIECetransport1.png Graphic file (type png)
 <use Images/OMIECetransport1.png>
 Package pdftex.def Info: Images/OMIECetransport1.png  used on input line 96.
-(pdftex.def)             Requested size: 142.26378pt x 139.29778pt.
+(pdftex.def)             Requested size: 142.26378pt x 144.06009pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
-<Images/OMIECetransport2.png, id=368, 179.58pt x 176.295pt>
+<Images/OMIECetransport2.png, id=378, 641.39626pt x 555.57562pt>
 File: Images/OMIECetransport2.png Graphic file (type png)
 <use Images/OMIECetransport2.png>
-Package pdftex.def Info: Images/OMIECetransport2.png  used on input line 98.
-(pdftex.def)             Requested size: 142.26378pt x 139.66156pt.
+Package pdftex.def Info: Images/OMIECetransport2.png  used on input line 99.
+(pdftex.def)             Requested size: 142.26378pt x 123.22734pt.
  [6 <./Images/OMIECetransport1.png> <./Images/OMIECetransport2.png>]
-<Images/OMIECitransport1.png, id=385, 245.937pt x 145.635pt>
+<Images/OMIECitransport1.png, id=396, 758.08218pt x 359.09157pt>
 File: Images/OMIECitransport1.png Graphic file (type png)
 <use Images/OMIECitransport1.png>
-Package pdftex.def Info: Images/OMIECitransport1.png  used on input line 113.
-(pdftex.def)             Requested size: 142.26378pt x 84.24835pt.
-<Images/OMIECitransport2.png, id=386, 245.937pt x 156.585pt>
+Package pdftex.def Info: Images/OMIECitransport1.png  used on input line 114.
+(pdftex.def)             Requested size: 199.16928pt x 94.34239pt.
+<Images/OMIECitransport2.png, id=397, 648.17157pt x 446.41782pt>
 File: Images/OMIECitransport2.png Graphic file (type png)
 <use Images/OMIECitransport2.png>
-Package pdftex.def Info: Images/OMIECitransport2.png  used on input line 115.
-(pdftex.def)             Requested size: 142.26378pt x 90.58281pt.
-<Images/structure.png, id=391, 380.17032pt x 319.94531pt>
-File: Images/structure.png Graphic file (type png)
-<use Images/structure.png>
-Package pdftex.def Info: Images/structure.png  used on input line 135.
-(pdftex.def)             Requested size: 152.14084pt x 128.0374pt.
-<Images/depletion.png, id=392, 409.1536pt x 499.8675pt>
-File: Images/depletion.png Graphic file (type png)
-<use Images/depletion.png>
-Package pdftex.def Info: Images/depletion.png  used on input line 137.
-(pdftex.def)             Requested size: 186.315pt x 227.62204pt.
-<Images/accumulation.png, id=393, 402.75468pt x 499.49109pt>
-File: Images/accumulation.png Graphic file (type png)
-<use Images/accumulation.png>
-Package pdftex.def Info: Images/accumulation.png  used on input line 138.
-(pdftex.def)             Requested size: 183.53636pt x 227.62204pt.
+Package pdftex.def Info: Images/OMIECitransport2.png  used on input line 117.
+(pdftex.def)             Requested size: 142.26378pt x 97.98062pt.
  [7 <./Images/OMIECitransport1.png> <./Images/OMIECitransport2.png>]
-<Images/MOSFETvsOECTs.jpg, id=407, 341.40347pt x 82.96596pt>
+<Images/MOSFETvsOECTs.jpg, id=413, 341.40347pt x 82.96596pt>
 File: Images/MOSFETvsOECTs.jpg Graphic file (type jpg)
 <use Images/MOSFETvsOECTs.jpg>
-Package pdftex.def Info: Images/MOSFETvsOECTs.jpg  used on input line 151.
+Package pdftex.def Info: Images/MOSFETvsOECTs.jpg  used on input line 147.
 (pdftex.def)             Requested size: 398.0pt x 96.72668pt.
-
-Underfull \vbox (badness 5985) has occurred while \output is active []
-
- [8 <./Images/structure.png> <./Images/depletion.png> <./Images/accumulation.pn
-g>]
+<Images/structure.png, id=419, 380.17032pt x 319.94531pt>
+File: Images/structure.png Graphic file (type png)
+<use Images/structure.png>
+Package pdftex.def Info: Images/structure.png  used on input line 156.
+(pdftex.def)             Requested size: 128.0374pt x 107.75475pt.
 <Images/film_model.png, id=420, 264.99pt x 111.41624pt>
 File: Images/film_model.png Graphic file (type png)
 <use Images/film_model.png>
-Package pdftex.def Info: Images/film_model.png  used on input line 160.
-(pdftex.def)             Requested size: 135.34123pt x 56.9055pt.
+Package pdftex.def Info: Images/film_model.png  used on input line 158.
+(pdftex.def)             Requested size: 101.50592pt x 42.67912pt.
 <Images/circuit_model.png, id=421, 173.89969pt x 179.16937pt>
 File: Images/circuit_model.png Graphic file (type png)
 <use Images/circuit_model.png>
-Package pdftex.def Info: Images/circuit_model.png  used on input line 161.
-(pdftex.def)             Requested size: 110.46486pt x 113.81102pt.
- [9 <./Images/MOSFETvsOECTs.jpg> <./Images/film_model.png> <./Images/circuit_mo
-del.png>] [10]
-<Images/p(g3T2-T).png, id=456, 210.03468pt x 221.70328pt>
-File: Images/p(g3T2-T).png Graphic file (type png)
-<use Images/p(g3T2-T).png>
-Package pdftex.def Info: Images/p(g3T2-T).png  used on input line 206.
-(pdftex.def)             Requested size: 398.0pt x 420.11407pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11 <./Images/p(g3T2-T).png>] [12]) [13]
+Package pdftex.def Info: Images/circuit_model.png  used on input line 159.
+(pdftex.def)             Requested size: 124.27895pt x 128.0374pt.
+ [8 <./Images/MOSFETvsOECTs.jpg> <./Images/structure.png> <./Images/film_model.
+png> <./Images/circuit_model.png>]
+<Images/depletion.png, id=436, 409.1536pt x 499.8675pt>
+File: Images/depletion.png Graphic file (type png)
+<use Images/depletion.png>
+Package pdftex.def Info: Images/depletion.png  used on input line 171.
+(pdftex.def)             Requested size: 163.02173pt x 199.16928pt.
+<Images/accumulation.png, id=437, 402.75468pt x 499.49109pt>
+File: Images/accumulation.png Graphic file (type png)
+<use Images/accumulation.png>
+Package pdftex.def Info: Images/accumulation.png  used on input line 172.
+(pdftex.def)             Requested size: 160.59508pt x 199.16928pt.
+ [9 <./Images/depletion.png> <./Images/accumulation.png>]
+<Images/pg3t+perf.jpeg, id=465, 801.99625pt x 375.4025pt>
+File: Images/pg3t+perf.jpeg Graphic file (type jpg)
+<use Images/pg3t+perf.jpeg>
+Package pdftex.def Info: Images/pg3t+perf.jpeg  used on input line 206.
+(pdftex.def)             Requested size: 142.26378pt x 66.59001pt.
+ [10 <./Images/pg3t+perf.jpeg>]
+[11]) [12]
 \openout2 = `chap-2.aux'.
 
- (./chap-2.tex [14
-
-
-
-
-]
+ (./chap-2.tex
 Overfull \hbox (10.83458pt too wide) in paragraph at lines 14--15
 []\T1/lmr/m/n/10.95 (-20) Gold etchant: Stan-dard, Sigma Aldrich HH-PAA (2-Hydr
 oxy-4'-(2-hydroxyethoxy)-
  []
 
-[15]
-Overfull \hbox (16.5791pt too wide) in paragraph at lines 42--43
-[]\T1/lmr/m/n/10.95 (-20) Ultraviolet Pho-to-elec-tron Spec-troscopy (UPS): a h
-e-lium dis-charge lamp (UVS10/35,
- []
-
-[16]
-Underfull \vbox (badness 4832) has occurred while \output is active []
-
- [17]
-[18]) [19]
-\openout2 = `chap-n.aux'.
-
- (./chap-n.tex [20
+[13
 
 
 
 
 ]
-<Images/dopingprocess.png, id=540, 537.207pt x 399.675pt>
+Overfull \hbox (16.5791pt too wide) in paragraph at lines 42--43
+[]\T1/lmr/m/n/10.95 (-20) Ultraviolet Pho-to-elec-tron Spec-troscopy (UPS): a h
+e-lium dis-charge lamp (UVS10/35,
+ []
+
+[14]
+Underfull \vbox (badness 4832) has occurred while \output is active []
+
+ [15]
+[16]) [17]
+\openout2 = `chap-n.aux'.
+
+ (./chap-n.tex [18
+
+
+
+
+]
+<Images/dopingprocess.png, id=549, 537.207pt x 399.675pt>
 File: Images/dopingprocess.png Graphic file (type png)
 <use Images/dopingprocess.png>
 Package pdftex.def Info: Images/dopingprocess.png  used on input line 11.
@@ -1459,23 +1454,23 @@ Package pdftex.def Info: Images/dopingprocess.png  used on input line 11.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <./Images/Dopingprocess.png>]) [22]
+ [19 <./Images/Dopingprocess.png>]) [20]
 \openout2 = `conclusion.aux'.
 
- (./conclusion.tex) [23
+ (./conclusion.tex) [21
 
 
 
 
-] [24
+] [22
 
 
 
 ] (./thesis.bbl
 bibitemlist
-[25
+[23
 
-] [26]) [27]
+] [24]) [25]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1494,31 +1489,33 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 69358DA43F498B2EA186DE85B704B3B6;6757.
  ) 
 Here is how much of TeX's memory you used:
- 18075 strings out of 475071
- 299601 string characters out of 5782908
- 821671 words of memory out of 5000000
- 38841 multiletter control sequences out of 15000+600000
- 545805 words of font info for 152 fonts, out of 8000000 for 9000
+ 18090 strings out of 475071
+ 299792 string characters out of 5782908
+ 822648 words of memory out of 5000000
+ 38844 multiletter control sequences out of 15000+600000
+ 549454 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,12n,79p,1761b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2022/tex
 mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/
-dvips/lm/lm-mathit.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 }{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2022/tex
 mf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/pub
 lic/lm/lmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb>
-<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2022/
-texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/t
-ype1/public/lm/lmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr1
-0.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/20
-22/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dist/font
-s/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/
-lmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/t
-exlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (35 pages, 1862158 bytes).
+<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2022/te
+xmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2022/texmf-dist/fonts/ty
+pe1/public/lm/lmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi
+8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2
+022/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2022/texmf-dist/fonts
+/type1/public/lm/lmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr
+i10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texliv
+e/2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2022/texmf-dist/f
+onts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/
+helvetic/uhvr8a.pfb>
+Output written on thesis.pdf (33 pages, 1775618 bytes).
 PDF statistics:
- 677 PDF objects out of 1000 (max. 8388607)
- 571 compressed objects within 6 object streams
- 158 named destinations out of 1000 (max. 500000)
- 39801 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 693 PDF objects out of 1000 (max. 8388607)
+ 583 compressed objects within 6 object streams
+ 156 named destinations out of 1000 (max. 500000)
+ 41849 words of extra memory for PDF output out of 42996 (max. 10000000)
 

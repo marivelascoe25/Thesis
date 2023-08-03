@@ -1,5 +1,4 @@
-{\chapter{Background}}
-\label{sec:background}
+\chapter{Background} \label{chap:background}
 
 \section{Organic Semiconductors}
 
@@ -9,21 +8,20 @@ Unlike inorganic semiconductors, organic semiconductors are lightweight, easy to
 %\subsection{Conjugated polymers}
 %\subsection{Small molecules}
 
-\subsection{Electronic Structure}
+\subsection{Electronic Structure} 
 
-Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating multiple (sp$^{3}$, sp$^{2}$ hybridization) and single (sp hybrization) bonds. This configuration exhibit $p$ orbitals with delocalized electrons, charge transport among the length of these polymers is caused by this resonance structure. 
-Based on the size of the conjugated system, organic semiconductors can be divided into conjugated polymers and small molecules.
+Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating multiple (sp$^{3}$, sp$^{2}$ hybridization) and single (sp hybrization) bonds. This configuration exhibit $p$ orbitals with delocalized electrons, charge transport among the length of these polymers is caused by this resonance structure. Based on the size of the conjugated system, organic semiconductors can be divided into conjugated polymers and small molecules.
 
 \subsubsection{Conjugated polymers}
 %Semiconducting properties of conjugated polymers built by alternating electron donor and acceptor moieties \cite{mattElectronicStructureMorphology2021}, 
 %Since inorganic semiconductors' band models does not take into consideration the Coulomb and exchange electron-electron interaction, which play a major role in organic semiconductors, it is necessary to add new theoretical approaches. On one hand, the transport properties are better described in terms of a hopping mechanism and the optoelectronic properties are better described by the molecular orbital picture \cite{alcacerElectronicStructureOrganic2018}. Since the device under study in this work is a transistor and their transport properties in aqueous and quasi-solid environments, the theoretical approach used will be the hopping mechanism.
 
-Transport properties depend on the details of the band structure, namely the density of states and the band widths
+%Transport properties depend on the details of the band structure, namely the density of states and the band widths
 
 \subsubsection{Small Molecules}
-Unlike conjugated polymers, the chain size of small molecules have the advantage of being ordered and its synthesis allow to obtain high purity material.
+%Unlike conjugated polymers, the chain size of small molecules have the advantage of being ordered and its synthesis allow to obtain high purity material.
 
-\subsection{Molecular Doping}
+\subsection{Molecular Doping} \label{subsec:moldop}
 The basic principles are similar than in inorganic materials, "where electron donors or acceptors are added and generate additional mobile charge carriers", as shown in Figure \ref{fig:doping}. While n-type dopants donate electrons to the lowest unoccupied molecular orbital (LUMO) states, the "p-type dopants extract electrons from the highest occupied molecular orbital (HOMO) states", hence creates holes \cite{lussemDopingOrganicSemiconductors2013}. In other words, the Fermi level E$_{F}$ of the polymer will shift towards the LUMO (or HOMO) level when n-type (or p-type) doping. Shift that can be measured by spectroscopy techniques such as Ultraviolet Photoelectron Spectroscopy (UPS) at room temperature (RT) \cite{tietzeFermiLevelShift2012}, limited to the penetration depth of the incoming electron.
 
 \begin{figure}
@@ -43,11 +41,14 @@ Among the different methods to molecular doped a conjugated polymer, Jacobs et a
 
 %\subsubsection{Measuring techniques to characterize doping}
 
-\section{Organic Mixed Ionic/Electronic Conductors (OMIECs)}
+\section{Organic Mixed Ionic/Electronic Conductors (OMIECs)} \label{sec:omiecs}
 
-Organic Mixed Ionic/Electronic conductors are organic semiconductors that allow the conduction of electrons (or holes) and ions, the latter set them apart from other organic semiconductors.\\
-Initially investigated for batteries and super capacitors \cite{snookConductingpolymerbasedSupercapacitorDevices2011}
+Organic Mixed Ionic/Electronic conductors are organic semiconductors that allow the conduction of electrons (or holes) and ions, the latter set them apart from other organic semiconductors. %Organic semiconductors 
+Commonly structured with polar sidechains, they have been identified as a promising class of materials for the field of bioelectronics
+%These materials, also called organic mixed ionic/electronic conductors (OMIECs), can exchange ions with aqueous electrolytes when electronic charge carriers are injected, transported, and stored in the bulk of the material
+\cite{giovannittiEnergeticControlRedoxActive2020}. Initially investigated for batteries and super capacitors \cite{snookConductingpolymerbasedSupercapacitorDevices2011}
 \cite{liangOrganicElectrodeMaterials2012}, where the induction of charges in a semiconducting polymer was the main objective. OMIECs has rapidly grown to include other applications, among them, our focus: OECTs.\\
+
 Paulsen et al. classified OMIECs into six different categories according to whether they \textit{``intrinsically contain ionic charge''} (I, III, V) or not (II, IV, VI), the latter "contain polar moieties that can solvate ions". Another distinction among the categories is whether the conjugated system comprises a single material (homogeneous, type V and VII) or two-component, more complex systems or block co-polymers materials (heterogeneous, type I, II, III, IV)\cite{paulsenOrganicMixedIonic2020}, an schematic representation is shown in Figure \ref{fig:omiectypes}. 
 
 %Electronic charges accumulated on the conjugated polymer backbone result in secondary property changes in electrochemical potential and electronic conductivity \cite{tanOrganicMixedIonic2022}. 
@@ -65,7 +66,6 @@ Paulsen et al. classified OMIECs into six different categories according to whet
   Extracted from reference \cite{paulsenOrganicMixedIonic2020}.}
   \label{fig:omiectypes}
 \end{figure}
-
 
 \subsection{Processes in OMIECs}
 
@@ -93,10 +93,11 @@ Electronic charge carrier density in undoped semiconductor organic species is lo
 
 \begin{figure}[ht]
 	\centering
-	\subfloat[]{{\includegraphics[width=5cm]{Images/OMIECetransport1.png} }}
+	\subfloat[\textbf{Thermally activated hopping}]{{\includegraphics[width=5cm]{Images/OMIECetransport1.png} }}
 	%\qquad
-	\subfloat[]{{\includegraphics[width=5cm]{Images/OMIECetransport2.png} }}
-	\caption{Schematic representation of electronic charge transport mechanisms: A) "Thermally activated hopping transport of a relatively localized electronic charge carrier" and B) "band-like transport of a relatively delocalized electronic charge carrier". Modified from reference \cite{paulsenOrganicMixedIonic2020}.}
+	\hspace{2em}
+	\subfloat[\textbf{Band-like transport}]{{\includegraphics[width=5cm]{Images/OMIECetransport2.png} }}
+	\caption{Schematic representation of electronic charge transport mechanisms: A) "Thermally activated hopping transport of a relatively localized electronic charge carrier" and B) "band-like transport of a relatively delocalized electronic charge carrier". Extracted from reference \cite{paulsenOrganicMixedIonic2020}.}a 
 	\label{fig:etrans}
 \end{figure}
 
@@ -106,14 +107,15 @@ Although transport of charged anions and cations can be seen analogous to electr
 
 Ion transport for dry OMIECs of type I, III and V are unipolar since they are fixed on a polyelectrolyte.  However, when they are in contact with an electrolyte, swelling occurs, which allows the penetration of excess ions from the electrolyte, therefore both mobile anions and cations would contribute to ion transport. 
 
-Then two types of ionic charge transport can be differentiated: ion hopping and solvated ion vehicle transport, as described in Figure \ref{fig:itrans}a and b, respectively. In dry or minimally hydrated OMIECs only ion hopping occurs, whereas when OMIEC is in contact with solvent or liquid electrolyte, both mechanisms occur. The latter basically explains how ionic transport in OECTs (and other OMIEC-electrolyte based applications) is rather complex and needs to consider all ionic-electronic coupling, hydration and electrolyte swelling \cite{paulsenOrganicMixedIonic2020}, which will be further discuss in section \ref{sec:OECTs}.
+Then two types of ionic charge transport can be differentiated: ion hopping and solvated ion vehicle transport, as described in Figure \ref{fig:itrans}A and B, respectively. In dry or minimally hydrated OMIECs only ion hopping occurs, whereas when OMIEC is in contact with solvent or liquid electrolyte, both mechanisms occur. The latter basically explains how ionic transport in OECTs (and other OMIEC-electrolyte based applications) is rather complex and needs to consider all ionic-electronic coupling, hydration and electrolyte swelling \cite{paulsenOrganicMixedIonic2020}, which will be further discuss in section \ref{sec:OECTs}.
 
 \begin{figure}[ht]
 	\centering
-	\subfloat[]{{\includegraphics[width=5cm]{Images/OMIECitransport1.png} }}
+	\subfloat[\textbf{Ion hopping} via segmental motion\\\hspace{1em} or ion clusters]{{\includegraphics[width=7cm]{Images/OMIECitransport1.png} }}
 	%\qquad
-	\subfloat[]{{\includegraphics[width=5cm]{Images/OMIECitransport2.png} }}
-	\caption{Schematic representation of ionic charge transport mechanisms: A) "Segmental motion-assisted ion hopping" and B) "solvated ion vehicle transport". Modified from reference \cite{paulsenOrganicMixedIonic2020}.}
+	\hspace{2em}
+	\subfloat[\textbf{Solvated/vehicle mechanism}]{{\includegraphics[width=5cm]{Images/OMIECitransport2.png} }}
+	\caption{Schematic representation of ionic charge transport mechanisms: A) "Segmental motion-assisted ion hopping" and B) "solvated ion vehicle transport". Extracted from reference \cite{paulsenOrganicMixedIonic2020}.}
 	\label{fig:itrans}
 \end{figure}
 
@@ -121,82 +123,87 @@ Then two types of ionic charge transport can be differentiated: ion hopping and 
 
 "The electrochemical charging of OMIECs can be described as a capacitive faradaic charging process,
 % there is current caused by charge transfer, other physical phenomenas such as desorption or adsorption can also lead to the aparition of current that is non faradaic reaction
-meaning that the OMIEC" is p-doped (oxidized, in the language of chemists) "through an electron transfer with the contact (current collector), while ions from the electrolyte penetrate inside the channel material to compensate the charge carriers on the polymer backbone electrostatically with no change in the inserted ion's oxidation state" \cite{giovannittiEnergeticControlRedoxActive2020}  
+meaning that the OMIEC" is p-doped (oxidized, in the language of chemists) "through an electron transfer with the contact (current collector), while ions from the electrolyte penetrate inside the channel material to compensate the charge carriers on the polymer backbone electrostatically with no change in the inserted ion's oxidation state" \cite{giovannittiEnergeticControlRedoxActive2020}
 
-
-
-{\section{Organic Electrochemical Transistors (OECTs)}}
-\label{sec:OECTs}
+\section{Organic Electrochemical Transistors (OECTs)} \label{sec:OECTs}
 
 Organic Electrochemical Transistors (OECTs) consists of metallic source, drain and gate electrodes, an organic conjugated polymer channel (specifically an OMIEC as described in previous sections) and an electrolyte that couples channel and gate. Devices that have received increasingly attention due to their mechanically compliance, biocompatibility, and are sensitive to biochemical modules \cite{tanMixedIonicElectronic2022}. 
 
-\begin{figure}[ht]
-	\centering
-	\subfloat[]{{\includegraphics[height=4.5cm]{Images/structure.png} }}
-	\qquad
-	\subfloat[]{{\includegraphics[height=8cm]{Images/depletion.png} }}
-	\subfloat[]{{\includegraphics[height=8cm]{Images/accumulation.png} }}
-	\caption{(A) Typical structure of an organic electrochemical transistor (OECT). (B) Transfer curve showing depletion-mode operation of an OECT with a conducting polymer channel. (C) Transfer curve showing accumulation-mode operation of an OECT with a semiconducting polymer channel. Images extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
-	\label{fig:modes}
-\end{figure}
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[height=4.5cm]{Images/structure.png}
+%	\caption{Typical structure of an organic electrochemical transistor (OECT) \cite{rivnayOrganicElectrochemicalTransistors2018}.}
+%	\label{fig:modes}
+%\end{figure}
 
 
 \subsection{Device Physics}
 
-Although the structure of OECTs are different from conventional metal-oxide-semiconductor field-effect transistors (MOSFETs). The basic understanding of the latter can give us a clear idea of how OECTs operate. Unlike MOSFETs, OECTs are coupled with an electrolyte rather than an insulator. So, when applying a gate voltage, instead of polarizing the dipoles in the insulator, creating a field that causes accumulation of carriers at the interface of the semiconductor/insulator as happens in a MOSFET, the gate voltage would rather drive ions to penetrate the bulk of the channel, so accumulation of carriers will happen throughout the whole volume of the OMIEC film. This explains the large gate-channel capacitance in these devices compared to MOSFETs, and why drain-source current takes into account a volumetric capacitance \cite{friedleinDevicePhysicsOrganic2018}.
+Although the structure of OECTs are different from conventional metal-oxide-semiconductor field-effect transistors (MOSFETs). The basic understanding of the latter can give us a clear idea of how OECTs operate. Unlike MOSFETs, OECTs are coupled with an electrolyte rather than an insulator. So, when applying a gate voltage, instead of polarizing the dipoles in the insulator, creating a field that causes accumulation of carriers at the interface of the semiconductor/insulator as it happens in a MOSFET, in an OECT, the gate voltage drives ions to penetrate the bulk of the channel, therefore accumulation of carriers will happen throughout the whole volume of the OMIEC film. This explains the large gate-channel capacitance in these devices compared to MOSFETs, and why drain-source current takes into account a volumetric capacitance \cite{friedleinDevicePhysicsOrganic2018}.
 
 
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{Images/MOSFETvsOECTs.jpg}
-  \caption{Comparison of p-type A) MOSFET and B) OECT. Where the light-gray region represents an insulator and a electrolyte, respectively.}
+  \caption{Comparison of p-type A) MOSFET and B) OECT. Where the light-gray region represents an insulator and a electrolyte, respectively. Extracted from reference  \cite{friedleinDevicePhysicsOrganic2018}}
   \label{fig:vsMOS}
 \end{figure}
 
-Bernard et al. implemented a model based on a p-type depletion-mode OECT (since PEDOT:PSS is widely fabricated and investigated, further discussed in the following section). The model divides the behavior of the OECT into an electronic and an ionic circuit. The electronic circuit is modeled using Ohm's law and upon the application of a positive gate voltage, in a p-type OECT, de-doping of the semiconductor occurs, analogous to the compensation doping of Silicon, cations from the electrolyte penetrate the polymer, compensating one acceptor. \cite{bernardsSteadyStateTransientBehavior2007}
+Bernard et al. implemented a model based on a p-type depletion-mode OECT (based on PEDOT:PSS since it is widely fabricated and investigated, further discussion in the following section). The model divides the behavior of the OECT into an electronic (source-channel-gate structure) and an ionic circuit (gate-electrolyte-channel structure). The electronic circuit is treated as a \textit{variable} resistor therefore it is modeled using Ohm's law, its variability lies on the fact that upon the application of a positive gate voltage, de-doping of the semiconductor occurs: analogous to the compensation doping of Silicon, cations from the electrolyte penetrate the polymer, compensating one acceptor. Meanwhile, the ionic circuit is consists of a resistor that represents the flow of ions in the electrolyte, in series with a capacitor, representing the storage of ions in the channel as represented in Figure \ref{fig:bernard}C) \cite{rivnayOrganicElectrochemicalTransistors2018}\cite{bernardsSteadyStateTransientBehavior2007}. 
+
+\begin{figure}[ht]
+	\centering
+	\subfloat[]{{\includegraphics[width=4.5cm]{Images/structure.png} }}
+	%\qquad
+	\subfloat[]{{\includegraphics[height=1.5cm]{Images/film_model.png} }}
+	\subfloat[]{{\includegraphics[height=4.5cm]{Images/circuit_model.png} }}
+	\caption{A) Typical structure of an organic electrochemical transistor (OECT). Extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}. Representation of device model, B) OMIEC film with source and drain located at x=0 and x=L, respectively, C) Ionic circuit charge (Q) is coupled to the voltage in the electronic circuit. Images extracted from reference \cite{bernardsSteadyStateTransientBehavior2007}.}
+	\label{fig:bernard}
+\end{figure}
 
 
 \subsection{Operation Modes}
 
-As seen in Figure \ref{fig:modes}B) and C), the OMIEC can be conductive (such as PEDOT:PSS) or semiconducting (such as p(g3T2-T). Both will describe a normally ON and OFF device, respectively at zero-gate biased.
+Analogous to conventional MOSFETs, depending on whether the device needs a gate potential to turn it ON, it will describe two operation modes, in the case of OECTs: depletion and accumulation. Specifically in OECTs, these modes have a strict relationship to the channel material, if it is inherently conductive or semiconducting.
 
-Due to its commercial availability, operational stability, and relatively high performance, PEDOT:PSS became a standard material for p-type OECTs. Its main drawback lays in its depletion-mode operation, which requires a voltage to turn off the device (as represented in Figure 1(b)). With the aim of minimizing power consumption, there is a special interest to design semiconducting polymers that would allow accumulation-mode devices (Figure 1(c)) with high performance \cite{nielsenMolecularDesignSemiconducting2016} \cite{tanOrganicMixedIonic2022}.
+\begin{figure}[ht]
+	\centering
+	\subfloat[]{{\includegraphics[height=7cm]{Images/depletion.png} }}
+	\subfloat[]{{\includegraphics[height=7cm]{Images/accumulation.png} }}
+	\caption{(A) Transfer curve showing depletion-mode operation of a p-type OECT with a conducting polymer channel. (B) Transfer curve showing accumulation-mode operation of a p-type OECT with a semiconducting polymer channel. Images extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
+	\label{fig:modes}
+\end{figure}
 
-Accumulation-mode devices has the advantage of dissipating less static power when the device is not operated, due to low OFF current, which must be minimized as much as possible \cite{giovannittiEnergeticControlRedoxActive2020}
+As seen in Figure \ref{fig:modes}A) and B), the polymer can be conductive or semiconducting. In the first scenario, the OMIEC already possesses anions which have had induced charges within its backbone, therefore it needs the injection of cations to counteract this effect, hence turn OFF the device. The opposite scenario is shown for a semiconducting polymer channel, an OECT will normally be OFF without the application of a gate voltage.
 
-Nielsen et al. reported a series of semiconducting polymers with Ethylene Glycol (EG) side chains designed to elucidate important strcuture-property guidelines for accumulation-mode OECT operation. They demonstrated that an OECT with 3-(2-(2-(2-methoxyethoxy)ethoxy)ethoxy)thiophene p(g3T2-T), as seen in Figure , has higher transconductance, and a turn-on voltage close to zero compared to other thiophene-based species \cite{nielsenMolecularDesignSemiconducting2016}. While its backbone design warrant reversibility during electrochemical redox reactions and good electronic transport, the EG side chains enable its stability in aqueous electrolytes and efficient transport of ionic and electronic charge carrier \cite{moiaDesignEvaluationConjugated2019}. Moser et al. studied the impact of the length of the EG side chain of this polythiophene backbone on the performance of OECTs. They reported that reducing chain length would maximize the capacitance, but the increase of length would enhance ion-polymer interaction. Finally, they suggested an optimum length of 3 monomers in side chains over 2, 4 and 6 monomers \cite{moserEthyleneGlycolBasedSide2020}. The main advantage of p(g3T2-T) over PEDOT:PSS is its higher transconductance \cite{nielsenMolecularDesignSemiconducting2016}, the absence of extensive pre- and postprocessing to optimize polymer stability and electrochemical performance in aqueous media and the possibility of an accumulation-mode OECT with low operation voltages\cite{moserEthyleneGlycolBasedSide2020}.
-
-\subsubsection{A widely used material: PEDOT:PSS}
-
-
-``Prototypical semiconductor used in OECTs ... doped with ..., is a degenerately doped p-type semiconductor (commonly referred as to as a conducting polymer)'' \cite{bernardsSteadyStateTransientBehavior2007}
+\subsubsection{Standard material for depletion-mode OECTs}
 
 %\subsection{Engineering of semiconducting polymers}
-Poly(3,4-ethylenedioxythiophene) poly(styrene-sulfonate) (PEDOT:PSS) is an organic conducting polymer that is widely used in multiple applications in organic electronics. Classified as type I OMIEC according to Figure \ref{fig:omiectypes}, it is a blend between a conjugated polymer (PEDOT) and a polyelectrolyte (PSS), the latter posses chemically linked ions and serves as a polymeric acid template to allow dispersable suspensions.
+Poly(3,4-ethylenedioxythiophene) poly(styrene-sulfonate) (PEDOT:PSS) is a ``degenerately doped''\cite{bernardsSteadyStateTransientBehavior2007} polymer that is widely used in multiple applications in organic electronics. Classified as type I OMIEC, as seen in Figure \ref{fig:omiectypes}. It is a blend between a conjugated polymer (PEDOT) and a polyelectrolyte (PSS), the latter posseses chemically linked ions and serves as a polymeric acid template to allow dispersable suspensions \cite{paulsenOrganicMixedIonic2020}.
 
+Due to its commercial availability, operational stability, and relatively high performance, PEDOT:PSS became a standard material for p-type OECTs. Its main drawback lays in its depletion-mode operation, since, as explained in the previous section, requires power to turn off. 
 
+With the aim of minimizing power consumption, there is a special interest to design semiconducting polymers that would allow accumulation-mode devices with high performance \cite{nielsenMolecularDesignSemiconducting2016}\cite{tanOrganicMixedIonic2022}\cite{inalBenchmarkingOrganicMixed2017}\cite{keeneEnhancementModePEDOTPSS2020}. This type of devices has the advantage of dissipating less static power when the device is not operated, due to low OFF current%, which must be minimized as much as possible
+\cite{giovannittiEnergeticControlRedoxActive2020}.
 
-\subsubsection{Other Thiophene-based polymers}
+\subsubsection{Prospective materials for accumulation-mode OECTs}
+
+Nielsen et al. reported a series of semiconducting polymers with Triethylene glycol (TEG) side chains designed to compare their performance as accumulation-mode OECTs. Among the five thiophene- and benzodithiophene-based polymers, they found out that the TEGylated bithiophene unit (g2T-T) shown the highest performance. \cite{nielsenMolecularDesignSemiconducting2016}. While its backbone design warrant reversibility during electrochemical redox reactions and good electronic transport, the EG side chains enable its stability in aqueous electrolytes and efficient transport of ionic and electronic charge carrier \cite{moiaDesignEvaluationConjugated2019}. 
+
+Moser et al. studied the impact of the length of the EG side chain of this polythiophene backbone on the performance of OECTs. They reported that reducing chain length would maximize the capacitance, but the increase of length would enhance ion-polymer interaction. Finally, they suggested an optimum length of 3 monomers in side chains over 2, 4 and 6 monomers. They demonstrated that an OECT with 3-(2-(2-(2-methoxyethoxy)ethoxy)ethoxy)thiophene p(g3T2-T), as seen in Figure \ref{fig:pg3t} , has higher transconductance, and a turn-on voltage close to zero compared to other thiophene-based species  \cite{moserEthyleneGlycolBasedSide2020}. The main advantage of p(g3T2-T) over PEDOT:PSS is its higher transconductance \cite{nielsenMolecularDesignSemiconducting2016}, the absence of extensive pre- and postprocessing to optimize polymer stability and electrochemical performance in aqueous media and the possibility of an accumulation-mode OECT with low operation voltages\cite{moserEthyleneGlycolBasedSide2020}.
+
 %Seria chevere tener un grafico de como thiophene publications empezaron a crecer.
-Thiophene is a planar conjugated ring structure consists of six delocalized pi-electrons. The aromatic nature arises from the four pi electrons and one unshared lone pair of electrons of the oxygen as six delocalized pi-electrons. It folow Hucke´s rule. Hence it is aromatic compound.
-
-Organic semiconductors with polar sidechains have been identified as a promising class of materials for the field of bioelectronics. These materials, also called organic mixed ionic/electronic conductors (OMIECs), can exchange ions with aqueous electrolytes when electronic charge carriers are injected, transported, and stored in the bulk of the material \cite{giovannittiEnergeticControlRedoxActive2020}
+%Thiophene is a planar conjugated ring structure consists of six delocalized pi-electrons. The aromatic nature arises from the four $\pi$-electrons and one unshared lone pair of electrons of the oxygen as six delocalized $\pi$-electrons. It folow Hucke´s rule. Hence it is aromatic compound.
 
 %Homogeneous single phase OMIECs (types V and VI) display larger magnitudes of ionic–electronic coupling and larger values of volumetric capacitance than biphasic OMIECs (types I–IV) \cite{paulsenOrganicMixedIonic2020}. 
 
 Under the classification shown in Figure \ref{fig:omiectypes}, p(g3T2-T) can be identified as a type VI OMIEC that comprises a conjugated polymer with ions introduced as \textbf{free species} wheareas PEDOT:PSS' ions are \textbf{chemically linked} to the polyelectrode (PSS) and blended to the conjugated polymer (PEDOT). This structural characteristic make p(g3T2-T) display larger magnitudes of ionic-electronic coupling but at the same time will be important for understanding the challenges on having a stable OECT with our material and will be bring back in Section \ref{subsec:req}.
 
 
-The modulation of the degreee of electrochemical doping in OECTs with an applied biased, will manifest a potential-dependent capacitance (C). Homogeneous single phase OMIECs (type V and VI) display larger magnitudes of ionic-electronic coupling and larger values of volumetric capacitance than biphasic OMIECs such as PEDOT:PSS \cite{inalBenchmarkingOrganicMixed2017}
-% founded in Paulsen \cite{paulsenOrganicMixedIonic2020}
-
-%actually from reference 44, benchmarking omiecs for transistors
-
-
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{Images/p(g3T2-T).png}
-  \caption{pg3t}
+  \includegraphics[width=5cm]{Images/pg3t+perf.jpeg}
+  \caption{(Left) Chemical structure of the repeat units for p(gxT2-T). (Right) Transconductance vs channel geometry and operating parameters of p(gxT2-T) for x = 2, 3}
   \label{fig:pg3t}
 \end{figure}
 
@@ -206,6 +213,11 @@ The modulation of the degreee of electrochemical doping in OECTs with an applied
 \subsubsection{Transconductance}
 
 \subsubsection{$\mu$C* product}
+
+
+The modulation of the degreee of electrochemical doping in OECTs with an applied biased, will manifest a potential-dependent capacitance (C). Homogeneous single phase OMIECs (type V and VI) display larger magnitudes of ionic-electronic coupling and larger values of volumetric capacitance than biphasic OMIECs such as PEDOT:PSS \cite{inalBenchmarkingOrganicMixed2017}
+% found in Paulsen \cite{paulsenOrganicMixedIonic2020}
+%actually from reference 44, benchmarking omiecs for transistors
 
 \subsubsection{Threshold voltage}
 

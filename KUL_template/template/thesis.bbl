@@ -55,6 +55,11 @@ B.~D. Paulsen, K.~Tybrandt, E.~Stavrinidou, and J.~Rivnay, ``Organic mixed
   ionic\textendash electronic conductors,'' \emph{Nature Materials}, vol.~19,
   no.~1, pp. 13--26, Jan. 2020.
 
+\bibitem{friedleinDevicePhysicsOrganic2018}
+J.~T. Friedlein, R.~R. McLeod, and J.~Rivnay, ``Device physics of organic
+  electrochemical transistors,'' \emph{Organic Electronics}, vol.~63, pp.
+  398--414, Dec. 2018.
+
 \bibitem{bernardsSteadyStateTransientBehavior2007}
 D.~A. Bernards and G.~G. Malliaras, ``Steady-{{State}} and {{Transient
   Behavior}} of {{Organic Electrochemical Transistors}},'' \emph{Advanced
@@ -87,6 +92,13 @@ S.~T.~M. Tan, ``Organic {{Mixed Ionic Electronic Conductors}} for
   {{Electrochemical Devices}},'' Ph.D. dissertation, Stanford University, {Palo
   Alto, CA}, Dec. 2022.
 
+\bibitem{giovannittiEnergeticControlRedoxActive2020}
+A.~Giovannitti, R.~B. Rashid, Q.~Thiburce, B.~D. Paulsen, C.~Cendra,
+  K.~Thorley, D.~Moia, J.~T. Mefford, D.~Hanifi, D.~Weiyuan, M.~Moser,
+  A.~Salleo, J.~Nelson, I.~McCulloch, and J.~Rivnay, ``Energetic {{Control}} of
+  {{Redox-Active Polymers}} toward {{Safe Organic Bioelectronic Materials}},''
+  \emph{Advanced Materials}, vol.~32, no.~16, p. 1908047, 2020.
+
 \bibitem{snookConductingpolymerbasedSupercapacitorDevices2011}
 G.~A. Snook, P.~Kao, and A.~S. Best, ``Conducting-polymer-based supercapacitor
   devices and electrodes,'' \emph{Journal of Power Sources}, vol. 196, no.~1,
@@ -97,23 +109,22 @@ Y.~Liang, Z.~Tao, and J.~Chen, ``Organic {{Electrode Materials}} for
   {{Rechargeable Lithium Batteries}},'' \emph{Advanced Energy Materials},
   vol.~2, no.~7, pp. 742--769, 2012.
 
-\bibitem{giovannittiEnergeticControlRedoxActive2020}
-A.~Giovannitti, R.~B. Rashid, Q.~Thiburce, B.~D. Paulsen, C.~Cendra,
-  K.~Thorley, D.~Moia, J.~T. Mefford, D.~Hanifi, D.~Weiyuan, M.~Moser,
-  A.~Salleo, J.~Nelson, I.~McCulloch, and J.~Rivnay, ``Energetic {{Control}} of
-  {{Redox-Active Polymers}} toward {{Safe Organic Bioelectronic Materials}},''
-  \emph{Advanced Materials}, vol.~32, no.~16, p. 1908047, 2020.
-
 \bibitem{tanMixedIonicElectronic2022}
 S.~T.~M. Tan, A.~Gumyusenge, T.~J. Quill, G.~S. LeCroy, G.~E. Bonacchini,
   I.~Denti, and A.~Salleo, ``Mixed {{Ionic}}\textendash{{Electronic
   Conduction}}, a {{Multifunctional Property}} in {{Organic Conductors}},''
   \emph{Advanced Materials}, vol.~34, no.~21, p. 2110406, 2022.
 
-\bibitem{friedleinDevicePhysicsOrganic2018}
-J.~T. Friedlein, R.~R. McLeod, and J.~Rivnay, ``Device physics of organic
-  electrochemical transistors,'' \emph{Organic Electronics}, vol.~63, pp.
-  398--414, Dec. 2018.
+\bibitem{inalBenchmarkingOrganicMixed2017}
+S.~Inal, G.~G. Malliaras, and J.~Rivnay, ``Benchmarking organic mixed
+  conductors for transistors,'' \emph{Nature Communications}, vol.~8, no.~1, p.
+  1767, Nov. 2017.
+
+\bibitem{keeneEnhancementModePEDOTPSS2020}
+S.~T. Keene, T.~P.~A. {van der Pol}, D.~Zakhidov, C.~H.~L. Weijtens, R.~A.~J.
+  Janssen, A.~Salleo, and Y.~{van de Burgt}, ``Enhancement-{{Mode PEDOT}}:{{PSS
+  Organic Electrochemical Transistors Using Molecular De-Doping}},''
+  \emph{Advanced Materials}, vol.~32, no.~19, p. 2000270, 2020.
 
 \bibitem{moiaDesignEvaluationConjugated2019}
 D.~Moia, A.~Giovannitti, A.~A. Szumska, I.~P. Maria, E.~Rezasoltani, M.~Sachs,
@@ -129,17 +140,6 @@ M.~Moser, L.~R. Savagian, A.~Savva, M.~Matta, J.~F. Ponder, T.~C. Hidalgo,
   Length Engineering}} in {{Polythiophenes}} and its {{Impact}} on {{Organic
   Electrochemical Transistor Performance}},'' \emph{Chemistry of Materials},
   vol.~32, no.~15, pp. 6618--6628, 2020.
-
-\bibitem{inalBenchmarkingOrganicMixed2017}
-S.~Inal, G.~G. Malliaras, and J.~Rivnay, ``Benchmarking organic mixed
-  conductors for transistors,'' \emph{Nature Communications}, vol.~8, no.~1, p.
-  1767, Nov. 2017.
-
-\bibitem{keeneEnhancementModePEDOTPSS2020}
-S.~T. Keene, T.~P.~A. {van der Pol}, D.~Zakhidov, C.~H.~L. Weijtens, R.~A.~J.
-  Janssen, A.~Salleo, and Y.~{van de Burgt}, ``Enhancement-{{Mode PEDOT}}:{{PSS
-  Organic Electrochemical Transistors Using Molecular De-Doping}},''
-  \emph{Advanced Materials}, vol.~32, no.~19, p. 2000270, 2020.
 
 \bibitem{savvaInfluenceWaterPerformance2019}
 A.~Savva, C.~Cendra, A.~Giugni, B.~Torre, J.~Surgailis, D.~Ohayon,
