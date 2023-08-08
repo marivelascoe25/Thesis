@@ -21,11 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{rivnayOrganicElectrochemicalTransistors2018}
-J.~Rivnay, S.~Inal, A.~Salleo, R.~M. Owens, M.~Berggren, and G.~G. Malliaras,
-  ``Organic electrochemical transistors,'' \emph{Nature Reviews Materials},
-  vol.~3, no.~2, pp. 1--14, 2018.
-
 \bibitem{nielsenMolecularDesignSemiconducting2016}
 C.~B. Nielsen, A.~Giovannitti, D.-T. Sbircea, E.~Bandiello, M.~R. Niazi, D.~A.
   Hanifi, M.~Sessolo, A.~Amassian, G.~G. Malliaras, J.~Rivnay, and
@@ -60,10 +55,18 @@ J.~T. Friedlein, R.~R. McLeod, and J.~Rivnay, ``Device physics of organic
   electrochemical transistors,'' \emph{Organic Electronics}, vol.~63, pp.
   398--414, Dec. 2018.
 
-\bibitem{bernardsSteadyStateTransientBehavior2007}
-D.~A. Bernards and G.~G. Malliaras, ``Steady-{{State}} and {{Transient
-  Behavior}} of {{Organic Electrochemical Transistors}},'' \emph{Advanced
-  Functional Materials}, vol.~17, no.~17, pp. 3538--3544, 2007.
+\bibitem{moserEthyleneGlycolBasedSide2020}
+M.~Moser, L.~R. Savagian, A.~Savva, M.~Matta, J.~F. Ponder, T.~C. Hidalgo,
+  D.~Ohayon, R.~Hallani, M.~Reisjalali, A.~Troisi, A.~Wadsworth, J.~R.
+  Reynolds, S.~Inal, and I.~McCulloch, ``Ethylene {{Glycol-Based Side Chain
+  Length Engineering}} in {{Polythiophenes}} and its {{Impact}} on {{Organic
+  Electrochemical Transistor Performance}},'' \emph{Chemistry of Materials},
+  vol.~32, no.~15, pp. 6618--6628, 2020.
+
+\bibitem{inalBenchmarkingOrganicMixed2017}
+S.~Inal, G.~G. Malliaras, and J.~Rivnay, ``Benchmarking organic mixed
+  conductors for transistors,'' \emph{Nature Communications}, vol.~8, no.~1, p.
+  1767, Nov. 2017.
 
 \bibitem{kieferDoubleDopingConjugated2019}
 D.~Kiefer, R.~Kroon, A.~I. Hofmann, H.~Sun, X.~Liu, A.~Giovannitti,
@@ -109,16 +112,22 @@ Y.~Liang, Z.~Tao, and J.~Chen, ``Organic {{Electrode Materials}} for
   {{Rechargeable Lithium Batteries}},'' \emph{Advanced Energy Materials},
   vol.~2, no.~7, pp. 742--769, 2012.
 
+\bibitem{cendraRoleAnionTransport2019}
+C.~Cendra, A.~Giovannitti, A.~Savva, V.~Venkatraman, I.~McCulloch, A.~Salleo,
+  S.~Inal, and J.~Rivnay, ``Role of the {{Anion}} on the {{Transport}} and
+  {{Structure}} of {{Organic Mixed Conductors}},'' \emph{Advanced Functional
+  Materials}, vol.~29, no.~5, p. 1807034, 2019.
+
 \bibitem{tanMixedIonicElectronic2022}
 S.~T.~M. Tan, A.~Gumyusenge, T.~J. Quill, G.~S. LeCroy, G.~E. Bonacchini,
   I.~Denti, and A.~Salleo, ``Mixed {{Ionic}}\textendash{{Electronic
   Conduction}}, a {{Multifunctional Property}} in {{Organic Conductors}},''
   \emph{Advanced Materials}, vol.~34, no.~21, p. 2110406, 2022.
 
-\bibitem{inalBenchmarkingOrganicMixed2017}
-S.~Inal, G.~G. Malliaras, and J.~Rivnay, ``Benchmarking organic mixed
-  conductors for transistors,'' \emph{Nature Communications}, vol.~8, no.~1, p.
-  1767, Nov. 2017.
+\bibitem{bernardsSteadyStateTransientBehavior2007}
+D.~A. Bernards and G.~G. Malliaras, ``Steady-{{State}} and {{Transient
+  Behavior}} of {{Organic Electrochemical Transistors}},'' \emph{Advanced
+  Functional Materials}, vol.~17, no.~17, pp. 3538--3544, 2007.
 
 \bibitem{keeneEnhancementModePEDOTPSS2020}
 S.~T. Keene, T.~P.~A. {van der Pol}, D.~Zakhidov, C.~H.~L. Weijtens, R.~A.~J.
@@ -133,13 +142,17 @@ D.~Moia, A.~Giovannitti, A.~A. Szumska, I.~P. Maria, E.~Rezasoltani, M.~Sachs,
   materials for electrochemical energy storage in aqueous electrolytes,''
   \emph{Energy \& Environmental Science}, vol.~12, no.~4, pp. 1349--1357, 2019.
 
-\bibitem{moserEthyleneGlycolBasedSide2020}
-M.~Moser, L.~R. Savagian, A.~Savva, M.~Matta, J.~F. Ponder, T.~C. Hidalgo,
-  D.~Ohayon, R.~Hallani, M.~Reisjalali, A.~Troisi, A.~Wadsworth, J.~R.
-  Reynolds, S.~Inal, and I.~McCulloch, ``Ethylene {{Glycol-Based Side Chain
-  Length Engineering}} in {{Polythiophenes}} and its {{Impact}} on {{Organic
-  Electrochemical Transistor Performance}},'' \emph{Chemistry of Materials},
-  vol.~32, no.~15, pp. 6618--6628, 2020.
+\bibitem{ohayonGuideCharacterizationOrganic2023}
+D.~Ohayon, V.~Druet, and S.~Inal, ``A guide for the characterization of organic
+  electrochemical transistors and channel materials,'' \emph{Chemical Society
+  reviews}, vol.~52, no.~3, pp. 1001--1023, 2023.
+
+\bibitem{savvaBalancingIonicElectronic2020}
+A.~Savva, R.~Hallani, C.~Cendra, J.~Surgailis, T.~C. Hidalgo, S.~Wustoni,
+  R.~Sheelamanthula, X.~Chen, M.~Kirkus, A.~Giovannitti, A.~Salleo,
+  I.~McCulloch, and S.~Inal, ``Balancing {{Ionic}} and {{Electronic
+  Conduction}} for {{High-Performance Organic Electrochemical Transistors}},''
+  \emph{Advanced Functional Materials}, vol.~30, no.~11, p. 1907657, 2020.
 
 \bibitem{savvaInfluenceWaterPerformance2019}
 A.~Savva, C.~Cendra, A.~Giugni, B.~Torre, J.~Surgailis, D.~Ohayon,
