@@ -21,11 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{rivnayOrganicElectrochemicalTransistors2018a}
-J.~Rivnay, S.~Inal, A.~Salleo, R.~M. Owens, M.~Berggren, and G.~G. Malliaras,
-  ``Organic electrochemical transistors,'' \emph{Nature Reviews Materials},
-  vol.~3, no.~2, pp. 1--14, 2018.
-
 \bibitem{nielsenMolecularDesignSemiconducting2016}
 C.~B. Nielsen, A.~Giovannitti, D.-T. Sbircea, E.~Bandiello, M.~R. Niazi, D.~A.
   Hanifi, M.~Sessolo, A.~Amassian, G.~G. Malliaras, J.~Rivnay, and
@@ -45,6 +40,21 @@ A.~Weissbach, L.~M. Bongartz, M.~Cucchi, H.~Tseng, K.~Leo, and H.~Kleemann,
   ``Photopatternable solid electrolyte for integrable organic electrochemical
   transistors: Operation and hysteresis,'' \emph{Journal of Materials Chemistry
   C}, vol.~10, no.~7, pp. 2656--2662, 2022.
+
+\bibitem{alcacerElectronicStructureOrganic2018}
+L.~Alc{\'a}cer, \emph{Electronic {{Structure}} of {{Organic Semiconductors}}:
+  {{Polymers}} and Small Molecules}.\hskip 1em plus 0.5em minus 0.4em\relax
+  {Morgan \& Claypool Publishers}, Dec. 2018.
+
+\bibitem{heegerSolitonsConductingPolymers1988a}
+A.~J. Heeger, S.~Kivelson, J.~R. Schrieffer, and W.~P. Su, ``Solitons in
+  conducting polymers,'' \emph{Reviews of Modern Physics}, vol.~60, no.~3, pp.
+  781--850, Jul. 1988.
+
+\bibitem{heydarigharahcheshmehTextureNanostructuralEngineering2020}
+M.~Heydari~Gharahcheshmeh and K.~K. Gleason, ``Texture and nanostructural
+  engineering of conjugated conducting and semiconducting polymers,''
+  \emph{Materials Today Advances}, vol.~8, p. 100086, Dec. 2020.
 
 \bibitem{lussemDopingOrganicSemiconductors2013}
 B.~L{\"u}ssem, M.~Riede, and K.~Leo, ``Doping of organic semiconductors,''
