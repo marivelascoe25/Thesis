@@ -9,7 +9,7 @@
   abstract = {{$<$}p{$>$}Written from the perspective of an experimental chemist, this book puts together some fundamentals from chemistry, solid state physics and quantum chemistry, to help with understanding and predicting the electronic and optical properties of organic semiconductors, both polymers and small molecules. The text is intended to assist graduate students and researchers in the field of organic electronics to use theory to design more efficient materials for organic electronic devices, such as organic solar cells, light emitting diodes and field effect transistors. After addressing some basic topics in solid state physics, a comprehensive introduction to molecular orbitals and band theory leads to a description of computational methods based on Hartree-Fock and density functional theory (DFT), for predicting geometry conformations, frontier levels and energy band structures. Topological defects and transport and optical properties are then addressed, and one of the most commonly used transparent conducting polymers, PEDOT:PSS, is described in some detail as a case study.{$<$}/p{$>$}},
   isbn = {978-1-64327-168-2},
   langid = {english},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\PKRR3SAZ\\Alcácer - 2018 - Electronic Structure of Organic Semiconductors Po.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\PKRR3SAZ\\Alcácer - 2018 - Electronic Structure of Organic Semiconductors Po.pdf}
 }
 
 @phdthesis{barkerConjugatedPolymerBlends2021,
@@ -20,7 +20,7 @@
   abstract = {The operation of various organic electrochemical devices relies on the intrinsic mixed conducting properties of {$\pi$}-conjugated polymers. One key factor that generally limits device performance is the slow transport of ions throughout the semiconducting polymer, necessary for bulk doping and dedoping. Thus, there has been increasing efforts to enhance the ionic conductivity of various conjugated polymers by chemically engineering the polarity of the side chains of the material. Such substituents however can impact the structure of these materials and render their electronic properties sensitive to environmental conditions. This work demonstrates the viability of multicomponent polymer blending as an alternative approach to tune mixed conductivity. A hydrophilic block copolymer of poly(3-hexylthiophene) and poly(ethylene oxide) (P3HT-b-PEO) is blended with a mixed conducting random copolymer of P3HT and poly(3-hydroxyhexylthiophene) (P3HT-co-P3HHT). Electrochemical transistors of the blends exhibit similar transduction performance at steady state relative to those of the neat P3HT-co-P3HHT, however the response time is greatly reduced. We attribute this to faster electrochemical doping related to ion uptake due to the increased material hydrophilicity upon adding the block copolymer. Meanwhile, the P3HTmoiety of the block copolymer seems to act as a compatibilizer that can support the structural stability of the blend, which can subsequently support the operational stability of resulting devices. Thus, our work implies that engineering block copolymers to fabricate compatible blends is a promising method to enhance the performance and stability of mixed conducting materials.},
   langid = {english},
   school = {Universit\'e de Bordeaux},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\FL98ZQKW\\Barker - Conjugated polymer blends for faster organic mixed.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\FL98ZQKW\\Barker - Conjugated polymer blends for faster organic mixed.pdf}
 }
 
 @article{bernardsSteadyStateTransientBehavior2007,
@@ -37,7 +37,7 @@
   abstract = {In recent years, organic electrochemical transistors (OECTs) have emerged as attractive devices for a variety of applications, particularly in the area of sensing. While the electrical characteristics of OECTs are analogous to those of conventional organic field effect transistors, appropriate models for OECTs have not yet been developed. In particular, little is known about the transient characteristics of OECTs, which are determined by a complex interplay between ionic and electronic motion. In this paper a simple model is presented that reproduces the steady-state and transient response of OECTs by considering these devices in terms of an ionic and an electronic circuit. A simple analytical expression is derived that can be used to fit steady-state OECT characteristics. For the transient regime, comparison with experimental data allowed an estimation of the hole mobility in poly(3,4-ethylenedioxythiophene) doped with poly(styrene sulfonate). This work paves the way for rational optimization of OECTs.},
   langid = {english},
   keywords = {/unread,Biosensors,Conducting polymers,Sensors,Transistors},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\VW4XWC8V\\Bernards_Malliaras_2007_Steady-State and Transient Behavior of Organic Electrochemical Transistors.pdf;C\:\\Users\\32456\\Zotero\\storage\\GA47DXEL\\adfm.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\VW4XWC8V\\Bernards_Malliaras_2007_Steady-State and Transient Behavior of Organic Electrochemical Transistors.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\GA47DXEL\\adfm.html}
 }
 
 @phdthesis{bongartzOrganicElectrochemicalTransistors2021,
@@ -49,7 +49,25 @@
   abstract = {Organic electrochemical transistors (OECTs) represent a class of electronic devices that received increasing attention in recent years. Their unique working mechanism, which is defined by the interplay of electronic and ionic charge carriers, gives them in inherent similarity to biological synapses and thus renders the devices highly appealing for neuromorphic computing. While OECTs reported in literature are mostly employing aqueous electrolytes, this work focuses on newly developed systems with solid-state electrolytes, which are based on an ionic liquid and that should greatly facilitate applications. This thesis presents very promising electrical characteristics for these novel devices in terms of low threshold voltages ({$<$} 0.3V), high on/off-ratios ({$\sim$} 105), and maximum transconductance around 0V. Transfer curves were also found to exhibit remarkably large hysteresis, which is typically a drawback of transistor devices. However, here it represents an attractive feature for the particular applications sought. On the downside though, the devices also feature channel degradation and irreproducibility under ambient conditions. A new quantification method for hysteresis is introduced that allows to compare its relative extent through a parameter {$\psi$}, which also denotes the progress direction through its sign. Interface experiments indicate that the commonly recognised understanding of OECTs cannot be directly transferred to systems with solid-state electrolytes, of which the electrical characteristics could be rendered reproducible under inert conditions. This prerequisite allowed to identify hysteresis as a constant and reliable property of transfer characteristics, which appears to saturate above a certain gate bias and may potentially be based on coexisting equilibrium states. The suspicion that different mechanisms than originally assumed are involved was further substantiated by experiments with modified channels and exchanged electrolytes. These studies revealed that not only is the ionic liquid not decisive for the gating process, but moreover that external ion sources in general are not required for operating the OECT. It is suspected that the underlying mechanisms are based on inherently included sodium ions in the channel material PEDOT:PSS, which were proven to be approximately a hundred times higher concentrated as specified by the supplier ({$>$} 7000 ppm found). This insight allowed to interpret the outcome of investigations on the potential drop in PEDOT:PSS under various electrolytes. The comparison of devices with altered channel thicknesses revealed that different response times account for different extents of hysteresis, which was confirmed by its decrease for slower scan rates. However, it was also found that the hysteresis cannot be completely suppressed, which is considered a strong indicator of a bistable equilibrium state based on other than purely kinetic processes.},
   langid = {english},
   school = {Technische Universit\"at Dresden},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\3IB58MLS\\Master_Thesis_Lukas_Bongartz.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\3IB58MLS\\Master_Thesis_Lukas_Bongartz.pdf}
+}
+
+@article{bredasRoleMobileOrganic1984,
+  title = {The Role of Mobile Organic Radicals and Ions (Solitons, Polarons and Bipolarons) in the Transport Properties of Doped Conjugated Polymers},
+  author = {Bredas, J. L. and Themans, B. and Andre, J. M. and Chance, R. R. and Silbey, R.},
+  year = {1984},
+  month = apr,
+  journal = {Synthetic Metals},
+  series = {Proceedings of the {{Workshop}} "{{Synthetic Metals II}}"},
+  volume = {9},
+  number = {2},
+  pages = {265--274},
+  issn = {0379-6779},
+  doi = {10.1016/0379-6779(84)90064-X},
+  urldate = {2023-08-09},
+  abstract = {We discuss the formation of charged defects such as solitons, polarons and bipolarons, in doped conjugated polymers. We present the results of ab initio quality calculations on the modifications of geometric and electronic structures occurring upon doping. A transport model for spinless conduction through bipolarons applicable to doped polymers with or without degenerate ground state is described.},
+  langid = {english},
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\4YKQHZZJ\\037967798490064X.html}
 }
 
 @article{bronsteinRoleChemicalDesign2020,
@@ -69,7 +87,7 @@
   copyright = {2020 Springer Nature Limited},
   langid = {english},
   keywords = {/unread,Conjugated polymers,Electronic materials,Excited states},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\9SWTCKB5\\Bronstein et al_2020_The role of chemical design in the performance of organic semiconductors.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\9SWTCKB5\\Bronstein et al_2020_The role of chemical design in the performance of organic semiconductors.pdf}
 }
 
 @phdthesis{buchholtzDopingPropertiesNovel2021,
@@ -81,7 +99,7 @@
   abstract = {A new class of dopant materials for organic hole transport layers, developed by the TU-Dresden spin-off project Credoxys, is investigated in this thesis. These dopants show an advantage regarding the absorption in the visible and near infrared range. Here, no parasitic absorption by dopant radical anions is detected. The focus is to study the doping efficiency and absorption of thin films doped with these materials. The mainly utilized host material was MeO-TPD, which is a common hole transport material. F6-TCNNQ serves as reference dopant, since it is an efficient dopant. Both materials are well-characterized in several scientific studies. As representative of the new materials, a prototype dopant (CDX-A) and a further developed dopant (CDX-B), are investigated. It is shown that both dopants are capable of doping MeO-TPD. Thereby, conductivity values of up to 2.25 {$\cdot$} 10-4 S/cm are achieved for MeO-TPD:CDX-B at a dopant concentration of 8 mol\%, while MeO-TPD:F6-TCNNQ exhibits only 1.66 {$\cdot$} 10-4 S/cm. By using impedance spectroscopy, doping efficiencies of 0.17 and 0.66 are determined for CDX-A and CDX-B in MeO-TPD at a dopant concentration of 1.7 mol\%. Thus, CDX-B yields a slightly worse result than F6-TCNNQ, which has a doping efficiency of 0.79 at the same dopant concentration. Because of additional trap states in the layers doped by CDX-A, which is detected with impedance spectroscopy, infrared spectroscopy is performed. The aim is to clarify whether the ligands of CDX-A are separated during the doping process, which could be the origin of the additional trap states. However, it is not possible to confirm this theory, since the spectrum of the ligands is largely consistent with that of CDX-A. Finally, also ultraviolet photoelectron spectroscopy of MeO-TPD doped by CDX-A is made. A shift in the chemical potential is confirmed.},
   langid = {english},
   school = {Technische Universit\"at Dresden},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\LRCZDXEA\\Buchholtz_Stephanie_Anna_Masterarbeit_2021.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\LRCZDXEA\\Buchholtz_Stephanie_Anna_Masterarbeit_2021.pdf}
 }
 
 @article{cendraRoleAnionTransport2019,
@@ -99,7 +117,7 @@
   copyright = {\textcopyright{} 2018 WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim},
   langid = {english},
   keywords = {bioelectronics,doping,organic mixed conductors,structure\textendash property relationships},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\285WPXP2\\Cendra et al. - 2019 - Role of the Anion on the Transport and Structure o.pdf;C\:\\Users\\32456\\Zotero\\storage\\R5789XIU\\adfm.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\285WPXP2\\Cendra et al. - 2019 - Role of the Anion on the Transport and Structure o.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\R5789XIU\\adfm.html}
 }
 
 @article{chewSpectroscopicStudiesDopantinduced2017,
@@ -117,23 +135,7 @@
   abstract = {The effect of p-type doping at ultra-low concentrations (\textasciitilde 10-4-10-5 monomer mol fraction) of the polymer poly(3-hexylthiophene) (P3HT) is studied using charge modulation (CM) spectroscopy. Quantitative analysis of CM spectra of doped P3HT show that dopants induce measurable changes in the P3HT local chain conformation. We find that the dopants reside in both the aggregate and amorphous regions of the polymer, not just in the amorphous regions, as previously assumed. With increased doping, the P3HT intrachain disorder grows, causing the P3HT chains to become more oligomer-like, which we postulate leads to the drop in mobility commonly observed in literature.},
   langid = {english},
   keywords = {p3ht dopants causes low mobility},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\BDP2ZBE8\\Chew and Salleo - 2017 - Spectroscopic studies of dopant-induced conformati.pdf}
-}
-
-@article{duanHighlyEfficientMixed,
-  title = {Highly {{Efficient Mixed Conduction}} in a {{Fused Oligomer}} N-{{Type Organic Semiconductor Enabled}} by {{3D Transport Pathways}}},
-  author = {Duan, Jiayao and Zhu, Genming and Chen, Junxin and Zhang, Chenyang and Zhu, Xiuyuan and Liao, Hailiang and Li, Zhengke and Hu, Hanlin and McCulloch, Iain and Nielsen, Christian B. and Yue, Wan},
-  journal = {Advanced Materials},
-  volume = {n/a},
-  number = {n/a},
-  pages = {2300252},
-  issn = {1521-4095},
-  doi = {10.1002/adma.202300252},
-  urldate = {2023-05-10},
-  abstract = {Tailoring organic semiconductors to facilitate mixed conduction of ionic and electronic charges when interfaced with an aqueous media has spurred many recent advances in organic bioelectronics. The field is still restricted, however, by very few n-type (electron-transporting) organic semiconductors with adequate performance metrics. Here, a new electron-deficient, fused polycyclic aromatic system, TNR, is reported with excellent n-type mixed conduction properties including a \textmu C* figure-of-merit value exceeding 30 F cm-1 V-1 s-1 for the best performing derivative. Comprising three naphthalene bis-isatin moieties, this new molecular design builds on successful small-molecule mixed conductors; by extending the molecular scaffold into the oligomer domain, good film-forming properties, strong {$\pi$}\textendash{$\pi$} interactions, and consequently excellent charge-transport properties are obtained. Through judicious optimization of the side chains, the linear oligoether and branched alkyl chain derivative bgTNR is obtained which shows superior mixed conduction in an organic electrochemical transistor configuration including an electron mobility around 0.3 cm2 V-1 s-1. By optimizing the side chains, the dominant molecular packing can be changed from a preferential edge-on orientation (with high charge-transport anisotropy) to an oblique orientation that can support 3D transport pathways which in turn ensure highly efficient mixed conduction properties across the bulk semiconductor film.},
-  langid = {english},
-  keywords = {mixed conductors,n-type semiconductors,oligomers,organic bioelectronics,organic electrochemical transistors},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\N5E8VI73\\Duan et al. - Highly Efficient Mixed Conduction in a Fused Oligo.pdf;C\:\\Users\\32456\\Zotero\\storage\\M7JWFMJP\\adma.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\BDP2ZBE8\\Chew and Salleo - 2017 - Spectroscopic studies of dopant-induced conformati.pdf}
 }
 
 @book{ElectrochemicalMethodsFundamentals,
@@ -157,7 +159,7 @@
   doi = {10.1021/acs.jchemed.7b00361},
   urldate = {2023-05-22},
   langid = {english},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\AZXF2GAF\\Elgrishi et al. - 2018 - A Practical Beginner’s Guide to Cyclic Voltammetry.pdf;C\:\\Users\\menriquez\\Downloads\\ed7b00361_si_001.pdf}
+  file = {C\:\\Users\\menriquez\\Downloads\\ed7b00361_si_001.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\AZXF2GAF\\Elgrishi et al. - 2018 - A Practical Beginner’s Guide to Cyclic Voltammetry.pdf}
 }
 
 @article{fontanaEvaporationVsSolution2019,
@@ -174,7 +176,7 @@
   doi = {10.1021/acs.jpcc.9b05069},
   urldate = {2023-05-11},
   langid = {english},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\J9D5DRNE\\Fontana et al. - 2019 - Evaporation vs Solution Sequential Doping of Conju.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\J9D5DRNE\\Fontana et al. - 2019 - Evaporation vs Solution Sequential Doping of Conju.pdf}
 }
 
 @article{friedleinDevicePhysicsOrganic2018,
@@ -191,7 +193,7 @@
   abstract = {Organic electrochemical transistors (OECTs) are thin-film transistors that have shown great promise in a range of applications including biosensing, logic circuits, and neuromorphic engineering. The device physics of OECTs are determined by the interaction between ionic and electronic charge carriers. This interaction sets OECTs apart from conventional transistor technologies and has necessitated the development of device models for the unique behavior of OECTs. In this Review, we discuss existing models for OECTs and provide a framework for understanding these models. Moreover, we show how the insight from these models inform device optimization. Finally, we discuss details of OECT operation that are not well-understood and that provide exciting opportunities for future research.},
   langid = {english},
   keywords = {Device physics,Organic electrochemical transistors,Organic electronics,Polymer semiconductors,Thin-film transistors},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\FLSMLJMA\\Friedlein et al. - 2018 - Device physics of organic electrochemical transist.pdf;C\:\\Users\\32456\\Zotero\\storage\\YZMDR2QQ\\S1566119918304683.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\FLSMLJMA\\Friedlein et al. - 2018 - Device physics of organic electrochemical transist.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\YZMDR2QQ\\S1566119918304683.html}
 }
 
 @article{giovannittiEnergeticControlRedoxActive2020,
@@ -209,10 +211,10 @@
   copyright = {\textcopyright{} 2020 WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim},
   langid = {english},
   keywords = {/unread,bioelectronics,donor\textendash acceptor copolymers,electrochemical transistors,organic mixed ionic/electronic conductors,oxygen reduction reaction},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\C7K6LJ6S\\Giovannitti et al_2020_Energetic Control of Redox-Active Polymers toward Safe Organic Bioelectronic.pdf;C\:\\Users\\32456\\Zotero\\storage\\CXYGHF4E\\adma.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\C7K6LJ6S\\Giovannitti et al_2020_Energetic Control of Redox-Active Polymers toward Safe Organic Bioelectronic.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\CXYGHF4E\\adma.html}
 }
 
-@article{gkoupidenisSynapticPlasticityFunctions2015,
+@article{gkoupidenisSynapticPlasticityFunctions2015a,
   title = {Synaptic Plasticity Functions in an Organic Electrochemical Transistor},
   author = {Gkoupidenis, Paschalis and Schaefer, Nathan and Strakosas, Xenofon and Fairfield, Jessamyn A. and Malliaras, George G.},
   year = {2015},
@@ -223,10 +225,42 @@
   pages = {263302},
   issn = {0003-6951},
   doi = {10.1063/1.4938553},
-  urldate = {2023-08-06},
+  urldate = {2023-08-08},
   abstract = {Synaptic plasticity functions play a crucial role in the transmission of neural signals in the brain. Short-term plasticity is required for the transmission, encoding, and filtering of the neural signal, whereas long-term plasticity establishes more permanent changes in neural microcircuitry and thus underlies memory and learning. The realization of bioinspired circuits that can actually mimic signal processing in the brain demands the reproduction of both short- and long-term aspects of synaptic plasticity in a single device. Here, we demonstrate the implementation of neuromorphic functions similar to biological memory, such as short- to long-term memory transition, in non-volatile organic electrochemical transistors (OECTs). Depending on the training of the OECT, the device displays either short- or long-term plasticity, therefore, exhibiting non von Neumann characteristics with merged processing and storing functionalities. These results are a first step towards the implementation of organic-based neuromorphic circuits.},
-  keywords = {/unread},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\ZDT7YG2S\\Gkoupidenis et al. - 2015 - Synaptic plasticity functions in an organic electr.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\PINHNHEU\\Gkoupidenis et al_2015_Synaptic plasticity functions in an organic electrochemical transistor.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\RM42D5BB\\Synaptic-plasticity-functions-in-an-organic.html}
+}
+
+@article{heegerSolitonsConductingPolymers1988a,
+  title = {Solitons in Conducting Polymers},
+  author = {Heeger, A. J. and Kivelson, S. and Schrieffer, J. R. and Su, W. -P.},
+  year = {1988},
+  month = jul,
+  journal = {Reviews of Modern Physics},
+  volume = {60},
+  number = {3},
+  pages = {781--850},
+  issn = {0034-6861},
+  doi = {10.1103/RevModPhys.60.781},
+  urldate = {2023-08-09},
+  langid = {english},
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\V9DA6EZ5\\Heeger et al_1988_Solitons in conducting polymers.pdf}
+}
+
+@article{heydarigharahcheshmehTextureNanostructuralEngineering2020,
+  title = {Texture and Nanostructural Engineering of Conjugated Conducting and Semiconducting Polymers},
+  author = {Heydari Gharahcheshmeh, M. and Gleason, K. K.},
+  year = {2020},
+  month = dec,
+  journal = {Materials Today Advances},
+  volume = {8},
+  pages = {100086},
+  issn = {2590-0498},
+  doi = {10.1016/j.mtadv.2020.100086},
+  urldate = {2023-08-09},
+  abstract = {Conducting polymers have attracted tremendous attention because of their unique characteristics, such as metal-like conductivity, ionic conductivity, optical transparency, and mechanical flexibility. Texture and nanostructural engineering of conjugated conducting polymers provide an outstanding pathway to facilitate their adoption in a variety of technological applications, including energy storage and harvesting devices, flexible optoelectronic devices, and wearable electronic devices. Generally, obtaining high carrier mobility in the presence of high carrier density is challenging and requires precise control of the texture and nanostructure of conducting polymers to avoid the charge localization. Preferential semicrystalline orientation, {$\pi$}\textendash{$\pi$} stacking distances, crystallite size, intra- and interchain couplings, intra- and intercrystallite connections, and grain boundaries are the key parameters that influence the charge carrier mobility and needs to be controlled by the synthesis parameters. This article provides a comprehensive overview of the recent texture and nanostructural engineering development of conducting polymers. In addition, this work describes the fundamental of charge carrier transport mechanisms in conducting polymers; and the latest progress on the optoelectronic characteristics of flexible transparent conductive electrodes based on conducting polymers is reported.},
+  langid = {english},
+  keywords = {Electrical conductivity,Optoelectronic,P3HT,PEDOT,{$\pi$}\textendash{$\pi$} stacking distance},
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\ULT8K7AP\\Heydari Gharahcheshmeh_Gleason_2020_Texture and nanostructural engineering of conjugated conducting and.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\ZN92L7CS\\S2590049820300333.html}
 }
 
 @article{hidalgocastilloSimultaneousPerformanceStability2022a,
@@ -243,7 +277,7 @@
   urldate = {2023-05-10},
   langid = {english},
   keywords = {pg3t stability in air},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\97ALWJZD\\Hidalgo Castillo et al. - 2022 - Simultaneous Performance and Stability Improvement.pdf;C\:\\Users\\32456\\Zotero\\storage\\ET3Z3D4C\\Tania C. Hidalgo Castillo - cm2c00632_si_001.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\97ALWJZD\\Hidalgo Castillo et al. - 2022 - Simultaneous Performance and Stability Improvement.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\ET3Z3D4C\\Tania C. Hidalgo Castillo - cm2c00632_si_001.pdf}
 }
 
 @article{hwangOpticalPropertiesNondegenerate2003,
@@ -260,7 +294,7 @@
   doi = {10.1103/PhysRevB.67.115205},
   urldate = {2023-08-05},
   langid = {english},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\EHSD5862\\Hwang et al. - 2003 - Optical properties of nondegenerate ground-state p.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\EHSD5862\\Hwang et al. - 2003 - Optical properties of nondegenerate ground-state p.pdf}
 }
 
 @article{inalBenchmarkingOrganicMixed2017,
@@ -280,7 +314,7 @@
   copyright = {2017 The Author(s)},
   langid = {english},
   keywords = {Electrical and electronic engineering,Electronic devices},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\576NVMA4\\Inal et al. - 2017 - Benchmarking organic mixed conductors for transist.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\576NVMA4\\Inal et al. - 2017 - Benchmarking organic mixed conductors for transist.pdf}
 }
 
 @article{inalHighTransconductanceAccumulation2014,
@@ -297,7 +331,7 @@
   abstract = {An organic electrochemical transistor operates in accumulation mode with high transconductance. The channel comprises a thiophene-based conjugated polyelectrolyte, which is p-type doped by anions injected from a liquid electrolyte upon the application of a gate voltage. The use of ethylene glycol as a co-solvent dramatically improves the transconductance and the temporal response of the transistors.},
   copyright = {\textcopyright{} 2014 WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim},
   keywords = {accumulation,conjugated polyelectrolytes,electrochemical,transconductance,transistors},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\ZHXY2UUZ\\Inal et al_2014_A High Transconductance Accumulation Mode Electrochemical Transistor.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\ZHXY2UUZ\\Inal et al_2014_A High Transconductance Accumulation Mode Electrochemical Transistor.pdf}
 }
 
 @article{jacobsComparisonSolutionmixedSequentially2016,
@@ -317,7 +351,7 @@
   abstract = {Doping polymeric semiconductors often drastically reduces the solubility of the polymer, leading to difficulties in processing doped films. Here, we compare optical, electrical, and morphological properties of P3HT films doped with F4TCNQ, both from mixed solutions and using sequential solution processing with orthogonal solvents. We demonstrate that sequential doping occurs rapidly ({$<$}1 s), and that the film doping level can be precisely controlled by varying the concentration of the doping solution. Furthermore, the choice of sequential doping solvent controls whether dopant anions are included or excluded from polymer crystallites. Atomic force microscopy (AFM) reveals that sequential doping produces significantly more uniform films on the nanoscale than the mixed-solution method. In addition, we show that mixed-solution doping induces the formation of aggregates even at low doping levels, resulting in drastic changes to film morphology. Sequentially coated films show 3\textendash 15 times higher conductivities at a given doping level than solution-doped films, with sequentially doped films processed to exclude dopant anions from polymer crystallites showing the highest conductivities. We propose a mechanism for doping induced aggregation in which the shift of the polymer HOMO level upon aggregation couples ionization and solvation energies. To show that the methodology is widely applicable, we demonstrate that several different polymer:dopant systems can be prepared by sequential doping.},
   langid = {english},
   keywords = {/unread},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\9IDRJSKX\\Jacobs et al. - 2016 - Comparison of solution-mixed and sequentially proc.pdf;C\:\\Users\\32456\\Zotero\\storage\\FP5Z28NT\\Jacobs et al_2016_Comparison of solution-mixed and sequentially processed P3HT.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\9IDRJSKX\\Jacobs et al. - 2016 - Comparison of solution-mixed and sequentially proc.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\FP5Z28NT\\Jacobs et al_2016_Comparison of solution-mixed and sequentially processed P3HT.pdf}
 }
 
 @article{jacobsControllingMolecularDoping2017,
@@ -334,7 +368,7 @@
   abstract = {The field of organic electronics thrives on the hope of enabling low-cost, solution-processed electronic devices with mechanical, optoelectronic, and chemical properties not available from inorganic semiconductors. A key to the success of these aspirations is the ability to controllably dope organic semiconductors with high spatial resolution. Here, recent progress in molecular doping of organic semiconductors is summarized, with an emphasis on solution-processed p-type doped polymeric semiconductors. Highlighted topics include how solution-processing techniques can control the distribution, diffusion, and density of dopants within the organic semiconductor, and, in turn, affect the electronic properties of the material. Research in these areas has recently intensified, thanks to advances in chemical synthesis, improved understanding of charged states in organic materials, and a focus on relating fabrication techniques to morphology. Significant disorder in these systems, along with complex interactions between doping and film morphology, is often responsible for charge trapping and low doping efficiency. However, the strong coupling between doping, solubility, and morphology can be harnessed to control crystallinity, create doping gradients, and pattern polymers. These breakthroughs suggest a role for molecular doping not only in device function but also in fabrication\textemdash applications beyond those directly analogous to inorganic doping.},
   langid = {english},
   keywords = {molecular doping,morphology,organic electronics,organic semiconductor,polymer patterning},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\DQ2LCMP8\\Jacobs and Moulé - 2017 - Controlling Molecular Doping in Organic Semiconduc.pdf;C\:\\Users\\32456\\Zotero\\storage\\US4WH4EG\\adma.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\DQ2LCMP8\\Jacobs and Moulé - 2017 - Controlling Molecular Doping in Organic Semiconduc.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\US4WH4EG\\adma.html}
 }
 
 @article{keeneEnhancementModePEDOTPSS2020,
@@ -353,7 +387,7 @@
   copyright = {\textcopyright{} 2020 The Authors. Published by WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim},
   langid = {english},
   keywords = {aliphatic amines,bioelectronics,enhancement-mode transistor,molecular doping,organic electrochemical transistor,poly(ethylenedioxythiophene):poly(styrene sulfonate},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\FXPJN3Z3\\Keene et al. - 2020 - Enhancement-Mode PEDOTPSS Organic Electrochemical.pdf;C\:\\Users\\32456\\Zotero\\storage\\ZJGVRNV7\\adma.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\FXPJN3Z3\\Keene et al. - 2020 - Enhancement-Mode PEDOTPSS Organic Electrochemical.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\ZJGVRNV7\\adma.html}
 }
 
 @article{kieferDoubleDopingConjugated2019,
@@ -373,7 +407,7 @@
   copyright = {2019 The Author(s), under exclusive licence to Springer Nature Limited},
   langid = {english},
   keywords = {Conjugated polymers,Electron transfer,Electronic materials,Polymers},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\5JFPWGLB\\Kiefer et al. - 2019 - Double doping of conjugated polymers with monomer .pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\5JFPWGLB\\Kiefer et al. - 2019 - Double doping of conjugated polymers with monomer .pdf}
 }
 
 @book{kleemannNovelConceptsOrganic2021,
@@ -401,7 +435,7 @@
   abstract = {The structural properties and charge carrier mobility of pentacene doped by 2,3,5,6-tetrafluoro-7,7,8,8-tetracyanoquinodimethane (F4-TCNQ) and 2,2-(perfluoronaphthalene-2,6-diylidene) dimalononitrile (F6-TCNNQ) are studied by X-ray diffraction, scanning electron microscopy, field effect transistor measurements, and space charge limited currents (SCLC). We observe the presence of polycrystalline and amorphous domains within the doped pentacene film grown under co-deposition conditions. The appearance of the amorphous phase is induced by the molecular dopants F4-TCNQ and F6-TCNNQ. A strong drop of crystallite size is obtained at a doping concentration of around 7 and 4wt.\%, respectively. The loss of the polycrystalline structure is correlated to a strong decrease of the charge carrier mobility in pentacene in horizontal and vertical film structures. We discuss typical scenarios of charge transport for polycrystalline and amorphous thin films in order to explain the observed loss of mobility originated by the doping induced structural phase transition. In this way an optimum doping concentration for highest conductivity with acceptable mobility is determined which can help to improve the performance of organic solar cells and organic high-frequency rectification diodes.},
   langid = {english},
   keywords = {/unread,Charge carrier transport,Doping induced structural transition,Molecular doping,Organic semiconductors,Polycrystalline organic semiconductors},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\PCTHFJMT\\Kleemann et al_2012_Structural phase transition in pentacene caused by molecular doping and its.pdf;C\:\\Users\\32456\\Zotero\\storage\\RDCIWGVD\\S156611991100348X.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\PCTHFJMT\\Kleemann et al_2012_Structural phase transition in pentacene caused by molecular doping and its.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\RDCIWGVD\\S156611991100348X.html}
 }
 
 @article{kochDevicePhysicsModeling2023,
@@ -414,7 +448,7 @@
   doi = {10.1109/JEDS.2023.3263278},
   abstract = {In this work, we investigate organic electrochemical transistors (OECTs) as a novel artificial electronic device for the realization of synaptic behavior, bioelectronics, and a variety of applications. A numerical method considering the Poisson-Boltzmann statistics is introduced to reproduce associated charge densities, electrostatics and switching properties of OECTs. We shed light on the working principle of OECTs by taking into account the ionic charge distribution in the electrolyte and incomplete ionization of the organic semiconductor describing the underlying electrochemical redox reaction. This enables analyzing the OECTs electrical performance as well as a simplified chemical properties via an electrical double layer, doping and de-doping of the OMIEC layer. We have fabricated, characterized, simulated and analyzed OECTs based on PEDOT:PSS, and we show that the proposed model reveals important properties of the device's working mechanism. The model shows a good agreement with the experimental data of the fabricated devices.},
   keywords = {Capacitance,Electrical Double Layer,Electrolytes,Ionization,Logic gates,Mathematical models,Modeling,OECTs,Semiconductor device measurement,Semiconductor process modeling,Simulation,Synaptic Devices},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\PNXYMGQI\\Koch et al. - 2023 - Device Physics, Modeling and Simulation of Organic.pdf;C\:\\Users\\32456\\Zotero\\storage\\X9KTGZNR\\stamp.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\PNXYMGQI\\Koch et al. - 2023 - Device Physics, Modeling and Simulation of Organic.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\X9KTGZNR\\stamp.html}
 }
 
 @article{liangOrganicElectrodeMaterials2012,
@@ -432,7 +466,7 @@
   copyright = {Copyright \textcopyright{} 2012 WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim},
   langid = {english},
   keywords = {/unread,electrodes,lithium batteries,molecular electronics,organic electronics,polymeric materials},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\WBTPSST3\\Liang et al_2012_Organic Electrode Materials for Rechargeable Lithium Batteries.pdf;C\:\\Users\\32456\\Zotero\\storage\\UH8YYJNM\\aenm.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\WBTPSST3\\Liang et al_2012_Organic Electrode Materials for Rechargeable Lithium Batteries.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\UH8YYJNM\\aenm.html}
 }
 
 @incollection{luisalcacerOrbitalsBandsOrganic2018,
@@ -443,7 +477,7 @@
   publisher = {{Morgan \& Claypool Publishers}},
   doi = {10.1088/2053-2571/aaddd8ch5},
   abstract = {There is some controversy about whether band theory gives the best picture of the electronic structure of organic semiconductors or if a better description is given in terms of the energy levels of the frontier orbitals, HOMO and LUMO. This chapter relates both approaches, with emphasis on the band description. It starts with a general discussion on a few examples of organic semiconductors, both polymers and small molecules, and their structures and applications.\textbackslash textless/p\textbackslash textgreater},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\DJ2IPPPB\\Luís Alcácer - 2018 - Orbitals and bands in organic semiconductors.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\DJ2IPPPB\\Luís Alcácer - 2018 - Orbitals and bands in organic semiconductors.pdf}
 }
 
 @article{lussemDopedOrganicTransistors2013,
@@ -463,7 +497,7 @@
   copyright = {2013 The Author(s)},
   langid = {english},
   keywords = {Electronic properties and materials},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\NZIW3KHH\\Lüssem et al. - 2013 - Doped organic transistors operating in the inversi.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\NZIW3KHH\\Lüssem et al. - 2013 - Doped organic transistors operating in the inversi.pdf}
 }
 
 @article{lussemDopingOrganicSemiconductors2013,
@@ -481,7 +515,7 @@
   copyright = {Copyright \textcopyright{} 2013 WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim},
   langid = {english},
   keywords = {/unread,molecular doping,OLED,organic semiconductors,organic solar cells},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\GNWQSDPG\\Lüssem et al_2013_Doping of organic semiconductors.pdf;C\:\\Users\\32456\\Zotero\\storage\\DHGEIT63\\pssa.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\GNWQSDPG\\Lüssem et al_2013_Doping of organic semiconductors.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\DHGEIT63\\pssa.html}
 }
 
 @phdthesis{mattElectronicStructureMorphology2021,
@@ -496,7 +530,7 @@
   langid = {english},
   school = {Saarl\"andische Universit\"ats- und Landesbibliothek},
   annotation = {Accepted: 2021-09-30T09:54:35Z},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\X9ERYMMI\\Matt - 2021 - Electronic structure and morphology of organic sem.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\X9ERYMMI\\Matt - 2021 - Electronic structure and morphology of organic sem.pdf}
 }
 
 @inproceedings{mckinneyDataStructuresStatistical2010,
@@ -510,7 +544,7 @@
   urldate = {2023-05-12},
   abstract = {In this paper we are concerned with the practical issues of working with data sets common to finance, statistics, and other related fields. pandas is a new library which aims to facilitate working with these data sets and to provide a set of fundamental building blocks for implementing statistical models. We will discuss specific design issues encountered in the course of developing pandas with relevant examples and some comparisons with the R language. We conclude by discussing possible future directions for statistical computing and data analysis using Python.},
   langid = {english},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\ZUKL52QP\\McKinney - 2010 - Data Structures for Statistical Computing in Pytho.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\ZUKL52QP\\McKinney - 2010 - Data Structures for Statistical Computing in Pytho.pdf}
 }
 
 @article{menezesImprovedStabilityOrganic2023,
@@ -530,7 +564,7 @@
   abstract = {Organic electrochemical transistors (OECTs) are bioelectronic devices that are capable of tracking biological events with extremely high sensitivity. Despite promising advances in terms of steady state performance, stable long-term electrochemical characteristics in complex environments need to be achieved in order for OECTs to open the market of biosensing applications. This work demonstrates the electrochemical performance stability of OECTs with a low swelling mixed conductor, poly[3-(6-hydroxy)hexylthiophene] (P3HHT), soaked in an electrolyte for up to 40 days, and the influence of the nature of the electrolyte on device performance.},
   langid = {english},
   keywords = {/unread},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\JCWS56R6\\Menezes et al. - 2023 - Improved stability of organic electrochemical tran.pdf;C\:\\Users\\32456\\Zotero\\storage\\Z3L3GLDA\\Menezes et al_2023_Improved stability of organic electrochemical transistor performance with a low.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\JCWS56R6\\Menezes et al. - 2023 - Improved stability of organic electrochemical tran.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\Z3L3GLDA\\Menezes et al_2023_Improved stability of organic electrochemical transistor performance with a low.pdf}
 }
 
 @article{moiaDesignEvaluationConjugated2019,
@@ -544,7 +578,7 @@
   issn = {1754-5706},
   doi = {10.1039/C8EE03518K},
   abstract = {We report the development of redox-active conjugated polymers that have potential applications in electrochemical energy storage. Side chain engineering enables processing of the polymer electrodes from solution, stability in aqueous electrolytes and efficient transport of ionic and electronic charge carrier},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\8FT4BJC4\\Moia et al. - 2019 - Design and evaluation of conjugated polymers with .pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\8FT4BJC4\\Moia et al. - 2019 - Design and evaluation of conjugated polymers with .pdf}
 }
 
 @article{moserControllingElectrochemicallyInduced2021,
@@ -563,7 +597,7 @@
   copyright = {\textcopyright{} 2021 Wiley-VCH GmbH},
   langid = {english},
   keywords = {bioelectronics,electrochemical swelling,MD simulations,organic electrochemical transistors,organic mixed ionic-electronic conductors},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\R2JCBI6W\\Moser et al. - 2021 - Controlling Electrochemically Induced Volume Chang.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\R2JCBI6W\\Moser et al. - 2021 - Controlling Electrochemically Induced Volume Chang.pdf}
 }
 
 @article{moserEthyleneGlycolBasedSide2020,
@@ -577,7 +611,7 @@
   issn = {0897-4756},
   doi = {10.1021/acs.chemmater.0c02041},
   abstract = {Chem. Mater. 2020.32:6618-6628},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\JEQ8XF6X\\Moser et al. - 2020 - Ethylene Glycol-Based Side Chain Length Engineerin.pdf;N\:\\IAPP\\organics\\PERSONAL_FOLDERS\\Marielena_Velasco\\1. Literature\\References\\SI-pg3tchangeEGlength.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\JEQ8XF6X\\Moser et al. - 2020 - Ethylene Glycol-Based Side Chain Length Engineerin.pdf;N\:\\IAPP\\organics\\PERSONAL_FOLDERS\\Marielena_Velasco\\1. Literature\\References\\SI-pg3tchangeEGlength.pdf}
 }
 
 @article{nguyen-dangBiomaterialBasedSolidElectrolyteOrganic2021,
@@ -595,7 +629,7 @@
   copyright = {\textcopyright{} 2021 Wiley-VCH GmbH},
   langid = {english},
   keywords = {/unread,biomaterials,flexible electronics,neuromorphic applications,organic electrochemical transistors,solid electrolytes},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\6JFTG2YH\\Nguyen-Dang et al. - 2021 - Biomaterial-Based Solid-Electrolyte Organic Electr.pdf;C\:\\Users\\32456\\Zotero\\storage\\C9N7H9YT\\aelm.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\6JFTG2YH\\Nguyen-Dang et al. - 2021 - Biomaterial-Based Solid-Electrolyte Organic Electr.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\C9N7H9YT\\aelm.html}
 }
 
 @article{nielsenMolecularDesignSemiconducting2016,
@@ -609,7 +643,7 @@
   issn = {0002-7863},
   doi = {10.1021/jacs.6b05280},
   abstract = {The organic electrochemical transistor (OECT), capable of transducing small ionic fluxes into electronic signals in an aqueous environment, is an ideal device to utilize in bioelectronic applications. Currently, most OECTs are fabricated with commercially available conducting poly(3,4-ethylenedioxythiophene) (PEDOT)-based suspensions and are therefore operated in depletion mode. Here, we present a series of semiconducting polymers designed to elucidate important structure-property guidelines required for accumulation mode OECT operation. We discuss key aspects relating to OECT performance such as ion and hole transport, electrochromic properties, operational voltage, and stability. The demonstration of our molecular design strategy is the fabrication of accumulation mode OECTs that clearly outperform state-of-the-art PEDOT-based devices, and show stability under aqueous operation without the need for formulation additives and cross-linkers.},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\L6CMLACD\\Nielsen et al. - 2016 - Molecular Design of Semiconducting Polymers for Hi.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\L6CMLACD\\Nielsen et al. - 2016 - Molecular Design of Semiconducting Polymers for Hi.pdf}
 }
 
 @article{ohayonGuideCharacterizationOrganic2023,
@@ -622,22 +656,7 @@
   pages = {1001--1023},
   doi = {10.1039/d2cs00920j},
   abstract = {The organic electrochemical transistor (OECT) is one of the most versatile devices within the bioelectronics toolbox, with its compatibility with aqueous media and the ability to transduce and amplify ionic and biological signals into an electronic output. The OECT operation relies on the mixed (ionic and electronic charge) conduction properties of the material in its channel. With the increased popularity of OECTs in bioelectronics applications and to benchmark mixed conduction properties of channel materials, the characterization methods have broadened somewhat heterogeneously. We intend this review to be a guide for the characterization methods of the OECT and the channel materials used. Our review is composed of two main sections. First, we review techniques to fabricate the OECT, introduce different form factors and configurations, and describe the device operation principle. We then discuss the OECT performance figures of merit and detail the experimental procedures to obtain these characteristics. In the second section, we shed light on the characterization of mixed transport properties of channel materials and describe how to assess films' interactions with aqueous electrolytes. In particular, we introduce experimental methods to monitor ion motion and diffusion, charge carrier mobility, and water uptake in the films. We also discuss a few theoretical models describing ion-polymer interactions. We hope that the guidelines we bring together in this review will help researchers perform a more comprehensive and consistent comparison of new materials and device designs, and they will be used to identify advances and opportunities to improve the device performance, progressing the field of organic bioelectronics.},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\KGBFB92U\\Ohayon et al. - 2023 - A guide for the characterization of organic electr.pdf}
-}
-
-@article{ohayonSaltsAdditivesRoute2023,
-  title = {Salts as {{Additives}}: {{A Route}} to {{Improve Performance}} and {{Stability}} of n-{{Type Organic Electrochemical Transistors}}},
-  shorttitle = {Salts as {{Additives}}},
-  author = {Ohayon, David and Flagg, Lucas Q. and Giugni, Andrea and Wustoni, Shofarul and Li, Ruipeng and Hidalgo Castillo, Tania C. and Emwas, Abdul-Hamid and Sheelamanthula, Rajendar and McCulloch, Iain and Richter, Lee J. and Inal, Sahika},
-  year = {2023},
-  month = mar,
-  journal = {ACS Materials Au},
-  pages = {acsmaterialsau.2c00072},
-  issn = {2694-2461, 2694-2461},
-  doi = {10.1021/acsmaterialsau.2c00072},
-  urldate = {2023-05-10},
-  langid = {english},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\9K36XEE5\\Ohayon et al. - 2023 - Salts as Additives A Route to Improve Performance.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\KGBFB92U\\Ohayon et al. - 2023 - A guide for the characterization of organic electr.pdf}
 }
 
 @article{paulsenOrganicMixedIonic2020,
@@ -657,7 +676,7 @@
   copyright = {2019 Springer Nature Limited},
   langid = {english},
   keywords = {Materials for devices,Soft materials},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\82GNKBER\\Paulsen et al_2020_Organic mixed ionic–electronic conductors.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\82GNKBER\\Paulsen et al_2020_Organic mixed ionic–electronic conductors.pdf}
 }
 
 @article{pingelChargeTransferLocalizationMolecularly2010,
@@ -674,7 +693,7 @@
   urldate = {2023-07-05},
   abstract = {We provide evidence for highly localized charge-transfer complex formation between a series of thiophenetetrafluorobenzene donor copolymers and the molecular acceptor tetrafluorotetracyanoquinodimethane (F4TCNQ). Infrared absorption spectra of diagnostic vibrational bands in conjunction with theoretical modeling show that one acceptor molecule undergoes charge transfer with a quaterthiophene segment of the polymers, irrespective of the macroscopic polymer ionization energy and acceptor concentration in thin films. The interaction is thus determined by the ``local ionization potential'' of quaterthiophene. Consequently, using materials parameters determined on a macroscopic length scale as a guideline for making new charge-transfer complex materials for high electrical conductivity turns out to be oversimplified, and a reliable material design must take into account property variations on the nm scale as well.},
   keywords = {/unread},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\BE35A7KB\\Pingel et al. - 2010 - Charge-Transfer Localization in Molecularly Doped .pdf;C\:\\Users\\32456\\Zotero\\storage\\GTAVQDWE\\jz100492c.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\BE35A7KB\\Pingel et al. - 2010 - Charge-Transfer Localization in Molecularly Doped .pdf;C\:\\Users\\menriquez\\Zotero\\storage\\GTAVQDWE\\jz100492c.html}
 }
 
 @article{quillOrderedSelfassembledNanocomposite2023,
@@ -694,10 +713,10 @@
   copyright = {2023 The Author(s), under exclusive licence to Springer Nature Limited},
   langid = {english},
   keywords = {Electronic devices,Electronic properties and materials,Organic molecules in materials science,Polymers},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\APCSLGQ6\\Quill et al. - 2023 - An ordered, self-assembled nanocomposite with effi.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\APCSLGQ6\\Quill et al. - 2023 - An ordered, self-assembled nanocomposite with effi.pdf}
 }
 
-@article{rivnayOrganicElectrochemicalTransistors2018a,
+@article{rivnayOrganicElectrochemicalTransistors2018,
   title = {Organic Electrochemical Transistors},
   author = {Rivnay, Jonathan and Inal, Sahika and Salleo, Alberto and Owens, R{\'o}is{\'i}n M. and Berggren, Magnus and Malliaras, George G.},
   year = {2018},
@@ -708,7 +727,7 @@
   issn = {2058-8437},
   doi = {10.1038/natrevmats.2017.86},
   abstract = {Organic electrochemical transistors (OECTs) make effective use of ion injection from an electrolyte to modulate the bulk conductivity of an organic semiconductor channel. The coupling between ionic and electronic charges within the entire volume of the channel endows OECTs with high transconductance compared with that of field-effect transistors, but also limits their response time. The synthetic tunability, facile deposition and biocompatibility of organic materials make OECTs particularly suitable for applications in biological interfacing, printed logic circuitry and neuromorphic devices. In this Review, we discuss the physics and the mechanism of operation of OECTs, focusing on their identifying characteristics. We highlight organic materials that are currently being used in OECTs and survey the history of OECT technology. In addition, form factors, fabrication technologies and applications such as bioelectronics, circuits and memory devices are examined. Finally, we take a critical look at the future of OECT research and development. Organic electrochemical transistors (OECTs) function as a result of ion injection from electrolytes into organic semiconductors. In this Review, the authors discuss OECT physics, organic materials and fabrication technologies, and the application of OECTs in circuits, bioelectronics and memory devices.},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\2YIX6HM9\\Rivnay et al. - 2018 - Organic electrochemical transistors.pdf;C\:\\Users\\32456\\Zotero\\storage\\3Y3GLBHA\\Rivnay et al. - 2018 - Organic electrochemical transistors.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\2YIX6HM9\\Rivnay et al. - 2018 - Organic electrochemical transistors.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\3Y3GLBHA\\Rivnay et al. - 2018 - Organic electrochemical transistors.pdf}
 }
 
 @article{savvaBalancingIonicElectronic2020,
@@ -726,7 +745,7 @@
   copyright = {\textcopyright{} 2020 WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim},
   langid = {english},
   keywords = {atomic force microscopy,conjugated polymers,mixed ionic\textendash electronic conduction,organic bioelectronics,organic electrochemical transistors},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\8WZ9R3JL\\Savva et al. - 2020 - Balancing Ionic and Electronic Conduction for High.pdf;C\:\\Users\\32456\\Zotero\\storage\\HJ97428Z\\adfm.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\8WZ9R3JL\\Savva et al. - 2020 - Balancing Ionic and Electronic Conduction for High.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\HJ97428Z\\adfm.html}
 }
 
 @article{savvaInfluenceWaterPerformance2019,
@@ -743,7 +762,7 @@
   doi = {10.1021/acs.chemmater.8b04335},
   urldate = {2023-05-10},
   abstract = {Organic electrochemical transistors (OECTs) composed of organic mixed conductors can operate in aqueous, biological media and translate low-magnitude ionic fluctuations of biological origin into measurable electrical signals. The growing technological interest in these biotransducers makes the fundamental understanding of ion-to-electron coupling extremely important for the design of new materials and devices. One crucial aspect in this process that has been so far disregarded is the water taken up by the film during device operation and its effects on device performance. Here, using a series of the same electrolyte with varying ion concentrations, we quantify the amount of water that is incorporated into a hydrophilic p-type organic semiconductor film alongside the dopant anions and investigate structural and morphological changes occurring in the film upon electrochemical doping. We show that infiltration of the hydrated dopant ions into the film irreversibly changes the polymer structure and negatively impacts the efficiency, reversibility, and speed of charge generation. When less water is injected into the channel, OECTs exhibit higher transconductance and faster switching speeds. Although swelling is commonly suggested to be a necessity for efficient ion-to-electron transduction, this work uncovers the negative impact of a swollen channel material on the performance of accumulation mode OECTs and lays the foundation for future materials design.},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\E6LE7WNN\\Savva et al. - 2019 - Influence of Water on the Performance of Organic E.pdf;C\:\\Users\\32456\\Zotero\\storage\\LAXE6P7F\\acs.chemmater.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\E6LE7WNN\\Savva et al. - 2019 - Influence of Water on the Performance of Organic E.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\LAXE6P7F\\acs.chemmater.html}
 }
 
 @article{scharberLowBandGap2021,
@@ -761,25 +780,7 @@
   copyright = {\textcopyright{} 2021 The Authors. Advanced Materials Technologies published by Wiley-VCH GmbH},
   langid = {english},
   keywords = {/unread,bulk heterojunction solar cells,conjugated polymers,organic diodes,organic photovoltaics,organic semiconductors,solar energy conversion},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\JYHTHVYS\\Scharber and Sariciftci - 2021 - Low Band Gap Conjugated Semiconducting Polymers.pdf}
-}
-
-@article{schwarzeUniversalLimitAirStable2020,
-  title = {Universal {{Limit}} for {{Air-Stable Molecular}} n-{{Doping}} in {{Organic Semiconductors}}},
-  author = {Schwarze, Martin and Tietze, Max L. and Ortmann, Frank and Kleemann, Hans and Leo, Karl},
-  year = {2020},
-  month = sep,
-  journal = {ACS Applied Materials \& Interfaces},
-  volume = {12},
-  number = {36},
-  pages = {40566--40571},
-  publisher = {{American Chemical Society}},
-  issn = {1944-8244},
-  doi = {10.1021/acsami.0c04380},
-  urldate = {2023-05-10},
-  abstract = {The air sensitivity of n-doped layers is crucial for the long-term stability of organic electronic devices. Although several air-stable and highly efficient n-dopants have been developed, the reason for the varying air sensitivity between different n-doped layers, in which the n-dopant molecules are dispersed, is not fully understood. In contrast to previous studies that compared the air stability of doped films with the energy levels of neat host or dopant layers, we trace back the varying degree of air sensitivity to the energy levels of integer charge transfer states (ICTCs) formed by host anions and dopant cations. Our data indicate a universal limit for the ionization energy of ICTCs above which the n-doped semiconductors are air-stable.},
-  keywords = {IAPP W paddlewheel for n-doping},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\A63WRT7H\\Schwarze et al. - 2020 - Universal Limit for Air-Stable Molecular n-Doping .pdf;C\:\\Users\\32456\\Zotero\\storage\\TRNMT3FE\\acsami.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\JYHTHVYS\\Scharber and Sariciftci - 2021 - Low Band Gap Conjugated Semiconducting Polymers.pdf}
 }
 
 @article{shenDeviceEngineeringOrganic2021,
@@ -793,7 +794,7 @@
   issn = {2637-6113},
   doi = {10.1021/acsaelm.1c00312},
   abstract = {Organic electrochemical transistors (OECTs) have been widely researched for the next-generation electronic building blocks because of their unique property that combines highly efficient signal transduction with amplification in a single device. By virtue of materials engineering and interfacial modification, multifunctional OECTs have been reported for biological sensing, physiological signal recording, and neuromorphic processing applications. With these significant advancements, it is beneficial to reveal universal device engineering guidelines such that OECTs can be readily tailored to satisfy the specific needs of each application. In this perspective, we systematically discuss the key physical processes that influence OECT operation, which includes both steady state and transient responses. These discussions reveal the important role of fine-tuning the OECT active materials, interfacial properties, and device structures to manipulate their charge transport properties for multifunctional applications. Finally, we also share our perspectives on a few hurdles as the community moves to transform OECTs from laboratory ideas into real-world technologies. Organic electrochemical transistors (OECTs) have been widely researched for the next-generation electronic building blocks because of their unique property that combines highly efficient signal transduction with amplification in a single device. By virtue of materials engineering and interfacial modification, multifunctional OECTs have been reported for biological sensing, physiological signal recording, and neuromorphic processing applications. With these significant advancements, it is beneficial to reveal universal device engineering guidelines such that OECTs can be readily tailored to satisfy the specific needs of each application. In this perspective, we systematically discuss the key physical processes that influence OECT operation, which includes both steady state and transient responses. These discussions reveal the important role of fine-tuning the OECT active materials, interfacial properties, and device structures to manipulate their charge transport properties for multifunctional applications. Finally, we also share our perspectives on a few hurdles as the community moves to transform OECTs from laboratory ideas into real-world technologies.},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\ZWSR7VCE\\Shen et al. - 2021 - Device Engineering in Organic Electrochemical Tran.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\ZWSR7VCE\\Shen et al. - 2021 - Device Engineering in Organic Electrochemical Tran.pdf}
 }
 
 @article{siemonsImpactSideChainHydrophilicity2022,
@@ -810,7 +811,7 @@
   abstract = {Exchanging hydrophobic alkyl-based side chains to hydrophilic glycol-based side chains is a widely adopted method for improving mixed-transport device performance, despite the impact on solid-state packing and polymer-electrolyte interactions being poorly understood. Presented here is a molecular dynamics (MD) force field for modeling alkoxylated and glycolated polythiophenes. The force field is validated against known packing motifs for their monomer crystals. MD simulations, coupled with X-ray diffraction (XRD), show that alkoxylated polythiophenes will pack with a ``tilted stack'' and straight interdigitating side chains, whilst their glycolated counterpart will pack with a ``deflected stack'' and an s-bend side-chain configuration. MD simulations reveal water penetration pathways into the alkoxylated and glycolated crystals\textemdash through the {$\pi$}-stack and through the lamellar stack respectively. Finally, the two distinct ways triethylene glycol polymers can bind to cations are revealed, showing the formation of a metastable single bound state, or an energetically deep double bound state, both with a strong side-chain length dependence. The minimum energy pathways for the formation of the chelates are identified, showing the physical process through which cations can bind to one or two side chains of a glycolated polythiophene, with consequences for ion transport in bithiophene semiconductors.},
   langid = {english},
   keywords = {aqueous electrolytes,bioelectronics,conjugated polymers,mixed electronic/ionic conductors,molecular dynamics,organic mixed ionic\textendash electronic conductors},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\9LQM52LN\\Siemons et al. - 2022 - Impact of Side-Chain Hydrophilicity on Packing, Sw.pdf;C\:\\Users\\32456\\Zotero\\storage\\AFKJ7PIT\\adma.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\9LQM52LN\\Siemons et al. - 2022 - Impact of Side-Chain Hydrophilicity on Packing, Sw.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\AFKJ7PIT\\adma.html}
 }
 
 @article{snookConductingpolymerbasedSupercapacitorDevices2011,
@@ -828,7 +829,7 @@
   abstract = {Supercapacitor electrodes and devices that utilise conducting polymers are envisaged to bridge the gap between existing carbon-based supercapacitors and batteries to form units of intermediate specific energy. This review looks at the major conducting polymer materials, namely, polyaniline, polypyrrole, polythiophene and derivatives of polythiophene, as well as composites of these materials with carbon nanotubes and inorganic battery materials. Various treatments of the conducting polymer materials to improve their properties are considered and comparisons are made with other supercapacitor materials such as carbon and with inorganic battery materials. Conducting polymers are pseudo-capacitive materials, which means that the bulk of the material undergoes a fast redox reaction to provide the capacitive response and they exhibit superior specific energies to the carbon-based supercapacitors (double-layer capacitors). In general conducting polymers are more conductive than the inorganic battery materials and consequently have greater power capability. On the downside, conducting polymers swell and contract substantially on charge and discharge, respectively. Consequently, cycle-life is poor compared with carbon-based supercapacitors which generally only charge via adsorption and desorption of ions (giving typically a few thousand cycles for conducting polymers compared with {$>$}500000 cycles for carbon-based devices).},
   langid = {english},
   keywords = {/unread,Conducting polymer,Cycle-life,Specific energy,Specific power,Supercapacitor,Ultracapacitor},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\LYRTW8YB\\S0378775310010712.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\LYRTW8YB\\S0378775310010712.html}
 }
 
 @article{spyropoulosInternalIongatedOrganic2019,
@@ -846,7 +847,7 @@
   urldate = {2023-08-07},
   abstract = {Real-time processing and manipulation of biological signals require bioelectronic devices with integrated components capable of signal amplification, processing, and stimulation. Transistors form the backbone of such circuits, but numerous criteria must be met for efficient and safe operation in biological environments. Here, we introduce an internal ion-gated organic electrochemical transistor (IGT) that uses contained mobile ions within the conducting polymer channel to permit both volumetric capacitance and shortened ionic transit time. The IGT has high transconductance, fast speed, and can be independently gated to create scalable conformable integrated circuits. We demonstrate the ability of the IGT to provide a miniaturized, comfortable interface with human skin using local amplification to record high-quality brain neurophysiological activity. The IGT is an effective transistor architecture for enabling integrated, real-time sensing and stimulation of signals from living organisms.},
   keywords = {/unread},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\26CJ7MAD\\Spyropoulos et al. - 2019 - Internal ion-gated organic electrochemical transis.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\26CJ7MAD\\Spyropoulos et al. - 2019 - Internal ion-gated organic electrochemical transis.pdf}
 }
 
 @article{tanHighGainChemicallyGated2021,
@@ -864,7 +865,7 @@
   copyright = {\textcopyright{} 2021 Wiley-VCH GmbH},
   langid = {english},
   keywords = {chemical to electrical transduction,electrochemistry,high gain transistors,organic mixed ionic/electronic conductors},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\MFQGM83E\\Tan et al. - 2021 - High-Gain Chemically Gated Organic Electrochemical.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\MFQGM83E\\Tan et al. - 2021 - High-Gain Chemically Gated Organic Electrochemical.pdf}
 }
 
 @article{tanMixedIonicElectronic2022,
@@ -882,7 +883,7 @@
   copyright = {\textcopyright{} 2022 Wiley-VCH GmbH},
   langid = {english},
   keywords = {bioelectronics,conjugated polymers,mixed conductors,organic electronics},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\45DDGADT\\Tan et al. - 2022 - Mixed Ionic–Electronic Conduction, a Multifunction.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\45DDGADT\\Tan et al. - 2022 - Mixed Ionic–Electronic Conduction, a Multifunction.pdf}
 }
 
 @article{tanOperationMechanismOrganic2021,
@@ -900,7 +901,7 @@
   urldate = {2023-07-24},
   abstract = {The ability to control the charge density of organic mixed ionic electronic conductors (OMIECs) via reactions with redox-active analytes has enabled applications as electrochemical redox sensors. Their charge density-dependent conductivity can additionally be tuned via charge injection from electrodes, for instance in organic electrochemical transistors (OECTs), where volumetric charging of the OMIEC channel enables excellent transconductance and amplification of low potentials. Recent efforts have combined the chemical detection with the transistor function of OECTs to achieve compact electrochemical sensors. However, these sensors often fall short of the expected amplification performance of OECTs. Here, we investigate the operation mechanism of various OECT architectures to deduce the design principles required to achieve reliable chemical detection and signal amplification. By utilizing a non-polarizable gate electrode and conducting the chemical reaction in a compartment separate from the OECT, the recently developed Reaction Cell OECT achieves reliable modulation of the OECT channel's charge density. This work demonstrates that systematic and rational design of OECT chemical sensors requires understanding the electrochemical processes that result in changes in the potential (charge density) of the channel, the underlying phenomenon behind amplification.},
   langid = {english},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\HQICNNDI\\Tan et al. - 2021 - Operation mechanism of organic electrochemical tra.pdf;C\:\\Users\\32456\\Zotero\\storage\\SI4AKSN7\\Tan et al_2021_Operation mechanism of organic electrochemical transistors as redox chemical.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\HQICNNDI\\Tan et al. - 2021 - Operation mechanism of organic electrochemical tra.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\SI4AKSN7\\Tan et al_2021_Operation mechanism of organic electrochemical transistors as redox chemical.pdf}
 }
 
 @phdthesis{tanOrganicMixedIonic2022,
@@ -913,7 +914,7 @@
   abstract = {The development of wearable devices for continuous health monitoring of biomarkers requires materials that are mechanically compliant, biocompatible, and are sensitive to biochemical molecules. One class of materials that show promise are Organic Mixed Ionic Electronic Conductors (OMIECs), commonly semiconducting polymers, which are redoxactive and can simultaneously conduct ions and electrons. Electronic charges accumulated on the conjugated polymer backbone result in secondary property changes in electrochemical potential and electronic conductivity, allowing OMIECs to be implemented in a variety of devices such as chemical sensors, organic electrochemical transistors, and energy storage electrodes. Additionally, the mechanical flexibility and biocompatibility of these polymers enable conformable and seamless integration with biological interfaces, enabling bio-interfacing devices for continuous health monitoring. My PhD research investigates how OMIECs can be designed, characterized, and implemented in 1) polymer-based batteries for energy storage, 2) electrochemical sensors for the detection of biological analytes, 3) organic electrochemical transistors that amplify biosensing signals, and 4) tunable antennas for wireless signal transmission in microwave frequencies compatible with consumer electronics. Leveraging fundamental materials characterization to drive the understanding of device physics, these OMIEC-based technologies are integrated into a fully self-powered and wireless glucose sensor.},
   langid = {english},
   school = {Stanford University},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\3YHLUWP6\\Organic Mixed Ionic Electronic Conductors for Electrochemical Devices_final-augmented.pdf;C\:\\Users\\32456\\Zotero\\storage\\RFFEJPLH\\1.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\3YHLUWP6\\Organic Mixed Ionic Electronic Conductors for Electrochemical Devices_final-augmented.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\RFFEJPLH\\1.html}
 }
 
 @article{tanTuningOrganicElectrochemical2022,
@@ -931,7 +932,7 @@
   copyright = {\textcopyright{} 2022 Wiley-VCH GmbH},
   langid = {english},
   keywords = {chemical doping,gate electrodes,organic electrochemical transistors,threshold voltage,work function},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\QDJTAASU\\Tan et al. - 2022 - Tuning Organic Electrochemical Transistor Threshol.pdf;C\:\\Users\\32456\\Zotero\\storage\\RCTZF863\\adma.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\QDJTAASU\\Tan et al. - 2022 - Tuning Organic Electrochemical Transistor Threshol.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\RCTZF863\\adma.html}
 }
 
 @article{tietzeFermiLevelShift2012,
@@ -949,7 +950,7 @@
   urldate = {2023-07-31},
   abstract = {We study the mechanism of molecular doping of the organic small molecule N,N,N{${'}$},N{${'}$}-tetrakis(4-methoxyphenyl)-benzidine (MeO-TPD) doped with the fluorinated fullerene C60F36 or the acceptor molecule 2,2{${'}$}-(perfluoronaphthalene-2,6-diylidene)dimalononitrile (F6-TCNNQ). Varying the doping concentration, photoemission spectroscopy measurements show a comparable Fermi level shift for both dopants. The doping efficiency, defined as the ratio of free charge carriers (holes) to acceptors, is estimated from the depletion layer thickness in metal/intrinsic/p-doped structures. For low concentrations, we observe rather high doping efficiencies of up to 36\% for C60F36, whereas for both dopants the doping efficiency strongly decreases with increasing doping concentration down to less than 10\%. By numerically solving the charge neutrality equation using a classical semiconductor physics approach and comparing the results to the ultraviolet photoelectron spectroscopy data, we show that for very low concentrations doping is hindered by deep intragap states. In particular, the calculations can statistically explain the strong decrease of the doping efficiency for high doping concentrations.},
   keywords = {/unread},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\LSEY4IUB\\Tietze et al_2012_Fermi level shift and doping efficiency in $p$-doped small molecule organic.pdf;C\:\\Users\\32456\\Zotero\\storage\\278PXGSD\\PhysRevB.86.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\LSEY4IUB\\Tietze et al_2012_Fermi level shift and doping efficiency in $p$-doped small molecule organic.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\278PXGSD\\PhysRevB.86.html}
 }
 
 @article{torricelliElectrolytegatedTransistorsEnhanced2021,
@@ -969,7 +970,7 @@
   copyright = {2021 Springer Nature Limited},
   langid = {english},
   keywords = {Electrical and electronic engineering,Electrochemistry},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\3MJDBLCQ\\Torricelli et al. - 2021 - Electrolyte-gated transistors for enhanced perform.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\3MJDBLCQ\\Torricelli et al. - 2021 - Electrolyte-gated transistors for enhanced perform.pdf}
 }
 
 @phdthesis{vossSpectroscopyPolaronsBipolarons2020,
@@ -995,31 +996,7 @@
   doi = {10.1021/cr050156n},
   urldate = {2023-07-31},
   keywords = {/unread},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\RKD37SDR\\cr050156n.html}
-}
-
-@article{wangNTypeOrganicElectrochemical2023,
-  title = {N-{{Type Organic Electrochemical Transistors}} with {{High Transconductance}} and {{Stability}}},
-  author = {Wang, Yazhou and Zhu, Genming and Zeglio, Erica and Castillo, Tania Cecilia Hidalgo and Haseena, Sheik and Ravva, Mahesh Kumar and Cong, Shengyu and Chen, Junxin and Lan, Liuyuan and Li, Zhengke and Herland, Anna and McCulloch, Iain and Inal, Sahika and Yue, Wan},
-  year = {2023},
-  month = jan,
-  journal = {Chemistry of Materials},
-  volume = {35},
-  number = {2},
-  pages = {405--415},
-  publisher = {{American Chemical Society}},
-  issn = {0897-4756},
-  doi = {10.1021/acs.chemmater.2c02447},
-  urldate = {2023-05-10},
-  abstract = {An n-type conjugated polymer based on diazaisoindigo (AIID) and fluorinated thiophene units is introduced. Combining the strong electron-accepting properties of AIID with backbone fluorination produced gAIID-2FT, leading to organic electrochemical transistors (OECTs) with normalized values of 4.09 F cm\textendash 1 V\textendash 1 s\textendash 1 and a normalized transconductance (gm,norm) of 0.94 S cm\textendash 1. The resulting OECTs exhibit exceptional operational stability and long shelf-life in ambient conditions, preserving 100\% of the original maximum drain current after over 3 h of continuous operation and 28 days of storage in the air. Our work highlights the advantages of integrating strong electron acceptors with donor fluorination to boost the performance and stability of n-type OECTs.},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\ZIXFLVIA\\Wang et al. - 2023 - n-Type Organic Electrochemical Transistors with Hi.pdf}
-}
-
-@misc{WaterStableMolecular,
-  title = {Water Stable Molecular N-Doping Produces Organic Electrochemical Transistors with High Transconductance and Record Stability | {{Nature Communications}}},
-  urldate = {2023-06-07},
-  howpublished = {https://www.nature.com/articles/s41467-020-16648-0},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\HNA6VMMY\\s41467-020-16648-0.html}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\RKD37SDR\\cr050156n.html}
 }
 
 @article{weissbachPhotopatternableSolidElectrolyte2022,
@@ -1032,7 +1009,7 @@
   pages = {2656--2662},
   issn = {2050-7526},
   doi = {10.1039/D1TC04230K},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\6PJ9YGGE\\Weissbach et al. - 2022 - Photopatternable solid electrolyte for integrable .pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\6PJ9YGGE\\Weissbach et al. - 2022 - Photopatternable solid electrolyte for integrable .pdf}
 }
 
 @article{weissbachUnravelingElectrochemicalElectrode2023,
@@ -1047,7 +1024,7 @@
   urldate = {2023-07-24},
   langid = {english},
   keywords = {/unread},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\ZPN58P4U\\Weissbach et al. - 2023 - Unraveling the Electrochemical Electrode Coupling .pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\ZPN58P4U\\Weissbach et al. - 2023 - Unraveling the Electrochemical Electrode Coupling .pdf}
 }
 
 @article{yokotaControlThresholdVoltage2011,
@@ -1063,22 +1040,21 @@
   doi = {10.1063/1.3589967},
   urldate = {2023-05-10},
   langid = {english},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\LUIGIBZI\\Yokota et al. - 2011 - Control of threshold voltage in low-voltage organi.pdf}
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\LUIGIBZI\\Yokota et al. - 2011 - Control of threshold voltage in low-voltage organi.pdf}
 }
 
-@article{zhuFluorinatedAlcoholProcessedNType2022,
-  title = {Fluorinated {{Alcohol-Processed N-Type Organic Electrochemical Transistor}} with {{High Performance}} and {{Enhanced Stability}}},
-  author = {Zhu, Genming and Chen, Junxin and Duan, Jiayao and Liao, Hailiang and Zhu, Xiuyuan and Li, Zhengke and McCulloch, Iain and Yue, Wan},
-  year = {2022},
-  month = sep,
-  journal = {ACS Applied Materials \& Interfaces},
-  volume = {14},
-  number = {38},
-  pages = {43586--43596},
+@article{zozoulenkoPolaronsBipolaronsAbsorption2019,
+  title = {Polarons, {{Bipolarons}}, {{And Absorption Spectroscopy}} of {{PEDOT}}},
+  author = {Zozoulenko, Igor and Singh, Amritpal and Singh, Sandeep Kumar and Gueskine, Viktor and Crispin, Xavier and Berggren, Magnus},
+  year = {2019},
+  month = jan,
+  journal = {ACS Applied Polymer Materials},
+  volume = {1},
+  number = {1},
+  pages = {83--94},
   publisher = {{American Chemical Society}},
-  issn = {1944-8244},
-  doi = {10.1021/acsami.2c13310},
-  urldate = {2023-05-10},
-  abstract = {Tuning the film morphology and aggregated structure is a vital means to improve the performance of the mixed ionic\textendash electronic conductors in organic electrochemical transistors (OECTs). Herein, three fluorinated alcohols (FAs), including 2,2,2-trifluoroethanol (TFE), 1,1,1,3,3,3-hexafluoroisopropanol (HFIP), and perfluoro-tert-butanol (PFTB), were employed as the alternative solvents for engineering the n-type small-molecule active layer gNR. Remarkedly, an impressive {$\mu$}C* of 5.12 F V\textendash 1 cm\textendash 1 s\textendash 1 and a normalized transconductance of 1.216 S cm\textendash 1 are achieved from the HFIP-fabricated gNR OECTs, which is three times higher than that of chloroform. The operational stability has been significantly enhanced by the FA-fabricated devices. Such enhancements can be ascribed to the aggregation-induced structural ordering by FAs during spin coating, which optimizes the microstructure of the films for a better mixed ion and electron transport. These results prove the huge research potential of FAs to improve OECT materials' processability, device performance, and stability, therefore promoting practical bio-applications.},
-  file = {C\:\\Users\\32456\\Zotero\\storage\\MA4UZ4NR\\Zhu et al. - 2022 - Fluorinated Alcohol-Processed N-Type Organic Elect.pdf;C\:\\Users\\32456\\Zotero\\storage\\ZQTXWK3G\\acsami.html}
+  doi = {10.1021/acsapm.8b00061},
+  urldate = {2023-08-09},
+  abstract = {Electronic structure and optical absorption spectra of poly(3,4-ethylenedioxythiophene) (PEDOT) for different oxidation levels were studied using density functional theory (DFT) and time-dependent DFT. It is shown, that the DFT-based predictions for the polaronic and bipolaronic states and the nature of corresponding optical transitions are qualitatively different from the widely used traditional picture based on semi-empirical pre-DFT approaches that still dominate the current literature. On the basis of the results of our calculations, the experimental Vis/NIR absorbance spectroscopy and the electron paramagnetic resonance spectroscopy are re-examined, and a new interpretation of the measured spectra and the spin signal, which is qualitatively different from the traditional interpretation, is provided. The findings and conclusions concerning the nature of polaronic and bipolaronic states, band structure and absorption spectra presented for PEDOT, are generic for a wide class of conducting polymers (such as polythiophenes and their derivatives) that have a similar structure of monomer units.},
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\W2UHBYBQ\\acsapm.html}
 }

@@ -10,31 +10,35 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Scheme of doping processes in organic semiconductors}}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Material classes of OMIECs}}{5}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Electronic transport mechanisms in OMIECs}}{6}{figure.caption.11}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Thermally activated hopping}}}}{6}{subfigure.3.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Band-like transport}}}}{6}{subfigure.3.2}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Ionic transport mechanisms in OMIECs}}{7}{figure.caption.12}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Ion hopping} via segmental motion\\\hspace {1em} or ion clusters}}}{7}{subfigure.4.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Solvated/vehicle mechanism}}}}{7}{subfigure.4.2}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Device physics of MOSFET vs OECT}}{8}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Typical OECT structure and circuit model}}{8}{figure.caption.14}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Typical OECT structure}}}{8}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Electronic and ionic circuits}}}{8}{subfigure.6.2}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Depletion- and accumulation-mode OECTs}}{9}{figure.caption.15}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Depletion-mode OECT}}}{9}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Accumulation-mode OECT}}}{9}{subfigure.7.2}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Chemical structure of polymer g2T-T}}{10}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Chemical structure and transconductance of g2T-T with side-chain engineering}}{10}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces OECTs benchmark with different OMIECs}}{12}{figure.caption.18}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{12}{subfigure.10.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{12}{subfigure.10.2}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Tuning of threshold voltage with different levels of doping p(g3T2-T)}}{13}{figure.caption.19}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{13}{subfigure.11.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{13}{subfigure.11.2}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Energy levels of neutral state of OMIECs related to oxygen reduction reactions potentials}}{15}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Energy level diagram of organic semiconductors}}{3}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Degenerate and non-degenerate conjugated polymers}}{4}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Scheme of doping processes in organic semiconductors}}{4}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Representation of bipolaron formation introduced via doping}}{5}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Formation of polaron, bipolaron, and bipolaron band}}{6}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Material classes of OMIECs}}{7}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Electronic transport mechanisms in OMIECs}}{8}{figure.caption.15}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Thermally activated hopping}}}}{8}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Band-like transport}}}}{8}{subfigure.7.2}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Ionic transport mechanisms in OMIECs}}{9}{figure.caption.16}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Ion hopping} via segmental motion\\\hspace {1em} or ion clusters}}}{9}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Solvated/vehicle mechanism}}}}{9}{subfigure.8.2}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Device physics of MOSFET vs OECT}}{10}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Typical OECT structure and circuit model}}{10}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Typical OECT structure}}}{10}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Electronic and ionic circuits}}}{10}{subfigure.10.2}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Depletion- and accumulation-mode OECTs}}{11}{figure.caption.19}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Depletion-mode OECT}}}{11}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Accumulation-mode OECT}}}{11}{subfigure.11.2}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Chemical structure of polymer g2T-T}}{12}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Chemical structure and transconductance of g2T-T with side-chain engineering}}{13}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces OECTs benchmark with different OMIECs}}{14}{figure.caption.22}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{14}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{14}{subfigure.14.2}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Tuning of threshold voltage with different levels of doping p(g3T2-T)}}{15}{figure.caption.23}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{15}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{15}{subfigure.15.2}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Energy levels of neutral state of OMIECs related to oxygen reduction reactions potentials}}{17}{figure.caption.24}%
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ}}{21}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ}}{23}{figure.caption.25}%
 \addvspace {10pt}

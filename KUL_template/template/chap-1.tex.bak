@@ -8,39 +8,76 @@ Unlike inorganic semiconductors, organic semiconductors are lightweight, easy to
 %\subsection{Conjugated polymers}
 %\subsection{Small molecules}
 
-\subsection{Electronic Structure} 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6cm]{Images/pdf/ediagram.pdf}
+  \caption[Energy level diagram of organic semiconductors]{Energy level diagram of organic semiconductors.}
+  \label{fig:ediag}
+\end{figure}
 
-Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating multiple (sp$^{3}$, sp$^{2}$ hybridization) and single (sp hybrization) bonds. This configuration exhibit $p$ orbitals with delocalized electrons, charge transport among the length of these polymers is caused by this resonance structure. Based on the size of the conjugated system, organic semiconductors can be divided into conjugated polymers and small molecules.
+\subsection{Electronic Structure and transport} 
 
-\subsubsection{Conjugated polymers}
+Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating multiple (sp$^{3}$, sp$^{2}$ hybridization) and single (sp hybrization) bonds. This configuration exhibit $p$-orbitals with delocalized electrons. %, charge transport among the length of these polymers is caused by the alternation of these bonds, describing a resonance structure. 
+Based on the size of the conjugated system, organic semiconductors can be divided into conjugated polymers and small molecules, the lattest has the advantage of being ordered and its synthesis allow to obtain high purity material \cite{alcacerElectronicStructureOrganic2018}.
+
+The energy structure of organic semiconductors comprises a highest occupied molecular orbital (HOMO) and a lowest unccupied molecular orbital (LUMO), that are analogous to the valence and conduction bands, respectively, from inorganic semiconductors. The difference between both energy levels corresponds to the band-gap (E$_{g}$) of the material, as represented in Figure \ref{fig:ediag}. We could also defined i) the Fermi level (E$_{F}$) using the material work function (WF), ii) the ionization energy (IE, also refer as ionization potential, IP), using the HOMO energy, and iii) the electron affinity (EA), using the LUMO energy.
+
+%\subsubsection{Conjugated polymers}
 %Semiconducting properties of conjugated polymers built by alternating electron donor and acceptor moieties \cite{mattElectronicStructureMorphology2021}, 
 %Since inorganic semiconductors' band models does not take into consideration the Coulomb and exchange electron-electron interaction, which play a major role in organic semiconductors, it is necessary to add new theoretical approaches. On one hand, the transport properties are better described in terms of a hopping mechanism and the optoelectronic properties are better described by the molecular orbital picture \cite{alcacerElectronicStructureOrganic2018}. Since the device under study in this work is a transistor and their transport properties in aqueous and quasi-solid environments, the theoretical approach used will be the hopping mechanism.
 
 %Transport properties depend on the details of the band structure, namely the density of states and the band widths
 
-\subsubsection{Small Molecules}
+%\subsubsection{Small Molecules}
 %Unlike conjugated polymers, the chain size of small molecules have the advantage of being ordered and its synthesis allow to obtain high purity material.
 
-\subsection{Molecular Doping} \label{subsec:moldop}
-The basic principles are similar than in inorganic materials. A donnor or acceptor entity is added to generate electrons or holes, as shown in Figure \ref{fig:doping}. While n-type dopants donate electrons to the lowest unoccupied molecular orbital (LUMO) states, the p-type dopants extract electrons from the highest occupied molecular orbital (HOMO) states, hence creates holes \cite{lussemDopingOrganicSemiconductors2013}. In other words, the Fermi level E$_{F}$ of the polymer will shift towards the LUMO (or HOMO) level when there is n-type (or p-type) doping. This shift can be measured by spectroscopy techniques such as Ultraviolet Photoelectron Spectroscopy (UPS) at room temperature (RT) \cite{tietzeFermiLevelShift2012}, although a bit limited by the penetration depth of the incoming electrons.
+%\subsection{Electronic Transport}
+
+An organic semiconductor material could also be classified depending on whether the ground state is degenerate or non-degenerate. The former describes monomers that are energetically equivalent in the ground state, and in the latter, the opposite happens, commonly seen due to the energy difference of aromatic (benzoid) and quinoid structures \cite{heegerSolitonsConductingPolymers1988a}, as exhibited in Figure \ref{fig:energy}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=12cm]{Images/pdf/deg_pol.pdf}
+  \caption[Degenerate and non-degenerate conjugated polymers]{Potential energy change (electronic plus lattice distortion energy) in a) degenerate and b) non-degenerate ground-state-conjugated polymers. Extracted from reference \cite{heydarigharahcheshmehTextureNanostructuralEngineering2020}.}
+  \label{fig:energy}
+\end{figure}
+
+Transport in a organic semiconductor creates changes in the bond-length alternation pattern, since charge transport come together with a chain distortion, in transport theory, new quasiparticles are defined: in a degenerated molecule, the quasiparticles are named solitons, and in a non-degenerated molecule, receive the name of polarons, which are a bound soliton-antisoliton (both formed in the benzoid structures) which annihilate since neutral polarons are not stable.
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=12cm]{Images/pdf/doping.pdf}
   \caption[Scheme of doping processes in organic semiconductors]{Schemes for p-type (left) and n-type (right) doping processes. Extracted from reference \cite{lussemDopingOrganicSemiconductors2013}.}
-  \label{fig:doping}
+  \label{fig:dopscheme}
+\end{figure}
+
+\subsection{Molecular Doping} \label{subsec:moldop}
+The basic principles are similar than in inorganic materials. A donnor or acceptor entity is added to generate electrons or holes, as shown in Figure \ref{fig:dopscheme}. While n-type dopants donate electrons to the lowest unoccupied molecular orbital (LUMO) states, the p-type dopants extract electrons from the highest occupied molecular orbital (HOMO) states, hence creates holes \cite{lussemDopingOrganicSemiconductors2013}. In other words, the Fermi level E$_{F}$ of the polymer will shift towards the LUMO (or HOMO) level when there is n-type (or p-type) doping. This shift can be measured by spectroscopy techniques such as Ultraviolet Photoelectron Spectroscopy (UPS) at room temperature (RT) \cite{tietzeFermiLevelShift2012}, although a bit limited by the penetration depth of the incoming electrons.
+
+When doping occurs, %charged solitons come as outcome in a degenerated molecules. In a non-degenerated, our main focus in this work, 
+the formation of a new quasiparticle named bipolaron occurs. For instance, in a p-type doping on a degenerated molecule (Figure \ref{fig:bipol}), when an electron is removed from a double bond, one carbon is left as positively charged and the adjacent has an unpaired electron. This unpaired electron shifts down the polymer chain until reaching another unpaired electron from a separated doping event, together they form a double bond, leaving aside two polarons: a bipolaron, which unlike a single polaron, it is stable. Although, a nice simplification, in a degenerated molecule is not realistic, but usually
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=10cm]{Images/pdf/bipolaron.pdf}
+  \caption[Representation of bipolaron formation introduced via doping]{a) Structure of degenerated molecule. b) Electron extraction via doping. c) Unpaired electron shifting down. d) Unpaired electrons meet. e) Formation of double bond and two charge polarons: bipolaron.}
+  \label{fig:bipol}
+\end{figure}
+
+The energy levels generated upon the formation of polaron and bipolaron are represented in Figure \ref{fig:ebipol}. As the doping increases, the amount of bipolaron states increases as well, the overlapping of them led to the formation of bipolaron bands, and the energy difference between the two in-gap states i and i* decreases. Along with the addition of electronic states, the doped polymer will also exhibit distinct optical transitions that could be corroborated with UV-Vis-NIR spectroscopy, although not clearly defined \cite{heydarigharahcheshmehTextureNanostructuralEngineering2020}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=10cm]{Images/pdf/bi-polaron.pdf}
+  \caption[Formation of polaron, bipolaron, and bipolaron band]{Potential energy change of aromatic and quinoid in the non-degenerate ground-state neutral conjugated polymer, and formation of polaron, bipolaron, and bipolaron bands upon doping. Extracted from reference \cite{heydarigharahcheshmehTextureNanostructuralEngineering2020}.}
+  \label{fig:ebipol}
 \end{figure}
 
 %% This specifics introduces to our graph
-The use of small molecules is commonly reported as dopants for organic materials. Some strong acceptor (or electron-defficient) molecules that are widely used are 2,3,5,6 tetrafluoro-7,7,8,8-tetracyanoquinodimethane (F$_{4}$TCNQ) or 1,3,4,5,7,8 hexafluoro-7,7,8,8-tetracyanonaphthoquinodimethane (F$_{6}$TCNQ), which also take part in this work. The latter exhibits a higher electronic affinity (-5.3 eV) or deep HOMO than F$_{4}$TCNQ (-5.2eV) meaning that it can abstract more electrons, specially to polymers with low ionization potential (less than 5eV) or shallow LUMO \cite{kieferDoubleDopingConjugated2019}%, as it is the case of p(g3T2-T) acting as donor
+The use of small molecules is commonly reported as dopants for organic materials. Some strong acceptor (or electron-defficient) molecules that are widely used are 2,3,5,6 tetrafluoro-7,7,8,8-tetracyanoquinodimethane (F$_{4}$TCNQ) or 1,3,4,5,7,8 hexafluoro-7,7,8,8-tetracyanonaphthoquinodimethane (F$_{6}$TCNQ), which also take part in this work. The latter exhibits a higher electronic affinity (-5.3 eV) or deep HOMO than F$_{4}$TCNQ (-5.2eV) meaning that it can abstract electrons more efficiently, specially from polymers with low ionization potential (less than 5eV) or shallow HOMO \cite{kieferDoubleDopingConjugated2019}%, as it is the case of p(g3T2-T) acting as donor
 .
 
-Among the different methods to molecular doped a conjugated polymer, Jacobs et al. compared a solution-mixed and solution sequential doping of P3HT (a thiophene-based polymer) doped with F$_{4}$TCNQ, both straightforward and easy methods for doping. In this work it was demonstrated that solution-mixed films are considerably rougher than solution-sequential films, affecting negatively to its conductivity \cite{jacobsComparisonSolutionmixedSequentially2016}. The fact that solution-sequential doped films allows better homogeneity, make it also more compatible with microstructuring processes such as photolithography. At the expense of having less control over the doping levels compared to solution-mixed films \cite{tanOrganicMixedIonic2022}.
-
-
-%\subsubsection{Techniques for doping conjugated polymers}
-
-%\subsubsection{Measuring techniques to characterize doping}
+Among the different methods to molecular doped a conjugated polymer, Jacobs et al. compared a solution-mixed and solution sequential doping of P3HT (a thiophene-based polymer) doped with F$_{4}$TCNQ, both straightforward and easy methods for doping. Their work demonstrated that solution-mixed films are considerably rougher than solution-sequential films, affecting negatively to its conductivity \cite{jacobsComparisonSolutionmixedSequentially2016}. The fact that solution-sequential doped films allows better homogeneity, make it also more compatible with microstructuring processes such as photolithography. At the expense of having less control over the doping levels compared to solution-mixed films \cite{tanOrganicMixedIonic2022}.
 
 \section{Organic Mixed Ionic/Electronic Conductors (OMIECs)} \label{sec:omiecs}
 
@@ -48,9 +85,9 @@ Organic Mixed Ionic/Electronic conductors are organic semiconductors that allow 
 Commonly structured with polar side chains, they have been identified as a promising class of materials for the field of bioelectronics
 %These materials, also called organic mixed ionic/electronic conductors (OMIECs), can exchange ions with aqueous electrolytes when electronic charge carriers are injected, transported, and stored in the bulk of the material
 \cite{giovannittiEnergeticControlRedoxActive2020}. Initially investigated for batteries and super capacitors \cite{snookConductingpolymerbasedSupercapacitorDevices2011}
-\cite{liangOrganicElectrodeMaterials2012}, where the induction of charges in a semiconducting polymer was the main objective. OMIECs has rapidly grown to include other applications, among them, our focus: OECTs.
+\cite{liangOrganicElectrodeMaterials2012}, where the induction of charges in a semiconducting polymer was the main objective. OMIECs have rapidly grown to include other applications, among them, our focus: OECTs.
 
-Paulsen et al. classified OMIECs into six different categories according to whether they \textit{``intrinsically contain ionic charge''} (I, III, V) or not (II, IV, VI), the latter ``contain polar moieties that can solvate ions''. Another distinction among the categories is whether the conjugated system comprises a single material (homogeneous, type V and VI) or two-component, more complex systems or block co-polymers materials (heterogeneous, type I, II, III, IV)\cite{paulsenOrganicMixedIonic2020}, an schematic representation is shown in Figure \ref{fig:omiectypes}. 
+Paulsen et al. classified OMIECs into six different categories according to whether they \textit{``intrinsically contain ionic charge''} (I, III, V) or not (II, IV, VI), the latter \textit{``contain polar moieties that can solvate ions''}. Another distinction among the categories is whether the conjugated system comprises a single material (homogeneous, type V and VI) or two-component, more complex systems or block co-polymers materials (heterogeneous, type I, II, III, IV)\cite{paulsenOrganicMixedIonic2020}, an schematic representation is shown in Figure \ref{fig:omiectypes}. %For instance, the conjugated polymer p(g3T2-T), used in this work, falls into a type VI OMIEC.s
 
 %Electronic charges accumulated on the conjugated polymer backbone result in secondary property changes in electrochemical potential and electronic conductivity \cite{tanOrganicMixedIonic2022}. 
 
@@ -71,6 +108,8 @@ Paulsen et al. classified OMIECs into six different categories according to whet
   \label{fig:omiectypes}
 \end{figure}
 
+
+
 \subsection{Processes in OMIECs}
 
 \subsubsection{Ionic-electronic interactions}
@@ -81,18 +120,13 @@ The presence of electronic charge in OMIECs requires also the presence of excess
 The amount of coupling between electronic charge and excess ionic charge in OMIECs can be modulated with an applied bias when coupled through an electrolyte \cite{paulsenOrganicMixedIonic2020}. This is the basic principle of OECTs, and we will be further discuss in section \ref{sec:OECTs}.
 
 \subsubsection{Electronic transport}
-Electronic charge carrier density in undoped semiconductor organic species is logically low (no accessible hopping states), but in contact with an electrolyte, due to the ionic-electronic coupling as described in previous section, dopant ions would lower the activation energy of charge hopping and increase carrier mobility \cite{paulsenOrganicMixedIonic2020}. Electronic charge transport mechanisms, that can be within the length of the conjugated polymer (thermally-activated hopping) or within the polymer-stacking (band-like transport), both are represented in Figure \ref{fig:etrans}.
+Electronic charge carrier density in undoped semiconductor organic species is logically low (no accessible hopping states), but in contact with an electrolyte, due to the ionic-electronic coupling as described in previous subsection, dopant ions would lower the activation energy of charge hopping and increase carrier mobility \cite{paulsenOrganicMixedIonic2020}. 
+
+Electronic charge transport mechanisms present in OMIECs are thermally-activated hopping and band-like transport, both are represented in Figure \ref{fig:etrans}. The former as its name suggest, it is driven by thermal energy, where the weakly-bond electrons in delocalized $\pi$-orbital move along other $\pi$-orbital, or between molecules where there is sufficient $\pi$-$\pi$ overlap, so this mechanism can be within the length of the conjugated polymer. The band-like transport is shown within the polymer-stacking
 %"at extreme doping levels, increased disorder drives carrier localization, which results in a plateau or even decrease in electronic charge carrier mobility"
 
 
 %"Non-conjugated radical polymers also present a thermally activated mechanism of charge transfer between pendant radical sites, though with a significant dependence on the local self-diffusion of polymer chain to bring radical sites close enough for efficient charge transfer51. This manifests as a hopping transport of electronic carriers (Fig. 2a) that is assisted via segmental motion (described below; Fig. 2g). Also in this case disorder plays a role, producing local variations in the molecular orbital energy levels and spreading orbitals in a density of radical states52."
-
-%\begin{figure}
-%  \centering
-%  \includegraphics[width=\textwidth]{Images/%OMIECetransport.png}
-%  \caption{Schematic representation of electronic charge transport mechanisms: a) "Thermally activated hopping transport of a relatively localized electronic charge carrier" and b) "band-like transport of a relatively delocalized electronic charge carrier". Modified from reference \cite{paulsenOrganicMixedIonic2020}.}
-%  \label{fig:omiectypes}
-%\end{figure}
 
 
 \begin{figure}[h]
@@ -139,7 +173,7 @@ Then two types of ionic charge transport can be differentiated: ion hopping and 
 
 \section{Organic Electrochemical Transistors (OECTs)} \label{sec:OECTs}
 
-Organic Electrochemical Transistors (OECTs) consists of metallic source, drain and gate electrodes, an organic conjugated polymer channel (specifically an OMIEC as described in previous sections) and an electrolyte that couples channel and gate. Devices that have received increasingly attention due to their mechanically compliance, biocompatibility, and are sensitive to biochemical modules \cite{tanMixedIonicElectronic2022}. 
+Organic Electrochemical Transistors (OECTs) consists of metallic source, drain and gate electrodes, an organic conjugated polymer channel (specifically an OMIEC as described in previous sections) and an electrolyte that couples channel and gate, as represented in Figure \ref{fig:bernard}A). Devices that have received increasingly attention due to their mechanically compliance, biocompatibility, and are sensitive to biochemical modules \cite{tanMixedIonicElectronic2022}. 
 
 %\begin{figure}[ht]
 %	\centering
@@ -151,7 +185,7 @@ Organic Electrochemical Transistors (OECTs) consists of metallic source, drain a
 
 \subsection{Device Physics} \label{subsec:devphy}
 
-Although the structure of OECTs are different from conventional metal-oxide-semiconductor field-effect transistors (MOSFETs). The basic understanding of the latter can give us a clear idea of how OECTs operate. Unlike MOSFETs, OECTs are coupled with an electrolyte rather than an insulator. So, when applying a gate voltage, instead of polarizing the dipoles in the insulator, creating a field that causes accumulation of carriers at the interface of the semiconductor/insulator as it happens in a MOSFET, in an OECT, the gate voltage drives ions to penetrate the bulk of the channel, therefore accumulation of carriers will happen throughout the whole volume of the OMIEC film. This explains the large gate-channel capacitance in these devices compared to MOSFETs, and why drain-source current takes into account a volumetric capacitance \cite{friedleinDevicePhysicsOrganic2018}.
+Although the structure of OECTs are different from conventional metal-oxide-semiconductor field-effect transistors (MOSFETs). The basic understanding of the latter can give us a clear idea of how OECTs operate. Unlike MOSFETs, OECTs are coupled with an electrolyte rather than an insulator, as seen in Figure \ref{fig:vsMOS}. So, when applying a gate voltage, instead of polarizing the dipoles in the insulator, creating a field that causes accumulation of carriers at the interface of the semiconductor/insulator as it happens in a MOSFET, in an OECT, the gate voltage drives ions to penetrate the bulk of the channel, therefore accumulation of carriers will happen throughout the whole volume of the OMIEC film. This explains the large gate-channel capacitance in these devices compared to MOSFETs, and why drain-source current takes into account a volumetric capacitance \cite{friedleinDevicePhysicsOrganic2018}.
 
 
 \begin{figure}[h]
@@ -161,7 +195,7 @@ Although the structure of OECTs are different from conventional metal-oxide-semi
   \label{fig:vsMOS}
 \end{figure}
 
-Bernards and Malliarias implemented a model based on a p-type depletion-mode OECT (based on PEDOT:PSS since it is widely fabricated and investigated, further discussion in the following section). The model divides the behavior of the OECT into an electronic (source-channel-gate structure) and an ionic circuit (gate-electrolyte-channel structure). The electronic circuit is treated as a \textit{variable} resistor therefore it is modeled using Ohm's law, its variability lies on the fact that upon the application of a positive gate voltage, de-doping of the semiconductor occurs, analogous to the compensation doping of Silicon, cations from the electrolyte penetrate the polymer, compensating one acceptor. Meanwhile, the ionic circuit consists of a resistor that represents the flow of ions in the electrolyte, in series with a capacitor, representing the storage of ions in the channel as shown in Figure \ref{fig:bernard}B) \cite{rivnayOrganicElectrochemicalTransistors2018a}\cite{bernardsSteadyStateTransientBehavior2007}. 
+Bernards and Malliaras implemented a model based on a p-type depletion-mode OECT (based on PEDOT:PSS since it is widely fabricated and investigated, further discussion in the following section). The model divides the behavior of the OECT into an electronic (source-channel-gate structure) and an ionic circuit (gate-electrolyte-channel structure). The electronic circuit is treated as a \textit{variable} resistor therefore it is modeled using Ohm's law, its variability lies on the fact that upon the application of a positive gate voltage, de-doping of the semiconductor occurs, analogous to the compensation doping of Silicon, cations from the electrolyte penetrate the polymer, compensating one acceptor. Meanwhile, the ionic circuit consists of a resistor that represents the flow of ions in the electrolyte, in series with a capacitor, representing the storage of ions in the channel as shown in Figure \ref{fig:bernard}B)  \cite{rivnayOrganicElectrochemicalTransistors2018}\cite{bernardsSteadyStateTransientBehavior2007}. 
 
 \begin{figure}[h]
 	\centering
@@ -171,7 +205,7 @@ Bernards and Malliarias implemented a model based on a p-type depletion-mode OEC
 	%\subfloat[]{{\includegraphics[height=4.5cm]{Images/circuit_model.png} }}
 	\hspace{2em}
 	\subfloat[Electronic and ionic circuits]{{\includegraphics[width=8cm]{Images/pdf/circuits.pdf} }}
-	\caption[Typical OECT structure and circuit model]{A) Typical structure of an organic electrochemical transistor (OECT). B) (Left) Electronic circuit modelled as a resistor with a varible resistance. (Right) Ionic circuit consisting of channel (C$_{CH}$) and gate (C$_{G}$) capacitors, coupled with a resistor corresponding to the electrolyte (R$_{E}$). Extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018a}.}
+	\caption[Typical OECT structure and circuit model]{A) Typical structure of an organic electrochemical transistor (OECT). B) (Left) Electronic circuit modelled as a resistor with a varible resistance. (Right) Ionic circuit consisting of channel (C$_{CH}$) and gate (C$_{G}$) capacitors, coupled with a resistor corresponding to the electrolyte (R$_{E}$). Extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
 	\label{fig:bernard}
 \end{figure}
 
@@ -186,7 +220,7 @@ Analogous to conventional MOSFETs, depending on whether the device needs a gate 
 	\subfloat[Depletion-mode OECT]{{\includegraphics[height=7cm]{Images/pdf/depletion.pdf} }}
 	\hspace{2em}
 	\subfloat[Accumulation-mode OECT]{{\includegraphics[height=7cm]{Images/pdf/accumulation.pdf} }}
-	\caption[Depletion- and accumulation-mode OECTs]{(A) Transfer curve showing depletion-mode operation of a p-type OECT with a conducting polymer channel. (B) Transfer curve showing accumulation-mode operation of a p-type OECT with a semiconducting polymer channel. Images extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018a}.}
+	\caption[Depletion- and accumulation-mode OECTs]{(A) Transfer curve showing depletion-mode operation of a p-type OECT with a conducting polymer channel. (B) Transfer curve showing accumulation-mode operation of a p-type OECT with a semiconducting polymer channel. Images extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
 	\label{fig:modes}
 \end{figure}
 
@@ -240,7 +274,7 @@ Under the classification shown in Figure \ref{fig:omiectypes}, p(g3T2-T) can be 
 \subsection{Important Figures of Merit}
 
 \subsubsection{Transconductance}
-Considered as the most important parameter to measure any transistor's amplification capability, calculated as the first-order derivative of the output current (drain-source current) with respect to the input voltage (gate-source voltage): $g_{m} = \sfrac{\partial I_{DS}}{\partial V_{GS}}$. Bernards and Mallards calculated this parameter from their implementation of a mathematical model for depletion-mode p-type OECTs \cite{bernardsSteadyStateTransientBehavior2007}, as previously seen in Section \ref{subsec:devphy}. Including also n-type, the following equation expresses the transconductance: %\ref{eq:gm}:
+Considered as the most important parameter to measure any transistor's amplification capability, calculated as the first-order derivative of the output current (drain-source current) with respect to the input voltage (gate-source voltage): $g_{m} = \sfrac{\partial I_{DS}}{\partial V_{GS}}$. Bernards and Malliaras calculated this parameter from their implementation of a mathematical model for depletion-mode p-type OECTs \cite{bernardsSteadyStateTransientBehavior2007}, as previously seen in Section \ref{subsec:devphy}. Including also n-type, the following equation expresses the transconductance: %\ref{eq:gm}:
 
 \begin{equation}\label{eq:gm}
 	g_{m} = \frac{Wd}{L} \mu C* |(V_{th} - V_{G})|,
@@ -248,7 +282,7 @@ Considered as the most important parameter to measure any transistor's amplifica
 
 where $W$, $L$ and $d$ are the channel width, length and thickness, respectively, $\mu C*$ product, the gate voltage ($V_{G}$) and threshold voltage ($V_{th}$), which will be discussed in the next subsections.
 
-Commonly, the maximum value of transconductance is reported ($g_{m,max}$), which falls into the saturation regime. Inal et al. reported the maximum transconductance of various channel materials at different device geometry parameters (Figure \ref{fig:gmuc}A) \cite{inalBenchmarkingOrganicMixed2017}, showing OECTs with polimerized-g2T-backbones, the best performances, as stated in the previous section.
+Commonly, the maximum value of transconductance is reported ($g_{m,max}$), which falls into the saturation regime. Inal et al. reported the maximum transconductance of various channel materials at different device geometry parameters using a Ag/AgCl pellet as reference/gate electrode and 0.1M NaCl as electrolyte, showing OECTs with polimerized-g2T-backbones, the best performances, within the range of 1 to 30 mS, depending on the geometry (Figure \ref{fig:gmuc}A) \cite{inalBenchmarkingOrganicMixed2017}.
 
 \subsubsection{$\mu$C* product}
 
@@ -256,7 +290,7 @@ The most important parameter for benchmarking OECT channel materials, that repre
 \cite{inalBenchmarkingOrganicMixed2017}. %\cite{inalHighTransconductanceAccumulation2014}. %% Other accumulation mode OECT with PTHS
 It is the product of two important parameters, $\mu$, the electronic mobility, and C*, the volumetric capacitance, the latter encloses the ion penetration, transport, and storage ability of the OMIEC film.
 
-Along with the transconductance, Inal et al. extracted the values of $\mu$C* from the calculating the linear slope of the maximum transconductance and channel geometry (Figure \ref{fig:gmuc}A), following Equation \ref{eq:gm}. And correlated with the independent calculation of both parameters, showing again polimerized-g2T-backbones with the highest values, and among the materials that have closest 1:1 relation for both methods of calculation $\mu$C* product (Figure \ref{fig:gmuc}B) \cite{inalBenchmarkingOrganicMixed2017}.
+Along with the transconductance, Inal et al. extracted the values of $\mu$C* from the calculating the linear slope of the maximum transconductance and channel geometry (Figure \ref{fig:gmuc}A), following Equation \ref{eq:gm}. And correlated with the independent calculation of both parameters, showing again polimerized-g2T-backbones with the highest value of 261 $\pm$ 29 $Fcm^{-1}V^{-1}s^{-1}$,   and among the materials that have closest 1:1 relation for both methods of calculation $\mu$C* product (Figure \ref{fig:gmuc}B) \cite{inalBenchmarkingOrganicMixed2017}.
  
  \begin{figure}[h]
  	\centering
@@ -294,10 +328,10 @@ In MOSFETs, it represents the voltage that fills trap states in the semiconducto
 	\subfloat[]{{\includegraphics[width=5cm]{Images/pdf/vth_shift.pdf} }}
 	\caption[Tuning of threshold voltage with different levels of doping p(g3T2-T)]{Controlling OECT threshold voltage by chemical doping of p(g3T2-T) gate electrode with F$_{4}$TCNQ. A) Plot of threshold voltage and gate work function for doped gates of different dopant concentrations. B) Transfer curves of p(g3T2-T) channel OECT %(L = 10 µm; W = 2000 µm; VD = −0.1 V, VG scan rate of 20 mV s−1) 
 		with p(g3T2) gates of various F$_{4}$TCNQ dopant concentrations. . Extracted from reference \cite{tanTuningOrganicElectrochemical2022}.}
-	\label{fig:gmuc}
+	\label{fig:tune}
 \end{figure}
 
-The chemically de-doping of PEDOT:PSS by Keene et al. described in previous sections, is also an approach to shift the threshold voltage, until reaching negative values, characteristic for accumulation-mode OECTs \cite{keeneEnhancementModePEDOTPSS2020}. Tan et al., on the other hand, explored a different approach, rather than modifying the doping level of the channel, they tuned the doping level of the gate to shift the threshold voltage. They used p(g3T2-T) and obtained a 400mV change with 60\% mol ratio of 2,3,5,6-Tetrafluoro-7,7,8,8-tetracyanoquinodimethane (F4TCNQ) dopant. The advantage over this approach is i) protecting the material from oxidation with air, since the Fermi level in brought towards the highest occupied molecular orbital (HOMO), and ii) no interference with the channel which helps to leave the transconductance unaffected \cite{tanTuningOrganicElectrochemical2022}.
+The chemically de-doping of PEDOT:PSS by Keene et al. described in previous sections, is also an approach to shift the threshold voltage, until reaching negative values, characteristic for accumulation-mode OECTs \cite{keeneEnhancementModePEDOTPSS2020}. Tan et al., on the other hand, explored a different approach, rather than modifying the doping level of the channel, they tuned the doping level of the gate to shift the threshold voltage. They used p(g3T2-T) and obtained a 400mV change with 60\% mol ratio of 2,3,5,6-Tetrafluoro-7,7,8,8-tetracyanoquinodimethane (F4TCNQ) dopant, as seen in Figure \ref{fig:tune}. The advantage over this approach is i) protecting the material from oxidation with air, since the Fermi level in brought towards the highest occupied molecular orbital (HOMO), and ii) no interference with the channel which helps to leave the transconductance unaffected \cite{tanTuningOrganicElectrochemical2022}.
 
 
 \subsection{Side Reactions} \label{subsec:sidereac}
@@ -337,8 +371,6 @@ Oxygen Reduction Reaction is a common undesirable side reaction at environmental
 % Catalyst help to reduce the activation energy required for a reaction
 The ORR is a non-capacitive faradaic reaction between the OMIEC and molecular oxygen, where electron-transfer occur. The reaction yields either hydrogen peroxide (H$_{2}$O$_{2}$) or water (H$_{2}$O), as described in \ref{eq:h2o2} and \ref{eq:h2o}, or oxidation (p-doping) of the OMIEC that acts as the catalyst \cite{giovannittiEnergeticControlRedoxActive2020}. 
 
-As seen in Figure \ref{fig:orr}, $\eta_{1}$ and $\eta_{2}$ represent free energy difference between reactants and the reaction products H$_{2}$O$_{2}$ and H$_{2}$O, respectively. If this free energy is negative, the reaction is endergonic (the opposite is exergonic), and needs energy to be driven. PEDOT:PSS and p(g3T2-T) exhibit exergonic reactions. For instance, a polymer with higher IP (> 4.9eV) would be needed to prevent oxygen peroxide to form.
-
 %The first shows a free energy difference that is endergonic for OMIECs with IPs > 4.9eV and hence prevent the OMIEC from undergoing ORR that form H$_{2}$O$_{2}$. To prevent the ORR in ambient conditions, OMIECs based on donor-acceptor copolymer (Type III or IV) that have large IPs to shift
 
 % Actually this material does not avoid this, we need to take into account this interaction.
@@ -352,6 +384,7 @@ As seen in Figure \ref{fig:orr}, $\eta_{1}$ and $\eta_{2}$ represent free energy
 	{E^{0}}_{O_{2}/H_{2}O} : O_{2} + 4H^{+} + 4e^{-} \rightarrow 2H_{2}O
 \end{equation}
 
+As seen in Figure \ref{fig:orr}, $\eta_{1}$ and $\eta_{2}$ represent free energy difference between reactants and the reaction products H$_{2}$O$_{2}$ and H$_{2}$O, respectively. If this free energy is negative, the reaction is endergonic (the opposite is exergonic), and needs energy to be driven. PEDOT:PSS and p(g3T2-T) exhibit exergonic reactions. For instance, a polymer with higher IP (> 4.9eV) would be needed to prevent oxygen peroxide to form.
 
 \begin{figure}[h]
 	\centering
@@ -362,7 +395,7 @@ As seen in Figure \ref{fig:orr}, $\eta_{1}$ and $\eta_{2}$ represent free energy
 
 %\subsection{Photo-patternable Solid-State OECTs}
 
-\subsection{Building Block for neuromorphic and bioelectronic applications}
+%\subsection{Building Block for neuromorphic and bioelectronic applications}
 
 
 
