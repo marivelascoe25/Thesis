@@ -11,11 +11,11 @@ Unlike inorganic semiconductors, organic semiconductors are lightweight, easy to
 \begin{figure}[h]
   \centering
   \includegraphics[width=6cm]{Images/pdf/ediagram.pdf}
-  \caption[Energy level diagram of organic semiconductors]{Energy level diagram of organic semiconductors.}
+  \caption[Energy level diagram of organic semiconductors]{Energy level diagram of an n-type organic semiconductor.}
   \label{fig:ediag}
 \end{figure}
 
-\subsection{Electronic Structure and transport} 
+\subsection{Electronic Structure and Transport} 
 
 Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating multiple (sp$^{3}$, sp$^{2}$ hybridization) and single (sp hybrization) bonds. This configuration exhibit $p$-orbitals with delocalized electrons. %, charge transport among the length of these polymers is caused by the alternation of these bonds, describing a resonance structure. 
 Based on the size of the conjugated system, organic semiconductors can be divided into conjugated polymers and small molecules, the lattest has the advantage of being ordered and its synthesis allow to obtain high purity material \cite{alcacerElectronicStructureOrganic2018}.
@@ -42,7 +42,7 @@ An organic semiconductor material could also be classified depending on whether 
   \label{fig:energy}
 \end{figure}
 
-Transport in a organic semiconductor creates changes in the bond-length alternation pattern, since charge transport come together with a chain distortion, in transport theory, new quasiparticles are defined: in a degenerated molecule, the quasiparticles are named solitons, and in a non-degenerated molecule, receive the name of polarons, which are a bound soliton-antisoliton (both formed in the benzoid structures) which annihilate since neutral polarons are not stable.
+Transport in a organic semiconductor creates changes in the bond-length alternation pattern. Since charge transport come together with a chain distortion, new quasiparticles are defined in transport theory, in a degenerated molecule, the quasiparticles are named solitons, and in a non-degenerated molecule, a bound soliton-antisoliton is formed in the benzoid structures, the pair receive the name of polaron. This pair annihilate in the quinoid structure in between forming a double bond so neutral polarons are not stable \cite{bredasRoleMobileOrganic1984}.
 
 \begin{figure}[h]
   \centering
@@ -55,16 +55,18 @@ Transport in a organic semiconductor creates changes in the bond-length alternat
 The basic principles are similar than in inorganic materials. A donnor or acceptor entity is added to generate electrons or holes, as shown in Figure \ref{fig:dopscheme}. While n-type dopants donate electrons to the lowest unoccupied molecular orbital (LUMO) states, the p-type dopants extract electrons from the highest occupied molecular orbital (HOMO) states, hence creates holes \cite{lussemDopingOrganicSemiconductors2013}. In other words, the Fermi level E$_{F}$ of the polymer will shift towards the LUMO (or HOMO) level when there is n-type (or p-type) doping. This shift can be measured by spectroscopy techniques such as Ultraviolet Photoelectron Spectroscopy (UPS) at room temperature (RT) \cite{tietzeFermiLevelShift2012}, although a bit limited by the penetration depth of the incoming electrons.
 
 When doping occurs, %charged solitons come as outcome in a degenerated molecules. In a non-degenerated, our main focus in this work, 
-the formation of a new quasiparticle named bipolaron occurs. For instance, in a p-type doping on a degenerated molecule (Figure \ref{fig:bipol}), when an electron is removed from a double bond, one carbon is left as positively charged and the adjacent has an unpaired electron. This unpaired electron shifts down the polymer chain until reaching another unpaired electron from a separated doping event, together they form a double bond, leaving aside two polarons: a bipolaron, which unlike a single polaron, it is stable. Although, a nice simplification, in a degenerated molecule is not realistic, but usually
+the formation of a new quasiparticle named bipolaron occurs. For instance, if p-type dopant is introduced to a degenerated molecule (Figure \ref{fig:bipol}), electrons are removed from double bonds, if we focus on just one event, while one carbon is left positively charged, the adjacent has an unpaired electron. This unpaired electron shifts down the polymer chain until reaching another unpaired electron from a separated doping event, together they form a double bond, leaving aside two charged polarons: a bipolaron, which unlike a single polaron, it is stable \cite{bredasPolaronsBipolaronsSolitons1985}. %Although, a nice simplification, in a degenerated molecule is not realistic, but usually
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=10cm]{Images/pdf/bipolaron.pdf}
-  \caption[Representation of bipolaron formation introduced via doping]{a) Structure of degenerated molecule. b) Electron extraction via doping. c) Unpaired electron shifting down. d) Unpaired electrons meet. e) Formation of double bond and two charge polarons: bipolaron.}
+  \caption[Representation of bipolaron formation introduced via doping]{a) Structure of degenerated molecule. b) Electron extraction via doping. c) Unpaired electron shifting down. d) Unpaired electrons meet. e) Formation of double bond and two charged polarons: bipolaron.}
   \label{fig:bipol}
 \end{figure}
 
-The energy levels generated upon the formation of polaron and bipolaron are represented in Figure \ref{fig:ebipol}. As the doping increases, the amount of bipolaron states increases as well, the overlapping of them led to the formation of bipolaron bands, and the energy difference between the two in-gap states i and i* decreases. Along with the addition of electronic states, the doped polymer will also exhibit distinct optical transitions that could be corroborated with UV-Vis-NIR spectroscopy, although not clearly defined \cite{heydarigharahcheshmehTextureNanostructuralEngineering2020}.
+The energy levels generated upon the formation of polarons and bipolarons are represented in Figure \ref{fig:ebipol}. As the doping increases, the amount of bipolaron states increases as well, the overlapping of them led to the formation of bipolaron bands, and the energy difference between the two in-gap states i and i* decreases. % \cite{bredasRoleMobileOrganic1984}
+In addition to the new electronic states, the doped polymer will also exhibit distinct optical transitions that could be disclosed by UV-Vis-NIR spectroscopy, although not clearly defined quantitatively \cite{heydarigharahcheshmehTextureNanostructuralEngineering2020}.
+%Zozoulenko et al. proposed a new DFT-based description of the polaronic and bipolaronic states 
 
 \begin{figure}[h]
   \centering
@@ -120,14 +122,14 @@ The presence of electronic charge in OMIECs requires also the presence of excess
 The amount of coupling between electronic charge and excess ionic charge in OMIECs can be modulated with an applied bias when coupled through an electrolyte \cite{paulsenOrganicMixedIonic2020}. This is the basic principle of OECTs, and we will be further discuss in section \ref{sec:OECTs}.
 
 \subsubsection{Electronic transport}
-Electronic charge carrier density in undoped semiconductor organic species is logically low (no accessible hopping states), but in contact with an electrolyte, due to the ionic-electronic coupling as described in previous subsection, dopant ions would lower the activation energy of charge hopping and increase carrier mobility \cite{paulsenOrganicMixedIonic2020}. 
+%Electronic charge carrier density in undoped semiconductor organic species is logically low (no accessible hopping states), but in contact with an electrolyte, due to the ionic-electronic coupling as described in previous subsection, dopant ions would ... \cite{paulsenOrganicMixedIonic2020}. 
 
-Electronic charge transport mechanisms present in OMIECs are thermally-activated hopping and band-like transport, both are represented in Figure \ref{fig:etrans}. The former as its name suggest, it is driven by thermal energy, where the weakly-bond electrons in delocalized $\pi$-orbital move along other $\pi$-orbital, or between molecules where there is sufficient $\pi$-$\pi$ overlap, so this mechanism can be within the length of the conjugated polymer. The band-like transport is shown within the polymer-stacking
+Electronic charge transport mechanisms present in OMIECs are thermally-activated hopping and band-like transport, as represented in Figure \ref{fig:etrans}, which are not different from other conjugated polymers. The former as its name suggests, it is driven by thermal energy and it is limited by the degree of structural disorder, where the weakly-bond electrons in delocalized $\pi$-orbital move along an adjacent $\pi$-orbital within the length of the conjugated polymer, or even between molecules where there is sufficient $\pi$-$\pi$ overlapping, if this mechanism is predominant is due to a low electronic charge carrier density and the density of accessible hopping states is low, hence, low mobility and electrical conductivity \cite{paulsenOrganicMixedIonic2020}. 
+
+The band-like transport, on the other hand, occurs normally in OMIECs with increasing doping levels, where the activation energy of charge hopping decreases and carrier mobility increases, leading to diffuse band-like charge transport and it is shown within the polymer-stacking \cite{wangHoppingTransportHall2012}.
 %"at extreme doping levels, increased disorder drives carrier localization, which results in a plateau or even decrease in electronic charge carrier mobility"
 
-
 %"Non-conjugated radical polymers also present a thermally activated mechanism of charge transfer between pendant radical sites, though with a significant dependence on the local self-diffusion of polymer chain to bring radical sites close enough for efficient charge transfer51. This manifests as a hopping transport of electronic carriers (Fig. 2a) that is assisted via segmental motion (described below; Fig. 2g). Also in this case disorder plays a role, producing local variations in the molecular orbital energy levels and spreading orbitals in a density of radical states52."
-
 
 \begin{figure}[h]
 	\centering
@@ -145,9 +147,11 @@ Electronic charge transport mechanisms present in OMIECs are thermally-activated
 \subsubsection{Ionic transport}
 Although transport of charged anions and cations can be seen analogous to electrons and holes, they remain more complex, since they can be \textit{``multi-valent, and form pairs and larger clusters; morever, they are sensitive to solvent and solvation''} \cite{paulsenOrganicMixedIonic2020}.
 
-Ion transport for dry OMIECs of type I, III and V are unipolar since they are fixed on a polyelectrolyte.  However, when they are in contact with an electrolyte, swelling occurs, which allows the penetration of excess ions from the electrolyte, therefore both mobile anions and cations would contribute to ion transport. 
+Ion transport is unipolar for dry OMIECs of type I, III and V, since they are fixed on a polyelectrolyte, which is not the case for type II, IV and VI, both anions and cations are mobile. OMIECs in contact with an electrolyte swells, which allows the penetration of excess ions from the electrolyte, therefore both mobile anions and cations would contribute to ion transport to ensure electroneutrality. 
 
-Then two types of ionic charge transport can be differentiated: ion hopping and vehicular solvated-ion transport, as described in Figure \ref{fig:itrans}A and B, respectively. In dry or minimally hydrated OMIECs only ion hopping occurs, whereas when OMIEC is in contact with solvent or liquid electrolyte, both mechanisms occur. The latter basically explains how ionic transport in OECTs (and other OMIEC-electrolyte based applications) is rather complex and needs to consider all ionic-electronic coupling, hydration and electrolyte swelling \cite{paulsenOrganicMixedIonic2020}, which will be further discuss in section \ref{sec:OECTs}.
+Then two types of ionic charge transport can be differentiated: ion hopping and vehicular solvated-ion transport. In dry or minimally hydrated OMIECs only ion hopping assisted by segmental motion of the OMIEC side chains or backbone, occurs, as shown in Figure \ref{fig:itrans}A; whereas, when OMIEC is in contact with solvent or liquid electrolyte, both mechanisms are present but predominantly solvated ion vehicle transport. For instance, in water-based electrolytes, proton diffusion occurs via the Grotthuss mechanism, where protons in the water molecules diffuses within the neighboring molecules, this implies a transfer of an ionic effect through the hydrogen-bonded network, as shown in Figure \ref{fig:itrans}B.
+
+Finally, due to the existing ionic-electronic coupling, both ionic and electronic transport in OECTs and other OMIEC-electrolyte based applications, are not independent but are rather complex and needs to consider side effects, such as hydration and electrolyte swelling \cite{paulsenOrganicMixedIonic2020}, which will be further discuss in section \ref{sec:OECTs}.
 
 \begin{figure}[h]
 	\centering
@@ -396,7 +400,6 @@ As seen in Figure \ref{fig:orr}, $\eta_{1}$ and $\eta_{2}$ represent free energy
 %\subsection{Photo-patternable Solid-State OECTs}
 
 %\subsection{Building Block for neuromorphic and bioelectronic applications}
-
 
 
 %%% Local Variables: 

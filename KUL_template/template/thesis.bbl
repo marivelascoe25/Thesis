@@ -56,6 +56,12 @@ M.~Heydari~Gharahcheshmeh and K.~K. Gleason, ``Texture and nanostructural
   engineering of conjugated conducting and semiconducting polymers,''
   \emph{Materials Today Advances}, vol.~8, p. 100086, Dec. 2020.
 
+\bibitem{bredasRoleMobileOrganic1984}
+J.~L. Bredas, B.~Themans, J.~M. Andre, R.~R. Chance, and R.~Silbey, ``The role
+  of mobile organic radicals and ions (solitons, polarons and bipolarons) in
+  the transport properties of doped conjugated polymers,'' \emph{Synthetic
+  Metals}, vol.~9, no.~2, pp. 265--274, Apr. 1984.
+
 \bibitem{lussemDopingOrganicSemiconductors2013}
 B.~L{\"u}ssem, M.~Riede, and K.~Leo, ``Doping of organic semiconductors,''
   \emph{physica status solidi (a)}, vol. 210, no.~1, pp. 9--43, 2013.
@@ -65,6 +71,11 @@ M.~L. Tietze, L.~Burtone, M.~Riede, B.~L{\"u}ssem, and K.~Leo, ``Fermi level
   shift and doping efficiency in \$p\$-doped small molecule organic
   semiconductors: {{A}} photoelectron spectroscopy and theoretical study,''
   \emph{Physical Review B}, vol.~86, no.~3, p. 035320, Jul. 2012.
+
+\bibitem{bredasPolaronsBipolaronsSolitons1985}
+J.~L. Bredas and G.~B. Street, ``Polarons, bipolarons, and solitons in
+  conducting polymers,'' \emph{Accounts of Chemical Research}, vol.~18, no.~10,
+  pp. 309--315, Oct. 1985.
 
 \bibitem{kieferDoubleDopingConjugated2019}
 D.~Kiefer, R.~Kroon, A.~I. Hofmann, H.~Sun, X.~Liu, A.~Giovannitti,
@@ -109,6 +120,12 @@ B.~D. Paulsen, K.~Tybrandt, E.~Stavrinidou, and J.~Rivnay, ``Organic mixed
   ionic\textendash electronic conductors,'' \emph{Nature Materials}, vol.~19,
   no.~1, pp. 13--26, Jan. 2020.
 
+\bibitem{wangHoppingTransportHall2012}
+S.~Wang, M.~Ha, M.~Manno, C.~Daniel~Frisbie, and C.~Leighton, ``Hopping
+  transport and the {{Hall}} effect near the insulator\textendash metal
+  transition in electrochemically gated poly(3-hexylthiophene) transistors,''
+  \emph{Nature Communications}, vol.~3, no.~1, p. 1210, Nov. 2012.
+
 \bibitem{tanMixedIonicElectronic2022}
 S.~T.~M. Tan, A.~Gumyusenge, T.~J. Quill, G.~S. LeCroy, G.~E. Bonacchini,
   I.~Denti, and A.~Salleo, ``Mixed {{Ionic}}\textendash{{Electronic
@@ -119,6 +136,11 @@ S.~T.~M. Tan, A.~Gumyusenge, T.~J. Quill, G.~S. LeCroy, G.~E. Bonacchini,
 J.~T. Friedlein, R.~R. McLeod, and J.~Rivnay, ``Device physics of organic
   electrochemical transistors,'' \emph{Organic Electronics}, vol.~63, pp.
   398--414, Dec. 2018.
+
+\bibitem{rivnayOrganicElectrochemicalTransistors2018}
+J.~Rivnay, S.~Inal, A.~Salleo, R.~M. Owens, M.~Berggren, and G.~G. Malliaras,
+  ``Organic electrochemical transistors,'' \emph{Nature Reviews Materials},
+  vol.~3, no.~2, pp. 1--14, 2018.
 
 \bibitem{bernardsSteadyStateTransientBehavior2007}
 D.~A. Bernards and G.~G. Malliaras, ``Steady-{{State}} and {{Transient
