@@ -4,7 +4,7 @@ The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: chap-1.aux
 A level-1 auxiliary file: chap-2.aux
-A level-1 auxiliary file: chap-n.aux
+A level-1 auxiliary file: chap-3.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -19,45 +19,45 @@ Warning--I didn't find a database entry for "rivnayOrganicElectrochemicalTransis
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 26 entries,
+You've used 30 entries,
             4087 wiz_defined-function locations,
-            1013 strings with 16287 characters,
-and the built_in function-call counts, 25278 in all, are:
-= -- 2051
-> -- 884
-< -- 198
-+ -- 468
-- -- 189
-* -- 1271
-:= -- 3583
-add.period$ -- 52
-call.type$ -- 26
-change.case$ -- 25
-chr.to.int$ -- 384
-cite$ -- 26
-duplicate$ -- 1803
-empty$ -- 1731
-format.name$ -- 207
-if$ -- 5913
+            1039 strings with 17423 characters,
+and the built_in function-call counts, 28822 in all, are:
+= -- 2354
+> -- 981
+< -- 231
++ -- 519
+- -- 207
+* -- 1451
+:= -- 4112
+add.period$ -- 60
+call.type$ -- 30
+change.case$ -- 29
+chr.to.int$ -- 447
+cite$ -- 30
+duplicate$ -- 2059
+empty$ -- 1977
+format.name$ -- 229
+if$ -- 6738
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 359
-newline$ -- 101
-num.names$ -- 26
-pop$ -- 787
+int.to.str$ -- 30
+missing$ -- 405
+newline$ -- 113
+num.names$ -- 30
+pop$ -- 875
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1948
+skip$ -- 2221
 stack$ -- 0
-substring$ -- 1051
-swap$ -- 1641
-text.length$ -- 70
+substring$ -- 1209
+swap$ -- 1876
+text.length$ -- 82
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 26
+type$ -- 30
 warning$ -- 0
-while$ -- 95
-width$ -- 28
-write$ -- 301
+while$ -- 112
+width$ -- 32
+write$ -- 345
 (There was 1 warning)

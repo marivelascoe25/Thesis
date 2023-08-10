@@ -3,7 +3,7 @@
 \usepackage{xfrac}
 \setup{% Remove the "%" on the next line when using UTF-8 character encoding
   inputenc=utf8,
-  title={Tuning Threshold Voltage in Organic Electrochemical Transistors by Varying Doping of the conjugated polymer p(g3T2-T)},
+  title={Tuning Threshold Voltage in Organic Electrochemical Transistors by Varying Doping of the Conjugated Polymer p(g3T2-T)},
   author={Marielena Velasco Enriquez},
   promotor={Prof.\,Dr.\,Karl Leo\and Prof. Dr. Steven De Feyter},
   assessor={PD Dr.rer.nat.habil. Hans Kleemann},
@@ -84,8 +84,7 @@ Organic Electrochemical transistors (OECTs) exhibit advantageous properties, suc
 \include{intro}
 \include{chap-1}
 \include{chap-2}
-% ... and so on until
-\include{chap-n}
+\include{chap-3}
 \include{conclusion}
 
 % If you have appendices:
