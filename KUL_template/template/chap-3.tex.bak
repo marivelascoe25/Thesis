@@ -1,38 +1,29 @@
 \chapter{Results and Discussion}
 \label{cha:3}
 
-\section{Doped Conjugated Polymer films}
+\section{Undoped and doped films}
 
-As followed in the procedure part...
-
-
-\begin{figure}
-  \centering
-  \includegraphics[width=10cm]{Images/dopingprocess.png}
-  \caption[Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ]{Energy diagram of p(g3T2-T) with a) F$_{6}$TCNNQ and b) F$_{4}$TCNNQ. Ionization potential of p(g3T2-T) extracted from reference \cite{tanTuningOrganicElectrochemical2022} and electron affinities of the neutral species (EA$^{0}$) and of the anion (EA$^{-}$) of the dopants are extracted from cyclic voltammetry measurements in reference \cite{kieferDoubleDopingConjugated2019}.}
-  \label{fig:doping}
-\end{figure}
+%As followed in the procedure part...
 
 
-\subsection{Polaron and Bipolar formation}
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=10cm]{Images/dopingprocess.png}
+%  \caption[Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ]{Energy diagram of p(g3T2-T) with a) F$_{6}$TCNNQ and b) F$_{4}$TCNNQ. Ionization potential of p(g3T2-T) extracted from reference \cite{tanTuningOrganicElectrochemical2022} and electron affinities of the neutral species (EA$^{0}$) and of the anion (EA$^{-}$) of the dopants are extracted from cyclic voltammetry measurements in reference \cite{kieferDoubleDopingConjugated2019}.}
+%  \label{fig:doping}
+%\end{figure}
+
+
+\subsection{Absorbance and air stability}
 
 \subsection{Workfunction increase}
 
-\subsection{Redox properties with Solid State Electrolyte Precursor}
+\subsection{Thickness, sheet resistance and resistivity}
 
+%\subsection{Roughness}
 
 \section{Organic Electrochemical Transistors}
-\subsection{OMIEC morphology}
-
-\subsection{Channel conductivity}
-
 %Prior biasing gate, which is due to passive (ion) diffusion?
-
-\subsubsection{Under inert conditions}
-
-\subsubsection{Under ambient conditions}
-
-\subsection{Threshold voltage shift}
 
 %The fact that solution-sequential doped films allows better homogeneity \cite{jacobsComparisonSolutionmixedSequentially2016}, make it also more compatible with microstructuring processes such as photolithography. At the expense of enabling easier and more precise control of doping levels \cite{tanOrganicMixedIonic2022}.
 
@@ -41,8 +32,27 @@ As followed in the procedure part...
 
 %Achieving effective charge transfer between the analyte and OMIEC requires appropriate alignment of the electrochemical potential of electrons on the OMIEC electrode and the redox specie. Failure to do so may result in the subsequent transfer of charges to other redox-active sinks in the environment, leading to undesirable side reactions and products that may interfere with the OMIEC’s operation. Electrons flow from a region of higher to lower electrochemical potential. Hence, achieving electron transfer from redox-active species to the OMIEC requires the latter to have a deep LUMO (high electron affinity) \cite{tanMixedIonicElectronic2022} %paper
 
-\subsection{Important figures of merit}
+\subsection{Influence of doping in OECT channel}
 
+\subsection{Stability in air of p(g3T2-T)}
+
+\subsubsection{Reverse oxidation of p(g3T2-T) with electrochemical dedoping}
+
+\subsubsection{Reverse oxidation of p(g3T2-T) with temperature}
+
+
+\subsection{Stability of Solid-state OECTs with undoped p(g3T2-T)}
+
+
+\subsubsection{Dropcast Solid-State Electrolyte}
+
+\subsubsection{Photopatternable Solid-State Electrolyte}
+
+\subsubsection{Inkjet-Printed Solid-State Electrolyte}
+
+
+
+\subsection{Solid-state OECTs with doped p(g3T2-T)}
 
 
 
