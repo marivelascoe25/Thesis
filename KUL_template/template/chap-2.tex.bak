@@ -32,14 +32,14 @@ All reactives were purchased from commercial suppliers and non further chemical 
 \item Baking: All baking steps were carried out on a Stuart SD160 digital hotplate (Stuart Equipment, UK). 
 \item Electrical characterisation (ambient): Device characterisation under ambient conditions was performed on a Everbeing C-6 Probe Station (Everbeing Int’l Corp., Taiwan), connected to a Keithley 4200-SCS Semiconductor Characterisation System (Keithley Instruments, USA). 
 \item Electrical characterisation (glovebox): Device characterisation was performed in a nitrogen-filled glovebox. Probing needles were connected to two Keithley 236 Source Measure Units (Keithley Instruments, USA). 
-\item Impedance measurements: Impedance measurements were carried out by using a Metrohm Autolab PGSTAT302N potentiostat/galvanostat (Metrohm AG, Switzerland) in the range of 10$^{-1}$ to 10$^{5}$ Hz. 
+\item Cyclic voltammetry and Impedance measurements: Cyclic voltammetry and Impedance measurements were carried out by using a Metrohm Autolab PGSTAT302N potentiostat/galvanostat (Metrohm AG, Switzerland) in the range of 10$^{-1}$ to 10$^{5}$ Hz. 
 \item Micrographs: Micrographs were taken on a Nikon Eclipse LV100ND microscope, equipped with a DS-Fi2 camera (Nikon, Japan). 
 \item Photolithography: Photolithography was carried out on a SÜSS Microtec MJB4 maskaligner system (SÜSS Microtec AG, Germany). 
 \item Photomasks: Photomasks were custom made by Compugraphics Jena in a 4-inch format (soda-lime glass covered with chromium) and held several mask designs (Compugraphics Jena GmbH, Germany). 
 \item Plasma cleaning: O2-plasma cleaning was performed by using a Harrick PDC-002 plasma cleaner (Harrick Plasma, USA), connected to a Leybold Heraeus Combitron CM 330 Vacuum Gauge Controller (Leybold GmbH, Germany). 
 \item Plasma etching: O2-plasma etching was performed by using a Diener electronic ATTO plasma cleaner (Diener electronic GmbH \& Co. KG, Germany). 
 \item Profilometry: Profilometry was performed on a Veeco Dektak 150 surface profiler (Veeco Instruments Inc., USA).
-\item Absorption measurements: Absorption measurements were performed with UV-Visible-NearInfraRed Spectroscopy on a SolidSpec-3700 UV-Vis-NIR spectrometer from Shimadzu in the range of 285 to 1600 nm, using a slit width of 5,0 nm.
+\item Absorption measurements: Absorption measurements were performed with UV-Visible-NearInfraRed Spectroscopy on a SolidSpec-3700 UV-Vis-NIR spectrometer from Shimadzu.
 \item Workfunction measurements: Worfunction was measured using Ultraviolet Photoelectron Spectroscopy (UPS) by using a PHOIBOS 100 from Specs, a Helium plasma discharge lamp (UVS10/35, Specs) for UV excitation line of 21.22 eV.
 \item Spincoating: Samples were coated with a SAWATEC SM-180-BT spincoater (SAWATEC AG, Switzerland).
 \end{itemize}
@@ -50,7 +50,7 @@ All reactives were purchased from commercial suppliers and non further chemical 
 \item Data processing: All data was processed by customised scripts written in the Python programming language. Mathematical computations (e.g. fits, integration) were carried out by employing the Pandas, NumPy, and SciPy libraries. Visualisations were performed using the Matplotlib library. All is seen in \href{https://github.com/marivelascoe25/Thesis.git}{GitHub Repository}.
 \item Electrical characterisation: Electrical characterisations were performed by controlling SMUs through the in-house developed \href{https://sweep-me.net/}{SweepMe! software}. 
 \item Profilometry: Profilometry was performed by using the Dektak software (Veeco Instruments Inc., USA).
-\item Impedance measurements: Impedance measurements were performed by using the NOVA software (Metrohm AG, Switzerland).
+\item Cyclic voltammetry and Impedance measurements: Impedance measurements were performed by using the NOVA software (Metrohm AG, Switzerland).
 \end{itemize}
 
 %\section{Photomasks}
@@ -60,47 +60,104 @@ All reactives were purchased from commercial suppliers and non further chemical 
 
 All fabrication steps were performed under standard cleanroom conditions.
 
-\subsection{Undoped and doped Conjugated polymer films}
-Unlike in reference \cite{tanTuningOrganicElectrochemical2022}, where drop cast is used to deposit undoped and doped side-gate of p(g3T2-T), in order to perform lithography and being able to do a miniaturization process, homogeneous films are needed. The following procedure
-has been stablished:
+\subsection{Preparation of films}
 
-\begin{enumerate}
-\item prepare 10mg/mL solution of p(g3T2-T) in chloroform at $60^{\circ}$C,
-\item prepare 5, 10 and 20 mg/mL solution of F$_{4}$TCNQ in acetonitrile at $60^{\circ}$C,
-\item clean substrates with subsequent steps of ultrasonic bath with acetone for 15 minutes, rinse cith IPA, drying with N$_{2}$ and O$_{2}$-plasma,
-\item dynamic spin coat 70$\mu$L of p(g3T2-T) at 3000RPM for 60s,
-\item if preparing a doped sample, dynamic spin coat 140$\mu$L of each dopant solvent at different concentrations on top, to yield approximately 70 nm thick layer, and
-\item postbake at $80^{\circ}$C.
-\end{enumerate}
+\paragraph{Dynamic spin-coating of p(g3T2-T).} Unlike reference \cite{tanTuningOrganicElectrochemical2022}, in which drop cast is used to deposit undoped and doped p(g3T2-T), in order to perform photolithography and being able to do a miniaturization process, homogeneous films are needed. Dynamic spin-coating was previously stablished by BioSens group members at IAPP, due to the high volatility of p(g3T2-T) solvant: chloroform. Substrates were cleaned using subsequent steps of ultrasonic bath with acetone for 15 minutes, IPA rinsing, N$_{2}$ drying and O$_{2}$-plasma cleaning. Then 70$\mu$L of 10 mg/mL of p(g3T2-T) mixed at 60$^{\circ}$C for 20 minutes, was dynamic-spin-coated at 3000 RPM for 60s, to yield approximately 70nm-thick films.
 
+\paragraph{Dynamic spin-coating of F$_{4}$TCNQ dopant.} Different doping levels of p(g3T2-T) was achieved by dynamic spin-coating dopants at different concentrations 5, 10 and 20 mg/mL, previously mixed in acetronitrile at $60^{\circ}$C for 20 minutes.
+
+%\begin{enumerate}
+%\item prepare 10mg/mL solution of p(g3T2-T) in chloroform at $60^{\circ}$C,
+%\item prepare 5, 10 and 20 mg/mL solution of F$_{4}$TCNQ in acetonitrile at $60^{\circ}$C,
+%\item clean substrates with subsequent steps of ultrasonic bath with acetone for 15 minutes, rinse cith IPA, drying with N$_{2}$ and O$_{2}$-plasma,
+%\item dynamic spin coat 70$\mu$L of p(g3T2-T) at 3000RPM for 60s,
+%\item if preparing a doped sample, dynamic spin coat 140$\mu$L of each dopant solvent at different concentrations on top, to yield approximately 70 nm thick layer, and
+%\item postbake at $80^{\circ}$C.
+%\end{enumerate}
+
+\subsection{Doping characterization of films}
+
+\subsubsection{UV-Vis-NIR Spectroscopy}
+
+After the preparation of the films, Transmittance (T) and reflectance (R) was measured using the UV-Vis-NIR Spectrometer in the range of 285 to 1600 nm, using a slit width of 5,0 nm. Then absorption (A) was calculated via
+
+
+\begin{equation}\label{eq:abs}
+	A = 1 - T - R,
+\end{equation}
+
+normalized with respect to the incoming light. 
+
+Additional measurements were taken, after a couple of days of storage under ambient conditions.
+
+\subsubsection{Ultraviolet Photoelectron Spectroscopy}
+
+After the preparation of the films, with some exposure to air, the energy of the highest occupied molecular orbital cutoff (E$_{HOMO}$) and the high binding energy cutoff E$_{HBEC}$ was measuring using UPS. The pressure in the chamber during measurements was about 5$\cdot$10$^{-9}$ mbar, while the base pressure is in the range of 10$\cdot$10$^{-10}$ mbar. The workfunction (WF) and ionization energy (IE) are given by the following equations:
+
+\begin{equation}\label{eq:wf}
+	WF = h\nu - E_{HBEC},
+\end{equation}
+
+\begin{equation}\label{eq:ie}
+	IE = h\nu - (E_{HBEC}-E_{HOMO}),
+\end{equation}
+
+where $h\nu = 21.22 eV$, the main He I excitation line. 
+
+\subsubsection{Profilometer}
+The films were scratched 4 times to remove part of material, and measure the cavity deep to obtain the film thickness.
+
+\subsubsection{Van Der Paw}
+
+%\subsection{Roughness characterization of films} 
 
 \subsection{Fabrication of Organic Electrochemical Transistors}
-After following the patterning process to obtain Au contacts from reference , undoped and doped
-p(g3T2-T) was deposited following the procedure described before. After some trials, different patterning process were defined for undoped and doped films.
 
-\subsubsection{Undoped p(g3T2-T) OECT}
-\begin{enumerate}
-\item Sacrificial Layer 1 (SL1, fluoropolymer provided by Orthogonal Inc.) was spincoated (6000 RPM for 60s) and baked for 60s at $113^{\circ}$C.
-\item To promote adhesion, sample was placed in plasma (UFO2) for 60s. 
-\item NLOF 2020 (commercial negative-tone photoresist from Microchemicals) was spincoated (3000 RPM for 60s) and baked for 60s at $113^{\circ}$C.
-\item NLOF was exposed for 12s to structure channel and gate (although only channel is used).
-\item After postbaking (60s at $113^{\circ}$C), NLOF was developed by rinsing the sample in AZ MIF 726 (commercial developer for NLOF 2020) for 20s and wash off in DI water (carried out extra times if necessary).
-\item SL1 was developed using HF 7300 developer for 20s and spin rinsed at 3000RPM (carried out extra times if necessary):
-\item Excess p(g3T2-T) was removed by O$_{2}$-plasma etching (180s)
-\item Finally, the sample was placed in Orthogonal Stripper 902 overnight at room temperature.
-\item Ultrasonic bath with stripper is followed if NLOF pattern is still on sample.
-\end{enumerate}
+\subsubsection{Threshold voltage shift by doping OECT channel}
+
+%After following the patterning process to obtain Au contacts from reference , undoped and doped p(g3T2-T) was deposited following the procedure described before. After some trials, different patterning process were defined for undoped and doped films.
+
+\paragraph{Undoped p(g3T2-T) OECT}
+%\begin{enumerate}
+%\item Sacrificial Layer 1 (SL1, fluoropolymer provided by Orthogonal Inc.) was spincoated (6000 RPM for 60s) and baked for 60s at $113^{\circ}$C.
+%\item To promote adhesion, sample was placed in plasma (UFO2) for 60s. 
+%\item NLOF 2020 (commercial negative-tone photoresist from Microchemicals) was spincoated (3000 RPM for 60s) and baked for 60s at $113^{\circ}$C.
+%\item NLOF was exposed for 12s to structure channel and gate (although only channel is used).
+%\item After postbaking (60s at $113^{\circ}$C), NLOF was developed by rinsing the sample in AZ MIF 726 (commercial developer for NLOF 2020) for 20s and wash off in DI water (carried out extra times if necessary).
+%\item SL1 was developed using HF 7300 developer for 20s and spin rinsed at 3000RPM (carried out extra times if necessary):
+%\item Excess p(g3T2-T) was removed by O$_{2}$-plasma etching (180s)
+%\item Finally, the sample was placed in Orthogonal Stripper 902 overnight at room temperature.
+%\item Ultrasonic bath with stripper is followed if NLOF pattern is still on sample.
+%\end{enumerate}
 
 
-\subsubsection{Doped p(g3T2-T) OECT}
-\begin{enumerate}
-\item Orthogonal photoresist OSCoR 4020 (provided by Orthogonal Inc.) was spincoated (3000 RPM for 60s) and baked for 60s at $103^{\circ}$C.
-\item OSCoR was exposed for 20s (increase one extra cycle if using higher dopant concentration) to structure channel and gate (although only channel is used).
-\item After postbaking (60s at $103^{\circ}$C), development followed by covering the sample with Ortoghonal Developer 103a and removing it by spinning at 3000RPM after 50s (carried out extra times if necessary, if higher dopant concentration is used, start with 30s development).
-\item Excess doped p(g3T2-T) was removed by O$_{2}$-plasma etching (180s)
-\item The sample was placed in Orthogonal Stripper 902 over night at room temperature.
-\item Finally, to prepare for measurements, blow off excess of stripper with N$_{2}$ and add 20$\mu$L of solid state electrolyte (SSE) in liquid state.
-\end{enumerate}
+\paragraph{Doped p(g3T2-T) OECT}
+%\begin{enumerate}
+%\item Orthogonal photoresist OSCoR 4020 (provided by Orthogonal Inc.) was spincoated (3000 RPM for 60s) and baked for 60s at $103^{\circ}$C.
+%\item OSCoR was exposed for 20s (increase one extra cycle if using higher dopant concentration) to structure channel and gate (although only channel is used).
+%\item After postbaking (60s at $103^{\circ}$C), development followed by covering the sample with Ortoghonal Developer 103a and removing it by spinning at 3000RPM after 50s (carried out extra times if necessary, if higher dopant concentration is used, start with 30s development).
+%\item Excess doped p(g3T2-T) was removed by O$_{2}$-plasma etching (180s)
+%\item The sample was placed in Orthogonal Stripper 902 over night at room temperature.
+%\item Finally, to prepare for measurements, blow off excess of stripper with N$_{2}$ and add 20$\mu$L of solid state electrolyte (SSE) in liquid state.
+%\end{enumerate}
+
+
+\subsubsection{Stability on air of p(g3T2-T)}
+
+\subsubsection{Reverse oxidation of undoped p(g3T2-T)}
+
+\paragraph{Applying a gate biased}
+\paragraph{Applying a baking step}
+
+\subsubsection{Stability of solid OECTs using undoped p(g3T2-T)}
+
+\paragraph{OECTs with dropcast Solid-State Electrolyte}
+\paragraph{OECTs with photopatternable Solid-State Electrolyte}
+\paragraph{OECTs with inkjet-printed Solid-State Electrolyte}
+
+\subsubsection{Solid OECTs using doped p(g3T2-T)}
+
+\subsubsection{Threshold voltage shift}
 
 %\subsection{An item}
 %A master's thesis is never an isolated work. This means that your text must contain references. On-line documents\cite{wiki} as well as books\cite{pratchett06:_good_omens} can be referenced.

@@ -1,13 +1,6 @@
-\chapter{The Last Appendix}
-\label{app:n}
-Appendices are numbered with letters, but the sections and subsections use
-arabic numerals, as can be seen below.
+\chapter{PEDOT:PSS vs doped p(g3T2-T) as channel}
+\label{app:B}
 
-\section{Lorem 20-24}
-\lipsum[20-24]
-
-\section{Lorem 25-27}
-\lipsum[25-27]
 
 %%% Local Variables: 
 %%% mode: latex

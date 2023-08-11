@@ -6,6 +6,8 @@ A level-1 auxiliary file: chap-1.aux
 A level-1 auxiliary file: chap-2.aux
 A level-1 auxiliary file: chap-3.aux
 A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: app-A.aux
+A level-1 auxiliary file: app-n.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -21,7 +23,7 @@ Warning--I didn't find a database entry for "rivnayOrganicElectrochemicalTransis
 Done.
 You've used 30 entries,
             4087 wiz_defined-function locations,
-            1039 strings with 17423 characters,
+            1041 strings with 17441 characters,
 and the built_in function-call counts, 28822 in all, are:
 = -- 2354
 > -- 981

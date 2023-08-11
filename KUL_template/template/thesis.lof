@@ -12,7 +12,7 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Energy level diagram of organic semiconductors}}{3}{figure.caption.9}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Degenerate and non-degenerate conjugated polymers}}{4}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Scheme of doping processes in organic semiconductors}}{4}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Scheme of doping processes in organic semiconductors}}{5}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Representation of bipolaron formation introduced via doping}}{5}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Formation of polaron, bipolaron, and bipolaron band}}{6}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Material classes of OMIECs}}{7}{figure.caption.14}%
@@ -23,9 +23,9 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Ion hopping} via segmental motion\\\hspace {1em} or ion clusters}}}{9}{subfigure.8.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Solvated/vehicle mechanism}}}}{9}{subfigure.8.2}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Device physics of MOSFET vs OECT}}{10}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Typical OECT structure and circuit model}}{11}{figure.caption.18}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Typical OECT structure}}}{11}{subfigure.10.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Electronic and ionic circuits}}}{11}{subfigure.10.2}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Typical OECT structure and circuit model}}{10}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Typical OECT structure}}}{10}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Electronic and ionic circuits}}}{10}{subfigure.10.2}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Depletion- and accumulation-mode OECTs}}{11}{figure.caption.19}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Depletion-mode OECT}}}{11}{subfigure.11.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Accumulation-mode OECT}}}{11}{subfigure.11.2}%
@@ -40,5 +40,6 @@
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Energy levels of neutral state of OMIECs related to oxygen reduction reactions potentials}}{17}{figure.caption.24}%
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ}}{25}{figure.caption.25}%
+\addvspace {10pt}
+\addvspace {10pt}
 \addvspace {10pt}

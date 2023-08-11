@@ -3,10 +3,16 @@
 \section{Organic Semiconductors}
 
 %When atoms bond together, molecular orbital are defined by the linear combination of atomic orbitals, however the symmetry shown on some complex structures are not explained by a simple linear combination, instead hybrid atomic orbitals are formed. This mathematical process is called \textbf{hybridization}.
-Unlike inorganic semiconductors, organic semiconductors are lightweight, easy to chemical tune, mechanical flexible, and possess low-cost and low-temperature processing. All of these characteristics are responsible for the increased attention to this type of materials in the field of organic electronics. 
+Unlike inorganic semiconductors, organic semiconductors are lightweight, easy to chemically tune, mechanical flexible, and possess low-cost and low-temperature processing. All of these characteristics are responsible for the increased attention to this type of materials in the field of organic electronics. 
 
 %\subsection{Conjugated polymers}
 %\subsection{Small molecules}
+
+\subsection{Electronic Structure and Transport} 
+
+Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating multiple (sp$^{2}$ hybridization) and single (sp hybrization) bonds. The wavegunction of the sp$^{2}$ orbitals overlap so that electrons can be delocalized.
+%This configuration exhibit $p$-orbitals with delocalized electrons. %, charge transport among the length of these polymers is caused by the alternation of these bonds, describing a resonance structure. 
+Based on the size of the conjugated system, organic semiconductors can be divided into conjugated polymers and small molecules, the latter has the advantage of being ordered and its synthesis allow to obtain high purity material \cite{alcacerElectronicStructureOrganic2018}.
 
 \begin{figure}[h]
   \centering
@@ -14,11 +20,6 @@ Unlike inorganic semiconductors, organic semiconductors are lightweight, easy to
   \caption[Energy level diagram of organic semiconductors]{Energy level diagram of an n-type organic semiconductor.}
   \label{fig:ediag}
 \end{figure}
-
-\subsection{Electronic Structure and Transport} 
-
-Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating multiple (sp$^{3}$, sp$^{2}$ hybridization) and single (sp hybrization) bonds. This configuration exhibit $p$-orbitals with delocalized electrons. %, charge transport among the length of these polymers is caused by the alternation of these bonds, describing a resonance structure. 
-Based on the size of the conjugated system, organic semiconductors can be divided into conjugated polymers and small molecules, the lattest has the advantage of being ordered and its synthesis allow to obtain high purity material \cite{alcacerElectronicStructureOrganic2018}.
 
 The energy structure of organic semiconductors comprises a highest occupied molecular orbital (HOMO) and a lowest unccupied molecular orbital (LUMO), that are analogous to the valence and conduction bands, respectively, from inorganic semiconductors. The difference between both energy levels corresponds to the band-gap (E$_{g}$) of the material, as represented in Figure \ref{fig:ediag}. We could also defined i) the Fermi level (E$_{F}$) using the material work function (WF), ii) the ionization energy (IE, also refer as ionization potential, IP), using the HOMO energy, and iii) the electron affinity (EA), using the LUMO energy.
 
@@ -42,7 +43,12 @@ An organic semiconductor material could also be classified depending on whether 
   \label{fig:energy}
 \end{figure}
 
-Transport in a organic semiconductor creates changes in the bond-length alternation pattern. Since charge transport come together with a chain distortion, new quasiparticles are defined in transport theory, in a degenerated molecule, the quasiparticles are named solitons, and in a non-degenerated molecule, a bound soliton-antisoliton is formed in the benzoid structures, the pair receive the name of polaron. This pair annihilate in the quinoid structure in between forming a double bond so neutral polarons are not stable \cite{bredasRoleMobileOrganic1984}.
+Transport in an organic semiconductor creates changes in the bond-length alternation pattern. Since charge transport come together with a chain distortion, new quasiparticles are defined: solitons in degenerated molecules and polarons in non-degenerated molecules \cite{bredasRoleMobileOrganic1984}.
+
+ %Since charge transport come together with a chain distortion, new quasiparticles are defined in transport theory, in a degenerated molecule, the quasiparticles are named solitons, and in a non-degenerated molecule, a bound soliton-antisoliton is formed in the benzoid structures, the pair receive the name of polaron. This pair annihilate in the quinoid structure in between forming a double bond so neutral polarons are not stable \cite{bredasRoleMobileOrganic1984}.
+
+\subsection{Molecular Doping} \label{subsec:moldop}
+The basic principles are similar than in inorganic materials. A donnor or acceptor entity is added to generate electrons or holes, as shown in Figure \ref{fig:dopscheme}. While n-type dopants donate electrons to the lowest unoccupied molecular orbital (LUMO) states, the p-type dopants extract electrons from the highest occupied molecular orbital (HOMO) states, hence creates holes \cite{lussemDopingOrganicSemiconductors2013}. In other words, the Fermi level E$_{F}$ of the polymer will shift towards the LUMO (or HOMO) level when there is n-type (or p-type) doping. This shift can be measured by spectroscopy techniques such as Ultraviolet Photoelectron Spectroscopy (UPS) at room temperature (RT) \cite{tietzeFermiLevelShift2012}, although a bit limited by the penetration depth of the incoming electrons.
 
 \begin{figure}[h]
   \centering
@@ -50,9 +56,6 @@ Transport in a organic semiconductor creates changes in the bond-length alternat
   \caption[Scheme of doping processes in organic semiconductors]{Schemes for p-type (left) and n-type (right) doping processes. Extracted from reference \cite{lussemDopingOrganicSemiconductors2013}.}
   \label{fig:dopscheme}
 \end{figure}
-
-\subsection{Molecular Doping} \label{subsec:moldop}
-The basic principles are similar than in inorganic materials. A donnor or acceptor entity is added to generate electrons or holes, as shown in Figure \ref{fig:dopscheme}. While n-type dopants donate electrons to the lowest unoccupied molecular orbital (LUMO) states, the p-type dopants extract electrons from the highest occupied molecular orbital (HOMO) states, hence creates holes \cite{lussemDopingOrganicSemiconductors2013}. In other words, the Fermi level E$_{F}$ of the polymer will shift towards the LUMO (or HOMO) level when there is n-type (or p-type) doping. This shift can be measured by spectroscopy techniques such as Ultraviolet Photoelectron Spectroscopy (UPS) at room temperature (RT) \cite{tietzeFermiLevelShift2012}, although a bit limited by the penetration depth of the incoming electrons.
 
 When doping occurs, %charged solitons come as outcome in a degenerated molecules. In a non-degenerated, our main focus in this work, 
 the formation of a new quasiparticle named bipolaron occurs. For instance, if p-type dopant is introduced to a degenerated molecule (Figure \ref{fig:bipol}), electrons are removed from double bonds, if we focus on just one event, while one carbon is left positively charged, the adjacent has an unpaired electron. This unpaired electron shifts down the polymer chain until reaching another unpaired electron from a separated doping event, together they form a double bond, leaving aside two charged polarons: a bipolaron, which unlike a single polaron, it is stable \cite{bredasPolaronsBipolaronsSolitons1985}. %Although, a nice simplification, in a degenerated molecule is not realistic, but usually
@@ -89,7 +92,7 @@ Commonly structured with polar side chains, they have been identified as a promi
 \cite{giovannittiEnergeticControlRedoxActive2020}. Initially investigated for batteries and super capacitors \cite{snookConductingpolymerbasedSupercapacitorDevices2011}
 \cite{liangOrganicElectrodeMaterials2012}, where the induction of charges in a semiconducting polymer was the main objective. OMIECs have rapidly grown to include other applications, among them, our focus: OECTs.
 
-Paulsen et al. classified OMIECs into six different categories according to whether they \textit{``intrinsically contain ionic charge''} (I, III, V) or not (II, IV, VI), the latter \textit{``contain polar moieties that can solvate ions''}. Another distinction among the categories is whether the conjugated system comprises a single material (homogeneous, type V and VI) or two-component, more complex systems or block co-polymers materials (heterogeneous, type I, II, III, IV)\cite{paulsenOrganicMixedIonic2020}, an schematic representation is shown in Figure \ref{fig:omiectypes}. %For instance, the conjugated polymer p(g3T2-T), used in this work, falls into a type VI OMIEC.s
+Paulsen et al. classified OMIECs into six different categories according to whether they \textit{intrinsically contain ionic charge''} (I, III, V) or not (II, IV, VI), the latter \textit{``contain polar moieties that can solvate ions''}. Another distinction among the categories is whether the conjugated system comprises a single material (homogeneous, type V and VI) or two-component, more complex systems or block co-polymers materials (heterogeneous, type I, II, III, IV)\cite{paulsenOrganicMixedIonic2020}, an schematic representation is shown in Figure \ref{fig:omiectypes}. %For instance, the conjugated polymer p(g3T2-T), used in this work, falls into a type VI OMIEC.s
 
 %Electronic charges accumulated on the conjugated polymer backbone result in secondary property changes in electrochemical potential and electronic conductivity \cite{tanOrganicMixedIonic2022}. 
 
@@ -232,7 +235,7 @@ As seen in Figure \ref{fig:modes}A) and B), the polymer can be conductive or sem
 
 \subsubsection{Standard material for depletion-mode OECTs}
 
-Poly(3,4-ethylenedioxythiophene) poly(styrene-sulfonate) (PEDOT:PSS) is a ``degenerately doped'' \cite{bernardsSteadyStateTransientBehavior2007} or conductive polymer that is widely used in multiple applications in organic electronics. Classified as type I OMIEC, as seen in Figure \ref{fig:omiectypes}, it is a blend between a conjugated polymer (PEDOT) and a polyelectrolyte (PSS), the latter possesses chemically linked ions and serves as a polymeric acid template to allow dispersable suspensions \cite{paulsenOrganicMixedIonic2020}.
+Poly(3,4-ethylenedioxythiophene) poly(styrene-sulfonate) (PEDOT:PSS) is a \textit{``degenerately doped''} \cite{bernardsSteadyStateTransientBehavior2007} or conductive polymer that is widely used in multiple applications in organic electronics. Classified as type I OMIEC, as seen in Figure \ref{fig:omiectypes}, it is a blend between a conjugated polymer (PEDOT) and a polyelectrolyte (PSS), the latter possesses chemically linked ions and serves as a polymeric acid template to allow dispersable suspensions \cite{paulsenOrganicMixedIonic2020}.
 
 Due to its commercial availability, operational stability, and relatively high performance, PEDOT:PSS became a standard material for p-type OECTs. Its main drawback lays in its depletion-mode operation, since, as explained in the previous section, requires power to turn off. 
 
@@ -323,7 +326,7 @@ The calculation of this capacitance is under a fixed-gate biased condition, it i
 
 From the steady-state characteristics of an OECT, specifically the transfer characteristics ($I_{DS}$ vs $V_{GS}$), one can calculate not only the transconductance but also the ON/OFF ratio, and the threshold voltage ($V_{th}$). The latter can be determined by plotting the square root of the $I_{DS}$ as a function of $V_{GS}$ and extrapolate the linear portion of the slope, where the intersection with the x-axis will give this parameter \cite{ohayonGuideCharacterizationOrganic2023}.
 
-In MOSFETs, it represents the voltage that fills trap states in the semiconductors. In OECTs, it represents the ``film's readiness for ion penetration'' \cite{ohayonGuideCharacterizationOrganic2023}. Controlling and/or shifting this parameter is wished, specially to integrate transistors and meet any circuit requirement and control operation, noise margins and power consumption. 
+In MOSFETs, it represents the voltage that fills trap states in the semiconductors. In OECTs, it represents the \textit{``film's readiness for ion penetration''} \cite{ohayonGuideCharacterizationOrganic2023}. Controlling and/or shifting this parameter is wished, specially to integrate transistors and meet any circuit requirement and control operation, noise margins and power consumption. 
 
  \begin{figure}[h]
 	\centering
@@ -348,7 +351,7 @@ The chemically de-doping of PEDOT:PSS by Keene et al. described in previous sect
 
 %Although there are some studies in non-water-based electrolytes, such as ionic liquids. 
 Water-based electrolytes are widely used, and even in the pursue of solid-state OECTs, precursors have a certain degree of water content \cite{weissbachPhotopatternableSolidElectrolyte2022}\cite{nguyen-dangBiomaterialBasedSolidElectrolyteOrganic2021}, hence, side reactions of OMIECs upon water contact is inevitable and therefore, studies to understand the impact are necessary.  %and some bioelectronics applications will inevitable operate under water environment, 
-Water uptake in OMIECs cause their increase of mass (swelling) and change in morphology. Water uptake happens since OMIECs will need to compensate their intrinsic doping. Therefore, ``the effect of doping-induced hydration on the OMIEC morphology must be taken into account when designing OECTs'' \cite{savvaBalancingIonicElectronic2020}.
+Water uptake in OMIECs cause their increase of mass (swelling) and change in morphology. Water uptake happens since OMIECs will need to compensate their intrinsic doping. Therefore, \textit{``the effect of doping-induced hydration on the OMIEC morphology must be taken into account when designing OECTs''} \cite{savvaBalancingIonicElectronic2020}.
 
 Savva et al. study the influence of water on the performance of PEDOT:PSS OECT, the water uptake %of conjugated polymer films 
 led to 10-13\% mass increase under non biased conditions. As the concentration of water decrease (NaCl$_{aq}$ 10 mM, 100mM, 1M, and 6M) ionic charging got faster; %regardless of the doping pulse, 
@@ -390,7 +393,7 @@ The ORR is a non-capacitive faradaic reaction between the OMIEC and molecular ox
 
 As seen in Figure \ref{fig:orr}, $\eta_{1}$ and $\eta_{2}$ represent free energy difference between reactants and the reaction products H$_{2}$O$_{2}$ and H$_{2}$O, respectively. If this free energy is negative, the reaction is endergonic (the opposite is exergonic), and needs energy to be driven. PEDOT:PSS and p(g3T2-T) exhibit exergonic reactions. For instance, a polymer with higher IP (> 4.9eV) would be needed to prevent oxygen peroxide to form.
 
-\begin{figure}[h]
+\begin{figure}[!t]
 	\centering
 	\includegraphics[width=10cm]{Images/pdf/ORR.pdf}
 	\caption[Energy levels of neutral state of OMIECs related to oxygen reduction reactions potentials]{Simplified mechanism of two- and four-electron Oxygen Reduction Reactions with neutral states of OMIECs: p(g3T2-T) and PEDOT:PSS. The free energy difference between reactant and the reaction products is represented by $\eta$. Image adapted from reference \cite{giovannittiEnergeticControlRedoxActive2020}, where values are defined from cyclic voltammetry measurements using Ag/AgCl as reference electrode and NaCl as electrolyte.}
