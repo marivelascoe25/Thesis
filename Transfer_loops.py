@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 from functions import *
-from scipy.interpolate import make_interp_spline, BSpline
 plt.rcParams.update({'font.size':20})
 
 ## IV

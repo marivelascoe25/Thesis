@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2022)
+This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: intro.aux
@@ -7,7 +7,7 @@ A level-1 auxiliary file: chap-2.aux
 A level-1 auxiliary file: chap-3.aux
 A level-1 auxiliary file: conclusion.aux
 A level-1 auxiliary file: app-A.aux
-A level-1 auxiliary file: app-n.aux
+A level-1 auxiliary file: app-B.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -15,51 +15,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: mscreferences.bib
-Warning--I didn't find a database entry for "rivnayOrganicElectrochemicalTransistors2018a"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 30 entries,
+You've used 38 entries,
             4087 wiz_defined-function locations,
-            1041 strings with 17441 characters,
-and the built_in function-call counts, 28822 in all, are:
-= -- 2354
-> -- 981
+            1076 strings with 18549 characters,
+and the built_in function-call counts, 31702 in all, are:
+= -- 2582
+> -- 1030
 < -- 231
-+ -- 519
-- -- 207
-* -- 1451
-:= -- 4112
-add.period$ -- 60
-call.type$ -- 30
-change.case$ -- 29
++ -- 543
+- -- 219
+* -- 1546
+:= -- 4661
+add.period$ -- 71
+call.type$ -- 38
+change.case$ -- 33
 chr.to.int$ -- 447
-cite$ -- 30
-duplicate$ -- 2059
-empty$ -- 1977
-format.name$ -- 229
-if$ -- 6738
+cite$ -- 38
+duplicate$ -- 2291
+empty$ -- 2244
+format.name$ -- 242
+if$ -- 7367
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 405
-newline$ -- 113
-num.names$ -- 30
-pop$ -- 875
+int.to.str$ -- 38
+missing$ -- 464
+newline$ -- 149
+num.names$ -- 38
+pop$ -- 1048
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2221
+skip$ -- 2449
 stack$ -- 0
-substring$ -- 1209
-swap$ -- 1876
+substring$ -- 1214
+swap$ -- 2011
 text.length$ -- 82
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 30
+type$ -- 38
 warning$ -- 0
-while$ -- 112
-width$ -- 32
-write$ -- 345
-(There was 1 warning)
+while$ -- 120
+width$ -- 40
+write$ -- 420

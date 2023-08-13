@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 from functions import *
-from scipy.signal import find_peaks_cwt
 from peakdetect import peakdetect
 import scipy.constants as sc
 #from scipy.signal import argrelextrema

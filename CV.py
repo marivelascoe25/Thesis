@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 from functions import *
 from peakdetect import peakdetect
-import scipy.constants as sc
 plt.rcParams.update({'font.size':22})
 
 #dir_path1 = 'Data\\5. CV\\23.05.24'

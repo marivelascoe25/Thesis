@@ -21,6 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{rivnayOrganicElectrochemicalTransistors2018}
+J.~Rivnay, S.~Inal, A.~Salleo, R.~M. Owens, M.~Berggren, and G.~G. Malliaras,
+  ``Organic electrochemical transistors,'' \emph{Nature Reviews Materials},
+  vol.~3, no.~2, pp. 1--14, 2018.
+
 \bibitem{nielsenMolecularDesignSemiconducting2016}
 C.~B. Nielsen, A.~Giovannitti, D.-T. Sbircea, E.~Bandiello, M.~R. Niazi, D.~A.
   Hanifi, M.~Sessolo, A.~Amassian, G.~G. Malliaras, J.~Rivnay, and
@@ -40,6 +45,11 @@ A.~Weissbach, L.~M. Bongartz, M.~Cucchi, H.~Tseng, K.~Leo, and H.~Kleemann,
   ``Photopatternable solid electrolyte for integrable organic electrochemical
   transistors: Operation and hysteresis,'' \emph{Journal of Materials Chemistry
   C}, vol.~10, no.~7, pp. 2656--2662, 2022.
+
+\bibitem{bongartzOrganicElectrochemicalTransistors2021}
+L.~M. Bongartz, ``Organic electrochemical transistors with solid-state
+  electrolytes,'' Ph.D. dissertation, Technische Universit\"at Dresden,
+  {Dresden, Germany}, Jul. 2021.
 
 \bibitem{alcacerElectronicStructureOrganic2018}
 L.~Alc{\'a}cer, \emph{Electronic {{Structure}} of {{Organic Semiconductors}}:
@@ -137,11 +147,6 @@ J.~T. Friedlein, R.~R. McLeod, and J.~Rivnay, ``Device physics of organic
   electrochemical transistors,'' \emph{Organic Electronics}, vol.~63, pp.
   398--414, Dec. 2018.
 
-\bibitem{rivnayOrganicElectrochemicalTransistors2018}
-J.~Rivnay, S.~Inal, A.~Salleo, R.~M. Owens, M.~Berggren, and G.~G. Malliaras,
-  ``Organic electrochemical transistors,'' \emph{Nature Reviews Materials},
-  vol.~3, no.~2, pp. 1--14, 2018.
-
 \bibitem{bernardsSteadyStateTransientBehavior2007}
 D.~A. Bernards and G.~G. Malliaras, ``Steady-{{State}} and {{Transient
   Behavior}} of {{Organic Electrochemical Transistors}},'' \emph{Advanced
@@ -198,5 +203,48 @@ A.~Savva, C.~Cendra, A.~Giugni, B.~Torre, J.~Surgailis, D.~Ohayon,
   S.~Inal, ``Influence of {{Water}} on the {{Performance}} of {{Organic
   Electrochemical Transistors}},'' \emph{Chemistry of Materials}, vol.~31,
   no.~3, pp. 927--937, Feb. 2019.
+
+\bibitem{os_module}
+\BIBentryALTinterwordspacing
+P.~S. Foundation, 2001-2023. [Online]. Available:
+  \url{https://docs.python.org/3/library/os.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{csv_module}
+\BIBentryALTinterwordspacing
+------, 2001-2023. [Online]. Available:
+  \url{https://docs.python.org/3/library/csv.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{numpy_2012}
+\BIBentryALTinterwordspacing
+N.~Developers, 2008-2022. [Online]. Available:
+  \url{https://numpy.org/doc/stable/user/index.html#user}
+\BIBentrySTDinterwordspacing
+
+\bibitem{scipy_linreg}
+\BIBentryALTinterwordspacing
+T.~S. community, 2008-2023. [Online]. Available:
+  \url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{peakdetect}
+\BIBentryALTinterwordspacing
+G.~user: avhn, 2022. [Online]. Available:
+  \url{https://github.com/avhn/peakdetect/blob/master/README.md}
+\BIBentrySTDinterwordspacing
+
+\bibitem{matplotlib_2012}
+\BIBentryALTinterwordspacing
+J.~Hunter, D.~Dale, E.~Firing, M.~Droettboom, and M.~development team,
+  ``Matplotlib: Quick start guide,'' date last access: 30-May-2023. [Online].
+  Available:
+  \url{https://matplotlib.org/stable/tutorials/introductory/quick_start.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{buchholtzDopingPropertiesNovel2021}
+S.~A. Buchholtz, ``Doping {{Properties}} of {{Novel Dopants}} for {{Organic
+  Hole Transport Layers}},'' Ph.D. dissertation, Technische Universit\"at
+  Dresden, {Dresden, Germany}, nov 2021.
 
 \end{thebibliography}

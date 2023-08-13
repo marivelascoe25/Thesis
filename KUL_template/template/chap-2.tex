@@ -1,5 +1,4 @@
-{\chapter{Experimental Methods}}
-\label{cha:2}
+\chapter{Experimental Methods} \label{cha:2}
 %\lipsum[77]
 
 \section{Materials}
@@ -32,25 +31,62 @@ All reactives were purchased from commercial suppliers and non further chemical 
 \item Baking: All baking steps were carried out on a Stuart SD160 digital hotplate (Stuart Equipment, UK). 
 \item Electrical characterisation (ambient): Device characterisation under ambient conditions was performed on a Everbeing C-6 Probe Station (Everbeing Int’l Corp., Taiwan), connected to a Keithley 4200-SCS Semiconductor Characterisation System (Keithley Instruments, USA). 
 \item Electrical characterisation (glovebox): Device characterisation was performed in a nitrogen-filled glovebox. Probing needles were connected to two Keithley 236 Source Measure Units (Keithley Instruments, USA). 
-\item Cyclic voltammetry and Impedance measurements: Cyclic voltammetry and Impedance measurements were carried out by using a Metrohm Autolab PGSTAT302N potentiostat/galvanostat (Metrohm AG, Switzerland) in the range of 10$^{-1}$ to 10$^{5}$ Hz. 
+\item Cyclic voltammetry and Impedance measurements: Measurements were carried out by using a Metrohm Autolab PGSTAT302N potentiostat/galvanostat (Metrohm AG, Switzerland) in the range of 10$^{-1}$ to 10$^{5}$ Hz. 
 \item Micrographs: Micrographs were taken on a Nikon Eclipse LV100ND microscope, equipped with a DS-Fi2 camera (Nikon, Japan). 
 \item Photolithography: Photolithography was carried out on a SÜSS Microtec MJB4 maskaligner system (SÜSS Microtec AG, Germany). 
 \item Photomasks: Photomasks were custom made by Compugraphics Jena in a 4-inch format (soda-lime glass covered with chromium) and held several mask designs (Compugraphics Jena GmbH, Germany). 
 \item Plasma cleaning: O2-plasma cleaning was performed by using a Harrick PDC-002 plasma cleaner (Harrick Plasma, USA), connected to a Leybold Heraeus Combitron CM 330 Vacuum Gauge Controller (Leybold GmbH, Germany). 
 \item Plasma etching: O2-plasma etching was performed by using a Diener electronic ATTO plasma cleaner (Diener electronic GmbH \& Co. KG, Germany). 
 \item Profilometry: Profilometry was performed on a Veeco Dektak 150 surface profiler (Veeco Instruments Inc., USA).
-\item Absorption measurements: Absorption measurements were performed with UV-Visible-NearInfraRed Spectroscopy on a SolidSpec-3700 UV-Vis-NIR spectrometer from Shimadzu.
+\item Sheet resistance measurements: The sheet resistance was measured using a linear four-point probe system (Lucas four-point probe connector) connected to a multimeter (Keithley 2010 Multimeter).
+\item Absorption measurements: Measurements were performed with UV-Visible-NearInfraRed Spectroscopy on a SolidSpec-3700 UV-Vis-NIR spectrometer from Shimadzu.
 \item Workfunction measurements: Worfunction was measured using Ultraviolet Photoelectron Spectroscopy (UPS) by using a PHOIBOS 100 from Specs, a Helium plasma discharge lamp (UVS10/35, Specs) for UV excitation line of 21.22 eV.
 \item Spincoating: Samples were coated with a SAWATEC SM-180-BT spincoater (SAWATEC AG, Switzerland).
 \end{itemize}
 
-\section{Software}
+\section{Software} \label{param}
 %% Add citations of libraries and stuff
 \begin{itemize}
-\item Data processing: All data was processed by customised scripts written in the Python programming language. Mathematical computations (e.g. fits, integration) were carried out by employing the Pandas, NumPy, and SciPy libraries. Visualisations were performed using the Matplotlib library. All is seen in \href{https://github.com/marivelascoe25/Thesis.git}{GitHub Repository}.
-\item Electrical characterisation: Electrical characterisations were performed by controlling SMUs through the in-house developed \href{https://sweep-me.net/}{SweepMe! software}. 
+\item Data processing: All data was processed by customised scripts written in the Python programming language. Files import and manipulation was done by using OS \cite{os_module} and CSV \cite{csv_module} modules. Mathematical computations (e.g. fits, integration) were carried out by employing the NumPy \cite{numpy_2012}, SciPy \cite{scipy_linreg}, and PeakDetect \cite{peakdetect} libraries. Visualisations were performed using the Matplotlib library \cite{matplotlib_2012}. All is compiled in the following GitHub Repository: \href{https://github.com/marivelascoe25/Thesis.git}{\textbf{marivelasco25/Thesis.git}}.
+\item Electrical characterisation: Measurements were performed by controlling SMUs through the in-house developed SweepMe! software \href{https://sweep-me.net/}{\textbf{(https://sweep-me.net/)}}. 
 \item Profilometry: Profilometry was performed by using the Dektak software (Veeco Instruments Inc., USA).
-\item Cyclic voltammetry and Impedance measurements: Impedance measurements were performed by using the NOVA software (Metrohm AG, Switzerland).
+\item Cyclic voltammetry: Measurements were performed by using the NOVA software (Metrohm AG, Switzerland). Parameters were fixed and are described in the following table: 
+
+\begin{table}[h]
+	\centering
+	\caption{Cyclic Voltammetry parameters.}
+	\begin{tabular}{r r} \hline
+		Parameter	& Value \\ \hline
+		Start potential	& 0 V \\ 
+		Upper vertex potential	& 1 V \\ 
+		Lower vertex potential	& -1 V \\ 
+		Stop potential	& 0 V \\ 
+		Number of scans	& 10 \\ 
+		Scan rate	& 0.1 V/s \\ 
+		Step	& 0.05 \\ \hline
+	\end{tabular}
+	\label{tab:CV}
+\end{table}
+
+\item Impedance measurements: Measurements were performed by using the NOVA software (Metrohm AG, Switzerland). Parameters were fixed and are described in the following table: 
+
+\begin{table}[h]
+	\centering
+	\caption{Electrochemical Impedance Spectroscopy parameters.}
+	\begin{tabular}{r r} \hline
+		Parameter	& Value \\ \hline
+		Initial frequency	& 10$^{5}$ Hz  \\ 
+		Final frequency	& 10$^{-1}$ Hz \\ 
+		Frequencies per decade	& 10 \\ 
+		Amplitude	& 0.01$\cdot$V$_{RMS}$ \\ \hline
+	\end{tabular}
+	\label{tab:EIS}
+\end{table}
+
+%105 - 10-1
+%10 frequencies per decade
+%Amplitude 0.01 VRMS
+
 \end{itemize}
 
 %\section{Photomasks}
@@ -59,34 +95,28 @@ All reactives were purchased from commercial suppliers and non further chemical 
 \section{Experimental Procedures}
 
 All fabrication steps were performed under standard cleanroom conditions.
-
 \subsection{Preparation of films}
+\paragraph{Dynamic spin-coating of p(g3T2-T).}Unlike reference \cite{tanTuningOrganicElectrochemical2022}, in which drop cast is used to deposit undoped and doped p(g3T2-T), in order to perform photolithography and being able to do a miniaturization process, homogeneous films are needed. Dynamic spin-coating was previously stablished by BioSens group members at IAPP, due to the high volatility of p(g3T2-T) solvant: chloroform. Substrates were cleaned using subsequent steps of ultrasonic bath with acetone for 15 minutes, IPA rinsing, N$_{2}$ drying and O$_{2}$-plasma cleaning. Then, 70$\mu$L of 10 mg/mL of p(g3T2-T) mixed at 60$^{\circ}$C for 20 minutes, was dynamic-spin-coated at 3000 RPM for 60s, to yield approximately 70nm-thick films. Dry sample at 80$^{\circ}$C.
 
-\paragraph{Dynamic spin-coating of p(g3T2-T).}Unlike reference \cite{tanTuningOrganicElectrochemical2022}, in which drop cast is used to deposit undoped and doped p(g3T2-T), in order to perform photolithography and being able to do a miniaturization process, homogeneous films are needed. Dynamic spin-coating was previously stablished by BioSens group members at IAPP, due to the high volatility of p(g3T2-T) solvant: chloroform. Substrates were cleaned using subsequent steps of ultrasonic bath with acetone for 15 minutes, IPA rinsing, N$_{2}$ drying and O$_{2}$-plasma cleaning. Then 70$\mu$L of 10 mg/mL of p(g3T2-T) mixed at 60$^{\circ}$C for 20 minutes, was dynamic-spin-coated at 3000 RPM for 60s, to yield approximately 70nm-thick films.
+\paragraph{Dynamic spin-coating of F$_{4}$TCNQ dopant.}Different doping levels of p(g3T2-T) was achieved by dynamic spin-coating 140$\mu$L of dopants at different concentrations (5, 10 and 20 mg/mL), previously mixed in acetronitrile at $60^{\circ}$C for 20 minutes. Dry sample at 80$^{\circ}$C.
 
-\paragraph{Dynamic spin-coating of F$_{4}$TCNQ dopant.}Different doping levels of p(g3T2-T) was achieved by dynamic spin-coating dopants at different concentrations 5, 10 and 20 mg/mL, previously mixed in acetronitrile at $60^{\circ}$C for 20 minutes.
-
-%\begin{enumerate}
-%\item prepare 10mg/mL solution of p(g3T2-T) in chloroform at $60^{\circ}$C,
-%\item prepare 5, 10 and 20 mg/mL solution of F$_{4}$TCNQ in acetonitrile at $60^{\circ}$C,
-%\item clean substrates with subsequent steps of ultrasonic bath with acetone for 15 minutes, rinse cith IPA, drying with N$_{2}$ and O$_{2}$-plasma,
-%\item dynamic spin coat 70$\mu$L of p(g3T2-T) at 3000RPM for 60s,
-%\item if preparing a doped sample, dynamic spin coat 140$\mu$L of each dopant solvent at different concentrations on top, to yield approximately 70 nm thick layer, and
-%\item postbake at $80^{\circ}$C.
-%\end{enumerate}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=10cm]{Images/pdf/spin_coating.pdf}
+  \caption{Dynamic spin coating process to obtain undoped and doped films of p(g3T2-T)).}
+  \label{fig:coating}
+\end{figure}
 
 \subsection{Doping characterization of films}
 
-\paragraph{UV-Vis-NIR Spectroscopy.}After the preparation of the films, Transmittance (T) and reflectance (R) was measured using the UV-Vis-NIR Spectrometer in the range of 285 to 1600 nm, using a slit width of 5,0 nm. Then absorption (A) was calculated via
+\paragraph{UV-Vis-NIR Spectroscopy.}After the preparation of the films, Transmittance (T) and reflectance (R) was measured using the UV-Vis-NIR Spectrometer in the range of 285 to 1600 nm, and slit width of 5,0 nm. Then absorption (A) was calculated via
 
 
 \begin{equation}\label{eq:abs}
 	A = 1 - T - R,
 \end{equation}
 
-normalized with respect to the incoming light. 
-
-Additional measurements were taken, after a couple of days of storage under ambient conditions.
+normalized with respect to the incoming light. Additional measurements were taken, after some days of storage under ambient conditions to check its stability on air.
 
 \paragraph{Ultraviolet Photoelectron Spectroscopy.}After the preparation of the films (air exposure) the energy of the highest occupied molecular orbital cutoff (E$_{HOMO}$) and the high binding energy cutoff E$_{HBEC}$ was measuring using UPS. The pressure in the chamber during measurements was about 5$\cdot$10$^{-9}$ mbar, while the base pressure is in the range of 10$\cdot$10$^{-10}$ mbar. The workfunction (WF) and ionization energy (IE) are given by the following equations:
 
@@ -98,110 +128,131 @@ Additional measurements were taken, after a couple of days of storage under ambi
 	IE = h\nu - (E_{HBEC}-E_{HOMO}),
 \end{equation}
 
-where $h\nu = 21.22 eV$, the main He I excitation line. 
+where $h\nu = 21.22 eV$, the main He I excitation line \cite{buchholtzDopingPropertiesNovel2021}. 
 
-\paragraph{Profilometer.} The films were scratched 4 times to remove part of material, and measure the cavity deep to obtain the film thickness.
+\paragraph{Profilometer.}The films were scratched 4 times to remove part of material, and measure the cavity dept to obtain the film thickness.
 
-\paragraph{Van Der Paw}
+\paragraph{Van Der Pauw.}Sheet resistance was calculated via
 
+\begin{equation}\label{eq:rs}
+	R_{S} = \frac{\pi}{ln(2)}R = 4,53 R \, [\Omega/sq],
+\end{equation}
+
+where R is the resistance measured with the four-point probe setup and resistivity was calculated using the following equation:
+
+\begin{equation}\label{eq:resist}
+	\rho = R_{s}t \, [\Omega.cm],
+\end{equation}
+ 
 %\subsection{Roughness characterization of films} 
 
 \subsection{Fabrication of Organic Electrochemical Transistors}
 
-\paragraph{Doping OECT channel}
+\subsubsection{Influence of doping OECT channel} \label{subsec:photo}
 
-%After following the patterning process to obtain Au contacts from reference , undoped and doped p(g3T2-T) was deposited following the procedure described before. After some trials, different patterning process were defined for undoped and doped films.
+Photolitographically patterned substrates with gold contacts for source, drain and gate were obtained following references \cite{weissbachPhotopatternableSolidElectrolyte2022} \cite{bongartzOrganicElectrochemicalTransistors2021}, described in Figure \ref{fig:aupat}.
 
-\paragraph{Undoped p(g3T2-T) OECT}
-%\begin{enumerate}
-%\item Sacrificial Layer 1 (SL1, fluoropolymer provided by Orthogonal Inc.) was spincoated (6000 RPM for 60s) and baked for 60s at $113^{\circ}$C.
-%\item To promote adhesion, sample was placed in plasma (UFO2) for 60s. 
-%\item NLOF 2020 (commercial negative-tone photoresist from Microchemicals) was spincoated (3000 RPM for 60s) and baked for 60s at $113^{\circ}$C.
-%\item NLOF was exposed for 12s to structure channel and gate (although only channel is used).
-%\item After postbaking (60s at $113^{\circ}$C), NLOF was developed by rinsing the sample in AZ MIF 726 (commercial developer for NLOF 2020) for 20s and wash off in DI water (carried out extra times if necessary).
-%\item SL1 was developed using HF 7300 developer for 20s and spin rinsed at 3000RPM (carried out extra times if necessary):
-%\item Excess p(g3T2-T) was removed by O$_{2}$-plasma etching (180s)
-%\item Finally, the sample was placed in Orthogonal Stripper 902 overnight at room temperature.
-%\item Ultrasonic bath with stripper is followed if NLOF pattern is still on sample.
-%\end{enumerate}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=10cm]{Images/pdf/Au-patterning.pdf}
+	\caption[Visualization of the workflow for Au-contacts patterning.]{Visualization of the workflow for Au-contacts patterning. Image modified from reference \cite{bongartzOrganicElectrochemicalTransistors2021}.}
+	\label{fig:aupat}
+\end{figure}
 
+Then p(g3T2-T) films were deposited following the procedure described in previous section. The patterning of channel follow a similar procedure from the same reference where PEDOT:PSS is being used, with some modifications in the exposure and developing times. However, if the undoped-p(g3T2-T) is being used, the protocol needs the addition of a sacrificial layer to ensure cross-linking. Both processes are described in the following:
 
-\paragraph{Doped p(g3T2-T) OECT}
-%\begin{enumerate}
-%\item Orthogonal photoresist OSCoR 4020 (provided by Orthogonal Inc.) was spincoated (3000 RPM for 60s) and baked for 60s at $103^{\circ}$C.
-%\item OSCoR was exposed for 20s (increase one extra cycle if using higher dopant concentration) to structure channel and gate (although only channel is used).
-%\item After postbaking (60s at $103^{\circ}$C), development followed by covering the sample with Ortoghonal Developer 103a and removing it by spinning at 3000RPM after 50s (carried out extra times if necessary, if higher dopant concentration is used, start with 30s development).
-%\item Excess doped p(g3T2-T) was removed by O$_{2}$-plasma etching (180s)
-%\item The sample was placed in Orthogonal Stripper 902 over night at room temperature.
-%\item Finally, to prepare for measurements, blow off excess of stripper with N$_{2}$ and add 20$\mu$L of solid state electrolyte (SSE) in liquid state.
-%\end{enumerate}
+\paragraph{Patterning undoped p(g3T2-T)}Patterning of the p(g3T2-T) was achieved with photolithography, as shown in Figure \ref{fig:undopedpat}, first a fluoropolymer Sacrificial Layer 1 was spin coated at 6000 RPM for 60 s, followed by a baking step for 60 s at $113^{\circ}$C. Before the deposition of photoresist, a 60 s-plasma treatment was applied from UFO2 to promote adhesion. Then, NLOF 2020 was spin coated at 3000 RPM for 60 s and baked for another 60 s at $113^{\circ}$C. Exposure of negative resist was performed for 12 s with shadowing all areas except the ones of interest. After post-baking for 60 s at $113^{\circ}$C, NLOF was developed by rinsing the sample in AZ MIF 726 for 20 s and wash off in DI water (carried out extra times if necessary). Next, SL1 was developed using HF 7300 developer for 20 s and spin rinsed at 3000 RPM (carried out extra times if necessary). Excess of p(g3T2-T) was removed by O$_{2}$-plasma etching for 180 s. The sample was placed in Orthogonal Stripper 900 overnight at room temperature, to complete removal, ultrasonication in acetone was added for 15 min the next day. 
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{Images/pdf/undoped-patterning.pdf}
+	\caption{Visualization of the workflow for patterning undoped p(g3T2-T).}
+	\label{fig:undopedpat}
+\end{figure}
 
+\paragraph{Patterning doped-p(g3T2-T)}Patterning of the doped-p(g3T2-T) was achieved with photolithography, as shown in Figure \ref{fig:dopedpat}, first the orthogonal photoresist OSCoR 4020 was spin coated at 3000 RPM for 60 s and baked for another 60 s at $103^{\circ}$C. Exposure of negative resist was performed for 20 s with shadowing all areas except the ones of interest, one extra cycle was added if using higher dopant concentration (10 mg/mL). After post-baking for 60 s at $103^{\circ}$C, OSCoR was developed using Orthogonal Developer 103a for 50 s and spin rinsed at 3000 RPM for 60 s (carried out extra times if necessary). Excess of doped-p(g3T2-T) was removed by O$_{2}$-plasma etching for 180 s. The sample was placed in Orthogonal Stripper 900 overnight at room temperature.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=10cm]{Images/pdf/doped-patterning.pdf}
+	\caption{Visualization of the workflow for patterning doped p(g3T2-T).}
+	\label{fig:dopedpat}
+\end{figure}
+
+\paragraph{OECT with undoped and doped p(g3T2-T) channel.} A solid-state electrolyte precursor was prepared, as describe in Table \ref{tab:sse}, and 20$\mu$L was dropcasted to the patterned samples (undoped and doped) covering all 14 devices. Finally, a Ag/AgCl pellet was installed and used as gate (Figure \ref{fig:biosetup}). Transfer characteristics were measured under ambient conditions with different source-drain voltages (V$_{DS}$= -0.1, -0.2, -0.5V).
+
+\begin{table}[h]
+	\centering
+	\caption{Composition of the solid-state electrolyte \cite{weissbachPhotopatternableSolidElectrolyte2022}.}
+	\begin{tabular}{r r} \hline
+		Component   & Amount \\ \hline
+		H$_{2}$O	& 1.0 mL \\ 
+		$[$EMIM$][$EtSO$_{4}]$   & 1.5 mL \\ 
+		MBBAm   & 20 mg \\ 
+		NIPAm   & 750 mg \\ 
+		HHPAA   & 200 mg \\ \hline
+	\end{tabular}
+	\label{tab:sse}
+\end{table}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=7cm]{Images/pdf/bioprobe_setup.pdf}
+	\caption{Experimental setup to measure threshold voltage shift under ambient conditions.}
+	\label{fig:biosetup}
+\end{figure}
+
+%\newpage
 \subsubsection{Stability on air of p(g3T2-T)}
+In this subsection, the stability of undoped and doped samples of p(g3T2-T) (here F$_{6}$TCNNQ is being used) in N$_{2}$ and ambient conditions were tested at different stages of the photolithography process by measuring the channel conductivity under a fixed biased drain-source voltage. %, upon spin-coating, patterning, i) upon dropcast of solid-state electrolyte precursor, and after exposure, ii) after photopatterned solid-state electrolyte, and finally
+
+\paragraph{Channel conductivity measurements.}Undoped-p(g3T2-T) were measured in N$_{2}$ and ambient conditions immediately after spin-coating onto substrate with patterned gold contacts. Then, they were measured after patterning process (as described in previous section). Finally, upon drop-casting solid-state electrolyte precursor. Doped-p(g3T2-T) channel was measured after patterning and upon drop-casting solid-state electrolyte precursor.
 
 \subsubsection{Reverse oxidation of undoped p(g3T2-T)}
 
-\paragraph{Applying a gate biased}
-\paragraph{Applying a baking step}
+\paragraph{By electrochemical dedoping.}Undoped-p(g3T2-T) samples onto patterned-gold-contacts substrates were prepared. The solid-state-electrolyte precursor was dropcast onto the 14 devices, one device source-drain was biased (-0.3V) and applied a positive gate voltage (+1V). Channel conductivity was monitored. Finally, other devices in the sample were measured to detect any effect of the process.
 
-\subsubsection{Stability of solid OECTs using undoped p(g3T2-T)}
+\paragraph{By heating.}An undoped-p(g3T2-T) solid-OECT, whose fabrication will be described in the following subsection (\ref{subsec:solidOECT}), was exposed to ambient conditions, devices were clearly oxidized. The sample was placed in a hot plate at 120$^{\circ}$C, brought back to glovebox, and measure the following day.  %\cite{weissbachPhotopatternableSolidElectrolyte2022}.
+%% alcohol rinse
+\subsubsection{Solid OECTs using undoped p(g3T2-T)} \label{subsec:solidOECT}
+After following the patterning steps for undoped-(pg3T2-T) from subsection \ref{subsec:photo}. Three different methods of applying the solid-state electrolyte were tested. Then, transfer characteristics at V$_{DS}$=-0.1V at a scanning rate of 0.083 V/s were measured. Cyclic voltammetry and electrochemical impedance spectroscopy were measured at fixed parameters described in section \ref{param}, one day after the fabrication.
 
-\paragraph{OECTs with dropcast Solid-State Electrolyte}
-\paragraph{OECTs with photopatternable Solid-State Electrolyte}
-\paragraph{OECTs with inkjet-printed Solid-State Electrolyte}
+\paragraph{OECTs with dropcast Solid-State Electrolyte.}Solid-state electrolyte precursor was dropcast and then expose for 2 cycles of 60 s in mask aligner, as shown in Figure \ref{fig:undopedsse}A). 
+
+\paragraph{OECTs with photopatternable Solid-State Electrolyte.}First, the application of an adhesion promoter was used, composed by reactants from Table \ref{tab:adprom}, the sample was covered in Petri dish at 50$^{\circ}$C, then rinse very thoroughly with etanol and dry at least 10 min at 100$^{\circ}$C on hot plate. Solid-state-electrolyte precursor was dropcast, then a foil was place on top to avoid contact with mask that will shadow all areas except the ones of interest in the negative resist, expose for 2 cycles of 60 s in mask aligner, and blow-off with N$_{2}$ gun, as shown in Figure \ref{fig:undopedsse}B),  following reference \cite{weissbachPhotopatternableSolidElectrolyte2022}.
+
+\begin{table}[h]
+	\centering
+	\caption{Composition of adhesion promoter was defined by Biosens group members at IAPP.}
+	\begin{tabular}{r r} \hline
+		Component   & Amount \\ \hline
+		SilaneA174	& 30 $\mu$L \\ 
+		Etanol   & 3mL \\ 
+		Acetic acid   & 60 $\mu$L \\ \hline
+	\end{tabular}
+	\label{tab:adprom}
+\end{table}
+
+\paragraph{OECTs with inkjet-printed Solid-State Electrolyte.}First, the application of an adhesion promoter was used, composed by reactants from Table \ref{tab:adprom}, the sample was covered in Petri dish at 50$^{\circ}$C, then rinse very thoroughly with etanol and dry at least 10 min at 100$^{\circ}$C on hot plate. Solid-state-electrolyte precursor was ink-jet printed and expose for 2 cycles of 60 s in mask aligner, parameters and procedure was established by members of BioSens group at IAPP, as shown in Figure \ref{fig:undopedsse}C). 
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\textwidth]{Images/pdf/undoped-sse.pdf}
+	\caption[Solid-OECT fabrication with undoped p(g3T2-T)]{Visualization of the workflow for solid-OECT fabrication with undoped p(g3T2-T) by A) dropcasting SSE, B) photopatterning SSE, C) ink-jet printing SSE.}
+	\label{fig:undopedsse}
+\end{figure}
 
 \subsubsection{Solid OECTs using doped p(g3T2-T)}
+After following the patterning steps for doped-(pg3T2-T) from subsection \ref{subsec:photo}. Solid-state-electrolyte precursor was ink-jet printed and expose for 2 cycles of 60 s in mask aligner, parameters and procedure was established by members of BioSens group at IAPP. Then, transfer characteristics at V$_{DS}$=-0.1V at a scanning rate of 0.083 V/s were measured. Cyclic voltammetry and electrochemical impedance spectroscopy were measured at fixed parameters described in section \ref{param}, one day after the fabrication.
 
-\subsubsection{Threshold voltage shift}
 
-%\subsection{An item}
-%A master's thesis is never an isolated work. This means that your text must contain references. On-line documents\cite{wiki} as well as books\cite{pratchett06:_good_omens} can be referenced.
 
-%\section{Figures}
-%Figures are used to add illustrations to the text. The \fref{fig:logo} shows the KU~Leuven logo as an illustration.
-%\begin{figure}
-%  \centering
-%  \includegraphics{logokul}
-%  \caption{The KU~Leuven logo.}
-%  \label{fig:logo}
-%\end{figure}
-
-%\section{Tables}
-%Tables are used to present data neatly arranged. A table is normally not a spreadsheet! Compare \tref{tab:wrong} en \tref{tab:ok}: which table do you prefer?
-
-%\begin{table}
-%  \centering
-%  \begin{tabular}{||l|lr||} \hline
-%    gnats     & gram      & \$13.65 \\ \cline{2-3}
-%              & each      & .01 \\ \hline
-%    gnu       & stuffed   & 92.50 \\ \cline{1-1} \cline{3-3}
-%    emu       &           & 33.33 \\ \hline
-%    armadillo & frozen    & 8.99 \\ \hline
-%  \end{tabular}
-%  \caption{A table with the wrong layout.}
-%  \label{tab:wrong}
-%\end{table}
-
-%\begin{table}
-%  \centering
-%  \begin{tabular}{@{}llr@{}} \toprule
-%    \multicolumn{2}{c}{Item} \\ \cmidrule(r){1-2}
-%    Animal    & Description & Price (\$)\\ \midrule
-%    Gnat      & per gram    & 13.65 \\
-%              & each        & 0.01 \\
-%    Gnu       & stuffed     & 92.50 \\
-%    Emu       & stuffed     & 33.33 \\
-%    Armadillo & frozen      & 8.99 \\ \bottomrule
-%  \end{tabular}
-%  \caption{A table with the correct layout.}
-%  \label{tab:ok}
-%\end{table}
-
-%\section{Lorem Ipsum}
-%This section is added to check headers and footers. So this chapter must at least contain three pages. To make sure that we get the required amount, the \textsf{lipsum} package isn't used but the text is put directly in the text.
-
-%\section{Conclusion}
-%The final section of the chapter gives an overview of the important results of this chapter. This implies that the introductory chapter and the concluding chapter don't need a conclusion.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=10cm]{Images/pdf/doped-sse.pdf}
+	\caption[Solid-OECT fabrication with doped p(g3T2-T)]{Visualization of the workflow for solid-OECT fabrication with doped p(g3T2-T) by ink-jet printing SSE.}
+	\label{fig:dopedsse}
+\end{figure}
 
 %%% Local Variables: 
 %%% mode: latex
