@@ -21,45 +21,45 @@ Warning--I didn't find a database entry for "rivnayOrganicElectrochemicalTransis
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 30 entries,
+You've used 31 entries,
             4087 wiz_defined-function locations,
-            1041 strings with 17441 characters,
-and the built_in function-call counts, 28822 in all, are:
-= -- 2354
-> -- 981
-< -- 231
-+ -- 519
-- -- 207
-* -- 1451
-:= -- 4112
-add.period$ -- 60
-call.type$ -- 30
-change.case$ -- 29
-chr.to.int$ -- 447
-cite$ -- 30
-duplicate$ -- 2059
-empty$ -- 1977
-format.name$ -- 229
-if$ -- 6738
+            1048 strings with 17757 characters,
+and the built_in function-call counts, 29984 in all, are:
+= -- 2447
+> -- 1020
+< -- 244
++ -- 541
+- -- 214
+* -- 1510
+:= -- 4269
+add.period$ -- 62
+call.type$ -- 31
+change.case$ -- 30
+chr.to.int$ -- 477
+cite$ -- 31
+duplicate$ -- 2135
+empty$ -- 2054
+format.name$ -- 237
+if$ -- 7011
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 405
-newline$ -- 113
-num.names$ -- 30
-pop$ -- 875
+int.to.str$ -- 31
+missing$ -- 419
+newline$ -- 116
+num.names$ -- 31
+pop$ -- 905
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2221
+skip$ -- 2309
 stack$ -- 0
-substring$ -- 1209
-swap$ -- 1876
-text.length$ -- 82
+substring$ -- 1280
+swap$ -- 1950
+text.length$ -- 85
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 30
+type$ -- 31
 warning$ -- 0
-while$ -- 112
-width$ -- 32
-write$ -- 345
+while$ -- 117
+width$ -- 33
+write$ -- 356
 (There was 1 warning)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  11 AUG 2023 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  15 AUG 2023 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1274,12 +1274,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `kulemtfpf' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<logokul.pdf, id=152, 159.33528pt x 56.90298pt>
+<logokul.pdf, id=156, 159.33528pt x 56.90298pt>
 File: logokul.pdf Graphic file (type pdf)
 <use logokul.pdf>
 Package pdftex.def Info: logokul.pdf  used on input line 36.
 (pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
-<logotud.png, id=153, 2007.5pt x 582.175pt>
+<logotud.png, id=157, 2007.5pt x 582.175pt>
 File: logotud.png Graphic file (type png)
 <use logotud.png>
 Package pdftex.def Info: logotud.png  used on input line 36.
@@ -1370,7 +1370,7 @@ iv undefined on input line 45.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/ediagram.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/ediagram.pdf, id=299, 477.20563pt x 379.31166pt>
+<Images/pdf/ediagram.pdf, id=314, 477.20563pt x 379.31166pt>
 File: Images/pdf/ediagram.pdf Graphic file (type pdf)
 <use Images/pdf/ediagram.pdf>
 Package pdftex.def Info: Images/pdf/ediagram.pdf  used on input line 19.
@@ -1384,7 +1384,7 @@ Package pdftex.def Info: Images/pdf/ediagram.pdf  used on input line 19.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/deg_pol.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/deg_pol.pdf, id=314, 268.00125pt x 97.86563pt>
+<Images/pdf/deg_pol.pdf, id=330, 268.00125pt x 97.86563pt>
 File: Images/pdf/deg_pol.pdf Graphic file (type pdf)
 <use Images/pdf/deg_pol.pdf>
 Package pdftex.def Info: Images/pdf/deg_pol.pdf  used on input line 41.
@@ -1393,7 +1393,7 @@ Package pdftex.def Info: Images/pdf/deg_pol.pdf  used on input line 41.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/doping.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/doping.pdf, id=321, 487.06969pt x 127.97812pt>
+<Images/pdf/doping.pdf, id=337, 487.06969pt x 127.97812pt>
 File: Images/pdf/doping.pdf Graphic file (type pdf)
 <use Images/pdf/doping.pdf>
 Package pdftex.def Info: Images/pdf/doping.pdf  used on input line 55.
@@ -1405,7 +1405,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/bipolaron.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/bipolaron.pdf, id=340, 453.55339pt x 340.7673pt>
+<Images/pdf/bipolaron.pdf, id=355, 453.55339pt x 340.7673pt>
 File: Images/pdf/bipolaron.pdf Graphic file (type pdf)
 <use Images/pdf/bipolaron.pdf>
 Package pdftex.def Info: Images/pdf/bipolaron.pdf  used on input line 65.
@@ -1414,7 +1414,7 @@ Package pdftex.def Info: Images/pdf/bipolaron.pdf  used on input line 65.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/bi-polaron.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/bi-polaron.pdf, id=343, 240.9pt x 91.84312pt>
+<Images/pdf/bi-polaron.pdf, id=358, 240.9pt x 91.84312pt>
 File: Images/pdf/bi-polaron.pdf Graphic file (type pdf)
 <use Images/pdf/bi-polaron.pdf>
 Package pdftex.def Info: Images/pdf/bi-polaron.pdf  used on input line 76.
@@ -1426,7 +1426,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIEC_types.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/OMIEC_types.pdf, id=368, 670.84955pt x 542.10066pt>
+<Images/pdf/OMIEC_types.pdf, id=383, 670.84955pt x 542.10066pt>
 File: Images/pdf/OMIEC_types.pdf Graphic file (type pdf)
 <use Images/pdf/OMIEC_types.pdf>
 Package pdftex.def Info: Images/pdf/OMIEC_types.pdf  used on input line 105.
@@ -1438,7 +1438,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIECetransport1.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/OMIECetransport1.pdf, id=398, 179.8997pt x 182.15785pt>
+<Images/pdf/OMIECetransport1.pdf, id=413, 179.8997pt x 182.15785pt>
 File: Images/pdf/OMIECetransport1.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECetransport1.pdf>
 Package pdftex.def Info: Images/pdf/OMIECetransport1.pdf  used on input line 13
@@ -1451,7 +1451,7 @@ Package microtype Info: Character `029' is missing
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIECetransport2.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/OMIECetransport2.pdf, id=399, 641.31606pt x 555.50621pt>
+<Images/pdf/OMIECetransport2.pdf, id=414, 641.31606pt x 555.50621pt>
 File: Images/pdf/OMIECetransport2.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECetransport2.pdf>
 Package pdftex.def Info: Images/pdf/OMIECetransport2.pdf  used on input line 14
@@ -1461,7 +1461,7 @@ Package pdftex.def Info: Images/pdf/OMIECetransport2.pdf  used on input line 14
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIECitransport1.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/OMIECitransport1.pdf, id=423, 757.98741pt x 359.04669pt>
+<Images/pdf/OMIECitransport1.pdf, id=438, 757.98741pt x 359.04669pt>
 File: Images/pdf/OMIECitransport1.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECitransport1.pdf>
 Package pdftex.def Info: Images/pdf/OMIECitransport1.pdf  used on input line 16
@@ -1471,7 +1471,7 @@ Package pdftex.def Info: Images/pdf/OMIECitransport1.pdf  used on input line 16
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIECitransport2.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/OMIECitransport2.pdf, id=424, 648.09058pt x 446.36203pt>
+<Images/pdf/OMIECitransport2.pdf, id=439, 648.09058pt x 446.36203pt>
 File: Images/pdf/OMIECitransport2.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECitransport2.pdf>
 Package pdftex.def Info: Images/pdf/OMIECitransport2.pdf  used on input line 16
@@ -1481,7 +1481,7 @@ Package pdftex.def Info: Images/pdf/OMIECitransport2.pdf  used on input line 16
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/MOSFETvsOECTs.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/MOSFETvsOECTs.pdf, id=445, 845.05814pt x 205.36128pt>
+<Images/pdf/MOSFETvsOECTs.pdf, id=460, 845.05814pt x 205.36128pt>
 File: Images/pdf/MOSFETvsOECTs.pdf Graphic file (type pdf)
 <use Images/pdf/MOSFETvsOECTs.pdf>
 Package pdftex.def Info: Images/pdf/MOSFETvsOECTs.pdf  used on input line 200.
@@ -1490,7 +1490,7 @@ Package pdftex.def Info: Images/pdf/MOSFETvsOECTs.pdf  used on input line 200.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/structure.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/structure.pdf, id=451, 379.094pt x 321.87228pt>
+<Images/pdf/structure.pdf, id=466, 379.094pt x 321.87228pt>
 File: Images/pdf/structure.pdf Graphic file (type pdf)
 <use Images/pdf/structure.pdf>
 Package pdftex.def Info: Images/pdf/structure.pdf  used on input line 209.
@@ -1499,7 +1499,7 @@ Package pdftex.def Info: Images/pdf/structure.pdf  used on input line 209.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/circuits.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/circuits.pdf, id=452, 1616.8392pt x 672.93025pt>
+<Images/pdf/circuits.pdf, id=467, 1616.8392pt x 672.93025pt>
 File: Images/pdf/circuits.pdf Graphic file (type pdf)
 <use Images/pdf/circuits.pdf>
 Package pdftex.def Info: Images/pdf/circuits.pdf  used on input line 214.
@@ -1512,7 +1512,7 @@ f/circuits.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/depletion.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/depletion.pdf, id=474, 409.21072pt x 464.92662pt>
+<Images/pdf/depletion.pdf, id=489, 409.21072pt x 464.92662pt>
 File: Images/pdf/depletion.pdf Graphic file (type pdf)
 <use Images/pdf/depletion.pdf>
 Package pdftex.def Info: Images/pdf/depletion.pdf  used on input line 227.
@@ -1521,7 +1521,7 @@ Package pdftex.def Info: Images/pdf/depletion.pdf  used on input line 227.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/accumulation.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/accumulation.pdf, id=475, 402.81093pt x 461.16202pt>
+<Images/pdf/accumulation.pdf, id=490, 402.81093pt x 461.16202pt>
 File: Images/pdf/accumulation.pdf Graphic file (type pdf)
 <use Images/pdf/accumulation.pdf>
 Package pdftex.def Info: Images/pdf/accumulation.pdf  used on input line 229.
@@ -1530,7 +1530,7 @@ Package pdftex.def Info: Images/pdf/accumulation.pdf  used on input line 229.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/g2T-T.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/g2T-T.pdf, id=504, 239.4278pt x 112.18472pt>
+<Images/pdf/g2T-T.pdf, id=519, 239.4278pt x 112.18472pt>
 File: Images/pdf/g2T-T.pdf Graphic file (type pdf)
 <use Images/pdf/g2T-T.pdf>
 Package pdftex.def Info: Images/pdf/g2T-T.pdf  used on input line 253.
@@ -1539,7 +1539,7 @@ Package pdftex.def Info: Images/pdf/g2T-T.pdf  used on input line 253.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/pg3t+perf.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/pg3t+perf.pdf, id=509, 601.4972pt x 281.55188pt>
+<Images/pdf/pg3t+perf.pdf, id=524, 601.4972pt x 281.55188pt>
 File: Images/pdf/pg3t+perf.pdf Graphic file (type pdf)
 <use Images/pdf/pg3t+perf.pdf>
 Package pdftex.def Info: Images/pdf/pg3t+perf.pdf  used on input line 264.
@@ -1559,7 +1559,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/gm_sizes.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/gm_sizes.pdf, id=549, 295.16974pt x 343.3607pt>
+<Images/pdf/gm_sizes.pdf, id=564, 295.16974pt x 343.3607pt>
 File: Images/pdf/gm_sizes.pdf Graphic file (type pdf)
 <use Images/pdf/gm_sizes.pdf>
 Package pdftex.def Info: Images/pdf/gm_sizes.pdf  used on input line 304.
@@ -1568,7 +1568,7 @@ Package pdftex.def Info: Images/pdf/gm_sizes.pdf  used on input line 304.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/uc_omiecs.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/uc_omiecs.pdf, id=550, 462.75148pt x 344.49036pt>
+<Images/pdf/uc_omiecs.pdf, id=565, 462.75148pt x 344.49036pt>
 File: Images/pdf/uc_omiecs.pdf Graphic file (type pdf)
 <use Images/pdf/uc_omiecs.pdf>
 Package pdftex.def Info: Images/pdf/uc_omiecs.pdf  used on input line 306.
@@ -1577,7 +1577,7 @@ Package pdftex.def Info: Images/pdf/uc_omiecs.pdf  used on input line 306.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/wf_shift.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/wf_shift.pdf, id=578, 383.18156pt x 280.79906pt>
+<Images/pdf/wf_shift.pdf, id=593, 383.18156pt x 280.79906pt>
 File: Images/pdf/wf_shift.pdf Graphic file (type pdf)
 <use Images/pdf/wf_shift.pdf>
 Package pdftex.def Info: Images/pdf/wf_shift.pdf  used on input line 333.
@@ -1586,7 +1586,7 @@ Package pdftex.def Info: Images/pdf/wf_shift.pdf  used on input line 333.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/vth_shift.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/vth_shift.pdf, id=579, 340.27126pt x 280.04625pt>
+<Images/pdf/vth_shift.pdf, id=594, 340.27126pt x 280.04625pt>
 File: Images/pdf/vth_shift.pdf Graphic file (type pdf)
 <use Images/pdf/vth_shift.pdf>
 Package pdftex.def Info: Images/pdf/vth_shift.pdf  used on input line 335.
@@ -1595,7 +1595,7 @@ Package pdftex.def Info: Images/pdf/vth_shift.pdf  used on input line 335.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/ORR.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/ORR.pdf, id=608, 547.06728pt x 379.31166pt>
+<Images/pdf/ORR.pdf, id=624, 547.06728pt x 379.31166pt>
 File: Images/pdf/ORR.pdf Graphic file (type pdf)
 <use Images/pdf/ORR.pdf>
 Package pdftex.def Info: Images/pdf/ORR.pdf  used on input line 398.
@@ -1622,43 +1622,82 @@ oxy-4'-(2-hydroxyethoxy)-
 
 
 
-]) [25]
+]
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/doping_color.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/doping_color.pdf, id=704, 1990.9402pt x 1501.67322pt>
+File: Images/pdf/doping_color.pdf Graphic file (type pdf)
+<use Images/pdf/doping_color.pdf>
+Package pdftex.def Info: Images/pdf/doping_color.pdf  used on input line 10.
+(pdftex.def)             Requested size: 227.62204pt x 171.66913pt.
+[25 <./Images/pdf/doping_color.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/abs+inlet.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/abs+inlet.pdf, id=714, 2903.23488pt x 1862.97801pt>
+File: Images/pdf/abs+inlet.pdf Graphic file (type pdf)
+<use Images/pdf/abs+inlet.pdf>
+Package pdftex.def Info: Images/pdf/abs+inlet.pdf  used on input line 20.
+(pdftex.def)             Requested size: 398.0pt x 255.38564pt.
+[26 <./Images/pdf/abs+inlet.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/WF.pdf): PDF inclusion: found P
+DF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/WF.pdf, id=730, 557.159pt x 388.88194pt>
+File: Images/pdf/WF.pdf Graphic file (type pdf)
+<use Images/pdf/WF.pdf>
+Package pdftex.def Info: Images/pdf/WF.pdf  used on input line 47.
+(pdftex.def)             Requested size: 227.62204pt x 158.87297pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/Dopingprocess.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/dopingprocess.pdf, id=731, 537.21222pt x 399.67886pt>
+File: Images/pdf/dopingprocess.pdf Graphic file (type pdf)
+<use Images/pdf/dopingprocess.pdf>
+Package pdftex.def Info: Images/pdf/dopingprocess.pdf  used on input line 61.
+(pdftex.def)             Requested size: 284.52756pt x 211.6885pt.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27 <./Images/pdf/WF.pdf>] [28 <./Images/pdf/Dopingprocess.pdf>]
 \openout2 = `conclusion.aux'.
 
- (./conclusion.tex [26
+ (./conclusion.tex)
+[29
 
 
 
 
-])
-[27] [28
+] [30
 
 
 
-] [29] [30]
+] [31] [32]
 \openout2 = `app-A.aux'.
 
- (./app-A.tex) [31
+ (./app-A.tex) [33
 
 
 ]
 \openout2 = `app-n.aux'.
 
- (./app-n.tex [32
+ (./app-n.tex [34
 
 
 
 
-]) [33] [34
+]) [35] [36
 
 
 
 ]
 (./thesis.bbl
 bibitemlist
-[35
+[37
 
-] [36]) [37]
+] [38] [39]) [40]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1674,16 +1713,16 @@ bibitemlist
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4AAA50FED3CCAD45171E73ACA9E88B12;6967.
+(rerunfilecheck)             Checksum: A98A8577084AFBFF71BB27284758F6FC;7125.
  ) 
 Here is how much of TeX's memory you used:
- 19034 strings out of 475071
- 324961 string characters out of 5782908
- 846619 words of memory out of 5000000
- 39625 multiletter control sequences out of 15000+600000
- 603479 words of font info for 234 fonts, out of 8000000 for 9000
+ 19084 strings out of 475071
+ 326155 string characters out of 5782908
+ 847402 words of memory out of 5000000
+ 39659 multiletter control sequences out of 15000+600000
+ 603580 words of font info for 235 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,79p,1743b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,79p,1743b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2022/tex
 mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/
 dvips/lm/lm-mathit.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
@@ -1701,10 +1740,10 @@ r8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2
 ts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm
 /lmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/
 texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (45 pages, 3251630 bytes).
+Output written on thesis.pdf (48 pages, 5412798 bytes).
 PDF statistics:
- 870 PDF objects out of 1000 (max. 8388607)
- 715 compressed objects within 8 object streams
- 191 named destinations out of 1000 (max. 500000)
- 72609 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 931 PDF objects out of 1000 (max. 8388607)
+ 761 compressed objects within 8 object streams
+ 201 named destinations out of 1000 (max. 500000)
+ 72637 words of extra memory for PDF output out of 74296 (max. 10000000)
 
