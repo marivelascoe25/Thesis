@@ -6,12 +6,12 @@ import scipy.constants as sc
 #from scipy.signal import argrelextrema
 plt.rcParams.update({'font.size':22})
 
-dir_path2 = 'Data\\2. UVVis\\23.03.20'
-dir_path1 = 'Data\\2. UVVis\\23.04.05'
-dir_path3 = 'Data\\2. UVVis\\23.02.23_old'
+dir_path2 = 'Data\\2. UVVis\\0. Old data\\23.03.20'
+dir_path1 = 'Data\\2. UVVis\\0. Old data\\23.04.05'
+dir_path3 = 'Data\\2. UVVis\\0. Old data\\23.02.23_old'
 
-title1 = "Doping p(g3T2-T)"#_23.03.20"
-title2 = "Doping p(g3T2-T)"
+title2 = "Doping p(g3T2-T)"#_23.03.20"
+title1 = "After 2 weeks in air"
 title3 = "Doping p(g3T2-T)"
 
 ## Add N=True for a normalized absorbance plot
@@ -21,11 +21,13 @@ if N:
     y_axis = "Normalized Absorbance (a.u.)"
 else:
     y_axis = "Absorbance (%)"
-plot_absorbance(dir_path1,title1,x_axis,y_axis)
+
+#plot_absorbance(dir_path1,title1,x_axis,y_axis)
 #plot_multiple_abs([dir_path1,dir_path2],[title1,title2],x_axis,y_axis)
 #plot_multiple_abs([dir_path1,dir_path2,dir_path3],[title1,title2,title3],x_axis,y_axis)
 
-#X, Y, L = plot_absorbance(dir_path1,title1,x_axis,y_axis, N) 
+X, Y, L = plot_absorbance(dir_path1,title1,x_axis,y_axis, N)
+
 """
 peak_array = []
 
@@ -46,4 +48,6 @@ for k in range(len(peak_array)): ## Number of plots
         E = sc.Planck * sc.c / (sc.eV * wl*(10**-9))
         print(str(wl) + "nm <> " + str(round(E,2)) + "eV")
 """
+#plt.savefig("Doping.pdf", format="pdf", bbox_inches="tight")
+#plt.legend()
 plt.show()
