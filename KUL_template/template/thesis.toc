@@ -61,21 +61,22 @@
 \contentsline {paragraph}{OECT with inkjet-printed Solid-State Electrolyte.}{27}{section*.50}%
 \contentsline {chapter}{\chapternumberline {4}Results and Discussion}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Doping characterization}{29}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Absorbance and air stability}{29}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Workfunction shift}{29}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Thickness, sheet resistance and resistivity}{29}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Fabrication of Organic Electrochemical Transistors}{29}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Influence of doping OECT channel}{29}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Stability on air of p(g3T2-T)}{29}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Reverse oxidation of undoped-p(g3T2-T)}{29}{subsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}By electrochemical dedoping}{29}{subsubsection.4.2.3.1}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}By heating}{29}{subsubsection.4.2.3.2}%
-\contentsline {subsection}{\numberline {4.2.4}Solid-OECTs using undoped-p(g3T2-T)}{29}{subsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}OECT with dropcast Solid-State Electrolyte}{29}{subsubsection.4.2.4.1}%
-\contentsline {subsubsection}{\numberline {4.2.4.2}OECT with photopatternable Solid-State Electrolyte}{29}{subsubsection.4.2.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}OECT with inkjet-Printed Solid-State Electrolyte}{29}{subsubsection.4.2.4.3}%
-\contentsline {subsection}{\numberline {4.2.5}Solid-OECTs with doped-p(g3T2-T)}{29}{subsection.4.2.5}%
-\contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{31}{chapter.5}%
-\contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) doped with F6TCNNQ}{35}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}PEDOT:PSS vs doped p(g3T2-T) as channel}{37}{appendix.B}%
-\contentsline {chapter}{Bibliography}{39}{appendix*.52}%
+\contentsline {subsection}{\numberline {4.1.1}Absorbance and dopants diffusion}{29}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Workfunction}{30}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Thickness, sheet resistance and resistivity}{32}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Fabrication of Organic Electrochemical Transistors}{32}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Influence of doping OECT channel}{32}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Stability on air of p(g3T2-T)}{32}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Reverse oxidation of undoped-p(g3T2-T}{32}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}By Electrochemical Dedoping}{32}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}By Heating}{32}{subsubsection.4.2.3.2}%
+\contentsline {subsection}{\numberline {4.2.4}Solid-OECTs using undoped p(g3T2-T)}{32}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Dropcasted Solid-State Electrolyte}{32}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}OECT with dropcast Solid-State Electrolyte}{32}{subsubsection.4.2.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}OECT with photopatternable Solid-State Electrolyte}{32}{subsubsection.4.2.4.3}%
+\contentsline {subsubsection}{\numberline {4.2.4.4}OECT with inkjet-Printed Solid-State Electrolyte}{32}{subsubsection.4.2.4.4}%
+\contentsline {subsection}{\numberline {4.2.5}Solid-OECTs using doped-p(g3T2-T)}{32}{subsection.4.2.5}%
+\contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{33}{chapter.5}%
+\contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) doped with F6TCNNQ}{37}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}PEDOT:PSS vs doped p(g3T2-T) as channel}{39}{appendix.B}%
+\contentsline {chapter}{Bibliography}{41}{appendix*.57}%

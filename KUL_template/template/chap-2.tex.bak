@@ -62,9 +62,9 @@ All fabrication steps were performed under standard cleanroom conditions.
 
 \subsection{Preparation of films}
 
-\paragraph{Dynamic spin-coating of p(g3T2-T).} Unlike reference \cite{tanTuningOrganicElectrochemical2022}, in which drop cast is used to deposit undoped and doped p(g3T2-T), in order to perform photolithography and being able to do a miniaturization process, homogeneous films are needed. Dynamic spin-coating was previously stablished by BioSens group members at IAPP, due to the high volatility of p(g3T2-T) solvant: chloroform. Substrates were cleaned using subsequent steps of ultrasonic bath with acetone for 15 minutes, IPA rinsing, N$_{2}$ drying and O$_{2}$-plasma cleaning. Then 70$\mu$L of 10 mg/mL of p(g3T2-T) mixed at 60$^{\circ}$C for 20 minutes, was dynamic-spin-coated at 3000 RPM for 60s, to yield approximately 70nm-thick films.
+\paragraph{Dynamic spin-coating of p(g3T2-T).}Unlike reference \cite{tanTuningOrganicElectrochemical2022}, in which drop cast is used to deposit undoped and doped p(g3T2-T), in order to perform photolithography and being able to do a miniaturization process, homogeneous films are needed. Dynamic spin-coating was previously stablished by BioSens group members at IAPP, due to the high volatility of p(g3T2-T) solvant: chloroform. Substrates were cleaned using subsequent steps of ultrasonic bath with acetone for 15 minutes, IPA rinsing, N$_{2}$ drying and O$_{2}$-plasma cleaning. Then 70$\mu$L of 10 mg/mL of p(g3T2-T) mixed at 60$^{\circ}$C for 20 minutes, was dynamic-spin-coated at 3000 RPM for 60s, to yield approximately 70nm-thick films.
 
-\paragraph{Dynamic spin-coating of F$_{4}$TCNQ dopant.} Different doping levels of p(g3T2-T) was achieved by dynamic spin-coating dopants at different concentrations 5, 10 and 20 mg/mL, previously mixed in acetronitrile at $60^{\circ}$C for 20 minutes.
+\paragraph{Dynamic spin-coating of F$_{4}$TCNQ dopant.}Different doping levels of p(g3T2-T) was achieved by dynamic spin-coating dopants at different concentrations 5, 10 and 20 mg/mL, previously mixed in acetronitrile at $60^{\circ}$C for 20 minutes.
 
 %\begin{enumerate}
 %\item prepare 10mg/mL solution of p(g3T2-T) in chloroform at $60^{\circ}$C,
@@ -77,9 +77,7 @@ All fabrication steps were performed under standard cleanroom conditions.
 
 \subsection{Doping characterization of films}
 
-\subsubsection{UV-Vis-NIR Spectroscopy}
-
-After the preparation of the films, Transmittance (T) and reflectance (R) was measured using the UV-Vis-NIR Spectrometer in the range of 285 to 1600 nm, using a slit width of 5,0 nm. Then absorption (A) was calculated via
+\paragraph{UV-Vis-NIR Spectroscopy.}After the preparation of the films, Transmittance (T) and reflectance (R) was measured using the UV-Vis-NIR Spectrometer in the range of 285 to 1600 nm, using a slit width of 5,0 nm. Then absorption (A) was calculated via
 
 
 \begin{equation}\label{eq:abs}
@@ -90,9 +88,7 @@ normalized with respect to the incoming light.
 
 Additional measurements were taken, after a couple of days of storage under ambient conditions.
 
-\subsubsection{Ultraviolet Photoelectron Spectroscopy}
-
-After the preparation of the films, with some exposure to air, the energy of the highest occupied molecular orbital cutoff (E$_{HOMO}$) and the high binding energy cutoff E$_{HBEC}$ was measuring using UPS. The pressure in the chamber during measurements was about 5$\cdot$10$^{-9}$ mbar, while the base pressure is in the range of 10$\cdot$10$^{-10}$ mbar. The workfunction (WF) and ionization energy (IE) are given by the following equations:
+\paragraph{Ultraviolet Photoelectron Spectroscopy.}After the preparation of the films (air exposure) the energy of the highest occupied molecular orbital cutoff (E$_{HOMO}$) and the high binding energy cutoff E$_{HBEC}$ was measuring using UPS. The pressure in the chamber during measurements was about 5$\cdot$10$^{-9}$ mbar, while the base pressure is in the range of 10$\cdot$10$^{-10}$ mbar. The workfunction (WF) and ionization energy (IE) are given by the following equations:
 
 \begin{equation}\label{eq:wf}
 	WF = h\nu - E_{HBEC},
@@ -104,16 +100,15 @@ After the preparation of the films, with some exposure to air, the energy of the
 
 where $h\nu = 21.22 eV$, the main He I excitation line. 
 
-\subsubsection{Profilometer}
-The films were scratched 4 times to remove part of material, and measure the cavity deep to obtain the film thickness.
+\paragraph{Profilometer.} The films were scratched 4 times to remove part of material, and measure the cavity deep to obtain the film thickness.
 
-\subsubsection{Van Der Paw}
+\paragraph{Van Der Paw}
 
 %\subsection{Roughness characterization of films} 
 
 \subsection{Fabrication of Organic Electrochemical Transistors}
 
-\subsubsection{Threshold voltage shift by doping OECT channel}
+\paragraph{Doping OECT channel}
 
 %After following the patterning process to obtain Au contacts from reference , undoped and doped p(g3T2-T) was deposited following the procedure described before. After some trials, different patterning process were defined for undoped and doped films.
 

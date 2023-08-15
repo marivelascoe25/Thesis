@@ -1121,3 +1121,24 @@
   abstract = {Electronic structure and optical absorption spectra of poly(3,4-ethylenedioxythiophene) (PEDOT) for different oxidation levels were studied using density functional theory (DFT) and time-dependent DFT. It is shown, that the DFT-based predictions for the polaronic and bipolaronic states and the nature of corresponding optical transitions are qualitatively different from the widely used traditional picture based on semi-empirical pre-DFT approaches that still dominate the current literature. On the basis of the results of our calculations, the experimental Vis/NIR absorbance spectroscopy and the electron paramagnetic resonance spectroscopy are re-examined, and a new interpretation of the measured spectra and the spin signal, which is qualitatively different from the traditional interpretation, is provided. The findings and conclusions concerning the nature of polaronic and bipolaronic states, band structure and absorption spectra presented for PEDOT, are generic for a wide class of conducting polymers (such as polythiophenes and their derivatives) that have a similar structure of monomer units.},
   file = {C\:\\Users\\menriquez\\Zotero\\storage\\W2UHBYBQ\\acsapm.html}
 }
+
+@article{enenglDopinginducedAbsorptionBands2016,
+  title = {Doping-Induced Absorption Bands in {{P3HT}}: Polarons and Bipolarons},
+  shorttitle = {Doping-Induced Absorption Bands in {{P3HT}}},
+  author = {Enengl, Christina and Enengl, Sandra and Pluczyk, Sandra and Havlicek, Marek and Lapkowski, Mieczyslaw and Neugebauer, Helmut and Ehrenfreund, Eitan},
+  year = {2016},
+  journal = {ChemPhysChem},
+  volume = {17},
+  number = {23},
+  pages = {3836--3844},
+  issn = {1439-7641},
+  doi = {10.1002/cphc.201600961},
+  urldate = {2023-08-15},
+  abstract = {In this work, we focus on the formation of different kinds of charge carriers such as polarons and bipolarons upon p-type doping (oxidation) of the organic semiconductor poly(3- hexylthiophene-2,5-diyl) (P3HT). We elucidate the cyclic voltammogram during oxidation of this polymer and present spectroscopic changes upon doping in the UV/Vis/near-IR range as well as in the mid-IR range. In the low-oxidation regime, two absorption bands related to sub-gap transitions appear, one in the UV/Vis range and another one in the mid-IR range. The UV/Vis absorption gradually decreases upon further doping while the mid-IR absorption shifts to lower energy. Additionally, electron paramagnetic resonance (EPR) measurements are performed, showing an increase of the EPR signal up to a certain doping level, which significantly decreases upon further doping. Furthermore, the absorption spectra in the UV/Vis range are analyzed in relation to the morphology (crystalline vs. amorphous) by using theoretical models. Finally, the calculated charge carriers from cyclic voltammogram are linked together with optical transitions as well as with the EPR signals upon p-type doping. We stress that our results indicate the formation of polarons at low doping levels and the existence of bipolarons at high doping levels. The presented spectroscopic data are an experimental evidence of the formation of bipolarons in P3HT.},
+  copyright = {\textcopyright{} 2016 Wiley-VCH Verlag GmbH \& Co. KGaA, Weinheim},
+  langid = {english},
+  keywords = {bipolarons,doping,organic semiconductors,polarons,spectroelectrochemistry},
+  file = {C\:\\Users\\menriquez\\Zotero\\storage\\EM288RSS\\Enengl et al_2016_Doping-Induced Absorption Bands in P3HT.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\4494VT89\\cphc.html}
+}
+
+

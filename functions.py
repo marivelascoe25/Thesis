@@ -43,6 +43,17 @@ def extract_data(dir,x,y,z):
             pass
     return X,Y,Z
 
+def extract_data_abs(dir,x,y):
+    X, Y = [], []
+    for line in open(dir, 'r'):
+        sline = line.split('\t')    
+        try:
+            X.append(float(sline[x]))
+            Y.append(float(sline[y]))
+        except:
+            pass
+    return X,Y
+
 def extract_data_loop2(dir,x,y,n_loop):
     X, Y = [], []
     loop_case = 2
@@ -76,8 +87,8 @@ def extract_data_loops(dir,x,y,n_loop):
     return X,Y
 
 def absorbance(files, N=False):
-    X1, R = extract_data(files[0],0,1)
-    X2, T = extract_data(files[1],0,1)
+    X1, R = extract_data_abs(files[0],0,1)
+    X2, T = extract_data_abs(files[1],0,1)
     A = 100*np.ones(len(X2)) - T - R
     if N:
         maxA = np.max(A)
@@ -290,7 +301,6 @@ def plot_absorbance(dir_path,title,x_axis,y_axis,N=False):
     ## Store files
     R, T = read_directory_UV(dir_path)
     L = []
-
     ## Get plot legends
     for i in range(len(R)):
         start = R[i].index('R_')
@@ -299,7 +309,7 @@ def plot_absorbance(dir_path,title,x_axis,y_axis,N=False):
         except:
             end = start+14
         L.append(R[i][start+2:end])
-
+   
     ## Print plots
 
     AX = []
@@ -307,12 +317,15 @@ def plot_absorbance(dir_path,title,x_axis,y_axis,N=False):
     max_aux = []
     max = []
 
-    plt.figure(figsize=(10, 7.5))
+    plt.figure(figsize=(12, 9))
     plt.title(title,fontsize=28,fontweight='bold')
     plt.xlabel(x_axis,fontsize=25,fontweight='bold')
     plt.ylabel(y_axis,fontsize=25,fontweight='bold')
     #plt.xlim([300, 2000])
-    plt.xlim([300, 1600])
+    #plt.xlim([300, 1600])
+    #plt.ylim([0, 70])
+    plt.xlim([300, 1000])
+    plt.ylim([10, 50])
 
     for i in range (len(T)):
         files = [R[i], T[i]]
@@ -322,7 +335,6 @@ def plot_absorbance(dir_path,title,x_axis,y_axis,N=False):
         plt.plot(AX[i], AY[i], label = L[i])
     #print (AX[2])
     #print (len(AX[2]))
-    plt.legend()
     plt.grid()
     return AX, AY, L
 
