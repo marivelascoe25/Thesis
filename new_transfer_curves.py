@@ -17,8 +17,10 @@ plt.rcParams.update({'font.size':22})
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB_aftergatededoping'
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB_aftergatededopingx2'
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB_aftergatededoping'#'Data\\3. Transfer curves\\1. IV\\230602_new_pg3t+solidSE_aftergatededopingsolid'
-dir_path = 'Data\\3. Transfer curves\\1. IV\\230605_new_pg3t+solidSE_aftergatededopingsolid'
+#dir_path = 'Data\\3. Transfer curves\\1. IV\\230605_new_pg3t+solidSE_aftergatededopingsolid'
 #dir_path = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t'
+#dir_path = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped5'
+dir_path = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped10'
 
 ## Store files
 transfer, out = read_directory_transfer(dir_path)
@@ -27,19 +29,19 @@ transfer, out = read_directory_transfer(dir_path)
 L , Vds = plot_legends(transfer)
 
 ## Get plot titles
-T = plot_titles(transfer)
+T = plot_titles_morevds(transfer)
 #Column 6 and 8 (9 if loop is added) corresponds to Ids and Vgs in previous files
 #IV
-column_ids=3
-column_vgs=6
+#column_ids=3
+#column_vgs=6
 
 #bioprobe
 #column_ids=5
 #column_vgs=7
 
 ##old data bioprobe with loops
-#column_ids=6
-#column_vgs=9
+column_ids=6
+column_vgs=9
 column_loop=column_vgs-1
 
 ## Get plots
@@ -47,7 +49,7 @@ column_loop=column_vgs-1
 # Use loop_case = 2 if you want to all loops except the first one
 # Use loop_case other if you want to plot all
 # trans default is False, if True, transconductance is plotted
-X, Y, gm, gmax = plot_transfer_curves(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, loop_case=2) 
+X, Y, gm = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, loop_case=2)
 
 ## Doping
 c1 = 10 /40
