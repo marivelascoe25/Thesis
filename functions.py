@@ -2,19 +2,20 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import matplotlib.ticker as ticker
 import numpy as np
+from numpy import diff
 import os
 import math
 #from sklearn.linear_model import LinearRegression
 from scipy.stats import linregress
 import csv
 
-#Vds1 = -0.7
-#Vds2 = -0.5
-#Vds3 = -0.3
-#Vds4 = -0.1
-Vds1 = -0.1
-Vds2 = -0.05
-Vds3 = -0.01
+Vds1 = -0.7
+Vds2 = -0.5
+Vds3 = -0.3
+Vds4 = -0.1
+#Vds1 = -0.1
+#Vds2 = -0.05
+#Vds3 = -0.01
 
 
 def extract_csv_column_data(file_path, column_index):
@@ -286,6 +287,17 @@ def plot_titles(transfer):
     T=list(dict.fromkeys(T))
     return T
 
+def plot_titles_morevds(transfer):
+    ## Get plot title
+    T = []
+    for i in range(len(transfer)):
+        start = transfer[i].index('transfer')
+        #T.append(transfer[i][start-14:start-5]) ## Just used when for pg3tWL
+        T.append(transfer[i][start-7:start-5])
+    #T=list(dict.fromkeys(T))
+    T=list(dict.fromkeys(T))
+    return T
+
 def plot_titles_deox(deox):
     ## Get plot title
     T = []
@@ -388,16 +400,16 @@ def calculate_transconductance(vgs, ids):
 def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = False, loop_case = 1):
     num_devices = len(T)
     num_files = len(transfer) # for each vds x loops
-   
+    
     X_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
     Y_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
-    gm = [[0.0 for i in range (num_files)] for k in range(num_devices)]
-    gmax = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    #gm = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    #gmax = [[0.0 for i in range (num_files)] for k in range(num_devices)]
 
     for k in range(num_devices):
         plt.figure(figsize=(11, 7.5))
-        plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
-        plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+        plt.xlabel("Gate Voltage (V)",fontsize=22,fontweight='bold')
+        plt.ylabel("Drain Current (A)",fontsize=22,fontweight='bold')
         plt.title(T[k])
         plt.yscale('log')
                 
@@ -412,7 +424,7 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = Fals
                     X, Y = extract_data_loops(transfer[i],n_vgs,n_ids,n_loop)
                 else: 
                     X, Y = extract_data(transfer[i],n_vgs,n_ids)
-                gm[k][i], gmax[k][i] = calculate_transconductance(X,Y)
+                #gm[k][i], gmax[k][i] = calculate_transconductance(X,Y)
                 Y = np.absolute(Y)
                 X_structure[k][i] = X_structure[k][i] + np.array(X)
                 Y_structure[k][i] = Y_structure[k][i] + np.array(Y)
@@ -440,6 +452,7 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = Fals
         plt.grid()
 
     ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
+    """
     if trans:
         for k in range(num_devices):
             fig, ax1 = plt.subplots(figsize=(10, 7.5))
@@ -459,10 +472,10 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = Fals
             ax2.set_ylabel("-Phase (°)",fontsize=26,fontweight='bold')
             ax2.yaxis.label.set_color('green')
             ax2.tick_params(axis='y', colors='g')
-
+    """
 
         
-    return X_structure, Y_structure, gm, gmax
+    return X_structure, Y_structure#, gm, gmax
 
 def plot_transfer_linear(T, transfer, L, Vds, n_ids, n_vgs):
 
@@ -914,6 +927,68 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, trans = 
     plt.grid()
 
     return X,Y
+
+def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = False, loop_case = 1):
+    num_devices = len(T)
+    num_files = len(transfer) # for each vds x loops
+    
+    X_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    Y_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    gm = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    gmax = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+
+    for k in range(num_devices):
+        plt.figure(figsize=(11, 7.5))
+        plt.xlabel("Gate Voltage (V)",fontsize=22,fontweight='bold')
+        plt.ylabel("Drain Current (A)",fontsize=22,fontweight='bold')
+        plt.title(T[k])
+        plt.yscale('log')
+                
+        for i in range(num_files):
+            start = transfer[i].index('transfer')
+            if transfer[i][start-7:start-5] == T[k] and transfer[i][start+41:start+43] == "=2": ## Join all data from one device (U# or D#)
+                ## Print plots
+                if loop_case == 1:
+                    X, Y = extract_data_loop2(transfer[i],n_vgs,n_ids,n_loop)
+                elif loop_case == 2:
+                    X, Y = extract_data_loops(transfer[i],n_vgs,n_ids,n_loop)
+                else: 
+                    X, Y = extract_data(transfer[i],n_vgs,n_ids)
+                
+                gm[k][i] = diff(Y)/diff(X)
+                Y = np.absolute(Y) 
+                #print(gm[k][i])
+                #gmax[k][i] = max(gm[k][i])
+                X_structure[k][i] = X_structure[k][i] + np.array(X)
+                Y_structure[k][i] = Y_structure[k][i] + np.array(Y)
+                #print ("Device" + str(k) + L[i])
+                #print (X_structure[k][i])
+
+                #if label
+                if Vds[i] == Vds1:                                   
+                    plt.plot(X, Y, 'o-', color=u'#1f77b4', label=L[i])
+                    X_aux = X[0:-1]
+                    #print(len(X_aux))
+                    #print(len(gm[k][i]))
+                    #plt.text(-1, 0.e-10, gmax[k][i])
+
+                elif Vds[i] == Vds2:
+                    plt.plot(X, Y, 'o-', color=u'#ff7f0e', label=L[i])
+                    #plt.plot(X, gm[k][i], 'o-', color=u'#1f77b4', label=L[i])
+                elif Vds[i] == Vds3:
+                    plt.plot(X, Y, 'o-', color=u'#2ca02c', label=L[i])
+                    #plt.plot(X, gm[k][i], 'o-', color=u'#1f77b4', label=L[i])
+                elif Vds[i] == Vds4:
+                    plt.plot(X, Y, 'o-', color=u'#d62728', label=L[i])
+                else:
+                    plt.plot(X, Y, 'o-', label=L[i])
+                    
+        plt.legend()
+        plt.grid()
+
+    ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
+       
+    return X_structure, Y_structure, gm
 
 def calculate_vth_one_vds(Title, transfer, d1, d2, n_ids, n_vgs, n_loop):
     

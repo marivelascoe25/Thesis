@@ -128,7 +128,7 @@
   title = {Doping {{Properties}} of {{Novel Dopants}} for {{Organic Hole Transport Layers}}},
   author = {Buchholtz, Stephanie Anna},
   year = {2021},
-  month = nov,
+  month = {nov},
   address = {{Dresden, Germany}},
   abstract = {A new class of dopant materials for organic hole transport layers, developed by the TU-Dresden spin-off project Credoxys, is investigated in this thesis. These dopants show an advantage regarding the absorption in the visible and near infrared range. Here, no parasitic absorption by dopant radical anions is detected. The focus is to study the doping efficiency and absorption of thin films doped with these materials. The mainly utilized host material was MeO-TPD, which is a common hole transport material. F6-TCNNQ serves as reference dopant, since it is an efficient dopant. Both materials are well-characterized in several scientific studies. As representative of the new materials, a prototype dopant (CDX-A) and a further developed dopant (CDX-B), are investigated. It is shown that both dopants are capable of doping MeO-TPD. Thereby, conductivity values of up to 2.25 {$\cdot$} 10-4 S/cm are achieved for MeO-TPD:CDX-B at a dopant concentration of 8 mol\%, while MeO-TPD:F6-TCNNQ exhibits only 1.66 {$\cdot$} 10-4 S/cm. By using impedance spectroscopy, doping efficiencies of 0.17 and 0.66 are determined for CDX-A and CDX-B in MeO-TPD at a dopant concentration of 1.7 mol\%. Thus, CDX-B yields a slightly worse result than F6-TCNNQ, which has a doping efficiency of 0.79 at the same dopant concentration. Because of additional trap states in the layers doped by CDX-A, which is detected with impedance spectroscopy, infrared spectroscopy is performed. The aim is to clarify whether the ligands of CDX-A are separated during the doping process, which could be the origin of the additional trap states. However, it is not possible to confirm this theory, since the spectrum of the ligands is largely consistent with that of CDX-A. Finally, also ultraviolet photoelectron spectroscopy of MeO-TPD doped by CDX-A is made. A shift in the chemical potential is confirmed.},
   langid = {english},
@@ -552,15 +552,60 @@
   file = {C\:\\Users\\menriquez\\Zotero\\storage\\GNWQSDPG\\Lüssem et al_2013_Doping of organic semiconductors.pdf;C\:\\Users\\menriquez\\Zotero\\storage\\DHGEIT63\\pssa.html}
 }
 
-@misc{marivelascoe25Marivelascoe25Thesis2023,
-  title = {Marivelascoe25/{{Thesis}}},
-  author = {{marivelascoe25}},
-  year = {2023},
-  month = aug,
-  urldate = {2023-08-10},
-  abstract = {All data analysis for the master thesis, starting from project work}
-}
+@misc{matplotlib_2012,
+	author={Hunter, John and Dale, Darren and Firing, Eric and Droettboom, Michael and Matplotlib development team},
+	year = {2012 - 2023}, 
+	title = {Matplotlib: Quick start guide},
+	url = {https://matplotlib.org/stable/tutorials/introductory/quick_start.html},
+	note = {Date last access: 30-May-2023}
+} 
 
+@misc{numpy_2012,
+	author = {Numpy Developers},
+	year = {2008 - 2022}, 
+	title = {NumPy user guide},
+	url = {https://numpy.org/doc/stable/user/index.html#user},   note = {Date last access: 30-May-2023}
+} 
+
+@misc{scipy_linreg,
+	url={https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html}, 
+	title={Scipy.stats.linregress}, 
+	author={The Scipy community}, 
+	year={2008-2023}, 
+	note = {Date last access: 30-May-2023}
+} 
+
+@misc{peakdetect,
+	author={GitHubUser: avhn},
+	url={https://github.com/avhn/peakdetect/blob/master/README.md},
+	title={Peak Detect Library},  
+	year={2022}, 
+	note = {Date last access: 30-May-2023}
+} 
+
+@misc{csv_module,
+	author={Python Software Foundation},
+	year={2001-2023},
+	url={https://docs.python.org/3/library/csv.html}, 
+	title={CSV File Reading and Writing}, 
+	note = {Date last access: 30-May-2023}
+} 
+
+@misc{os_module, 
+	url={https://docs.python.org/3/library/os.html},
+	title={Miscellaneous operating system interfaces},
+	author={Python Software Foundation}, 
+	year={2001-2023},
+	note = {Date last access: 30-May-2023}
+} 
+
+@misc{uvvis, 
+	url={https://speciation.net/Database/Instruments/Shimadzu-Europe/SolidSpec37003700DUV-;i1305},
+	title={ Instrument Database: Shimadzu Europe - SolidSpec-3700/3700DUV},
+	author={European Virtual Institute for Speciation Analysis (EVISA)}, 
+	year={2003-2010},
+	note = {Date last access: 30-May-2023}
+} 
 @phdthesis{mattElectronicStructureMorphology2021,
   type = {{{doctoralThesis}}},
   title = {Electronic Structure and Morphology of Organic Semiconductors and the Impact of Molecular Modifications},
