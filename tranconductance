@@ -4,43 +4,39 @@ import numpy as np
 from numpy import diff
 plt.rcParams.update({'font.size':20})
 
-dir = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t\\D3_m01_transfer1-02_trans_drain=-7.000e-01_Loop1=2.txt'
-n_ids=6
-n_vgs=9
-n_loop=n_vgs-1
-number = 2
+#Undoped
+#dir1 = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t\\U4_m01_transfer1-11_trans_drain=-1.000e-01_Loop1=2.txt'
+#dir2 = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t\\U4_m01_transfer1-02_trans_drain=-7.000e-01_Loop1=2.txt'
 
-vgs, ids = extract_data_loop_number(dir,n_vgs,n_ids,n_loop, number)
-#nvgs = int(len(vgs)/2)
-#nids = int(len(ids)/2)
-#vgs = vgs[0:nvgs]
-#ids = ids[0:nids]
-#Y = np.absolute(ids)
-#X_aux = vgs[0:-1]
-vgs = vgs[0:37] # De +1 a -0.8
-vgs.reverse()
-ids = ids[0:37] # De +1 a -0.8
-ids.reverse()
+#Doped 5mg/mL
+#dir1 = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped5\\D3_m01_transfer1-12_trans_drain=-1.000e-01_Loop1=3.txt'
+#dir2 = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped5\\D3_m01_transfer1-03_trans_drain=-7.000e-01_Loop1=3.txt'
 
-def calculate_transconductance(ids_data, vgs_data, index, delta_vgs=1e-6):
-    ids_at_vgs = ids_data[index]
-    ids_at_vgs_plus_delta = np.interp(vgs_data[index] + delta_vgs, vgs_data, ids_data)
-    
-    gm = (ids_at_vgs_plus_delta - ids_at_vgs) / delta_vgs
-    return gm
+#Doped 10mg/mL
+dir1 = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped10\\U4_m01_transfer1-12_trans_drain=-1.000e-01_Loop1=3.txt'
+dir2 = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped10\\U4_m02_transfer1-3_trans_drain=-7.000e-01_Loop1=3.txt'
 
-# Calculate transconductance at a specific data point index
-data_point_index = 5  # Choose an appropriate index
-gm = calculate_transconductance(ids, vgs, data_point_index)
+dir = [dir1, dir2]
+#Column 6 and 8 (9 if loop is added) corresponds to Ids and Vgs in previous files
+#IV
+#column_ids=3
+#column_vgs=6
 
-# Plot transconductance vs. input voltage using the existing data
-gm_values = [calculate_transconductance(ids, vgs, i) for i in range(len(vgs))]
+#bioprobe
+#column_ids=5
+#column_vgs=7
 
-plt.figure(figsize=(10, 6))
-plt.plot(vgs, gm_values, label=r'$g_m$')
-plt.xlabel(r'$V_{GS}$ (V)')
-plt.ylabel(r'$g_m$ (A/V)')
-plt.title('Transconductance vs. Input Voltage')
-plt.legend()
-plt.grid(True)
+##old data bioprobe with loops
+column_ids=6
+column_vgs=9
+#column_igs=column_vgs+1
+#column_loop=column_vgs-1
+loop_nr = 3
+
+L, Vds = plot_legends(dir)
+c = [u'#6E005F', u'#E05C5C']
+
+plot_linear_ids_transconductance(dir, column_ids, column_vgs, loop_nr, L, c)
+#plot_linear_ids_transconductance(dir1, n_ids, n_vgs, loop_nr)
+#plot_linear_ids_transconductance(dir2, n_ids, n_vgs, loop_nr)
 plt.show()
