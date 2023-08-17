@@ -55,9 +55,8 @@ def extract_data_abs(dir,x,y):
             pass
     return X,Y
 
-def extract_data_loop2(dir,x,y,n_loop):
+def extract_data_loop_number(dir,x,y,n_loop, loop_case):
     X, Y = [], []
-    loop_case = 2
     for line in open(dir, 'r'):
         sline = line.split('\t')
         try:  
@@ -386,18 +385,7 @@ def plot_multiple_abs(dir_paths,titles,x_axis,y_axis):
         axs[k].legend()
         axs[k].grid()
 
-def calculate_transconductance(vgs, ids):
-    # Calculate the derivative of ids with respect to vgs
-    dvgs = np.gradient(vgs)
-    dids = np.gradient(ids)
-    
-    # Calculate transconductance (gm)
-    gm = dids / dvgs
-    gmax = np.max(gm)*1000
-    
-    return gm, gmax
-
-def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = False, loop_case = 1):
+def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = False, loop_case = 1, number=2):
     num_devices = len(T)
     num_files = len(transfer) # for each vds x loops
     
@@ -419,7 +407,7 @@ def plot_transfer_curves(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = Fals
                 
                 ## Print plots
                 if loop_case == 1:
-                    X, Y = extract_data_loop2(transfer[i],n_vgs,n_ids,n_loop)
+                    X, Y = extract_data_loop_number(transfer[i],n_vgs,n_ids,n_loop, number)
                 elif loop_case == 2:
                     X, Y = extract_data_loops(transfer[i],n_vgs,n_ids,n_loop)
                 else: 
@@ -928,14 +916,12 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, trans = 
 
     return X,Y
 
-def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = False, loop_case = 1):
+def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 1, number=2):
     num_devices = len(T)
     num_files = len(transfer) # for each vds x loops
     
     X_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
     Y_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
-    gm = [[0.0 for i in range (num_files)] for k in range(num_devices)]
-    gmax = [[0.0 for i in range (num_files)] for k in range(num_devices)]
 
     for k in range(num_devices):
         plt.figure(figsize=(11, 7.5))
@@ -946,49 +932,58 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = 
                 
         for i in range(num_files):
             start = transfer[i].index('transfer')
-            if transfer[i][start-7:start-5] == T[k] and transfer[i][start+41:start+43] == "=2": ## Join all data from one device (U# or D#)
+            if transfer[i][start-7:start-5] == T[k] and transfer[i][start+41:start+43] == "="+str(number): ## Join all data from one device (U# or D#)
                 ## Print plots
                 if loop_case == 1:
-                    X, Y = extract_data_loop2(transfer[i],n_vgs,n_ids,n_loop)
+                    X, Y = extract_data_loop_number(transfer[i],n_vgs,n_ids,n_loop, number)
                 elif loop_case == 2:
                     X, Y = extract_data_loops(transfer[i],n_vgs,n_ids,n_loop)
                 else: 
                     X, Y = extract_data(transfer[i],n_vgs,n_ids)
                 
-                gm[k][i] = diff(Y)/diff(X)
                 Y = np.absolute(Y) 
                 #print(gm[k][i])
-                #gmax[k][i] = max(gm[k][i])
                 X_structure[k][i] = X_structure[k][i] + np.array(X)
                 Y_structure[k][i] = Y_structure[k][i] + np.array(Y)
                 #print ("Device" + str(k) + L[i])
                 #print (X_structure[k][i])
-
+                
                 #if label
-                if Vds[i] == Vds1:                                   
-                    plt.plot(X, Y, 'o-', color=u'#1f77b4', label=L[i])
-                    X_aux = X[0:-1]
-                    #print(len(X_aux))
-                    #print(len(gm[k][i]))
-                    #plt.text(-1, 0.e-10, gmax[k][i])
+                if Vds[i] == Vds1:
+                    colorr = u'#1f77b4'          
+                    labell = L[i]                       
+                    plt.plot(X, Y, '-', color=colorr, label=labell)
+                        #print(len(X_aux))
+                        #print(len(gm[k][i]))
+                        #plt.text(-1, 0.e-10, gmax[k][i])
 
                 elif Vds[i] == Vds2:
-                    plt.plot(X, Y, 'o-', color=u'#ff7f0e', label=L[i])
-                    #plt.plot(X, gm[k][i], 'o-', color=u'#1f77b4', label=L[i])
+                    #plt.plot(X, Y, '-', color=u'#ff7f0e', label=L[i])
+                    colorr = u'#ff7f0e'          
+                    labell = L[i]                       
+                    plt.plot(X, Y, '-', color=colorr, label=labell)
                 elif Vds[i] == Vds3:
-                    plt.plot(X, Y, 'o-', color=u'#2ca02c', label=L[i])
-                    #plt.plot(X, gm[k][i], 'o-', color=u'#1f77b4', label=L[i])
+                    #plt.plot(X, Y, '-', color=u'#2ca02c', label=L[i])
+                    colorr = u'#2ca02c'          
+                    labell = L[i]                       
+                    plt.plot(X, Y, '-', color=colorr, label=labell)
                 elif Vds[i] == Vds4:
-                    plt.plot(X, Y, 'o-', color=u'#d62728', label=L[i])
+                    #plt.plot(X, Y, '-', color=u'#d62728', label=L[i])
+                    colorr = u'#d62728'          
+                    labell = L[i]                       
+                    plt.plot(X, Y, '-', color=colorr, label=labell)
                 else:
-                    plt.plot(X, Y, 'o-', label=L[i])
+                    #plt.plot(X, Y, '-', label=L[i])
+                    colorr = u'#1f77b4'          
+                    labell = L[i]                       
+                    plt.plot(X, Y, '-', color=colorr, label=labell)
                     
         plt.legend()
         plt.grid()
 
     ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
        
-    return X_structure, Y_structure, gm
+    return X_structure, Y_structure
 
 def calculate_vth_one_vds(Title, transfer, d1, d2, n_ids, n_vgs, n_loop):
     
@@ -1051,3 +1046,107 @@ def calculate_vth_one_vds(Title, transfer, d1, d2, n_ids, n_vgs, n_loop):
     #        plt.plot(V_GS[i], sqrtI_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)), label = "Loop" + str(i+1))
     #plt.legend()
     #plt.grid()
+
+def plot_transfer_tranconductance_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 1, number=2):
+    num_devices = len(T)
+    num_files = len(transfer) # for each vds x loops
+    
+    X_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    Y_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    gm = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    #gmax = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+
+    for k in range(num_devices):
+        plt.figure(figsize=(12, 6))
+        plt.suptitle(T[k])
+        plt.subplot(121)
+        plt.xlabel("Gate Voltage (V)",fontsize=20,fontweight='bold')
+        plt.ylabel("Drain Current (A)",fontsize=20,fontweight='bold')
+        plt.yscale('log')
+        plt.subplot(122)
+        plt.xlabel("Gate Voltage (V)",fontsize=20,fontweight='bold')
+        plt.ylabel("Transconductance (S)",fontsize=20,fontweight='bold')
+        #plt.yscale('log')
+                
+        for i in range(num_files):
+            start = transfer[i].index('transfer')
+            if transfer[i][start-7:start-5] == T[k] and transfer[i][start+41:start+43] == "="+str(number): ## Join all data from one device (U# or D#)
+                ## Print plots
+                if loop_case == 1:
+                    X, Y = extract_data_loop_number(transfer[i],n_vgs,n_ids,n_loop, number)
+                elif loop_case == 2:
+                    X, Y = extract_data_loops(transfer[i],n_vgs,n_ids,n_loop)
+                else: 
+                    X, Y = extract_data(transfer[i],n_vgs,n_ids)
+                Y = np.absolute(Y)
+                gm[k][i] = diff(Y)/diff(X)#np.absolute(diff(Y)/diff(X))
+                X_aux = X[0:-1] 
+                #print(gm[k][i])
+                #gmax[k][i] = max(gm[k][i])
+                X_structure[k][i] = X_structure[k][i] + np.array(X)
+                Y_structure[k][i] = Y_structure[k][i] + np.array(Y)
+                #print ("Device" + str(k) + L[i])
+                #print (X_structure[k][i])
+                
+                #if label
+                if Vds[i] == Vds1:
+                    colorr = u'#1f77b4'          
+                    labell = L[i]                       
+                    plt.subplot(121)                       
+                    plt.plot(X, Y, '-', color=colorr, label=labell)
+                    plt.legend()
+                    plt.grid()
+                    plt.subplot(122)
+                    plt.plot(X_aux, gm[k][i], '-', color=colorr, label=labell)
+
+                elif Vds[i] == Vds2:
+                    #plt.plot(X, Y, '-', color=u'#ff7f0e', label=L[i])
+                    colorr = u'#ff7f0e'          
+                    labell = L[i]
+                    plt.subplot(121)                       
+                    plt.plot(X, Y, '-', color=colorr, label=labell)
+                    plt.legend()
+                    plt.grid()
+                    plt.subplot(122)
+                    plt.plot(X_aux, gm[k][i], '-', color=colorr, label=labell)
+
+                elif Vds[i] == Vds3:
+                    #plt.plot(X, Y, '-', color=u'#2ca02c', label=L[i])
+                    colorr = u'#2ca02c'          
+                    labell = L[i]                       
+                    plt.subplot(121)                       
+                    plt.plot(X, Y, '-', color=colorr, label=labell)
+                    plt.legend()
+                    plt.grid()
+                    plt.subplot(122)
+                    plt.plot(X_aux, gm[k][i], '-', color=colorr, label=labell)
+                elif Vds[i] == Vds4:
+                    #plt.plot(X, Y, '-', color=u'#d62728', label=L[i])
+                    colorr = u'#d62728'          
+                    labell = L[i]                       
+                    plt.subplot(121)                       
+                    plt.plot(X, Y, '-', color=colorr, label=labell)
+                    plt.legend()
+                    plt.grid()
+                    plt.subplot(122)
+                    plt.plot(X_aux, gm[k][i], '-', color=colorr, label=labell)
+                else:
+                    #plt.plot(X, Y, '-', label=L[i])
+                    colorr = u'#1f77b4'          
+                    labell = L[i]                       
+                    plt.subplot(121)                       
+                    plt.plot(X, Y, '-', color=colorr, label=labell)
+                    plt.legend()
+                    plt.grid()
+                    plt.subplot(122)
+                    plt.plot(X_aux, gm[k][i], '-', color=colorr, label=labell)
+                    
+        plt.legend()
+        plt.grid()
+
+    ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
+       
+    return X_structure, Y_structure, gm
+
+
+
