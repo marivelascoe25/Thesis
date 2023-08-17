@@ -55,20 +55,21 @@ def extract_data_abs(dir,x,y):
             pass
     return X,Y
 
-def extract_data_loop_number(dir,x,y,n_loop, loop_case):
-    X, Y = [], []
+def extract_data_loop_number(dir,x,y,z, n_loop, loop_case):
+    X, Y, Z = [], [], []
     for line in open(dir, 'r'):
         sline = line.split('\t')
         try:  
             if int(sline[n_loop]) == loop_case:  
                 try:
                     X.append(float(sline[x]))
-                    Y.append(float(sline[y]))
+                    Y.append(float(sline[y]))                    
+                    Z.append(float(sline[z]))
                 except:
                     pass
         except:
             pass
-    return X,Y
+    return X,Y,Z
 
 def extract_data_loops(dir,x,y,n_loop):
     X, Y = [], []
@@ -171,8 +172,8 @@ def plot_CV (dir_path, title, WE, Ref):
             Potential[index-2].append(V_All[j])
             Current[index-2].append(I_All[j])
 
-    c1 = 'red'
-    c2 = 'blue'
+    c1 = '#B7E6A5'
+    c2 = '#003147'
 
     plt.figure(figsize=(12, 7.5))
     plt.title(title)
@@ -898,8 +899,8 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, trans = 
         V_GS[index-1].append(X[j])
         I_DS[index-1].append(Y[j])
     
-    c1 = 'red'
-    c2 = 'blue'
+    c1 = '#F9D8E6'
+    c2 = '#8F003B'
 
     plt.figure(figsize=(11, 7.5))
     plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
@@ -1148,5 +1149,59 @@ def plot_transfer_tranconductance_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop,
        
     return X_structure, Y_structure, gm
 
+def calculate_transconductance(ids_data, vgs_data, index, delta_vgs=1e-6):
+    ids_at_vgs = ids_data[index]
+    ids_at_vgs_plus_delta = np.interp(vgs_data[index] + delta_vgs, vgs_data, ids_data)
+    
+    gm = 1000*(ids_at_vgs_plus_delta - ids_at_vgs) / delta_vgs
+    return gm
+
+def plot_linear_ids_transconductance(dir, n_ids, n_vgs, loop_nr, L, c):
+    
+    #n_ids=6
+    #n_vgs=9
+    n_igs=n_vgs+1
+    n_loop=n_vgs-1
+    #number = 2
+    fig, ax1 = plt.subplots(figsize=(10, 7))
+    ax2 = ax1.twinx()
+    ax1.set_xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
+    ax1.set_ylabel(r'$I_D$ (mA)',fontsize=20,fontweight='bold')
+    ax1.set_ylim(-0.25,0.75)
+
+    ax2.set_ylabel(r'$g_m$ (mS)',fontsize=20,fontweight='bold')
+    ax2.set_ylim(-0.25,0.75) ## 0 correspond to a perfect resistor and 90 to a perfect capacitor
+
+    ax1.grid(color='lightgrey')#, linestyle='-')
+    ax2.grid(color='lightgrey')#, linestyle='-')
+    
+    for i in range(len(dir)):
+        vgs, ids, igs = extract_data_loop_number(dir[i],n_vgs,n_ids,n_igs,n_loop, loop_nr)
+        end = int(len(vgs)/2)
+        vgs = vgs[0:end] # De +1 a -0.8
+        vgs.reverse()
+        ids = ids[0:end] # De +1 a -0.8
+        ids.reverse()
+
+        # Calculate transconductance at a specific data point index
+        data_point_index = 5 # Choose an appropriate index
+        gm = calculate_transconductance(ids, vgs, data_point_index)
+
+        # Plot transconductance vs. input voltage using the existing data
+        gm_values = [calculate_transconductance(ids, vgs, i) for i in range(len(vgs))]
+
+        id = [-1000*ids[i] for i in range(len(ids))]
+
+        ax1.plot(vgs, id, label=L[i],color=c[i], linewidth=2)
+        ax2.plot(vgs, gm_values, label=L[i], color=c[i], linewidth=2)
+
+        ax2.legend()
+        # ask matplotlib for the plotted objects and their labels
+        #lines, labels = ax1.get_legend_handles_labels()
+        #lines2, labels2 = ax2.get_legend_handles_labels()
+        #x2.legend(lines + lines2, labels + labels2, loc=0)
+
+        
+    #plt.show()
 
 
