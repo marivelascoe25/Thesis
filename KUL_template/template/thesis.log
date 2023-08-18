@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.4)  17 AUG 2023 11:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.4)  18 AUG 2023 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1394,7 +1394,7 @@ nd PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/doping.pdf, id=379, 487.06969pt x 127.97812pt>
 File: Images/pdf/doping.pdf Graphic file (type pdf)
 <use Images/pdf/doping.pdf>
-Package pdftex.def Info: Images/pdf/doping.pdf  used on input line 56.
+Package pdftex.def Info: Images/pdf/doping.pdf  used on input line 57.
 (pdftex.def)             Requested size: 341.43306pt x 89.71295pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1406,7 +1406,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/bipolaron.pdf, id=396, 779.64615pt x 585.76991pt>
 File: Images/pdf/bipolaron.pdf Graphic file (type pdf)
 <use Images/pdf/bipolaron.pdf>
-Package pdftex.def Info: Images/pdf/bipolaron.pdf  used on input line 66.
+Package pdftex.def Info: Images/pdf/bipolaron.pdf  used on input line 67.
 (pdftex.def)             Requested size: 284.52756pt x 213.77295pt.
 
 
@@ -1415,7 +1415,7 @@ pdfTeX warning: pdflatex.exe (file ./Images/pdf/bi-polaron.pdf): PDF inclusion:
 <Images/pdf/bi-polaron.pdf, id=400, 240.9pt x 91.84312pt>
 File: Images/pdf/bi-polaron.pdf Graphic file (type pdf)
 <use Images/pdf/bi-polaron.pdf>
-Package pdftex.def Info: Images/pdf/bi-polaron.pdf  used on input line 77.
+Package pdftex.def Info: Images/pdf/bi-polaron.pdf  used on input line 78.
 (pdftex.def)             Requested size: 284.52756pt x 108.48604pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1427,7 +1427,7 @@ pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIEC_types.pdf): PDF inclusion
 <Images/pdf/OMIEC_types.pdf, id=423, 670.84955pt x 542.10066pt>
 File: Images/pdf/OMIEC_types.pdf Graphic file (type pdf)
 <use Images/pdf/OMIEC_types.pdf>
-Package pdftex.def Info: Images/pdf/OMIEC_types.pdf  used on input line 106.
+Package pdftex.def Info: Images/pdf/OMIEC_types.pdf  used on input line 107.
 (pdftex.def)             Requested size: 398.0pt x 321.61505pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1440,7 +1440,7 @@ usion: found PDF version <1.7>, but at most version <1.5> allowed
 File: Images/pdf/OMIECetransport1.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECetransport1.pdf>
 Package pdftex.def Info: Images/pdf/OMIECetransport1.pdf  used on input line 14
-1.
+2.
 (pdftex.def)             Requested size: 142.26378pt x 144.05598pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/9'.
@@ -1453,7 +1453,7 @@ usion: found PDF version <1.7>, but at most version <1.5> allowed
 File: Images/pdf/OMIECetransport2.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECetransport2.pdf>
 Package pdftex.def Info: Images/pdf/OMIECetransport2.pdf  used on input line 14
-4.
+5.
 (pdftex.def)             Requested size: 142.26378pt x 123.22041pt.
 [8 <./Images/pdf/OMIECetransport1.pdf> <./Images/pdf/OMIECetransport2.pdf>]
 
@@ -1463,7 +1463,7 @@ usion: found PDF version <1.7>, but at most version <1.5> allowed
 File: Images/pdf/OMIECitransport1.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECitransport1.pdf>
 Package pdftex.def Info: Images/pdf/OMIECitransport1.pdf  used on input line 16
-3.
+4.
 (pdftex.def)             Requested size: 199.16928pt x 94.34155pt.
 
 
@@ -1473,10 +1473,10 @@ usion: found PDF version <1.7>, but at most version <1.5> allowed
 File: Images/pdf/OMIECitransport2.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECitransport2.pdf>
 Package pdftex.def Info: Images/pdf/OMIECitransport2.pdf  used on input line 16
-6.
+7.
 (pdftex.def)             Requested size: 142.26378pt x 97.982pt.
 
-Overfull \hbox (19.02107pt too wide) in paragraph at lines 197--198
+Overfull \hbox (19.02107pt too wide) in paragraph at lines 198--199
 \T1/lmr/m/n/10.95 (-20) Although the struc-ture of OECTs is dif-fer-ent from co
 n-ven-tional metal-oxide-semiconductor
  []
@@ -1488,7 +1488,7 @@ on: found PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/MOSFETvsOECTs.pdf, id=501, 845.05814pt x 205.36128pt>
 File: Images/pdf/MOSFETvsOECTs.pdf Graphic file (type pdf)
 <use Images/pdf/MOSFETvsOECTs.pdf>
-Package pdftex.def Info: Images/pdf/MOSFETvsOECTs.pdf  used on input line 202.
+Package pdftex.def Info: Images/pdf/MOSFETvsOECTs.pdf  used on input line 203.
 (pdftex.def)             Requested size: 398.0pt x 96.72035pt.
 
 
@@ -1497,7 +1497,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/structure.pdf, id=507, 379.094pt x 321.87228pt>
 File: Images/pdf/structure.pdf Graphic file (type pdf)
 <use Images/pdf/structure.pdf>
-Package pdftex.def Info: Images/pdf/structure.pdf  used on input line 211.
+Package pdftex.def Info: Images/pdf/structure.pdf  used on input line 212.
 (pdftex.def)             Requested size: 99.58464pt x 84.55412pt.
 
 
@@ -1506,7 +1506,7 @@ ound PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/circuits.pdf, id=508, 1616.8392pt x 672.93025pt>
 File: Images/pdf/circuits.pdf Graphic file (type pdf)
 <use Images/pdf/circuits.pdf>
-Package pdftex.def Info: Images/pdf/circuits.pdf  used on input line 216.
+Package pdftex.def Info: Images/pdf/circuits.pdf  used on input line 217.
 (pdftex.def)             Requested size: 227.62204pt x 94.73326pt.
 
 Underfull \vbox (badness 2698) has occurred while \output is active []
@@ -1519,7 +1519,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/depletion.pdf, id=528, 409.21072pt x 464.92662pt>
 File: Images/pdf/depletion.pdf Graphic file (type pdf)
 <use Images/pdf/depletion.pdf>
-Package pdftex.def Info: Images/pdf/depletion.pdf  used on input line 229.
+Package pdftex.def Info: Images/pdf/depletion.pdf  used on input line 230.
 (pdftex.def)             Requested size: 175.30154pt x 199.16928pt.
 
 
@@ -1528,7 +1528,7 @@ n: found PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/accumulation.pdf, id=529, 402.81093pt x 461.16202pt>
 File: Images/pdf/accumulation.pdf Graphic file (type pdf)
 <use Images/pdf/accumulation.pdf>
-Package pdftex.def Info: Images/pdf/accumulation.pdf  used on input line 231.
+Package pdftex.def Info: Images/pdf/accumulation.pdf  used on input line 232.
 (pdftex.def)             Requested size: 173.96747pt x 199.16928pt.
 [11 <./Images/pdf/depletion.pdf> <./Images/pdf/accumulation.pdf>]
 
@@ -1537,7 +1537,7 @@ d PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/g2T-T.pdf, id=558, 239.4278pt x 112.18472pt>
 File: Images/pdf/g2T-T.pdf Graphic file (type pdf)
 <use Images/pdf/g2T-T.pdf>
-Package pdftex.def Info: Images/pdf/g2T-T.pdf  used on input line 255.
+Package pdftex.def Info: Images/pdf/g2T-T.pdf  used on input line 256.
 (pdftex.def)             Requested size: 199.16928pt x 93.32211pt.
 
 
@@ -1546,19 +1546,19 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/pg3t+perf.pdf, id=563, 601.4972pt x 281.55188pt>
 File: Images/pdf/pg3t+perf.pdf Graphic file (type pdf)
 <use Images/pdf/pg3t+perf.pdf>
-Package pdftex.def Info: Images/pdf/pg3t+perf.pdf  used on input line 266.
+Package pdftex.def Info: Images/pdf/pg3t+perf.pdf  used on input line 267.
 (pdftex.def)             Requested size: 284.52756pt x 133.18861pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12 <./Images/pdf/g2T-T.pdf>]
-LaTeX Font Info:    Calculating math sizes for size <7.665> on input line 286.
+LaTeX Font Info:    Calculating math sizes for size <7.665> on input line 287.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.665> on input line 286.
+(Font)              <7.665> on input line 287.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.36546> on input line 286.
+(Font)              <5.36546> on input line 287.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.83249> on input line 286.
+(Font)              <3.83249> on input line 287.
  [13{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./Images/pdf
 /pg3t+perf.pdf>]
 
@@ -1567,7 +1567,7 @@ ound PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/gm_sizes.pdf, id=604, 110.67888pt x 128.7489pt>
 File: Images/pdf/gm_sizes.pdf Graphic file (type pdf)
 <use Images/pdf/gm_sizes.pdf>
-Package pdftex.def Info: Images/pdf/gm_sizes.pdf  used on input line 306.
+Package pdftex.def Info: Images/pdf/gm_sizes.pdf  used on input line 307.
 (pdftex.def)             Requested size: 128.0374pt x 148.95001pt.
 
 
@@ -1576,7 +1576,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/uc_omiecs.pdf, id=605, 795.45741pt x 592.16968pt>
 File: Images/pdf/uc_omiecs.pdf Graphic file (type pdf)
 <use Images/pdf/uc_omiecs.pdf>
-Package pdftex.def Info: Images/pdf/uc_omiecs.pdf  used on input line 308.
+Package pdftex.def Info: Images/pdf/uc_omiecs.pdf  used on input line 309.
 (pdftex.def)             Requested size: 199.16928pt x 148.26794pt.
 [14 <./Images/pdf/gm_sizes.pdf> <./Images/pdf/uc_omiecs.pdf>]
 
@@ -1585,7 +1585,7 @@ ound PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/wf_shift.pdf, id=629, 383.18156pt x 280.79906pt>
 File: Images/pdf/wf_shift.pdf Graphic file (type pdf)
 <use Images/pdf/wf_shift.pdf>
-Package pdftex.def Info: Images/pdf/wf_shift.pdf  used on input line 335.
+Package pdftex.def Info: Images/pdf/wf_shift.pdf  used on input line 336.
 (pdftex.def)             Requested size: 165.02606pt x 120.93405pt.
 
 
@@ -1594,7 +1594,7 @@ found PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/vth_shift.pdf, id=630, 340.27126pt x 280.04625pt>
 File: Images/pdf/vth_shift.pdf Graphic file (type pdf)
 <use Images/pdf/vth_shift.pdf>
-Package pdftex.def Info: Images/pdf/vth_shift.pdf  used on input line 337.
+Package pdftex.def Info: Images/pdf/vth_shift.pdf  used on input line 338.
 (pdftex.def)             Requested size: 142.26378pt x 117.08447pt.
 [15 <./Images/pdf/wf_shift.pdf> <./Images/pdf/vth_shift.pdf>] [16]
 
@@ -1603,7 +1603,7 @@ PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/ORR.pdf, id=671, 547.06728pt x 379.31166pt>
 File: Images/pdf/ORR.pdf Graphic file (type pdf)
 <use Images/pdf/ORR.pdf>
-Package pdftex.def Info: Images/pdf/ORR.pdf  used on input line 401.
+Package pdftex.def Info: Images/pdf/ORR.pdf  used on input line 402.
 (pdftex.def)             Requested size: 284.52756pt x 197.27792pt.
 ) [17 <./Images/pdf/ORR.pdf>]
 \openout2 = `chap-2.aux'.
@@ -1671,7 +1671,7 @@ ion: found PDF version <1.7>, but at most version <1.5> allowed
 <Images/pdf/bioprobe_setup.pdf, id=774, 554.14737pt x 277.8266pt>
 File: Images/pdf/bioprobe_setup.pdf Graphic file (type pdf)
 <use Images/pdf/bioprobe_setup.pdf>
-Package pdftex.def Info: Images/pdf/bioprobe_setup.pdf  used on input line 200.
+Package pdftex.def Info: Images/pdf/bioprobe_setup.pdf  used on input line 202.
 
 (pdftex.def)             Requested size: 199.16928pt x 99.85216pt.
 [25 <./Images/pdf/doped-patterning.pdf>] [26 <./Images/pdf/bioprobe_setup.pdf>]
@@ -1679,19 +1679,19 @@ Package pdftex.def Info: Images/pdf/bioprobe_setup.pdf  used on input line 200.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/undoped-sse.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/undoped-sse.pdf, id=808, 1632.70181pt x 752.91757pt>
+<Images/pdf/undoped-sse.pdf, id=807, 1632.70181pt x 752.91757pt>
 File: Images/pdf/undoped-sse.pdf Graphic file (type pdf)
 <use Images/pdf/undoped-sse.pdf>
-Package pdftex.def Info: Images/pdf/undoped-sse.pdf  used on input line 240.
+Package pdftex.def Info: Images/pdf/undoped-sse.pdf  used on input line 242.
 (pdftex.def)             Requested size: 398.0pt x 183.53009pt.
 [27 <./Images/pdf/undoped-sse.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/doped-sse.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/doped-sse.pdf, id=822, 1069.14299pt x 228.88695pt>
+<Images/pdf/doped-sse.pdf, id=820, 1069.14299pt x 228.88695pt>
 File: Images/pdf/doped-sse.pdf Graphic file (type pdf)
 <use Images/pdf/doped-sse.pdf>
-Package pdftex.def Info: Images/pdf/doped-sse.pdf  used on input line 251.
+Package pdftex.def Info: Images/pdf/doped-sse.pdf  used on input line 253.
 (pdftex.def)             Requested size: 284.52756pt x 60.9132pt.
 ) [28 <./Images/pdf/doped-sse.pdf>]
 \openout2 = `chap-3.aux'.
@@ -1756,31 +1756,39 @@ File: Images/pdf/transfer_undoped.pdf Graphic file (type pdf)
 Package pdftex.def Info: Images/pdf/transfer_undoped.pdf  used on input line 98
 .
 (pdftex.def)             Requested size: 229.5169pt x 156.49014pt.
-File: Images/pdf/transfer_undoped.pdf Graphic file (type pdf)
-<use Images/pdf/transfer_undoped.pdf>
-Package pdftex.def Info: Images/pdf/transfer_undoped.pdf  used on input line 99
-.
-(pdftex.def)             Requested size: 229.5169pt x 156.49014pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/id+gm_undoped.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/id+gm_undoped.pdf, id=874, 376.45879pt x 263.52116pt>
+File: Images/pdf/id+gm_undoped.pdf Graphic file (type pdf)
+<use Images/pdf/id+gm_undoped.pdf>
+Package pdftex.def Info: Images/pdf/id+gm_undoped.pdf  used on input line 99.
+(pdftex.def)             Requested size: 223.5563pt x 156.49014pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_doped5.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/transfer_doped5.pdf, id=874, 794.97159pt x 542.02611pt>
+<Images/pdf/transfer_doped5.pdf, id=875, 794.97159pt x 542.02611pt>
 File: Images/pdf/transfer_doped5.pdf Graphic file (type pdf)
 <use Images/pdf/transfer_doped5.pdf>
 Package pdftex.def Info: Images/pdf/transfer_doped5.pdf  used on input line 101
 .
 (pdftex.def)             Requested size: 229.5169pt x 156.49014pt.
-File: Images/pdf/transfer_doped5.pdf Graphic file (type pdf)
-<use Images/pdf/transfer_doped5.pdf>
-Package pdftex.def Info: Images/pdf/transfer_doped5.pdf  used on input line 102
-.
-(pdftex.def)             Requested size: 229.5169pt x 156.49014pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/id+gm_doped5.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/id+gm_doped5.pdf, id=876, 376.45879pt x 263.52116pt>
+File: Images/pdf/id+gm_doped5.pdf Graphic file (type pdf)
+<use Images/pdf/id+gm_doped5.pdf>
+Package pdftex.def Info: Images/pdf/id+gm_doped5.pdf  used on input line 102.
+(pdftex.def)             Requested size: 223.5563pt x 156.49014pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_doped10.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/transfer_doped10.pdf, id=875, 794.97159pt x 542.02611pt>
+<Images/pdf/transfer_doped10.pdf, id=877, 794.97159pt x 542.02611pt>
 File: Images/pdf/transfer_doped10.pdf Graphic file (type pdf)
 <use Images/pdf/transfer_doped10.pdf>
 Package pdftex.def Info: Images/pdf/transfer_doped10.pdf  used on input line 10
@@ -1792,12 +1800,12 @@ Package pdftex.def Info: Images/pdf/transfer_doped10.pdf  used on input line 10
 5.
 (pdftex.def)             Requested size: 229.5169pt x 156.49014pt.
 
-Overfull \hbox (68.3338pt too wide) in paragraph at lines 98--106
+Overfull \hbox (62.3732pt too wide) in paragraph at lines 98--106
  [][][][] 
  []
 
 
-Overfull \hbox (68.3338pt too wide) in paragraph at lines 98--106
+Overfull \hbox (62.3732pt too wide) in paragraph at lines 98--106
  [][][][] 
  []
 
@@ -1810,18 +1818,19 @@ Overfull \hbox (68.3338pt too wide) in paragraph at lines 98--106
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/Dopingprocess.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/dopingprocess.pdf, id=876, 537.21222pt x 399.67886pt>
+<Images/pdf/dopingprocess.pdf, id=878, 537.21222pt x 399.67886pt>
 File: Images/pdf/dopingprocess.pdf Graphic file (type pdf)
 <use Images/pdf/dopingprocess.pdf>
 Package pdftex.def Info: Images/pdf/dopingprocess.pdf  used on input line 150.
 (pdftex.def)             Requested size: 284.52756pt x 211.6885pt.
 [32 <./Images/pdf/resist+inlet.pdf>]) [33 <./Images/pdf/BigGateDevices.pdf>]
-[34 <./Images/pdf/transfer_undoped.pdf> <./Images/pdf/transfer_doped5.pdf> <./I
-mages/pdf/transfer_doped10.pdf>] [35 <./Images/pdf/Dopingprocess.pdf>]
+[34 <./Images/pdf/transfer_undoped.pdf> <./Images/pdf/id+gm_undoped.pdf> <./Ima
+ges/pdf/transfer_doped5.pdf> <./Images/pdf/id+gm_doped5.pdf> <./Images/pdf/tran
+sfer_doped10.pdf>] [35 <./Images/pdf/Dopingprocess.pdf>]
 \openout2 = `conclusion.aux'.
 
-
-(./conclusion.tex [36
+ (./conclusion.tex
+[36
 
 
 
@@ -1839,8 +1848,7 @@ mages/pdf/transfer_doped10.pdf>] [35 <./Images/pdf/Dopingprocess.pdf>]
 ]
 \openout2 = `app-B.aux'.
 
- (./app-B.tex
-[42
+ (./app-B.tex [42
 
 
 
@@ -1849,7 +1857,8 @@ mages/pdf/transfer_doped10.pdf>] [35 <./Images/pdf/Dopingprocess.pdf>]
 
 
 
-] (./thesis.bbl
+]
+(./thesis.bbl
 bibitemlist
 [45
 
@@ -1868,20 +1877,14 @@ bibitemlist
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 640CD5C9118BCEBDDC4334EF516009B3;7163
-(rerunfilecheck)             After:  069CFABE7CCA75C2921CC0FF811D2E5D;7076.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 069CFABE7CCA75C2921CC0FF811D2E5D;7076.
  ) 
 Here is how much of TeX's memory you used:
- 19571 strings out of 476038
- 336020 string characters out of 5794174
+ 19587 strings out of 476038
+ 336574 string characters out of 5794174
  1867779 words of memory out of 5000000
- 39107 multiletter control sequences out of 15000+600000
+ 39121 multiletter control sequences out of 15000+600000
  647442 words of font info for 248 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,1743b,643s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1898,10 +1901,10 @@ lm/lmri10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/
 texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2023/texmf-
 dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2023/texmf-dist/fonts/type
 1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (56 pages, 11379272 bytes).
+Output written on thesis.pdf (56 pages, 11495465 bytes).
 PDF statistics:
- 1130 PDF objects out of 1200 (max. 8388607)
- 927 compressed objects within 10 object streams
+ 1138 PDF objects out of 1200 (max. 8388607)
+ 931 compressed objects within 10 object streams
  245 named destinations out of 1000 (max. 500000)
- 72697 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 72707 words of extra memory for PDF output out of 74296 (max. 10000000)
 

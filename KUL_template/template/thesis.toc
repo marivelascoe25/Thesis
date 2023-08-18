@@ -54,11 +54,11 @@
 \contentsline {paragraph}{By electrochemical dedoping.}{26}{section*.43}%
 \contentsline {paragraph}{By heating.}{26}{section*.44}%
 \contentsline {subsubsection}{\numberline {3.4.3.4}Solid-OECTs using Undoped-p(g3T2-T)}{26}{subsubsection.3.4.3.4}%
-\contentsline {paragraph}{OECT with dropcasted Solid-State Electrolyte.}{26}{section*.45}%
+\contentsline {paragraph}{OECT with dropcasted Solid-State Electrolyte.}{27}{section*.45}%
 \contentsline {paragraph}{OECT with photopatternable Solid-State Electrolyte.}{27}{section*.46}%
 \contentsline {paragraph}{OECT with inkjet-printed Solid-State Electrolyte.}{27}{section*.48}%
-\contentsline {subsubsection}{\numberline {3.4.3.5}Solid-OECTs using Doped-p(g3T2-T)}{27}{subsubsection.3.4.3.5}%
-\contentsline {paragraph}{OECT with inkjet-printed Solid-State Electrolyte.}{27}{section*.50}%
+\contentsline {subsubsection}{\numberline {3.4.3.5}Solid-OECTs using Doped-p(g3T2-T)}{28}{subsubsection.3.4.3.5}%
+\contentsline {paragraph}{OECT with inkjet-printed Solid-State Electrolyte.}{28}{section*.50}%
 \contentsline {chapter}{\chapternumberline {4}Results and Discussion}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Doping Characterization}{29}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Absorbance and Dopants Diffusion}{29}{subsection.4.1.1}%
