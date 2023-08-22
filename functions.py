@@ -334,17 +334,17 @@ def plot_absorbance(dir_path,title,x_axis,y_axis,N=False):
     plt.xlabel(x_axis,fontsize=25,fontweight='bold')
     plt.ylabel(y_axis,fontsize=25,fontweight='bold')
     #plt.xlim([300, 2000])
-    #plt.xlim([300, 1600])
-    #plt.ylim([0, 70])
-    plt.xlim([300, 1000])
-    plt.ylim([10, 50])
+    plt.xlim([300, 1600])
+    plt.ylim([0, 70])
+    #plt.xlim([300, 850])
+    #plt.ylim([10, 50])
 
     for i in range (len(T)):
         files = [R[i], T[i]]
         X, Y = absorbance(files,N)
         AX.append(X)
         AY.append(Y)
-        plt.plot(AX[i], AY[i], label = L[i])
+        plt.plot(AX[i], AY[i], label = L[i], linewidth = 2)
     #print (AX[2])
     #print (len(AX[2]))
     plt.grid()

@@ -15,51 +15,53 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Scheme of doping processes in organic semiconductors}}{5}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Representation of bipolaron formation introduced via doping}}{5}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Formation of polaron, bipolaron, and bipolaron band}}{6}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Material classes of OMIECs}}{7}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Electronic transport mechanisms in OMIECs}}{8}{figure.caption.15}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Thermally activated hopping}}}}{8}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Band-like transport}}}}{8}{subfigure.7.2}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Ionic transport mechanisms in OMIECs}}{9}{figure.caption.16}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Ion hopping} via segmental motion\\\hspace {1em} or ion clusters}}}{9}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Solvated/vehicle mechanism}}}}{9}{subfigure.8.2}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Material classes of OMIECs}}{8}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Electronic transport mechanisms in OMIECs}}{9}{figure.caption.15}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Thermally activated hopping}}}}{9}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Band-like transport}}}}{9}{subfigure.7.2}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Ionic transport mechanisms in OMIECs}}{10}{figure.caption.16}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Ion hopping} via segmental motion\\\hspace {1em} or ion clusters}}}{10}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Solvated/vehicle mechanism}}}}{10}{subfigure.8.2}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Device physics of MOSFET vs OECT}}{10}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Typical OECT structure and circuit model}}{10}{figure.caption.18}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Typical OECT structure}}}{10}{subfigure.10.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Electronic and ionic circuits}}}{10}{subfigure.10.2}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Depletion- and accumulation-mode OECTs}}{11}{figure.caption.19}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Depletion-mode OECT}}}{11}{subfigure.11.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Accumulation-mode OECT}}}{11}{subfigure.11.2}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Chemical structure of polymer g2T-T}}{12}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Typical OECT structure and circuit model}}{11}{figure.caption.18}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Typical OECT structure}}}{11}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Electronic and ionic circuits}}}{11}{subfigure.10.2}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Depletion- and accumulation-mode OECTs}}{12}{figure.caption.19}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Depletion-mode OECT}}}{12}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Accumulation-mode OECT}}}{12}{subfigure.11.2}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Chemical structure of polymer g2T-T}}{13}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Chemical structure and transconductance of g2T-T with side-chain engineering}}{13}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces OECTs benchmark with different OMIECs}}{14}{figure.caption.22}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{14}{subfigure.14.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{14}{subfigure.14.2}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Tuning of threshold voltage with different levels of doping p(g3T2-T)}}{15}{figure.caption.23}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{15}{subfigure.15.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{15}{subfigure.15.2}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Energy levels of neutral state of OMIECs related to oxygen reduction reactions potentials}}{17}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces OECTs benchmark with different OMIECs}}{15}{figure.caption.23}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{15}{subfigure.14.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{15}{subfigure.14.2}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Tuning of threshold voltage with different levels of doping p(g3T2-T)}}{16}{figure.caption.24}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{16}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{16}{subfigure.15.2}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Energy levels of neutral state of OMIECs related to oxygen reduction reactions potentials}}{18}{figure.caption.25}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Dynamic spin-coating process to obtain undoped and doped films of p(g3T2-T)).\relax }}{22}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Visualization of the workflow for Au-contacts patterning.}}{24}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Visualization of the workflow for patterning undoped p(g3T2-T).\relax }}{24}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualization of the workflow for patterning doped p(g3T2-T).\relax }}{25}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Experimental setup to measure threshold voltage shift under ambient conditions.\relax }}{26}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Solid-OECT fabrication with undoped p(g3T2-T)}}{27}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Solid-OECT fabrication with doped p(g3T2-T)}}{28}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Used photomask for fabricated OECT gold electrodes.\relax }}{22}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Chemical structures of the repeat units of p(g3T2-T) and F$_{4}$TCNQ dopant.\relax }}{23}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Dynamic spin-coating process to obtain undoped and doped films of p(g3T2-T)).\relax }}{23}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualization of the workflow for Au-contacts patterning.}}{25}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Visualization of the workflow for patterning undoped p(g3T2-T).\relax }}{25}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Visualization of the workflow for patterning doped p(g3T2-T).\relax }}{26}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Representation of experimental setup for measuring threshold voltage shift of a single OECT under ambient conditions. Scheme is not drawn to scale.\relax }}{26}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Chemical structures of the repeat units of p(g3T2-T) and F$_{6}$TCNQ dopant.\relax }}{27}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Solid-OECT fabrication with undoped p(g3T2-T)}}{29}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Solid-OECT fabrication with doped p(g3T2-T)}}{29}{figure.caption.56}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Color shift upon doping level increase}}{29}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Absorbance spectra of different doping levels of p(g3T2-T)}}{30}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Representation of the Fermi level shift upon doping}}{31}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sheet resistance and resistivity drop upon doping}}{32}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Micrographs of a patterned channel and gate p(g3T2-T) at different doping levels}}{33}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Transfer characteristics and transconductance at different V$_{DS}$. a), c) and e) correspond to the exponential behavior of undoped, 5 mg/mL and 10 mg/mL doped, respectively.\relax }}{34}{figure.caption.59}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{34}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{34}{subfigure.6.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{34}{subfigure.6.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{34}{subfigure.6.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{34}{subfigure.6.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{34}{subfigure.6.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ}}{35}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Color shift upon doping level increase}}{31}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Sheet resistance and resistivity drop upon doping}}{32}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Absorbance spectra of different doping levels of p(g3T2-T)}}{33}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Representation of the Fermi level shift upon doping}}{34}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Transfer characteristics and transconductance at different doping levels and V$_{DS}$}}{36}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{36}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{36}{subfigure.5.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{36}{subfigure.5.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{36}{subfigure.5.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {}}}{36}{subfigure.5.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {}}}{36}{subfigure.5.6}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ}}{37}{figure.caption.65}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

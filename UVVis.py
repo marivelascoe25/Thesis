@@ -5,21 +5,21 @@ import scipy.constants as sc
 #from scipy.signal import argrelextrema
 plt.rcParams.update({'font.size':22})
 
-dir_path2 = 'Data\\2. UVVis\\0. Old data\\23.03.20'
-dir_path1 = 'Data\\2. UVVis\\0. Old data\\23.04.05'
+dir_path1 = 'Data\\2. UVVis\\0. Old data\\23.03.20'
+dir_path2 = 'Data\\2. UVVis\\0. Old data\\23.04.05'
 dir_path3 = 'Data\\2. UVVis\\0. Old data\\23.02.23_old'
 
-title2 = "Doping p(g3T2-T)"#_23.03.20"
-title1 = "After 2 weeks in air"
+title1 = "Doping p(g3T2-T)"#_23.03.20"
+title2 = "After 2 weeks in air"
 title3 = "Doping p(g3T2-T)"
 
 ## Add N=True for a normalized absorbance plot
 N = False
-x_axis = "Wavelength (nm)"
+x_axis = r"$\lambda$ (nm)"
 if N:
-    y_axis = "Normalized Absorbance (a.u.)"
+    y_axis = "N. A. (a.u.)"
 else:
-    y_axis = "Absorbance (%)"
+    y_axis = "A (%)"
 
 #plot_absorbance(dir_path1,title1,x_axis,y_axis)
 #plot_multiple_abs([dir_path1,dir_path2],[title1,title2],x_axis,y_axis)
