@@ -49,7 +49,7 @@ column_loop=column_vgs-1
 # Use loop_case = 2 if you want to all loops except the first one
 # Use loop_case other if you want to plot all
 # trans default is False, if True, transconductance is plotted
-X, Y, Z = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop,number=3)#, loop_case=3)
+#X, Y, Z = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop,number=3)#, loop_case=3)
 
 
 ## Doping
@@ -58,6 +58,6 @@ c2 = 14/40
 ## Undoping
 #c1 = 18/40
 #c2 = 21/40
-
-#calculate_vth (T, transfer, L, Vds, c1, c2, column_ids, column_vgs, column_loop)
+number = 3
+calculate_vth (T, transfer, L, Vds, c1, c2, column_ids, column_vgs, column_loop, number)
 plt.show()

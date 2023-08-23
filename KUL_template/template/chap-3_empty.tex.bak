@@ -1,9 +1,7 @@
 \chapter{Results and Discussion}
-\label{cha:3}
+\label{cha:3_empty}
 
 \section{Doping Characterization}
-
-\end{figure}
 
 \subsection{Absorbance and Dopants Diffusion}
 
@@ -18,19 +16,19 @@
 
 %Prior biasing gate, which is due to passive (ion) diffusion?
 
-\subsection{Influence of doping OECT channel}
+\subsection{Influence of Doping OECT Channel}
 
 
-\subsection{Stability on air of p(g3T2-T)}
+\subsection{Stability on Air of p(g3T2-T)}
 
-\subsection{Reverse oxidation of undoped-p(g3T2-T}
+\subsection{Reverse Oxidation of Undoped-p(g3T2-T)}
 
-\subsubsection{By Electrochemical Dedoping}
+\subsubsection{By electrochemical dedoping}
 
-\subsubsection{By Heating}
+\subsubsection{By heating}
 
 
-\subsection{Solid-OECTs using undoped p(g3T2-T)}
+\subsection{Solid-OECTs using Undoped p(g3T2-T)}
 
 
 %The Ag/AgCl gate electrode’s work function is reasonably constant, the work function of an OMIEC gate electrode however may vary depending on its processing history and redox reactions with other species present in the electrolyte (e.g. molecular oxygen).28 Applying VGS only determines the potential difference between the gate and channel but does not control the potentials of either electrode (hence the position of the Fermi level) with respect to a reference. This leads to many challenges in operating an OECT with OMIEC gate electrodes.
@@ -38,14 +36,14 @@
 
 \subsubsection{Dropcasted Solid-State Electrolyte}
 
-\subsubsection{OECT with dropcast Solid-State Electrolyte}
+\subsubsection{OECT with Dropcast Solid-State Electrolyte}
 
-\subsubsection{OECT with photopatternable Solid-State Electrolyte}
+\subsubsection{OECT with Photopatternable Solid-State Electrolyte}
 
-\subsubsection{OECT with inkjet-Printed Solid-State Electrolyte}
+\subsubsection{OECT with Inkjet-Printed Solid-State Electrolyte}
 
 
-\subsection{Solid-OECTs using doped-p(g3T2-T)}
+\subsection{Solid-OECTs using Doped-p(g3T2-T)}
 
 %Achieving effective charge transfer between the analyte and OMIEC requires appropriate alignment of the electrochemical potential of electrons on the OMIEC electrode and the redox specie. Failure to do so may result in the subsequent transfer of charges to other redox-active sinks in the environment, leading to undesirable side reactions and products that may interfere with the OMIEC’s operation. Electrons flow from a region of higher to lower electrochemical potential. Hence, achieving electron transfer from redox-active species to the OMIEC requires the latter to have a deep LUMO (high electron affinity) \cite{tanMixedIonicElectronic2022} %paper
 
