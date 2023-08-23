@@ -90,6 +90,13 @@ D.~Kiefer, R.~Kroon, A.~I. Hofmann, H.~Sun, X.~Liu, A.~Giovannitti,
   polymers with monomer molecular dopants,'' \emph{Nature Materials}, vol.~18,
   no.~2, pp. 149--155, Feb. 2019.
 
+\bibitem{fontanaEvaporationVsSolution2019}
+M.~T. Fontana, D.~A. Stanfield, D.~T. Scholes, K.~J. Winchell, S.~H. Tolbert,
+  and B.~J. Schwartz, ``Evaporation vs {{Solution Sequential Doping}} of
+  {{Conjugated Polymers}}: {{F}} {\textsubscript{4}} {{TCNQ Doping}} of
+  {{Micrometer-Thick P3HT Films}} for {{Thermoelectrics}},'' \emph{The Journal
+  of Physical Chemistry C}, vol. 123, no.~37, pp. 22\,711--22\,724, Sep. 2019.
+
 \bibitem{jacobsComparisonSolutionmixedSequentially2016}
 I.~E. Jacobs, E.~W. Aasen, J.~L. Oliveira, T.~N. Fonseca, J.~D. Roehling,
   J.~Li, G.~Zhang, M.~P. Augustine, M.~Mascal, and A.~J. Moul{\'e},
@@ -242,6 +249,13 @@ J.~Hunter, D.~Dale, E.~Firing, M.~Droettboom, and M.~development team,
   \url{https://matplotlib.org/stable/tutorials/introductory/quick_start.html}
 \BIBentrySTDinterwordspacing
 
+\bibitem{resist}
+\BIBentryALTinterwordspacing
+S.~GmbH, ``Sheet resistance calculcator,'' 2023, date last access: 30-May-2023.
+  [Online]. Available:
+  \url{https://www.suragus.com/en/technology/sheet-resistance-calculator/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{uvvis}
 \BIBentryALTinterwordspacing
 E.~V.~I. for Speciation Analysis~(EVISA), ``Instrument database: Shimadzu
@@ -252,17 +266,24 @@ E.~V.~I. for Speciation Analysis~(EVISA), ``Instrument database: Shimadzu
 
 \bibitem{buchholtzDopingPropertiesNovel2021}
 S.~A. Buchholtz, ``Doping {{Properties}} of {{Novel Dopants}} for {{Organic
-  Hole Transport Layers}},'' Ph.D. dissertation, Technische Universit\"at
-  Dresden, {Dresden, Germany}, nov 2021.
+  Hole Transport Layers}},'' Master's thesis, Technische Universit\"at Dresden,
+  {Dresden, Germany}, nov 2021.
 
 \bibitem{bongartzOrganicElectrochemicalTransistors2021}
 L.~M. Bongartz, ``Organic electrochemical transistors with solid-state
-  electrolytes,'' Ph.D. dissertation, Technische Universit\"at Dresden,
-  {Dresden, Germany}, Jul. 2021.
+  electrolytes,'' Master's thesis, Technische Universit\"at Dresden, {Dresden,
+  Germany}, Jul. 2021.
 
 \bibitem{enenglDopinginducedAbsorptionBands2016}
 C.~Enengl, S.~Enengl, S.~Pluczyk, M.~Havlicek, M.~Lapkowski, H.~Neugebauer, and
   E.~Ehrenfreund, ``Doping-induced absorption bands in {{P3HT}}: Polarons and
   bipolarons,'' \emph{ChemPhysChem}, vol.~17, no.~23, pp. 3836--3844, 2016.
+
+\bibitem{hidalgocastilloSimultaneousPerformanceStability2022a}
+T.~C. Hidalgo~Castillo, M.~Moser, C.~Cendra, P.~D. Nayak, A.~Salleo,
+  I.~McCulloch, and S.~Inal, ``Simultaneous {{Performance}} and {{Stability
+  Improvement}} of a p-{{Type Organic Electrochemical Transistor}} through
+  {{Additives}},'' \emph{Chemistry of Materials}, vol.~34, no.~15, pp.
+  6723--6733, Aug. 2022.
 
 \end{thebibliography}

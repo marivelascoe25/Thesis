@@ -494,16 +494,19 @@ def plot_transfer_linear(T, transfer, L, Vds, n_ids, n_vgs):
         #plt.legend()
         plt.grid()
 
-def plots_comparison(title, legends, transfer,vgs,ids):
+def plots_comparison(title, legends, transfer,vgs,ids, colors):
     
     num_files = len(transfer) # for each doping file
    
     #for k in range(num_devices):
-    plt.figure(figsize=(10, 7.5))
-    plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
-    plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+    plt.figure(figsize=(8, 6.5))
+    plt.xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
+    plt.ylabel(r'$-I_D$ (A)',fontsize=20,fontweight='bold')   
+    #plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
+    #plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
     plt.title(title,fontweight='bold')
     plt.yscale('log')
+    plt.xticks(np.arange(-1.0, 1.01, 0.5))
     for i in range(num_files):
         ## Print plots
         #Column 6 and 8 corresponds to Ids and Vgs
@@ -515,14 +518,15 @@ def plots_comparison(title, legends, transfer,vgs,ids):
         #Y_structure[k][i] = Y_structure[k][i] + np.array(Y)    
         #if label
         #if Vds[i] == Vds1:                                   
-        plt.plot(X, Y, 'o-', label=legends[i]) 
+        plt.plot(X, Y, '-', label=legends[i], linewidth=3, color = colors[i]) 
         #elif Vds[i] == Vds2:
         #    plt.plot(X, Y, 'o-', color=u'#ff7f0e')#, label=L[i])
         #elif Vds[i] == Vds3:
         #    plt.plot(X, Y, 'o-', color=u'#2ca02c')#, label=L[i])
         #elif Vds[i] == Vds4:
         #    plt.plot(X, Y, 'o-', color=u'#d62728')#, label=L[i])
-    plt.legend()
+    plt.tight_layout()
+    plt.legend(fontsize="20")
     plt.grid()
 
     #return X_structure, Y_structure
@@ -800,7 +804,8 @@ def stability(stability, title, columns, ranges, gate=True, log=True):
     plt.legend()
     plt.grid()
 
-def calculate_vth(T, transfer, L, Vds, c1, c2, n_ids, n_vgs, n_loop, loop_case = 1):
+def calculate_vth(T, transfer, L, Vds, c1, c2, n_ids, n_vgs, n_loop, number, loop_case = 1):
+    n_igs = n_vgs-1
     for k in range(len(T)):
         plt.figure(figsize=(10, 7.5))
         plt.xlabel("Gate Voltage (V)",fontsize=24,fontweight='bold')
@@ -815,7 +820,8 @@ def calculate_vth(T, transfer, L, Vds, c1, c2, n_ids, n_vgs, n_loop, loop_case =
                 
                 ## Print plots
                 if loop_case == 1:
-                    X, Y0 = extract_data_loop2(transfer[i],n_vgs,n_ids,n_loop)
+                    X, Y0, Z = extract_data_loop_number(transfer[i],n_vgs,n_ids,n_igs, n_loop, number)
+                    #X, Y0 = extract_data_loop2(transfer[i],n_vgs,n_ids,n_loop)
                 elif loop_case == 2:
                     X, Y0 = extract_data_loops(transfer[i],n_vgs,n_ids,n_loop)
                 else: 

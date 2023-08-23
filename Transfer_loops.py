@@ -15,6 +15,7 @@ plt.rcParams.update({'font.size':20})
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230712_doped_pg3t_15mgmlF6TCNNQ_AgNP_printedSSE'
 dir_path = 'Data\\3. Transfer curves\\1. IV\\230720_undoped_pg3t_inkSSE'
 
+
 ##Bioprobe
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230616_pg3t_photopattternSSE'
 
@@ -33,7 +34,7 @@ column_vgs=6
 ##old data bioprobe with loops
 #column_ids=6
 #column_vgs=9
-column_loop=column_vgs-1
+#column_loop=column_vgs-1
 
 
 ## Forward
