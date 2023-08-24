@@ -109,17 +109,16 @@ Gate current (I$_{GS,ON}$) is displayed in dotted lines and it is perceive that 
 
 The higher dopant concentration device (10 mg/mL dopant) shows signs of breakage as going to more negative V$_{DS}$ (Figure \ref{fig:transx2}E and Figure \ref{fig:shift1}D), therefore, this measurement will be disregard for transconductance and threshold voltage calculation.
 
-\newpage
-\begin{figure}[!h]
+\begin{figure}[!htb]
     \centering
-    \subfloat[Undoped device]{{\includegraphics[height=5.5cm]{Images/pdf/transfer_undoped.pdf} }}
-    \subfloat[Undoped device]{{\includegraphics[height=5.2cm]{Images/pdf/id+gm_undoped_final.pdf} }}
+    \subfloat[Undoped device]{{\includegraphics[height=5.4cm]{Images/pdf/transfer_undoped.pdf} }}
+    \subfloat[Undoped device]{{\includegraphics[height=5.1cm]{Images/pdf/id+gm_undoped_final.pdf} }}
     \qquad
-    \subfloat[5 mg/mL dopant device]{{\includegraphics[height=5.5cm]{Images/pdf/transfer_doped5.pdf} }}
-    \subfloat[5 mg/mL dopant device]{{\includegraphics[height=5.2cm]{Images/pdf/id+gm_doped5_final.pdf} }}
+    \subfloat[5 mg/mL dopant device]{{\includegraphics[height=5.4cm]{Images/pdf/transfer_doped5.pdf} }}
+    \subfloat[5 mg/mL dopant device]{{\includegraphics[height=5.1cm]{Images/pdf/id+gm_doped5_final.pdf} }}
     \qquad
-    \subfloat[10 mg/mL dopant device]{{\includegraphics[height=5.5cm]{Images/pdf/transfer_doped10.pdf} }}
-    \subfloat[10 mg/mL dopant device]{{\includegraphics[height=5.2cm]{Images/pdf/id+gm_doped10_final.pdf} }}
+    \subfloat[10 mg/mL dopant device]{{\includegraphics[height=5.4cm]{Images/pdf/transfer_doped10.pdf} }}
+    \subfloat[10 mg/mL dopant device]{{\includegraphics[height=5.1cm]{Images/pdf/id+gm_doped10_final.pdf} }}
     \caption[Transfer characteristics and transconductance at different doping levels and V$_{DS}$]{A), C), E) Transfer characteristics of all measured V$_{DS}$ including the gate leakage current I$_{G}$ B), D), F) Transfer curves (off-switching) with corresponding transconductance. Each group of graphs for undoped, 5 mg/mL and 10 mg/mL doped p(g3T2-T) channel, respectively.}
     \label{fig:transx2}
 \end{figure}
@@ -127,7 +126,6 @@ The higher dopant concentration device (10 mg/mL dopant) shows signs of breakage
 %U4 loop 2 as undoped pattern
 %U2 loop 3 for doped 5
 %U4 loop 3 for doped 10
-\newpage
 
 Additionally, it is observed that I$_{DS,ON}$ decreases while increasing doping levels. This is reflected in the maximum transconductance values displayed in Table \ref{tab:trans}. Additionally to the oxidation of undoped p(g3T2-T) devices that also increased I$_{DS,OFF}$. When doping our polymer, we are increasing its conductivity by inducing new charges in its backbone, the introduction of new ionic species will negatively impact the mobility of the induced charges, which explains the decrease in I$_{DS,ON}$. 
 
@@ -170,6 +168,40 @@ Additionally, threshold values had lower variability among different values of V
 Moreover, something that it is not shown in this report but it was perceived during analysis, there is higher repeatability of transfer characteristics with undoped OECT devices. This could be explained by considering our environmental conditions as a infinite reservoir of molecular oxygen, until this unwanted doping and ORR reaches saturation, making it stable. In the case of F$_{4}$TCNQ, stability is still unclear and further investigation will be done in the next sections.
 
 \subsection{Stability on Air of p(g3T2-T)}
+
+Channel conductivity was measured before and after the patterning process. Immediately after spin-coating unpatterned p(g3T2-T) exhibited a conductivity around 1 $\mu$S, after patterning the conductivity increase to three orders of magnitude to the order of 1 mS, a clear sign of oxidation after the whole patterning process. Measurements of I$_{D}$ at -0.3 V of V$_{DS}$ and no gate biased in glovebox exhibited a small decrease of 4\% within two hours, and small increase of 15\% within two hours in air exposure, pretty stable after patterning.
+
+Interestingly, upon contact with SSE precursor, conductivity drops significantly, at least six orders of magnitude, as shown in Figure \ref{fig:revox1}A. Another device from another sample was tested showing the same result. Transfer curves were measured from the latter device under environmental conditions with a Ag/AgCl pellet, a clear shift to more negative values of turn ON values are noticed, as reported in Figure \ref{fig:revox1}B.
+
+%\begin{table}[ht]
+%\centering
+%\caption{Conductivity measurements of undoped p(g3T2-T)}
+%\begin{tabular}{l|c}
+%Condition  & Conductivity (S) \\\hline
+%Unpatterned & 1.3 $\times$ 10^{-6} \\
+%Patterned & 1.0 $\times$ 10^{-3} \\
+%\end{tabular}
+%\label{tab:cond}
+%\end{table}
+
+\begin{figure}[!ht]
+    \centering
+    \subfloat[N$_{2}$ environment]{{\includegraphics[height=5.5cm]{Images/pdf/revox_gn_only.pdf} }}
+    \subfloat[Transfer in ambient]{{\includegraphics[height=5.5cm]{Images/pdf/revox_transfer_loops1.pdf} }}
+    \caption[Reversing oxidation of undoped-p(g3T2-T)]{Transfer characteristics comparing undoped, 5 mg/mL and 10 mg/mL dopants devices, each graph represent a different V$_{DS }$}
+    \label{fig:revox1}
+\end{figure}
+
+
+
+\begin{figure}[!ht]
+    \centering
+    \subfloat[Ambient environment]{{\includegraphics[height=5.5cm]{Images/pdf/revox_air.pdf} }}
+    \subfloat[N$_{2}$ environment after]{{\includegraphics[height=5.5cm]{Images/pdf/revox_gb_afterair.pdf} }}
+    \caption[Transfer characteristics comparing different doping levels]{Transfer characteristics comparing undoped, 5 mg/mL and 10 mg/mL dopants devices, each graph represent a different V$_{DS }$}
+    \label{fig:revox1}
+\end{figure}
+
 
 \subsection{Reverse Oxidation of Undoped-p(g3T2-T)}
 
