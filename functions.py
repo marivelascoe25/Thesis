@@ -71,8 +71,8 @@ def extract_data_loop_number(dir,x,y,z, n_loop, loop_case):
             pass
     return X,Y,Z
 
-def extract_data_loops(dir,x,y,n_loop):
-    X, Y = [], []
+def extract_data_loops(dir,x,y,z, n_loop):
+    X, Y, Z = [], [], []
     loop_case = 1
     for line in open(dir, 'r'):
         sline = line.split('\t')
@@ -80,12 +80,13 @@ def extract_data_loops(dir,x,y,n_loop):
             if int(sline[n_loop]) != loop_case:  
                 try:
                     X.append(float(sline[x]))
-                    Y.append(float(sline[y]))
+                    Y.append(float(sline[y]))                   
+                    Z.append(float(sline[z]))
                 except:
                     pass
         except:
             pass
-    return X,Y
+    return X,Y,Z
 
 def absorbance(files, N=False):
     X1, R = extract_data_abs(files[0],0,1)
@@ -781,28 +782,31 @@ def stability(stability, title, columns, ranges, gate=True, log=True):
         #plt.yscale('log')
         Y = np.absolute(Y)
         Z = np.absolute(Z)
-    
+    X = np.divide(X,60)
     Y_avg1 = get_average (X,Y,ranges[0])
     Y_avg2 = get_average (X,Y,ranges[1])
     print (Y_avg1)
     print (Y_avg2)
 
     ## Plots
-    plt.figure(figsize=(13, 7))
-    plt.title(title)#title.set_text('First Plot')
-    
-    plt.plot(X, Y, 'b-', label = r"$I_{\mathrm{DS}}$")
+    plt.figure(figsize=(8, 6.5))
+    #plt.title(title)#title.set_text('First Plot')
+    #plt.xlim([-0.5,120.5])
+    #plt.ylim([1e-6,1e-3])
+
+    plt.plot(X, Y, 'b-', label = r"$I_{\mathrm{D}}$")
     if gate:
-        plt.plot(X, Z, 'g-', label = r"$I_{\mathrm{GS}}$")
+        plt.plot(X, Z, 'g-', label = r"$I_{\mathrm{G}}$")
+        plt.legend()
     if log:
         plt.yscale('log')
         #plt.ylim((10**-7,10**-6))
     
-    plt.xlabel("Time (s)",fontsize=26,fontweight='bold')
-    plt.ylabel("Current (A)",fontsize=26,fontweight='bold')
+    plt.xlabel("t (min)",fontsize=20,fontweight='bold')
+    plt.ylabel(r'$I_{D}$ (A)',fontsize=20,fontweight='bold')
                 
-    plt.legend()
     plt.grid()
+    plt.tight_layout()
 
 def calculate_vth(T, transfer, L, Vds, c1, c2, n_ids, n_vgs, n_loop, number, loop_case = 1):
     n_igs = n_vgs-1
@@ -923,7 +927,7 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, trans = 
 
     return X,Y
 
-def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_case = 1, number=2):
+def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2, loop_case = 1):
     num_devices = len(T)
     num_files = len(transfer) # for each vds x loops
     n_igs = n_vgs+1
@@ -960,21 +964,25 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_cas
                 
         for i in range(num_files):
             start = transfer[i].index('transfer')
-            if transfer[i][start-7:start-5] == T[k] and transfer[i][start+41:start+43] == "="+str(number): ## Join all data from one device (U# or D#)
+            if transfer[i][start-7:start-5] == T[k]:# and transfer[i][start+41:start+43] == "="+str(number): ## Join all data from one device (U# or D#)
                 ## Print plots
                 if loop_case == 1:
                     X, Y, Z = extract_data_loop_number(transfer[i],n_vgs,n_ids,n_igs, n_loop, number)
+                    print(X)
+                    Z = np.absolute(Z) 
+                    Z_structure[k][i] = Z_structure[k][i] + np.array(Z)
                 elif loop_case == 2:
-                    X, Y = extract_data_loops(transfer[i],n_vgs,n_ids,n_loop)
+                    X, Y, Z = extract_data_loops(transfer[i],n_vgs,n_ids,n_igs,n_loop)
                 else: 
-                    X, Y = extract_data(transfer[i],n_vgs,n_ids)
+                    X, Y, Z = extract_data(transfer[i],n_vgs,n_igs,n_ids)
                 
                 Y = np.absolute(Y)
                 Z = np.absolute(Z) 
+                Z_structure[k][i] = Z_structure[k][i] + np.array(Z)
                 #print(gm[k][i])
                 X_structure[k][i] = X_structure[k][i] + np.array(X)
                 Y_structure[k][i] = Y_structure[k][i] + np.array(Y)  
-                Z_structure[k][i] = Z_structure[k][i] + np.array(Z)
+                
                 #print ("Device" + str(k) + L[i])
                 #print (X_structure[k][i])
                 
@@ -983,7 +991,11 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_cas
                     colorr = u'#045275'          
                     labell = L[i]                       
                     ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
-                    ax2.plot(X, Z, '--', color=colorr, )
+                    try:
+                        ax2.plot(X, Z, '--', color=colorr, linewidth=3)
+                    except:
+                        pass
+
                         #print(len(X_aux))
                         #print(len(gm[k][i]))
                         #plt.text(-1, 0.e-10, gmax[k][i])
@@ -992,19 +1004,28 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, loop_cas
                     #plt.plot(X, Y, '-', color=u'#ff7f0e', label=L[i])
                     color1 = u'#089099'          
                     labell = L[i] 
-                    ax2.plot(X, Z, '--', color=color1, label=labell)                                             
+                    try:
+                        ax2.plot(X, Z, '--', color=color1, label=labell)
+                    except:
+                        pass                                             
                     ax1.plot(X, Y, '-', color=color1, label=labell, linewidth=3)
                 elif Vds[i] == Vds3:
                     #plt.plot(X, Y, '-', color=u'#2ca02c', label=L[i])
                     colorr = u'#7CCBA2'          
                     labell = L[i]
-                    ax2.plot(X, Z, '--', color=colorr, label=labell)                      
+                    try:
+                        ax2.plot(X, Z, '--', color=colorr, label=labell)
+                    except:
+                        pass                       
                     ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
                 elif Vds[i] == Vds4:
                     #plt.plot(X, Y, '-', color=u'#d62728', label=L[i])
                     colorr = u'#FCDE9C'          
                     labell = L[i]
-                    ax2.plot(X, Z, '--', color=colorr, label=labell)                      
+                    try:
+                        ax2.plot(X, Z, '--', color=colorr, label=labell)
+                    except:
+                        pass                       
                     ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
                 else:
                     #plt.plot(X, Y, '-', label=L[i])

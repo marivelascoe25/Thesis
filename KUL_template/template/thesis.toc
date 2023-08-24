@@ -69,16 +69,16 @@
 \contentsline {section}{\numberline {4.2}Fabrication of Organic Electrochemical Transistors}{34}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Influence of Doping on OECT Channel}{34}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Stability on Air of p(g3T2-T)}{37}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Reverse Oxidation of Undoped-p(g3T2-T)}{37}{subsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}By Electrochemical Dedoping}{37}{subsubsection.4.2.3.1}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}By Heating}{37}{subsubsection.4.2.3.2}%
-\contentsline {subsection}{\numberline {4.2.4}Solid-OECTs using Undoped p(g3T2-T)}{37}{subsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}Dropcasted Solid-State Electrolyte}{37}{subsubsection.4.2.4.1}%
-\contentsline {subsubsection}{\numberline {4.2.4.2}OECT with Dropcast Solid-State Electrolyte}{37}{subsubsection.4.2.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}OECT with Photopatternable Solid-State Electrolyte}{37}{subsubsection.4.2.4.3}%
-\contentsline {subsubsection}{\numberline {4.2.4.4}OECT with Inkjet-Printed Solid-State Electrolyte}{37}{subsubsection.4.2.4.4}%
-\contentsline {subsection}{\numberline {4.2.5}Solid-OECTs using Doped-p(g3T2-T)}{37}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.3}Reverse Oxidation of Undoped-p(g3T2-T)}{40}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}By Electrochemical Dedoping}{40}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}By Heating}{40}{subsubsection.4.2.3.2}%
+\contentsline {subsection}{\numberline {4.2.4}Solid-OECTs using Undoped p(g3T2-T)}{40}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Dropcasted Solid-State Electrolyte}{40}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}OECT with Dropcast Solid-State Electrolyte}{40}{subsubsection.4.2.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}OECT with Photopatternable Solid-State Electrolyte}{40}{subsubsection.4.2.4.3}%
+\contentsline {subsubsection}{\numberline {4.2.4.4}OECT with Inkjet-Printed Solid-State Electrolyte}{40}{subsubsection.4.2.4.4}%
+\contentsline {subsection}{\numberline {4.2.5}Solid-OECTs using Doped-p(g3T2-T)}{40}{subsection.4.2.5}%
 \contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{41}{chapter.5}%
 \contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{45}{appendix.A}%
 \contentsline {appendix}{\chapternumberline {B}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{47}{appendix.B}%
-\contentsline {chapter}{Bibliography}{49}{appendix*.69}%
+\contentsline {chapter}{Bibliography}{49}{appendix*.71}%
