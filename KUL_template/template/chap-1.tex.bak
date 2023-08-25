@@ -14,7 +14,7 @@ Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbo
 %This configuration exhibit $p$-orbitals with delocalized electrons. %, charge transport among the length of these polymers is caused by the alternation of these bonds, describing a resonance structure. 
 Based on the size of the conjugated system, organic semiconductors can be divided into conjugated polymers and small molecules. The latter has the advantage of being ordered and its synthesis allows to obtain high purity material \cite{alcacerElectronicStructureOrganic2018}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=6cm]{Images/pdf/ediagram.pdf}
   \caption[Energy level diagram of organic semiconductors]{Energy level diagram of an p-type doped organic semiconductor.}
@@ -36,7 +36,7 @@ The energy structure of organic semiconductors comprises a highest occupied mole
 
 Organic semiconductor materials can also be classified based on whether their ground state is degenerate or non-degenerate. In the former case, the term ``degenerate'' describes monomers that have equivalent energy states in the ground state. In contrast, in the latter case, the ground state exhibits non-degeneracy, which is commonly observed due to the energy difference of aromatic (benzoid) and quinoid structures \cite{heegerSolitonsConductingPolymers1988a}, as exhibited in Figure \ref{fig:energy}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=12cm]{Images/pdf/deg_pol.pdf}
   \caption[Degenerate and non-degenerate conjugated polymers]{Potential energy change (electronic plus lattice distortion energy) in A) degenerate and B) non-degenerate ground-state-conjugated polymers. Extracted from reference \cite{heydarigharahcheshmehTextureNanostructuralEngineering2020}.}
@@ -51,7 +51,7 @@ In electronic transport theory within organic semiconductors, the concept of pol
 \subsection{Molecular Doping} \label{subsec:moldop}
 The basic principles of molecular doping are similar than in inorganic materials. A donor or acceptor entity is added to generate electrons or holes, as shown in Figure \ref{fig:dopscheme}. While n-type dopants donate electrons to the lowest unoccupied molecular orbital (LUMO) states, the p-type dopants extract electrons from the highest occupied molecular orbital (HOMO) states, thus creating holes \cite{lussemDopingOrganicSemiconductors2013}. In other words, the Fermi level E$_{F}$ of the polymer will shift towards the LUMO (or HOMO) level when there is n-type (or p-type) doping. This shift can be quantified using spectroscopy techniques such as Ultraviolet Photoelectron Spectroscopy (UPS) at room temperature (RT) \cite{tietzeFermiLevelShift2012}, although it may be somewhat limited by the penetration depth of the incoming electrons.
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=12cm]{Images/pdf/doping.pdf}
   \caption[Scheme of doping processes in organic semiconductors]{Schemes for p-type (left) and n-type (right) doping processes. Extracted from reference \cite{lussemDopingOrganicSemiconductors2013}.}
@@ -61,7 +61,7 @@ The basic principles of molecular doping are similar than in inorganic materials
 When doping occurs, %charged solitons come as outcome in a degenerated molecules. In a non-degenerated, our main focus in this work, 
 the formation of a new quasiparticle named bipolaron occurs. For instance, if p-type dopants are introduced to a degenerate molecule (as depicted in Figure \ref{fig:bipol}), electrons are removed from double bonds. Focusing on a single event, this removal leaves one carbon positively charged, with an adjacent carbon atom possessing an unpaired electron. This unpaired electron moves along the polymer chain until it encounters another unpaired electron from a separate doping event. When they come together, they form a double bond, resulting in the creation of two charged polarons: a bipolaron \cite{bredasPolaronsBipolaronsSolitons1985}. %Although, a nice simplification, in a degenerated molecule is not realistic, but usually
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=10cm]{Images/pdf/bipolaron.pdf}
   \caption[Representation of bipolaron formation introduced via doping]{a) Structure of degenerate molecule. b) Electron extraction via doping. c) Unpaired electron shifting down. d) Unpaired electrons meet. e) Formation of double bond and two charged polarons: bipolaron.}
@@ -70,18 +70,18 @@ the formation of a new quasiparticle named bipolaron occurs. For instance, if p-
 
 The energy levels generated upon the formation of polarons and bipolarons in non-degenerate molecules are illustrated in Figure \ref{fig:ebipol}. As the doping density increases, the amount of bipolaron states also increases. Their overlapping leads to the formation of bipolaron bands, and the energy difference between the two in-gap states i and i*, as shown from Figure \ref{fig:ebipol}B to D, decreases. %Fix this part % \cite{bredasRoleMobileOrganic1984}
 
-In addition to these new electronic states, the doped polymer will also exhibit distinct optical transitions that could be revealed through UV-Vis-NIR spectroscopy. In this technique, absorption peaks indicate the presence of these optical transitions. However, these transitions may not be precisely quantified or clearly defined \cite{heydarigharahcheshmehTextureNanostructuralEngineering2020}.
-%Zozoulenko et al. proposed a new DFT-based description of the polaronic and bipolaronic states 
-
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=10cm]{Images/pdf/bipolaron_bands.pdf}
   \caption[Formation of polaron, bipolaron, and bipolaron band]{Potential energy change of aromatic and quinoid in the non-degenerate ground-state A) neutral conjugated polymer, and formation of B) polaron, C) bipolaron, and D) bipolaron bands upon doping. Extracted from reference \cite{heydarigharahcheshmehTextureNanostructuralEngineering2020}.}
   \label{fig:ebipol}
 \end{figure}
 
+In addition to these new electronic states, the doped polymer will also exhibit distinct optical transitions that could be revealed through UV-Vis-NIR spectroscopy. In this technique, absorption peaks indicate the presence of these optical transitions. However, these transitions may not be precisely quantified or clearly defined \cite{heydarigharahcheshmehTextureNanostructuralEngineering2020}.
+%Zozoulenko et al. proposed a new DFT-based description of the polaronic and bipolaronic states 
 %% This specifics introduces to our graph
-The use of small molecules as dopants for organic materials is commonly reported. Some strong acceptor (or electron-deficient) molecules that are widely used include 2,3,5,6 tetrafluoro-7,7,8,8-tetracyanoquinodimethane (F$_{4}$TCNQ) or 1,3,4,5,7,8 hexafluoro-7,7,8,8-tetracyanonaphthoquinodimethane (F$_{6}$TCNNQ), both of which are also relevant to this work. The latter exhibits a higher electronic affinity (-5.3 eV) than F$_{4}$TCNQ (-5.2eV), indicating that it can abstract electrons more efficiently, specially from polymers with low ionization potential (less than 5eV) \cite{kieferDoubleDopingConjugated2019}%, as it is the case of p(g3T2-T) acting as donor
+
+The use of small molecules as dopants for organic materials is commonly reported. Some strong acceptor (or electron-deficient) molecules that are widely used include 2,3,5,6 tetrafluoro-7,7,8,8-tetracyanoquinodimethane (F$_{4}$TCNQ) or 1,3,4,5,7,8 hexafluoro-7,7,8,8-tetracyanonaphthoquinodimethane (F$_{6}$TCNNQ), both of which are also relevant to this work. The latter exhibits a higher electronic affinity (-5.3 eV) than F$_{4}$TCNQ (-5.2eV), indicating that it can abstract electrons more efficiently, specially from polymers with low ionization potential (IP < 5eV) \cite{kieferDoubleDopingConjugated2019}%, as it is the case of p(g3T2-T) acting as donor
 .
 
 Among the various methods of molecular doping for conjugated polymers, Jacobs et al. conducted a comparison between solution-mixed and solution-sequential doping of P3HT, a thiophene-based polymer, doped with F$_{4}$TCNQ. These doping methods are considered straightforward and easy, especially when compared to other techniques such as vapour-phase doping \cite{fontanaEvaporationVsSolution2019}. Their research showed that solution-mixed films tend to have considerably rougher surface than solution-sequential films, which can negatively impact their conductivity \cite{jacobsComparisonSolutionmixedSequentially2016}. The fact that solution-sequential doped films exhibit better homogeneity also makes them more compatible with microstructuring processes such as photolithography. However, this advantage comes at the expense of having less control over the doping levels when compared to solution-mixed films \cite{tanOrganicMixedIonic2022}.
@@ -93,16 +93,12 @@ Commonly designed with polar side chains, OMIECs have been identified as a promi
 %These materials, also called organic mixed ionic/electronic conductors (OMIECs), can exchange ions with aqueous electrolytes when electronic charge carriers are injected, transported, and stored in the bulk of the material
 \cite{giovannittiEnergeticControlRedoxActive2020}. Initially investigated for batteries and super-capacitors \cite{snookConductingpolymerbasedSupercapacitorDevices2011}
 \cite{liangOrganicElectrodeMaterials2012}, where the primary objective was to induce charges in a semiconducting polymer, OMIECs have rapidly expanded their scope to include other applications, among them, our focus: OECTs.
-
-Paulsen et al. classified OMIECs into six different categories based on whether they \textit{intrinsically contain ionic charge''} (I, III, V) or not (II, IV, VI), the latter group comprises materials that \textit{``contain polar moieties that can solvate ions''}. Another distinguishing factor among these categories is whether the conjugated system is composed of a single material (homogeneous, type V and VI) or a two-component, more complex systems or block co-polymer materials (heterogeneous, type I, II, III, IV)\cite{paulsenOrganicMixedIonic2020}. A schematic representation is shown in Figure \ref{fig:omiectypes}. %For instance, the conjugated polymer p(g3T2-T), used in this work, falls into a type VI OMIEC.s
-
 %Electronic charges accumulated on the conjugated polymer backbone result in secondary property changes in electrochemical potential and electronic conductivity \cite{tanOrganicMixedIonic2022}. 
-
 % PEDOT:PSS Heterogeneous, blends or complexed systems OMIEC. Conjugated polymer/electrolyte blends. Contains ions chemically linked ot an insulating or conjugated component
 % p(g3T2-T) Homogeneous, single-component systems OMIEC. Conjugated polymer electrolytes. Ions introduced as free species upon material casting or device operation
-
 %change caption of figure
-\begin{figure}[ht]
+
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=\textwidth]{Images/pdf/OMIEC_types.pdf}
   \caption[Material classes of OMIECs]{\textbf{OMIECs classes.} a) Heterogeneous blends of a conducting conjugated polymer with (I) %an ionic charge bearing
@@ -115,6 +111,7 @@ Paulsen et al. classified OMIECs into six different categories based on whether 
   \label{fig:omiectypes}
 \end{figure}
 
+Paulsen et al. classified OMIECs into six different categories based on whether they \textit{``intrinsically contain ionic charge''} (I, III, V) or not (II, IV, VI), the latter group comprises materials that \textit{``contain polar moieties that can solvate ions''}. Another distinguishing factor among these categories is whether the conjugated system is composed of a single material (homogeneous, type V and VI) or a two-component, more complex systems or block co-polymer materials (heterogeneous, type I, II, III, IV)\cite{paulsenOrganicMixedIonic2020}. A schematic representation is shown in Figure \ref{fig:omiectypes}. %For instance, the conjugated polymer p(g3T2-T), used in this work, falls into a type VI OMIEC.
 
 
 \subsection{Processes in OMIECs}
@@ -132,14 +129,7 @@ The degree of coupling between electronic charges and excess ionic charges in OM
 
 Electronic charge transport mechanisms present in OMIECs include thermally-activated hopping and band-like transport, as depicted in Figure \ref{fig:etrans}. These mechanisms are not different from those observed in other conjugated polymers. 
 
-Thermally-activated hopping, as its name implies, is driven by thermal energy and is limited by the degree of structural disorder. In this mechanism, weakly-bonded electrons in delocalized $\pi$-orbital move along adjacent $\pi$-orbitals within the length of the conjugated polymer, or even between molecules where there is sufficient $\pi$-$\pi$ overlapping. This mechanism predominates when there is a low electronic charge carrier density and a low density of accessible hopping states, resulting in low mobility and electrical conductivity \cite{paulsenOrganicMixedIonic2020}. 
-
-In contrast, band-like transport, typically occurs in OMIECs with increasing doping levels. In this case, the activation energy of charge hopping decreases, and carrier mobility increases. This leads to diffuse band-like charge transport within the polymer-stacking \cite{wangHoppingTransportHall2012}.
-%"at extreme doping levels, increased disorder drives carrier localization, which results in a plateau or even decrease in electronic charge carrier mobility"
-
-%"Non-conjugated radical polymers also present a thermally activated mechanism of charge transfer between pendant radical sites, though with a significant dependence on the local self-diffusion of polymer chain to bring radical sites close enough for efficient charge transfer51. This manifests as a hopping transport of electronic carriers (Fig. 2a) that is assisted via segmental motion (described below; Fig. 2g). Also in this case disorder plays a role, producing local variations in the molecular orbital energy levels and spreading orbitals in a density of radical states52."
-
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\centering
 	\subfloat[\textbf{Thermally activated hopping}]{{\includegraphics[width=5cm]{Images/pdf/OMIECetransport1.pdf} }}
 	%\qquad
@@ -151,17 +141,20 @@ In contrast, band-like transport, typically occurs in OMIECs with increasing dop
 	\label{fig:etrans}
 \end{figure}
 
+Thermally-activated hopping, as its name implies, is driven by thermal energy and is limited by the degree of structural disorder. In this mechanism, weakly-bonded electrons in delocalized $\pi$-orbital move along adjacent $\pi$-orbitals within the length of the conjugated polymer, or even between molecules where there is sufficient $\pi$-$\pi$ overlapping. This mechanism predominates when there is a low electronic charge carrier density and a low density of accessible hopping states, resulting in low mobility and electrical conductivity \cite{paulsenOrganicMixedIonic2020}. 
+
+In contrast, band-like transport, typically occurs in OMIECs with increasing doping levels. In this case, the activation energy of charge hopping decreases, and carrier mobility increases. This leads to diffuse band-like charge transport within the polymer-stacking \cite{wangHoppingTransportHall2012}.
+%"at extreme doping levels, increased disorder drives carrier localization, which results in a plateau or even decrease in electronic charge carrier mobility"
+
+%"Non-conjugated radical polymers also present a thermally activated mechanism of charge transfer between pendant radical sites, though with a significant dependence on the local self-diffusion of polymer chain to bring radical sites close enough for efficient charge transfer51. This manifests as a hopping transport of electronic carriers (Fig. 2a) that is assisted via segmental motion (described below; Fig. 2g). Also in this case disorder plays a role, producing local variations in the molecular orbital energy levels and spreading orbitals in a density of radical states52."
+
 
 \subsubsection{Ionic transport}
 While the transport of charged anions and cations in OMIECs share some similarities with the transport of electrons and holes, it is a more complex process, since ions can be \textit{``multi-valent, and form pairs and larger clusters; morever, they are sensitive to solvent and solvation''} \cite{paulsenOrganicMixedIonic2020}.
 
 Ion transport in dry OMIECs of type I, III, and V is unipolar because these ions are fixed on a polyelectrolyte. In contrast, in type II, IV, and VI OMIECs, both anions and cations are mobile. When OMIECs come into contact with an electrolyte, they tend to swell, allowing the penetration of excess ions from the electrolyte. Therefore, both mobile anions and cations contribute to ion transport to ensure electroneutrality. 
 
-There are two types of ionic charge transport in OMIECs: ion hopping and vehicular solvated-ion transport. In dry or minimally hydrated OMIECs, ion hopping assisted by segmental motion of the OMIEC side chains or backbone is the primary mechanism, as shown in Figure \ref{fig:itrans}A. However, when OMIECs are in contact with a solvent or liquid electrolyte, both mechanisms are present, with solvated ion vehicle transport being the predominant mode. For instance, in water-based electrolytes, proton diffusion occurs via the Grotthuss mechanism, where protons within water molecules diffuse through neighboring molecules. This involves a transfer of ionic effects through the hydrogen-bonded network, as shown in Figure \ref{fig:itrans}B.
-
-Due to the existing ionic-electronic coupling, both ionic and electronic transport in OECTs and other OMIEC-electrolyte-based applications are not independent but are rather complex and must consider side effects such as hydration and electrolyte swelling \cite{paulsenOrganicMixedIonic2020}, as will be further discuss in Section \ref{sec:OECTs}.
-
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\centering
 	\subfloat[\textbf{Ion hopping} via segmental motion\\\hspace{1em} or ion clusters]{{\includegraphics[width=7cm]{Images/pdf/OMIECitransport1.pdf} }}
 	%\qquad
@@ -170,6 +163,10 @@ Due to the existing ionic-electronic coupling, both ionic and electronic transpo
 	\caption[Ionic transport mechanisms in OMIECs]{Schematic representation of ionic charge transport mechanisms: A) Ion hopping via segmented motion and B) vehicular solvated-ion transport. Extracted from reference \cite{paulsenOrganicMixedIonic2020}.}
 	\label{fig:itrans}
 \end{figure}
+
+There are two types of ionic charge transport in OMIECs: ion hopping and vehicular solvated-ion transport. In dry or minimally hydrated OMIECs, ion hopping assisted by segmental motion of the OMIEC side chains or backbone is the primary mechanism, as shown in Figure \ref{fig:itrans}A. However, when OMIECs are in contact with a solvent or liquid electrolyte, both mechanisms are present, with solvated ion vehicle transport being the predominant mode. For instance, in water-based electrolytes, proton diffusion occurs via the Grotthuss mechanism, where protons within water molecules diffuse through neighboring molecules. This involves a transfer of ionic effects through the hydrogen-bonded network, as shown in Figure \ref{fig:itrans}B.
+
+Due to the existing ionic-electronic coupling, both ionic and electronic transport in OECTs and other OMIEC-electrolyte-based applications are not independent but are rather complex and must consider side effects such as hydration and electrolyte swelling \cite{paulsenOrganicMixedIonic2020}, as will be further discuss in Section \ref{sec:OECTs}.
 
 %\subsection{Electrochemical Doping}
 
@@ -200,7 +197,7 @@ Organic Electrochemical Transistors are composed of metallic source, drain and g
 Although the structural configuration of OECTs differs from conventional metal-oxide-semiconductor field-effect transistors (MOSFETs), understanding the operation of the latter can provide insight into how OECTs function. In contrast to MOSFETs, where an insulator is used, OECTs are coupled with an electrolyte, as shown in Figure \ref{fig:vsMOS}. When a gate voltage is applied, instead of polarizing the dipoles in the insulator and creating a field that causes accumulation of carriers at the interface of the semiconductor/insulator, as is the case with MOSFETs, in OECTs, the gate voltage drives ions to penetrate the bulk of the channel. Consequently, accumulation of carriers occurs throughout the whole volume of the OMIEC film. This mechanism explains the large gate-channel capacitance observed in these devices compared to MOSFETs and why the drain current takes into account a volumetric capacitance \cite{friedleinDevicePhysicsOrganic2018}.
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=\textwidth]{Images/pdf/MOSFETvsOECTs.pdf}
   \caption[Device physics of MOSFET vs OECT]{Comparison of p-type A) MOSFET and B) OECT, where the light-gray region represents an insulator and a electrolyte, respectively. Extracted from reference  \cite{friedleinDevicePhysicsOrganic2018}}
@@ -213,7 +210,7 @@ The electronic circuit is treated as a \textit{variable} resistor and is thus mo
 
 Meanwhile, the ionic circuit consists of a resistor that represents the flow of ions in the electrolyte, connected in series with a capacitor representing the storage of ions in the channel, as shown in Figure \ref{fig:bernard}B  \cite{rivnayOrganicElectrochemicalTransistors2018}\cite{bernardsSteadyStateTransientBehavior2007}. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\subfloat[Typical OECT structure]{{\includegraphics[width=4cm]{Images/pdf/structure.pdf} }}
 	%\qquad
@@ -225,18 +222,28 @@ Meanwhile, the ionic circuit consists of a resistor that represents the flow of 
 	\label{fig:bernard}
 \end{figure}
 
+Finally, the drain current $I_{D}$ for the steady state behavior of the OECT can now be described using the following equation:
+
+\begin{equation}\label{eq:id}
+	I_{D} = \begin{dcases*}
+    -\mu C^{*} [\frac{Wd}{L}\frac{V_{GS}-V_{Th}^{2}}{2V_{Th}}] & \text{$|V_{DS}| < |V_{GS}|-|V_{Th}|$} \\
+    -\mu C^{*} \frac{Wd}{L} [1 - \frac{V_{GS}-1/2 V_{DS}}{V_{Th}}] V_{DS} & \text{$|V_{DS}| > |V_{GS}|-|V_{Th}|$}
+    \end{dcases*}
+\end{equation}
+
+where $\mu$ is the charge mobility, C* is the volumetric capacitance and W, d and L are the width, thickness and length of the channel. $V_{GS}$, $V_{DS}$ and $V_{Th}$ correspond to the gate, drain and threshold voltage, respectively. Parameters will be further discuss in Section \ref{OECT:fom}.  
 
 \subsection{Operation Modes}
 
 Analogous to conventional MOSFETs, depending on whether the device requires a gate potential to be turned ON, OECTs exhibit two operation modes: depletion and enhancement (the latter often referred to as accumulation in the context of OECTs). The operation modes are closely linked to the nature of the channel material%if it is inherently conductive or semiconducting
 .
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\subfloat[Depletion-mode OECT]{{\includegraphics[height=7cm]{Images/pdf/depletion.pdf} }}
 	\hspace{2em}
 	\subfloat[Accumulation-mode OECT]{{\includegraphics[height=7cm]{Images/pdf/accumulation.pdf} }}
-	\caption[Depletion- and accumulation-mode OECTs]{(A) Transfer curve showing depletion-mode operation of a p-type OECT with a conducting polymer channel. (B) Transfer curve showing accumulation-mode operation of a p-type OECT with a semiconducting polymer channel. Images extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
+	\caption[Depletion- and accumulation-mode OECTs]{(A) Transfer curve showing depletion-mode operation of a p-type OECT with a conducting polymer channel. (B) Transfer curve showing accumulation-mode operation of a p-type OECT with a insulating polymer channel. Images extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
 	\label{fig:modes}
 \end{figure}
 
@@ -255,11 +262,11 @@ With the aim of minimizing power consumption, there is a strong interest in fabr
 % As a widely studied material, 
 PEDOT:PSS has not been ruled out as a possible accumulation-mode OECT, Keene et al. employed a series of amines to de-dope PEDOT:PSS and achieve OECTs with negative turn-on voltages \cite{keeneEnhancementModePEDOTPSS2020}. However, synthetically modifying PEDOT:PSS in a controlled manner remains a challenge. 
 
-In parallel to these efforts, researchers are also working on the design of new semiconducting polymers with the aim of not only having acummulation-mode OECTs but enhancing their performance. Nielsen et al. reported a series of semiconducting polymers with triethylene glycol (TEG) side chains, some of which demonstrated good performance. Among the five thiophene- and benzodithiophene-based polymers, they found out that the one with a %TEGylated 
-backbone consisting of 2,2'-bithiophene polymerized with other thiophene molecule (g2T-T), as seen in Figure \ref{fig:g2TT}, exhibited the highest performance %, even higher transconductance over PEDOT:PSS
+In parallel to these efforts, researchers are also working on the design of new conjugated polymers with the aim of not only having accumulation-mode OECTs but enhancing their performance. Nielsen et al. reported a series of semiconducting polymers with triethylene glycol (TEG) side chains, some of which demonstrated good performance. Among the five thiophene- and benzodithiophene-based polymers, they found out that the one with a %TEGylated 
+backbone consisting of 2,2'-bithiophene (blue) polymerized with other thiophene molecule (green), named as \textbf{g2T-T}, as seen in Figure \ref{fig:g2TT}, exhibited the highest performance %, even higher transconductance over PEDOT:PSS
 \cite{nielsenMolecularDesignSemiconducting2016}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=7cm]{Images/pdf/g2T-T.pdf}
 	\caption[Chemical structure of polymer g2T-T]{Chemical structure of polymer with backbone g2T-T, R representing the side chain. Extracted from reference \cite{nielsenMolecularDesignSemiconducting2016}.}
@@ -272,7 +279,7 @@ Moser et al. conducted a study using the same backbone (g2T-T) to investigate th
 Their research suggested an optimum-side-chain length of 3 monomers, compared to 2, 4 and 6 monomer. OECTs based on 3-(2-(2-(2-methoxyethoxy)ethoxy)ethoxy) thiophene (p(g3T2-T)) exhibited a turn-on voltage close to zero and superior performance compared to other thiophene-based species (as seen in Figure \ref{fig:pg3t} and Table \ref{tab:perf}), even surpassing PEDOT:PSS-based OECTs \cite{inalBenchmarkingOrganicMixed2017}. %. This advantage does not remain the only one, since p(g3T2-T)  would not require extensive pre- and postprocessing to optimize stability and electrochemical performance in aqueous media as PEDOT:PSS
 %% actually the last part came from references 14-16 of that papers..
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=10cm]{Images/pdf/pg3t+perf.pdf}
 	\caption[Chemical structure and transconductance of g2T-T with side-chain engineering]{(Left) Chemical structure of the repeat units for p(gxT2-T). (Right) Transconductance vs channel geometry and operating parameters of p(gxT2-T) for x = 2, 3 and 4. Extracted from reference \cite{moserEthyleneGlycolBasedSide2020}.}
@@ -288,24 +295,24 @@ The structural tuning of the polymer was designed to have a backbone that warran
 
 %Homogeneous single phase OMIECs (types V and VI) display larger magnitudes of ionic–electronic coupling and larger values of volumetric capacitance than biphasic OMIECs (types I–IV) \cite{paulsenOrganicMixedIonic2020}. 
 
-Under the classification presented in Figure \ref{fig:omiectypes}, p(g3T2-T) can be categorized as a type VI OMIEC that consists of a conjugated polymer with ions introduced as \textbf{free species}. Wheareas, PEDOT:PSS contains ions that are \textbf{chemically linked} to the polyelectrolyte (PSS). This structural distinction results in p(g3T2-T) displaying larger magnitudes of ionic-electronic coupling and volumetric capacitance compared to biphasic OMIECs like PEDOT:PSS \cite{paulsenOrganicMixedIonic2020}. Understanding these structural characteristics is crucial for addressing the challenges associated with achieving stable OECTs.%, further discussion in Section \ref{subsec:sidereac}.
+Under the classification presented in Figure \ref{fig:omiectypes}, p(g3T2-T) can be categorized as a type VI OMIEC that consists of a conjugated polymer with ions introduced as \textbf{free species}. Wheareas, PEDOT:PSS contains ions that are \textbf{chemically linked} to the polyelectrolyte (PSS). This structural distinction results in p(g3T2-T) displaying larger magnitudes of ionic-electronic coupling and volumetric capacitance compared to biphasic OMIECs like PEDOT:PSS \cite{paulsenOrganicMixedIonic2020}. Understanding these structural characteristics is crucial for addressing the challenges associated with achieving stable OECTs, as it will be further addressed in this thesis.%, further discussion in Section \ref{subsec:sidereac}.
 %% Replace further discussion for a table with numbers of the two polymers
 
-\begin{table}[h]
+\begin{table}[ht]
 	\centering
-	\caption[Volumetric capacitance (C*) of various OECTs channel materials]{Volumetric capacitance (C*) of OECTs channel materials including p(g2T2-T), p(g3T2-T), p(g4T2-T) \cite{moserEthyleneGlycolBasedSide2020} and PEDOT:PSS \cite{inalBenchmarkingOrganicMixed2017} using a 0.1 NaCl electrolyte and Ag/AgCl pellet electrode.}
-	\begin{tabular}{l c} \hline
-		Polymer	&  C* (Fcm$^{-3}$) \\ \hline
-		p(g2T2-T) & 8$\pm$2 \\
-		p(g3T2-T) & 211$\pm$18 \\
-		p(g4T2-T) & 192$\pm$10 \\  
-		PEDOT:PSS & 39 \\\hline
+	\caption[Volumetric capacitance (C*) of various OECTs channel materials]{Volumetric capacitance (C*) of OECTs channel materials including p(g2T2-T), p(g3T2-T), p(g4T2-T) and PEDOT:PSS using a 0.1 NaCl electrolyte and Ag/AgCl pellet electrode.}
+	\begin{tabular}{l c c} \hline
+		Polymer	&  C* (Fcm$^{-3}$) & Reference \\ \hline
+		p(g2T2-T) & 8$\pm$2 & \cite{moserEthyleneGlycolBasedSide2020}\\
+		p(g3T2-T) & 211$\pm$18 & \cite{moserEthyleneGlycolBasedSide2020}\\
+		p(g4T2-T) & 192$\pm$10 & \cite{moserEthyleneGlycolBasedSide2020}\\  
+		PEDOT:PSS & 39 & \cite{inalBenchmarkingOrganicMixed2017}\\\hline
 	\end{tabular}
 	\label{tab:perf}
 \end{table}
 
 
-\subsection{Important Figures of Merit}
+\subsection{Important Figures of Merit} \label{OECT:fom}
 
 \subsubsection{Transconductance}
 Transconductance is considered as the most important parameter for measuring the amplification capability of any transistor. It is calculated as the first-order derivative of the output current (drain current) with respect to the input voltage (gate-source voltage), expressed as $g_{m} = \sfrac{\partial I_{D}}{\partial V_{GS}}$. Bernards and Malliaras derived this parameter in their mathematical model for depletion-mode p-type OECTs \cite{bernardsSteadyStateTransientBehavior2007}, as discussed in Section \ref{subsec:devphy}. When considering both n-type and p-type OECTs, the transconductance can be expressed as follows: %\ref{eq:gm}:
@@ -326,12 +333,12 @@ It is the product of two important parameters, $\mu$, the electronic mobility, a
 
 Along with the transconductance, Inal et al. determined the values of $\mu$C* by calculating the linear slope of the maximum transconductance and channel geometry (Figure \ref{fig:gmuc}A), using Equation \ref{eq:gm}. They correlated their results with independent calculations of both parameters and found that polymerized g2T backbones exhibited the highest $\mu$C* value of 261 $\pm$ 29 $Fcm^{-1}V^{-1}s^{-1}$. Among the materials that showed a close 1:1 relationship for both methods of calculation of the $\mu$C* product, polymerized g2T backbones stood out (Figure \ref{fig:gmuc}B) \cite{inalBenchmarkingOrganicMixed2017}.
  
- \begin{figure}[h]
+ \begin{figure}[ht]
  	\centering
  	\subfloat[]{{\includegraphics[width=4.5cm]{Images/pdf/gm_sizes.pdf} }}
  	\hspace{2em}
  	\subfloat[]{{\includegraphics[width=7cm]{Images/pdf/uc_omiecs.pdf} }}
- 	\caption[OECTs benchmark with different OMIECs]{A) Plot of $\mu$C* product calculated by the linear slope between transconductance and channel geometry. B) Calculated slope from A) in function of the product of independent determination of $\mu$ and C*, dotted line representes the 1:1 relation between both methods of calculation. Extracted from reference %\cite{ohayonSaltsAdditivesRoute2023} 
+ 	\caption[OECTs benchmark with different OMIECs]{A) Plot of $\mu$C* product calculated by the linear slope between transconductance and channel geometry. B) Calculated slope from A) in function of the product of independent determination of $\mu$ and C*, dotted line represents the 1:1 relation between both methods of calculation. Extracted from reference %\cite{ohayonSaltsAdditivesRoute2023} 
  		\cite{inalBenchmarkingOrganicMixed2017}.}
  	\label{fig:gmuc}
  \end{figure}
@@ -356,18 +363,20 @@ It is important to note that the capacitance (C) can be potential-dependent when
 
 The threshold voltage ($V_{th}$) in an OECT can be determined from the steady-state transfer characteristics ($I_{D}$ vs $V_{GS}$). To calculate $V_{th}$, you can plot the square root of $I_{D}$ as a function of $V_{GS}$ and extrapolate the linear portion of the slope, where it intersects the x-axis. This value of $V_{th}$ represents the \textit{``film's readiness for ion penetration''} in OECTs \cite{ohayonGuideCharacterizationOrganic2023}.
 
-Controlling or shifting the threshold voltage is desirable, specially for integrating transistors into circuits to meet soecific requirements for operation, noise margins, and power consumption. There are different approaches to achieve this. One approach is the chemical de-doping of PEDOT:PSS, as discussed in previous sections, which can shift the threshold voltage to negative values characteristic of accumulation-mode OECTs \cite{keeneEnhancementModePEDOTPSS2020}. 
- \begin{figure}[h]
+Controlling or shifting the threshold voltage is desirable, specially for integrating transistors into circuits to meet specific requirements for operation, noise margins, and power consumption. There are different approaches to achieve this. One approach is the chemical de-doping of PEDOT:PSS, as discussed in previous sections, which can shift the threshold voltage to negative values characteristic of accumulation-mode OECTs \cite{keeneEnhancementModePEDOTPSS2020}. 
+
+ \begin{figure}[ht]
 	\centering
 	\subfloat[]{{\includegraphics[width=5.8cm]{Images/pdf/wf_shift.pdf} }}
 	\hspace{2em}
 	\subfloat[]{{\includegraphics[width=5cm]{Images/pdf/vth_shift.pdf} }}
 	\caption[Tuning of threshold voltage with different levels of doping p(g3T2-T)]{Controlling OECT threshold voltage by chemical doping of p(g3T2-T) gate electrode with F$_{4}$TCNQ. A) Plot of threshold voltage and gate work function for doped gates of different dopant concentrations. B) Transfer curves of p(g3T2-T) channel OECT %(L = 10 µm; W = 2000 µm; VD = −0.1 V, VG scan rate of 20 mV s−1) 
-	with p(g3T2) gates of various F$_{4}$TCNQ dopant concentrations. . Extracted from reference \cite{tanTuningOrganicElectrochemical2022}.}
+	with p(g3T2-T) gates of various F$_{4}$TCNQ dopant concentrations. . Extracted from reference \cite{tanTuningOrganicElectrochemical2022}.}
 	\label{fig:tune}
 \end{figure}
 
-Another approach, explored by Tan et al., involves tuning the doping level of the gate to shift the threshold voltage. They used p(g3T2-T) and achieved a 400mV change in threshold voltage with a 60\% molar ratio of 2,3,5,6-Tetrafluoro-7,7,8,8-tetracyanoquinodimethane (F$_{4}$TCNQ) dopant, as shown in Figure \ref{fig:tune}. This approach offers advantages such as i) protecting the material from oxidation by bringing the Fermi level towards the highest occupied molecular orbital (HOMO), and ii) avoiding interference with the channel which helps to maintain the transconductance unaffected \cite{tanTuningOrganicElectrochemical2022}.
+Another approach, explored by Tan et al., involves tuning the doping level of the gate to shift the threshold voltage. They used p(g3T2-T) and achieved a 400 mV change in threshold voltage with a 60\% molar ratio of %2,3,5,6-Tetrafluoro-7,7,8,8-tetracyanoquinodimethane (
+F$_{4}$TCNQ dopant, as shown in Figure \ref{fig:tune}. This approach offers advantages such as i) protecting the material from oxidation by bringing the Fermi level towards the highest occupied molecular orbital (HOMO), and ii) avoiding interference with the channel which helps to maintain the transconductance unaffected \cite{tanTuningOrganicElectrochemical2022}.
 
 
 \subsection{Side Reactions} \label{subsec:sidereac}

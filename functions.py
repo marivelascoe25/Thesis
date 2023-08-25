@@ -794,9 +794,9 @@ def stability(stability, title, columns, ranges, gate=True, log=True):
     #plt.xlim([-0.5,120.5])
     #plt.ylim([1e-6,1e-3])
 
-    plt.plot(X, Y, 'b-', label = r"$I_{\mathrm{D}}$")
+    plt.plot(X, Y, '-', color = r'#0D4A70', linewidth = 3, label = r"$-I_{D}$")
     if gate:
-        plt.plot(X, Z, 'g-', label = r"$I_{\mathrm{G}}$")
+        plt.plot(X, Z, '--', color = r'#9EC9E2', linewidth = 2, label = r"$-I_{G}$")
         plt.legend()
     if log:
         plt.yscale('log')
@@ -805,6 +805,36 @@ def stability(stability, title, columns, ranges, gate=True, log=True):
     plt.xlabel("t (min)",fontsize=20,fontweight='bold')
     plt.ylabel(r'$I_{D}$ (A)',fontsize=20,fontweight='bold')
                 
+    plt.grid()
+    plt.tight_layout()
+
+def stability_comparison(deox, L, columns, c, log=True):
+
+    ## Create figure
+    plt.figure(figsize=(8, 6.5))
+    plt.xlabel("t (min)",fontsize=20,fontweight='bold')
+    plt.ylabel(r'$-I_{D}$ (A)',fontsize=20,fontweight='bold')
+    #plt.title(title)#title.set_text('First Plot')
+    plt.xlim([-0.5,120.5])
+    #plt.ylim([1e-6,1e-3])
+    if log:
+            plt.yscale('log')
+            #plt.ylim((10**-7,10**-6))
+    ## Extract data
+    for i in range(len(deox)):
+        z_column = columns[2]#5
+        y_column = columns[1]#7
+        x_column = columns[0]#0 ## 9 if loop is added
+        X, Y, Z = extract_data(deox[i],x_column,y_column,z_column)
+        #print (stability)
+        if log:
+            #plt.yscale('log')
+            Y = np.absolute(Y)
+            Z = np.absolute(Z)
+        X = np.divide(X,60)
+        plt.plot(X, Y, '-', color = c[i], linewidth = 3, label = L[i])
+        
+    plt.legend(fontsize="20")
     plt.grid()
     plt.tight_layout()
 

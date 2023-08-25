@@ -165,8 +165,6 @@ where $h\nu = 21.22 eV$, the main He I excitation line of the Helium plasma disc
 
 \subsection{Fabrication of Organic Electrochemical Transistors}
 
-\subsubsection{Influence of Doping on OECT Channel} \label{subsec:photo}
-
 Photolithographically patterned substrates with gold contacts for source, drain and gate were obtained using mask layout illustrated in Figure \ref{fig:mask}. The steps outlined in references \cite{weissbachPhotopatternableSolidElectrolyte2022} and \cite{bongartzOrganicElectrochemicalTransistors2021} were followed, which is also represented in Figure \ref{fig:aupat}.
 
 \begin{figure}[ht]
@@ -195,6 +193,8 @@ Then p(g3T2-T) films were deposited following the procedure described in the pre
 	\caption{Visualization of the workflow for patterning doped p(g3T2-T).}
 	\label{fig:dopedpat}
 \end{figure}
+
+\subsubsection{Influence of Doping on OECT Channel} \label{subsec:photo}
 
 \paragraph{OECT with undoped- and doped-p(g3T2-T) channel.} A solid-state electrolyte precursor was prepared according to the details provided in Table \ref{tab:sse}. Next, 20$\mu$L of this precursor were drop-casted to the patterned samples, both undoped and doped, covering all 14 devices in the sample. Finally, a Ag/AgCl pellet was installed and used as gate (Figure \ref{fig:biosetup}). Transfer characteristics were measured under ambient conditions with a V$_{GS}$ swept backwards from 1.0 V to -0.8 V. %at a scanning rate of 0.083 V/s.
 

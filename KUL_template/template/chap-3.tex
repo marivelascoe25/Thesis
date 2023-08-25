@@ -83,7 +83,7 @@ It is important to consider that UPS is a surface-sensitive measurement. The pen
 %\subsection{Roughness}
 
 \section{Fabrication of Organic Electrochemical Transistors}
-The fabrication process was successfully achieved by using a mask that include a microstructure gate, suitable for studying OECTs with both channel and gate made of the same OMIEC material, commonly PEDOT:PSS. The result of the patterning process is displayed in Figure \ref{fig:channel}. 
+The patterning process was successfully achieved with photolithography by using a mask that include a microstructure gate, suitable for studying OECTs with both channel and gate made of the same OMIEC material, commonly PEDOT:PSS. The result is displayed in Figure \ref{fig:channel}. 
 
 \begin{figure}[ht]
   \centering
@@ -95,35 +95,35 @@ The fabrication process was successfully achieved by using a mask that include a
 %Prior biasing gate, which is due to passive (ion) diffusion?
 
 \subsection{Influence of Doping on OECT Channel}
-Since our final goal is to study fully patterned solid-OECTs that allow the integration to circuits, which is not reported in the literature for this material. It was thought necessary to first understand the solely impact of the channel doping in our devices. Some hypothesis comes along before starting working in this section:
+Since our final goal is to study fully patterned solid-OECTs that will allow integrated circuits (IC), which was not reported in the literature for this material. It was necessary to first understand the solely impact of the channel doping in our devices. Some hypothesis comes along, based on reference \cite{tanTuningOrganicElectrochemical2022}:
 
 \begin{enumerate}
+\item The manipulation of channel doping will negatively impact transfer characteristics.
 \item The introduction of ionic species (TCNQ$^{-}$) in p(g3T2-T) should create depletion-mode devices with positive threshold voltages. Since a higher positive gate biased would be needed to counteract these anions and turn OFF the device.
-\item The manipulation of channel doping will negatively impact transfer characteristics, as stated in reference \cite{tanTuningOrganicElectrochemical2022}.
 \end{enumerate}
 
 As explained in the last chapter, we paired our channel with a non-polarizable Ag/AgCl electrode as gate, and coupled with SSE precursor. Unfortunately, the sample that used solution with dopant concentration of 20 mg/mL exhibited doping homogeneity issues. While photolithography was still possible, it could not provide a fair basis for comparison with the other devices. Therefore, this sample will be omitted from this analysis.
 
-The results shown in Figure \ref{fig:transx2}, Figure \ref{fig:shift1} and Figure \ref{fig:vth_vds} correspond to the same device and same loop on each sample (undoped, 5 mg/mL and 10 mg/mL dopants) from the same batch of materials. After reporting the findings on the analysis of these devices, a more statistical study will be shown within the operating devices on each sample. An important consideration for the statistical analysis of this part is that besides the attempts to increase the yields, only 3 or 4 out of the 14 devices were operational on each sample. Further improvements on the development process were needed, and were accomplished as it will be shown in further sections of this chapter. 
+The results shown in Figure \ref{fig:transx2}, Figure \ref{fig:shift1} and Figure \ref{fig:vth_vds} correspond to the same device and same loop on each sample (undoped, 5 mg/mL and 10 mg/mL dopants) from the same batch of materials. After reporting the findings on the analysis of these devices, a more statistical study will be shown within the operating devices on each sample. An important consideration for the statistical analysis of this part is that besides the attempts to increase the yields, only 3 or 4 out of the 14 devices were operational on each sample. Further improvements on the photolithograpy process were needed, and were accomplished as it will be shown in further sections of this chapter. 
 
 Transfer characteristics are illustrated in Figure \ref{fig:transx2}A, C, E which correspond to undoped, 5 mg/mL and 10 mg/mL dopants, respectively. A positive turn ON voltage is perceived in the undoped OECT device, which evidenced the fast oxidation (unwanted doping) of p(g3T2-T) under environmental conditions due to its low IP. 
 
-The drain current ($I_{D}$) of the undoped device shows higher values than doped devices, Hidalgo et al. reported that pristine p(g3T2-T) show oxygen reduction reaction activity in oxygen-saturated conditions, therefore, it is expected an increase of current within the polymer until saturation \cite{hidalgocastilloSimultaneousPerformanceStability2022a}.. It will be necessary to control the oxidation state of the polymer among the different steps of the photolithography process, or somehow revert the oxidation of p(g3T2-T), this issue will be further discuss in the following sections.
+The drain current ($I_{D}$) of the undoped device shows higher values than doped devices, Hidalgo et al. reported that pristine p(g3T2-T) show oxygen reduction reaction activity in oxygen-saturated conditions, therefore, it is expected an increase of current within the polymer until saturation \cite{hidalgocastilloSimultaneousPerformanceStability2022a}. It will be necessary to control the oxidation state of the polymer among the different steps of the photolithography process, or somehow revert the oxidation of p(g3T2-T), this will be addressed in the following sections.
 
-Gate current ($I_{G}$) is displayed in dotted lines and it is perceived that the drain OFF current ($I_{D,OFF}$) is dominated by this leakage current in all devices. Figure \ref{fig:shift1} shows doped devices have minimum differences on $I_{D,OFF}$.
+Gate current ($I_{G}$) is displayed in dotted lines and it is perceived that the drain OFF current ($I_{D,OFF}$) is dominated by this leakage current in all devices. %Figure \ref{fig:shift1} shows doped devices have minimum differences on $I_{D,OFF}$.
 
 The higher dopant concentration device (10 mg/mL dopant) shows signs of breakage as going to more negative $V_{DS}$ (Figure \ref{fig:transx2}E and Figure \ref{fig:shift1}D), therefore, this measurement will be disregard for calculating transconductance and threshold voltage.
 
-\begin{figure}[ht]
+\begin{figure}[!htb]
     \centering
-    \subfloat[Undoped device]{{\includegraphics[width=5.5cm]{Images/pdf/transfer_undoped.pdf} }}
-    \subfloat[Undoped device]{{\includegraphics[width=5.2cm]{Images/pdf/id+gm_undoped_final.pdf} }}
+    \subfloat[Undoped device]{{\includegraphics[width=5.7cm]{Images/pdf/transfer_undoped.pdf} }}
+    \subfloat[Undoped device]{{\includegraphics[width=5.3cm]{Images/pdf/id+gm_undoped_final.pdf} }}
     \qquad
-    \subfloat[5 mg/mL dopant device]{{\includegraphics[width=5.5cm]{Images/pdf/transfer_doped5.pdf} }}
-    \subfloat[5 mg/mL dopant device]{{\includegraphics[width=5.2cm]{Images/pdf/id+gm_doped5_final.pdf} }}
+    \subfloat[5 mg/mL dopant device]{{\includegraphics[width=5.7cm]{Images/pdf/transfer_doped5.pdf} }}
+    \subfloat[5 mg/mL dopant device]{{\includegraphics[width=5.3cm]{Images/pdf/id+gm_doped5_final.pdf} }}
     \qquad
-    \subfloat[10 mg/mL dopant device]{{\includegraphics[width=5.5cm]{Images/pdf/transfer_doped10.pdf} }}
-    \subfloat[10 mg/mL dopant device]{{\includegraphics[width=5.2cm]{Images/pdf/id+gm_doped10_final.pdf} }}
+    \subfloat[10 mg/mL dopant device]{{\includegraphics[width=5.7cm]{Images/pdf/transfer_doped10.pdf} }}
+    \subfloat[10 mg/mL dopant device]{{\includegraphics[width=5.3cm]{Images/pdf/id+gm_doped10_final.pdf} }}
     \caption[Transfer characteristics and transconductance at different doping levels and $V_{DS}$]{A), C), E) Transfer characteristics of all measured $V_{DS}$ including the gate leakage current $I_{G}$ B), D), F) Transfer curves (off-switching) with corresponding transconductance. Each group of graphs for undoped, 5 mg/mL and 10 mg/mL doped p(g3T2-T) channel, respectively.}
     \label{fig:transx2}
 \end{figure}
@@ -132,13 +132,13 @@ The higher dopant concentration device (10 mg/mL dopant) shows signs of breakage
 %U2 loop 3 for doped 5
 %U4 loop 3 for doped 10
 
-Additionally, it is observed that $I_{D,ON}$ decreases while increasing doping levels. This is reflected in the maximum transconductance values displayed in Table \ref{tab:trans}, a clear drop of |$g_{m,max}$| is seen as doping level increases. From our initial hypothesis, this was expected and a further analysis will be performed with impedance measurements to calculate volumetric capacitance, since as explained in the Background chapter, Section \ref{subsec:devphy}, $I_{D}$ depends on this values along with the charge carrier mobility.
+In Figure \ref{fig:shift1}, it can be perceived that doped devices exhibit minimum differences on $I_{D,OFF}$ but $I_{D,ON}$ decreases while increasing doping levels. This is reflected in the maximum transconductance values displayed in Table \ref{tab:trans}, a clear drop of |$g_{m,max}$| is seen as doping level increases. From our initial hypothesis, this was expected and a further analysis will be performed later with impedance measurements to calculate volumetric capacitance. %, since as explained in the Background chapter, Section \ref{subsec:devphy}, $I_{D}$ depends on this values along with the charge carrier mobility.
 
 %When doping our polymer, we are increasing its conductivity by inducing new charges in its backbone, however, the introduction of new ionic species will negatively impact the mobility of the induced charges, which explains the decrease in $I_{D,ON}$. %????
 
 \begin{table}[ht]
 \centering
-\caption{Maximum transconductance values extracted from Figure \ref{fig:transx2}}
+\caption{Maximum transconductance values extracted from Figure \ref{fig:transx2}B, D, F}
 \begin{tabular}{l|c|c|c}
 |g$_{m,max}$| [mS] @ & Undoped & 5 mg/mL & 10 mg/mL \\\hline
 $V_{DS}$ = -0.1 V & 0.75 & 0.45 & 0.24\\
@@ -149,7 +149,7 @@ $V_{DS}$ = -0.7 V & 3.59 & 2.23 & \\ \hline
 \label{tab:trans}
 \end{table}
 
-More importantly what caught our attention, results displayed in Figure \ref{fig:shift1} and Figure \ref{fig:vth_vds} evidenced turn ON voltages and threshold voltages, respectively, \textbf{shifted towards negative values} as the dopant concentration increased in all $V_{DS}$ values, contradicting our initial hypothesis. A sort of \textit{compensation doping} happened upon coupling channel and gate with SSE precursor, it will be necessary to monitor the conductivity of the material  upon contact with electrolyte. %, and as explained in the Background chapter, p(g3T2-T) as a type VI OMIEC, unlike PEDOT:PSS, have ionic species as free carriers and not chemically bonded. Further analysis in the conductivity needs to be done to understand to impact of this coupling in our undoped and doped polymer.
+More importantly and what caught our attention, results displayed in Figure \ref{fig:shift1} and Figure \ref{fig:vth_vds} evidenced turn ON voltages and threshold voltages, respectively, \textbf{shifted towards negative values} as the dopant concentration increased in all $V_{DS}$ values, \textbf{contradicting our initial hypothesis}. A sort of \textbf{compensation doping effect} is evidenced in the OECTs. Further investigation is needed to counteract this effect. %, and as explained in the Background chapter, p(g3T2-T) as a type VI OMIEC, unlike PEDOT:PSS, have ionic species as free carriers and not chemically bonded. Further analysis in the conductivity needs to be done to understand to impact of this coupling in our undoped and doped polymer.
 %% EG3 ensure no cation trapping in the crystalline phase of OMIECs
 
 \begin{figure}[ht]
@@ -159,9 +159,11 @@ More importantly what caught our attention, results displayed in Figure \ref{fig
     \qquad
     \subfloat[$V_{DS}$ = -0.5 V]{{\includegraphics[width=5.5cm]{Images/pdf/Shift_Vds5.pdf} }}
     \subfloat[$V_{DS}$ = -0.7 V]{{\includegraphics[width=5.5cm]{Images/pdf/Shift_Vds7.pdf} }}
-    \caption[Transfer characteristics comparing different doping levels]{Transfer characteristics comparing undoped, 5 mg/mL and 10 mg/mL dopants devices, each graph represent a different $V_{DS }$}
+    \caption[Transfer characteristics comparing different doping levels]{Transfer characteristics comparing undoped, 5 mg/mL and 10 mg/mL dopants devices, each graph represent a different $V_{DS}$}
     \label{fig:shift1}
 \end{figure}
+
+Additionally, threshold values showed lower variability among different values of $V_{DS}$ with higher doping level (Figure \ref{fig:vth_vds}). In the undoped species, the variability could be caused by ORR which should be different at different drain biased conditions. Whereas, in the doped species this variability should decrease since we are reducing ORR when doping by depleting reactive electrons from p(g3T2-T) with F$_{4}$TCNQ, hence assuring a better stability in air \cite{tanTuningOrganicElectrochemical2022}. %Further analysis needs to be done to confirm this hypothesis.  %Then although we are impacting mobility and repeatability among loops, the values at different drain biased are maintain. 
 
 \begin{figure}[ht]
   \centering
@@ -170,20 +172,18 @@ More importantly what caught our attention, results displayed in Figure \ref{fig
   \label{fig:vth_vds}
 \end{figure}
 
-Additionally, threshold values had lower variability among different values of $V_{DS}$ with higher doping level (Figure \ref{fig:vth_vds}). In the undoped species, the variability could be caused by ORR which should be different at different biased conditions of the channel. Whereas, in the doped species this variability should decrease since we are reducing ORR when doping by depleting reactive electrons from p(g3T2-T) with F$_{4}$TCNQ, hence assuring a better stability in air \cite{tanTuningOrganicElectrochemical2022}. %Further analysis needs to be done to confirm this hypothesis.
- %Then although we are impacting mobility and repeatability among loops, the values at different drain biased are maintain. 
-
-Moreover, something that it is not shown in this report but it was perceived during analysis, there is higher repeatability of transfer characteristics with undoped OECT devices. The saturation of ORR in undoped species, as stated before, may maintain repeatability. %but it is yet unclear.
-
-%An new hypothesis that could explained is to consider our environmental conditions as a infinite reservoir of molecular oxygen, until this unwanted doping and ORR reaches saturation, making it stable. In the case of F$_{4}$TCNQ, stability is still unclear and further investigation will be done in the next sections.
+Moreover, something that it is not shown in this report but it was perceived during analysis, there is higher repeatability of transfer characteristics with undoped OECT devices. The saturation of ORR in undoped species, as stated before, may maintain repeatability. However, variability in doped species needs yet to be further study. %Potential for appendix
+%but it is yet unclear. %An new hypothesis that could explained is to consider our environmental conditions as a infinite reservoir of molecular oxygen, until this unwanted doping and ORR reaches saturation, making it stable. In the case of F$_{4}$TCNQ, stability is still unclear and further investigation will be done in the next sections.
 
 \subsection{Stability on Air of p(g3T2-T)}
-Channel conductivity was measured immediately after spin-coating exhibiting a value of 1 $\mu$S, after the patterning process described in previous sections, the conductivity increased three orders of magnitude yielding to approximate 1 mS. Although, $\mu$S values already represent a sign of oxidation, the patterning process oxidizes even more our material. In this section, a way to revert this oxidation and find a compatible process to obtain accumulation-mode OECTs.
-
+Channel conductivity of an undoped device was measured immediately after spin-coating exhibiting a value of 1 $\mu$S, after the patterning process described in previous sections, the conductivity increased three orders of magnitude yielding to approximate 1 mS. Although, $\mu$S values already represent a sign of oxidation, the patterning process oxidizes our material even more. %In this section, a way to revert this oxidation and find a compatible process to obtain accumulation-mode OECTs.
 %Before getting into the revers
-Measurements of $I_{D}$ at -0.3 V of $V_{DS}$ and no gate biased in glovebox exhibited a small decrease of 4\% within two hours, and small increase of 15\% within two hours in air exposure, pretty stable after patterning.
 
-Interestingly, upon contact with SSE precursor, conductivity drops significantly, at least six orders of magnitude, as shown in Figure \ref{fig:revox1}A. Another device from another sample was tested showing the same result. 
+Measurements of $I_{D}$ at -0.3 V of $V_{DS}$ and no gate-biased exhibited a small decrease of 4\%, and small increase of 15\% within two hours in in $N_{2}$ and air environment, respectively. Air stability is seeing after patterning but due to the unwanted doping.
+
+Same study was performed with a doped device with 5 mg/mL of F$_{6}TCNQ$ dopant, obtaining a higher level of doping than using F$_{4}TCNQ$, as it can be examined in Appendix A. The channel conductivity yielded to a value of 266 $\mu$S with a reduction of 1.2\% within one hour in $N_{2}$ environment, and same value with minimal fluctuation of 1.0\% within one hour in ambient condition. Showing a lower conductivity compared to the oxidized p(g3T2-T) but same stability in air, as stated in reference \cite{tanTuningOrganicElectrochemical2022}.
+
+Interestingly, upon contact with SSE precursor, conductivity of both samples drops significantly, around six orders of magnitude, under $N_{2}$ environment, basically until reaching the sensitivity limits of our equipment, and noisy signal is perceived, as shown in Figure \ref{fig:revox1}A. Our first hypothetical explanation relates to the fact that p(g3T2-T), as a type VI OMIEC, has no chemical binding with $TCNQ^{-}$ anions. Upon contact with the electrolyte, anions are dragged to itself rather than staying in the backbone of the polymer (de-doping), leading to its original insulating state, which is required for accumulation-mode OECTs.
 %\begin{table}[ht]
 %\centering
 %\caption{Conductivity measurements of undoped p(g3T2-T)}
@@ -195,29 +195,47 @@ Interestingly, upon contact with SSE precursor, conductivity drops significantly
 %\label{tab:cond}
 %\end{table}
 
-\begin{figure}[!htb]
+\begin{figure}[ht]
     \centering
-    \subfloat[Only $N_{2}$ environment]{{\includegraphics[height=5.5cm]{Images/pdf/revox_gb_only.pdf} }}
-    \qquad
-    \subfloat[Ambient environment]{{\includegraphics[height=5.5cm]{Images/pdf/revox_air.pdf} }}
-    \subfloat[Ambient and $N_{2}$ environment]{{\includegraphics[height=5.5cm]{Images/pdf/revox_gb_afterair.pdf} }}
-    \caption[Drain current over time of undoped p(g3T2-T) coupled with SSE precursor]{Drain current over time of undoped p(g3T2-T) coupled with SSE precursor under A) $N_{2}$ environment, B) Ambient environment, C)$N_{2}$ environment after B)}
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/revox_gb_only.pdf} }}
+    %\qquad
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/revox_air.pdf} }}
+    %\subfloat[Ambient and $N_{2}$ environment]{{\includegraphics[height=5.5cm]{Images/pdf/revox_gb_afterair.pdf} }}
+    \caption[Drain current over time of undoped-p(g3T2-T) coupled with SSE precursor]{Drain current over time of undoped p(g3T2-T) coupled with SSE precursor under A) $N_{2}$, and B) ambient environment%, C)$N_{2}$ environment after B)
+    .}
     \label{fig:revox1}
 \end{figure}
 
+On the other hand, as seen in Figure \ref{fig:revox1}B, under ambient conditions, there is a smaller decrease of more than one order of magnitude for the undoped sample. The doped sample show a similar and faster drop in the first 15 minutes, but then a sudden increase of $I_{D}$ is perceived. In both scenarios, ORR prevents a higher decrease of current, and the fluctuation seen in the doped species may be due the simultaneous ORR and the de-doping, as commented before. %Another undoped sample share the same results.
+
+\begin{figure}[ht]
+    \centering
+    %\subfloat[N$_{2}$ environment]{{\includegraphics[height=5.5cm]{Images/pdf/revox_gb_only.pdf} }}
+    %\subfloat[Transfer in ambient]{{
+    \includegraphics[height=6cm]{Images/pdf/revox_transfer_loop2.pdf}% }}
+    \caption[Transfer characteristics after dedoping]{Transfer characteristics at different $V_{DS}$ under ambient conditions}
+    \label{fig:transrevox1}
+\end{figure}
+
+Transfer curves of the undoped device using an Ag/AgCl pellet as gate were measured under ambient conditions after de-doping in $N_{2}$ environment. The device had an ON voltage very close to zero, as seen in Figure \ref{fig:transrevox1}, even shifting to negative values as runs were progressing. Although, there a clear sign of degradation of the device. 
+
+The de-doping could become a method to obtain an accumulation-mode OECTs by reversing the oxidation of p(g3T2-T).
 
 \subsection{Reverse Oxidation of Undoped-p(g3T2-T)}
-Transfer curves were measured from the latter device under environmental conditions with a Ag/AgCl pellet, a clear shift to more negative values of turn ON values are noticed, as reported in Figure \ref{fig:revox1}B.
+From the previous section, the de-doping of the p(g3T2-T) took around two hours to obtain a fully insulating state. However, we could speed up this process by positive-biased the gate of our already patterned oxidized sample. 
 
-\begin{figure}[!ht]
+Additionaly, another method acknowledge by Biosens group members is going to be tested, using high temperature to revert the oxidation of an OECT device.  
+
+\subsubsection{By Electrochemical Dedoping}
+A +1V gate biased was applied 
+
+\begin{figure}[ht]
     \centering
-    \subfloat[N$_{2}$ environment]{{\includegraphics[height=5.5cm]{Images/pdf/revox_gb_only.pdf} }}
-    \subfloat[Transfer in ambient]{{\includegraphics[height=5.5cm]{Images/pdf/revox_transfer_loops1.pdf} }}
-    \caption[Reversing oxidation of undoped-p(g3T2-T)]{Transfer characteristics comparing undoped, 5 mg/mL and 10 mg/mL dopants devices, each graph represent a different V$_{DS }$}
+    \includegraphics[height=6cm]{Images/pdf/elec-dedop1.pdf}
+    \caption[Transfer characteristics after dedoping]{Transfer characteristics at different $V_{DS}$ under ambient conditions}
     \label{fig:revox2}
 \end{figure}
 
-\subsubsection{By Electrochemical Dedoping}
 
 \subsubsection{By Heating}
 

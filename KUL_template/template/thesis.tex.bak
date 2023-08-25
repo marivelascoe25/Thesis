@@ -1,6 +1,7 @@
 \documentclass[master=emnan,masteroption=ne]{kulemt}
 \usepackage{subfig}
 \usepackage{xfrac}
+\usepackage{mathtools}
 \setup{% Remove the "%" on the next line when using UTF-8 character encoding
   inputenc=utf8,
   title={Tuning Threshold Voltage in Organic Electrochemical Transistors by Varying Doping of the Conjugated Polymer p(g3T2-T)},
