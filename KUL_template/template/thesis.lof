@@ -15,13 +15,13 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Scheme of doping processes in organic semiconductors}}{5}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Representation of bipolaron formation introduced via doping}}{5}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Formation of polaron, bipolaron, and bipolaron band}}{6}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Material classes of OMIECs}}{8}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Electronic transport mechanisms in OMIECs}}{9}{figure.caption.15}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Thermally activated hopping}}}}{9}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Band-like transport}}}}{9}{subfigure.7.2}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Ionic transport mechanisms in OMIECs}}{10}{figure.caption.16}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Ion hopping} via segmental motion\\\hspace {1em} or ion clusters}}}{10}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Solvated/vehicle mechanism}}}}{10}{subfigure.8.2}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Material classes of OMIECs}}{7}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Electronic transport mechanisms in OMIECs}}{8}{figure.caption.15}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Thermally activated hopping}}}}{8}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Band-like transport}}}}{8}{subfigure.7.2}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Ionic transport mechanisms in OMIECs}}{9}{figure.caption.16}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textbf {Ion hopping} via segmental motion\\\hspace {1em} or ion clusters}}}{9}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textbf {Solvated/vehicle mechanism}}}}{9}{subfigure.8.2}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Device physics of MOSFET vs OECT}}{10}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Typical OECT structure and circuit model}}{11}{figure.caption.18}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Typical OECT structure}}}{11}{subfigure.10.1}%
@@ -70,14 +70,12 @@
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$V_{DS}$ = -0.5 V}}}{37}{subfigure.7.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$V_{DS}$ = -0.7 V}}}{37}{subfigure.7.4}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Threshold shift at different doping levels and $V_{DS}$}}{38}{figure.caption.67}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Drain current over time of undoped p(g3T2-T) coupled with SSE precursor}}{39}{figure.caption.68}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Only $N_{2}$ environment}}}{39}{subfigure.9.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ambient environment}}}{39}{subfigure.9.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Ambient and $N_{2}$ environment}}}{39}{subfigure.9.3}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Reversing oxidation of undoped-p(g3T2-T)}}{40}{figure.caption.69}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {N$_{2}$ environment}}}{40}{subfigure.10.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Transfer in ambient}}}{40}{subfigure.10.2}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Drain current over time of undoped-p(g3T2-T) coupled with SSE precursor}}{39}{figure.caption.68}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{39}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{39}{subfigure.9.2}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Transfer characteristics after dedoping}}{39}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Transfer characteristics after dedoping}}{40}{figure.caption.70}%
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ}}{45}{figure.caption.70}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ}}{45}{figure.caption.71}%
 \addvspace {10pt}
