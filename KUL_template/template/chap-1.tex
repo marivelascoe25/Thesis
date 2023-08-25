@@ -225,6 +225,16 @@ Meanwhile, the ionic circuit consists of a resistor that represents the flow of 
 	\label{fig:bernard}
 \end{figure}
 
+Finally, the drain current $I_{D}$ for the steady state behavior of the OECT can now be described using the following equation:
+
+\begin{equation}\label{eq:id}
+	I_{D} = \begin{dcases*}
+    -\mu C^{*} [\frac{Wd}{L}\frac{V_{GS}-V_{Th}^{2}}{2V_{Th}}] & \text{$|V_{DS}| < |V_{GS}|-|V_{Th}|$} \\
+    -\mu C^{*} \frac{Wd}{L} [1 - \frac{V_{GS}-1/2 V_{DS}}{V_{Th}}] V_{DS} & \text{$|V_{DS}| > |V_{GS}|-|V_{Th}|$}
+    \end{dcases*}
+\end{equation}
+
+where $\mu$ is the charge mobility, C* is the volumetric capacitance and W, d and L are the width, thicknes and length of the channel. $V_{GS}$, $V_{DS}$ and $V_{Th}$ correspond to the gate, drain and threshold voltage, respectively. Parameters will be further discuss in the following sections.  
 
 \subsection{Operation Modes}
 
@@ -293,19 +303,19 @@ Under the classification presented in Figure \ref{fig:omiectypes}, p(g3T2-T) can
 
 \begin{table}[h]
 	\centering
-	\caption[Volumetric capacitance (C*) of various OECTs channel materials]{Volumetric capacitance (C*) of OECTs channel materials including p(g2T2-T), p(g3T2-T), p(g4T2-T) \cite{moserEthyleneGlycolBasedSide2020} and PEDOT:PSS \cite{inalBenchmarkingOrganicMixed2017} using a 0.1 NaCl electrolyte and Ag/AgCl pellet electrode.}
-	\begin{tabular}{l c} \hline
-		Polymer	&  C* (Fcm$^{-3}$) \\ \hline
-		p(g2T2-T) & 8$\pm$2 \\
-		p(g3T2-T) & 211$\pm$18 \\
-		p(g4T2-T) & 192$\pm$10 \\  
-		PEDOT:PSS & 39 \\\hline
+	\caption[Volumetric capacitance (C*) of various OECTs channel materials]{Volumetric capacitance (C*) of OECTs channel materials including p(g2T2-T), p(g3T2-T), p(g4T2-T) and PEDOT:PSS using a 0.1 NaCl electrolyte and Ag/AgCl pellet electrode.}
+	\begin{tabular}{l c c} \hline
+		Polymer	&  C* (Fcm$^{-3}$) & Reference \\ \hline
+		p(g2T2-T) & 8$\pm$2 & \cite{moserEthyleneGlycolBasedSide2020}\\
+		p(g3T2-T) & 211$\pm$18 & \cite{moserEthyleneGlycolBasedSide2020}\\
+		p(g4T2-T) & 192$\pm$10 & \cite{moserEthyleneGlycolBasedSide2020}\\  
+		PEDOT:PSS & 39 & \cite{inalBenchmarkingOrganicMixed2017}\\\hline
 	\end{tabular}
 	\label{tab:perf}
 \end{table}
 
 
-\subsection{Important Figures of Merit}
+\subsection{Important Figures of Merit} \label{OECT:fom}
 
 \subsubsection{Transconductance}
 Transconductance is considered as the most important parameter for measuring the amplification capability of any transistor. It is calculated as the first-order derivative of the output current (drain current) with respect to the input voltage (gate-source voltage), expressed as $g_{m} = \sfrac{\partial I_{D}}{\partial V_{GS}}$. Bernards and Malliaras derived this parameter in their mathematical model for depletion-mode p-type OECTs \cite{bernardsSteadyStateTransientBehavior2007}, as discussed in Section \ref{subsec:devphy}. When considering both n-type and p-type OECTs, the transconductance can be expressed as follows: %\ref{eq:gm}:
