@@ -1,5 +1,4 @@
-\chapter{Results and Discussion}
-\label{cha:3}
+\chapter{Results and Discussion} \label{cha:3}
 
 \section{Doping Characterization}
 
@@ -75,7 +74,7 @@ It is important to consider that UPS is a surface-sensitive measurement. The pen
 	\subfloat[]{{\includegraphics[width=6cm]{Images/pdf/WF_final.pdf} }}
 	%\qquad
 	\hspace{2em}
-	\subfloat[]{{\includegraphics[width=6.5cm]{Images/pdf/WF.pdf} }}
+	\subfloat[]{{\includegraphics[width=6cm]{Images/pdf/WF.pdf} }}
 	\caption[Representation of the Fermi level shift upon doping]{ Graphical representation of A) the relationship between the binding energies E$_{B}$ and the kinetic energy of the photoelectrons E$_{kin}$, and B) the Fermi level shift, upon doping.} 
 	\label{fig:ups}
 \end{figure}
@@ -95,14 +94,14 @@ The patterning process was successfully achieved with photolithography by using 
 %Prior biasing gate, which is due to passive (ion) diffusion?
 
 \subsection{Influence of Doping on OECT Channel}
-Since our final goal is to study fully patterned solid-OECTs that will allow integrated circuits (IC), which was not reported in the literature for this material. It was necessary to first understand the solely impact of the channel doping in our devices. Some hypothesis comes along, based on reference \cite{tanTuningOrganicElectrochemical2022}:
+Since our final goal is to study fully patterned solid-OECTs that will allow integrated circuits (IC). It was necessary to first understand the solely impact of the channel doping in our devices. Some hypothesis comes along, based on reference \cite{tanTuningOrganicElectrochemical2022}:
 
 \begin{enumerate}
 \item The manipulation of channel doping will negatively impact transfer characteristics.
 \item The introduction of ionic species (TCNQ$^{-}$) in p(g3T2-T) should create depletion-mode devices with positive threshold voltages. Since a higher positive gate biased would be needed to counteract these anions and turn OFF the device.
 \end{enumerate}
 
-As explained in the last chapter, we paired our channel with a non-polarizable Ag/AgCl electrode as gate, and coupled with SSE precursor. Unfortunately, the sample that used solution with dopant concentration of 20 mg/mL exhibited doping homogeneity issues. While photolithography was still possible, it could not provide a fair basis for comparison with the other devices. Therefore, this sample will be omitted from this analysis.
+As explained in the last chapter, we paired our channel with a non-polarizable Ag/AgCl pellet as gate, a widely used gate to investigate OECT-based materials, and coupled with SSE precursor. Unfortunately, the sample that used solution with dopant concentration of 20 mg/mL exhibited doping homogeneity issues. While photolithography was still possible, it could not provide a fair basis for comparison with the other devices. Therefore, this sample will be omitted from this analysis.
 
 The results shown in Figure \ref{fig:transx2}, Figure \ref{fig:shift1} and Figure \ref{fig:vth_vds} correspond to the same device and same loop on each sample (undoped, 5 mg/mL and 10 mg/mL dopants) from the same batch of materials. After reporting the findings on the analysis of these devices, a more statistical study will be shown within the operating devices on each sample. An important consideration for the statistical analysis of this part is that besides the attempts to increase the yields, only 3 or 4 out of the 14 devices were operational on each sample. Further improvements on the photolithograpy process were needed, and were accomplished as it will be shown in further sections of this chapter. 
 
@@ -183,7 +182,7 @@ Measurements of $I_{D}$ at -0.3 V of $V_{DS}$ and no gate-biased exhibited a sma
 
 Same study was performed with a doped device with 5 mg/mL of F$_{6}TCNQ$ dopant, obtaining a higher level of doping than using F$_{4}TCNQ$, as it can be examined in Appendix A. The channel conductivity yielded to a value of 266 $\mu$S with a reduction of 1.2\% within one hour in $N_{2}$ environment, and same value with minimal fluctuation of 1.0\% within one hour in ambient condition. Showing a lower conductivity compared to the oxidized p(g3T2-T) but same stability in air, as stated in reference \cite{tanTuningOrganicElectrochemical2022}.
 
-Interestingly, upon contact with SSE precursor, conductivity of both samples drops significantly, around six orders of magnitude, under $N_{2}$ environment, basically until reaching the sensitivity limits of our equipment, and noisy signal is perceived, as shown in Figure \ref{fig:revox1}A. Our first hypothetical explanation relates to the fact that p(g3T2-T), as a type VI OMIEC, has no chemical binding with $TCNQ^{-}$ anions. Upon contact with the electrolyte, anions are dragged to itself rather than staying in the backbone of the polymer (de-doping), leading to its original insulating state, which is required for accumulation-mode OECTs.
+Interestingly, upon contact with SSE precursor, conductivity of both samples drops significantly, around six orders of magnitude, under $N_{2}$ environment, basically until reaching the sensitivity limits of our equipment and noisy signal is perceived, as shown in Figure \ref{fig:revox1}A. Our first hypothetical explanation relates to the fact that p(g3T2-T), as a type VI OMIEC, has no chemical binding with $TCNQ^{-}$ anions. Upon contact with the electrolyte, anions are dragged to it rather than staying in the backbone of the polymer (de-doping), leading to its original insulating state, which is actually required for accumulation-mode OECTs.
 %\begin{table}[ht]
 %\centering
 %\caption{Conductivity measurements of undoped p(g3T2-T)}
@@ -197,65 +196,130 @@ Interestingly, upon contact with SSE precursor, conductivity of both samples dro
 
 \begin{figure}[ht]
     \centering
-    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/revox_gb_only.pdf} }}
+    \subfloat[]{{\includegraphics[width=6.5cm]{Images/pdf/revox_gb_only.pdf} }}
     %\qquad
-    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/revox_air.pdf} }}
+    \subfloat[]{{\includegraphics[width=6.5cm]{Images/pdf/revox_air.pdf} }}
     %\subfloat[Ambient and $N_{2}$ environment]{{\includegraphics[height=5.5cm]{Images/pdf/revox_gb_afterair.pdf} }}
     \caption[Drain current over time of undoped-p(g3T2-T) coupled with SSE precursor]{Drain current over time of undoped p(g3T2-T) coupled with SSE precursor under A) $N_{2}$, and B) ambient environment%, C)$N_{2}$ environment after B)
     .}
     \label{fig:revox1}
 \end{figure}
 
-On the other hand, as seen in Figure \ref{fig:revox1}B, under ambient conditions, there is a smaller decrease of more than one order of magnitude for the undoped sample. The doped sample show a similar and faster drop in the first 15 minutes, but then a sudden increase of $I_{D}$ is perceived. In both scenarios, ORR prevents a higher decrease of current, and the fluctuation seen in the doped species may be due the simultaneous ORR and the de-doping, as commented before. %Another undoped sample share the same results.
+On the other hand, as seen in Figure \ref{fig:revox1}B, under ambient conditions, there is a smaller decrease of more than one order of magnitude for the undoped sample. The doped sample show a similar and faster drop in the first 15 minutes, but then a sudden increase of $I_{D}$ is perceived. In both scenarios, ORR prevents a higher decrease of current, and the fluctuation seen in the doped species may be due the simultaneous ORR and the de-doping. %Another undoped sample share the same results.
 
 \begin{figure}[ht]
     \centering
-    %\subfloat[N$_{2}$ environment]{{\includegraphics[height=5.5cm]{Images/pdf/revox_gb_only.pdf} }}
+    %\subfloat[N$_{2}$ environment]{{\includegraphics[width=5.5cm]{Images/pdf/revox_gb_only.pdf} }}
     %\subfloat[Transfer in ambient]{{
-    \includegraphics[height=6cm]{Images/pdf/revox_transfer_loop2.pdf}% }}
-    \caption[Transfer characteristics after dedoping]{Transfer characteristics at different $V_{DS}$ under ambient conditions}
+    \includegraphics[width=6.5cm]{Images/pdf/revox_transfer_loop2.pdf}% }}
+    \caption[Transfer characteristics after electrochemical de-doping]{Transfer characteristics after electrochemical de-doping at different $V_{DS}$ under ambient conditions}
     \label{fig:transrevox1}
 \end{figure}
 
-Transfer curves of the undoped device using an Ag/AgCl pellet as gate were measured under ambient conditions after de-doping in $N_{2}$ environment. The device had an ON voltage very close to zero, as seen in Figure \ref{fig:transrevox1}, even shifting to negative values as runs were progressing. Although, there a clear sign of degradation of the device. 
+Transfer curves of the undoped device using an Ag/AgCl pellet as gate were measured under ambient conditions after de-doping in $N_{2}$ environment, as seen in Figure \ref{fig:transrevox1}. The device is shifting its ON voltage and negative threshold voltages values, as shown in Table \ref{tab:vth_air}, to negative values. A visible sign of degradation is perceived at the end of the measurements when $V_{DS}$ is -0.1 V.
 
-The de-doping could become a method to obtain an accumulation-mode OECTs by reversing the oxidation of p(g3T2-T).
+\begin{table}[ht]
+\centering
+\caption{Threshold voltage extracted from Figure \ref{fig:transrevox1}}
+\begin{tabular}{c|c}
+ $V_{DS}$ [V] & $V_{Th}$ [V] \\\hline
+-0.1 & -0.18 \\
+-0.3 & -0.15 \\
+-0.5 & -0.13 \\ \hline
+\end{tabular}
+\label{tab:vth_air}
+\end{table}
+
+In summary, the de-doping could become a method to obtain an accumulation-mode OECTs by reversing the oxidation of p(g3T2-T) and will be addressed in the following section.
 
 \subsection{Reverse Oxidation of Undoped-p(g3T2-T)}
-From the previous section, the de-doping of the p(g3T2-T) took around two hours to obtain a fully insulating state. However, we could speed up this process by positive-biased the gate of our already patterned oxidized sample. 
+From the analysis above, the de-doping of the p(g3T2-T) took around two hours to obtain a fully insulating state of the polymer. However, we could speed up this process by applying a positive gate-biased on one of the devices.
 
-Additionaly, another method acknowledge by Biosens group members is going to be tested, using high temperature to revert the oxidation of an OECT device.  
+Additionally, the use of high-temperature-baking step to revert oxidation of an OECT device was a method acknowledged by team mates of the Biosens group at IAPP, and is also going to be tested.   
 
 \subsubsection{By Electrochemical Dedoping}
-A +1V gate biased was applied 
+De-doping under $N_{2}$ environment was performed by applying +1 V gate biased, p(g3T2-T) reached its insulating state in less than 300 seconds. 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[height=6cm]{Images/pdf/elec-dedop1.pdf}
-    \caption[Transfer characteristics after dedoping]{Transfer characteristics at different $V_{DS}$ under ambient conditions}
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/elec-dedop1.pdf} }}
+    \subfloat[]{{\includegraphics[width=6.5cm]{Images/pdf/transfer_de-dop.pdf}}}
+    \caption[Electrochemical de-doping of oxidized p(g3T2-T) OECT]{A) De-doping p(g3T2-T) using a gate biased of +1V, gold arrows indicate gate connection, while grey arrows indicate when gate was disconnected. B) Transfer characteristic at $V_{DS}$ of -0.1 V using OMIEC gate.}
     \label{fig:revox2}
 \end{figure}
 
+It was expected from the results above that this process was not reversible upon disconnection of gate. Figure \ref{fig:revox2}A confirms this, after $I_{D}$ drastically drops and gate is disconnected (grey arrows), the current remains low and leakage current is predominant. When connecting the gate again (gold arrows), a capacitive current jumps but later stabilizes to match the leakage current.
+
+Now transfer curves using the OMIEC gate show a negative turn ON voltage after reversing oxidation. However, it is perceived that using the OMIEC gate instead of the Ag/AgCl pellet affects our ``gating efficiency'', which was expected. Weissbach et al. demonstrated the Electrochemical Electrode Coupling (ECC) between channel and its electrode has stronger effects in device operation when micro-integrated polarizable gates (OMIECs) are used, causing saturation loss (as seen in Figure \ref{fig:revox2}B) and threshold voltage roll-of when increasing $V_{DS}$ \cite{weissbachUnravelingElectrochemicalElectrode2023}, which it was perceived during measurements.
 
 \subsubsection{By Heating}
 
 
-\subsection{Solid-OECTs using Undoped p(g3T2-T)}
+\subsection{Solid-OECTs using Undoped-p(g3T2-T)}
+The fabrication of OECTs that used a solid-state electrolyte to enable IC and thermodynamics studies on these devices, were set by Weissbach et al. from the Biosens group at IAPP. The SSE comprises monomer units NIPAm and HHPA, seen in Section \ref{tab:sse} on Chapter \ref{cha:2}, %such as N-isopropylacrylamide (NIPAm) and 2-hydroxy4’-(2-hydroxyethoxy)-2-methylpropiophenone (HHPAA) 
+which upon UV light exposure, cross-linking between them is triggered leading to the polymer poly(N-isopropylacrylamide) (PNIPAm), which is more precisely considered as a rigid gel \cite{weissbachPhotopatternableSolidElectrolyte2022}. 
+
+Two types of OECTs were tested under $N_{2}$ environment, in one type, SSE couples all fourteen devices of the sample and in the other, each device possesses a microstructure SSE. The latter strategy enhances the performance of OECTs since allows minimal leakage current and avoids device crosstalk, and it can be achieved by following a photolithography process \cite{weissbachPhotopatternableSolidElectrolyte2022} or by ink-jet printing, both methods are tested. A total of three samples will be analyzed. 
+
+%Finally, one of each type of sample was exposed to air to understand ORR effects. It is expected to see oxidation in all devices.
+
+\subsubsection{OECT with Drop-casted SSE}%Solid-State Electrolyte}
+Patterning process at this point improved its yield, twelve out of the fourteen devices were patterned successfully, although with some differences in thickness as it is perceived by the reflection hue of the micrographs, leaving only seven operational devices. %among them, one with high conductivity and six with low conductivity that exhibited transfer characteristics similar to Figure \ref{fig:revox2}B. 
+ %by improving homogeneity of dynamic spin-coating, say patterning number, 
+
+Electrochemical de-doping of one device in the sample was done before exposure. Measurements of channel conductivity of the other devices indicated an impact of this process to \textbf{neighbouring} devices (a total of 5) since most of them had very low conductivity (in the order of nS). With one exception, that exhibited a conductivity in the order of the $\mu$S, and threshold voltage of 0.0 V. Electrochemical de-doping to revert oxidation was intended on this device but after exposure (cross-linking of monomer units), it was not possible. Apparently, the formation of PNIPAm prevents the irreversible de-doping. An outcome that will become important for the fabrication of doped-devices and will be brought back in Section \ref{dopedOECTs}.
+
+Transfer characteristics after and before exposure were measured, as seen in Figure \ref{fig:dropcast}B. Some devices exhibited small hysteresis, threshold voltage was calculated for the forward (from +1V to -1V) and backward (vice versa) scans, the former yielded -0.21 $\pm$ 0.13 V and the latter, -0.17 $\pm$ 0.08, high variation (around 50\% of mean value) is perceived but further studies on hysteresis is out of the scope of this work. Importantly, negative threshold voltages was calculated in all devices with low conductivity.
+
+\begin{figure}[ht]
+    \centering
+    \subfloat[]{{\includegraphics[width=3cm]{Images/pdf/und_device.pdf} }}
+	\hspace{3em}    
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/transfer_de-dop_exp.pdf} }}
+    \qquad
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/EIS_drop.pdf} }}
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/CV_drop.pdf} }}
+    \caption[Performance of solid-OECT with drop-casted SSE]{A) Micrograph of patterned device before application of SSE, B) transfer characteristics before and after exposure at $V_{DS}$ of -0.1 V. And representative C) Bode plot obtained by EIS and C) redox behavior between Au/p(g3T2-T) and SSE using CV.}
+    \label{fig:dropcast}
+\end{figure}
+
+From the Bode plot illustrated in Figure \ref{fig:dropcast}C, shadowed area (low frequencies) was used to calculate the channel capacitance which yielded 36 $\pm$ 10 nF and gave a volumetric capacitance of 38 $\pm$ 10 Fcm$^{-3}$. Very low values, that may represent still oxidation or defects (i. e. remains of photoresist)
+
+Additionally, redox potentials extracted from cyclic voltammetry (Figure \ref{fig:dropcast}D) exhibited an oxidation peak of 0.68 $\pm$ 0.02 V in all cases and two reduction peaks at the -1 V (maximum negative gate biased) and -0.1 V. An important consideration to be made for these measurements, since CV was performed using the gate as working electrode and shorting reference and counter electrode between source and drain (channel), these peaks represent points where electron transfer is more prominent, so important operation points for our OECT. For instance, the oxidation peak could represent the oxidation of the gate as well as the reduction of the channel. Finally, peaks outside the vicinity of 0 V, could represent some oxygen interaction or defects in our devices.
+
+When sample was exposed to ambient conditions, a negative threshold voltage was maintained (-0.14 V with Ag/AgCl pellet), suggesting that drop-casted SSE creates a protective shell against molecular oxygen.
+
+\subsubsection{OECT with Photopatterned SSE} %Solid-State Electrolyte}
+Ten out of fourteen operational devices were obtain for these trial, a micrograph of a representative device can be seen in Figure \ref{fig:photoSSE}A. However, some devices that had an odd behavior due to some defects in the photolithography process will de disregard from the analysis.
 
 
-%The Ag/AgCl gate electrode’s work function is reasonably constant, the work function of an OMIEC gate electrode however may vary depending on its processing history and redox reactions with other species present in the electrolyte (e.g. molecular oxygen).28 Applying VGS only determines the potential difference between the gate and channel but does not control the potentials of either electrode (hence the position of the Fermi level) with respect to a reference. This leads to many challenges in operating an OECT with OMIEC gate electrodes.
+\begin{figure}[ht]
+    \centering
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/und_photo.pdf} }}
+    \hspace{2em}
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/transfer_photo.pdf} }}
+    \qquad
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/EIS_photo.pdf} }}
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/CV_photo.pdf} }}
+    \caption[Performance of solid-OECT with photolithographed SSE]{A) Micrograph of patterned device before and after application of SSE, B) transfer characteristics before and after exposure at $V_{DS}$ of -0.1 V. And representative C) Bode plot obtained by EIS and C) redox behavior between Au/p(g3T2-T) and SSE using CV.}
+    \label{fig:photoSSE}
+\end{figure}
 
+\subsubsection{OECT with Inkjet-Printed SSE}%Solid-State Electrolyte}
+%The Ag/AgCl gate electrode’s work function is reasonably constant, the work function of an OMIEC gate electrode however may vary depending on its processing history and redox reactions with other species present in the electrolyte (e.g. molecular oxygen).28 Applying VGS only determines the potential difference between the gate and channel but does not control the potentials of either electrode (hence the position of the Fermi level) with respect to a reference. This leads to many challenges in operating an OECT with OMIEC gate electrodes \cite{tanOperationMechanismOrganic2021}.
 
-\subsubsection{Dropcasted Solid-State Electrolyte}
+\begin{figure}[ht]
+    \centering
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/revox_transfer_loop2.pdf} }}
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/revox_transfer_loop2.pdf} }}
+    \qquad
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/revox_transfer_loop2.pdf} }}
+    \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/revox_transfer_loop2.pdf} }}
+    \caption[Performance of solid-OECT with drop-casted SSE]{A) Micrograph of patterned device, B) Threshold voltage values among devices, C) Impedance values and D) Redox potentials.}
+    \label{fig:printedSSE}
+\end{figure}
 
-\subsubsection{OECT with Dropcast Solid-State Electrolyte}
-
-\subsubsection{OECT with Photopatternable Solid-State Electrolyte}
-
-\subsubsection{OECT with Inkjet-Printed Solid-State Electrolyte}
-
-
-\subsection{Solid-OECTs using Doped-p(g3T2-T)}
+\subsection{Solid-OECTs using Doped-p(g3T2-T)} \label{dopedOECTs}
 
 
 

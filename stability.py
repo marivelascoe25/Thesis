@@ -56,10 +56,14 @@ plt.rcParams.update({'font.size':20})
 
 ## IL device
 #dir_path4 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U2_m01_Dedoping3-1.txt'
-#dir_path5 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U7_m01_Dedoping3-1.txt'
-dir_path1 = 'Data\\4. Stability\\230601_new_pg3t+dropSSE_gatededoping\\U3_m01_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\230531_newpg3t+SSE_gatededoping\\U7_m01_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\230601_new_pg3t+dropSSE_gatededoping\\U3_m01_Dedoping3-1.txt'
 #dir_path1 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_dedopingaftertransfer\\D5_m01_Dedoping3-1.txt'
 #dir_path2 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_aftergatededopingsolid_aftertransfer\\D5_m01_Dedoping3-1.txt'
+
+## Plots for master thesis
+#dir_path1 = 'Data\\4. Stability\\230601_new_pg3t+dropSSE_gatededoping\\U3_m01_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_dedopingaftertransfer\\U7_m01_Dedoping3-1.txt'
 
 #title1 = "Solid Device (D5), non gate-biased"#_23.03.20"
 #title1 = "Solid Device (D6) in GB, +1V gate-biased"#_23.03.20"
@@ -79,7 +83,7 @@ title1 = "Liquid Electrolyte (U3), +1V gate-biased"
 # Asigning columns
 #columns = [0, 7, 5] #bioprobe
 columns = [0, 3, 6] #IV
-range1 = [100,120]
+range1 = [30,40]
 range2 = [400, 440]
 ranges = [range1, range2]
 

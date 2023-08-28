@@ -62,6 +62,7 @@ def extract_data_loop_number(dir,x,y,z, n_loop, loop_case):
         try:  
             if int(sline[n_loop]) == loop_case:  
                 try:
+                    
                     X.append(float(sline[x]))
                     Y.append(float(sline[y]))                    
                     Z.append(float(sline[z]))
@@ -173,10 +174,10 @@ def plot_CV (dir_path, title, WE, Ref):
             Potential[index-2].append(V_All[j])
             Current[index-2].append(I_All[j])
 
-    c1 = '#B7E6A5'
-    c2 = '#003147'
+    c1 = '#8ed9fb'#045275'#'#B7E6A5'
+    c2 = '#045275'#'#808080'#'#003147'
 
-    plt.figure(figsize=(12, 7.5))
+    plt.figure(figsize=(9, 6.5))
     plt.title(title)
     plt.xlabel("Potential (V vs " + Ref + ")",fontsize=20,fontweight='bold')
     plt.ylabel("Current @ " + WE + " (A)",fontsize=20,fontweight='bold')
@@ -184,8 +185,11 @@ def plot_CV (dir_path, title, WE, Ref):
         plt.plot(Potential[i], Current[i], '-', color = colorFader(c1,c2,i/(total_scan-1)))
         if i == 0 or i == 8:
             plt.plot(Potential[i], Current[i], '-', color = colorFader(c1,c2,i/(total_scan-1)), label = "Scan" + str(i+2))
-    plt.legend()
+    plt.xlim(-1.1,1.1) 
+    plt.xticks([-1, -0.5, 0.0, 0.5, 1.0])
+    plt.legend(fontsize=20)
     plt.grid()
+    plt.tight_layout()
 
 def impedance_spec(dir_path, title, C = False, Nyq=False):
 
@@ -194,46 +198,39 @@ def impedance_spec(dir_path, title, C = False, Nyq=False):
     Phase = extract_csv_column_data(dir_path, 5)
 
     #Impedance and phase plots
-    fig, ax1 = plt.subplots(figsize=(10, 7.5))
+    fig, ax1 = plt.subplots(figsize=(8, 6.5))
     ax1.set_title(title)
     ax2 = ax1.twinx()
 
-    ax1.plot(Freq, Z, 'bo-')
-    ax2.plot(Freq, Phase, 'go-')
+    ax1.plot(Freq, Z, '-', color=u'#045275', linewidth = 3)
+    ax2.plot(Freq, Phase, '.', color = u'#045275', linewidth = 3)
     ax1.set_yscale('log')
     ax2.set_xscale('log')
+    ax1.set_xlim(1e-1,1e+5) 
 
-    ax1.set_xlabel("Frequency (Hz)",fontsize=22,fontweight='bold')
-    ax1.set_ylabel("|Z| (\u03A9)",fontsize=22,fontweight='bold')
-    ax1.yaxis.label.set_color('blue')
-    ax1.tick_params(axis='y', colors='b')
-   
-    ax2.set_ylabel("-Phase (°)",fontsize=22,fontweight='bold')
-    ax2.set_ylim(0,90) ## 0 correspond to a perfect resistor and 90 to a perfect capacitor
-    ax2.yaxis.label.set_color('green')
-    ax2.tick_params(axis='y', colors='g')
+    ax1.set_ylim(3.17e+3, 1e+8)#5e-3)
+    y1_ticks = [1e+4, 1e+5, 1e+6, 1e+7, 1e+8]
+    ax1.set_yticks(y1_ticks)
+    x_ticks = [1e-1, 1e+0, 1e+1, 1e+2, 1e+3, 1e+4, 1e+5]
+    ax1.set_xticks(x_ticks)
 
-    # Match the grids of main and secondary plots
-    #ax2.set_xticks(ax1.get_xticks())
-    #ax2.set_yticks(ax1.get_yticks())
+    ax1.set_xlabel("f (Hz)",fontsize=20,fontweight='bold')
+    ax1.set_ylabel("|Z| (\u03A9)",fontsize=20,fontweight='bold')
+    #ax1.yaxis.label.set_color('blue')
+    #ax1.tick_params(axis='y', colors='b')
+    ax2.set_ylim(0, 90)#5e-3)
+    y2_ticks = [10, 30, 50, 70, 90]
+    ax2.set_yticks(y2_ticks)
 
-    # Match the x-axis gridlines
-    #ax2.set_xticks(ax1.get_xticks())
-
-    # Match the y-axis gridlines approximately
-    #ax2_yticks = ax2.get_yticks()
-    #ax1_yticks = ax1.get_yticks()
-    #ax2_yticks_new = [ax2_yticks[i] for i in range(len(ax2_yticks)) if i < len(ax1_yticks)]
-    #ax2.set_yticks(ax2_yticks_new)
-
-    # Set the secondary plot's y-axis tick labels to match the main plot's scale
-    #ax2.set_yscale('linear')  # Change to 'log' if the secondary plot should be in logarithmic scale
-    #ax2.yaxis.set_major_locator(ticker.FixedLocator(ax1.get_yticks()))
-    #ax2.yaxis.set_major_formatter(ticker.FixedFormatter(ax1.get_yticklabels()))
-    #ax2.yaxis.set_major_formatter(ticker.FixedFormatter([label.get_text() for label in ax1.get_yticklabels()]))
-    
-    ax1.grid(color='b', linestyle='--')
-    ax2.grid(color='g', linestyle='--')
+    ax2.set_ylabel("-Phase (°)",fontsize=20,fontweight='bold')
+    #ax2.set_ylim(0,90) ## 0 correspond to a perfect resistor and 90 to a perfect capacitor
+    #ax2.yaxis.label.set_color('green')
+    #ax2.tick_params(axis='y', colors='g')
+    #ax1.grid(color='b', linestyle='--')
+    #ax2.grid(color='g', linestyle='--')
+    ax1.grid()
+    ax2.grid()
+    plt.tight_layout()
 
     if C:
         #Volumetric capacitance calculation and plot
@@ -242,7 +239,7 @@ def impedance_spec(dir_path, title, C = False, Nyq=False):
         C = 1/C_aux
 
         #Plot
-        plt.figure(figsize=(10, 7.5))
+        plt.figure(figsize=(8, 6.5))
         plt.title(title)
         plt.ylabel("Capacitance (C)",fontsize=22,fontweight='bold')
         plt.xlabel("Frequency (Hz)",fontsize=22,fontweight='bold')
@@ -250,6 +247,8 @@ def impedance_spec(dir_path, title, C = False, Nyq=False):
         plt.plot(Freq, C, 'o-')#, color=u'#1f77b4')
         #plt.legend()
         plt.grid()
+        plt.tight_layout()
+
 
     if Nyq:
         #Nyquist plot
@@ -263,6 +262,7 @@ def impedance_spec(dir_path, title, C = False, Nyq=False):
         plt.plot(Z_real, Z_img, '-')#, color=u'#1f77b4')
         #plt.legend()
         plt.grid()
+        plt.tight_layout()
 
 def plot_legends(transfer):
     ## Get plot legends
@@ -495,10 +495,11 @@ def plot_transfer_linear(T, transfer, L, Vds, n_ids, n_vgs):
         #plt.legend()
         plt.grid()
 
-def plots_comparison(title, legends, transfer,vgs,ids, colors):
+def plots_comparison(title, legends, transfer,vgs,ids, colors, loop):
     
     num_files = len(transfer) # for each doping file
-   
+
+    n_loop = [i - 1 for i in vgs]
     #for k in range(num_devices):
     plt.figure(figsize=(8, 6.5))
     plt.xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
@@ -507,13 +508,14 @@ def plots_comparison(title, legends, transfer,vgs,ids, colors):
     #plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
     plt.title(title,fontweight='bold')
     plt.yscale('log')
-    plt.xticks(np.arange(-1.0, 1.01, 0.5))
+    plt.xticks(np.arange(-1.5, 1.01, 0.5))
     for i in range(num_files):
         ## Print plots
         #Column 6 and 8 corresponds to Ids and Vgs
         #ids=5
         #vgs=7 ## 9 if loop is added
-        X, Y, Z = extract_data(transfer[i],vgs[i],ids[i],0)
+        X, Y, Z = extract_data_loop_number(transfer[i],vgs[i],ids[i],vgs[i]+1, n_loop[i], loop)
+        #X, Y, Z = extract_data(transfer[i],vgs[i],ids[i],0) ##when you have one file per loop
         Y = np.absolute(Y)
         #X_structure[k][i] = X_structure[k][i] + np.array(X)
         #Y_structure[k][i] = Y_structure[k][i] + np.array(Y)    
@@ -782,7 +784,8 @@ def stability(stability, title, columns, ranges, gate=True, log=True):
         #plt.yscale('log')
         Y = np.absolute(Y)
         Z = np.absolute(Z)
-    X = np.divide(X,60)
+    X = np.array(X)#- 300
+    #X = X - 5
     Y_avg1 = get_average (X,Y,ranges[0])
     Y_avg2 = get_average (X,Y,ranges[1])
     print (Y_avg1)
@@ -791,7 +794,7 @@ def stability(stability, title, columns, ranges, gate=True, log=True):
     ## Plots
     plt.figure(figsize=(8, 6.5))
     #plt.title(title)#title.set_text('First Plot')
-    #plt.xlim([-0.5,120.5])
+    #plt.xlim([0,800])
     #plt.ylim([1e-6,1e-3])
 
     plt.plot(X, Y, '-', color = r'#0D4A70', linewidth = 3, label = r"$-I_{D}$")
@@ -802,8 +805,8 @@ def stability(stability, title, columns, ranges, gate=True, log=True):
         plt.yscale('log')
         #plt.ylim((10**-7,10**-6))
     
-    plt.xlabel("t (min)",fontsize=20,fontweight='bold')
-    plt.ylabel(r'$I_{D}$ (A)',fontsize=20,fontweight='bold')
+    plt.xlabel("t (s)",fontsize=20,fontweight='bold')
+    plt.ylabel(r'$-I_{D}$ (A)',fontsize=20,fontweight='bold')
                 
     plt.grid()
     plt.tight_layout()
@@ -912,17 +915,17 @@ def calculate_vth(T, transfer, L, Vds, c1, c2, n_ids, n_vgs, n_loop, number, loo
                         plt.plot(X, Y, 'o-', color=u'#2ca02c', label=L[i])
                         plt.plot(X[start_X:end_X],Y_fitted, color=u'#ff96c5')#, label="Linear Fit") 
                         print("At " + L[i] + " Vth is " + str(vth))
-                    #elif Vds[i] == Vds4:
-                    #    plt.plot(X, Y, 'o-', color=u'#d62728')
-                    #    plt.plot(X[start_X:end_X],Y_fitted, color=u'#ffbf65')#, label="Linear Fit") 
-                    #    print("At " + L[i] + " Vth is " + str(vth))
+                    elif Vds[i] == Vds4:
+                        plt.plot(X, Y, 'o-', color=u'#d62728')
+                        plt.plot(X[start_X:end_X],Y_fitted, color=u'#ffbf65')#, label="Linear Fit") 
+                        print("At " + L[i] + " Vth is " + str(vth))
                     #plt.quiver(X, np.absolute(Y), label = L[i])
                 except:
                     pass
         plt.legend()
         plt.grid()
 
-def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, trans = False):#3, loop_case = 1):
+def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, number=0, trans = False):#3, loop_case = 1):
     
     X, Y, L = extract_data(transfer,n_vgs, n_ids, n_loop)
     Y = np.absolute(Y)
@@ -941,18 +944,26 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, trans = 
     
     c1 = '#F9D8E6'
     c2 = '#8F003B'
+    c = '#045275'
 
-    plt.figure(figsize=(11, 7.5))
-    plt.xlabel("Gate Voltage (V)",fontsize=26,fontweight='bold')
-    plt.ylabel("Drain Current (A)",fontsize=26,fontweight='bold')
+    plt.figure(figsize=(8, 6.5))
+    plt.xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
+    plt.ylabel(r'$-I_{D}$ (V)',fontsize=20,fontweight='bold')
     plt.title(Title)
     plt.yscale('log')
-            
+
+         
     for i in range(total_loops):
-        plt.plot(V_GS[i], I_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)))
-        if i == 0 or i == total_loops-1:
-            plt.plot(V_GS[i], I_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)), label = "Loop" + str(i+1))
-    plt.legend()
+        if number == 0:  
+            if i == 0 or i == total_loops-1:
+                plt.plot(V_GS[i], I_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)), label = "Loop" + str(i+1))
+            plt.plot(V_GS[i], I_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)))
+            plt.legend(fontsize = 20)
+    
+        else:
+            if i == number-1:
+                plt.plot(V_GS[i], I_DS[i], '-', color = c, linewidth = 3)      
+    plt.tight_layout()
     plt.grid()
 
     return X,Y
@@ -979,14 +990,14 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
         ax1.set_xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
         ax1.set_ylabel(r'$-I_D$ (A)',fontsize=20,fontweight='bold')
         ax1.set_yscale('log')
-        ax1.set_ylim(1e-10, 5e-3)
-        y_ticks = [1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4, 1e-3]
-        x_ticks = [-1.0, -0.5, 0.0, 0.5, 1.0]
+        ax1.set_ylim(1e-10, 1e-4)#5e-3)
+        y_ticks = [1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4]#, 1e-3]
+        #x_ticks = [-1.0, -0.5, 0.0, 0.5, 1.0]
         ax1.set_yticks(y_ticks)
-        ax1.set_xticks(x_ticks)
+        #ax1.set_xticks(x_ticks)
         ax2.set_ylabel(r'$-I_{G}$ (A)',fontsize=20,fontweight='bold')
         ax2.set_yscale('log')
-        ax2.set_ylim(1e-10, 5e-3)
+        ax2.set_ylim(1e-10, 1e-4)#5e-3)
         ax2.set_yticks(y_ticks)
         
         ax1.grid(color='lightgrey')#, linestyle='-')
@@ -998,7 +1009,7 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
                 ## Print plots
                 if loop_case == 1:
                     X, Y, Z = extract_data_loop_number(transfer[i],n_vgs,n_ids,n_igs, n_loop, number)
-                    print(X)
+                    #print(X)
                     Z = np.absolute(Z) 
                     Z_structure[k][i] = Z_structure[k][i] + np.array(Z)
                 elif loop_case == 2:
@@ -1017,7 +1028,7 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
                 #print (X_structure[k][i])
                 
                 #if label
-                if Vds[i] == Vds1:
+                if Vds[i] == Vds4:
                     colorr = u'#045275'          
                     labell = L[i]                       
                     ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
@@ -1030,7 +1041,7 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
                         #print(len(gm[k][i]))
                         #plt.text(-1, 0.e-10, gmax[k][i])
 
-                elif Vds[i] == Vds2:
+                elif Vds[i] == Vds3:
                     #plt.plot(X, Y, '-', color=u'#ff7f0e', label=L[i])
                     color1 = u'#089099'          
                     labell = L[i] 
@@ -1039,7 +1050,7 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
                     except:
                         pass                                             
                     ax1.plot(X, Y, '-', color=color1, label=labell, linewidth=3)
-                elif Vds[i] == Vds3:
+                elif Vds[i] == Vds2:
                     #plt.plot(X, Y, '-', color=u'#2ca02c', label=L[i])
                     colorr = u'#7CCBA2'          
                     labell = L[i]
@@ -1048,7 +1059,7 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
                     except:
                         pass                       
                     ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
-                elif Vds[i] == Vds4:
+                elif Vds[i] == Vds1:
                     #plt.plot(X, Y, '-', color=u'#d62728', label=L[i])
                     colorr = u'#FCDE9C'          
                     labell = L[i]
@@ -1057,14 +1068,14 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
                     except:
                         pass                       
                     ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
-                else:
+                #else:
                     #plt.plot(X, Y, '-', label=L[i])
-                    colorr = u'#F0746E'          
-                    labell = L[i]
-                    ax2.plot(X, Z, '-', color=colorr, label=labell)               
-                    ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
+                    #colorr = u'#F0746E'          
+                    #labell = L[i]
+                    #ax2.plot(X, Z, '-', color=colorr, label=labell)               
+                    #ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
                     
-        ax1.legend(loc='upper right')
+        #ax1.legend(loc='upper right')
         plt.grid()
         plt.tight_layout()
 

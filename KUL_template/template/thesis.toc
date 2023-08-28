@@ -7,7 +7,8 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Preface}{i}{chapter*.1}%
 \contentsline {chapter}{Abstract}{iv}{chapter*.3}%
-\contentsline {chapter}{List of Figures and Tables}{v}{chapter*.4}%
+\contentsline {chapter}{List of Figures}{v}{section*.4}%
+\contentsline {chapter}{List of Tables}{vi}{section*.5}%
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\chapternumberline {2}Background}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Organic Semiconductors}{3}{section.2.1}%
@@ -37,30 +38,30 @@
 \contentsline {section}{\numberline {3.4}Photomask}{22}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Experimental Procedures}{22}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Preparation of Films}{22}{subsection.3.5.1}%
-\contentsline {paragraph}{Dynamic spin-coating of p(g3T2-T).}{22}{section*.29}%
-\contentsline {paragraph}{Dynamic spin-coating of F$_{4}$TCNQ dopant.}{23}{section*.31}%
+\contentsline {paragraph}{Dynamic spin-coating of p(g3T2-T).}{22}{section*.26}%
+\contentsline {paragraph}{Dynamic spin-coating of F$_{4}$TCNQ dopant.}{23}{section*.28}%
 \contentsline {subsection}{\numberline {3.5.2}Doping Characterization of Films}{23}{subsection.3.5.2}%
-\contentsline {paragraph}{Profilometer.}{23}{section*.33}%
-\contentsline {paragraph}{Four-point probe.}{23}{section*.34}%
-\contentsline {paragraph}{UV-Vis-NIR Spectroscopy.}{24}{section*.35}%
-\contentsline {paragraph}{Ultraviolet Photoelectron Spectroscopy.}{24}{section*.36}%
+\contentsline {paragraph}{Profilometer.}{23}{section*.30}%
+\contentsline {paragraph}{Four-point probe.}{23}{section*.31}%
+\contentsline {paragraph}{UV-Vis-NIR Spectroscopy.}{24}{section*.32}%
+\contentsline {paragraph}{Ultraviolet Photoelectron Spectroscopy.}{24}{section*.33}%
 \contentsline {subsection}{\numberline {3.5.3}Fabrication of Organic Electrochemical Transistors}{24}{subsection.3.5.3}%
-\contentsline {paragraph}{Patterning undoped-p(g3T2-T).}{25}{section*.38}%
-\contentsline {paragraph}{Patterning doped-p(g3T2-T).}{25}{section*.40}%
+\contentsline {paragraph}{Patterning undoped-p(g3T2-T).}{25}{section*.35}%
+\contentsline {paragraph}{Patterning doped-p(g3T2-T).}{25}{section*.37}%
 \contentsline {subsubsection}{\numberline {3.5.3.1}Influence of Doping on OECT Channel}{26}{subsubsection.3.5.3.1}%
-\contentsline {paragraph}{OECT with undoped- and doped-p(g3T2-T) channel.}{26}{section*.42}%
+\contentsline {paragraph}{OECT with undoped- and doped-p(g3T2-T) channel.}{26}{section*.39}%
 \contentsline {subsubsection}{\numberline {3.5.3.2}Stability on Air of p(g3T2-T)}{27}{subsubsection.3.5.3.2}%
-\contentsline {paragraph}{Channel conductivity measurements.}{27}{section*.46}%
+\contentsline {paragraph}{Channel conductivity measurements.}{27}{section*.43}%
 \contentsline {subsubsection}{\numberline {3.5.3.3}Reverse Oxidation of Undoped-p(g3T2-T)}{27}{subsubsection.3.5.3.3}%
-\contentsline {paragraph}{By electrochemical dedoping.}{27}{section*.47}%
-\contentsline {paragraph}{By heating.}{27}{section*.48}%
+\contentsline {paragraph}{By electrochemical dedoping.}{27}{section*.44}%
+\contentsline {paragraph}{By heating.}{27}{section*.45}%
 \contentsline {subsubsection}{\numberline {3.5.3.4}Solid-OECTs using Undoped-p(g3T2-T)}{27}{subsubsection.3.5.3.4}%
-\contentsline {paragraph}{Application of adhesion promoter.}{28}{section*.49}%
-\contentsline {paragraph}{OECT with drop-casted Solid-State Electrolyte.}{28}{section*.51}%
-\contentsline {paragraph}{OECT with photopatternable Solid-State Electrolyte.}{28}{section*.52}%
-\contentsline {paragraph}{OECT with inkjet-printed Solid-State Electrolyte.}{28}{section*.53}%
+\contentsline {paragraph}{Application of adhesion promoter.}{28}{section*.46}%
+\contentsline {paragraph}{OECT with drop-casted Solid-State Electrolyte.}{28}{section*.48}%
+\contentsline {paragraph}{OECT with photopatternable Solid-State Electrolyte.}{28}{section*.49}%
+\contentsline {paragraph}{OECT with inkjet-printed Solid-State Electrolyte.}{28}{section*.50}%
 \contentsline {subsubsection}{\numberline {3.5.3.5}Solid-OECTs using Doped-p(g3T2-T)}{28}{subsubsection.3.5.3.5}%
-\contentsline {paragraph}{OECT with inkjet-printed Solid-State Electrolyte.}{28}{section*.55}%
+\contentsline {paragraph}{OECT with inkjet-printed Solid-State Electrolyte.}{28}{section*.52}%
 \contentsline {chapter}{\chapternumberline {4}Results and Discussion}{31}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Doping Characterization}{31}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Thickness, Sheet Resistance and Resistivity}{31}{subsection.4.1.1}%
@@ -71,14 +72,13 @@
 \contentsline {subsection}{\numberline {4.2.2}Stability on Air of p(g3T2-T)}{38}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Reverse Oxidation of Undoped-p(g3T2-T)}{40}{subsection.4.2.3}%
 \contentsline {subsubsection}{\numberline {4.2.3.1}By Electrochemical Dedoping}{40}{subsubsection.4.2.3.1}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}By Heating}{40}{subsubsection.4.2.3.2}%
-\contentsline {subsection}{\numberline {4.2.4}Solid-OECTs using Undoped p(g3T2-T)}{40}{subsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}Dropcasted Solid-State Electrolyte}{40}{subsubsection.4.2.4.1}%
-\contentsline {subsubsection}{\numberline {4.2.4.2}OECT with Dropcast Solid-State Electrolyte}{40}{subsubsection.4.2.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}OECT with Photopatternable Solid-State Electrolyte}{40}{subsubsection.4.2.4.3}%
-\contentsline {subsubsection}{\numberline {4.2.4.4}OECT with Inkjet-Printed Solid-State Electrolyte}{40}{subsubsection.4.2.4.4}%
-\contentsline {subsection}{\numberline {4.2.5}Solid-OECTs using Doped-p(g3T2-T)}{40}{subsection.4.2.5}%
-\contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{41}{chapter.5}%
-\contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{45}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{47}{appendix.B}%
-\contentsline {chapter}{Bibliography}{49}{appendix*.72}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}By Heating}{41}{subsubsection.4.2.3.2}%
+\contentsline {subsection}{\numberline {4.2.4}Solid-OECTs using Undoped-p(g3T2-T)}{41}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}OECT with Drop-casted SSE}{41}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.2}OECT with Photopatterned SSE}{43}{subsubsection.4.2.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}OECT with Inkjet-Printed SSE}{43}{subsubsection.4.2.4.3}%
+\contentsline {subsection}{\numberline {4.2.5}Solid-OECTs using Doped-p(g3T2-T)}{43}{subsection.4.2.5}%
+\contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{47}{chapter.5}%
+\contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{49}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{51}{appendix.B}%
+\contentsline {chapter}{Bibliography}{53}{appendix*.72}%
