@@ -2,12 +2,12 @@
 \label{app:A}
 
 
-\begin{figure}
-  \centering
-  \includegraphics[width=10cm]{Images/pdf/dopingprocess.pdf}
-  \caption[Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ]{Energy diagram of p(g3T2-T) with a) F$_{6}$TCNNQ and b) F$_{4}$TCNNQ. Ionization potential of p(g3T2-T) extracted from reference \cite{tanTuningOrganicElectrochemical2022} and electron affinities of the neutral species (EA$^{0}$) and of the anion (EA$^{-}$) of the dopants are extracted from cyclic voltammetry measurements in reference \cite{kieferDoubleDopingConjugated2019}.}
-  \label{fig:doping}
-\end{figure}
+%\begin{figure}
+%  \centering
+%  \includegraphics[width=10cm]{Images/pdf/dopingprocess.pdf}
+%  \caption[Energy diagram of p(g3T2-T) and dopants F$_{6}$TCNNQ and F$_{4}$TCNNQ]{Energy diagram of p(g3T2-T) with a) F$_{6}$TCNNQ and b) F$_{4}$TCNNQ. Ionization potential of p(g3T2-T) extracted from reference \cite{tanTuningOrganicElectrochemical2022} and electron affinities of the neutral species (EA$^{0}$) and of the anion (EA$^{-}$) of the dopants are extracted from cyclic voltammetry measurements in reference \cite{kieferDoubleDopingConjugated2019}.}
+%  \label{fig:doping}
+%\end{figure}
 
 
 %%% Local Variables: 
