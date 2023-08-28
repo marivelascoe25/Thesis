@@ -25,13 +25,18 @@ plt.rcParams.update({'font.size':20})
 #dir_path = 'Data\\6. Impedence\\23.05.24' ##AgCl
 #Photo SSE
 #dir_path = 'Data\\6. Impedence\\23.06.14'
-file_path = 'Data\\6. Impedence\\23.06.14\\D5_m01.txt'
+#dir_path = 'Data\\6. Impedence\\23.06.13'
+#file_path = 'Data\\6. Impedence\\23.06.14\\D5_m01.txt'
+#Printed SSE
+#dir_path = 'Data\\6. Impedence\\23.07.20_undoped'
+#doped and printed SSE
+dir_path = 'Data\\6. Impedence\\23.07.11_doped5mgml'
 
-#files, titles = read_directory_allfiles(dir_path)
+files, titles = read_directory_allfiles(dir_path)
 
-#for i in range(len(files)):
-#    impedance_spec(files[i], titles[i], C=True)#, Nyq=True)
+for i in range(len(files)):
+    impedance_spec(files[i], titles[i])#, C=True)#, Nyq=True)
 
-impedance_spec(file_path, "", C=True)#, Nyq=True)
+#impedance_spec(file_path, "", C=True)#, Nyq=True)
 
 plt.show()

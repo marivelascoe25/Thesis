@@ -32,17 +32,18 @@ def extract_csv_column_data(file_path, column_index):
                     
     return column_data
 
-def extract_data(dir,x,y,z):
-    X, Y, Z = [], [], []
+def extract_data(dir,x,y,z, loop):
+    X, Y, Z, L = [], [], [], []
     for line in open(dir, 'r'):
         sline = line.split('\t')    
         try:
             X.append(float(sline[x]))
             Y.append(float(sline[y]))
             Z.append(float(sline[z]))
+            L.append(float(sline[loop]))
         except:
             pass
-    return X,Y,Z
+    return X,Y,Z,L
 
 def extract_data_abs(dir,x,y):
     X, Y = [], []
@@ -243,7 +244,8 @@ def impedance_spec(dir_path, title, C = False, Nyq=False):
         plt.title(title)
         plt.ylabel("Capacitance (C)",fontsize=22,fontweight='bold')
         plt.xlabel("Frequency (Hz)",fontsize=22,fontweight='bold')
-        plt.xscale('log')                                     
+        plt.xscale('log')
+        #plt.yscale('log')                                     
         plt.plot(Freq, C, 'o-')#, color=u'#1f77b4')
         #plt.legend()
         plt.grid()
@@ -926,47 +928,72 @@ def calculate_vth(T, transfer, L, Vds, c1, c2, n_ids, n_vgs, n_loop, number, loo
         plt.grid()
 
 def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, number=0, trans = False):#3, loop_case = 1):
-    
-    X, Y, L = extract_data(transfer,n_vgs, n_ids, n_loop)
+    n_igs = n_vgs+1
+    X, Y, Z, L = extract_data(transfer,n_vgs, n_ids, n_igs, n_loop)
+    #X, Y, Z = extract_data_loop_number(transfer[i],n_vgs,n_ids,n_igs, n_loop, number)
     Y = np.absolute(Y)
-
+    Z = np.absolute(Z)
     total_loops = int(L[-1])
     matrix_length = int(len(L)/total_loops)
     
     V_GS = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
-    I_DS = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
-
+    I_D = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
+    I_G = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
     
     for j in range (len(L)):
         index = int(L[j])
         V_GS[index-1].append(X[j])
-        I_DS[index-1].append(Y[j])
+        I_D[index-1].append(Y[j])
+        I_G[index-1].append(Z[j])
     
     c1 = '#F9D8E6'
     c2 = '#8F003B'
     c = '#045275'
 
-    plt.figure(figsize=(8, 6.5))
-    plt.xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
-    plt.ylabel(r'$-I_{D}$ (V)',fontsize=20,fontweight='bold')
-    plt.title(Title)
-    plt.yscale('log')
+    #plt.figure(figsize=(8, 6.5))
+    #plt.xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
+    #plt.ylabel(r'$-I_{D}$ (V)',fontsize=20,fontweight='bold')
+    #plt.title(Title)
+    #plt.yscale('log')
 
+    fig, ax1 = plt.subplots(figsize=(8,6.5))
+    ax2 = ax1.twinx()
+    ax1.set_title(Title)
+    ax1.set_xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
+    ax1.set_ylabel(r'$-I_D$ (A)',fontsize=20,fontweight='bold')
+    ax1.set_yscale('log')
+    ax1.set_ylim(1e-11, 5e-4)#5e-3)
+    y_ticks = [1e-11, 1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4]#, 1e-3]
+    #x_ticks = [-1.0, -0.5, 0.0, 0.5, 1.0]
+    ax1.set_yticks(y_ticks)
+    #ax1.set_xticks(x_ticks)
+    ax2.set_ylabel(r'$-I_{G}$ (A)',fontsize=20,fontweight='bold')
+    ax2.set_yscale('log')
+    ax2.set_ylim(1e-11, 5e-4)#5e-3)
+    ax2.set_yticks(y_ticks)
+    
+    ax1.grid(color='lightgrey',which="both")#, linestyle='-')
+    ax2.grid(color='lightgrey')#, linestyle='-')
          
     for i in range(total_loops):
         if number == 0:  
             if i == 0 or i == total_loops-1:
-                plt.plot(V_GS[i], I_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)), label = "Loop" + str(i+1))
-            plt.plot(V_GS[i], I_DS[i], '-', color = colorFader(c1,c2,i/(total_loops-1)))
-            plt.legend(fontsize = 20)
+                ax1.plot(V_GS[i], I_D[i], '-', color = colorFader(c1,c2,i/(total_loops-1)), label = "Loop" + str(i+1))
+                ax2.plot(V_GS[i], I_G[i], '--', color = colorFader(c1,c2,i/(total_loops-1)), label = "Loop" + str(i+1))
+                #plt.plot(V_GS[i], I_D[i], '-', color = colorFader(c1,c2,i/(total_loops-1)), label = "Loop" + str(i+1))
+            ax1.plot(V_GS[i], I_D[i], '-', color = colorFader(c1,c2,i/(total_loops-1)))
+            ax2.plot(V_GS[i], I_G[i], '--', color = colorFader(c1,c2,i/(total_loops-1)))
+            #plt.plot(V_GS[i], I_D[i], '-', color = colorFader(c1,c2,i/(total_loops-1)))
+            ax1.legend(fontsize = 20)
     
         else:
             if i == number-1:
-                plt.plot(V_GS[i], I_DS[i], '-', color = c, linewidth = 3)      
+                ax1.plot(V_GS[i], I_D[i], '-', color = c, linewidth = 3)
+                ax2.plot(V_GS[i], I_G[i], '--', color = c, linewidth = 1)
+                #plt.plot(V_GS[i], I_D[i], '-', color = c, linewidth = 3)      
     plt.tight_layout()
-    plt.grid()
 
-    return X,Y
+    return X,Y,Z
 
 def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2, loop_case = 1):
     num_devices = len(T)
@@ -1084,8 +1111,9 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
     return X_structure, Y_structure, Z_structure
 
 def calculate_vth_one_vds(Title, transfer, d1, d2, n_ids, n_vgs, n_loop):
-    
-    X, Y, L = extract_data(transfer,n_vgs, n_ids, n_loop)
+    n_igs = n_vgs+1
+    X, Y, Z, L = extract_data(transfer,n_vgs, n_ids, n_igs, n_loop)
+    #X, Y, L = extract_data(transfer,n_vgs, n_ids, n_loop)
     #Y = np.absolute(Y)
 
     total_loops = int(L[-1])

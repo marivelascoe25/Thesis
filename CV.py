@@ -23,17 +23,23 @@ plt.rcParams.update({'font.size':20})
 #dropcast
 #file_path = 'Data\\5. CV\\23.06.05\\WE_Aupf3t_RECE_Aupf3t_10cycles_D7.txt'
 #dir_path = 'Data\\5. CV\\23.06.05'
-dir_path = 'Data\\5. CV\\23.05.31'
+#dir_path = 'Data\\5. CV\\23.05.31'
 #photo
-file_path = 'Data\\5. CV\\23.06.14\\WE_Aupg3t_RECE_Aupg3t_10cycles_D5.txt'
+#file_path = 'Data\\5. CV\\23.06.14\\WE_Aupg3t_RECE_Aupg3t_10cycles_D5.txt'
+#dir_path = 'Data\\5. CV\\23.06.14'
+#dir_path = 'Data\\5. CV\\23.06.15'
+#ink
+#dir_path = 'Data\\5. CV\\23.07.20_undoped'
+#doped
+dir_path = 'Data\\5. CV\\23.07.11_doped5mgml'
 
 #title1 = "Ag/AgCl as working electrode"
 
-#files, titles = read_directory_allfiles(dir_path)
+files, titles = read_directory_allfiles(dir_path)
 #print(titles)
-#for i in range(len(files)):
-#    plot_CV(files[i], titles[i], "Au/p(g3T2-T)", "Au/p(g3T2-T)")
+for i in range(len(files)):
+    plot_CV(files[i], titles[i], "Gate", "Channel")
 
-plot_CV (file_path, "", "Gate", "Channel")#, WE: Working Electrode, Ref: Reference Electrode
+#plot_CV (file_path, "", "Gate", "Channel")#, WE: Working Electrode, Ref: Reference Electrode
 
 plt.show()

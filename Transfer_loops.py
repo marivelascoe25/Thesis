@@ -5,7 +5,7 @@ plt.rcParams.update({'font.size':20})
 ## IV
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230613_pg3t_photopattternSSE'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE_before'
-dir_path = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE'
+#dir_path = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230615_pg3t_photopattternSSE_from13again'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230621_pg3t_f6tcnnq10_photopattternSSE'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230629_doped_pg3t_5mgmlF6TCNNQ_photopattternSSE'
@@ -18,6 +18,15 @@ dir_path = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE'
 
 ##Bioprobe
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230616_pg3t_photopattternSSE'
+
+#Master Thesis
+##photo
+#dir_path = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE'
+#dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230616_pg3t_photopattternSSE'
+#ink
+#dir_path = 'Data\\3. Transfer curves\\1. IV\\230720_undoped_pg3t_inkSSE'
+#doped
+dir_path = 'Data\\3. Transfer curves\\1. IV\\230711_doped_pg3t_5mgmlF6TCNNQ_printedSSE'
 
 ## Store files
 transfer, out = read_directory_transfer(dir_path)

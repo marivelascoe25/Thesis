@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {2.1}Organic Semiconductors}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Electronic Structure and Transport}{3}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Molecular Doping}{4}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Organic Mixed Ionic/Electronic Conductors (OMIECs)}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Organic Mixed Ionic/Electronic Conductors (OMIECs)}{6}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Processes in OMIECs}{8}{subsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.1.1}Ionic-electronic interactions}{8}{subsubsection.2.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.2.1.2}Electronic transport}{8}{subsubsection.2.2.1.2}%
@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Device Physics}{10}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Operation Modes}{11}{subsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.2.1}Standard material for depletion-mode OECTs}{12}{subsubsection.2.3.2.1}%
-\contentsline {subsubsection}{\numberline {2.3.2.2}Prospective materials for accumulation-mode OECTs}{13}{subsubsection.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Prospective materials for accumulation-mode OECTs}{12}{subsubsection.2.3.2.2}%
 \contentsline {subsection}{\numberline {2.3.3}Important Figures of Merit}{14}{subsection.2.3.3}%
 \contentsline {subsubsection}{\numberline {2.3.3.1}Transconductance}{14}{subsubsection.2.3.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.3.2}$\mu $C* product}{15}{subsubsection.2.3.3.2}%
@@ -76,9 +76,9 @@
 \contentsline {subsection}{\numberline {4.2.4}Solid-OECTs using Undoped-p(g3T2-T)}{41}{subsection.4.2.4}%
 \contentsline {subsubsection}{\numberline {4.2.4.1}OECT with Drop-casted SSE}{41}{subsubsection.4.2.4.1}%
 \contentsline {subsubsection}{\numberline {4.2.4.2}OECT with Photopatterned SSE}{43}{subsubsection.4.2.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}OECT with Inkjet-Printed SSE}{43}{subsubsection.4.2.4.3}%
-\contentsline {subsection}{\numberline {4.2.5}Solid-OECTs using Doped-p(g3T2-T)}{43}{subsection.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}OECT with Inkjet-Printed SSE}{44}{subsubsection.4.2.4.3}%
+\contentsline {subsection}{\numberline {4.2.5}Solid-OECTs using Doped-p(g3T2-T)}{44}{subsection.4.2.5}%
 \contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{47}{chapter.5}%
 \contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{49}{appendix.A}%
 \contentsline {appendix}{\chapternumberline {B}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{51}{appendix.B}%
-\contentsline {chapter}{Bibliography}{53}{appendix*.72}%
+\contentsline {chapter}{Bibliography}{53}{appendix*.77}%

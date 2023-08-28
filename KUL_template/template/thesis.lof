@@ -29,7 +29,7 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Depletion-mode OECT}}}{12}{subfigure.11.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Accumulation-mode OECT}}}{12}{subfigure.11.2}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Chemical structure of polymer g2T-T}}{13}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Chemical structure and transconductance of g2T-T with side-chain engineering}}{14}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Chemical structure and transconductance of g2T-T with side-chain engineering}}{13}{figure.caption.18}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces OECTs benchmark with different OMIECs}}{15}{figure.caption.20}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{15}{subfigure.14.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{15}{subfigure.14.2}%
@@ -45,7 +45,7 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Visualization of the workflow for patterning undoped p(g3T2-T).\relax }}{25}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Visualization of the workflow for patterning doped p(g3T2-T).\relax }}{26}{figure.caption.38}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Representation of experimental setup for measuring threshold voltage shift of a single OECT under ambient conditions. Scheme is not drawn to scale.\relax }}{26}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Chemical structures of the repeat units of p(g3T2-T) and F$_{6}$TCNQ dopant.\relax }}{27}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Chemical structures of the repeat units of p(g3T2-T) and F$_{6}$TCNNQ dopant.\relax }}{27}{figure.caption.42}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Solid-OECT fabrication with undoped p(g3T2-T)}}{29}{figure.caption.51}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Solid-OECT fabrication with doped p(g3T2-T)}}{29}{figure.caption.53}%
 \addvspace {10pt}
@@ -73,24 +73,29 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{39}{subfigure.9.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{39}{subfigure.9.2}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Transfer characteristics after electrochemical de-doping}}{39}{figure.caption.66}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Electrochemical de-doping of oxidized p(g3T2-T) OECT}}{40}{figure.caption.68}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{40}{subfigure.11.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{40}{subfigure.11.2}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Performance of solid-OECT with drop-casted SSE}}{42}{figure.caption.69}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{42}{subfigure.12.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{42}{subfigure.12.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{42}{subfigure.12.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{42}{subfigure.12.4}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Performance of solid-OECT with photolithographed SSE}}{44}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Electrochemical de-doping of oxidized p(g3T2-T) OECT}}{41}{figure.caption.68}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{41}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{41}{subfigure.11.2}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Performance of solid-OECT with drop-casted SSE}}{43}{figure.caption.69}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{43}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{43}{subfigure.12.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{43}{subfigure.12.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{43}{subfigure.12.4}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Performance of solid-OECT with photolithographed SSE}}{44}{figure.caption.71}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{subfigure.13.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{subfigure.13.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{44}{subfigure.13.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{44}{subfigure.13.4}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Performance of solid-OECT with drop-casted SSE}}{45}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Performance of solid-OECT with printed SSE}}{45}{figure.caption.73}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{45}{subfigure.14.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{45}{subfigure.14.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{45}{subfigure.14.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{45}{subfigure.14.4}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Performance of solid-OECT with printed SSE}}{46}{figure.caption.75}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{46}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{46}{subfigure.15.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{46}{subfigure.15.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{46}{subfigure.15.4}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
