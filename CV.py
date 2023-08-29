@@ -22,7 +22,7 @@ plt.rcParams.update({'font.size':20})
 ## Master Thesis
 #dropcast
 #file_path = 'Data\\5. CV\\23.06.05\\WE_Aupf3t_RECE_Aupf3t_10cycles_D7.txt'
-#dir_path = 'Data\\5. CV\\23.06.05'
+dir_path = 'Data\\5. CV\\23.06.05'
 #dir_path = 'Data\\5. CV\\23.05.31'
 #photo
 #file_path = 'Data\\5. CV\\23.06.14\\WE_Aupg3t_RECE_Aupg3t_10cycles_D5.txt'
@@ -31,7 +31,7 @@ plt.rcParams.update({'font.size':20})
 #ink
 #dir_path = 'Data\\5. CV\\23.07.20_undoped'
 #doped
-dir_path = 'Data\\5. CV\\23.07.11_doped5mgml'
+#dir_path = 'Data\\5. CV\\23.07.11_doped5mgml'
 
 #title1 = "Ag/AgCl as working electrode"
 
