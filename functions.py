@@ -32,6 +32,17 @@ def extract_csv_column_data(file_path, column_index):
                     
     return column_data
 
+def replace_delimiter(file_path):
+    with open(file_path, 'r') as file:
+        reader = csv.reader(file, delimiter=';')
+        new_file = []
+        for row in reader:
+            for colum in row:    
+                cell_value = row[colum].replace(',', '.')  # Replacing commas with periods for decimals
+                cell_value = row[colum].replace(';', '\t')
+                new_file.append(cell_value)
+    return new_file
+
 def extract_data(dir,x,y,z, loop):
     X, Y, Z, L = [], [], [], []
     for line in open(dir, 'r'):
@@ -236,7 +247,8 @@ def impedance_spec(dir_path, title, C = False, Nyq=False):
     if C:
         #Volumetric capacitance calculation and plot
         Z_img = extract_csv_column_data(dir_path, 3) ##complex impedance
-        C_aux = 2*math.pi*np.array(Freq)*np.array(Z_img)
+        #C_aux = 2*math.pi*np.array(Freq)*np.array(Z_img) ## RC fitting
+        C_aux = ((2*math.pi*np.array(Freq))**np.array(Phase))*np.array(Z) ## Phase included
         C = 1/C_aux
 
         #Plot

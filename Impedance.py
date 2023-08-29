@@ -35,7 +35,7 @@ dir_path = 'Data\\6. Impedence\\23.07.11_doped5mgml'
 files, titles = read_directory_allfiles(dir_path)
 
 for i in range(len(files)):
-    impedance_spec(files[i], titles[i])#, C=True)#, Nyq=True)
+    impedance_spec(files[i], titles[i], C=True)#, Nyq=True)
 
 #impedance_spec(file_path, "", C=True)#, Nyq=True)
 

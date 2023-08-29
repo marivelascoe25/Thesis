@@ -1,11 +1,27 @@
 import numpy as np
 import os
 
-os.chdir('./Data1')
+"""
+def extract_csv_column_data(file_path, column_index):
+    with open(file_path, 'r') as file:
+        reader = csv.reader(file, delimiter=';')
+        column_data = []
+        for row in reader:
+            if len(row) > column_index:
+                cell_value = row[column_index].replace(',', '.')  # Replacing commas with periods for decimals
+                try:
+                    column_data.append(float(cell_value))
+                except:
+                    pass
+                    
+    return column_data
+"""
+
+os.chdir('./Data/6. Impedence/23.06.14')
 dir_path = os.path.dirname(os.path.realpath(__file__))
 file_names = []
 
-for file in os.listdir('{}/Data1'.format(dir_path)):
+for file in os.listdir('{}/Data/6. Impedence/23.06.14'.format(dir_path)):
     if file.endswith(".txt"):
         file_names.append(file)
 
