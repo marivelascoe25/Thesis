@@ -23,6 +23,8 @@ dir1 = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_d
 #dir2 = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped10\\U4_m01_transfer1-03_trans_drain=-7.000e-01_Loop1=3.txt'
 dir2 = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped10\\U4_m01_transfer1-06_trans_drain=-5.000e-01_Loop1=3.txt'
 
+#drop D7 replace by D1
+dir1 = 'Data\\3. Transfer curves\\1. IV\\230605_new_pg3t+solidSE_aftergatededopingsolid'
 
 dir = [dir1, dir2]
 #Column 6 and 8 (9 if loop is added) corresponds to Ids and Vgs in previous files

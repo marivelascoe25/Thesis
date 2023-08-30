@@ -136,8 +136,8 @@ Electronic charge transport mechanisms present in OMIECs include thermally-activ
 	%\qquad
 	\hspace{2em}
 	\subfloat[\textbf{Band-like transport}]{{\includegraphics[width=5cm]{Images/pdf/OMIECetransport2.pdf} }}
-	\caption[Electronic transport mechanisms in OMIECs]{Schematic representation of electronic charge transport mechanisms: A) Thermally-activated hopping transport %of a relatively localized electronic charge carrier" 
-	and B) band-like transport, %of a relatively-delocalized electronic charge carrier"
+	\caption[Electronic transport mechanisms in OMIECs]{Schematic representation of electronic charge transport mechanisms: a) Thermally-activated hopping transport %of a relatively localized electronic charge carrier" 
+	and b) band-like transport, %of a relatively-delocalized electronic charge carrier"
 	where the electronic charge carrier is relatively localized and delocalized, respectively. Extracted from reference \cite{paulsenOrganicMixedIonic2020}.} 
 	\label{fig:etrans}
 \end{figure}
@@ -161,7 +161,7 @@ Ion transport in dry OMIECs of type I, III, and V is unipolar because these ions
 	%\qquad
 	\hspace{2em}
 	\subfloat[\textbf{Solvated/vehicle mechanism}]{{\includegraphics[width=5cm]{Images/pdf/OMIECitransport2.pdf} }}
-	\caption[Ionic transport mechanisms in OMIECs]{Schematic representation of ionic charge transport mechanisms: A) Ion hopping via segmented motion and B) vehicular solvated-ion transport. Extracted from reference \cite{paulsenOrganicMixedIonic2020}.}
+	\caption[Ionic transport mechanisms in OMIECs]{Schematic representation of ionic charge transport mechanisms: a) Ion hopping via segmented motion and b) vehicular solvated-ion transport. Extracted from reference \cite{paulsenOrganicMixedIonic2020}.}
 	\label{fig:itrans}
 \end{figure}
 
@@ -201,7 +201,7 @@ Although the structural configuration of OECTs differs from conventional metal-o
 \begin{figure}[ht]
   \centering
   \includegraphics[width=\textwidth]{Images/pdf/MOSFETvsOECTs.pdf}
-  \caption[Device physics of MOSFET vs OECT]{Comparison of p-type A) MOSFET and B) OECT, where the light-gray region represents an insulator and electrolyte, respectively. Extracted from reference  \cite{friedleinDevicePhysicsOrganic2018}}
+  \caption[Device physics of MOSFET vs OECT]{Comparison of p-type a) MOSFET and b) OECT, where the light-gray region represents an insulator and electrolyte, respectively. Extracted from reference  \cite{friedleinDevicePhysicsOrganic2018}}
   \label{fig:vsMOS}
 \end{figure}
 
@@ -219,7 +219,7 @@ Meanwhile, the ionic circuit consists of a resistor that represents the flow of 
 	%\subfloat[]{{\includegraphics[height=4.5cm]{Images/circuit_model.png} }}
 	\hspace{2em}
 	\subfloat[Electronic and ionic circuits]{{\includegraphics[width=8.5cm]{Images/pdf/circuits.pdf} }}
-	\caption[Typical OECT structure and circuit model]{A) Typical structure of an organic electrochemical transistor. B) (Left) Electronic circuit modelled as a resistor with a varible resistance. (Right) Ionic circuit consisting of channel (C$_{CH}$) and gate (C$_{G}$) capacitors, coupled with a resistor corresponding to the electrolyte (R$_{E}$). Extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
+	\caption[Typical OECT structure and circuit model]{a) Typical structure of an organic electrochemical transistor. b) (Left) Electronic circuit modelled as a resistor with a varible resistance. (Right) Ionic circuit consisting of channel (C$_{CH}$) and gate (C$_{G}$) capacitors, coupled with a resistor corresponding to the electrolyte (R$_{E}$). Extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
 	\label{fig:bernard}
 \end{figure}
 
@@ -244,7 +244,7 @@ Analogous to conventional MOSFETs, depending on whether the device requires a ga
 	\subfloat[Depletion-mode OECT]{{\includegraphics[height=7cm]{Images/pdf/depletion.pdf} }}
 	\hspace{2em}
 	\subfloat[Accumulation-mode OECT]{{\includegraphics[height=7cm]{Images/pdf/accumulation.pdf} }}
-	\caption[Depletion- and accumulation-mode OECTs]{(A) Transfer curve showing depletion-mode operation of a p-type OECT with a conducting polymer channel. (B) Transfer curve showing accumulation-mode operation of a p-type OECT with a insulating polymer channel. Images extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
+	\caption[Depletion- and accumulation-mode OECTs]{a) Transfer curve showing depletion-mode operation of a p-type OECT with a conducting polymer channel. b) Transfer curve showing accumulation-mode operation of a p-type OECT with a insulating polymer channel. Images extracted from reference \cite{rivnayOrganicElectrochemicalTransistors2018}.}
 	\label{fig:modes}
 \end{figure}
 
@@ -339,7 +339,7 @@ Along with the transconductance, Inal et al. determined the values of $\mu$C* by
  	\subfloat[]{{\includegraphics[width=4.5cm]{Images/pdf/gm_sizes.pdf} }}
  	\hspace{2em}
  	\subfloat[]{{\includegraphics[width=7cm]{Images/pdf/uc_omiecs.pdf} }}
- 	\caption[OECTs benchmark with different OMIECs]{A) Plot of $\mu$C* product calculated by the linear slope between transconductance and channel geometry. B) Calculated slope from A) in function of the product of independent determination of $\mu$ and C*, dotted line represents the 1:1 relation between both methods of calculation. Extracted from reference %\cite{ohayonSaltsAdditivesRoute2023} 
+ 	\caption[OECTs benchmark with different OMIECs]{a) Plot of $\mu$C* product calculated by the linear slope between transconductance and channel geometry. b) Calculated slope from a) in function of the product of independent determination of $\mu$ and C*, dotted line represents the 1:1 relation between both methods of calculation. Extracted from reference %\cite{ohayonSaltsAdditivesRoute2023} 
  		\cite{inalBenchmarkingOrganicMixed2017}.}
  	\label{fig:gmuc}
  \end{figure}
@@ -371,8 +371,8 @@ Controlling or shifting the threshold voltage is desirable, specially for integr
 	\subfloat[]{{\includegraphics[width=5.8cm]{Images/pdf/wf_shift.pdf} }}
 	\hspace{2em}
 	\subfloat[]{{\includegraphics[width=5cm]{Images/pdf/vth_shift.pdf} }}
-	\caption[Tuning of threshold voltage with different levels of doping p(g3T2-T)]{Controlling OECT threshold voltage by chemical doping of p(g3T2-T) gate electrode with F$_{4}$TCNQ. A) Plot of threshold voltage and gate work function for doped gates of different dopant concentrations. B) Transfer curves of p(g3T2-T) channel OECT %(L = 10 µm; W = 2000 µm; VD = −0.1 V, VG scan rate of 20 mV s−1) 
-	with p(g3T2-T) gates of various F$_{4}$TCNQ dopant concentrations. . Extracted from reference \cite{tanTuningOrganicElectrochemical2022}.}
+	\caption[Tuning of threshold voltage with different levels of doping p(g3T2-T)]{Controlling OECT threshold voltage by chemical doping of p(g3T2-T) gate electrode with F$_{4}$TCNQ. a) Plot of threshold voltage and gate work function for doped gates of different dopant concentrations. b) Transfer curves of p(g3T2-T) channel OECT %(L = 10 µm; W = 2000 µm; VD = −0.1 V, VG scan rate of 20 mV s−1) 
+	with p(g3T2-T) gates of various F$_{4}$TCNQ dopant concentrations. Extracted from reference \cite{tanTuningOrganicElectrochemical2022}.}
 	\label{fig:tune}
 \end{figure}
 

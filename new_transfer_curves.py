@@ -28,6 +28,8 @@ plt.rcParams.update({'font.size':20})
 #dir_path = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped10'
 # After EC dedoping
 #dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230519_pg3t_after_stability'
+#drop D7 replace by U1
+dir_path = 'Data\\3. Transfer curves\\1. IV\\230605_new_pg3t+solidSE_aftergatededopingsolid'
 
 ## Store files
 transfer, out = read_directory_transfer(dir_path)
@@ -39,12 +41,12 @@ L , Vds = plot_legends(transfer)
 T = plot_titles_morevds(transfer)
 
 #IV
-#column_ids=3
-#column_vgs=6
+column_ids=3
+column_vgs=6
 
 #bioprobe
-column_ids=5
-column_vgs=7
+#column_ids=5
+#column_vgs=7
 
 ##old data bioprobe with loops
 #Column 6 and 8 (9 if loop is added) corresponds to Ids and Vgs in previous files
@@ -57,7 +59,7 @@ column_loop=column_vgs-1
 # Use loop_case = 2 if you want to all loops except the first one
 # Use loop_case other if you want to plot all
 # trans default is False, if True, transconductance is plotted
-#X, Y, Z = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#,loop_case=2) ##for old data
+X, Y, Z = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#,loop_case=2) ##for old data
 #X, Y, Z = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, number=1)#, loop_case=2) # number 2 is default
 
 ## Doping
@@ -67,5 +69,5 @@ c2 = 22/40
 #c1 = 18/40
 #c2 = 21/40
 number = 2
-calculate_vth (T, transfer, L, Vds, c1, c2, column_ids, column_vgs, column_loop, number)
+#calculate_vth (T, transfer, L, Vds, c1, c2, column_ids, column_vgs, column_loop, number)
 plt.show()
