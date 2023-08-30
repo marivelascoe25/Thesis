@@ -947,17 +947,33 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, number=0
     Z = np.absolute(Z)
     total_loops = int(L[-1])
     matrix_length = int(len(L)/total_loops)
+
+
+    #V_GS = [[0.0 for i in range (matrix_length)] for k in range(total_loops)]
+    #I_D = [[0.0 for i in range (matrix_length)] for k in range(total_loops)]
+    #I_G = [[0.0 for i in range (matrix_length)] for k in range(total_loops)]
     
-    V_GS = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
-    I_D = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
-    I_G = [[0.0 for i in range (matrix_length-1)] for k in range(total_loops)]
+    X = np.array(X)
+    Y = np.array(Y)
+    Z = np.array(Z)
+    L = np.array(L)
     
+    V_GS = X.reshape(total_loops, matrix_length)
+    I_D = Y.reshape(total_loops, matrix_length)
+    I_G = Z.reshape(total_loops, matrix_length)
+    #L = L.reshape(total_loops, matrix_length)
+    
+    
+    """
     for j in range (len(L)):
         index = int(L[j])
-        V_GS[index-1].append(X[j])
+        V_GS[index+1].append(X[j])
+        #print(index)
+        #print(X[j])
+        #print(V_GS[index-1])
         I_D[index-1].append(Y[j])
         I_G[index-1].append(Z[j])
-    
+    """
     c1 = '#F9D8E6'
     c2 = '#8F003B'
     c = '#045275'
@@ -976,9 +992,9 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, number=0
     ax1.set_yscale('log')
     ax1.set_ylim(1e-11, 5e-4)#5e-3)
     y_ticks = [1e-11, 1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4]#, 1e-3]
-    #x_ticks = [-1.0, -0.5, 0.0, 0.5, 1.0]
+    x_ticks = [-1.0, -0.5, 0.0, 0.5, 1.0]
     ax1.set_yticks(y_ticks)
-    #ax1.set_xticks(x_ticks)
+    ax1.set_xticks(x_ticks)
     ax2.set_ylabel(r'$-I_{G}$ (A)',fontsize=20,fontweight='bold')
     ax2.set_yscale('log')
     ax2.set_ylim(1e-11, 5e-4)#5e-3)
@@ -1002,10 +1018,30 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, number=0
             if i == number-1:
                 ax1.plot(V_GS[i], I_D[i], '-', color = c, linewidth = 3)
                 ax2.plot(V_GS[i], I_G[i], '--', color = c, linewidth = 1)
+                
+                if trans:
+                    #print(V_GS[i])
+                    end = int(len(V_GS[i])/2)
+                    #print(end)
+                    vgs = V_GS[i][0:end].tolist() # De +1 a -1
+                    vgs.reverse() # De -1 a +1
+                    ids = I_D[i][0:end].tolist() # De +1 a -1
+                    ids.reverse() # De -1 a +1
+                    #print(ids)
+                    ids = [-1*ids[i] for i in range(len(ids))]
+                    
+                    # Calculate transconductance at a specific data point index
+                    data_point_index = 10 # Choose an appropriate index
+                    gm = calculate_transconductance(ids, vgs, data_point_index)
+
+                    # Plot transconductance vs. input voltage using the existing data
+                    gm_values = [calculate_transconductance(ids, vgs, j) for j in range(len(vgs))]
+                    
+                    #print(gm_values)
                 #plt.plot(V_GS[i], I_D[i], '-', color = c, linewidth = 3)      
     plt.tight_layout()
 
-    return X,Y,Z
+    return X,Y,Z, gm_values#abs(np.array(gm_values))
 
 def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2, loop_case = 1):
     num_devices = len(T)
@@ -1221,6 +1257,58 @@ def plot_linear_ids_transconductance(dir, n_ids, n_vgs, loop_nr, L, c, ylim):
         vgs.reverse()
         ids = ids[0:end] # De +1 a -0.8
         ids.reverse()
+        print(ids)
+        # Calculate transconductance at a specific data point index
+        data_point_index = 10 # Choose an appropriate index
+        gm = calculate_transconductance(ids, vgs, data_point_index)
+
+        # Plot transconductance vs. input voltage using the existing data
+        gm_values[i] = [calculate_transconductance(ids, vgs, j) for j in range(len(vgs))]
+
+        id = [-1000*ids[i] for i in range(len(ids))]
+
+        ax1.plot(vgs, id, label=L[i],color=c[i], linewidth=3)
+        ax2.plot(vgs, gm_values[i], label=L[i], color=c[i], linewidth=3)
+        ax1.set_xticks(np.arange(-1.0, 1.01, 0.5))
+        ax2.legend(fontsize="20")
+        plt.tight_layout()
+        # ask matplotlib for the plotted objects and their labels
+        #lines, labels = ax1.get_legend_handles_labels()
+        #lines2, labels2 = ax2.get_legend_handles_labels()
+        #x2.legend(lines + lines2, labels + labels2, loc=0)
+    
+
+    return gm_values
+
+def plot_linear_ids_transconductance_one_vds(dir, n_ids, n_vgs, loop_nr, c, ylim):
+    num_files = len(dir)
+    gm_values = [0.0 for i in range (num_files)]
+    
+    #n_ids=6
+    #n_vgs=9
+    n_igs=n_vgs+1
+    n_loop=n_vgs-1
+    #number = 2
+    fig, ax1 = plt.subplots(figsize=(8, 6.5))
+    ax2 = ax1.twinx()
+    ax1.set_xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
+    ax1.set_ylabel(r'$-I_D$ (mA)',fontsize=20,fontweight='bold')
+    ax1.set_xlim(-0.8,1)
+    ax1.set_ylim(ylim[0],ylim[1])
+    ax2.set_ylabel(r'$|g_m|$ (mS)',fontsize=20,fontweight='bold')
+    ax2.set_ylim(ylim[0],ylim[1]) ## 0 correspond to a perfect resistor and 90 to a perfect capacitor
+
+    ax1.grid(color='lightgrey')#, linestyle='-')
+    ax2.grid(color='lightgrey')#, linestyle='-')
+    
+        
+    for i in range(num_files):
+        vgs, ids, igs = extract_data_loop_number(dir[i],n_vgs,n_ids,n_igs,n_loop, loop_nr)
+        end = int(len(vgs)/2)
+        vgs = vgs[0:end] # De +1 a -0.8
+        vgs.reverse()
+        ids = ids[0:end] # De +1 a -0.8
+        ids.reverse()
 
         # Calculate transconductance at a specific data point index
         data_point_index = 10 # Choose an appropriate index
@@ -1242,7 +1330,5 @@ def plot_linear_ids_transconductance(dir, n_ids, n_vgs, loop_nr, L, c, ylim):
         #x2.legend(lines + lines2, labels + labels2, loc=0)
     
 
-    return gm_values    
-    #plt.show()
-
+    return gm_values  
 

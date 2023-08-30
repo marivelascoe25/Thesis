@@ -307,7 +307,7 @@ C$_{channel}$ [nF] & 27.6 & C* [Fcm$^{-3}$] & 29.7 \\
 & & &\\[-1em]
 V$_{ox}$ [V] & 0.68 $\pm$ 0.02 & V$_{red}$ [V] & -1.0, -0.1 \\
 & & &\\[-1em]
-|g$_{m,max}$| [mS] &  &  &\\\hline
+|g$_{m,max}$| [$\mu$S] & 79 &  &\\\hline
 \end{tabular}
 \label{tab:dropfom}
 \end{table}
@@ -327,6 +327,7 @@ The micrograph in Figure \ref{fig:photoSSE}A represents a patterned device befor
 
 After the application of SSE precursor and exposure, the transfer curves (seen in Figure \ref{fig:photoSSE}B) indicate slight hysteresis, turn-on voltages close to zero, and slightly negative threshold voltages, as shown in Table \ref{tab:photofom}. These values are higher compared to the samples with drop-casted SSE. 
 
+%%D5
 \begin{figure}[ht]
     \centering
     \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/und_photo.pdf} }}
@@ -338,14 +339,13 @@ After the application of SSE precursor and exposure, the transfer curves (seen i
     \caption[Performance of solid-OECT with photolithographed SSE]{A) Micrograph of patterned device before and after application of SSE, B) transfer characteristics at $V_{DS}$ of -0.1 V. And representative C) Bode plot obtained by EIS and C) redox behavior between Au/p(g3T2-T) and SSE using CV.}
     \label{fig:photoSSE}
 \end{figure}
-%Photo I am using D5
 
 The channel and volumetric capacitance shows a clear increase compared to drop-casted SSE. %, this may be due to the lack of device crosstalk
 However, CV graphs exhibit two different behaviors, with oxidation and reduction potentials falling into the ranges represented in Table \ref{tab:photofom}, suggesting that some oxidation is still perceived in most devices.
 
 \begin{table}[ht]
 \centering
-\caption{Parameters extracted from the characterization of photopatterned SSE OECT}
+\caption{Parameters extracted from the characterization of photopatterned SSE OECT under $N_{2}$ environment.}
 \begin{tabular}{l|c||l|c}
 Parameters & Value & Parameters & Value \\\hline \hline
 V$_{Th,forward}$ [V] & -0.08 $\pm$ 0.05 & V$_{Th,backward}$ [V] & -0.09 $\pm$ 0.04\\
@@ -355,7 +355,7 @@ C$_{channel}$ [nF] & 81.6 & C* [Fcm$^{-3}$] & 87.7 \\
 & & &\\[-1em]
 V$_{ox}$ [V] & 0.04, 0.34  & V$_{red}$ [V] & -0.1, -0.2 \\
 & & &\\[-1em]
-|g$_{m,max}$| [mS] &  &  &\\\hline
+|g$_{m,max}$| [$\mu$S] & 149 &  &\\\hline
 \end{tabular}
 \label{tab:photofom}
 \end{table}
@@ -365,6 +365,22 @@ Upon exposure to ambient environment, measurements revealed depletion-mode devic
 Figures\\
 Table with parameters.
 
+\begin{table}[ht]
+\centering
+\caption{Parameters extracted from the characterization of photopatterned SSE OECT under ambient conditions}
+\begin{tabular}{l|c||l|c}
+Parameters & Value & Parameters & Value \\\hline \hline
+V$_{Th,forward}$ [V] &  & V$_{Th,backward}$ [V] & \\
+& & &\\[-1em]
+C$_{channel}$ [nF] &  & C* [Fcm$^{-3}$] &  \\
+& & &\\[-1em]
+V$_{ox}$ [V] &   & V$_{red}$ [V] &  \\
+& & &\\[-1em]
+|g$_{m,max}$| [$\mu$S] & 370 &  &\\\hline
+\end{tabular}
+\label{tab:photofom}
+\end{table}
+
 \newpage
 \subsubsection{OECT with Inkjet-Printed SSE}%Solid-State Electrolyte}
 %The Ag/AgCl gate electrode’s work function is reasonably constant, the work function of an OMIEC gate electrode however may vary depending on its processing history and redox reactions with other species present in the electrolyte (e.g. molecular oxygen).28 Applying VGS only determines the potential difference between the gate and channel but does not control the potentials of either electrode (hence the position of the Fermi level) with respect to a reference. This leads to many challenges in operating an OECT with OMIEC gate electrodes \cite{tanOperationMechanismOrganic2021}.
@@ -373,6 +389,7 @@ Despite high yields in the patterning process, only four devices were successful
 
 The process of printing SSE on top of the patterned gate and channel p(g3T2-T) remains a challenge. The process takes approximately 2 hours per sample under ambient conditions. Efforts were made to set the printing parameters using a different sample while exposing our device to high temperatures and ethanol rinsing to revert oxidation. Unfortunately, the resulted device still exhibited signs of oxidation.
 
+%printed i only have one, U5
 \begin{figure}[ht]
     \centering
     \subfloat[]{{\includegraphics[width=6cm]{Images/pdf/und_ink.pdf} }}
@@ -383,7 +400,6 @@ The process of printing SSE on top of the patterned gate and channel p(g3T2-T) r
     \caption[Performance of solid-OECT with printed SSE]{A) Micrograph of patterned device with printed SSE, B) transfer characteristics at $V_{DS}$ of -0.1 V. C) Bode plot obtained by EIS and C) redox behavior between Au/p(g3T2-T) and SSE using CV.}
     \label{fig:printedSSE}
 \end{figure}
-%printed i only have one, U5
 
 
 
@@ -392,7 +408,7 @@ The process of printing SSE on top of the patterned gate and channel p(g3T2-T) r
 \caption{Parameters extracted from the characterization of printed SSE OECT}
 \begin{tabular}{l|c||l|c}
 Parameters & Value & Parameters & Value \\\hline \hline
-V$_{Th}$ [V] &  0.13 & |g$_{m,max}$| [mS] & \\
+V$_{Th}$ [V] &  0.13 & |g$_{m,max}$| [$\mu$S] & 355 \\
 & & &\\[-1em]
 C$_{channel}$ U5[nF] & 85.3 & C* [Fcm$^{-3}$] & 91.6 \\
 & & &\\[-1em]
@@ -433,7 +449,7 @@ Eight operational devices were obtained. However, only one exhibited a capacitiv
 \caption{Parameters extracted from the characterization of doped-p(g3T2-T) OECT}
 \begin{tabular}{l|c||l|c}
 Parameters & Value & Parameters & Value \\\hline \hline
-V$_{Th}$ [V] & -0.1 & |g$_{m,max}$| [mS] & \\
+V$_{Th}$ [V] & -0.1 & |g$_{m,max}$| [$\mu$S] & 567 \\
 C$_{channel}$ [nF] & 130 & C* [Fcm$^{-3}$] &  140 \\
 V$_{ox}$ [V] & 0.1 & V$_{red}$ [V] & 0.0 \\\hline
 \end{tabular}

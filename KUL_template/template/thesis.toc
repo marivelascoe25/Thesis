@@ -84,4 +84,4 @@
 \contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{49}{chapter.5}%
 \contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{51}{appendix.A}%
 \contentsline {appendix}{\chapternumberline {B}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{53}{appendix.B}%
-\contentsline {chapter}{Bibliography}{55}{appendix*.77}%
+\contentsline {chapter}{Bibliography}{55}{appendix*.78}%
