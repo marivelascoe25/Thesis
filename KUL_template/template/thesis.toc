@@ -36,7 +36,7 @@
 \contentsline {section}{\numberline {3.2}Equipment}{20}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Software}{21}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Photomask}{22}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Experimental Procedures}{22}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Experimental Procedure}{22}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Preparation of Films}{22}{subsection.3.5.1}%
 \contentsline {paragraph}{Dynamic spin-coating of p(g3T2-T).}{22}{section*.26}%
 \contentsline {paragraph}{Dynamic spin-coating of F$_{4}$TCNQ dopant.}{23}{section*.28}%
@@ -74,13 +74,13 @@
 \contentsline {subsubsection}{\numberline {4.2.3.1}By Electrochemical Dedoping}{40}{subsubsection.4.2.3.1}%
 \contentsline {subsubsection}{\numberline {4.2.3.2}By Heating}{41}{subsubsection.4.2.3.2}%
 \contentsline {subsection}{\numberline {4.2.4}Solid-OECTs using Undoped-p(g3T2-T)}{41}{subsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}OECT with Drop-casted SSE}{41}{subsubsection.4.2.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}OECT with Drop-casted SSE}{42}{subsubsection.4.2.4.1}%
 \contentsline {subsubsection}{\numberline {4.2.4.2}OECT with Photopatterned SSE}{43}{subsubsection.4.2.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.4.3}OECT with Inkjet-Printed SSE}{46}{subsubsection.4.2.4.3}%
-\contentsline {subsection}{\numberline {4.2.5}Solid-OECTs using Doped-p(g3T2-T)}{46}{subsection.4.2.5}%
-\contentsline {subsubsection}{\numberline {4.2.5.1}Channel conductivity}{46}{subsubsection.4.2.5.1}%
+\contentsline {subsubsection}{\numberline {4.2.4.3}OECT with Inkjet-Printed SSE}{45}{subsubsection.4.2.4.3}%
+\contentsline {subsection}{\numberline {4.2.5}Solid-OECTs using Doped-p(g3T2-T)}{47}{subsection.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.5.1}Channel conductivity}{47}{subsubsection.4.2.5.1}%
 \contentsline {subsubsection}{\numberline {4.2.5.2}Solid-OECT performance}{47}{subsubsection.4.2.5.2}%
-\contentsline {subsection}{\numberline {4.2.6}Threshold Voltage Shift}{48}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.6}Shift of OECT Threshold Voltage}{48}{subsection.4.2.6}%
 \contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{49}{chapter.5}%
 \contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{51}{appendix.A}%
 \contentsline {appendix}{\chapternumberline {B}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{53}{appendix.B}%

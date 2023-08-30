@@ -20,14 +20,14 @@ plt.rcParams.update({'font.size':20})
 #dir_path = 'Data\\5. CV\\23.07.06_Jun13'
 
 ## Master Thesis
-#dropcast
-#file_path = 'Data\\5. CV\\23.06.05\\WE_Aupf3t_RECE_Aupf3t_10cycles_D7.txt'
+#dropcast ## change from D7 to D3
+#file_path = 'Data\\5. CV\\23.06.05\\WE_Aupf3t_RECE_Aupf3t_10cycles_D1.txt'
 dir_path = 'Data\\5. CV\\23.06.05'
 #dir_path = 'Data\\5. CV\\23.05.31'
-#photo
+#photo ## change from D5 to U3
 #file_path = 'Data\\5. CV\\23.06.14\\WE_Aupg3t_RECE_Aupg3t_10cycles_D5.txt'
 #dir_path = 'Data\\5. CV\\23.06.14'
-#dir_path = 'Data\\5. CV\\23.06.15'
+dir_path = 'Data\\5. CV\\23.06.15'
 #ink
 #dir_path = 'Data\\5. CV\\23.07.20_undoped'
 #doped

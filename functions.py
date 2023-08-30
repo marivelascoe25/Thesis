@@ -247,8 +247,8 @@ def impedance_spec(dir_path, title, C = False, Nyq=False):
     if C:
         #Volumetric capacitance calculation and plot
         Z_img = extract_csv_column_data(dir_path, 3) ##complex impedance
-        #C_aux = 2*math.pi*np.array(Freq)*np.array(Z_img) ## RC fitting
-        C_aux = ((2*math.pi*np.array(Freq))**np.array(Phase))*np.array(Z) ## Phase included
+        C_aux = 2*math.pi*np.array(Freq)*np.array(Z_img) ## RC fitting
+        #C_aux = ((2*math.pi*np.array(Freq))**np.array(Phase))*np.array(Z) ## Phase included
         C = 1/C_aux
 
         #Plot
