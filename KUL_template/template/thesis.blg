@@ -8,6 +8,7 @@ A level-1 auxiliary file: chap-3.aux
 A level-1 auxiliary file: conclusion.aux
 A level-1 auxiliary file: app-A.aux
 A level-1 auxiliary file: app-B.aux
+A level-1 auxiliary file: app-C.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -20,44 +21,44 @@ Database file #1: mscreferences.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 45 entries,
+You've used 46 entries,
             4087 wiz_defined-function locations,
-            1117 strings with 20601 characters,
-and the built_in function-call counts, 38114 in all, are:
-= -- 3148
-> -- 1203
-< -- 276
-+ -- 641
-- -- 259
-* -- 1877
-:= -- 5637
-add.period$ -- 90
-call.type$ -- 45
-change.case$ -- 52
+            1124 strings with 20973 characters,
+and the built_in function-call counts, 39065 in all, are:
+= -- 3227
+> -- 1244
+< -- 279
++ -- 661
+- -- 269
+* -- 1922
+:= -- 5769
+add.period$ -- 92
+call.type$ -- 46
+change.case$ -- 53
 chr.to.int$ -- 543
-cite$ -- 45
-duplicate$ -- 2748
-empty$ -- 2688
-format.name$ -- 281
-if$ -- 8849
+cite$ -- 46
+duplicate$ -- 2824
+empty$ -- 2752
+format.name$ -- 292
+if$ -- 9076
 int.to.chr$ -- 0
-int.to.str$ -- 45
-missing$ -- 550
-newline$ -- 174
-num.names$ -- 45
-pop$ -- 1221
+int.to.str$ -- 46
+missing$ -- 567
+newline$ -- 177
+num.names$ -- 46
+pop$ -- 1261
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2934
+skip$ -- 3013
 stack$ -- 0
-substring$ -- 1502
-swap$ -- 2419
-text.length$ -- 95
+substring$ -- 1517
+swap$ -- 2483
+text.length$ -- 98
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 45
+type$ -- 46
 warning$ -- 0
-while$ -- 141
-width$ -- 47
-write$ -- 506
+while$ -- 143
+width$ -- 48
+write$ -- 517
