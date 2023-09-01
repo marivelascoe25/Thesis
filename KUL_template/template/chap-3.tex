@@ -181,7 +181,7 @@ Furthermore, while not presented in this report, it was observed during the anal
 However, the variability in doped species requires further study. %Potential for appendix
 %but it is yet unclear. %An new hypothesis that could explained is to consider our environmental conditions as a infinite reservoir of molecular oxygen, until this unwanted doping and ORR reaches saturation, making it stable. In the case of F$_{4}$TCNQ, stability is still unclear and further investigation will be done in the next sections.
 
-\subsection{Stability Undoped- and Doped-p(g3T2-T)}
+\subsection{Stability of Undoped- and Doped-p(g3T2-T)} \label{subsec:stab}
 %\subsection{Stability on Air of p(g3T2-T)}
 The channel conductivity of an undoped device was measured immediately after spin-coating, yielding a value of 1 $\mu$S. After undergoing the patterning process described in the previous sections, the conductivity increased three orders of magnitude to approximately 1 mS. Even though, $\mu$S values already signify oxidation, the patterning process further oxidizes our material. %In this section, a way to revert this oxidation and find a compatible process to obtain accumulation-mode OECTs.
 %Before getting into the revers
@@ -240,14 +240,13 @@ Transfer curves of the undoped device using an Ag/AgCl pellet as gate, were meas
 
 In summary, a pre de-doping step could potentially serve as a method for obtaining accumulation-mode OECTs by reversing the oxidation of p(g3T2-T), and will be explored in the following section.
 
-\subsection{Reverse Oxidation of Undoped-p(g3T2-T)}
+%\subsection{Reverse Oxidation of Undoped-p(g3T2-T)}
+\subsection{Reverse Oxidation by Electrochemical Dedoping}
 Based on the previous analysis, it took approximately two hours to fully de-dope p(g3T2-T) and reach minimal conductivity %an insulating state 
 in the polymer. However, this process could be expedited by applying a positive gate bias to one of the devices.
 
-Additionally, the use of a high-temperature baking step to revert the oxidation of an p(g3T2-T) OECT %was a method suggested by colleagues in the Biosens group at IAPP and 
-will also be tested.   
-
-\subsubsection{By Electrochemical Dedoping}
+%Additionally, the use of a high-temperature baking step to revert the oxidation of an p(g3T2-T) OECT %was a method suggested by colleagues in the Biosens group at IAPP and will also be tested.   
+%\subsubsection{By Electrochemical Dedoping}
 De-doping in a $N_{2}$ environment was performed by applying a +1 V gate bias. p(g3T2-T) reached its insulating state in less than 300 seconds, significantly faster than observed in the previos section. However, it was expected that this process would not be reversible upon disconnection of the gate. Figure \ref{fig:revox2}a confirms this expectation: after $I_{D}$ drastically dropped and the gate was disconnected (gray arrows), the current remained low, and leakage current is predominant. When the gate was reconnected (gold arrows), a capacitive current spike occurred but later stabilized to match the leakage current.
 % Important commment from Rakesh: Did you try lower values? A high gate voltage would push the ions deeper into the channel and if the ions penetrate deep enough, the channel would shield them from flowing out after the gate voltage is removed.
 
@@ -264,17 +263,16 @@ Transfer curves using the p(g3T2-T) gate showed a negative turn-on voltage after
 Moreover, it was perceived that using the OMIEC gate instead of the Ag/AgCl pellet affects our ``gating efficiency'', as expected. Weissbach et al.  \cite{weissbachUnravelingElectrochemicalElectrode2023} demonstrated the Electrochemical Electrode Coupling (ECC) between channel and its electrode has a more pronounce effect on device operation when micro-integrated polarizable gates (OMIECs) are used. This coupling can result in saturation loss %(as seen in Figure \ref{fig:revox2}b)
 and threshold voltage roll-of when increasing $V_{DS}$, which was observed during measurements. Therefore, moving forward, $V_{DS}$ will be fixed at -0.1 V.
 
-\subsubsection{By Heating}
+%\subsubsection{By Heating}
 
 %**\textit{I was thinking of initiating this subsection with the shift of threshold voltage with temperature but not sure anymore. I have a similar sentence as the following in the photolithography SSE OECT, but I am thinking on moving it here because it is a way to revert the oxidation of p(g3T2-T), and I use it for the photo and printed SSE, I do not use the electrochemical dedoping in both}**
 
-Before the application of adhesion promoter to enhance adhesion between SSE and patterned polymer channel and gate. An ethanol rinsing followed by the high-temperature baking step is done, as explained in Subsection \ref{subsec:solidOECT}. The following reaction: \\
+%Before the application of adhesion promoter to enhance adhesion between SSE and patterned polymer channel and gate. An ethanol rinsing followed by the high-temperature baking step is done, as explained in Subsection \ref{subsec:solidOECT}. The following reaction: \\
 
 %C_{2}H_{6}O_{(l, ethanol)} + 2O_{2}_{(g)} \arrow 2 CO_{2}_{(g)} + 3H_{2}O_{(g)}
-\hspace{3cm} \ce{ C2H6O_(l) + 2O2_(g) -> 2CO2_(g) + 3H2O_(l)} 
-\\
+%\hspace{3cm} \ce{ C2H6O_(l) + 2O2_(g) -> 2CO2_(g) + 3H2O_(l)} \\
 
-describes the interaction between ethanol and oxygen, and together with the temperature step, it was perceived that they helped to counteract the oxidation of the polymer.
+%describes the interaction between ethanol and oxygen, and together with the temperature step, it was perceived that they helped to counteract the oxidation of the polymer.
 %What temperature, time?
 
 %**\textit{I need to check if I have measurements more than pictures, I base this miniconclusion in reflection hue and transfer curves achieved}**
@@ -351,12 +349,11 @@ Upon exposure to ambient conditions, a negative threshold voltage was maintained
 \subsection{Undoped Photopatterned SSE} %Solid-State Electrolyte}
 This trial resulted in ten out of fourteen operational devices. A micrograph of a representative device can be seen in Figure \ref{fig:photoSSE}a. However, some devices exhibited unusual behavior due to defects and SSE partially blew off from the device, and were excluded from the analysis.
 
-The microstructure of SSE on top of the device required the use of an adhesion promoter, unlike drop-casted SSE. In this particular case, where the removal of non-crosslinked SSE precursor was achieved using a $N_{2}$ gun, the risk of blowing off crosslinked SSE was not as high with the use of an adhesion promoter. Moreover, as explained before, it serves as a method to revert the oxidation of the p(g3T2-T) film.
-%Furthermore, the ethanol rinsing and high-temperature baking helped to counteract the oxidation of the polymer. %The former led to the reaction described below: \\
+The microstructure of SSE on top of the device required the use of an adhesion promoter, unlike drop-casted SSE. In this particular case, where the removal of non-crosslinked SSE precursor was achieved using a $N_{2}$ gun, the risk of blowing off crosslinked SSE was not as high with the use of an adhesion promoter. %Moreover, as explained before, it serves as a method to revert the oxidation of the p(g3T2-T) film.
+Furthermore, the ethanol rinsing and high-temperature baking step (100$^{\circ}$C) helped to counteract the oxidation of the polymer. The former led to the reaction described below: \\
 
 %C_{2}H_{6}O_{(l, ethanol)} + 2O_{2}_{(g)} \arrow 2 CO_{2}_{(g)} + 3H_{2}O_{(g)}
-%\ce{\centering C2H6O_(l) + 2O2_(g) -> 2CO2_(g) + 3H2O_(l)} 
-%\\
+\hspace{3cm} \ce{\centering C2H6O_(l) + 2O2_(g) -> 2CO2_(g) + 3H2O_(l)} \\ 
 
 A representative device can be seen in Figure \ref{fig:photoSSE}a, before the application of the adhesion promoter, and signs of oxidation are evident by the brownish hue. 
 
@@ -424,9 +421,13 @@ V$_{ox}$ [V] &  & V$_{red}$ [V] &  \\
 \subsection{Undoped Inkjet-Printed SSE}%Solid-State Electrolyte}
 %The Ag/AgCl gate electrode’s work function is reasonably constant, the work function of an OMIEC gate electrode however may vary depending on its processing history and redox reactions with other species present in the electrolyte (e.g. molecular oxygen).28 Applying VGS only determines the potential difference between the gate and channel but does not control the potentials of either electrode (hence the position of the Fermi level) with respect to a reference. This leads to many challenges in operating an OECT with OMIEC gate electrodes \cite{tanOperationMechanismOrganic2021}.
 
-Despite high yields in the patterning process, only four devices were successfully printed. Out of which, only one was fully operational, and it will be used in this analysis.
+Although, photopatterned SSE is a nice approach to obtain microstructuring devices, the removal of non-crosslink SSE is not as efficient as some remains of material could still lead to device crosstalk, hence leakage. Ink-jet printing is a nice approach to improve this drawback \cite{tsengThresholdVoltageControl2023}. To ensure a good printing, the adhesion promoter step becomes crucial, and as commented before, with the extra help on reverting the oxidation of p(g3T2-T).
 
-The process of printing SSE on top of the patterned gate and channel p(g3T2-T) remains a challenge. The process takes approximately 2 hours per sample under ambient conditions. Efforts were made to set the printing parameters using a different sample while exposing our device to high temperatures and ethanol rinsing to revert oxidation. Unfortunately, the resulted device still exhibited signs of oxidation.
+For this trial, patterning process gave a total of seven devices, due to some issues with the film uniformity, only four devices were successfully printed, due to perhaps some contamination or adhesion promoter not coating properly all the sample. Out of the four devices, only one was fully operational, and it will be used in this analysis.
+
+The process of printing takes approximately 2 hours per sample under ambient conditions. Efforts were made to set the printing parameters using a different sample while exposing our device to high temperatures and ethanol rinsing. Unfortunately, the resulted device still exhibited signs of oxidation as it will be shown in the analysis.
+
+Figure \ref{fig:printedSSE} illustrated all mentioned measurements and Table \ref{tab:printedfom} exhibits the calculated parameters.
 
 %printed i only have one, U5
 \begin{figure}[ht]
@@ -440,7 +441,9 @@ The process of printing SSE on top of the patterned gate and channel p(g3T2-T) r
     \label{fig:printedSSE}
 \end{figure}
 
+Threshold voltage is no longer negative, there is a shift towards positive values (oxidation), so it makes sense that higher transconductance was calculated.
 
+Channel capacitance and volumetric capacitance also show an increase in value (expected?). Additionally, CV measurements show predominant peaks close to zero but also secondary peaks in the oxidation scan at -0.33 and +1.0 V, and in the reduction scan at -0.25 V. 
 
 \begin{table}[ht]
 \centering
@@ -451,13 +454,13 @@ V$_{Th}$ [V] &  0.13 & |g$_{m,max}$| [$\mu$S] & 355 \\
 & & &\\[-1em]
 C$_{channel}$ [nF] & 85.3 & C* [Fcm$^{-3}$] & 91.6 \\
 & & &\\[-1em]
-V$_{ox}$ [V] &  & V$_{red}$ [V] &  \\\hline
+V$_{ox}$ [V] & 0.15 & V$_{red}$ [V] & 0.09 \\\hline
 \hline
 \end{tabular}
 \label{tab:printedfom}
 \end{table}
 
-\newpage
+%\newpage
 \subsection{Doped Inkjet-Printed SSE} \label{subsec:dopedOECTs}
 %\subsection{Doped-p(g3T2-T) with Threshold Voltage Shift} \label{subsec:dopedOECTs}
 
@@ -468,7 +471,7 @@ Different doping levels were intended to be studied in this section. However, on
 
 \subsubsection{Solid-OECT performance}
 
-The adhesion promoter used for undoped p(g3T2-T) could not be used for doped species since it will remove dopants during the application steps. An alkaline adhesion promoter would be needed, which required additional experiments to test its effectiveness. Therefore, no promoter was used at these stage, so low yields in printing were expected despite the high yields in patterning.
+The adhesion promoter used for undoped p(g3T2-T) could not be used for doped species since it will remove dopants during the application steps. An alkaline adhesion promoter would be needed, which required additional experiments to test its effectiveness and correct application. Therefore, no promoter was used at these stage, so low yields in printing were expected despite the high yields in patterning.
 
 Eight operational devices were obtained. However, only one exhibited a capacitive behavior that allowed for transfer characteristics, and it will be used in this analysis. Transfer characteristics, EIS and CV measurements are shown in Figure \ref{fig:dopedSSE}, and the calculated parameters are exhibited in Table \ref{tab:dopedfom}.
 
@@ -484,15 +487,23 @@ Eight operational devices were obtained. However, only one exhibited a capacitiv
     \label{fig:dopedSSE}
 \end{figure}
 
+Despite the used of doped p(g3T2-T), threshold voltage is slightly negative, if comparing with undoped p(g3T2-T) with the lowest conductivity, a shift was definitely achieved but compared to oxidized p(g3T2-T), shift is very low. 
+
+An important consideration to make is that it is not certain that this value corresponds to the mentioned doping level. Since, under ambient conditions doped p(g3T2-T) upon contact with SSE precursor has a significant drop in conductivity within the first 15 minutes, as discussed in Subsection \ref{subsec:stab}. Therefore, during the time in between the printing process and the crosslinking of SSE, which in this trial was longer than 15 minutes, this effect likely affected our device.
+
+On the other hand, high channel capacitance and volumetric capacitance were achieved *needs to be measure again*
+
+Additionally, CV measurements show predominant peaks close to zero but also secondary peaks in the oxidation scan at -0.33 and +1.0 V, and in the reduction scan at -0.25 V. 
+
 \begin{table}[ht]
 \centering
 \caption{Parameters extracted from the characterization of doped-p(g3T2-T) OECT}
 \begin{tabular}{l|c||l|c}
 Parameters & Value & Parameters & Value \\\hline \hline
-V$_{Th}$ [V] & -0.1 & |g$_{m,max}$| [$\mu$S] & 567 \\
+V$_{Th}$ [V] & -0.10 & |g$_{m,max}$| [$\mu$S] & 567 \\
 C$_{channel}$ [nF] & 130 & C* [Fcm$^{-3}$] &  140 \\
 %C$_{channel}$ D6 [nF] & 289 & C* [Fcm$^{-3}$] & 311 \\
-V$_{ox}$ [V] & 0.1 & V$_{red}$ [V] & 0.0 \\\hline
+V$_{ox}$ [V] & 0.10 & V$_{red}$ [V] & 0.0 \\\hline
 \end{tabular}
 \label{tab:dopedfom}
 \end{table}

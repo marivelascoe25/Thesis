@@ -69,7 +69,7 @@ the formation of a new quasiparticle named bipolaron occurs. For instance, if p-
   \label{fig:bipol}
 \end{figure}
 
-The energy levels generated upon the formation of polarons and bipolarons in non-degenerate molecules are illustrated in Figure \ref{fig:ebipol}. As the doping density increases, the amount of bipolaron states also increases. Their overlapping leads to the formation of bipolaron bands, and the energy difference between the two in-gap states i and i*, as shown from Figure \ref{fig:ebipol}B to D, decreases. %Fix this part % \cite{bredasRoleMobileOrganic1984}
+The energy levels generated upon the formation of polarons and bipolarons in non-degenerate molecules are illustrated in Figure \ref{fig:ebipol}. As the doping density increases, the amount of bipolaron states also increases. Their overlapping leads to the formation of bipolaron bands, and the energy difference between the two in-gap states i and i*, as shown from Figure \ref{fig:ebipol}b to D, decreases. %Fix this part % \cite{bredasRoleMobileOrganic1984}
 
 \begin{figure}[ht]
   \centering
@@ -165,7 +165,7 @@ Ion transport in dry OMIECs of type I, III, and V is unipolar because these ions
 	\label{fig:itrans}
 \end{figure}
 
-There are two types of ionic charge transport in OMIECs: ion hopping and vehicular solvated-ion transport. In dry or minimally hydrated OMIECs, ion hopping assisted by segmental motion of the OMIEC side chains or backbone is the primary mechanism, as shown in Figure \ref{fig:itrans}A. However, when OMIECs are in contact with a solvent or liquid electrolyte, both mechanisms are present, with solvated ion vehicle transport being the predominant mode. For instance, in water-based electrolytes, proton diffusion occurs via the Grotthuss mechanism, where protons within water molecules diffuse through neighboring molecules. This involves a transfer of ionic effects through the hydrogen-bonded network, as shown in Figure \ref{fig:itrans}B.
+There are two types of ionic charge transport in OMIECs: ion hopping and vehicular solvated-ion transport. In dry or minimally hydrated OMIECs, ion hopping assisted by segmental motion of the OMIEC side chains or backbone is the primary mechanism, as shown in Figure \ref{fig:itrans}A. However, when OMIECs are in contact with a solvent or liquid electrolyte, both mechanisms are present, with solvated ion vehicle transport being the predominant mode. For instance, in water-based electrolytes, proton diffusion occurs via the Grotthuss mechanism, where protons within water molecules diffuse through neighboring molecules. This involves a transfer of ionic effects through the hydrogen-bonded network, as shown in Figure \ref{fig:itrans}b.
 
 Due to the existing ionic-electronic coupling, both ionic and electronic transport in OECTs and other OMIEC-electrolyte-based applications are not independent but are rather complex and must consider side effects such as hydration and electrolyte swelling \cite{paulsenOrganicMixedIonic2020}, as will be further discuss in Section \ref{sec:OECTs}.
 
@@ -183,7 +183,7 @@ Due to the existing ionic-electronic coupling, both ionic and electronic transpo
 
 \section{Organic Electrochemical Transistors} \label{sec:OECTs}
 
-Organic Electrochemical Transistors are composed of metallic source, drain and gate electrodes, an organic conjugated polymer channel (specifically an OMIEC as described in previous sections), and an electrolyte that bridges the channel and the gate, as illustrated in Figure \ref{fig:bernard}A. OECTs are devices that have received increasing attention due to their mechanical compliance, biocompatibility, and sensitivity to biochemical signals \cite{tanMixedIonicElectronic2022}. 
+Organic Electrochemical Transistors are composed of metallic source, drain and gate electrodes, an organic conjugated polymer channel (specifically an OMIEC as described in previous sections), and an electrolyte that bridges the channel and the gate, as illustrated in Figure \ref{fig:bernard}a. OECTs are devices that have received increasing attention due to their mechanical compliance, biocompatibility, and sensitivity to biochemical signals \cite{tanMixedIonicElectronic2022}. 
 
 %\begin{figure}[ht]
 %	\centering
@@ -209,7 +209,7 @@ Bernards and Malliaras implemented a model based on a p-type depletion-mode OECT
 
 The electronic circuit is treated as a \textit{variable} resistor and is thus modeled using Ohm's law. Its variability arises from the fact that when a positive gate voltage is applied, de-doping of the semiconductor occurs, which is analogous to the compensation doping observed in silicon. Cations from the electrolyte penetrate the polymer, compensating for an acceptor. 
 
-Meanwhile, the ionic circuit consists of a resistor that represents the flow of ions in the electrolyte, connected in series with a capacitor representing the storage of ions in the channel, as shown in Figure \ref{fig:bernard}B  \cite{rivnayOrganicElectrochemicalTransistors2018}\cite{bernardsSteadyStateTransientBehavior2007}. 
+Meanwhile, the ionic circuit consists of a resistor that represents the flow of ions in the electrolyte, connected in series with a capacitor representing the storage of ions in the channel, as shown in Figure \ref{fig:bernard}b  \cite{rivnayOrganicElectrochemicalTransistors2018}\cite{bernardsSteadyStateTransientBehavior2007}. 
 
 \begin{figure}[ht]
 	\centering
@@ -248,7 +248,7 @@ Analogous to conventional MOSFETs, depending on whether the device requires a ga
 	\label{fig:modes}
 \end{figure}
 
-As illustrated in Figure \ref{fig:modes}A and B, the polymer can be either intrinsically doped (conductive) or undoped (insulating). In the first scenario, the OMIEC already possesses anions that induce charges within its backbone. Consequently, to turn off the device, cations need to be injected to counteract this effect. Conversely, for an insulating polymer channel, a zero-gate biased OECT will have no charges induced in its backbone, resulting in the OFF state. To transition to the ON state, a gate voltage is required to drive anions into the polymer and induce charges.
+As illustrated in Figure \ref{fig:modes}a and b, the polymer can be either intrinsically doped (conductive) or undoped (insulating). In the first scenario, the OMIEC already possesses anions that induce charges within its backbone. Consequently, to turn off the device, cations need to be injected to counteract this effect. Conversely, for an insulating polymer channel, a zero-gate biased OECT will have no charges induced in its backbone, resulting in the OFF state. To transition to the ON state, a gate voltage is required to drive anions into the polymer and induce charges.
 
 \subsubsection{Standard material for depletion-mode OECTs}
 
@@ -324,7 +324,7 @@ Transconductance is considered as the most important parameter for measuring the
 
 where $W$, $L$ and $d$ are the channel width, length, and thickness, respectively, $\mu$C* denotes the product of mobility and volumetric capacitance, while $V_{G}$ and $V_{th}$ stand for the gate voltage and threshold voltage, which will be further discussed in the following subsections.
 
-Typically, the maximum transconductance ($g_{m,max}$) is reported, which falls into the saturation regime. Inal et al. reported the maximum transconductance for various channel materials with different device geometry parameters. They used an Ag/AgCl pellet as reference/gate electrode and 0.1M NaCl as electrolyte. Their results showed that OECTs with polymerized g2T backbones exhibited the best performance, achieving transconductance values ranging from 1 to 30 mS, depending on the geometry (Figure \ref{fig:gmuc}A) \cite{inalBenchmarkingOrganicMixed2017}.
+Typically, the maximum transconductance ($g_{m,max}$) is reported, which falls into the saturation regime. Inal et al. reported the maximum transconductance for various channel materials with different device geometry parameters. They used an Ag/AgCl pellet as reference/gate electrode and 0.1M NaCl as electrolyte. Their results showed that OECTs with polymerized g2T backbones exhibited the best performance, achieving transconductance values ranging from 1 to 30 mS, depending on the geometry (Figure \ref{fig:gmuc}a) \cite{inalBenchmarkingOrganicMixed2017}.
 
 \subsubsection{$\mu$C* product}
 
@@ -332,7 +332,7 @@ The parameter $\mu$C* is considered the most important for benchmarking OECT cha
 \cite{inalBenchmarkingOrganicMixed2017}. %\cite{inalHighTransconductanceAccumulation2014}. %% Other accumulation mode OECT with PTHS
 It is the product of two important parameters, $\mu$, the electronic mobility, and C*, the volumetric capacitance, the latter encloses the ion penetration, transport, and storage ability of the OMIEC film.
 
-Along with the transconductance, Inal et al. determined the values of $\mu$C* by calculating the linear slope of the maximum transconductance and channel geometry (Figure \ref{fig:gmuc}A), using Equation \ref{eq:gm}. They correlated their results with independent calculations of both parameters and found that polymerized g2T backbones exhibited the highest $\mu$C* value of 261 $\pm$ 29 $Fcm^{-1}V^{-1}s^{-1}$. Among the materials that showed a close 1:1 relationship for both methods of calculation of the $\mu$C* product, polymerized g2T backbones stood out (Figure \ref{fig:gmuc}B) \cite{inalBenchmarkingOrganicMixed2017}.
+Along with the transconductance, Inal et al. determined the values of $\mu$C* by calculating the linear slope of the maximum transconductance and channel geometry (Figure \ref{fig:gmuc}a), using Equation \ref{eq:gm}. They correlated their results with independent calculations of both parameters and found that polymerized g2T backbones exhibited the highest $\mu$C* value of 261 $\pm$ 29 $Fcm^{-1}V^{-1}s^{-1}$. Among the materials that showed a close 1:1 relationship for both methods of calculation of the $\mu$C* product, polymerized g2T backbones stood out (Figure \ref{fig:gmuc}b) \cite{inalBenchmarkingOrganicMixed2017}.
  
  \begin{figure}[ht]
  	\centering
@@ -416,10 +416,10 @@ The Oxygen Reduction Reaction (ORR) is a common undesirable side reaction that o
 % Remember 
 % Thermodynamically favored processes or reactions are those that involve both a decrease in the internal energy of the components (ΔH° < 0) and an increase in entropy of the components (ΔS° > 0). These processes are necessarily “thermodynamically favored” (ΔG° < 0) or negative. ΔG° = ΔH°-TΔS°
 % Catalyst help to reduce the activation energy required for a reaction
-The ORR is a non-capacitive faradaic reaction that takes place between the OMIEC and molecular oxygen, involving electron-transfer. This reaction can yield either hydrogen peroxide (H$_{2}$O$_{2}$) or water (H$_{2}$O), as described in \ref{eq:h2o2} and \ref{eq:h2o}, or it can result in the oxidation (p-doping) of the OMIEC which acts as the catalyst \cite{giovannittiEnergeticControlRedoxActive2020}. 
+The ORR is a non-capacitive faradaic reaction that takes place between the OMIEC and molecular oxygen, involving electron-transfer. This reaction can yield either the oxidation (p-doping) of the OMIEC which acts as the catalyst, water (H$_{2}$O) or hydrogen peroxide (H$_{2}$O$_{2}$), as described in \ref{eq:h2o} and \ref{eq:h2o2}. While water was already discussed and is not detrimental, hydrogen peroxide, on the other hand, may accelerate device degradation and if immerse in biological environment, it can be harmful %hydrogen peroxide (H$_{2}$O$_{2}$) or water (H$_{2}$O), as described in \ref{eq:h2o2} and \ref{eq:h2o}, or it can result in the oxidation (p-doping) of the OMIEC which acts as the catalyst.  
+\cite{giovannittiEnergeticControlRedoxActive2020}. 
 
 %The first shows a free energy difference that is endergonic for OMIECs with IPs > 4.9eV and hence prevent the OMIEC from undergoing ORR that form H$_{2}$O$_{2}$. To prevent the ORR in ambient conditions, OMIECs based on donor-acceptor copolymer (Type III or IV) that have large IPs to shift
-
 % Actually this material does not avoid this, we need to take into account this interaction.
 
 
@@ -431,9 +431,9 @@ The ORR is a non-capacitive faradaic reaction that takes place between the OMIEC
 	{E^{0}}_{O_{2}/H_{2}O} : O_{2} + 4H^{+} + 4e^{-} \rightarrow 2H_{2}O
 \end{equation}
 
-As represented in Figure \ref{fig:orr}, $\eta_{1}$ and $\eta_{2}$ represent the free energy difference between reactants and the reaction products H$_{2}$O$_{2}$ and H$_{2}$O, respectively. If this free energy difference is negative, indicating that the reaction requires an energy input, the ORR is endergonic, while a positive free energy difference makes it exergonic (spontaneous). For instance, to prevent the formation of oxygen peroxide, a polymer with higher IP (> 4.9eV) would be required. 
+As represented in Figure \ref{fig:orr}, $\eta_{1}$ and $\eta_{2}$ represent the free energy difference between reactants and the reaction products H$_{2}$O$_{2}$ and H$_{2}$O, respectively. If this free energy difference is negative, indicating that the reaction requires an energy input, the ORR is endergonic, while a positive free energy difference makes it exergonic (spontaneous). For instance, to prevent the formation of hydrogen peroxide, a polymer with higher IP (> 4.9eV) would be required. 
 
-In the context of OECTs, where polymers like PEDOT:PSS and p(g3T2-T) are used, it is important to recognize that these materials exhibit exergonic reactions under environmental conditions. Therefore, it is crucial to consider the impact of the ORR on device stability and performance, particularly in applications where long-term reliability is essential.
+In the context of OECTs, where polymers like PEDOT:PSS and p(g3T2-T) are used, it is important to recognize that these materials exhibit exergonic reactions under environmental conditions. Therefore, hydrogen peroxide would be formed and it is crucial to consider the impact on device stability and performance, particularly in applications where long-term reliability is essential.
 
 %\newpage
 \begin{figure}[!ht]

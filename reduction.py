@@ -28,7 +28,7 @@ file_path2 = 'Data\\4. Stability\\1. IV\\230620_pg3t_f6tcnnq5+SSE_channel_conduc
 #deox = read_directory_deox(dir_path)
 deox = [file_path1, file_path2]
 ## Get plot titles
-#T = plot_titles_deox(deox)
+T = plot_titles_deox(deox)
 
 L = ["Undoped", "5 mg/mL"]
 
@@ -42,8 +42,8 @@ range2 = [10, 50]
 ranges = [range1, range2]
 colour = [r'#003147', r'#089099']
 ## Get all plots
-#for i in range(len(deox)):
-#    stability(deox[i], T[i], columns, ranges, gate=False)#, log=False)
-stability_comparison(deox, L, columns, colour)#, log=False)
+for i in range(len(deox)):
+    stability(deox[i], T[i], columns, ranges, gate=False)#, log=False)
+#stability_comparison(deox, L, columns, colour)#, log=False)
 
 plt.show()

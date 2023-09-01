@@ -97,8 +97,9 @@ Organic Electrochemical Transistors (OECTs) exhibit advantageous properties, suc
 %\appendixpage*          % if wanted
 \appendix
 \include{app-A}
-% ... and so on until
 \include{app-B}
+\include{app-C}
+% ... and so on until
 
 \backmatter
 % The bibliography comes after the appendices.
