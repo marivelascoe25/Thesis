@@ -3,7 +3,7 @@ from functions import *
 plt.rcParams.update({'font.size':20})
 
 ## IV
-#dir_path = 'Data\\3. Transfer curves\\1. IV\\230613_pg3t_photopattternSSE'
+dir_path = 'Data\\3. Transfer curves\\1. IV\\230613_pg3t_photopattternSSE'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE_before'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230615_pg3t_photopattternSSE_from13again'
@@ -54,18 +54,18 @@ column_loop=column_vgs-1
 d1 = 34/40
 d2 = 34.5/40
 
-number = 1
+number = 3
 #gm_values = [0.0 for i in range (len(transfer))] 
 
-try:
-    for i in range(len(transfer)):
-        ## Get gradient plots, just one vds but multiple loops
-        X,Y,Z, gm_values = plot_transfer_curves_one_vds(T[i], transfer[i], column_ids, column_vgs, column_loop, number, trans=True)
-        ## Calculate Vth for multiple loops
-        #calculate_vth_one_vds(T[i], transfer[i], d1, d2, column_ids, column_vgs, column_loop)
-        print(T[i])
-        print (max(gm_values))
-except:
-    pass
+#try:
+for i in range(len(transfer)):
+    ## Get gradient plots, just one vds but multiple loops
+    X,Y,Z, gm_values = plot_transfer_curves_one_vds(T[i], transfer[i], column_ids, column_vgs, column_loop, number, trans=True)
+    ## Calculate Vth for multiple loops
+    #calculate_vth_one_vds(T[i], transfer[i], d1, d2, column_ids, column_vgs, column_loop)
+    print(T[i])
+    print (max(gm_values))
+#except:
+#    pass
 
 plt.show()

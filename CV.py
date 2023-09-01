@@ -22,24 +22,25 @@ plt.rcParams.update({'font.size':20})
 ## Master Thesis
 #dropcast ## change from D7 to D3
 #file_path = 'Data\\5. CV\\23.06.05\\WE_Aupf3t_RECE_Aupf3t_10cycles_D1.txt'
-dir_path = 'Data\\5. CV\\23.06.05'
+#dir_path = 'Data\\5. CV\\23.06.05'
 #dir_path = 'Data\\5. CV\\23.05.31'
 #photo ## change from D5 to U3
 #file_path = 'Data\\5. CV\\23.06.14\\WE_Aupg3t_RECE_Aupg3t_10cycles_D5.txt'
+#file_path = 'Data\\5. CV\\23.06.15\\WE_Aupg3t_RECE_Aupg3t_10cycles_U3.txt'
 #dir_path = 'Data\\5. CV\\23.06.14'
-dir_path = 'Data\\5. CV\\23.06.15'
+#dir_path = 'Data\\5. CV\\23.06.15'
 #ink
-#dir_path = 'Data\\5. CV\\23.07.20_undoped'
+#file_path = 'Data\\5. CV\\23.07.20_undoped\\WE_AuAgNP_RECE_Aupg3t_10cycles_U5.txt'
 #doped
-#dir_path = 'Data\\5. CV\\23.07.11_doped5mgml'
+file_path = 'Data\\5. CV\\23.07.11_doped5mgml\\WE_Aupg3t_RECE_Aupg3t_10cycles_U7.txt'
 
 #title1 = "Ag/AgCl as working electrode"
 
-files, titles = read_directory_allfiles(dir_path)
+#files, titles = read_directory_allfiles(dir_path)
 #print(titles)
-for i in range(len(files)):
-    plot_CV(files[i], titles[i], "Gate", "Channel")
+#for i in range(len(files)):
+#    plot_CV(files[i], titles[i], "Gate", "Channel")
 
-#plot_CV (file_path, "", "Gate", "Channel")#, WE: Working Electrode, Ref: Reference Electrode
+plot_CV (file_path, "", "Gate", "Channel")#, WE: Working Electrode, Ref: Reference Electrode
 
 plt.show()

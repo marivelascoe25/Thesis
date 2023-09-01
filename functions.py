@@ -174,9 +174,17 @@ def plot_CV (dir_path, title, WE, Ref):
     Scan_number = extract_csv_column_data(dir_path, 4)
 
     total_scan = int(Scan_number[-1])
+    print(total_scan)
     matrix_length = int(len(V_All)/total_scan)
     #print(matrix_length)
 
+    V_All = np.array(V_All)
+    I_All = np.array(I_All)
+    
+    Potential = V_All.reshape(total_scan, matrix_length)
+    Current = I_All.reshape(total_scan, matrix_length)
+
+    """
     Potential = [[0.0 for i in range (matrix_length-1)] for k in range(total_scan-1)]
     Current = [[0.0 for i in range (matrix_length-1)] for k in range(total_scan-1)]
 
@@ -185,6 +193,7 @@ def plot_CV (dir_path, title, WE, Ref):
             index = int(Scan_number[j])
             Potential[index-2].append(V_All[j])
             Current[index-2].append(I_All[j])
+    """
 
     c1 = '#8ed9fb'#045275'#'#B7E6A5'
     c2 = '#045275'#'#808080'#'#003147'
@@ -193,10 +202,13 @@ def plot_CV (dir_path, title, WE, Ref):
     plt.title(title)
     plt.xlabel("Potential (V vs " + Ref + ")",fontsize=20,fontweight='bold')
     plt.ylabel("Current @ " + WE + " (A)",fontsize=20,fontweight='bold')
-    for i in range (total_scan-1):
-        plt.plot(Potential[i], Current[i], '-', color = colorFader(c1,c2,i/(total_scan-1)))
-        if i == 0 or i == 8:
-            plt.plot(Potential[i], Current[i], '-', color = colorFader(c1,c2,i/(total_scan-1)), label = "Scan" + str(i+2))
+    for i in range (total_scan):
+        if i == 0:
+            pass
+        elif i == 1 or i == 9:
+            plt.plot(Potential[i], Current[i], '-', color = colorFader(c1,c2,i/(total_scan-1)), label = "Scan " + str(i+1)) 
+        else:
+            plt.plot(Potential[i], Current[i], '-', color = colorFader(c1,c2,i/(total_scan-1)))
     plt.xlim(-1.1,1.1) 
     plt.xticks([-1, -0.5, 0.0, 0.5, 1.0])
     plt.legend(fontsize=20)
@@ -947,27 +959,27 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, number=0
     Z = np.absolute(Z)
     total_loops = int(L[-1])
     matrix_length = int(len(L)/total_loops)
-
-
-    #V_GS = [[0.0 for i in range (matrix_length)] for k in range(total_loops)]
-    #I_D = [[0.0 for i in range (matrix_length)] for k in range(total_loops)]
-    #I_G = [[0.0 for i in range (matrix_length)] for k in range(total_loops)]
+    
     
     X = np.array(X)
     Y = np.array(Y)
     Z = np.array(Z)
     L = np.array(L)
     
+    
     V_GS = X.reshape(total_loops, matrix_length)
     I_D = Y.reshape(total_loops, matrix_length)
     I_G = Z.reshape(total_loops, matrix_length)
-    #L = L.reshape(total_loops, matrix_length)
+
+    """  
+    V_GS = [[0.0 for i in range (matrix_length)] for k in range(total_loops)]
+    I_D = [[0.0 for i in range (matrix_length)] for k in range(total_loops)]
+    I_G = [[0.0 for i in range (matrix_length)] for k in range(total_loops)]
     
     
-    """
     for j in range (len(L)):
         index = int(L[j])
-        V_GS[index+1].append(X[j])
+        V_GS[index-1].append(X[j])
         #print(index)
         #print(X[j])
         #print(V_GS[index-1])

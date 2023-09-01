@@ -44,7 +44,7 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Visualization of the workflow for Au-contacts patterning.}}{25}{figure.caption.34}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Visualization of the workflow for patterning undoped p(g3T2-T).\relax }}{25}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Visualization of the workflow for patterning doped p(g3T2-T).\relax }}{26}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Representation of experimental setup for measuring threshold voltage shift of a single OECT under ambient conditions. Scheme is not drawn to scale.\relax }}{26}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Representation of experimental setup for measuring threshold voltage shift of a single OECT under ambient conditions. Scheme is not drawn to scale.\relax }}{27}{figure.caption.41}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Chemical structures of the repeat units of p(g3T2-T) and F$_{6}$TCNNQ dopant.\relax }}{27}{figure.caption.42}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Solid-OECT fabrication with undoped p(g3T2-T)}}{29}{figure.caption.51}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Solid-OECT fabrication with doped p(g3T2-T)}}{29}{figure.caption.53}%
@@ -55,20 +55,20 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Representation of the Fermi level shift upon doping}}{34}{figure.caption.59}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{34}{subfigure.4.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{34}{subfigure.4.2}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Micrographs of a patterned channel and gate p(g3T2-T) at different doping levels}}{34}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Transfer characteristics and transconductance at different doping levels and $V_{DS}$}}{36}{figure.caption.61}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Undoped device}}}{36}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Undoped device}}}{36}{subfigure.6.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {5 mg/mL dopant device}}}{36}{subfigure.6.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {5 mg/mL dopant device}}}{36}{subfigure.6.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {10 mg/mL dopant device}}}{36}{subfigure.6.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {10 mg/mL dopant device}}}{36}{subfigure.6.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Transfer characteristics comparing different doping levels}}{37}{figure.caption.63}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$V_{DS}$ = -0.1 V}}}{37}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$V_{DS}$ = -0.3 V}}}{37}{subfigure.7.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$V_{DS}$ = -0.5 V}}}{37}{subfigure.7.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$V_{DS}$ = -0.7 V}}}{37}{subfigure.7.4}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Threshold shift at different doping levels and $V_{DS}$}}{38}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Micrographs of a patterned channel and gate p(g3T2-T) at different doping levels}}{35}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Transfer characteristics and transconductance at different doping levels and $V_{DS}$}}{37}{figure.caption.61}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Undoped device}}}{37}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Undoped device}}}{37}{subfigure.6.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {5 mg/mL dopant device}}}{37}{subfigure.6.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {5 mg/mL dopant device}}}{37}{subfigure.6.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {10 mg/mL dopant device}}}{37}{subfigure.6.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {10 mg/mL dopant device}}}{37}{subfigure.6.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Transfer characteristics comparing different doping levels}}{38}{figure.caption.63}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$V_{DS}$ = -0.1 V}}}{38}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$V_{DS}$ = -0.3 V}}}{38}{subfigure.7.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$V_{DS}$ = -0.5 V}}}{38}{subfigure.7.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$V_{DS}$ = -0.7 V}}}{38}{subfigure.7.4}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Threshold shift at different doping levels and $V_{DS}$}}{39}{figure.caption.64}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Drain current over time of undoped-p(g3T2-T) coupled with SSE precursor}}{39}{figure.caption.65}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{39}{subfigure.9.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{39}{subfigure.9.2}%
@@ -96,6 +96,7 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{48}{subfigure.15.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{48}{subfigure.15.3}%
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{48}{subfigure.15.4}%
+\addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

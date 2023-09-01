@@ -126,7 +126,7 @@ All fabrication steps were performed under standard cleanroom conditions.
 
 \paragraph{Profilometer.}The films were scratched 4 times to remove part of material, and measure the cavity depth to obtain the film thickness.
 
-\paragraph{Four-point probe.}Sheet resistance and resistivity were calculated following reference \cite{resist}, via equations:
+\paragraph{Four-point probe.} A four-point probe was used to calculate the relation between induced voltage in inner probes and input current between outer probes. Then sheet resistance and resistivity were calculated using the Van Der Pauw method, following reference \cite{resist}, via equations:
 
 \begin{equation}\label{eq:rs}
 	R_{S} = \frac{\pi}{ln(2)}R = 4,53 R \quad [\Omega/sq],
@@ -163,7 +163,7 @@ where $h\nu = 21.22 eV$, the main He I excitation line of the Helium plasma disc
  
 %\subsection{Roughness characterization of films} 
 
-\subsection{Fabrication of Organic Electrochemical Transistors} \label{subsec:oect}
+\subsection{Doping in Organic Electrochemical Transistors} \label{subsec:oect}
 
 Photolithographically patterned substrates with gold contacts for source, drain and gate were obtained using mask layout illustrated in Figure \ref{fig:mask}. The steps outlined in references \cite{weissbachPhotopatternableSolidElectrolyte2022} and \cite{bongartzOrganicElectrochemicalTransistors2021} were followed, which is also represented in Figure \ref{fig:aupat}.
 
@@ -222,7 +222,8 @@ Then p(g3T2-T) films were deposited following the procedure described in the pre
 \end{figure}
 
 %\newpage
-\subsubsection{Stability on Air of p(g3T2-T)}
+%\subsubsection{Stability on Air of p(g3T2-T)}
+\subsubsection{Stability of Undoped- and Doped-p(g3T2-T)}
 In this subsection, stability tests were conducted on both undoped and doped p(g3T2-T) samples. These samples were doped with F$_{6}$TCNNQ, following same procedure described in subsection \ref{subsec:films}. The channel conductivity was measured %at various stages of the photolithography process, 
 before and after patterning and after contact with SSE %
 while a fixed biased drain-source voltage was maintained, under N$_{2}$ and ambient conditions. %, upon spin-coating, patterning, i) upon dropcast of solid-state electrolyte precursor, and after exposure, ii) after photopatterned solid-state electrolyte, and finally
@@ -242,6 +243,9 @@ while a fixed biased drain-source voltage was maintained, under N$_{2}$ and ambi
 
 \paragraph{By heating.}An undoped-p(g3T2-T) solid-OECT, whose fabrication will be described in the following subsection \ref{subsec:solidOECT}, was exposed to ambient conditions, devices were clearly oxidized. The sample was placed on a hot plate at 120$^{\circ}$C, brought back to glovebox, and measured the following day.  %\cite{weissbachPhotopatternableSolidElectrolyte2022}.
 %% alcohol rinse
+
+\subsection{Fabrication of Solid Organic Electrochemical Transistors} \label{subsec:soect}
+
 \subsubsection{Solid-OECTs using Undoped-p(g3T2-T)} \label{subsec:solidOECT}
 After following the patterning steps for undoped-p(g3T2-T) from Subsection \ref{subsec:channel}. Three different methods of applying the solid-state electrolyte precursor were tested. Then, transfer characteristics were measured at a constant V$_{DS}$ of -0.1V, and a  V$_{GS}$ swept backwards from 1.0 V to 1.0 V at a scanning rate of 0.083 V/s. Cyclic voltammetry and electrochemical impedance spectroscopy were performed by short-circuiting source and drain to probe between channel and gate. Parameters were fixed as described in Section \ref{param}, and measurements were taken one day after the fabrication.
 
@@ -259,11 +263,11 @@ After following the patterning steps for undoped-p(g3T2-T) from Subsection \ref{
 	\label{tab:adprom}
 \end{table}
 
-\paragraph{OECT with drop-casted Solid-State Electrolyte.}Solid-state electrolyte precursor was drop-casted and then exposed for 2 cycles of 60 s in a mask aligner, as shown in Figure \ref{fig:undopedsse}A. No adhesion promoter was applied in this sample.
+\paragraph{OECT with drop-casted Solid-State Electrolyte.}Solid-state electrolyte precursor was drop-casted and then exposed for 2 cycles of 60 s in a mask aligner, as shown in Figure \ref{fig:undopedsse}a. No adhesion promoter was applied in this sample.
 
-\paragraph{OECT with photopatternable Solid-State Electrolyte.}After the application of the adhesion promoter, the solid-state electrolyte precursor was drop-casted onto the sample, followed by the placement of a Teflon foil to prevent contact with the mask, which would shadow all areas except the ones of interest in the negative resist. The sample was then exposed for 2 cycles of 60 s in a mask aligner. Removal of excess, non-cross-linked precursor was careful blown off with a N$_{2}$ gun, as shown in Figure \ref{fig:undopedsse}B,  following references \cite{weissbachPhotopatternableSolidElectrolyte2022}\cite{bongartzOrganicElectrochemicalTransistors2021}.
+\paragraph{OECT with photopatternable Solid-State Electrolyte.}After the application of the adhesion promoter, the solid-state electrolyte precursor was drop-casted onto the sample, followed by the placement of a Teflon foil to prevent contact with the mask, which would shadow all areas except the ones of interest in the negative resist. The sample was then exposed for 2 cycles of 60 s in a mask aligner. Removal of excess, non-cross-linked precursor was careful blown off with a N$_{2}$ gun, as shown in Figure \ref{fig:undopedsse}b,  following references \cite{weissbachPhotopatternableSolidElectrolyte2022}\cite{bongartzOrganicElectrochemicalTransistors2021}.
 
-\paragraph{OECT with inkjet-printed Solid-State Electrolyte.}After the application of the adhesion promoter, the solid-state-electrolyte precursor was ink-jet printed and expose for 2 cycles of 60 s in mask aligner, as illustrated in Figure \ref{fig:undopedsse}C. Parameters and procedure for ink-jet printing was previously established by members of BioSens group at IAPP. 
+\paragraph{OECT with inkjet-printed Solid-State Electrolyte.}After the application of the adhesion promoter, the solid-state-electrolyte precursor was ink-jet printed and expose for 2 cycles of 60 s in mask aligner, as illustrated in Figure \ref{fig:undopedsse}c. Parameters and procedure for ink-jet printing was previously established by members of BioSens group at IAPP. 
 
 \begin{figure}[!ht]
 	\centering
