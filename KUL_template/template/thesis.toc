@@ -70,18 +70,16 @@
 \contentsline {subsection}{\numberline {4.1.3}Workfunction}{33}{subsection.4.1.3}%
 \contentsline {section}{\numberline {4.2}Doping in Organic Electrochemical Transistors}{34}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Influence of Doping on OECT Channel}{34}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Stability Undoped- and Doped-p(g3T2-T)}{36}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Stability of Undoped- and Doped-p(g3T2-T)}{38}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Reverse Oxidation by Electrochemical Dedoping}{40}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Fabrication of Solid Organic Electrochemical Transistors}{41}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Undoped Drop-casted SSE}{42}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Undoped Photopatterned SSE}{44}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Undoped Inkjet-Printed SSE}{45}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Doped Inkjet-Printed SSE}{48}{subsection.4.3.4}%
-\contentsline {subsubsection}{\numberline {4.3.4.1}Channel conductivity}{48}{subsubsection.4.3.4.1}%
-\contentsline {subsubsection}{\numberline {4.3.4.2}Solid-OECT performance}{48}{subsubsection.4.3.4.2}%
-\contentsline {subsection}{\numberline {4.3.5}Threshold Voltage Shift in OECTs}{49}{subsection.4.3.5}%
-\contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{51}{chapter.5}%
-\contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{53}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}Correlation of Cyclic Voltammetry and Transfer Characteristics}{55}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{57}{appendix.C}%
-\contentsline {chapter}{Bibliography}{59}{appendix*.78}%
+\contentsline {section}{\numberline {4.3}Fabrication of Solid Organic Electrochemical Transistors}{42}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Undoped Drop-casted SSE}{43}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Undoped Photopatterned SSE}{45}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Undoped Inkjet-Printed SSE}{47}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Doped Inkjet-Printed SSE}{49}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Threshold Voltage Shift in OECTs}{51}{subsection.4.3.5}%
+\contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{53}{chapter.5}%
+\contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{55}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}Correlation of Cyclic Voltammetry and Transfer Characteristics}{57}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{59}{appendix.C}%
+\contentsline {chapter}{Bibliography}{61}{appendix*.82}%

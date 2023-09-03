@@ -51,7 +51,8 @@ def extract_data(dir,x,y,z, loop):
             X.append(float(sline[x]))
             Y.append(float(sline[y]))
             Z.append(float(sline[z]))
-            L.append(float(sline[loop]))
+            if loop != 0:
+                L.append(float(sline[loop]))
         except:
             pass
     return X,Y,Z,L
@@ -174,7 +175,6 @@ def plot_CV (dir_path, title, WE, Ref):
     Scan_number = extract_csv_column_data(dir_path, 4)
 
     total_scan = int(Scan_number[-1])
-    print(total_scan)
     matrix_length = int(len(V_All)/total_scan)
     #print(matrix_length)
 
@@ -804,7 +804,7 @@ def stability(stability, title, columns, ranges, gate=True, log=True):
     z_column = columns[2]#5
     y_column = columns[1]#7
     x_column = columns[0]#0 ## 9 if loop is added
-    X, Y, Z = extract_data(stability,x_column,y_column,z_column)
+    X, Y, Z, L = extract_data(stability,x_column,y_column,z_column,0)
     #print (stability)
     if log:
         #plt.yscale('log')
@@ -819,11 +819,11 @@ def stability(stability, title, columns, ranges, gate=True, log=True):
 
     ## Plots
     plt.figure(figsize=(8, 6.5))
-    #plt.title(title)#title.set_text('First Plot')
-    #plt.xlim([0,800])
-    #plt.ylim([1e-6,1e-3])
+    plt.title(title)#title.set_text('First Plot')
+    #plt.xlim([0,5000])
+    #plt.ylim([1e-8,1e-5])
 
-    plt.plot(X, Y, '-', color = r'#0D4A70', linewidth = 3, label = r"$-I_{D}$")
+    plt.plot(X, Y, '-', color = r'#0D4A70', linewidth = 1, label = r"$-I_{D}$")
     if gate:
         plt.plot(X, Z, '--', color = r'#9EC9E2', linewidth = 2, label = r"$-I_{G}$")
         plt.legend()
@@ -854,7 +854,7 @@ def stability_comparison(deox, L, columns, c, log=True):
         z_column = columns[2]#5
         y_column = columns[1]#7
         x_column = columns[0]#0 ## 9 if loop is added
-        X, Y, Z = extract_data(deox[i],x_column,y_column,z_column)
+        X, Y, Z, L = extract_data(deox[i],x_column,y_column,z_column,0)
         #print (stability)
         if log:
             #plt.yscale('log')
@@ -1055,13 +1055,14 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, number=0
 
     return X,Y,Z, gm_values#abs(np.array(gm_values))
 
-def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2, loop_case = 1):
+def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = False, number=2, loop_case = 1):
     num_devices = len(T)
     num_files = len(transfer) # for each vds x loops
     n_igs = n_vgs+1
-    X_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
-    Y_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
-    Z_structure = [[0.0 for i in range (num_files)] for k in range(num_devices)]
+    X_structure = [0.0 for k in range(num_devices)]
+    Y_structure = [0.0 for k in range(num_devices)]
+    Z_structure = [0.0 for k in range(num_devices)]
+    gm_values = [0.0 for k in range(num_devices)]
 
     for k in range(num_devices):
         
@@ -1077,14 +1078,14 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
         ax1.set_xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
         ax1.set_ylabel(r'$-I_D$ (A)',fontsize=20,fontweight='bold')
         ax1.set_yscale('log')
-        ax1.set_ylim(1e-10, 1e-4)#5e-3)
-        y_ticks = [1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4]#, 1e-3]
+        ax1.set_ylim(1e-10, 1e-3)#5e-3)
+        y_ticks = [1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4, 1e-3]
         #x_ticks = [-1.0, -0.5, 0.0, 0.5, 1.0]
         ax1.set_yticks(y_ticks)
         #ax1.set_xticks(x_ticks)
         ax2.set_ylabel(r'$-I_{G}$ (A)',fontsize=20,fontweight='bold')
         ax2.set_yscale('log')
-        ax2.set_ylim(1e-10, 1e-4)#5e-3)
+        ax2.set_ylim(1e-10, 1e-3)#5e-3)
         ax2.set_yticks(y_ticks)
         
         ax1.grid(color='lightgrey')#, linestyle='-')
@@ -1097,19 +1098,23 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
                 if loop_case == 1:
                     X, Y, Z = extract_data_loop_number(transfer[i],n_vgs,n_ids,n_igs, n_loop, number)
                     #print(X)
-                    Z = np.absolute(Z) 
-                    Z_structure[k][i] = Z_structure[k][i] + np.array(Z)
+                    #X, Y, Z, L = extract_data(transfer[i],n_vgs,n_ids,n_igs, n_loop)#, number)
+                    #total_loops = int(L[-1])
+                    #matrix_length = int(len(L)/total_loops)
+    
                 elif loop_case == 2:
                     X, Y, Z = extract_data_loops(transfer[i],n_vgs,n_ids,n_igs,n_loop)
                 else: 
                     X, Y, Z = extract_data(transfer[i],n_vgs,n_igs,n_ids)
                 
+                X = np.array(X)
                 Y = np.absolute(Y)
                 Z = np.absolute(Z) 
-                Z_structure[k][i] = Z_structure[k][i] + np.array(Z)
+                
+                #X = X.reshape(total_loops, matrix_length)
+                #Y = Y.reshape(total_loops, matrix_length)
+                #Z = Z.reshape(total_loops, matrix_length)
                 #print(gm[k][i])
-                X_structure[k][i] = X_structure[k][i] + np.array(X)
-                Y_structure[k][i] = Y_structure[k][i] + np.array(Y)  
                 
                 #print ("Device" + str(k) + L[i])
                 #print (X_structure[k][i])
@@ -1123,7 +1128,24 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
                         ax2.plot(X, Z, '--', color=colorr, linewidth=3)
                     except:
                         pass
+                        
+                    if trans:
+                        end = int(len(X)/2)
+                    #print(end)
+                        vgs = X[0:end].tolist() # De +1 a -1
+                        vgs.reverse() # De -1 a +1
+                        ids = Y[0:end].tolist() # De +1 a -1
+                        ids.reverse() # De -1 a +1
+                        #print(ids)
+                        ids = [-1*ids[i] for i in range(len(ids))]
+                        
+                        # Calculate transconductance at a specific data point index
+                        data_point_index = 10 # Choose an appropriate index
+                        gm = calculate_transconductance(ids, vgs, data_point_index)
 
+                        # Plot transconductance vs. input voltage using the existing data
+                        gm_array = [calculate_transconductance(ids, vgs, j) for j in range(len(vgs))]
+                    
                         #print(len(X_aux))
                         #print(len(gm[k][i]))
                         #plt.text(-1, 0.e-10, gmax[k][i])
@@ -1167,8 +1189,14 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, number=2
         plt.tight_layout()
 
     ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
-       
-    return X_structure, Y_structure, Z_structure
+        #X_structure[k].append(X)
+        #Y_structure[k].append(Y)  
+        #Z_structure[k].append(Z)
+        try:
+            gm_values[k] = gm_array
+        except:
+            pass
+    return gm_values#X_structure, Y_structure, Z_structure
 
 def calculate_vth_one_vds(Title, transfer, d1, d2, n_ids, n_vgs, n_loop):
     n_igs = n_vgs+1
@@ -1218,7 +1246,7 @@ def calculate_vth_one_vds(Title, transfer, d1, d2, n_ids, n_vgs, n_loop):
 
             Y_fitted[i] = intercept + [x * slope for x in V_GS[i][start_X:end_X]]
 
-            plt.plot(V_GS[i][start_X:end_X],Y_fitted[i], '--',color = colorFader(c1,c2,i/(total_loops-1)))#, label="Linear Fit")    
+            plt.plot(V_GS[i][start_X:end_X],Y_fitted[i], '--',color = 'yellow')#, label="Linear Fit")    
             print("For loop " + str(i+1) + " Vth is " + str(vth))     
         except:
             pass
@@ -1263,7 +1291,7 @@ def plot_linear_ids_transconductance(dir, n_ids, n_vgs, loop_nr, L, c, ylim):
     
         
     for i in range(num_files):
-        vgs, ids, igs = extract_data_loop_number(dir[i],n_vgs,n_ids,n_igs,n_loop, loop_nr)
+        #vgs, ids, igs = extract_data_loop_number(dir[i],n_vgs,n_ids,n_igs,n_loop, loop_nr)
         end = int(len(vgs)/2)
         vgs = vgs[0:end] # De +1 a -0.8
         vgs.reverse()

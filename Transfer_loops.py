@@ -3,7 +3,7 @@ from functions import *
 plt.rcParams.update({'font.size':20})
 
 ## IV
-dir_path = 'Data\\3. Transfer curves\\1. IV\\230613_pg3t_photopattternSSE'
+#dir_path = 'Data\\3. Transfer curves\\1. IV\\230613_pg3t_photopattternSSE'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE_before'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE'
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230615_pg3t_photopattternSSE_from13again'
@@ -22,7 +22,7 @@ dir_path = 'Data\\3. Transfer curves\\1. IV\\230613_pg3t_photopattternSSE'
 #Master Thesis
 ##photo D5 replace by U3
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230614_pg3t_photopattternSSE'
-#dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230616_pg3t_photopattternSSE' ## need to change for bioprobe
+dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230616_pg3t_photopattternSSE' ## color = #996548
 #ink U5
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230720_undoped_pg3t_inkSSE'
 #doped U7
@@ -37,11 +37,11 @@ transfer, out = read_directory_transfer(dir_path)
 T = plot_titles(transfer)
 #Column 6 and 8 (9 if loop is added) corresponds to Ids and Vgs in previous files
 #IV
-column_ids=3
-column_vgs=6
+#column_ids=3
+#column_vgs=6
 #bioprobe
-#column_ids=5
-#column_vgs=7
+column_ids=5
+column_vgs=7
 ##old data bioprobe with loops
 #column_ids=6
 #column_vgs=9
@@ -49,12 +49,12 @@ column_loop=column_vgs-1
 
 
 ## Forward
-#d1 = 25/40
-#d2 = 26/40
-   
+d1 = 25/40
+d2 = 26/40
+
 ## Backward
-d1 = 34.2/40
-d2 = 35.2/40
+#d1 = 34/40
+#d2 = 35/40
 
 number = 3
 #gm_values = [0.0 for i in range (len(transfer))] 
@@ -62,11 +62,11 @@ number = 3
 #try:
 for i in range(len(transfer)):
     ## Get gradient plots, just one vds but multiple loops
-    X,Y,Z, gm_values = plot_transfer_curves_one_vds(T[i], transfer[i], column_ids, column_vgs, column_loop, number, trans=True)
+    #X,Y,Z, gm_values = plot_transfer_curves_one_vds(T[i], transfer[i], column_ids, column_vgs, column_loop, number, trans=True)
     ## Calculate Vth for multiple loops
     calculate_vth_one_vds(T[i], transfer[i], d1, d2, column_ids, column_vgs, column_loop)
-    print(T[i])
-    print (max(gm_values))
+    #print(T[i])
+    #print (max(gm_values))
 #except:
 #    pass
 

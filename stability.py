@@ -61,9 +61,20 @@ plt.rcParams.update({'font.size':20})
 #dir_path1 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_dedopingaftertransfer\\D5_m01_Dedoping3-1.txt'
 #dir_path2 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_aftergatededopingsolid_aftertransfer\\D5_m01_Dedoping3-1.txt'
 
+#lower bias
+#dir_path1 = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq_dropSSE_air\\D2_m01_+1V_Dedoping3-1.txt'
+#dir_path2 = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq_dropSSE_air\\D2_m01_0V_Dedoping3-1.txt'
+
 ## Plots for master thesis
 #dir_path1 = 'Data\\4. Stability\\230601_new_pg3t+dropSSE_gatededoping\\U3_m01_Dedoping3-1.txt'
 #dir_path1 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_dedopingaftertransfer\\U7_m01_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq5_channel_conductivity\\H2_m01_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq5_channel_conductivity\\G2_m01_Dedoping3-1_air.txt'
+dir_path1 = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq5_channel_conductivity\\D2_m01_Dedoping3-1_air_cleandata.txt'
+#dir_path1 = 'Data\\4. Stability\\1. IV\\230629_pg3t_doped_5mgmlF6TCNNQ_printedSSE\\D2_m01_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\1. IV\\230629_pg3t_doped_10mgmlF6TCNNQ_printedSSE_dedoping\\D2_m01_Dedoping3-1.txt'
+
+
 
 #title1 = "Solid Device (D5), non gate-biased"#_23.03.20"
 #title1 = "Solid Device (D6) in GB, +1V gate-biased"#_23.03.20"
@@ -72,13 +83,15 @@ plt.rcParams.update({'font.size':20})
 #title1 = "Solid Device (U7) in Bioprobe, +1V gate-biased"
 #title2 = "Solid Device (D5) in Bioprobe, +1V gate-biased"
 #title3 = "Solid Device (D5) in Bioprobe, +0.4V gate-biased"
-title1 = "Liquid Electrolyte (U3), +1V gate-biased"
+#title1 = "Liquid Electrolyte (U3), +1V gate-biased"
 #title2 = "Solid Device (D5) in GB after transfer, +1V gate-biased"
 #title1 = "Solid Device (D1) in GB, +1V gate-biased"
 #title2 = "Solid Device (D3) in GB, +1V gate-biased"
 #title3 = "Solid Device (D4) in GB, +1V gate-biased"
 #title4 = "Solid Device (D7) in GB, +1V gate-biased"
 #title5 = "Solid Device (U4) in GB, +1V gate-biased"
+title1 = "+1V"
+#title2 = "0V"
 
 # Asigning columns
 #columns = [0, 7, 5] #bioprobe
@@ -87,10 +100,21 @@ range1 = [30,40]
 range2 = [400, 440]
 ranges = [range1, range2]
 
-stability(dir_path1, title1, columns, ranges)#, log=False)
-#stability(dir_path2, title2, columns)#, log=False)
+stability(dir_path1, title1, columns, ranges, gate=False, log=False)
+#stability(dir_path2, title2, columns, ranges, gate=False)#, log=False)
 #stability(dir_path3, title3, columns)#, log=False)
 #stability(dir_path4, title4, columns)#, log=False)
 #stability(dir_path5, title5, columns)#, log=False)
- 
+
+"""
+deox = read_directory_deox(dir_path1)
+#deox = [file_path1, file_path2]
+## Get plot titles
+T = plot_titles_deox(deox)
+print(deox)
+L = ["+1", "0", "+1?"]
+colour = [r'#003147', r'#089099', r'#089000']
+
+#stability_comparison(deox, L, columns, colour)#, log=False)
+"""
 plt.show()

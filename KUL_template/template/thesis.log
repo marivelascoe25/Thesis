@@ -1,71 +1,71 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.5)  1 SEP 2023 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.4)  3 SEP 2023 21:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
-LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-09-28> (./kulemt.cls
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-05-22> (./kulemt.cls
 Document Class: kulemt 2023/04/05 v1.14 KU Leuven engineering master's thesis d
 ocument class
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-\kulemt@bind=\dimen138
+\kulemt@bind=\dimen140
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/ascii.def
+(c:/texlive/2023/texmf-dist/tex/latex/base/ascii.def
 File: ascii.def 2021/02/14 v1.3d Input encoding file
 ))
 \kulemt@facnum=\count185
  (./kulemt.cfg
 File: kulemt.cfg 2021/03/11
 )
-(c:/texlive/2022/texmf-dist/tex/latex/memoir/memoir.cls
-Document Class: memoir 2022/07/29 v3.7r configurable book, report, article docu
-ment class
-(c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(c:/texlive/2023/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2022/11/17 v3.7.19 configurable book, report, article do
+cument class
+(c:/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count186
 )
-\onelineskip=\skip47
-\lxvchars=\skip48
-\xlvchars=\skip49
+\onelineskip=\skip48
+\lxvchars=\skip49
+\xlvchars=\skip50
 \@memcnta=\count187
 \c@@memmarkcntra=\count188
 
-(c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-\stockheight=\skip50
-\stockwidth=\skip51
-\trimtop=\skip52
-\trimedge=\skip53
+\stockheight=\dimen141
+\stockwidth=\dimen142
+\trimtop=\skip51
+\trimedge=\skip52
 
-(c:/texlive/2022/texmf-dist/tex/latex/memoir/mem11.clo
+(c:/texlive/2023/texmf-dist/tex/latex/memoir/mem11.clo
 File: mem11.clo 2022/07/29 v0.5 memoir class 11pt size option
 )
-\binding=\skip54
-\spinemargin=\skip55
-\foremargin=\skip56
-\uppermargin=\skip57
-\lowermargin=\skip58
-\headdrop=\skip59
-\normalrulethickness=\skip60
-\mem@maxheadheight=\skip61
-\mem@maxfootheight=\skip62
-\headwidth=\skip63
+\binding=\skip53
+\spinemargin=\skip54
+\foremargin=\skip55
+\uppermargin=\skip56
+\lowermargin=\skip57
+\headdrop=\skip58
+\normalrulethickness=\skip59
+\mem@maxheadheight=\skip60
+\mem@maxfootheight=\skip61
+\headwidth=\skip62
 \c@storedpagenumber=\count189
-\memPD=\dimen139
-\m@mabparskip=\skip64
-\thanksmarkwidth=\skip65
-\thanksmarksep=\skip66
-\droptitle=\skip67
+\memPD=\dimen143
+\m@mabparskip=\skip63
+\thanksmarkwidth=\skip64
+\thanksmarksep=\skip65
+\droptitle=\skip66
 \c@book=\count190
 \c@part=\count191
 \c@chapter=\count192
@@ -74,230 +74,230 @@ File: mem11.clo 2022/07/29 v0.5 memoir class 11pt size option
 \c@subsubsection=\count195
 \c@paragraph=\count196
 \c@subparagraph=\count197
-\beforechapskip=\skip68
-\midchapskip=\skip69
-\afterchapskip=\skip70
-\chapindent=\skip71
-\bottomsectionskip=\skip72
-\secindent=\skip73
-\beforesecskip=\skip74
-\aftersecskip=\skip75
-\subsecindent=\skip76
-\beforesubsecskip=\skip77
-\aftersubsecskip=\skip78
-\subsubsecindent=\skip79
-\beforesubsubsecskip=\skip80
-\aftersubsubsecskip=\skip81
-\paraindent=\skip82
-\beforeparaskip=\skip83
-\afterparaskip=\skip84
-\subparaindent=\skip85
-\beforesubparaskip=\skip86
-\aftersubparaskip=\skip87
-\pfbreakskip=\skip88
+\beforechapskip=\skip67
+\midchapskip=\skip68
+\afterchapskip=\skip69
+\chapindent=\skip70
+\bottomsectionskip=\skip71
+\secindent=\skip72
+\beforesecskip=\skip73
+\aftersecskip=\skip74
+\subsecindent=\skip75
+\beforesubsecskip=\skip76
+\aftersubsecskip=\skip77
+\subsubsecindent=\skip78
+\beforesubsubsecskip=\skip79
+\aftersubsubsecskip=\skip80
+\paraindent=\skip81
+\beforeparaskip=\skip82
+\afterparaskip=\skip83
+\subparaindent=\skip84
+\beforesubparaskip=\skip85
+\aftersubparaskip=\skip86
+\pfbreakskip=\skip87
 \c@@ppsavesec=\count198
 \c@@ppsaveapp=\count199
-\ragrparindent=\dimen140
-\everylistparindent=\dimen141
-\parsepi=\skip89
-\topsepi=\skip90
-\itemsepi=\skip91
-\parsepii=\skip92
-\topsepii=\skip93
-\topsepiii=\skip94
-\itemsepii=\skip95
-\itemsepiii=\skip96
-\partopsepii=\skip97
-\partopsepiii=\skip98
-\m@msavetopsep=\skip99
-\m@msavepartopsep=\skip100
+\ragrparindent=\dimen144
+\everylistparindent=\dimen145
+\parsepi=\skip88
+\topsepi=\skip89
+\itemsepi=\skip90
+\parsepii=\skip91
+\topsepii=\skip92
+\topsepiii=\skip93
+\itemsepii=\skip94
+\itemsepiii=\skip95
+\partopsepii=\skip96
+\partopsepiii=\skip97
+\m@msavetopsep=\skip98
+\m@msavepartopsep=\skip99
 \@enLab=\toks19
-\abstitleskip=\skip101
-\absleftindent=\skip102
-\abs@leftindent=\dimen142
-\absrightindent=\skip103
-\absparindent=\skip104
-\absparsep=\skip105
+\abstitleskip=\skip100
+\absleftindent=\skip101
+\abs@leftindent=\dimen146
+\absrightindent=\skip102
+\absparindent=\skip103
+\absparsep=\skip104
 \c@vslineno=\count266
 \c@poemline=\count267
 \c@modulo@vs=\count268
 \c@memfvsline=\count269
-\vleftskip=\skip106
-\vrightskip=\skip107
-\stanzaskip=\skip108
-\versewidth=\skip109
-\vgap=\skip110
-\vindent=\skip111
-\vleftmargin=\dimen143
+\vleftskip=\skip105
+\vrightskip=\skip106
+\stanzaskip=\skip107
+\versewidth=\skip108
+\vgap=\skip109
+\vindent=\skip110
+\vleftmargin=\dimen147
 \c@verse=\count270
 \c@chrsinstr=\count271
-\beforepoemtitleskip=\skip112
-\afterpoemtitleskip=\skip113
+\beforepoemtitleskip=\skip111
+\afterpoemtitleskip=\skip112
 \c@poem=\count272
-\beforePoemTitleskip=\skip114
-\midPoemTitleskip=\skip115
-\afterPoemTitleskip=\skip116
+\beforePoemTitleskip=\skip113
+\midPoemTitleskip=\skip114
+\afterPoemTitleskip=\skip115
 
-(c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
-Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen144
+(c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen148
 \ar@mcellbox=\box51
-\extrarowheight=\dimen145
+\extrarowheight=\dimen149
 \NC@list=\toks20
-\extratabsurround=\skip117
-\backup@length=\skip118
+\extratabsurround=\skip116
+\backup@length=\skip117
 \ar@cellbox=\box52
 )
-(c:/texlive/2022/texmf-dist/tex/latex/tools/dcolumn.sty
+(c:/texlive/2023/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/tools/delarray.sty
+(c:/texlive/2023/texmf-dist/tex/latex/tools/delarray.sty
 Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen146
-\TX@old@table=\dimen147
-\TX@old@col=\dimen148
-\TX@target=\dimen149
-\TX@delta=\dimen150
+\TX@col@width=\dimen150
+\TX@old@table=\dimen151
+\TX@old@col=\dimen152
+\TX@target=\dimen153
+\TX@delta=\dimen154
 \TX@cols=\count273
 \TX@ftn=\toks21
 )
-\heavyrulewidth=\dimen151
-\lightrulewidth=\dimen152
-\cmidrulewidth=\dimen153
-\belowrulesep=\dimen154
-\belowbottomsep=\dimen155
-\aboverulesep=\dimen156
-\abovetopsep=\dimen157
-\cmidrulesep=\dimen158
-\cmidrulekern=\dimen159
-\defaultaddspace=\dimen160
+\heavyrulewidth=\dimen155
+\lightrulewidth=\dimen156
+\cmidrulewidth=\dimen157
+\belowrulesep=\dimen158
+\belowbottomsep=\dimen159
+\aboverulesep=\dimen160
+\abovetopsep=\dimen161
+\cmidrulesep=\dimen162
+\cmidrulekern=\dimen163
+\defaultaddspace=\dimen164
 \@cmidla=\count274
 \@cmidlb=\count275
-\@aboverulesep=\dimen161
-\@belowrulesep=\dimen162
+\@aboverulesep=\dimen165
+\@belowrulesep=\dimen166
 \@thisruleclass=\count276
 \@lastruleclass=\count277
-\@thisrulewidth=\dimen163
-\ctableftskip=\skip119
-\ctabrightskip=\skip120
+\@thisrulewidth=\dimen167
+\ctableftskip=\skip118
+\ctabrightskip=\skip119
 \abovecolumnspenalty=\count278
 \@linestogo=\count279
 \@cellstogo=\count280
 \@cellsincolumn=\count281
 \crtok=\toks22
-\@mincolumnwidth=\dimen164
+\@mincolumnwidth=\dimen168
 \c@newflo@tctr=\count282
 \mem@margin@floatbox=\box53
-\@contcwidth=\skip121
-\@contindw=\skip122
-\abovecaptionskip=\skip123
-\belowcaptionskip=\skip124
-\subfloattopskip=\skip125
-\subfloatcapskip=\skip126
-\subfloatcaptopadj=\skip127
-\subfloatbottomskip=\skip128
-\subfloatlabelskip=\skip129
-\subfloatcapmargin=\dimen165
+\@contcwidth=\skip120
+\@contindw=\skip121
+\abovecaptionskip=\skip122
+\belowcaptionskip=\skip123
+\subfloattopskip=\skip124
+\subfloatcapskip=\skip125
+\subfloatcaptopadj=\skip126
+\subfloatbottomskip=\skip127
+\subfloatlabelskip=\skip128
+\subfloatcapmargin=\dimen169
 \c@@contsubnum=\count283
 \m@mscap@capbox=\box54
 \m@mscap@fbox=\box55
-\sidecapsep=\dimen166
-\sidecapwidth=\dimen167
-\m@m@tempdima=\dimen168
-\m@mscapraise=\dimen169
-\sidecapraise=\dimen170
-\m@mscapmainwidth=\dimen171
-\m@mscaplkern=\dimen172
-\beforeepigraphskip=\skip130
-\afterepigraphskip=\skip131
-\epigraphwidth=\skip132
-\epigraphrule=\skip133
+\sidecapsep=\dimen170
+\sidecapwidth=\dimen171
+\m@m@tempdima=\dimen172
+\m@mscapraise=\dimen173
+\sidecapraise=\dimen174
+\m@mscapmainwidth=\dimen175
+\m@mscaplkern=\dimen176
+\beforeepigraphskip=\skip129
+\afterepigraphskip=\skip130
+\epigraphwidth=\skip131
+\epigraphrule=\skip132
 LaTeX Info: Redefining \em on input line 7655.
 LaTeX Info: Redefining \emph on input line 7663.
-\tocentryskip=\skip134
-\tocbaseline=\skip135
-\cftparskip=\skip136
-\cftbeforebookskip=\skip137
-\cftbookindent=\dimen173
-\cftbooknumwidth=\dimen174
-\cftbeforepartskip=\skip138
-\cftpartindent=\skip139
-\cftpartnumwidth=\skip140
-\cftbeforechapterskip=\skip141
-\cftchapterindent=\skip142
-\cftchapternumwidth=\skip143
-\cftbeforesectionskip=\skip144
-\cftsectionindent=\skip145
-\cftsectionnumwidth=\skip146
-\cftbeforesubsectionskip=\skip147
-\cftsubsectionindent=\skip148
-\cftsubsectionnumwidth=\skip149
-\cftbeforesubsubsectionskip=\skip150
-\cftsubsubsectionindent=\skip151
-\cftsubsubsectionnumwidth=\skip152
-\cftbeforeparagraphskip=\skip153
-\cftparagraphindent=\skip154
-\cftparagraphnumwidth=\skip155
-\cftbeforesubparagraphskip=\skip156
-\cftsubparagraphindent=\skip157
-\cftsubparagraphnumwidth=\skip158
-\prechapterprecisshift=\dimen175
+\tocentryskip=\skip133
+\tocbaseline=\skip134
+\cftparskip=\skip135
+\cftbeforebookskip=\skip136
+\cftbookindent=\dimen177
+\cftbooknumwidth=\dimen178
+\cftbeforepartskip=\skip137
+\cftpartindent=\skip138
+\cftpartnumwidth=\skip139
+\cftbeforechapterskip=\skip140
+\cftchapterindent=\skip141
+\cftchapternumwidth=\skip142
+\cftbeforesectionskip=\skip143
+\cftsectionindent=\skip144
+\cftsectionnumwidth=\skip145
+\cftbeforesubsectionskip=\skip146
+\cftsubsectionindent=\skip147
+\cftsubsectionnumwidth=\skip148
+\cftbeforesubsubsectionskip=\skip149
+\cftsubsubsectionindent=\skip150
+\cftsubsubsectionnumwidth=\skip151
+\cftbeforeparagraphskip=\skip152
+\cftparagraphindent=\skip153
+\cftparagraphnumwidth=\skip154
+\cftbeforesubparagraphskip=\skip155
+\cftsubparagraphindent=\skip156
+\cftsubparagraphnumwidth=\skip157
+\prechapterprecisshift=\dimen179
 \c@maxsecnumdepth=\count284
-\bibindent=\dimen176
-\bibitemsep=\skip159
-\indexcolsep=\skip160
-\indexrule=\skip161
+\bibindent=\dimen180
+\bibitemsep=\skip158
+\indexcolsep=\skip159
+\indexrule=\skip160
 \indexmarkstyle=\toks23
 \@indexbox=\insert252
-\glossarycolsep=\dimen177
-\glossaryrule=\dimen178
-\sideparvshift=\skip162
+\glossarycolsep=\dimen181
+\glossaryrule=\dimen182
+\sideparvshift=\skip161
 \sideins=\insert251
-\sidebartopsep=\skip163
-\sidebarhsep=\skip164
-\sidebarvsep=\skip165
-\sidebarwidth=\skip166
-\footmarkwidth=\skip167
-\footmarksep=\skip168
-\footparindent=\skip169
-\footinsdim=\skip170
+\sidebartopsep=\skip162
+\sidebarhsep=\skip163
+\sidebarvsep=\skip164
+\sidebarwidth=\skip165
+\footmarkwidth=\skip166
+\footmarksep=\skip167
+\footparindent=\skip168
+\footinsdim=\skip169
 \footinsv@r=\insert250
 \@mpfootinsv@r=\insert249
 \m@m@k=\count285
-\m@m@h=\dimen179
-\m@mipn@skip=\skip171
+\m@m@h=\dimen183
+\m@mipn@skip=\skip170
 \sidefootins=\insert248
-\sidefootadjust=\skip172
-\sidefootheight=\skip173
-\sidefoothsep=\skip174
-\sidefootvsep=\skip175
-\sidefootwidth=\skip176
-\m@mdownsf=\skip177
+\sidefootadjust=\skip171
+\sidefootheight=\skip172
+\sidefoothsep=\skip173
+\sidefootvsep=\skip174
+\sidefootwidth=\skip175
+\m@mdownsf=\skip176
 \c@sidefootnote=\count286
-\sidefootmarkwidth=\skip178
-\sidefootmarksep=\skip179
-\sidefootparindent=\skip180
+\sidefootmarkwidth=\skip177
+\sidefootmarksep=\skip178
+\sidefootparindent=\skip179
 \c@pagenote=\count287
 \c@pagenoteshadow=\count288
-\mem@pn@lastkern=\skip181
+\mem@pn@lastkern=\skip180
 \every@verbatim=\toks24
 \afterevery@verbatim=\toks25
 \verbatim@line=\toks26
 \tab@position=\count289
 \verbatim@in@stream=\read2
-\verbatimindent=\skip182
+\verbatimindent=\skip181
 \verbatim@out=\write3
-\bvboxsep=\skip183
+\bvboxsep=\skip182
 \c@memfbvline=\count290
 \c@bvlinectr=\count291
-\bvnumlength=\skip184
-\fb@frw=\dimen180
-\fb@frh=\dimen181
-\FrameRule=\dimen182
-\FrameSep=\dimen183
+\bvnumlength=\skip183
+\fb@frw=\dimen184
+\fb@frh=\dimen185
+\FrameRule=\dimen186
+\FrameSep=\dimen187
 \c@cp@cntr=\count292
 \c@ism@mctr=\count293
 \c@xsm@mctr=\count294
@@ -314,20 +314,20 @@ LaTeX Info: Redefining \emph on input line 7663.
 \c@lastsheet=\count305
 \c@lastpage=\count306
 
-(c:/texlive/2022/texmf-dist/tex/latex/textcase/textcase.sty
+(c:/texlive/2023/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2022/07/10 v1.03 Text only upper/lower case changing (DPC)
 Package textcase Info: Defining Legacy names on input line 20.
 )
 \c@figure=\count307
 \c@lofdepth=\count308
-\cftbeforefigureskip=\skip185
-\cftfigureindent=\skip186
-\cftfigurenumwidth=\skip187
+\cftbeforefigureskip=\skip184
+\cftfigureindent=\skip185
+\cftfigurenumwidth=\skip186
 \c@table=\count309
 \c@lotdepth=\count310
-\cftbeforetableskip=\skip188
-\cfttableindent=\skip189
-\cfttablenumwidth=\skip190
+\cftbeforetableskip=\skip187
+\cfttableindent=\skip188
+\cfttablenumwidth=\skip189
 Package abstract [2008/07/23] emulated by memoir.
 Package appendix [2008/07/23] emulated by memoir.
 Package booktabs [2016/05/16] emulated by memoir.
@@ -359,17 +359,17 @@ Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verbatim [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
 )
-(c:/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/10/04 3.81 The Babel package
+(c:/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/05/11 v3.89 The Babel package
 \babel@savecnt=\count311
-\U@D=\dimen184
+\U@D=\dimen188
 \l@unhyphenated=\language87
 
-(c:/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def)
+(c:/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 \bbl@dirlevel=\count312
 
-(c:/texlive/2022/texmf-dist/tex/generic/babel-english/english.ldf
+(c:/texlive/2023/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
@@ -378,185 +378,185 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language21). Reported on input line 108.
 )
-(c:/texlive/2022/texmf-dist/tex/generic/babel-dutch/dutch.ldf
+(c:/texlive/2023/texmf-dist/tex/generic/babel-dutch/dutch.ldf
 Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
 Package babel Info: Making " an active character on input line 127.
 ))
-(c:/texlive/2022/texmf-dist/tex/generic/babel/locale/nl/babel-dutch.tex
+(c:/texlive/2023/texmf-dist/tex/generic/babel/locale/nl/babel-dutch.tex
 Package babel Info: Importing font and identification data for dutch
 (babel)             from babel-nl.ini. Reported on input line 11.
 )
-(c:/texlive/2022/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+(c:/texlive/2023/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
 )
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen185
-\Gin@req@width=\dimen186
+\Gin@req@height=\dimen189
+\Gin@req@width=\dimen190
 )
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 
-(c:/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-(c:/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(c:/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+(c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
 
-(c:/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen187
-\captionmargin=\dimen188
-\caption@leftmargin=\dimen189
-\caption@rightmargin=\dimen190
-\caption@width=\dimen191
-\caption@indent=\dimen192
-\caption@parindent=\dimen193
-\caption@hangindent=\dimen194
+(c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen191
+\captionmargin=\dimen192
+\caption@leftmargin=\dimen193
+\caption@rightmargin=\dimen194
+\caption@width=\dimen195
+\caption@indent=\dimen196
+\caption@parindent=\dimen197
+\caption@hangindent=\dimen198
 Package caption Info: memoir document class detected.
 
-(c:/texlive/2022/texmf-dist/tex/latex/caption/caption-memoir.sto
+(c:/texlive/2023/texmf-dist/tex/latex/caption/caption-memoir.sto
 File: caption-memoir.sto 2022/03/02 v2.2b Adaption of the caption package to th
 e memoir document class (AR)
 ))
 \c@caption@flags=\count313
 \c@continuedfloat=\count314
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen195
-\caption@adjustwidth@linewidth=\dimen196
+\caption@adjustwidth@hsize=\dimen199
+\caption@adjustwidth@linewidth=\dimen256
 )
-(c:/texlive/2022/texmf-dist/tex/latex/subfig/subfig.sty
+(c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count315
-\sf@farskip=\skip191
-\sf@captopadj=\dimen197
-\sf@capskip=\skip192
-\sf@nearskip=\skip193
+\sf@farskip=\skip190
+\sf@captopadj=\dimen257
+\sf@capskip=\skip191
+\sf@nearskip=\skip192
 \c@subfigure=\count316
 \c@subfigure@save=\count317
 \c@subtable=\count318
 \c@subtable@save=\count319
-\sf@top=\skip194
-\sf@bottom=\skip195
+\sf@top=\skip193
+\sf@bottom=\skip194
 )
-(c:/texlive/2022/texmf-dist/tex/latex/adjustbox/adjustbox.sty
-Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+(c:/texlive/2023/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
 
-(c:/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(c:/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(c:/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(c:/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks27
 \XKV@tempa@toks=\toks28
 )
 \XKV@depth=\count320
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+(c:/texlive/2023/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(c:/texlive/2023/texmf-dist/tex/latex/adjustbox/trimclip.sty
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 
-(c:/texlive/2022/texmf-dist/tex/latex/collectbox/collectbox.sty
-Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+(c:/texlive/2023/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box56
 )
-\tc@llx=\dimen198
-\tc@lly=\dimen199
-\tc@urx=\dimen256
-\tc@ury=\dimen257
+\tc@llx=\dimen258
+\tc@lly=\dimen259
+\tc@urx=\dimen260
+\tc@ury=\dimen261
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-(c:/texlive/2022/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+(c:/texlive/2023/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen258
-\adjbox@Height=\dimen259
-\adjbox@Depth=\dimen260
-\adjbox@Totalheight=\dimen261
-\adjbox@pwidth=\dimen262
-\adjbox@pheight=\dimen263
-\adjbox@pdepth=\dimen264
-\adjbox@ptotalheight=\dimen265
+\adjbox@Width=\dimen262
+\adjbox@Height=\dimen263
+\adjbox@Depth=\dimen264
+\adjbox@Totalheight=\dimen265
+\adjbox@pwidth=\dimen266
+\adjbox@pheight=\dimen267
+\adjbox@pdepth=\dimen268
+\adjbox@ptotalheight=\dimen269
 
-(c:/texlive/2022/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
-Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+(c:/texlive/2023/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count321
 LaTeX Info: Redefining \checkoddpage on input line 45.
 )
-(c:/texlive/2022/texmf-dist/tex/latex/varwidth/varwidth.sty
+(c:/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box57
 \sift@deathcycles=\count322
-\@vwid@loff=\dimen266
-\@vwid@roff=\dimen267
+\@vwid@loff=\dimen270
+\@vwid@roff=\dimen271
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
-(c:/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-09-28 L3 programming layer (loader) 
+(c:/texlive/2023/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
+(c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-05-22 L3 programming layer (loader) 
 
-(c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count323
 \l__pdf_internal_box=\box58
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks29
-\ex@=\dimen268
+\ex@=\dimen272
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
+(c:/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
 )
-(c:/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(c:/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-06-22 L3 Experimental document command parser
+(c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
 )
-(c:/texlive/2022/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
-Package: xtemplate 2022-06-22 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen269
+(c:/texlive/2023/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen273
 \l__xtemplate_tmp_int=\count324
 \l__xtemplate_tmp_muskip=\muskip16
-\l__xtemplate_tmp_skip=\skip196
+\l__xtemplate_tmp_skip=\skip195
 )
-Package: xfrac 2022-06-22 L3 Experimental split-level fractions
+Package: xfrac 2023-02-02 L3 Experimental split-level fractions
 \l__xfrac_slash_box=\box59
 \l__xfrac_tmp_box=\box60
-\l__xfrac_denominator_bot_sep_dim=\dimen270
-\l__xfrac_numerator_bot_sep_dim=\dimen271
-\l__xfrac_numerator_top_sep_dim=\dimen272
-\l__xfrac_slash_left_sep_dim=\dimen273
-\l__xfrac_slash_right_sep_dim=\dimen274
+\l__xfrac_denominator_bot_sep_dim=\dimen274
+\l__xfrac_numerator_bot_sep_dim=\dimen275
+\l__xfrac_numerator_top_sep_dim=\dimen276
+\l__xfrac_slash_left_sep_dim=\dimen277
+\l__xfrac_slash_right_sep_dim=\dimen278
 \l__xfrac_slash_left_muskip=\muskip17
 \l__xfrac_slash_right_muskip=\muskip18
 
@@ -564,35 +564,35 @@ Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 (xtemplate)             line 80.
 
 )
-(c:/texlive/2022/texmf-dist/tex/latex/mathtools/mathtools.sty
+(c:/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
 
-(c:/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
+(c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count325
 \calc@Bcount=\count326
-\calc@Adimen=\dimen275
-\calc@Bdimen=\dimen276
-\calc@Askip=\skip197
-\calc@Bskip=\skip198
+\calc@Adimen=\dimen279
+\calc@Bdimen=\dimen280
+\calc@Askip=\skip196
+\calc@Bskip=\skip197
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count327
-\calc@Cskip=\skip199
+\calc@Cskip=\skip198
 )
-(c:/texlive/2022/texmf-dist/tex/latex/mathtools/mhsetup.sty
+(c:/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip256
+\@mathmargin=\skip199
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen277
+\pmbraise@=\dimen281
 )
-(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count328
@@ -612,7 +612,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen278
+\big@size=\dimen282
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count333
@@ -630,65 +630,65 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count338
 \maxfields@=\count339
 \andhelp@=\toks31
-\eqnshift@=\dimen279
-\alignsep@=\dimen280
-\tagshift@=\dimen281
-\tagwidth@=\dimen282
-\totwidth@=\dimen283
-\lineht@=\dimen284
+\eqnshift@=\dimen283
+\alignsep@=\dimen284
+\tagshift@=\dimen285
+\tagwidth@=\dimen286
+\totwidth@=\dimen287
+\lineht@=\dimen288
 \@envbody=\toks32
-\multlinegap=\skip257
-\multlinetaggap=\skip258
+\multlinegap=\skip256
+\multlinetaggap=\skip257
 \mathdisplay@stack=\toks33
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
 \g_MT_multlinerow_int=\count340
-\l_MT_multwidth_dim=\dimen285
-\origjot=\skip259
-\l_MT_shortvdotswithinadjustabove_dim=\dimen286
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen287
-\l_MT_above_intertext_sep=\dimen288
-\l_MT_below_intertext_sep=\dimen289
-\l_MT_above_shortintertext_sep=\dimen290
-\l_MT_below_shortintertext_sep=\dimen291
+\l_MT_multwidth_dim=\dimen289
+\origjot=\skip258
+\l_MT_shortvdotswithinadjustabove_dim=\dimen290
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen291
+\l_MT_above_intertext_sep=\dimen292
+\l_MT_below_intertext_sep=\dimen293
+\l_MT_above_shortintertext_sep=\dimen294
+\l_MT_below_shortintertext_sep=\dimen295
 \xmathstrut@box=\box63
-\xmathstrut@dim=\dimen292
+\xmathstrut@dim=\dimen296
 )
-(c:/texlive/2022/texmf-dist/tex/latex/mhchem/mhchem.sty
+(c:/texlive/2023/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
 
-(c:/texlive/2022/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+(c:/texlive/2023/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
  in chemistry (CN)
 \l__chemgreek_tmpa_int=\count341
 \g__chemgreek_tmpa_int=\count342
 )
 \l__mhchem_ce_distanceFromLastComma_int=\count343
-\__mhchem_arrow_extPgfLength_skip=\skip260
-\mhchem@minispace@tmp=\skip261
-\mhchem@minibackspace@tmp=\skip262
-\mhchem@bondwidth=\skip263
-\mhchem@bondheight=\skip264
-\mhchem@smallbondwidth@tmpA=\skip265
-\mhchem@smallbondwidth@tmpB=\skip266
-\mhchem@smallbondwidth=\skip267
-\mhchem@bondtmp@minussidebearingleft=\skip268
-\mhchem@bondtmp@minussidebearingright=\skip269
+\__mhchem_arrow_extPgfLength_skip=\skip259
+\mhchem@minispace@tmp=\skip260
+\mhchem@minibackspace@tmp=\skip261
+\mhchem@bondwidth=\skip262
+\mhchem@bondheight=\skip263
+\mhchem@smallbondwidth@tmpA=\skip264
+\mhchem@smallbondwidth@tmpB=\skip265
+\mhchem@smallbondwidth=\skip266
+\mhchem@bondtmp@minussidebearingleft=\skip267
+\mhchem@bondtmp@minussidebearingright=\skip268
 \l__mhchem_option_version_int=\count344
-\mhchem@option@minusmathsidebearingleft=\dimen293
-\mhchem@option@minusmathsidebearingright=\dimen294
-\mhchem@option@minustextsidebearingleft=\dimen295
-\mhchem@option@minustextsidebearingright=\dimen296
+\mhchem@option@minusmathsidebearingleft=\dimen297
+\mhchem@option@minusmathsidebearingright=\dimen298
+\mhchem@option@minustextsidebearingleft=\dimen299
+\mhchem@option@minustextsidebearingright=\dimen300
 )
-(c:/texlive/2022/texmf-dist/tex/latex/base/utf8.def
+(c:/texlive/2023/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2022/06/07 v1.3c UTF-8 support
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/omsenc.dfu
+(c:/texlive/2023/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -700,7 +700,7 @@ File: omsenc.dfu 2022/06/07 v1.3c UTF-8 support
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/ot1enc.dfu
+(c:/texlive/2023/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -749,7 +749,7 @@ File: ot1enc.dfu 2022/06/07 v1.3c UTF-8 support
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/t1enc.dfu
+(c:/texlive/2023/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -1029,7 +1029,7 @@ File: t1enc.dfu 2022/06/07 v1.3c UTF-8 support
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/ts1enc.dfu
+(c:/texlive/2023/texmf-dist/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -1122,10 +1122,10 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
    defining Unicode char U+FEFF (decimal 65279)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(c:/texlive/2022/texmf-dist/tex/latex/lm/lmodern.sty
+(c:/texlive/2023/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -1160,139 +1160,137 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(c:/texlive/2022/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2022/06/23 v3.0f Micro-typographical refinements (RS)
+(c:/texlive/2023/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
 \MT@toks=\toks34
 \MT@tempbox=\box64
 \MT@count=\count345
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1045.
-LaTeX Info: Redefining \leftprotrusion on input line 1046.
-LaTeX Info: Redefining \rightprotrusion on input line 1056.
-LaTeX Info: Redefining \textls on input line 1234.
-\MT@outer@kern=\dimen297
-LaTeX Info: Redefining \textmicrotypecontext on input line 1858.
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks35
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen301
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
 \MT@listname@count=\count346
 
-(c:/texlive/2022/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2022/06/23 v3.0f Definitions specific to pdftex (RS)
+(c:/texlive/2023/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 900.
-LaTeX Info: Redefining \lslig on input line 900.
-\MT@outer@space=\skip270
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip269
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(c:/texlive/2022/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2022/06/23 v3.0f microtype main configuration file (RS)
+(c:/texlive/2023/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
 ))
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-05-16 v7.00y Hypertext links for LaTeX
 
-(c:/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(c:/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/texlive/2022/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(c:/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
+(c:/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+(c:/texlive/2023/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
+(c:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-05-16 v2.51 Cross-referencing by name of section
 
-(c:/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
+(c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(c:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(c:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 
-(c:/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(c:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count347
 )
-\@linkdim=\dimen298
+\@linkdim=\dimen302
 \Hy@linkcounter=\count348
 \Hy@pagecounter=\count349
 
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-05-16 v7.00y Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(c:/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
+(c:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(c:/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count350
 
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-05-16 v7.00y Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `pdfusetitle' set `true' on input line 4045.
-Package hyperref Info: Option `plainpages' set `false' on input line 4045.
-Package hyperref Info: Hyper figures OFF on input line 4162.
-Package hyperref Info: Link nesting OFF on input line 4167.
-Package hyperref Info: Hyper index ON on input line 4170.
-Package hyperref Info: Plain pages OFF on input line 4177.
-Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Option `pdfusetitle' set `true' on input line 4050.
+Package hyperref Info: Option `plainpages' set `false' on input line 4050.
+Package hyperref Info: Hyper figures OFF on input line 4167.
+Package hyperref Info: Link nesting OFF on input line 4172.
+Package hyperref Info: Hyper index ON on input line 4175.
+Package hyperref Info: Plain pages OFF on input line 4182.
+Package hyperref Info: Backreferencing OFF on input line 4187.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4410.
+Package hyperref Info: Bookmarks ON on input line 4434.
 \c@Hy@tempcnt=\count351
 
-(c:/texlive/2022/texmf-dist/tex/latex/url/url.sty
+(c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip20
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4748.
-\XeTeXLinkMargin=\dimen299
+LaTeX Info: Redefining \url on input line 4772.
+\XeTeXLinkMargin=\dimen303
 
-(c:/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(c:/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count352
-\Field@Width=\dimen300
-\Fld@charsize=\dimen301
-Package hyperref Info: Hyper figures OFF on input line 6027.
-Package hyperref Info: Link nesting OFF on input line 6032.
-Package hyperref Info: Hyper index ON on input line 6035.
-Package hyperref Info: backreferencing OFF on input line 6042.
-Package hyperref Info: Link coloring OFF on input line 6047.
-Package hyperref Info: Link coloring with OCG OFF on input line 6052.
-Package hyperref Info: PDF/A mode OFF on input line 6057.
+\Field@Width=\dimen304
+\Fld@charsize=\dimen305
+Package hyperref Info: Hyper figures OFF on input line 6051.
+Package hyperref Info: Link nesting OFF on input line 6056.
+Package hyperref Info: Hyper index ON on input line 6059.
+Package hyperref Info: backreferencing OFF on input line 6066.
+Package hyperref Info: Link coloring OFF on input line 6071.
+Package hyperref Info: Link coloring with OCG OFF on input line 6076.
+Package hyperref Info: PDF/A mode OFF on input line 6081.
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -1302,10 +1300,10 @@ package with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(c:/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2022-09-22 v7.00t Hyperref driver for pdfTeX
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-05-16 v7.00y Hyperref driver for pdfTeX
 
-(c:/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
@@ -1313,41 +1311,44 @@ with kernel methods
 \Fld@listcount=\count356
 \c@bookmark@seq@number=\count357
 
-(c:/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(c:/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip271
+\Hy@SectionHShift=\skip270
 )
-(c:/texlive/2022/texmf-dist/tex/latex/memoir/memhfixc.sty
-Package: memhfixc 2021/06/16 v1.19 nameref/hyperref package fixes for memoir cl
+(c:/texlive/2023/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2022/11/17 v1.20 nameref/hyperref package fixes for memoir cl
 ass
 
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \nameref on input line 106.
 \c@memhycontfloat=\count358
 \c@Hpagenote=\count359
-) (c:/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.sty
+) (c:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count360
 \l__lipsum_a_int=\count361
 \l__lipsum_b_int=\count362
 
-(c:/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(c:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 41
 .
 
-(c:/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
+(c:/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./thesis.aux (./intro.aux)
-(./chap-1.aux) (./chap-2.aux) (./chap-3.aux) (./conclusion.aux) (./app-A.aux)
-(./app-B.aux) (./app-C.aux))
+(./chap-1.aux) (./chap-2.aux) (./chap-3.aux
+
+LaTeX Warning: Label `fig:dropcast' multiply defined.
+
+) (./conclusion.aux) (./app-A.aux) (./app-B.aux) (./app-C.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -1389,25 +1390,25 @@ Sidefoothsep and sidefootwidth: 7pt and 101pt
 Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 ******************************************************
 
-(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count363
-\scratchdimen=\dimen302
+\scratchdimen=\dimen306
 \scratchbox=\box65
 \nofMPsegments=\count364
 \nofMParguments=\count365
-\everyMPshowfont=\toks35
+\everyMPshowfont=\toks36
 \MPscratchCnt=\count366
-\MPscratchDim=\dimen303
+\MPscratchDim=\dimen307
 \MPnumerator=\count367
 \makeMPintoPDFobject=\count368
-\everyMPtoPDFconversion=\toks36
-) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\everyMPtoPDFconversion=\toks37
+) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -1423,6 +1424,7 @@ Package microtype Info: Applying patch `item' on input line 41.
 Package microtype Info: Applying patch `toc' on input line 41.
 Package microtype Info: Applying patch `eqnum' on input line 41.
 Package microtype Info: Applying patch `footnote' on input line 41.
+Package microtype Info: Applying patch `verbatim' on input line 41.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1434,7 +1436,7 @@ Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
-(c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
@@ -1467,17 +1469,17 @@ LaTeX Font Info:    Font shape `T1/kulemtfpf/b/n' in size <14.4> not available
  [-1
 
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logokul.pdf> 
-<./logotud.png>]
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/
+texmf-dist/fonts/enc/dvips/base/8r.enc} <./logokul.pdf> <./logotud.png>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
 1.
-
-(c:/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
+ (c:/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [0
 
 
-] [1
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2023/texm
+f-dist/fonts/enc/dvips/lm/lm-ec.enc}] [1
 
 
 
@@ -1485,25 +1487,25 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
 .
 
-(c:/texlive/2022/texmf-dist/tex/latex/lm/ot1lmr.fd
+(c:/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
 .
 
-(c:/texlive/2022/texmf-dist/tex/latex/lm/omllmm.fd
+(c:/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
 8.
 
-(c:/texlive/2022/texmf-dist/tex/latex/lm/omslmsy.fd
+(c:/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
 8.
 
-(c:/texlive/2022/texmf-dist/tex/latex/lm/omxlmex.fd
+(c:/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1521,17 +1523,19 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [3] [4
 
-] (./thesis.lof [5
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (./thesis.lof [5
 
 
-]) [6] (./thesis.lot) [7
+]) [6{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] (./thesis.l
+ot) [7
 
 ] [8
 
 ]
 \openout2 = `intro.aux'.
 
- (./intro.tex [1
+
+(./intro.tex [1
 
 
 ]) [2]
@@ -1541,7 +1545,7 @@ Package microtype Info: Character `029' is missing
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/ediagram.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/ediagram.pdf, id=445, 871.12567pt x 658.8029pt>
+<Images/pdf/ediagram.pdf, id=455, 871.12567pt x 658.8029pt>
 File: Images/pdf/ediagram.pdf Graphic file (type pdf)
 <use Images/pdf/ediagram.pdf>
 Package pdftex.def Info: Images/pdf/ediagram.pdf  used on input line 20.
@@ -1555,7 +1559,7 @@ Package pdftex.def Info: Images/pdf/ediagram.pdf  used on input line 20.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/deg_pol.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/deg_pol.pdf, id=458, 847.57468pt x 370.19937pt>
+<Images/pdf/deg_pol.pdf, id=468, 847.57468pt x 370.19937pt>
 File: Images/pdf/deg_pol.pdf Graphic file (type pdf)
 <use Images/pdf/deg_pol.pdf>
 Package pdftex.def Info: Images/pdf/deg_pol.pdf  used on input line 42.
@@ -1564,7 +1568,7 @@ Package pdftex.def Info: Images/pdf/deg_pol.pdf  used on input line 42.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/doping.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/doping.pdf, id=465, 487.06969pt x 127.97812pt>
+<Images/pdf/doping.pdf, id=475, 487.06969pt x 127.97812pt>
 File: Images/pdf/doping.pdf Graphic file (type pdf)
 <use Images/pdf/doping.pdf>
 Package pdftex.def Info: Images/pdf/doping.pdf  used on input line 57.
@@ -1573,7 +1577,7 @@ Package pdftex.def Info: Images/pdf/doping.pdf  used on input line 57.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/bipolaron.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/bipolaron.pdf, id=480, 779.64615pt x 585.76991pt>
+<Images/pdf/bipolaron.pdf, id=490, 779.64615pt x 585.76991pt>
 File: Images/pdf/bipolaron.pdf Graphic file (type pdf)
 <use Images/pdf/bipolaron.pdf>
 Package pdftex.def Info: Images/pdf/bipolaron.pdf  used on input line 67.
@@ -1582,7 +1586,7 @@ Package pdftex.def Info: Images/pdf/bipolaron.pdf  used on input line 67.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/bipolaron_bands.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/bipolaron_bands.pdf, id=483, 1714.01695pt x 795.08101pt>
+<Images/pdf/bipolaron_bands.pdf, id=493, 1714.01695pt x 795.08101pt>
 File: Images/pdf/bipolaron_bands.pdf Graphic file (type pdf)
 <use Images/pdf/bipolaron_bands.pdf>
 Package pdftex.def Info: Images/pdf/bipolaron_bands.pdf  used on input line 76.
@@ -1593,7 +1597,7 @@ olaron_bands.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIEC_types.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/OMIEC_types.pdf, id=518, 670.84955pt x 542.10066pt>
+<Images/pdf/OMIEC_types.pdf, id=528, 670.84955pt x 542.10066pt>
 File: Images/pdf/OMIEC_types.pdf Graphic file (type pdf)
 <use Images/pdf/OMIEC_types.pdf>
 Package pdftex.def Info: Images/pdf/OMIEC_types.pdf  used on input line 104.
@@ -1605,7 +1609,7 @@ Underfull \vbox (badness 5036) has occurred while \output is active []
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIECetransport1.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/OMIECetransport1.pdf, id=537, 179.8997pt x 182.15785pt>
+<Images/pdf/OMIECetransport1.pdf, id=547, 179.8997pt x 182.15785pt>
 File: Images/pdf/OMIECetransport1.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECetransport1.pdf>
 Package pdftex.def Info: Images/pdf/OMIECetransport1.pdf  used on input line 13
@@ -1615,7 +1619,7 @@ Package pdftex.def Info: Images/pdf/OMIECetransport1.pdf  used on input line 13
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIECetransport2.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/OMIECetransport2.pdf, id=538, 641.31606pt x 555.50621pt>
+<Images/pdf/OMIECetransport2.pdf, id=548, 641.31606pt x 555.50621pt>
 File: Images/pdf/OMIECetransport2.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECetransport2.pdf>
 Package pdftex.def Info: Images/pdf/OMIECetransport2.pdf  used on input line 13
@@ -1625,7 +1629,7 @@ Package pdftex.def Info: Images/pdf/OMIECetransport2.pdf  used on input line 13
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIECitransport1.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/OMIECitransport1.pdf, id=559, 757.98741pt x 359.04669pt>
+<Images/pdf/OMIECitransport1.pdf, id=569, 757.98741pt x 359.04669pt>
 File: Images/pdf/OMIECitransport1.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECitransport1.pdf>
 Package pdftex.def Info: Images/pdf/OMIECitransport1.pdf  used on input line 16
@@ -1635,7 +1639,7 @@ Package pdftex.def Info: Images/pdf/OMIECitransport1.pdf  used on input line 16
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/OMIECitransport2.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/OMIECitransport2.pdf, id=560, 648.09058pt x 446.36203pt>
+<Images/pdf/OMIECitransport2.pdf, id=570, 648.09058pt x 446.36203pt>
 File: Images/pdf/OMIECitransport2.pdf Graphic file (type pdf)
 <use Images/pdf/OMIECitransport2.pdf>
 Package pdftex.def Info: Images/pdf/OMIECitransport2.pdf  used on input line 16
@@ -1645,7 +1649,7 @@ Package pdftex.def Info: Images/pdf/OMIECitransport2.pdf  used on input line 16
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/MOSFETvsOECTs.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/MOSFETvsOECTs.pdf, id=587, 845.05814pt x 205.36128pt>
+<Images/pdf/MOSFETvsOECTs.pdf, id=597, 845.05814pt x 205.36128pt>
 File: Images/pdf/MOSFETvsOECTs.pdf Graphic file (type pdf)
 <use Images/pdf/MOSFETvsOECTs.pdf>
 Package pdftex.def Info: Images/pdf/MOSFETvsOECTs.pdf  used on input line 203.
@@ -1654,7 +1658,7 @@ Package pdftex.def Info: Images/pdf/MOSFETvsOECTs.pdf  used on input line 203.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/structure.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/structure.pdf, id=604, 379.094pt x 321.87228pt>
+<Images/pdf/structure.pdf, id=614, 379.094pt x 321.87228pt>
 File: Images/pdf/structure.pdf Graphic file (type pdf)
 <use Images/pdf/structure.pdf>
 Package pdftex.def Info: Images/pdf/structure.pdf  used on input line 216.
@@ -1663,7 +1667,7 @@ Package pdftex.def Info: Images/pdf/structure.pdf  used on input line 216.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/circuits.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/circuits.pdf, id=605, 1616.8392pt x 672.93025pt>
+<Images/pdf/circuits.pdf, id=615, 1616.8392pt x 672.93025pt>
 File: Images/pdf/circuits.pdf Graphic file (type pdf)
 <use Images/pdf/circuits.pdf>
 Package pdftex.def Info: Images/pdf/circuits.pdf  used on input line 221.
@@ -1672,7 +1676,7 @@ Package pdftex.def Info: Images/pdf/circuits.pdf  used on input line 221.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/depletion.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/depletion.pdf, id=609, 409.21072pt x 464.92662pt>
+<Images/pdf/depletion.pdf, id=619, 409.21072pt x 464.92662pt>
 File: Images/pdf/depletion.pdf Graphic file (type pdf)
 <use Images/pdf/depletion.pdf>
 Package pdftex.def Info: Images/pdf/depletion.pdf  used on input line 244.
@@ -1681,17 +1685,19 @@ Package pdftex.def Info: Images/pdf/depletion.pdf  used on input line 244.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/accumulation.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/accumulation.pdf, id=610, 402.81093pt x 461.16202pt>
+<Images/pdf/accumulation.pdf, id=620, 402.81093pt x 461.16202pt>
 File: Images/pdf/accumulation.pdf Graphic file (type pdf)
 <use Images/pdf/accumulation.pdf>
 Package pdftex.def Info: Images/pdf/accumulation.pdf  used on input line 246.
 (pdftex.def)             Requested size: 173.96747pt x 199.16928pt.
-[11 <./Images/pdf/structure.pdf> <./Images/pdf/circuits.pdf>] [12 <./Images/pdf
-/depletion.pdf> <./Images/pdf/accumulation.pdf>]
+[11{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/202
+3/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./Images/pdf/structure.pdf> <./
+Images/pdf/circuits.pdf>] [12 <./Images/pdf/depletion.pdf> <./Images/pdf/accumu
+lation.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/g2T-T.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/g2T-T.pdf, id=659, 239.4278pt x 112.18472pt>
+<Images/pdf/g2T-T.pdf, id=669, 239.4278pt x 112.18472pt>
 File: Images/pdf/g2T-T.pdf Graphic file (type pdf)
 <use Images/pdf/g2T-T.pdf>
 Package pdftex.def Info: Images/pdf/g2T-T.pdf  used on input line 272.
@@ -1700,7 +1706,7 @@ Package pdftex.def Info: Images/pdf/g2T-T.pdf  used on input line 272.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/pg3t+perf.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/pg3t+perf.pdf, id=666, 601.4972pt x 281.55188pt>
+<Images/pdf/pg3t+perf.pdf, id=676, 601.4972pt x 281.55188pt>
 File: Images/pdf/pg3t+perf.pdf Graphic file (type pdf)
 <use Images/pdf/pg3t+perf.pdf>
 Package pdftex.def Info: Images/pdf/pg3t+perf.pdf  used on input line 285.
@@ -1717,7 +1723,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/gm_sizes.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/gm_sizes.pdf, id=704, 110.67888pt x 128.7489pt>
+<Images/pdf/gm_sizes.pdf, id=714, 110.67888pt x 128.7489pt>
 File: Images/pdf/gm_sizes.pdf Graphic file (type pdf)
 <use Images/pdf/gm_sizes.pdf>
 Package pdftex.def Info: Images/pdf/gm_sizes.pdf  used on input line 339.
@@ -1726,7 +1732,7 @@ Package pdftex.def Info: Images/pdf/gm_sizes.pdf  used on input line 339.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/uc_omiecs.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/uc_omiecs.pdf, id=705, 795.45741pt x 592.16968pt>
+<Images/pdf/uc_omiecs.pdf, id=715, 795.45741pt x 592.16968pt>
 File: Images/pdf/uc_omiecs.pdf Graphic file (type pdf)
 <use Images/pdf/uc_omiecs.pdf>
 Package pdftex.def Info: Images/pdf/uc_omiecs.pdf  used on input line 341.
@@ -1735,7 +1741,7 @@ Package pdftex.def Info: Images/pdf/uc_omiecs.pdf  used on input line 341.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/wf_shift.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/wf_shift.pdf, id=729, 383.18156pt x 280.79906pt>
+<Images/pdf/wf_shift.pdf, id=739, 383.18156pt x 280.79906pt>
 File: Images/pdf/wf_shift.pdf Graphic file (type pdf)
 <use Images/pdf/wf_shift.pdf>
 Package pdftex.def Info: Images/pdf/wf_shift.pdf  used on input line 371.
@@ -1744,7 +1750,7 @@ Package pdftex.def Info: Images/pdf/wf_shift.pdf  used on input line 371.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/vth_shift.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/vth_shift.pdf, id=730, 340.27126pt x 280.04625pt>
+<Images/pdf/vth_shift.pdf, id=740, 340.27126pt x 280.04625pt>
 File: Images/pdf/vth_shift.pdf Graphic file (type pdf)
 <use Images/pdf/vth_shift.pdf>
 Package pdftex.def Info: Images/pdf/vth_shift.pdf  used on input line 373.
@@ -1753,7 +1759,7 @@ Package pdftex.def Info: Images/pdf/vth_shift.pdf  used on input line 373.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/ORR.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/ORR.pdf, id=771, 547.06728pt x 379.31166pt>
+<Images/pdf/ORR.pdf, id=781, 547.06728pt x 379.31166pt>
 File: Images/pdf/ORR.pdf Graphic file (type pdf)
 <use Images/pdf/ORR.pdf>
 Package pdftex.def Info: Images/pdf/ORR.pdf  used on input line 441.
@@ -1776,7 +1782,7 @@ Overfull \hbox (11.3187pt too wide) in paragraph at lines 10--11
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/photomask.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/photomask.pdf, id=812, 500.50737pt x 542.47536pt>
+<Images/pdf/photomask.pdf, id=822, 500.50737pt x 542.47536pt>
 File: Images/pdf/photomask.pdf Graphic file (type pdf)
 <use Images/pdf/photomask.pdf>
 Package pdftex.def Info: Images/pdf/photomask.pdf  used on input line 98.
@@ -1785,7 +1791,7 @@ Package pdftex.def Info: Images/pdf/photomask.pdf  used on input line 98.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/doping_formulas1.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/doping_formulas1.pdf, id=824, 574.8526pt x 271.4268pt>
+<Images/pdf/doping_formulas1.pdf, id=834, 574.8526pt x 271.4268pt>
 File: Images/pdf/doping_formulas1.pdf Graphic file (type pdf)
 <use Images/pdf/doping_formulas1.pdf>
 Package pdftex.def Info: Images/pdf/doping_formulas1.pdf  used on input line 11
@@ -1795,7 +1801,7 @@ Package pdftex.def Info: Images/pdf/doping_formulas1.pdf  used on input line 11
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/spin_coating.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/spin_coating.pdf, id=826, 1004.76851pt x 452.50348pt>
+<Images/pdf/spin_coating.pdf, id=836, 1004.76851pt x 452.50348pt>
 File: Images/pdf/spin_coating.pdf Graphic file (type pdf)
 <use Images/pdf/spin_coating.pdf>
 Package pdftex.def Info: Images/pdf/spin_coating.pdf  used on input line 120.
@@ -1804,7 +1810,7 @@ Package pdftex.def Info: Images/pdf/spin_coating.pdf  used on input line 120.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/Au-patterning.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/Au-patterning.pdf, id=847, 591.41675pt x 263.89763pt>
+<Images/pdf/Au-patterning.pdf, id=857, 591.41675pt x 263.89763pt>
 File: Images/pdf/Au-patterning.pdf Graphic file (type pdf)
 <use Images/pdf/Au-patterning.pdf>
 Package pdftex.def Info: Images/pdf/Au-patterning.pdf  used on input line 172.
@@ -1813,7 +1819,7 @@ Package pdftex.def Info: Images/pdf/Au-patterning.pdf  used on input line 172.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/undoped-patterning.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/undoped-patterning.pdf, id=868, 1551.01025pt x 467.56184pt>
+<Images/pdf/undoped-patterning.pdf, id=878, 1551.01025pt x 467.56184pt>
 File: Images/pdf/undoped-patterning.pdf Graphic file (type pdf)
 <use Images/pdf/undoped-patterning.pdf>
 Package pdftex.def Info: Images/pdf/undoped-patterning.pdf  used on input line 
@@ -1823,7 +1829,7 @@ Package pdftex.def Info: Images/pdf/undoped-patterning.pdf  used on input line
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/doped-patterning.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/doped-patterning.pdf, id=883, 1177.18666pt x 468.69121pt>
+<Images/pdf/doped-patterning.pdf, id=893, 1177.18666pt x 468.69121pt>
 File: Images/pdf/doped-patterning.pdf Graphic file (type pdf)
 <use Images/pdf/doped-patterning.pdf>
 Package pdftex.def Info: Images/pdf/doped-patterning.pdf  used on input line 19
@@ -1833,7 +1839,7 @@ Package pdftex.def Info: Images/pdf/doped-patterning.pdf  used on input line 19
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/bioprobe_setup.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/bioprobe_setup.pdf, id=888, 643.74457pt x 342.95396pt>
+<Images/pdf/bioprobe_setup.pdf, id=898, 643.74457pt x 342.95396pt>
 File: Images/pdf/bioprobe_setup.pdf Graphic file (type pdf)
 <use Images/pdf/bioprobe_setup.pdf>
 Package pdftex.def Info: Images/pdf/bioprobe_setup.pdf  used on input line 219.
@@ -1843,7 +1849,7 @@ Package pdftex.def Info: Images/pdf/bioprobe_setup.pdf  used on input line 219.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/doping_formulas2.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/doping_formulas2.pdf, id=890, 577.48781pt x 271.05032pt>
+<Images/pdf/doping_formulas2.pdf, id=900, 577.48781pt x 271.05032pt>
 File: Images/pdf/doping_formulas2.pdf Graphic file (type pdf)
 <use Images/pdf/doping_formulas2.pdf>
 Package pdftex.def Info: Images/pdf/doping_formulas2.pdf  used on input line 23
@@ -1854,7 +1860,7 @@ Package pdftex.def Info: Images/pdf/doping_formulas2.pdf  used on input line 23
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/undoped-sse.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/undoped-sse.pdf, id=926, 1632.70181pt x 752.91757pt>
+<Images/pdf/undoped-sse.pdf, id=937, 1632.70181pt x 752.91757pt>
 File: Images/pdf/undoped-sse.pdf Graphic file (type pdf)
 <use Images/pdf/undoped-sse.pdf>
 Package pdftex.def Info: Images/pdf/undoped-sse.pdf  used on input line 274.
@@ -1863,7 +1869,7 @@ Package pdftex.def Info: Images/pdf/undoped-sse.pdf  used on input line 274.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/doped-sse.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/doped-sse.pdf, id=937, 1069.14299pt x 228.88695pt>
+<Images/pdf/doped-sse.pdf, id=949, 1069.14299pt x 228.88695pt>
 File: Images/pdf/doped-sse.pdf Graphic file (type pdf)
 <use Images/pdf/doped-sse.pdf>
 Package pdftex.def Info: Images/pdf/doped-sse.pdf  used on input line 285.
@@ -1881,7 +1887,7 @@ Package pdftex.def Info: Images/pdf/doped-sse.pdf  used on input line 285.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/doping_color.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/doping_color.pdf, id=956, 970.51077pt x 265.40344pt>
+<Images/pdf/doping_color.pdf, id=968, 970.51077pt x 265.40344pt>
 File: Images/pdf/doping_color.pdf Graphic file (type pdf)
 <use Images/pdf/doping_color.pdf>
 Package pdftex.def Info: Images/pdf/doping_color.pdf  used on input line 9.
@@ -1890,7 +1896,7 @@ Package pdftex.def Info: Images/pdf/doping_color.pdf  used on input line 9.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/resist.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/resist.pdf, id=968, 650.43129pt x 469.75595pt>
+<Images/pdf/resist.pdf, id=980, 650.43129pt x 469.75595pt>
 File: Images/pdf/resist.pdf Graphic file (type pdf)
 <use Images/pdf/resist.pdf>
 Package pdftex.def Info: Images/pdf/resist.pdf  used on input line 35.
@@ -1899,16 +1905,16 @@ Package pdftex.def Info: Images/pdf/resist.pdf  used on input line 35.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/abs+inlet.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/abs+inlet.pdf, id=972, 1505.45872pt x 885.0546pt>
+<Images/pdf/abs+inlet.pdf, id=983, 1505.45872pt x 885.0546pt>
 File: Images/pdf/abs+inlet.pdf Graphic file (type pdf)
 <use Images/pdf/abs+inlet.pdf>
-Package pdftex.def Info: Images/pdf/abs+inlet.pdf  used on input line 48.
+Package pdftex.def Info: Images/pdf/abs+inlet.pdf  used on input line 46.
 (pdftex.def)             Requested size: 284.52756pt x 167.2708pt.
-[32 <./Images/pdf/resist.pdf>] [33 <./Images/pdf/abs+inlet.pdf>]
+[32 <./Images/pdf/resist.pdf> <./Images/pdf/abs+inlet.pdf>] [33]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/WF_final.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/WF_final.pdf, id=998, 924.33821pt x 1518.23302pt>
+<Images/pdf/WF_final.pdf, id=1010, 924.33821pt x 1518.23302pt>
 File: Images/pdf/WF_final.pdf Graphic file (type pdf)
 <use Images/pdf/WF_final.pdf>
 Package pdftex.def Info: Images/pdf/WF_final.pdf  used on input line 78.
@@ -1917,7 +1923,7 @@ Package pdftex.def Info: Images/pdf/WF_final.pdf  used on input line 78.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/WF.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/WF.pdf, id=999, 1753.83392pt x 1693.6164pt>
+<Images/pdf/WF.pdf, id=1011, 1753.83392pt x 1693.6164pt>
 File: Images/pdf/WF.pdf Graphic file (type pdf)
 <use Images/pdf/WF.pdf>
 Package pdftex.def Info: Images/pdf/WF.pdf  used on input line 81.
@@ -1926,7 +1932,7 @@ Package pdftex.def Info: Images/pdf/WF.pdf  used on input line 81.
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/BigGateDevices.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/BigGateDevices.pdf, id=1002, 1314.21764pt x 457.39743pt>
+<Images/pdf/BigGateDevices.pdf, id=1014, 1314.21764pt x 457.39743pt>
 File: Images/pdf/BigGateDevices.pdf Graphic file (type pdf)
 <use Images/pdf/BigGateDevices.pdf>
 Package pdftex.def Info: Images/pdf/BigGateDevices.pdf  used on input line 94.
@@ -1936,214 +1942,253 @@ eDevices.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_undoped.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/transfer_undoped.pdf, id=1038, 602.17471pt x 489.26695pt>
+<Images/pdf/transfer_undoped.pdf, id=1048, 602.17471pt x 489.26695pt>
 File: Images/pdf/transfer_undoped.pdf Graphic file (type pdf)
 <use Images/pdf/transfer_undoped.pdf>
 Package pdftex.def Info: Images/pdf/transfer_undoped.pdf  used on input line 12
-5.
+1.
 (pdftex.def)             Requested size: 162.18062pt x 131.76788pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/id+gm_undoped_final.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/id+gm_undoped_final.pdf, id=1039, 578.16563pt x 469.75957pt>
+<Images/pdf/id+gm_undoped_final.pdf, id=1049, 578.16563pt x 469.75957pt>
 File: Images/pdf/id+gm_undoped_final.pdf Graphic file (type pdf)
 <use Images/pdf/id+gm_undoped_final.pdf>
 Package pdftex.def Info: Images/pdf/id+gm_undoped_final.pdf  used on input line
- 126.
+ 122.
 (pdftex.def)             Requested size: 150.79968pt x 122.52167pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_doped5.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/transfer_doped5.pdf, id=1040, 602.17471pt x 489.26695pt>
+<Images/pdf/transfer_doped5.pdf, id=1050, 602.17471pt x 489.26695pt>
 File: Images/pdf/transfer_doped5.pdf Graphic file (type pdf)
 <use Images/pdf/transfer_doped5.pdf>
-Package pdftex.def Info: Images/pdf/transfer_doped5.pdf  used on input line 128
+Package pdftex.def Info: Images/pdf/transfer_doped5.pdf  used on input line 124
 .
 (pdftex.def)             Requested size: 162.18062pt x 131.76788pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/id+gm_doped5_final.pdf): PDF in
 clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/id+gm_doped5_final.pdf, id=1041, 578.16563pt x 469.75957pt>
+<Images/pdf/id+gm_doped5_final.pdf, id=1051, 578.16563pt x 469.75957pt>
 File: Images/pdf/id+gm_doped5_final.pdf Graphic file (type pdf)
 <use Images/pdf/id+gm_doped5_final.pdf>
 Package pdftex.def Info: Images/pdf/id+gm_doped5_final.pdf  used on input line 
-129.
+125.
 (pdftex.def)             Requested size: 150.79968pt x 122.52167pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_doped10.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/transfer_doped10.pdf, id=1042, 602.17471pt x 489.26695pt>
+<Images/pdf/transfer_doped10.pdf, id=1052, 602.17471pt x 489.26695pt>
 File: Images/pdf/transfer_doped10.pdf Graphic file (type pdf)
 <use Images/pdf/transfer_doped10.pdf>
-Package pdftex.def Info: Images/pdf/transfer_doped10.pdf  used on input line 13
-1.
+Package pdftex.def Info: Images/pdf/transfer_doped10.pdf  used on input line 12
+7.
 (pdftex.def)             Requested size: 162.18062pt x 131.76788pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/id+gm_doped10_final.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/id+gm_doped10_final.pdf, id=1043, 578.16563pt x 469.75957pt>
+<Images/pdf/id+gm_doped10_final.pdf, id=1053, 578.16563pt x 469.75957pt>
 File: Images/pdf/id+gm_doped10_final.pdf Graphic file (type pdf)
 <use Images/pdf/id+gm_doped10_final.pdf>
 Package pdftex.def Info: Images/pdf/id+gm_doped10_final.pdf  used on input line
- 132.
+ 128.
 (pdftex.def)             Requested size: 150.79968pt x 122.52167pt.
 
+Underfull \vbox (badness 2205) has occurred while \output is active []
+
+ [36 <./Images/pdf/transfer_undoped.pdf> <./Images/pdf/id+gm_undoped_final.pdf>
+ <./Images/pdf/transfer_doped5.pdf> <./Images/pdf/id+gm_doped5_final.pdf> <./Im
+ages/pdf/transfer_doped10.pdf> <./Images/pdf/id+gm_doped10_final.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/Shift_Vds1.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/Shift_Vds1.pdf, id=1048, 578.16116pt x 469.75595pt>
+<Images/pdf/Shift_Vds1.pdf, id=1086, 301.16702pt x 244.69821pt>
 File: Images/pdf/Shift_Vds1.pdf Graphic file (type pdf)
 <use Images/pdf/Shift_Vds1.pdf>
-Package pdftex.def Info: Images/pdf/Shift_Vds1.pdf  used on input line 157.
-(pdftex.def)             Requested size: 156.49014pt x 127.14401pt.
+Package pdftex.def Info: Images/pdf/Shift_Vds1.pdf  used on input line 155.
+(pdftex.def)             Requested size: 156.49014pt x 127.15045pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 157.
+(Font)              <9> on input line 155.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/Shift_Vds3.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/Shift_Vds3.pdf, id=1049, 578.16116pt x 469.75595pt>
+<Images/pdf/Shift_Vds3.pdf, id=1087, 301.16702pt x 244.69821pt>
 File: Images/pdf/Shift_Vds3.pdf Graphic file (type pdf)
 <use Images/pdf/Shift_Vds3.pdf>
-Package pdftex.def Info: Images/pdf/Shift_Vds3.pdf  used on input line 158.
-(pdftex.def)             Requested size: 156.49014pt x 127.14401pt.
+Package pdftex.def Info: Images/pdf/Shift_Vds3.pdf  used on input line 156.
+(pdftex.def)             Requested size: 156.49014pt x 127.15045pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/Shift_Vds5.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/Shift_Vds5.pdf, id=1050, 578.16116pt x 469.75595pt>
+<Images/pdf/Shift_Vds5.pdf, id=1088, 301.16702pt x 244.69821pt>
 File: Images/pdf/Shift_Vds5.pdf Graphic file (type pdf)
 <use Images/pdf/Shift_Vds5.pdf>
-Package pdftex.def Info: Images/pdf/Shift_Vds5.pdf  used on input line 160.
-(pdftex.def)             Requested size: 156.49014pt x 127.14401pt.
+Package pdftex.def Info: Images/pdf/Shift_Vds5.pdf  used on input line 158.
+(pdftex.def)             Requested size: 156.49014pt x 127.15045pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/Shift_Vds7.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/Shift_Vds7.pdf, id=1051, 578.16116pt x 469.75595pt>
+<Images/pdf/Shift_Vds7.pdf, id=1089, 301.16702pt x 244.69821pt>
 File: Images/pdf/Shift_Vds7.pdf Graphic file (type pdf)
 <use Images/pdf/Shift_Vds7.pdf>
-Package pdftex.def Info: Images/pdf/Shift_Vds7.pdf  used on input line 161.
-(pdftex.def)             Requested size: 156.49014pt x 127.14401pt.
-
+Package pdftex.def Info: Images/pdf/Shift_Vds7.pdf  used on input line 159.
+(pdftex.def)             Requested size: 156.49014pt x 127.15045pt.
+[37 <./Images/pdf/Shift_Vds1.pdf> <./Images/pdf/Shift_Vds3.pdf> <./Images/pdf/S
+hift_Vds5.pdf> <./Images/pdf/Shift_Vds7.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/vth_shift_vds.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/vth_shift_vds.pdf, id=1056, 677.44658pt x 489.26695pt>
+<Images/pdf/vth_shift_vds.pdf, id=1118, 677.44658pt x 489.26695pt>
 File: Images/pdf/vth_shift_vds.pdf Graphic file (type pdf)
 <use Images/pdf/vth_shift_vds.pdf>
 Package pdftex.def Info: Images/pdf/vth_shift_vds.pdf  used on input line 175.
-(pdftex.def)             Requested size: 227.62204pt x 164.39256pt.
-[36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(pdftex.def)             Requested size: 184.9429pt x 133.5671pt.
 
- [37 <./Images/pdf/transfer_undoped.pdf> <./Images/pdf/id+gm_undoped_final.pdf>
- <./Images/pdf/transfer_doped5.pdf> <./Images/pdf/id+gm_doped5_final.pdf> <./Im
-ages/pdf/transfer_doped10.pdf> <./Images/pdf/id+gm_doped10_final.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/vth_shift_2.pdf): PDF inclusion
+: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/vth_shift_2.pdf, id=1119, 650.43129pt x 469.75595pt>
+File: Images/pdf/vth_shift_2.pdf Graphic file (type pdf)
+<use Images/pdf/vth_shift_2.pdf>
+Package pdftex.def Info: Images/pdf/vth_shift_2.pdf  used on input line 176.
+(pdftex.def)             Requested size: 184.9429pt x 133.56644pt.
+[38 <./Images/pdf/vth_shift_vds.pdf> <./Images/pdf/vth_shift_2.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/revox_gb_only.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/revox_gb_only.pdf, id=1094, 578.16116pt x 469.75595pt>
+<Images/pdf/revox_gb_only.pdf, id=1138, 578.16116pt x 469.75595pt>
 File: Images/pdf/revox_gb_only.pdf Graphic file (type pdf)
 <use Images/pdf/revox_gb_only.pdf>
-Package pdftex.def Info: Images/pdf/revox_gb_only.pdf  used on input line 207.
+Package pdftex.def Info: Images/pdf/revox_gb_only.pdf  used on input line 209.
 (pdftex.def)             Requested size: 184.9429pt x 150.26045pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/revox_air.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/revox_air.pdf, id=1095, 578.16116pt x 469.75595pt>
+<Images/pdf/revox_air.pdf, id=1139, 578.16116pt x 469.75595pt>
 File: Images/pdf/revox_air.pdf Graphic file (type pdf)
 <use Images/pdf/revox_air.pdf>
-Package pdftex.def Info: Images/pdf/revox_air.pdf  used on input line 209.
+Package pdftex.def Info: Images/pdf/revox_air.pdf  used on input line 211.
 (pdftex.def)             Requested size: 184.9429pt x 150.26045pt.
-[38 <./Images/pdf/Shift_Vds1.pdf> <./Images/pdf/Shift_Vds3.pdf> <./Images/pdf/S
-hift_Vds5.pdf> <./Images/pdf/Shift_Vds7.pdf>]
+
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/revox_transfer_loop2.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/revox_transfer_loop2.pdf, id=1119, 602.17471pt x 489.26695pt>
+<Images/pdf/revox_transfer_loop2.pdf, id=1143, 602.17471pt x 489.26695pt>
 File: Images/pdf/revox_transfer_loop2.pdf Graphic file (type pdf)
 <use Images/pdf/revox_transfer_loop2.pdf>
 Package pdftex.def Info: Images/pdf/revox_transfer_loop2.pdf  used on input lin
-e 222.
+e 227.
 (pdftex.def)             Requested size: 184.9429pt x 150.26018pt.
-[39 <./Images/pdf/vth_shift_vds.pdf> <./Images/pdf/revox_gb_only.pdf> <./Images
-/pdf/revox_air.pdf>]
+[39 <./Images/pdf/revox_gb_only.pdf> <./Images/pdf/revox_air.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/elec-dedop1.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/elec-dedop1.pdf, id=1142, 578.16563pt x 469.75957pt>
+<Images/pdf/elec-dedop1.pdf, id=1160, 578.16563pt x 469.75957pt>
 File: Images/pdf/elec-dedop1.pdf Graphic file (type pdf)
 <use Images/pdf/elec-dedop1.pdf>
-Package pdftex.def Info: Images/pdf/elec-dedop1.pdf  used on input line 255.
+Package pdftex.def Info: Images/pdf/elec-dedop1.pdf  used on input line 258.
 (pdftex.def)             Requested size: 170.71652pt x 138.70688pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_de-dop_exp.pdf): PDF i
 nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/transfer_de-dop_exp.pdf, id=1143, 578.16563pt x 469.75957pt>
+<Images/pdf/transfer_de-dop_exp.pdf, id=1161, 578.16563pt x 469.75957pt>
 File: Images/pdf/transfer_de-dop_exp.pdf Graphic file (type pdf)
 <use Images/pdf/transfer_de-dop_exp.pdf>
 Package pdftex.def Info: Images/pdf/transfer_de-dop_exp.pdf  used on input line
- 256.
+ 259.
 (pdftex.def)             Requested size: 170.71652pt x 138.70688pt.
 [40 <./Images/pdf/revox_transfer_loop2.pdf>]
-Underfull \vbox (badness 5878) has occurred while \output is active []
 
- [41 <./Images/pdf/elec-dedop1.pdf> <./Images/pdf/transfer_de-dop_exp.pdf>]
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/Undoped_AgAgCl.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/Undoped_AgAgCl.pdf, id=1171, 301.16702pt x 244.69821pt>
+File: Images/pdf/Undoped_AgAgCl.pdf Graphic file (type pdf)
+<use Images/pdf/Undoped_AgAgCl.pdf>
+Package pdftex.def Info: Images/pdf/Undoped_AgAgCl.pdf  used on input line 276.
+
+(pdftex.def)             Requested size: 170.71652pt x 138.71025pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/CV_drop_AgClWE.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/CV_drop_AgClWE.pdf, id=1172, 338.81293pt x 244.69821pt>
+File: Images/pdf/CV_drop_AgClWE.pdf Graphic file (type pdf)
+<use Images/pdf/CV_drop_AgClWE.pdf>
+Package pdftex.def Info: Images/pdf/CV_drop_AgClWE.pdf  used on input line 278.
+
+(pdftex.def)             Requested size: 170.71652pt x 123.29718pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/CV_drop_AgClRECE.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/CV_drop_AgClRECE.pdf, id=1173, 338.81293pt x 244.69821pt>
+File: Images/pdf/CV_drop_AgClRECE.pdf Graphic file (type pdf)
+<use Images/pdf/CV_drop_AgClRECE.pdf>
+Package pdftex.def Info: Images/pdf/CV_drop_AgClRECE.pdf  used on input line 27
+9.
+(pdftex.def)             Requested size: 170.71652pt x 123.29718pt.
+[41 <./Images/pdf/elec-dedop1.pdf> <./Images/pdf/transfer_de-dop_exp.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42 <./Images/pdf/Undoped_AgAgCl.pdf> <./Images/pdf/CV_drop_AgClWE.pdf> <./Ima
+ges/pdf/CV_drop_AgClRECE.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/und_drop.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/und_drop.pdf, id=1170, 480.05266pt x 465.81754pt>
+<Images/pdf/und_drop.pdf, id=1207, 480.05266pt x 465.81754pt>
 File: Images/pdf/und_drop.pdf Graphic file (type pdf)
 <use Images/pdf/und_drop.pdf>
-Package pdftex.def Info: Images/pdf/und_drop.pdf  used on input line 307.
+Package pdftex.def Info: Images/pdf/und_drop.pdf  used on input line 326.
 (pdftex.def)             Requested size: 85.35826pt x 82.82712pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_de-dop.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/transfer_de-dop.pdf, id=1171, 602.17471pt x 489.26695pt>
+<Images/pdf/transfer_de-dop.pdf, id=1208, 602.17471pt x 489.26695pt>
 File: Images/pdf/transfer_de-dop.pdf Graphic file (type pdf)
 <use Images/pdf/transfer_de-dop.pdf>
-Package pdftex.def Info: Images/pdf/transfer_de-dop.pdf  used on input line 309
+Package pdftex.def Info: Images/pdf/transfer_de-dop.pdf  used on input line 328
 .
 (pdftex.def)             Requested size: 170.71652pt x 138.70343pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/EIS_drop.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/EIS_drop.pdf, id=1172, 602.17471pt x 489.26695pt>
+<Images/pdf/EIS_drop.pdf, id=1209, 602.25581pt x 489.46974pt>
 File: Images/pdf/EIS_drop.pdf Graphic file (type pdf)
 <use Images/pdf/EIS_drop.pdf>
-Package pdftex.def Info: Images/pdf/EIS_drop.pdf  used on input line 311.
-(pdftex.def)             Requested size: 170.71652pt x 138.70343pt.
+Package pdftex.def Info: Images/pdf/EIS_drop.pdf  used on input line 330.
+(pdftex.def)             Requested size: 170.71652pt x 138.74599pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/CV_drop.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/CV_drop.pdf, id=1173, 650.43129pt x 469.75595pt>
+<Images/pdf/CV_drop.pdf, id=1210, 650.43129pt x 469.75595pt>
 File: Images/pdf/CV_drop.pdf Graphic file (type pdf)
 <use Images/pdf/CV_drop.pdf>
-Package pdftex.def Info: Images/pdf/CV_drop.pdf  used on input line 312.
+Package pdftex.def Info: Images/pdf/CV_drop.pdf  used on input line 331.
 (pdftex.def)             Requested size: 170.71652pt x 123.29486pt.
-[42]
+[43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43 <./Images/pdf/und_drop.pdf> <./Images/pdf/transfer_de-dop.pdf> <./Images/p
+ [44 <./Images/pdf/und_drop.pdf> <./Images/pdf/transfer_de-dop.pdf> <./Images/p
 df/EIS_drop.pdf> <./Images/pdf/CV_drop.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 352--354
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
@@ -2151,158 +2196,203 @@ Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/und_photo.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/und_photo.pdf, id=1210, 970.3984pt x 453.9914pt>
+<Images/pdf/und_photo.pdf, id=1244, 970.3984pt x 453.9914pt>
 File: Images/pdf/und_photo.pdf Graphic file (type pdf)
 <use Images/pdf/und_photo.pdf>
-Package pdftex.def Info: Images/pdf/und_photo.pdf  used on input line 367.
+Package pdftex.def Info: Images/pdf/und_photo.pdf  used on input line 385.
 (pdftex.def)             Requested size: 170.71652pt x 79.86531pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_photo.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/transfer_photo.pdf, id=1211, 602.17471pt x 489.26695pt>
+<Images/pdf/transfer_photo.pdf, id=1245, 602.17471pt x 489.26695pt>
 File: Images/pdf/transfer_photo.pdf Graphic file (type pdf)
 <use Images/pdf/transfer_photo.pdf>
-Package pdftex.def Info: Images/pdf/transfer_photo.pdf  used on input line 369.
+Package pdftex.def Info: Images/pdf/transfer_photo.pdf  used on input line 387.
 
 (pdftex.def)             Requested size: 170.71652pt x 138.70343pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/EIS_photo.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/EIS_photo.pdf, id=1212, 602.17471pt x 489.26695pt>
+<Images/pdf/EIS_photo.pdf, id=1246, 602.03687pt x 489.25075pt>
 File: Images/pdf/EIS_photo.pdf Graphic file (type pdf)
 <use Images/pdf/EIS_photo.pdf>
-Package pdftex.def Info: Images/pdf/EIS_photo.pdf  used on input line 371.
-(pdftex.def)             Requested size: 170.71652pt x 138.70343pt.
+Package pdftex.def Info: Images/pdf/EIS_photo.pdf  used on input line 389.
+(pdftex.def)             Requested size: 170.71652pt x 138.7287pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/CV_photo.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/CV_photo.pdf, id=1213, 650.43129pt x 469.75595pt>
+<Images/pdf/CV_photo.pdf, id=1247, 650.43129pt x 469.75595pt>
 File: Images/pdf/CV_photo.pdf Graphic file (type pdf)
 <use Images/pdf/CV_photo.pdf>
-Package pdftex.def Info: Images/pdf/CV_photo.pdf  used on input line 372.
+Package pdftex.def Info: Images/pdf/CV_photo.pdf  used on input line 390.
 (pdftex.def)             Requested size: 170.71652pt x 123.29486pt.
-[44] [45 <./Images/pdf/und_photo.pdf> <./Images/pdf/transfer_photo.pdf> <./Imag
-es/pdf/EIS_photo.pdf> <./Images/pdf/CV_photo.pdf>]
+[45]
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_photo_air.pdf): PDF in
+clusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/transfer_photo_air.pdf, id=1259, 301.16702pt x 244.69821pt>
+File: Images/pdf/transfer_photo_air.pdf Graphic file (type pdf)
+<use Images/pdf/transfer_photo_air.pdf>
+Package pdftex.def Info: Images/pdf/transfer_photo_air.pdf  used on input line 
+433.
+(pdftex.def)             Requested size: 170.71652pt x 138.71025pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/CV_photo_air.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/CV_photo_air.pdf, id=1260, 338.81293pt x 244.69821pt>
+File: Images/pdf/CV_photo_air.pdf Graphic file (type pdf)
+<use Images/pdf/CV_photo_air.pdf>
+Package pdftex.def Info: Images/pdf/CV_photo_air.pdf  used on input line 436.
+(pdftex.def)             Requested size: 170.71652pt x 123.29718pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46 <./Images/pdf/und_photo.pdf> <./Images/pdf/transfer_photo.pdf> <./Images/p
+df/EIS_photo.pdf> <./Images/pdf/CV_photo.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/und_ink.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/und_ink.pdf, id=1247, 980.0345pt x 463.62749pt>
+<Images/pdf/und_ink.pdf, id=1291, 980.0345pt x 463.62749pt>
 File: Images/pdf/und_ink.pdf Graphic file (type pdf)
 <use Images/pdf/und_ink.pdf>
-Package pdftex.def Info: Images/pdf/und_ink.pdf  used on input line 435.
+Package pdftex.def Info: Images/pdf/und_ink.pdf  used on input line 475.
 (pdftex.def)             Requested size: 170.71652pt x 80.76108pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_ink.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/transfer_ink.pdf, id=1248, 602.17471pt x 489.26695pt>
+<Images/pdf/transfer_ink.pdf, id=1292, 602.17471pt x 489.26695pt>
 File: Images/pdf/transfer_ink.pdf Graphic file (type pdf)
 <use Images/pdf/transfer_ink.pdf>
-Package pdftex.def Info: Images/pdf/transfer_ink.pdf  used on input line 436.
+Package pdftex.def Info: Images/pdf/transfer_ink.pdf  used on input line 476.
 (pdftex.def)             Requested size: 170.71652pt x 138.70343pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/EIS_ink.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/EIS_ink.pdf, id=1249, 602.25581pt x 489.46974pt>
+<Images/pdf/EIS_ink.pdf, id=1293, 602.25581pt x 489.46974pt>
 File: Images/pdf/EIS_ink.pdf Graphic file (type pdf)
 <use Images/pdf/EIS_ink.pdf>
-Package pdftex.def Info: Images/pdf/EIS_ink.pdf  used on input line 438.
+Package pdftex.def Info: Images/pdf/EIS_ink.pdf  used on input line 478.
 (pdftex.def)             Requested size: 170.71652pt x 138.74599pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/CV_ink.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/CV_ink.pdf, id=1250, 650.43129pt x 469.75595pt>
+<Images/pdf/CV_ink.pdf, id=1294, 650.43129pt x 469.75595pt>
 File: Images/pdf/CV_ink.pdf Graphic file (type pdf)
 <use Images/pdf/CV_ink.pdf>
-Package pdftex.def Info: Images/pdf/CV_ink.pdf  used on input line 439.
+Package pdftex.def Info: Images/pdf/CV_ink.pdf  used on input line 479.
 (pdftex.def)             Requested size: 170.71652pt x 123.29486pt.
-[46 <./Images/pdf/und_ink.pdf> <./Images/pdf/transfer_ink.pdf> <./Images/pdf/EI
-S_ink.pdf> <./Images/pdf/CV_ink.pdf>] [47]
+[47 <./Images/pdf/transfer_photo_air.pdf> <./Images/pdf/CV_photo_air.pdf>]
+[48 <./Images/pdf/und_ink.pdf> <./Images/pdf/transfer_ink.pdf> <./Images/pdf/EI
+S_ink.pdf> <./Images/pdf/CV_ink.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/unhom_doping.pdf): PDF inclusio
+n: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/unhom_doping.pdf, id=1330, 481.86726pt x 163.38312pt>
+File: Images/pdf/unhom_doping.pdf Graphic file (type pdf)
+<use Images/pdf/unhom_doping.pdf>
+Package pdftex.def Info: Images/pdf/unhom_doping.pdf  used on input line 512.
+(pdftex.def)             Requested size: 284.52756pt x 96.47496pt.
+
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/doped_ink.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/doped_ink.pdf, id=1281, 482.46169pt x 462.31348pt>
+<Images/pdf/doped_ink.pdf, id=1334, 482.46169pt x 462.31348pt>
 File: Images/pdf/doped_ink.pdf Graphic file (type pdf)
 <use Images/pdf/doped_ink.pdf>
-Package pdftex.def Info: Images/pdf/doped_ink.pdf  used on input line 480.
+Package pdftex.def Info: Images/pdf/doped_ink.pdf  used on input line 529.
 (pdftex.def)             Requested size: 85.35826pt x 81.78786pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/transfer_doped.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/transfer_doped.pdf, id=1282, 602.17471pt x 489.26695pt>
+<Images/pdf/transfer_doped.pdf, id=1335, 602.17471pt x 489.26695pt>
 File: Images/pdf/transfer_doped.pdf Graphic file (type pdf)
 <use Images/pdf/transfer_doped.pdf>
-Package pdftex.def Info: Images/pdf/transfer_doped.pdf  used on input line 481.
+Package pdftex.def Info: Images/pdf/transfer_doped.pdf  used on input line 530.
 
 (pdftex.def)             Requested size: 170.71652pt x 138.70343pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/EIS_doped.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/EIS_doped.pdf, id=1283, 602.25581pt x 489.46974pt>
+<Images/pdf/EIS_doped.pdf, id=1336, 602.25581pt x 489.46974pt>
 File: Images/pdf/EIS_doped.pdf Graphic file (type pdf)
 <use Images/pdf/EIS_doped.pdf>
-Package pdftex.def Info: Images/pdf/EIS_doped.pdf  used on input line 483.
+Package pdftex.def Info: Images/pdf/EIS_doped.pdf  used on input line 532.
 (pdftex.def)             Requested size: 170.71652pt x 138.74599pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./Images/pdf/CV_doped.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<Images/pdf/CV_doped.pdf, id=1284, 650.43129pt x 469.75595pt>
+<Images/pdf/CV_doped.pdf, id=1337, 650.43129pt x 469.75595pt>
 File: Images/pdf/CV_doped.pdf Graphic file (type pdf)
 <use Images/pdf/CV_doped.pdf>
-Package pdftex.def Info: Images/pdf/CV_doped.pdf  used on input line 484.
+Package pdftex.def Info: Images/pdf/CV_doped.pdf  used on input line 533.
 (pdftex.def)             Requested size: 170.71652pt x 123.29486pt.
-[48]) [49 <./Images/pdf/doped_ink.pdf> <./Images/pdf/transfer_doped.pdf> <./Ima
-ges/pdf/EIS_doped.pdf> <./Images/pdf/CV_doped.pdf>]
+[49 <./Images/pdf/unhom_doping.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50 <./Images/pdf/doped_ink.pdf> <./Images/pdf/transfer_doped.pdf> <./Images/p
+df/EIS_doped.pdf> <./Images/pdf/CV_doped.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Images/pdf/Vth_shift_plot.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pdf/Vth_shift_plot.pdf, id=1369, 722.70699pt x 364.20053pt>
+File: Images/pdf/Vth_shift_plot.pdf Graphic file (type pdf)
+<use Images/pdf/Vth_shift_plot.pdf>
+Package pdftex.def Info: Images/pdf/Vth_shift_plot.pdf  used on input line 570.
+
+(pdftex.def)             Requested size: 398.0pt x 200.5721pt.
+[51 <./Images/pdf/Vth_shift_plot.pdf>]) [52]
 \openout2 = `conclusion.aux'.
 
- (./conclusion.tex [50
+ (./conclusion.tex) [53
 
 
 
 
-])
-[51]
+]
 \openout2 = `app-A.aux'.
 
- (./app-A.tex [52
 
-
-
-
-]) [53]
-\openout2 = `app-B.aux'.
-
- (./app-B.tex [54
+(./app-A.tex [54
 
 
 
 
 ]) [55]
+\openout2 = `app-B.aux'.
+
+ (./app-B.tex [56
+
+
+
+
+]) [57]
 \openout2 = `app-C.aux'.
 
- (./app-C.tex [56
+ (./app-C.tex [58
 
 
 
 
-])
-[57] [58
+]) [59]
+[60
 
 
 
 ] (./thesis.bbl
 bibitemlist
-[59
+[61
 
-] [60] [61] [62]) [63]
+] [62] [63] [64]) [65]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -2315,41 +2405,39 @@ bibitemlist
  (./thesis.aux (./intro.aux) (./chap-1.aux)
 (./chap-2.aux) (./chap-3.aux) (./conclusion.aux) (./app-A.aux) (./app-B.aux)
 (./app-C.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: F1B93028D6A82DFE1F9AE29D67358C56;8866.
+(rerunfilecheck)             Checksum: 7374CD62506085588F28AE316E477DCE;8884.
  ) 
 Here is how much of TeX's memory you used:
- 22875 strings out of 475071
- 400130 string characters out of 5782908
- 944601 words of memory out of 5000000
- 43200 multiletter control sequences out of 15000+600000
- 605228 words of font info for 247 fonts, out of 8000000 for 9000
+ 23318 strings out of 476038
+ 409984 string characters out of 5794174
+ 1871779 words of memory out of 5000000
+ 42656 multiletter control sequences out of 15000+600000
+ 648350 words of font info for 252 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,77p,1617b,638s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2022/texmf-dist/fonts/enc/
-dvips/lm/lm-rm.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
-}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2022/
-texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/
-dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx10.pfb>
-<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2022/t
-exmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2022/texmf-dist/fonts/typ
-e1/public/lm/lmcsc10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmex
-10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive
-/2022/texmf-dist/fonts/type1/public/lm/lmmi5.pfb><c:/texlive/2022/texmf-dist/fo
-nts/type1/public/lm/lmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm
-/lmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi9.pfb><c:/texl
-ive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2022/texmf-dist
-/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
-lm/lmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texl
-ive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dis
-t/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
-ic/lm/lmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
-><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis.pdf (73 pages, 56338851 bytes).
+ 75i,12n,76p,1617b,646s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2023
+/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/
+type1/public/lm/lmbx9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmc
+sc10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texli
+ve/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/public/lm/lmmi5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
+/lm/lmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/t
+exlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb><c:/texlive/2023/texmf-d
+ist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pub
+lic/lm/lmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/
+texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2023/texmf-d
+ist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pu
+blic/lm/lmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+<c:/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/202
+3/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on thesis.pdf (75 pages, 59719340 bytes).
 PDF statistics:
- 1551 PDF objects out of 1728 (max. 8388607)
- 1252 compressed objects within 13 object streams
- 316 named destinations out of 1000 (max. 500000)
- 72921 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1617 PDF objects out of 1728 (max. 8388607)
+ 1299 compressed objects within 13 object streams
+ 327 named destinations out of 1000 (max. 500000)
+ 72961 words of extra memory for PDF output out of 74296 (max. 10000000)
 
