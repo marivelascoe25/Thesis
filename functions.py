@@ -820,7 +820,7 @@ def stability(stability, title, columns, ranges, gate=True, log=True):
     ## Plots
     plt.figure(figsize=(8, 6.5))
     plt.title(title)#title.set_text('First Plot')
-    #plt.xlim([0,5000])
+    plt.xlim([80,120])
     #plt.ylim([1e-8,1e-5])
 
     plt.plot(X, Y, '-', color = r'#0D4A70', linewidth = 1, label = r"$-I_{D}$")

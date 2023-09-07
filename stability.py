@@ -70,8 +70,8 @@ plt.rcParams.update({'font.size':20})
 #dir_path1 = 'Data\\4. Stability\\230602_new_pg3t+SolidSE_dedopingaftertransfer\\U7_m01_Dedoping3-1.txt'
 #dir_path1 = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq5_channel_conductivity\\H2_m01_Dedoping3-1.txt'
 #dir_path1 = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq5_channel_conductivity\\G2_m01_Dedoping3-1_air.txt'
-dir_path1 = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq5_channel_conductivity\\D2_m01_Dedoping3-1_air_cleandata.txt'
-#dir_path1 = 'Data\\4. Stability\\1. IV\\230629_pg3t_doped_5mgmlF6TCNNQ_printedSSE\\D2_m01_Dedoping3-1.txt'
+#dir_path1 = 'Data\\4. Stability\\1. IV\\230621_pg3t_f6tcnnq5_channel_conductivity\\D2_m01_Dedoping3-1_air_cleandata.txt'
+dir_path1 = 'Data\\4. Stability\\1. IV\\230629_pg3t_doped_5mgmlF6TCNNQ_printedSSE\\D2_m01_Dedoping3-1.txt'
 #dir_path1 = 'Data\\4. Stability\\1. IV\\230629_pg3t_doped_10mgmlF6TCNNQ_printedSSE_dedoping\\D2_m01_Dedoping3-1.txt'
 
 
@@ -97,10 +97,10 @@ title1 = "+1V"
 #columns = [0, 7, 5] #bioprobe
 columns = [0, 3, 6] #IV
 range1 = [30,40]
-range2 = [400, 440]
+range2 = [90, 110]
 ranges = [range1, range2]
 
-stability(dir_path1, title1, columns, ranges, gate=False, log=False)
+stability(dir_path1, title1, columns, ranges)#, gate=False)#, log=False)
 #stability(dir_path2, title2, columns, ranges, gate=False)#, log=False)
 #stability(dir_path3, title3, columns)#, log=False)
 #stability(dir_path4, title4, columns)#, log=False)
