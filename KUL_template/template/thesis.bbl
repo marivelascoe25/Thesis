@@ -251,7 +251,7 @@ J.~Hunter, D.~Dale, E.~Firing, M.~Droettboom, and M.~development team,
 
 \bibitem{resist}
 \BIBentryALTinterwordspacing
-S.~GmbH, ``Sheet resistance calculcator,'' 2023, date last access: 30-May-2023.
+S.~GmbH, ``Sheet resistance calculator,'' 2023, date last access: 30-May-2023.
   [Online]. Available:
   \url{https://www.suragus.com/en/technology/sheet-resistance-calculator/}
 \BIBentrySTDinterwordspacing
@@ -273,6 +273,12 @@ S.~A. Buchholtz, ``Doping {{Properties}} of {{Novel Dopants}} for {{Organic
 L.~M. Bongartz, ``Organic electrochemical transistors with solid-state
   electrolytes,'' Master's thesis, Technische Universit\"at Dresden, {Dresden,
   Germany}, Jul. 2021.
+
+\bibitem{tsengThresholdVoltageControl2023}
+H.~Tseng, A.~Weissbach, J.~Kucinski, A.~Solgi, R.~Nair, L.~M. Bongartz,
+  G.~Ciccone, M.~Cucchi, K.~Leo, and H.~Kleemann, ``Threshold {{Voltage
+  Control}} in {{Dual-Gate Organic Electrochemical Transistors}},''
+  \emph{Advanced Materials Interfaces}, vol.~10, no.~19, p. 2201914, 2023.
 
 \bibitem{enenglDopinginducedAbsorptionBands2016}
 C.~Enengl, S.~Enengl, S.~Pluczyk, M.~Havlicek, M.~Lapkowski, H.~Neugebauer, and
@@ -296,11 +302,5 @@ A.~Weissbach, M.~Cucchi, H.~Tseng, K.~Leo, and H.~Kleemann, ``Unraveling the
   {{Electrochemical Electrode Coupling}} in {{Integrated Organic
   Electrochemical Transistors}},'' \emph{Advanced Functional Materials}, p.
   2302205, Jul. 2023.
-
-\bibitem{tsengThresholdVoltageControl2023}
-H.~Tseng, A.~Weissbach, J.~Kucinski, A.~Solgi, R.~Nair, L.~M. Bongartz,
-  G.~Ciccone, M.~Cucchi, K.~Leo, and H.~Kleemann, ``Threshold {{Voltage
-  Control}} in {{Dual-Gate Organic Electrochemical Transistors}},''
-  \emph{Advanced Materials Interfaces}, vol.~10, no.~19, p. 2201914, 2023.
 
 \end{thebibliography}

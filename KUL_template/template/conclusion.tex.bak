@@ -1,9 +1,38 @@
-\chapter{Conclusions and Outlook}
+\chapter{Summary and Outlook}
 \label{cha:conclusion}
 %The final chapter contains the overall conclusion. It also contains suggestions for future work and industrial applications.
 
 %Besides the challenges of working with the conjugated polymer p(g3T2-T), due to its lower HOMO level that make it susceptible to molecular oxygen in ambient conditions and its highly volatile solvent, it was possible to successfully fabricate micro-structured accumulation-mode OECTs and solid-OECTs in ambient conditions. The section devoted to Doping characterization in the Results and Discussions Chapter demonstrated that it was possible to increase doping levels by using solution sequential doping. The level of homogeneity required to allow photopatterning processes was also achieved. However, accurate control of the doping level remains a challenge, an estimation of the molecular percentage of dopants cannot be assure due to the unknown quantity of dopants that succesfully diffuse throughout the thickness of the polymer, the characterization techniques used in this work present limitations to perform a full scanning of the doping level of the material within all its volume. Certainly, there is room for improvement in trying to achieve the level of control required. 
+\subsection{Summary and conclusions}
 
+During the development of this thesis, it was reviewed the huge potential of organic electrochemical transistors (OECTs) in bioelectronics applications. The background chapter was dedicated to address the fundamental concepts of OECTs, important figures of merit and side reactions specially during operation in air saturated environments. Attention has been given to the fabrication of accumulation-mode devices with turn-on voltages close to zero with the aim to minimize power consumption. The use of dopants to tune the threshold voltage of OECTs was also tested and discussed in this work in a device architecture that is fully microstructured and hence will allow circuit integration. 
+
+As a first step, it was important to define a processing technique that would allow not only different levels of doping but sufficiently homogeneous films that are compatible with photolithography. Different doping levels were achieved by dynamic spin coating p(g3T2-T) with different F$_{4}$TCNQ concentrations, evidenced by an increase in conductivity, the formation of polarons as seen in the absorption spectra, and an increase in the workfunction seen in the UPS. 
+
+Subsequently, devices with a polarizable gate (Ag/AgCl) and, p(g3T2-T) channel at different doping levels coupled with a solid-state electrolyte (SSE) precursor was fabricated and study under normal cleanroom conditions. Transconductance had a negative impact and unexpectedly, threshold voltage shifted towards negative values as dopant concentration increased. Suggesting a compensation doping and/or TCNQ$^{-}$ anions drawing away from the polymer as free species. Meanwhile, pristine p(g3T2-T) channel oxidized upon interaction with oxygen in the environment during the photolithography process leading to a normally ON device which was evidenced by monitoring the channel conductivity during important steps in the process.
+
+Channel conductivity was only monitored upon contact with the SSE precursor, interestingly, a decay of almost eight orders of magnitude was perceived for both pristine (oxidized) and doped p(g3T2-T) under nitrogen environment, and less than two orders of magnitude decay in environmental conditions. A prior electrochemical de-doping was then implemented to obtain devices with negative threshold voltage and CV measurements with a Ag/AgCl gate to understand important redox points where Oxygen Reduction Reaction (ORR) may take place and lead to possible degradation due to the formation of hydrogen peroxide, V$_{red}$ below -0.5 V starts increasing that correlate with values reported by Hidalgo et al. \cite{hidalgocastilloSimultaneousPerformanceStability2022a} , but spectroelectrochemical measurements may gave us a better perception as SSE components may also be affecting our device operation.
+
+
+
+STABILITY OF DOPANTS
+Now that we have identified an alternative method to counteract the oxidation of p(g3T2-T), we will proceed with initial trials of accumulation-mode OECT using both the Ag/AgCl gate and the OMIEC gate. Our first step will involve expediting the de-doping process by applying a positive gate bias to one of the devices. This will allow us to achieve low conductivity within a couple of minutes, as opposed to the two hours reported in the previous subsection. 
+
+SOLID DEVICES
+In the previous section, an investigation into the doping of the p(g3T2-T) channel was conducted, and attention was given to the issues of unwanted oxidation, dopant stability and ORR. With these considerations in mind, the focus now shifts to the fabrication of solid-OECTs. 
+
+First, the fabrication of undoped p(g3T2-T) devices will be addressed by simply drop-casting SSE on top of the fourteen pattern devices. With these initial findings, this approach will be refined by structuring the electrolyte by i) photolithography \cite{weissbachPhotopatternableSolidElectrolyte2022} and ii) inkjet printing. 
+
+Following the comparison of these three device architectures, doped solid-OECTs will be fabricated, and their threshold voltage shifts upon doping will be evaluated.
+
+%%
+Reactions of the intrinsic material that are overshadowing the F$_{6}$TCNNQ doping effect.
+
+Proper electrochemical treatment and precise definition of processing conditions might be more processing to control threshold voltage
+
+However, stability might be a concern where intentional doping might help
+
+Add hypothesis for low yield -> side reactions?
 
 
 %%% Local Variables: 
