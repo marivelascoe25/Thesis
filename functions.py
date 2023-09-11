@@ -1078,14 +1078,14 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = 
         ax1.set_xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
         ax1.set_ylabel(r'$-I_D$ (A)',fontsize=20,fontweight='bold')
         ax1.set_yscale('log')
-        ax1.set_ylim(1e-10, 1e-3)#5e-3)
+        ax1.set_ylim(1e-10, 1e-3)
         y_ticks = [1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4, 1e-3]
         #x_ticks = [-1.0, -0.5, 0.0, 0.5, 1.0]
         ax1.set_yticks(y_ticks)
         #ax1.set_xticks(x_ticks)
         ax2.set_ylabel(r'$-I_{G}$ (A)',fontsize=20,fontweight='bold')
         ax2.set_yscale('log')
-        ax2.set_ylim(1e-10, 1e-3)#5e-3)
+        ax2.set_ylim(1e-10, 1e-3)
         ax2.set_yticks(y_ticks)
         
         ax1.grid(color='lightgrey')#, linestyle='-')
@@ -1123,9 +1123,12 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = 
                 if Vds[i] == Vds4:
                     colorr = u'#045275'          
                     labell = L[i]                       
-                    ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
+                    #ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
+                    ln1 = ax1.plot(X, Y, '-', color=colorr, label=r'$-I_D$', linewidth=3)
                     try:
-                        ax2.plot(X, Z, '--', color=colorr, linewidth=3)
+                        #ax2.plot(X, Z, '--', color=colorr)#, linewidth=3)
+                        ln2 = ax2.plot(X, Z, '--', label=r'$-I_G$', color=colorr)#, linewidth=3)
+                        lns = ln1 + ln2
                     except:
                         pass
                         
@@ -1155,7 +1158,7 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = 
                     color1 = u'#089099'          
                     labell = L[i] 
                     try:
-                        ax2.plot(X, Z, '--', color=color1, label=labell)
+                        ax2.plot(X, Z, '--', color=color1)#, label=labell)
                     except:
                         pass                                             
                     ax1.plot(X, Y, '-', color=color1, label=labell, linewidth=3)
@@ -1164,16 +1167,16 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = 
                     colorr = u'#7CCBA2'          
                     labell = L[i]
                     try:
-                        ax2.plot(X, Z, '--', color=colorr, label=labell)
+                        ax2.plot(X, Z, '--', color=colorr)#, label=labell)
                     except:
                         pass                       
                     ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
                 elif Vds[i] == Vds1:
                     #plt.plot(X, Y, '-', color=u'#d62728', label=L[i])
-                    colorr = u'#FCDE9C'          
+                    colorr = u'#FEB24C'#'#FCDE9C'          
                     labell = L[i]
                     try:
-                        ax2.plot(X, Z, '--', color=colorr, label=labell)
+                        ax2.plot(X, Z, '--', color=colorr)#, label=labell)
                     except:
                         pass                       
                     ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
@@ -1183,8 +1186,11 @@ def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = 
                     #labell = L[i]
                     #ax2.plot(X, Z, '-', color=colorr, label=labell)               
                     #ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
-                    
+        
+        labs = [l.get_label() for l in lns]
+        ax1.legend(lns, labs, loc=0)  
         #ax1.legend(loc='upper right')
+        #ax2.legend(loc=0)
         plt.grid()
         plt.tight_layout()
 

@@ -60,7 +60,7 @@ column_loop=column_vgs-1
 # Use loop_case = 2 if you want to all loops except the first one
 # Use loop_case other if you want to plot all
 # trans default is False, if True, transconductance is plotted
-gm = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, trans=True)#,loop_case=2) ##for old data
+gm = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, number=3)#, trans=True)#,loop_case=2) ##for old data
 #X, Y, Z = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, number=1)#, loop_case=2) # number 2 is default
 #for i in range(len(T)):
 #    print(T[i])
