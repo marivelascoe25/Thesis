@@ -80,8 +80,10 @@
 \contentsline {subsection}{\numberline {4.3.3}Undoped Inkjet-Printed SSE}{49}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Doped Inkjet-Printed SSE}{49}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Threshold Voltage Shift in OECTs}{52}{subsection.4.3.5}%
-\contentsline {chapter}{\chapternumberline {5}Conclusions and Outlook}{55}{chapter.5}%
-\contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{57}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}Correlation of Cyclic Voltammetry and Transfer Characteristics}{59}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{61}{appendix.C}%
-\contentsline {chapter}{Bibliography}{63}{appendix*.86}%
+\contentsline {chapter}{\chapternumberline {5}Summary and Outlook}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary and conclusions}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Outlook}{56}{section.5.2}%
+\contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{59}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}Correlation of Cyclic Voltammetry and Transfer Characteristics}{61}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{63}{appendix.C}%
+\contentsline {chapter}{Bibliography}{65}{appendix*.86}%
