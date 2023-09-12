@@ -1055,6 +1055,155 @@ def plot_transfer_curves_one_vds(Title, transfer, n_ids, n_vgs, n_loop, number=0
 
     return X,Y,Z, gm_values#abs(np.array(gm_values))
 
+def plot_transfer_curves_old2(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = False, number=2, loop_case = 1):
+    num_devices = len(T)
+    num_files = len(transfer) # for each vds x loops
+    n_igs = n_vgs+1
+    X_structure = [0.0 for k in range(num_devices)]
+    Y_structure = [0.0 for k in range(num_devices)]
+    Z_structure = [0.0 for k in range(num_devices)]
+    gm_values = [0.0 for k in range(num_devices)]
+
+    for k in range(num_devices):
+        
+        #plt.figure(figsize=(10, 7.5))
+        #plt.xlabel(r'$V_{GS}$ (V)',fontsize=22,fontweight='bold')
+        #plt.ylabel(r'$I_D$ (A)',fontsize=22,fontweight='bold')
+        #plt.title(T[k])
+        #plt.yscale('log')
+
+        fig, ax1 = plt.subplots(figsize=(8,6.5))
+        ax2 = ax1.twinx()
+        ax1.set_title(T[k])
+        ax1.set_xlabel(r'$V_{GS}$ (V)',fontsize=20,fontweight='bold')
+        ax1.set_ylabel(r'$-I_D$ (A)',fontsize=20,fontweight='bold')
+        ax1.set_yscale('log')
+        ax1.set_ylim(1e-10, 1e-3)
+        y_ticks = [1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 1e-4, 1e-3]
+        #x_ticks = [-1.0, -0.5, 0.0, 0.5, 1.0]
+        ax1.set_yticks(y_ticks)
+        #ax1.set_xticks(x_ticks)
+        ax2.set_ylabel(r'$-I_{G}$ (A)',fontsize=20,fontweight='bold')
+        ax2.set_yscale('log')
+        ax2.set_ylim(1e-10, 1e-3)
+        ax2.set_yticks(y_ticks)
+        
+        ax1.grid(color='lightgrey')#, linestyle='-')
+        ax2.grid(color='lightgrey')#, linestyle='-')
+                
+        for i in range(num_files):
+            start = transfer[i].index('transfer')
+            if transfer[i][start-7:start-5] == T[k]:# and transfer[i][start+41:start+43] == "="+str(number): ## Join all data from one device (U# or D#)
+                ## Print plots
+                if loop_case == 1:
+                    X, Y, Z = extract_data_loop_number(transfer[i],n_vgs,n_ids,n_igs, n_loop, number)
+                    #print(X)
+                    #X, Y, Z, L = extract_data(transfer[i],n_vgs,n_ids,n_igs, n_loop)#, number)
+                    #total_loops = int(L[-1])
+                    #matrix_length = int(len(L)/total_loops)
+    
+                elif loop_case == 2:
+                    X, Y, Z = extract_data_loops(transfer[i],n_vgs,n_ids,n_igs,n_loop)
+                else: 
+                    X, Y, Z = extract_data(transfer[i],n_vgs,n_igs,n_ids)
+                
+                X = np.array(X)
+                Y = np.absolute(Y)
+                Z = np.absolute(Z) 
+                
+                #X = X.reshape(total_loops, matrix_length)
+                #Y = Y.reshape(total_loops, matrix_length)
+                #Z = Z.reshape(total_loops, matrix_length)
+                #print(gm[k][i])
+                
+                #print ("Device" + str(k) + L[i])
+                #print (X_structure[k][i])
+                
+                #if label
+                if Vds[i] == Vds1:
+                    colorr = u'#045275'          
+                    labell = L[i]                       
+                    ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
+                    #ln1 = ax1.plot(X, Y, '-', color=colorr, label=r'$-I_D$', linewidth=3)
+                    try:
+                        ax2.plot(X, Z, '--', color=colorr)#, linewidth=3)
+                        #ln2 = ax2.plot(X, Z, '--', label=r'$-I_G$', color=colorr)#, linewidth=3)
+                        #lns = ln1 + ln2
+                    except:
+                        pass
+                        
+                    if trans:
+                        end = int(len(X)/2)
+                        #print(end)
+                        vgs = X[0:end].tolist() # De +1 a -1
+                        vgs.reverse() # De -1 a +1
+                        ids = Y[0:end].tolist() # De +1 a -1
+                        ids.reverse() # De -1 a +1
+                        #print(ids)
+                        ids = [-1*ids[i] for i in range(len(ids))]
+                        
+                        # Calculate transconductance at a specific data point index
+                        data_point_index = 10 # Choose an appropriate index
+                        gm = calculate_transconductance(ids, vgs, data_point_index)
+
+                        # Plot transconductance vs. input voltage using the existing data
+                        gm_array = [calculate_transconductance(ids, vgs, j) for j in range(len(vgs))]
+                    
+                        #print(len(X_aux))
+                        #print(len(gm[k][i]))
+                        #plt.text(-1, 0.e-10, gmax[k][i])
+
+                elif Vds[i] == Vds2:
+                    #plt.plot(X, Y, '-', color=u'#ff7f0e', label=L[i])
+                    color1 = u'#089099'          
+                    labell = L[i] 
+                    try:
+                        ax2.plot(X, Z, '--', color=color1)#, label=labell)
+                    except:
+                        pass                                             
+                    ax1.plot(X, Y, '-', color=color1, label=labell, linewidth=3)
+                elif Vds[i] == Vds3:
+                    #plt.plot(X, Y, '-', color=u'#2ca02c', label=L[i])
+                    colorr = u'#7CCBA2'          
+                    labell = L[i]
+                    try:
+                        ax2.plot(X, Z, '--', color=colorr)#, label=labell)
+                    except:
+                        pass                       
+                    ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
+                elif Vds[i] == Vds4:
+                    #plt.plot(X, Y, '-', color=u'#d62728', label=L[i])
+                    colorr = u'#FEB24C'#'#FCDE9C'          
+                    labell = L[i]
+                    try:
+                        ax2.plot(X, Z, '--', color=colorr)#, label=labell)
+                    except:
+                        pass                       
+                    ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
+                #else:
+                    #plt.plot(X, Y, '-', label=L[i])
+                    #colorr = u'#F0746E'          
+                    #labell = L[i]
+                    #ax2.plot(X, Z, '-', color=colorr, label=labell)               
+                    #ax1.plot(X, Y, '-', color=colorr, label=labell, linewidth=3)
+        
+        #labs = [l.get_label() for l in lns]
+        #ax1.legend(lns, labs, loc=0)  
+        #ax1.legend(loc='upper right')
+        ax1.legend()
+        plt.grid()
+        plt.tight_layout()
+
+    ## plotX[][][], 1st corresponding title (U), 2nd corresponding Vds, 3nd actual number X or Y
+        #X_structure[k].append(X)
+        #Y_structure[k].append(Y)  
+        #Z_structure[k].append(Z)
+        try:
+            gm_values[k] = gm_array
+        except:
+            pass
+    return gm_values#X_structure, Y_structure, Z_structure
+
 def plot_transfer_curves_old(T, transfer, L, Vds, n_ids, n_vgs, n_loop, trans = False, number=2, loop_case = 1):
     num_devices = len(T)
     num_files = len(transfer) # for each vds x loops

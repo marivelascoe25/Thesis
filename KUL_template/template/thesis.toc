@@ -73,9 +73,9 @@
 \contentsline {section}{\numberline {4.2}Doping in Organic Electrochemical Transistors}{34}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Influence of Doping on OECT Channel}{35}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Stability of Undoped and Doped p(g3T2-T)}{38}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Counteracting Oxidation by Electrochemical De-doping}{41}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Fabrication of Solid Organic Electrochemical Transistors}{43}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Undoped Drop-casted SSE}{44}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.2.3}Oxygen Reduction Reaction on OECTs}{41}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Fabrication of Side-Gate Organic Electrochemical Transistors}{43}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Undoped Drop-casted SSE}{43}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Undoped Photopatterned SSE}{45}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Undoped Inkjet-Printed SSE}{49}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Doped Inkjet-Printed SSE}{49}{subsection.4.3.4}%
@@ -86,4 +86,4 @@
 \contentsline {appendix}{\chapternumberline {A}Absorption of p(g3T2-T) Doped with F6TCNNQ}{59}{appendix.A}%
 \contentsline {appendix}{\chapternumberline {B}Correlation of Cyclic Voltammetry and Transfer Characteristics}{61}{appendix.B}%
 \contentsline {appendix}{\chapternumberline {C}PEDOT:PSS vs Doped p(g3T2-T) as Channel}{63}{appendix.C}%
-\contentsline {chapter}{Bibliography}{65}{appendix*.86}%
+\contentsline {chapter}{Bibliography}{65}{appendix*.87}%

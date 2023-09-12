@@ -5,13 +5,17 @@ import scipy.constants as sc
 #from scipy.signal import argrelextrema
 plt.rcParams.update({'font.size':22})
 
-dir_path1 = 'Data\\2. UVVis\\0. Old data\\23.03.20'
-dir_path2 = 'Data\\2. UVVis\\0. Old data\\23.04.05'
-dir_path3 = 'Data\\2. UVVis\\0. Old data\\23.02.23_old'
+#dir_path1 = 'Data\\2. UVVis\\0. Old data\\23.03.20'
+#dir_path2 = 'Data\\2. UVVis\\0. Old data\\23.04.05'
+#dir_path3 = 'Data\\2. UVVis\\0. Old data\\23.02.23_old'
 
-title1 = "Doping p(g3T2-T)"#_23.03.20"
-title2 = "After 2 weeks in air"
-title3 = "Doping p(g3T2-T)"
+#title1 = "Doping p(g3T2-T)"#_23.03.20"
+#title2 = "After 2 weeks in air"
+#title3 = "Doping p(g3T2-T)"
+
+#Appendix
+dir_path1 = 'Data\\2. UVVis\\23.06.15\\Appendix'
+title1 = "Dopants"
 
 ## Add N=True for a normalized absorbance plot
 N = False

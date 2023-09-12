@@ -128,7 +128,7 @@ It is essential to note that for the statistical analysis of this section, despi
 
 Transfer characteristics are illustrated in Figure \ref{fig:transx2}a, c, e, corresponding to undoped, 5 mg/mL, and 10 mg/mL dopants, respectively. Notably, a positive turn-on voltage is observed in the undoped OECT device, indicating the rapid oxidation (unwanted) of p(g3T2-T) under environmental conditions due to its low ionization potential (IP). 
 
-The drain current ($I_{D}$) of the undoped device exhibits higher values than doped devices. Hidalgo et al.  \cite{hidalgocastilloSimultaneousPerformanceStability2022a} reported that pristine p(g3T2-T) exhibits a oxygen reduction reaction (ORR) activity in oxygen-saturated conditions, resulting in an increase in current within the polymer until saturation. To address this issue, it will be necessary to control the oxidation state of the polymer during selective steps of the fabrication process or find a way to reverse the oxidation of p(g3T2-T), which will be explored in subsequent sections.
+The drain current ($I_{D}$) of the undoped device exhibits higher values than doped devices. Hidalgo Castillo et al.  \cite{hidalgocastilloSimultaneousPerformanceStability2022a} reported that pristine p(g3T2-T) exhibits a oxygen reduction reaction (ORR) activity in oxygen-saturated conditions, resulting in an increase in current within the polymer until saturation. To address this issue, it will be necessary to control the oxidation state of the polymer during selective steps of the fabrication process or find a way to reverse the oxidation of p(g3T2-T), which will be explored in subsequent sections.
 
 \begin{figure}[!ht]
     \centering
@@ -262,37 +262,38 @@ Transfer curves of the undoped device using an Ag/AgCl pellet as gate were measu
 In summary, a pre de-doping step could potentially serve as a method for obtaining accumulation-mode OECTs by decreasing the conductivity of p(g3T2-T), and will be explored in the following section.
 
 %\subsection{Reverse Oxidation of Undoped-p(g3T2-T)}
-\subsection{Counteracting Oxidation by Electrochemical De-doping} \label{subsec:revox}
-Now that we have identified an alternative method to counteract the oxidation of p(g3T2-T), we will proceed with initial trials of accumulation-mode OECT using both the Ag/AgCl gate and the OMIEC gate. Our first step will involve expediting the de-doping process by applying a positive gate bias to one of the devices. This will allow us to achieve low conductivity within a couple of minutes, as opposed to the two hours reported in the previous subsection. 
+%\subsection{Counteracting Oxidation by Electrochemical De-doping} 
+\subsection{Oxygen Reduction Reaction on OECTs} \label{subsec:revox}
+Now that we have identified an alternative method to counteract the oxidation of p(g3T2-T), we will proceed with a preliminary study on oxygen reduction reaction in OECT using p(g3T2-T) channel and Ag/AgCl gate. Our first step will involve expediting the de-doping process by applying a positive gate bias to one of the devices. This will allow us to achieve low conductivity within a couple of minutes, as opposed to the two hours reported in the previous subsection. 
 
 %It was observed that previous experiments took approximately two hours to fully de-dope p(g3T2-T) and reach minimal conductivity %an insulating state 
 %in the polymer. However, this process could be expedited by applying .
 %Additionally, the use of a high-temperature baking step to revert the oxidation of an p(g3T2-T) OECT %was a method suggested by colleagues in the Biosens group at IAPP and will also be tested.   
 %\subsubsection{By Electrochemical Dedoping}
-De-doping in a $N_{2}$ environment was performed by applying a +1 V gate bias. p(g3T2-T) reached its insulating state in less than 300 seconds, significantly faster than observed in the previos section. However, it was expected that this process would not be reversible upon disconnection of the gate. Figure \ref{fig:revox2}a confirms this expectation: after $I_{D}$ drastically dropped and the gate was disconnected (gray arrows), the current remained low, and leakage current is predominant. When the gate was reconnected (gold arrows), a capacitive current spike occurred but later stabilized to match the leakage current.
+De-doping in a $N_{2}$ environment was performed by applying a +1 V gate bias. p(g3T2-T) reached its insulating state in less than 300 seconds, significantly faster than observed in the previous section. However, it was expected that this process would not be reversible upon disconnection of the gate. Figure \ref{fig:revox2}a confirms this expectation: after $I_{D}$ drastically dropped and the gate was disconnected (gray arrows), the current remained low, and leakage current is predominant. When the gate was reconnected (gold arrows), a capacitive current spike occurred but later stabilized to match the leakage current.
 % Important commment from Rakesh: Did you try lower values? A high gate voltage would push the ions deeper into the channel and if the ions penetrate deep enough, the channel would shield them from flowing out after the gate voltage is removed.
 
 \begin{figure}[ht]
     \centering
-    %\subfloat[]{{\includegraphics[width=7cm]{Images/pdf/elec-dedop1.pdf} }}
-    %\subfloat[]{{\includegraphics[width=7cm]{Images/pdf/transfer_de-dop_exp.pdf}}}
-    \includegraphics[width=\textwidth]{Images/pdf/de-doping.pdf}
-    \caption[Electrochemical de-doping of oxidized p(g3T2-T) OECT]{a) De-doping p(g3T2-T) using a gate biased of +1V, gold arrows indicate gate connection, while grey arrows indicate when gate was disconnected. b) Transfer characteristic before and after exposure at $V_{DS}$ of -0.1 V using p(g3T2-T) gate coupled with SSE precursor.}
+    \subfloat[]{{\includegraphics[width=7cm]{Images/pdf/elec-dedop1.pdf} }}
+    \subfloat[]{{\includegraphics[width=7cm]{Images/pdf/Undoped_AgAgCl.pdf}}}
+    %\includegraphics[width=\textwidth]{Images/pdf/de-doping.pdf}
+    \caption[Electrochemical de-doping of oxidized p(g3T2-T) OECT]{a) De-doping p(g3T2-T) using a gate biased of +1V, gold arrows indicate gate connection, while grey arrows indicate when gate was disconnected. b) Transfer characteristics of device using Ag/AgCl under ambient conditions.}
     \label{fig:revox2}
 \end{figure}
 
-Transfer curves using the p(g3T2-T) gate showed a negative turn-on voltage after electrochemical de-doping (Figure \ref{fig:revox2}b). Additionally, a transfer curve was measured after exposure to UV light. The monomer units in the SSE (NIPAm and HHPA) cross-link upon exposure forming the polymer poly(N-isopropylacrylamide) (PNIPAm), then an increase in current upon crosslinking is observed.
+The subsequent experiment involved exposing the sample to ambient conditions, using the same device that underwent electrochemical de-doping. Unfortunately, it experienced degradation between measurements. Subsequently, transfer characteristics of another device from the same sample were measured using a Ag/AgCl pellet, as depicted in Figure \ref{fig:revox2}b. This measurement revealed a negative threshold voltage of -0.14 V, suggesting that drop-casted SSE, which will be further analyzed in the next section using the p(g3T2-T) gate, may be protecting p(g3T2-T) channel from spontaneous oxidation.
+%, but still some interactions due to the redox peaks. (may need measurements outside for this one)
 
-Moreover, it was perceived that using the OMIEC gate instead of the Ag/AgCl pellet affects our ``gating efficiency'', as expected. Weissbach et al.  \cite{weissbachUnravelingElectrochemicalElectrode2023} demonstrated the Electrochemical Electrode Coupling (ECC) between channel and its electrode has a more pronounce effect on device operation when micro-integrated polarizable gates (OMIECs) are used. This coupling can result in saturation loss %(as seen in Figure \ref{fig:revox2}b)
-and threshold voltage roll-of when increasing $V_{DS}$, which was observed during measurements. Therefore, moving forward, $V_{DS}$ will be fixed at -0.1 V.
-\\\\
-The subsequent experiment involved exposing the sample to ambient conditions, using the same device that underwent electrochemical de-doping. Unfortunately, it experienced degradation between measurements. Subsequently, transfer characteristics of another device from the same sample were measured using a Ag/AgCl pellet, as depicted in Figure \ref{fig:DropAgCl}a. This measurement revealed a negative threshold voltage of -0.14 V, suggesting that drop-casted SSE, which will be further analyzed in the next section using the p(g3T2-T) gate, may be protecting p(g3T2-T) channel from spontaneous oxidation.%, but still some interactions due to the redox peaks. (may need measurements outside for this one)
+Figure \ref{fig:DropAgCl}a shows an increase in gate current from above +0.5 V and below -0.6 V, which is consistent with the increased leakage current in our device, and increase in drain current due to electrochemical doping of the channel. It is important to clarify that the redox peaks extracted from these measurements do not exclusively represent reduction and oxidation potentials between the working electrode (Ag/AgCl) and electrolyte. This is because the counter electrode and reference electrode are shorted and connected to the channel, which should be significantly large to minimize its effects on the electrolyte. Instead, these peaks represent crucial operation points for our OECT, where electron transfer is more pronounced. 
+
+For instance, the oxidation peak may signify both the oxidation of the gate and the reduction of the channel, and the same applies to the reduction peaks. This approach will also be used and examined in the next section.
 
 %D5
 \begin{figure}[ht]
     \centering 
-    \sidesubfloat[]{{\hspace{-2em}\includegraphics[width=7.5cm]{Images/pdf/Undoped_AgAgCl.pdf} }}
-    \qquad
+    %\sidesubfloat[]{{\hspace{-2em}\includegraphics[width=7.5cm]{Images/pdf/Undoped_AgAgCl.pdf} }}
+    %\qquad
     \sidesubfloat[]{{\hspace{-2.2em}
     \includegraphics[width=7cm]{Images/pdf/CV_drop_AgClWE.pdf} }}
     \sidesubfloat[]{{\hspace{-2em} \includegraphics[width=7cm]{Images/pdf/CV_drop_AgClRECE.pdf} }}
@@ -300,15 +301,10 @@ The subsequent experiment involved exposing the sample to ambient conditions, us
     \label{fig:DropAgCl}
 \end{figure}
 
-Figure \ref{fig:DropAgCl}b shows an increase in gate current from above +0.5 V and below -0.6 V, which is consistent with the increased leakage current in our device%, and increase in drain current due to electrochemical doping of the channel
-. It is important to clarify that the redox peaks extracted from these measurements do not exclusively represent reduction and oxidation potentials between the working electrode (Ag/AgCl) and electrolyte. This is because the counter electrode and reference electrode are shorted and connected to the channel, which should be significantly large to minimize its effects on the electrolyte. Instead, these peaks represent crucial operation points for our OECT, where electron transfer is more pronounced. 
+Meanwhile, measurements performed and represented in Figure \ref{fig:DropAgCl}b, where Ag/AgCl is now our counter electrode and it is significantly larger than our working electrode (Au/p(g3T2-T) channel), %, but also a reference electrode, which still will not give us a correct measurement of redox potential between the electrodes, but
+can be correlated with the studies performed by Hidalgo Castillo et al. \cite{hidalgocastilloSimultaneousPerformanceStability2022a}, they reported a reduction potential at -0.4 V vs Ag/AgCl attributed to the interactions with molecular oxygen. Therefore, starting from at this operation point, ORR takes place, and as seen in Subsection \ref{subsec:sidereac}, there is high probabilities of forming hydrogen peroxide leading to degradation, the latter was evident in both devices tested in this subsection.
 
-For instance, the oxidation peak may signify both the oxidation of the gate and the reduction of the channel, and the same applies to the reduction peaks. This approach will also be used and examined in the next section.
-
-Meanwhile, measurements performed and represented in Figure \ref{fig:DropAgCl}c, where Ag/AgCl is now our counter electrode and it is significantly larger than our working electrode (Au/p(g3T2-T) channel), %, but also a reference electrode, which still will not give us a correct measurement of redox potential between the electrodes, but
-can be correlated with the studies performed by Hidalgo et al. \cite{hidalgocastilloSimultaneousPerformanceStability2022a}, they reported a reduction potential at -0.4 V vs Ag/AgCl attributed to the interactions with molecular oxygen. Therefore, as seen in Subsection \ref{subsec:sidereac}, starting from at this operation point, ORR takes place, forming hydrogen peroxide, and leading to degradation, the latter was evident in both devices tested in this subsection.
-
-Although, we are biasing our channel in this trial to values that exceed operational range, this will hold true when using our OMIEC gate. %Therefore, it is a point to take into consideration.
+Although, we are biasing our channel to values that exceed operational range, this will hold true when using our OMIEC gate. %Therefore, it is a point to take into consideration.
 
 %\subsubsection{By Heating}
 
@@ -325,7 +321,7 @@ Although, we are biasing our channel in this trial to values that exceed operati
 %**\textit{I need to check if I have measurements more than pictures, I base this miniconclusion in reflection hue and transfer curves achieved}**
 
 %\newpage
-\section{Fabrication of Solid Organic Electrochemical Transistors}
+\section{Fabrication of Side-Gate Organic Electrochemical Transistors}
 %\subsection{Undoped-p(g3T2-T)}
 
 In the previous section, an investigation into the doping of the p(g3T2-T) channel was conducted, and attention was given to the issues of unwanted oxidation, dopant stability and ORR. With these considerations in mind, the focus now shifts to the fabrication of solid-OECTs. 
@@ -345,9 +341,23 @@ Following the comparison of these three device architectures, doped solid-OECTs 
 At this point, the patterning process had improved its yield, with twelve out of the fourteen devices being successfully patterned, although there were some variations in thickness, as evidenced by the reflection hue of the micrographs. Among these devices, only seven remained operational.
  %by improving homogeneity of dynamic spin-coating, say patterning number, %before and after exposure could be appendix, right now I will place it before
 
-Electrochemical de-doping of one device in the sample was carried out before exposure. Measurements of channel conductivity of the other devices indicated an impact of this process to neighboring devices (a total of 5) as most of them had very low conductivity, in the order of nS. One exception exhibited a conductivity in the order of $\mu$S and a threshold voltage of 0.0 V. Moreover, attempts to perform irreversible electrochemical de-doping on this device after exposure (cross-linking of monomer units) were unsuccessful. It appeared that the formation of PNIPAm prevented irreversible de-doping. This outcome is crucial for the fabrication of doped-devices and will be discussed further in Section \ref{subsec:dopedOECTs}.
+Electrochemical de-doping of one device in the sample was carried out before exposure. Transfer curves using the p(g3T2-T) gate showed a negative turn-on voltage (Figure \ref{fig:revox2}). Additionally, a transfer curve was measured after exposure to UV light. The monomer units in the SSE (NIPAm and HHPA) cross-link upon exposure forming the polymer poly(N-isopropylacrylamide) (PNIPAm), then an increase in current upon crosslinking is observed.
 
-Four devices from the sample were measured under the same conditions as detailed in Section \ref{subsec:solidOECT}. A representative device can be seen in Figure \ref{fig:dropcast}a, note that this sample was used for reverse oxidation experiments, the reflection hue changed from brownish to bluish color after lowering its conductivity. SSE precursor was blew off and a new drop was deposited for the solid-OECT. 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=7cm]{Images/pdf/transfer_de-dop_exp.pdf}
+    %\includegraphics[width=\textwidth]{Images/pdf/de-doping.pdf}
+    \caption[Transfer characteristics of side-gate OECT with pristine p(g3T2-T)]{Transfer characteristic before and after exposure to UV light at $V_{DS}$ of -0.1 V using p(g3T2-T) gate coupled with SSE precursor.}
+    \label{fig:revox2}
+\end{figure}
+%%%
+
+Moreover, it was perceived that using the OMIEC gate instead of the Ag/AgCl pellet affects our ``gating efficiency'', as expected. Weissbach et al.  \cite{weissbachUnravelingElectrochemicalElectrode2023} demonstrated the Electrochemical Electrode Coupling (ECC) between channel and its electrode has a more pronounce effect on device operation when micro-integrated polarizable gates (OMIECs) are used. This coupling can result in saturation loss %(as seen in Figure \ref{fig:revox2}b)
+and threshold voltage roll-of when increasing $V_{DS}$, which was observed during measurements. Therefore, moving forward, $V_{DS}$ will be fixed at -0.1 V.
+
+Measurements of channel conductivity of the other devices indicated an impact of this process to neighboring devices (a total of 5) as most of them had very low conductivity, in the order of nS. One exception exhibited a conductivity in the order of $\mu$S and a threshold voltage of 0.0 V. Moreover, attempts to perform irreversible electrochemical de-doping on this device after cross-linking of monomer units were unsuccessful. It appeared that the formation of PNIPAm prevented irreversible dedoping. This outcome is crucial for the fabrication of doped-devices and will be discussed further in Section \ref{subsec:dopedOECTs}.
+
+Subsequently, other four devices from the sample were measured under the conditions detailed in Section \ref{subsec:solidOECT}. A representative device can be seen in Figure \ref{fig:dropcast}a, note that this sample was used for reverse oxidation experiments, the reflection hue changed from brownish to bluish color after lowering its conductivity. SSE precursor was blew off and a new drop was deposited for the solid-OECT. 
 
 %D1
 \begin{figure}[ht]

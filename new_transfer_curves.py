@@ -26,8 +26,8 @@ plt.rcParams.update({'font.size':20})
 #dir_path = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped5'
 #dir_path = 'Data\\3. Transfer curves\\3. Data_on_bioprobe_older_PC\\230316_newpg3t_doped10'
 # After EC dedoping
-#dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230519_pg3t_after_stability'
-dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB_aftergatededopingx2'
+dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230519_pg3t_after_stability'
+#dir_path = 'Data\\3. Transfer curves\\2. Bioprobe\\230602_pg3t_SolidSE_aftertrialsGB_aftergatededopingx2'
 
 #drop D7 replace by U1
 #dir_path = 'Data\\3. Transfer curves\\1. IV\\230605_new_pg3t+solidSE_aftergatededopingsolid'
@@ -60,7 +60,8 @@ column_loop=column_vgs-1
 # Use loop_case = 2 if you want to all loops except the first one
 # Use loop_case other if you want to plot all
 # trans default is False, if True, transconductance is plotted
-gm = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, number=3)#, trans=True)#,loop_case=2) ##for old data
+#gm = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, number=3)#, trans=True)#,loop_case=2) ##for old data
+gm = plot_transfer_curves_old2(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, number=3)#, trans=True)#,loop_case=2) ##for old data
 #X, Y, Z = plot_transfer_curves_old(T, transfer, L, Vds, column_ids, column_vgs, column_loop)#, number=1)#, loop_case=2) # number 2 is default
 #for i in range(len(T)):
 #    print(T[i])
