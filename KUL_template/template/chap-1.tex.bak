@@ -10,7 +10,7 @@ Unlike inorganic semiconductors, organic semiconductors are lightweight, easy to
 
 \subsection{Electronic Structure and Transport} 
 
-Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating multiple (sp$^{2}$ hybridization) and single (sp hybridization) bonds. The wavefunction of the sp$^{2}$ orbitals overlap so that electrons are delocalized.
+Organic semiconductors are $\pi$-conjugated molecules that comprise mostly carbon and hydrogen atoms, with alternating double and single bonds (sp$^{2}$ hybridization). The wavefunction of the sp$^{2}$ orbitals overlap so that electrons are delocalized.
 %This configuration exhibit $p$-orbitals with delocalized electrons. %, charge transport among the length of these polymers is caused by the alternation of these bonds, describing a resonance structure. 
 Based on the size of the conjugated system, organic semiconductors can be divided into conjugated polymers and small molecules. The latter have the advantage that their synthesis and low molecular mass allows to obtain them high purity material \cite{alcacerElectronicStructureOrganic2018}.
 % of being ordered and its synthesis allows to obtain high purity material \cite{alcacerElectronicStructureOrganic2018}.
@@ -69,7 +69,7 @@ the formation of a new quasiparticle named bipolaron occurs. For instance, if p-
   \label{fig:bipol}
 \end{figure}
 
-The energy levels generated upon the formation of polarons and bipolarons in non-degenerate molecules are illustrated in Figure \ref{fig:ebipol}. As the doping density increases, the amount of bipolaron states also increases. Their overlapping leads to the formation of bipolaron bands, and the energy difference between the two in-gap states i and i*, as shown from Figure \ref{fig:ebipol}b to D, decreases. %Fix this part % \cite{bredasRoleMobileOrganic1984}
+The energy levels generated upon the formation of polarons and bipolarons in non-degenerate molecules are illustrated in Figure \ref{fig:ebipol}. As the doping density increases, the amount of bipolaron states also increases. Their overlapping leads to the formation of bipolaron bands, and the energy difference between the two in-gap states i and i*, as shown from Figure \ref{fig:ebipol}b to d, decreases. %Fix this part % \cite{bredasRoleMobileOrganic1984}
 
 \begin{figure}[ht]
   \centering
@@ -144,7 +144,7 @@ Electronic charge transport mechanisms present in OMIECs include thermally-activ
 
 Thermally-activated hopping, as its name implies, is driven by thermal energy and is limited by the degree of structural disorder. In this mechanism, weakly-bonded electrons in delocalized $\pi$-orbital move along adjacent $\pi$-orbitals within the length of the conjugated polymer, or even between molecules where there is sufficient $\pi$-$\pi$ overlapping. This mechanism predominates when there is a low electronic charge carrier density and a low density of accessible hopping states, resulting in low mobility and electrical conductivity \cite{paulsenOrganicMixedIonic2020}. 
 
-In contrast, band-like transport, typically occurs in OMIECs with increasing doping levels. In this case, the activation energy of charge hopping decreases, and carrier mobility increases. This leads to diffuse band-like charge transport within the polymer-stacking \cite{wangHoppingTransportHall2012}.
+In contrast, band-like transport typically occurs in OMIECs with increasing doping levels. In this case, the activation energy of charge hopping decreases, and carrier mobility increases. This leads to diffuse band-like charge transport within the polymer-stacking \cite{wangHoppingTransportHall2012}.
 %"at extreme doping levels, increased disorder drives carrier localization, which results in a plateau or even decrease in electronic charge carrier mobility"
 
 %"Non-conjugated radical polymers also present a thermally activated mechanism of charge transfer between pendant radical sites, though with a significant dependence on the local self-diffusion of polymer chain to bring radical sites close enough for efficient charge transfer51. This manifests as a hopping transport of electronic carriers (Fig. 2a) that is assisted via segmental motion (described below; Fig. 2g). Also in this case disorder plays a role, producing local variations in the molecular orbital energy levels and spreading orbitals in a density of radical states52."
@@ -391,7 +391,7 @@ F$_{4}$TCNQ dopant, as shown in Figure \ref{fig:tune}. This approach offers adva
 %Although there are some studies in non-water-based electrolytes, such as ionic liquids. 
 Water uptake and swelling are important side reactions that occur when OMIECs come into contact with water-based electrolytes. Even in the pursuit of solid-state OECTs, precursors may contain a certain degree of water content  \cite{weissbachPhotopatternableSolidElectrolyte2022}\cite{nguyen-dangBiomaterialBasedSolidElectrolyteOrganic2021}, making it necessary to understand the impact of water-related side reactions. %and some bioelectronics applications will inevitable operate under water environment, 
 
-Water uptake in OMIECs causes their increase of mass (swelling) and changes in morphology. This water uptake occurs because OMIECs need to compensate for their intrinsic doping, and as a result, \textit{``the effect of doping-induced hydration on the OMIEC morphology must be taken into account when designing OECTs''} \cite{savvaBalancingIonicElectronic2020}.
+Water uptake in OMIECs causes an increase of mass (swelling) and changes in morphology. This water uptake occurs because OMIECs need to compensate for their intrinsic doping, and as a result, \textit{``the effect of doping-induced hydration on the OMIEC morphology must be taken into account when designing OECTs''} \cite{savvaBalancingIonicElectronic2020}.
 
 Savva et al. conducted an study to investigate the influence of water on the performance of PEDOT:PSS OECTs. They found that water uptake %of conjugated polymer films 
 led to a 10-13\% increase in mass under non-biased conditions. Interestingly, the concentration of water played a role in the ionic charging rate. While lower concentrations of water (NaCl$_{aq}$ 10 mM, 100mM, 1M, and 6M) led to faster ionic charging, %regardless of the doping pulse, 
@@ -416,7 +416,7 @@ The Oxygen Reduction Reaction (ORR) is a common undesirable side reaction that o
 % Remember 
 % Thermodynamically favored processes or reactions are those that involve both a decrease in the internal energy of the components (ΔH° < 0) and an increase in entropy of the components (ΔS° > 0). These processes are necessarily “thermodynamically favored” (ΔG° < 0) or negative. ΔG° = ΔH°-TΔS°
 % Catalyst help to reduce the activation energy required for a reaction
-The ORR is a non-capacitive faradaic reaction that takes place between the OMIEC and molecular oxygen, involving electron-transfer. This reaction can yield either the oxidation (p-doping) of the OMIEC which acts as the catalyst, water (H$_{2}$O) or hydrogen peroxide (H$_{2}$O$_{2}$), as described in \ref{eq:h2o} and \ref{eq:h2o2}. While water was already discussed and is not detrimental, hydrogen peroxide, on the other hand, may accelerate device degradation and if immerse in biological environment, it can be harmful %hydrogen peroxide (H$_{2}$O$_{2}$) or water (H$_{2}$O), as described in \ref{eq:h2o2} and \ref{eq:h2o}, or it can result in the oxidation (p-doping) of the OMIEC which acts as the catalyst.  
+The ORR is a non-capacitive faradaic reaction that takes place between the OMIEC and molecular oxygen, involving electron-transfer. This reaction can yield either the oxidation (p-doping) of the OMIEC which acts as the catalyst, water (H$_{2}$O) or hydrogen peroxide (H$_{2}$O$_{2}$), as described in \ref{eq:h2o} and \ref{eq:h2o2}. While water was already discussed and is not detrimental, hydrogen peroxide, on the other hand, may accelerate device degradation and if immersed in biological environment, it can be harmful %hydrogen peroxide (H$_{2}$O$_{2}$) or water (H$_{2}$O), as described in \ref{eq:h2o2} and \ref{eq:h2o}, or it can result in the oxidation (p-doping) of the OMIEC which acts as the catalyst.  
 \cite{giovannittiEnergeticControlRedoxActive2020}. 
 
 %The first shows a free energy difference that is endergonic for OMIECs with IPs > 4.9eV and hence prevent the OMIEC from undergoing ORR that form H$_{2}$O$_{2}$. To prevent the ORR in ambient conditions, OMIECs based on donor-acceptor copolymer (Type III or IV) that have large IPs to shift
@@ -433,7 +433,7 @@ The ORR is a non-capacitive faradaic reaction that takes place between the OMIEC
 
 As represented in Figure \ref{fig:orr}, $\eta_{1}$ and $\eta_{2}$ represent the free energy difference between reactants and the reaction products H$_{2}$O$_{2}$ and H$_{2}$O, respectively. If this free energy difference is negative, indicating that the reaction requires an energy input, the ORR is endergonic, while a positive free energy difference makes it exergonic (spontaneous). For instance, to prevent the formation of hydrogen peroxide, a polymer with higher IP (> 4.9eV) would be required. 
 
-In the context of OECTs, where polymers like PEDOT:PSS and p(g3T2-T) are used, it is important to recognize that these materials exhibit exergonic reactions under environmental conditions. Therefore, hydrogen peroxide would be formed and it is crucial to consider the impact on device stability and performance, particularly in applications where long-term reliability is essential.
+In the context of OECTs, where polymers like PEDOT:PSS and p(g3T2-T) are used, it is crucial to recognize that these materials undergo exergonic reactions in the presence of oxygen. Consequently, the formation of hydrogen peroxide becomes inevitable. It becomes important to identify the operational points where the production of H$_{2}$O$_{2}$ becomes disproportional, particularly in applications where long-term reliability is essential. Managing and mitigating the effects of H$_2$O$_2$ formation will be a key consideration in the development of these devices.
 
 %\newpage
 \begin{figure}[!ht]
